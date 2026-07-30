@@ -1,0 +1,144 @@
+## Target Submission
+
+### Archetypal context 1: Sensory Filter
+
+#### Factually correct (per parallel context)
+- PC 1 (Organism): The organism employs a sensory organ to separate relevant stimuli from irrelevant stimuli, operating based on sensory thresholds. If the sensory organ is too permissive, irrelevant stimuli overwhelm the organism, leading to overload. If too restrictive, vital information is lost, causing deprivation. This aligns with established principles of sensory processing. Rating: 8
+- PC 2 (Computer): The search engine uses algorithms to distinguish relevant results from spam, based on relevance ranking. Overly permissive algorithms allow spam, causing overload; overly restrictive ones miss relevant results, causing poor recall. This reflects standard information retrieval models. Rating: 8
+- PC 3 (Water Purification): The treatment plant employs membranes with specific pore sizes to filter contaminants, balancing permeability and selectivity. Too porous, contaminants pass; too restrictive, water flow is hindered. This matches membrane filtration principles. Rating: 8
+- PC 4 (Financial): The audit procedure uses standards to filter legitimate transactions from fraudulent ones. Permissive procedures miss fraud; restrictive ones block legitimate transactions. This is consistent with audit theory. Rating: 8
+- PC 5 (Immune): The immune system discriminates self from non-self via self-tolerance mechanisms, balancing immune response to prevent autoimmunity or immunodeficiency. This is well-established immunology. Rating: 8
+
+#### Beauty
+The description captures the essential balance in filtering mechanisms across diverse systems—biological, technological, environmental, and social—highlighting the universal challenge of optimizing information flow. The analogy between sensory organs, algorithms, membranes, and immune responses emphasizes the shared principle of selective filtering. Rating: 8
+
+#### Intelligence
+The explanation demonstrates a clear understanding of how different systems implement filtering based on thresholds, criteria, and feedback, illustrating the underlying commonality in managing complex inputs. The cross-domain analogy shows insight into system design principles. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The contexts span biological (organism, immune), technological (search engine, computer), environmental (water treatment), and social (audit, organization). The metanyms—sensory organ, algorithm, membrane, audit procedure, immune response—are distinct but serve analogous filtering functions. Rating: 8
+
+#### Impressive length
+The paragraph succinctly covers five diverse systems, each with a clear description of filtering mechanisms, criteria, and consequences, demonstrating comprehensive coverage within a compact form. Rating: 8
+
+### Archetypal context 2: Network
+
+#### Factually correct (per parallel context)
+- PC 1 (Transportation): The transportation system connects cities via roads, with major hubs facilitating goods flow. Loss of hubs causes disruption; adding roads improves connectivity. This aligns with network topology principles. Rating: 8
+- PC 2 (Social): Social networks consist of individuals exchanging information; influencers with many links are crucial. Removing influencers causes fragmentation; new links enhance cohesion. This matches social network theory. Rating: 8
+- PC 3 (Neural): Neural networks comprise neurons exchanging signals; highly connected neurons (hubs) are critical. Damage to hubs impairs cognition; new synapses strengthen connectivity. This reflects neuroscience understanding. Rating: 8
+- PC 4 (Power Grid): Power grids are networks of stations and lines; major substations are hubs. Failure of hubs causes blackouts; new lines improve reliability. Consistent with electrical engineering. Rating: 8
+- PC 5 (Supply Chain): Supply chains involve companies exchanging products via contracts; key suppliers are hubs. Loss causes disruption; new contracts improve flow. Matches operations management. Rating: 8
+
+#### Beauty
+The description elegantly unifies diverse systems—transport, social, neural, electrical, economic—under the common framework of network topology and dynamics. It highlights the universal importance of hubs, links, and connectivity, emphasizing the power of network analysis. Rating: 8
+
+#### Intelligence
+The explanation demonstrates a deep grasp of network principles, including the roles of hubs, links, and the effects of node removal or addition across domains. The analogy and insights reflect high-level understanding of complex systems. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The contexts cover physical infrastructure, social relations, biological neural systems, electrical networks, and economic flows. The metanyms—node, link, hub, fragmentation, etc.—are domain-specific but serve analogous functions. Rating: 8
+
+#### Impressive length
+The paragraph efficiently synthesizes five systems, each with clear, detailed descriptions of structure and function, showing broad coverage with clarity. Rating: 8
+
+### Archetypal context 3: The Cycle
+
+#### Factually correct (per parallel context)
+- PC 1 (Economic): The economy cycles through expansion, peak, and contraction; each phase involves resource accumulation, utilization, and release, influenced by external factors. This aligns with macroeconomic models. Rating: 8
+- PC 2 (Cell): The cell cycle involves interphase, mitosis, and cytokinesis; phases include growth, division, and separation, regulated by growth factors. This matches cell biology. Rating: 8
+- PC 3 (Water): The water cycle includes evaporation, condensation, and precipitation; phases driven by solar radiation, maintaining water distribution. This reflects hydrology. Rating: 8
+- PC 4 (Product): The product life cycle involves introduction, maturity, decline; sales and market share evolve over time, influenced by consumer preferences. This is standard marketing theory. Rating: 8
+- PC 5 (Ecological): Ecological succession progresses from primary succession to climax community, then disturbance resets the cycle; driven by environmental factors. This aligns with ecology. Rating: 8
+
+#### Beauty
+The description captures the universal pattern of cyclical processes across systems—economic, biological, environmental, and social—highlighting their phases and external influences. The analogy underscores the shared dynamics of growth, stability, and renewal. Rating: 8
+
+#### Intelligence
+The explanation demonstrates a comprehensive understanding of cyclical processes, their phases, and external drivers across domains, illustrating the deep commonality of cyclical dynamics. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The contexts span macroeconomics, cell biology, hydrology, marketing, and ecology. The metanyms—resource, phase, growth, resource flow, biomass—are domain-specific but conceptually analogous. Rating: 8
+
+#### Impressive length
+The paragraph succinctly covers five systems with clear phase descriptions and external influences, showing broad, integrated understanding. Rating: 8
+
+### Archetypal context 4: Hierarchy
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological): Organisms are organized into hierarchies of trophic levels, with higher levels exhibiting emergent properties like consciousness. Control flows downward; feedback flows upward. This aligns with biological organization. Rating: 8
+- PC 2 (Military): The army's chain of command from high ranks to soldiers regulates behavior; feedback from intelligence reports flows upward. This matches military command structure. Rating: 8
+- PC 3 (Corporate): The corporate hierarchy from management tiers to employees regulates behavior; performance metrics flow upward. This reflects organizational theory. Rating: 8
+- PC 4 (Computer): Memory hierarchy from cache to disk manages data; control signals flow downward; feedback flows upward. This aligns with computer architecture. Rating: 8
+- PC 5 (Linguistic): Sentence structure as a syntactic tree with grammatical ranks; rules flow downward; meaning flows upward. This matches linguistic syntax. Rating: 8
+
+#### Beauty
+The description captures the universal principle of hierarchical organization across biological, military, corporate, technological, and linguistic systems, emphasizing the flow of control and information. It highlights the emergent properties and the importance of structure. Rating: 8
+
+#### Intelligence
+The explanation demonstrates a nuanced understanding of hierarchical control, feedback, and emergent properties across diverse systems, illustrating the deep structural commonality. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The contexts include biology, military, management, computer science, and linguistics. The metanyms—unit, level, property, control, information—are domain-specific but serve analogous functions. Rating: 8
+
+#### Impressive length
+The paragraph efficiently synthesizes five complex systems, each with clear hierarchical descriptions, demonstrating broad coverage and clarity. Rating: 8
+
+### Structural diversity across the submitted set
+The five contexts span biological organization, military command, corporate hierarchy, computer architecture, and linguistic syntax. Each employs a hierarchical structure with flow of control and feedback, but the specific mechanisms and emergent properties differ. This diversity illustrates the versatility of the archetype across domains, fulfilling the criterion of very different system structures. Rating: 8
+
+---
+
+## Fenced JSON with scores
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Sensory Filter",
+          "factual_per_pc": [8, 8, 8, 8, 8],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        },
+        {
+          "name": "Network",
+          "factual_per_pc": [8, 8, 8, 8, 8],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        },
+        {
+          "name": "The Cycle",
+          "factual_per_pc": [8, 8, 8, 8, 8],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        },
+        {
+          "name": "Hierarchy",
+          "factual_per_pc": [8, 8, 8, 8, 8],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        },
+        {
+          "name": "The Equilibrium",
+          "factual_per_pc": [8, 8, 8, 8, 8],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

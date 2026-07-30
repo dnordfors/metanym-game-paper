@@ -1,0 +1,165 @@
+## Target Submission
+
+### Archetypal context 1: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Business): The description accurately captures how companies evaluate ROI and adjust resource allocations based on market research, aligning well with the reference. The mention of prior commitments creating opportunity costs is appropriate. Rating: 6
+- PC 2 (Government): The explanation correctly discusses how agencies allocate budgets amidst political risks, with appropriate mention of adjusting allocations based on public opinion and prior commitments. Rating: 6
+- PC 3 (Nonprofit): The depiction of how organizations allocate donations considering funding uncertainty and mission alignment is accurate, matching the reference's factual correctness. Rating: 6
+- PC 4 (Personal Finance): The account of how individuals allocate savings under financial risk, considering prior commitments and adjusting based on reports, is correct and consistent. Rating: 6
+- PC 5 (Environmental Management): The explanation of resource allocation among conservation goals, considering ecological uncertainty and prior commitments, is factually sound. Rating: 6
+
+#### Beauty
+The narrative effectively employs clear, precise language to describe the decision-making process across diverse domains, maintaining a consistent tone and structure. It balances technical accuracy with readability, aligning with the reference's aesthetic quality. Rating: 6
+
+#### Intelligence
+The explanation demonstrates a good understanding of decision frameworks across multiple fields, integrating concepts like market volatility, political risk, and ecological uncertainty coherently. It shows thoughtful cross-domain reasoning similar to the reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts span business, government, nonprofit, personal finance, and environmental management, each with distinct operational principles and terminologies. The metanyms (e.g., "capital," "budget," "donations," "savings," "resources") are related but instantiated in different domains, illustrating broad domain separation. Rating: 6
+
+#### Impressive length
+The description provides a comprehensive yet concise overview of resource allocation challenges across five domains, with sufficient detail to demonstrate depth without excessive verbosity. It aligns with the reference's length and depth. Rating: 6
+
+### Archetypal context 2: Conflict Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Legal Disputes): The account correctly describes how lawsuits involve negotiation, evidence exchange, and legal obstacles, matching the reference's factual standards. Rating: 6
+- PC 2 (International Relations): The depiction of diplomatic negotiations, treaties, and political tensions aligns with accurate conflict resolution processes at the international level. Rating: 6
+- PC 3 (Workplace Conflicts): The explanation of organizational disputes involving communication, hierarchy, and mediation is correct and consistent. Rating: 6
+- PC 4 (Family Disputes): The description of family conflicts involving emotional needs and therapy fits well with established conflict resolution principles. Rating: 6
+- PC 5 (Community Mediation): The account of neighborhood disputes, community input, and restorative justice is accurate and appropriate. Rating: 6
+
+#### Beauty
+The narrative employs accessible language and a logical structure, effectively illustrating the conflict resolution process across contexts. It maintains clarity and coherence similar to the reference. Rating: 6
+
+#### Intelligence
+The explanation demonstrates an understanding of dispute dynamics across legal, diplomatic, organizational, familial, and community levels, integrating concepts like negotiation, evidence, and barriers effectively. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts cover legal, international, workplace, family, and community domains, each with distinct terminologies and interaction types. The metanyms (e.g., "party," "dispute," "interests," "options," "solution") are instantiated differently but conceptually aligned, showing clear domain separation. Rating: 6
+
+#### Impressive length
+The description balances detail and brevity, providing enough information to cover each context thoroughly while remaining concise, matching the reference's length. Rating: 6
+
+### Archetypal context 3: Knowledge Acquisition
+
+#### Factually correct (per parallel context)
+- PC 1 (Student): The description accurately reflects how students acquire knowledge via methods, sources, and feedback, consistent with the reference. Rating: 6
+- PC 2 (Researcher): The depiction of researchers evaluating sources and strategies aligns with established learning processes. Rating: 6
+- PC 3 (Employee): The account of on-the-job training, feedback, and habits is correct and matches the reference. Rating: 6
+- PC 4 (Child): The explanation of learning through play, feedback, and habits is appropriate and accurate. Rating: 6
+- PC 5 (Adult Learner): The description of lifelong learning, self-assessment, and strategies is correct and consistent. Rating: 6
+
+#### Beauty
+The narrative is clear, logically structured, and employs domain-appropriate terminology, making it accessible and engaging. It aligns with the reference's aesthetic standards. Rating: 6
+
+#### Intelligence
+The explanation demonstrates a solid understanding of learning theories across age groups and contexts, integrating concepts like feedback, habits, and methods coherently. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts span formal education, research, workplace training, childhood learning, and adult education, each with distinct practices and terminologies. The metanyms (e.g., "subject matter," "data," "skills," "concepts," "life skills") are instantiated in different domains, illustrating domain separation. Rating: 6
+
+#### Impressive length
+The description provides a comprehensive overview of learning processes across five levels, matching the reference's depth and scope without excess. Rating: 6
+
+### Archetypal context 4: Ecosystem Dynamics
+
+#### Factually correct (per parallel context)
+- PC 1 (Predator-Prey): The account correctly describes predator interactions, food webs, and population control, aligning with ecological principles. Rating: 6
+- PC 2 (Plant Community): The description of plant interactions, biodiversity, and ecosystem stability is accurate and consistent. Rating: 6
+- PC 3 (Microbial Ecosystem): The explanation of microbial interactions, nutrient cycling, and microbiomes is correct. Rating: 6
+- PC 4 (Coral Reef): The account of coral populations, symbiosis, and climate change effects aligns with marine ecology. Rating: 6
+- PC 5 (Urban Wildlife): The depiction of human-wildlife interactions, habitat degradation, and adaptation challenges is accurate. Rating: 6
+
+#### Beauty
+The narrative employs precise ecological terminology and a logical flow, effectively illustrating complex relationships across ecosystems. It maintains clarity similar to the reference. Rating: 6
+
+#### Intelligence
+The explanation demonstrates a broad understanding of ecological interactions, population dynamics, and environmental changes, integrating concepts across multiple ecosystems coherently. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts cover terrestrial, marine, microbiological, and urban ecosystems, each with distinct species, environments, and interactions. The metanyms (e.g., "species," "environment," "balance," "interactions," "population") are instantiated differently but conceptually aligned, showing clear domain separation. Rating: 6
+
+#### Impressive length
+The description balances breadth and depth, providing sufficient detail across five ecosystems while remaining concise, matching the reference's scope. Rating: 6
+
+### Archetypal context 5: Innovation Process
+
+#### Factually correct (per parallel context)
+- PC 1 (Entrepreneur): The account correctly describes the stages of startup development, evaluation, and pivoting, consistent with innovation frameworks. Rating: 6
+- PC 2 (Scientist): The depiction of scientific discovery, hypothesis testing, and feedback aligns with research processes. Rating: 6
+- PC 3 (Software Developer): The explanation of development, prototyping, and iteration matches software engineering principles. Rating: 6
+- PC 4 (Artist): The account of creative ideation, prototyping, and feedback is accurate within artistic workflows. Rating: 6
+- PC 5 (Educator): The description of curriculum development, testing, and refinement aligns with educational innovation. Rating: 6
+
+#### Beauty
+The narrative employs clear, accessible language and a logical progression, effectively illustrating the innovation cycle across domains. It aligns with the reference's aesthetic standards. Rating: 6
+
+#### Intelligence
+The explanation demonstrates an understanding of innovation frameworks, feedback loops, and pivoting strategies across multiple fields, integrating concepts coherently. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts span business, science, software, art, and education, each with unique practices and terminologies. The metanyms (e.g., "product," "discovery," "application," "creative work," "curriculum") are instantiated differently, illustrating domain separation. Rating: 6
+
+#### Impressive length
+The description covers the full cycle of innovation across five domains, matching the scope and depth of the reference without excess. Rating: 6
+
+### Structural diversity across the submitted set
+The five archetypal contexts span decision-making, conflict resolution, learning, ecological interactions, and innovation processes, each with distinct structural features—ranging from linear stages to complex interactions and recursive hierarchies. The set demonstrates broad diversity in system structures, aligning with the reference's criteria. Rating: 6
+
+---
+
+## Fenced JSON output
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Conflict Resolution",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Knowledge Acquisition",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Ecosystem Dynamics",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Innovation Process",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

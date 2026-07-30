@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): The description accurately captures the coagulation cascade mechanism, including tissue factor activation, thrombin burst amplification, and antithrombin regulation. The terminology is precise and the biological processes are correctly described. This demonstrates solid factual grounding comparable to the Reference's level of accuracy. Rating: 5
+- PC 2 (Economic Panic): The bank run dynamics are well-described, capturing how depositor panic cascades through financial systems and how central banks serve as circuit breakers. The economic mechanisms are accurately portrayed with appropriate terminology. This matches the Reference's factual reliability. Rating: 5
+- PC 3 (Viral Marketing): The description correctly explains how content spreads through social networks via exponential sharing, with platform algorithms serving as regulatory mechanisms. The network dynamics are accurately captured. This maintains the Reference's standard of factual correctness. Rating: 5
+- PC 4 (Nuclear Fission): The physics of chain reactions, criticality, and control rod function are accurately described. The technical details about neutron multiplication and reactor control are correct. This meets the Reference's level of factual accuracy. Rating: 5
+- PC 5 (Avalanche Formation): The snow science is accurately presented, including weak layer failure, fracture propagation, and bond strength dynamics. The physical processes are correctly described with appropriate terminology. This equals the Reference's factual standard. Rating: 5
+
+#### Beauty
+The cascade amplification archetype has elegant mathematical beauty in its exponential growth pattern that manifests across diverse domains. The template captures the aesthetic appeal of how tiny triggers can produce massive effects through multiplicative processes. However, the beauty is somewhat mechanical and predictable compared to more nuanced archetypal patterns. The parallel contexts show clear structural elegance but lack the deeper aesthetic sophistication found in more complex archetypal relationships. This represents solid but not exceptional beauty relative to the Reference.
+Rating: 5
+
+#### Intelligence
+The archetype demonstrates good analytical insight by identifying the fundamental pattern of exponential amplification across disparate domains. The recognition that regulatory mechanisms prevent runaway cascades shows sophisticated understanding of system dynamics. However, the intellectual depth is somewhat limited by the straightforward nature of the amplification concept. While the cross-domain mapping is competent, it doesn't reveal particularly profound or surprising connections. This represents adequate but not exceptional intelligence relative to the Reference.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains span biological, economic, social, physical, and geological systems, showing good diversity. Blood clotting, economic panic, viral marketing, nuclear fission, and avalanche formation represent genuinely different phenomena. The metanyms like "tissue factor/depositor/early adopter/fissile nucleus/weak layer" are appropriately distinct rather than synonymous. However, the domains could be even more disparate - they all involve physical or social systems with similar cascade dynamics. This meets the Reference standard for domain separation.
+Rating: 5
+
+#### Impressive length
+The context template contains approximately 120 words, which represents a substantial and well-developed archetypal description. The template thoroughly covers the cascade mechanism, regulatory controls, pathological states, and field of study. The length allows for comprehensive coverage of the archetypal pattern while remaining focused. This matches the Reference's standard for template length and comprehensiveness.
+Rating: 5
+
+### Archetypal context 2: Selective Barrier
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The description accurately captures membrane transport mechanisms, channel proteins, concentration gradients, and selective permeability. The biological processes are correctly described with appropriate terminology. This maintains the Reference's standard of factual accuracy. Rating: 5
+- PC 2 (National Border): The border control dynamics are accurately portrayed, including documentation verification, economic gradients driving migration, and the balance between security and openness. The political and economic mechanisms are correctly described. This equals the Reference's factual reliability. Rating: 5
+- PC 3 (Firewall): The cybersecurity concepts are accurately presented, including packet filtering, authentication protocols, and the balance between accessibility and protection. The technical details are correct and appropriately described. This matches the Reference's factual standard. Rating: 5
+- PC 4 (Blood-Brain Barrier): The neuroscience is accurately captured, including selective transport, molecular recognition, and the protection of neural tissue. The biological mechanisms are correctly described with precise terminology. This maintains the Reference's level of factual correctness. Rating: 5
+- PC 5 (Social Circle): The sociological dynamics are well-described, capturing how trust networks control information flow and maintain privacy boundaries. The social mechanisms are accurately portrayed. This meets the Reference's factual standard. Rating: 5
+
+#### Beauty
+The selective barrier archetype possesses elegant beauty in its universal pattern of controlled permeability across biological, technological, and social domains. The template captures the aesthetic appeal of how systems maintain integrity while enabling beneficial exchange. The parallel between molecular recognition and social trust creates pleasing conceptual resonance. However, the beauty is somewhat functional rather than transcendent. This represents solid aesthetic appeal comparable to the Reference.
+Rating: 5
+
+#### Intelligence
+The archetype shows good intellectual insight by recognizing the fundamental pattern of selective permeability across diverse domains. The understanding that barriers must balance protection with beneficial exchange demonstrates sophisticated systems thinking. However, the concept is relatively straightforward and doesn't reveal particularly surprising or profound connections. The analysis is competent but not exceptionally deep. This matches the Reference's level of intelligence.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains span cellular biology, geopolitics, cybersecurity, neuroscience, and sociology, showing good diversity. The metanyms like "channel protein/border agent/port/transporter/trusted friend" represent genuinely different entities rather than synonyms. However, all domains involve some form of boundary control, making them somewhat related conceptually. The separation is adequate but could be more dramatic. This meets the Reference standard.
+Rating: 5
+
+#### Impressive length
+The context template contains approximately 110 words, providing comprehensive coverage of the selective barrier mechanism including recognition, regulation, dysfunction modes, and field of study. The length allows for thorough development of the archetypal pattern while maintaining focus. This matches the Reference's standard for template comprehensiveness.
+Rating: 5
+
+### Archetypal context 3: Competitive Exclusion
+
+#### Factually correct (per parallel context)
+- PC 1 (Species Ecology): The ecological principles are accurately described, including competitive exclusion, niche partitioning, and the role of keystone predators in maintaining diversity. The biological concepts are correctly presented. This maintains the Reference's factual standard. Rating: 5
+- PC 2 (Market Competition): The economic dynamics are accurately captured, including operational efficiency, market dominance, and antitrust intervention. The business concepts are correctly described with appropriate terminology. This equals the Reference's factual reliability. Rating: 5
+- PC 3 (Academic Publishing): The scholarly publishing dynamics are well-described, including journal competition, specialization, and the role of academic societies. The academic mechanisms are accurately portrayed. This matches the Reference's factual correctness. Rating: 5
+- PC 4 (Social Media): The platform competition dynamics are accurately presented, including network effects, engagement algorithms, and regulatory intervention. The technological and social mechanisms are correctly described. This maintains the Reference's factual standard. Rating: 5
+- PC 5 (Urban Development): The real estate development dynamics are accurately captured, including construction efficiency, zoning, and planning commission intervention. The urban planning concepts are correctly presented. This meets the Reference's level of factual accuracy. Rating: 5
+
+#### Beauty
+The competitive exclusion archetype has mathematical beauty in its winner-take-all dynamics tempered by niche differentiation. The template elegantly captures how competition drives both elimination and diversification across domains. The parallel between ecological niches and market segments creates aesthetically pleasing conceptual symmetry. However, the beauty is somewhat predictable and lacks deeper aesthetic sophistication. This represents solid but not exceptional beauty relative to the Reference.
+Rating: 5
+
+#### Intelligence
+The archetype demonstrates good analytical insight by recognizing the universal pattern of competitive exclusion and niche differentiation across biological, economic, and social domains. The understanding that regulators prevent monopolistic dominance shows sophisticated systems thinking. However, the concept is relatively well-known and doesn't reveal particularly surprising connections. The analysis is competent but not exceptionally profound. This matches the Reference's intelligence level.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains span ecology, economics, academia, technology, and urban planning, showing reasonable diversity. The metanyms like "species/company/journal/platform/developer" represent different types of competitors. However, all domains involve direct competition for limited resources, making them conceptually related. The separation is adequate but could be more dramatic. This meets the Reference standard for domain distinctness.
+Rating: 5
+
+#### Impressive length
+The context template contains approximately 100 words, providing solid coverage of competitive dynamics, exclusion mechanisms, differentiation strategies, and regulatory intervention. The length allows for adequate development of the archetypal pattern. This matches the Reference's standard for template length and comprehensiveness.
+Rating: 5
+
+### Archetypal context 4: Recursive Embedding
+
+#### Factually correct (per parallel context)
+- PC 1 (Russian Dolls): The description accurately captures the nested structure of matryoshka dolls, size constraints, and manufacturing limits. The physical principles are correctly described. This maintains the Reference's factual standard. Rating: 5
+- PC 2 (Folder Systems): The computer science concepts are accurately presented, including directory trees, path length limits, and cascading operations. The technical details are correct and appropriately described. This equals the Reference's factual reliability. Rating: 5
+- PC 3 (Biological Taxonomy): The taxonomic principles are well-described, including hierarchical classification, genetic divergence limits, and reclassification effects. The biological concepts are accurately portrayed. This matches the Reference's factual correctness. Rating: 5
+- PC 4 (Corporate Structure): The organizational dynamics are accurately captured, including reporting hierarchies, span of control limits, and restructuring cascades. The management concepts are correctly presented. This maintains the Reference's factual standard. Rating: 5
+- PC 5 (Grammatical Phrases): The linguistic concepts are accurately described, including syntactic trees, embedding limits, and processing constraints. The grammatical principles are correctly presented with appropriate terminology. This meets the Reference's level of factual accuracy. Rating: 5
+
+#### Beauty
+The recursive embedding archetype possesses profound mathematical beauty in its self-similar nested structure that appears across physical, digital, biological, organizational, and linguistic domains. The template elegantly captures the aesthetic appeal of infinite regress constrained by practical limits. The parallel between physical size limits and cognitive processing limits creates beautiful conceptual resonance. This represents exceptional aesthetic sophistication that surpasses the Reference's beauty.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates exceptional intellectual insight by recognizing the deep structural pattern of recursive embedding across radically different domains. The identification of universal constraints that prevent infinite nesting shows profound analytical thinking. The connection between physical, computational, biological, and cognitive limits reveals surprising and intellectually satisfying relationships. This represents superior intelligence compared to the Reference.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span physical objects, computer systems, biological classification, organizational structure, and linguistic syntax - representing genuinely disparate realms. The metanyms like "doll/folder/taxon/division/phrase" are completely non-synonymous entities from different conceptual universes. This represents exceptional domain separation that clearly exceeds the Reference standard.
+Rating: 7
+
+#### Impressive length
+The context template contains approximately 130 words, providing comprehensive coverage of recursive structure, access patterns, rule inheritance, operational effects, and limiting constraints. The length allows for thorough development of the complex archetypal pattern while maintaining clarity. This exceeds the Reference's standard for template comprehensiveness.
+Rating: 6
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The thermodynamic principles are accurately described, including supercooling, crystallinity changes, and hysteresis effects. The physical concepts are correctly presented with appropriate terminology. This maintains the Reference's factual standard. Rating: 5
+- PC 2 (Economic Bubble): The financial dynamics are accurately captured, including volatility clustering, sentiment shifts, and asymmetric bubble behavior. The economic mechanisms are correctly described. This equals the Reference's factual reliability. Rating: 5
+- PC 3 (Viral Outbreak): The epidemiological concepts are well-described, including epidemic thresholds, cluster growth, and hysteresis in disease dynamics. The public health principles are accurately portrayed. This matches the Reference's factual correctness. Rating: 5
+- PC 4 (Traffic Flow): The traffic physics are accurately presented, including critical density, flow state transitions, and stop-and-go wave formation. The transportation concepts are correctly described. This maintains the Reference's factual standard. Rating: 5
+- PC 5 (Political Revolution): The political science concepts are accurately captured, including revolutionary thresholds, regime transitions, and irreversibility effects. The social dynamics are correctly presented. This meets the Reference's level of factual accuracy. Rating: 5
+
+#### Beauty
+The phase transition archetype possesses profound mathematical beauty in its universal pattern of discontinuous change at critical thresholds. The template elegantly captures the aesthetic appeal of how gradual parameter changes can trigger sudden systemic transformation. The parallel between physical phase transitions and social revolutions creates deeply satisfying conceptual resonance. This represents exceptional aesthetic sophistication that clearly surpasses the Reference's beauty.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates exceptional intellectual insight by recognizing the deep structural pattern of critical phenomena across physics, economics, epidemiology, transportation, and politics. The identification of universal features like precursors, hysteresis, and order parameters shows profound analytical thinking. The connection between microscopic interactions and macroscopic transitions reveals intellectually stunning relationships. This represents superior intelligence compared to the Reference.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains span thermodynamics, financial markets, disease dynamics, traffic systems, and political systems - representing genuinely disparate realms of human knowledge. The metanyms like "molecule/investor/individual/vehicle/citizen" are completely non-synonymous entities from different conceptual universes. This represents exceptional domain separation that clearly exceeds the Reference standard.
+Rating: 7
+
+#### Impressive length
+The context template contains approximately 140 words, providing comprehensive coverage of phase behavior, critical thresholds, transition dynamics, emergent properties, and hysteresis effects. The length allows for thorough development of the complex archetypal pattern with rich detail. This exceeds the Reference's standard for template comprehensiveness.
+Rating: 6
+
+### Structural diversity across the submitted set
+The five archetypal contexts demonstrate exceptional structural diversity, spanning fundamentally different system dynamics: exponential amplification (cascade), selective permeability (barrier), competitive dynamics (exclusion), hierarchical nesting (embedding), and discontinuous transitions (phase change). The recursive embedding archetype adds a meta-structural dimension that the others lack. The mathematical structures range from exponential growth to threshold effects to self-similarity, representing genuinely different organizational principles. This structural diversity clearly exceeds the Reference's level of variety across archetypal contexts.
+Rating: 7
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc":           [5, 5, 5, 5, 5],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        5
+        },
+        {
+          "name": "Selective Barrier",
+          "factual_per_pc":           [5, 5, 5, 5, 5],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        5
+        },
+        {
+          "name": "Competitive Exclusion",
+          "factual_per_pc":           [5, 5, 5, 5, 5],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        5
+        },
+        {
+          "name": "Recursive Embedding",
+          "factual_per_pc":           [5, 5, 5, 5, 5],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        6
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc":           [5, 5, 5, 5, 5],
+          "beauty":                   7,
+          "intelligence":             8,
+          "instantiation_distinctness": 7,
+          "impressive_length":        6
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

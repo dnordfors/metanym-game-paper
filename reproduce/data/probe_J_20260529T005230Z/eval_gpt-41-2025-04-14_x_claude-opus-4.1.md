@@ -1,0 +1,173 @@
+## Submission 1
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): Both forms accurately describe the biological cascade of clotting, including the role of tissue factor, clotting factors, thrombin burst, and antithrombin regulation. The description is precise and matches hematological understanding. Rating: 10
+- PC 2 (Economic Panic): The forms correctly capture the dynamics of bank runs, depositor/investor behavior, capital flight, and central bank intervention. The analogy is well-grounded in financial economics. Rating: 10
+- PC 3 (Viral Marketing): The description of viral spread, early adopters, platform algorithms, and the risk of misinformation is accurate and reflects real-world network science. Rating: 10
+- PC 4 (Nuclear Fission): The explanation of neutron-induced chain reactions, criticality, control rods, and meltdown is scientifically correct and aligns with nuclear physics. Rating: 10
+- PC 5 (Avalanche Formation): The forms accurately describe avalanche initiation, weak layers, snow grain propagation, snow bonds, and catastrophic slides, consistent with snow science. Rating: 10
+
+#### Beauty
+The template and its instantiations are elegantly worded, with vivid imagery and clear logical flow. The parallel contexts are rendered in a way that highlights the drama and structure of cascades, and the idiomatic rewrites are polished and evocative. Rating: 9
+
+#### Intelligence
+This archetype demonstrates deep insight into the shared structure of amplification cascades across disparate domains. The mapping of metanyms is sophisticated, and the template captures subtle regulatory mechanisms and pathological outcomes. Rating: 10
+
+#### Domains far apart / metanyms not synonymous
+The domains span biology, economics, social networks, physics, and geoscience. The metanyms are not synonymous—e.g., "tissue factor" vs. "depositor" vs. "early adopter" vs. "fissile nucleus" vs. "weak layer"—and the instantiations are genuinely distinct. Rating: 10
+
+#### Impressive length
+The template is long, detailed, and covers multiple stages and regulatory aspects of the cascade process. Each instantiation is substantial and multi-sentence. Rating: 10
+
+---
+
+### Archetypal context 2: Selective Barrier
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The forms accurately describe selective permeability, channel proteins, ligand recognition, concentration gradients, and consequences of dysfunction. Rating: 10
+- PC 2 (National Border): The description of border agents, visas, economic gradients, and border crises is correct and reflects real-world border studies. Rating: 10
+- PC 3 (Firewall): The forms correctly explain firewall operation, port rules, authentication, traffic load, and security breaches, consistent with cybersecurity. Rating: 10
+- PC 4 (Blood-Brain Barrier): The explanation of transporters, molecular markers, nutrient delivery, and barrier breakdown is accurate and matches neuroscience. Rating: 10
+- PC 5 (Social Circle): The forms accurately capture social boundaries, trusted friends, information flow, privacy, and social isolation, consistent with sociological theory. Rating: 10
+
+#### Beauty
+The template is beautifully constructed, with poetic phrasing and clear metaphoric resonance. The instantiations are well-written, and the idiomatic rewrites are concise yet evocative. Rating: 9
+
+#### Intelligence
+This archetype shows high intelligence in abstracting the selective barrier concept across domains, including both physical and social systems. The mapping is nuanced, and the template captures subtle credentialing and dysfunction mechanisms. Rating: 10
+
+#### Domains far apart / metanyms not synonymous
+The domains include cell biology, national borders, cybersecurity, neuroscience, and sociology. The metanyms are distinct and not synonymous—e.g., "channel protein" vs. "border agent" vs. "port" vs. "transporter" vs. "trusted friend." Rating: 10
+
+#### Impressive length
+The template is lengthy, detailed, and covers multiple aspects of selective passage, credentialing, gradients, and dysfunction. Each instantiation is substantial. Rating: 10
+
+---
+
+### Archetypal context 3: Competitive Exclusion
+
+#### Factually correct (per parallel context)
+- PC 1 (Species Ecology): The forms accurately describe interspecific competition, foraging efficiency, niche partitioning, keystone predators, and biodiversity, consistent with ecological theory. Rating: 10
+- PC 2 (Market Competition): The description of operational efficiency, product differentiation, antitrust, and market diversity is correct and reflects economic principles. Rating: 10
+- PC 3 (Academic Publishing): The forms correctly explain review speed, specialization, academic societies, and journal diversity, matching bibliometric analysis. Rating: 10
+- PC 4 (Social Media): The explanation of engagement algorithms, feature differentiation, network effects, and platform diversity is accurate and aligns with platform studies. Rating: 10
+- PC 5 (Urban Development): The forms accurately describe construction efficiency, zoning, planning commissions, and urban diversity, consistent with urban planning. Rating: 10
+
+#### Beauty
+The template is elegantly worded, with a clear logical structure and vivid metaphors. The instantiations are well-written and the idiomatic rewrites are polished. Rating: 9
+
+#### Intelligence
+This archetype demonstrates high intelligence in abstracting competitive exclusion across domains, including biological, economic, academic, digital, and urban systems. The mapping is sophisticated and captures regulatory interventions and differentiation mechanisms. Rating: 10
+
+#### Domains far apart / metanyms not synonymous
+The domains are highly distinct—ecology, economics, bibliometrics, platform studies, urban planning. The metanyms are far from synonymous—e.g., "species" vs. "company" vs. "journal" vs. "platform" vs. "developer." Rating: 10
+
+#### Impressive length
+The template is long, detailed, and covers multiple stages of competition, differentiation, extinction, and regulation. Each instantiation is substantial. Rating: 10
+
+---
+
+### Archetypal context 4: Recursive Embedding
+
+#### Factually correct (per parallel context)
+- PC 1 (Russian Dolls): The forms accurately describe nesting, size constraints, opening, and physical limits, consistent with toy design. Rating: 10
+- PC 2 (Folder Systems): The description of directory trees, naming conventions, moving, and path length limits is correct and reflects computer science. Rating: 10
+- PC 3 (Biological Taxonomy): The forms correctly explain taxonomic hierarchy, classification rules, reclassification, and genetic divergence, matching systematics. Rating: 10
+- PC 4 (Corporate Structure): The explanation of organizational hierarchy, reporting structure, restructuring, and span of control is accurate and aligns with management science. Rating: 10
+- PC 5 (Grammatical Phrases): The forms accurately describe syntactic trees, grammatical rules, transformations, and processing limits, consistent with linguistics. Rating: 10
+
+#### Beauty
+The template is beautifully constructed, with recursive imagery and clear logical flow. The instantiations are well-written, and the idiomatic rewrites are polished and evocative. Rating: 9
+
+#### Intelligence
+This archetype shows exceptional intelligence in abstracting recursive embedding across domains, including physical, digital, biological, organizational, and linguistic systems. The mapping is nuanced, and the template captures constraints and emergent properties. Rating: 10
+
+#### Domains far apart / metanyms not synonymous
+The domains are highly distinct—toy design, computer science, systematics, management science, linguistics. The metanyms are not synonymous—e.g., "doll" vs. "folder" vs. "taxon" vs. "division" vs. "phrase." Rating: 10
+
+#### Impressive length
+The template is lengthy, detailed, and covers multiple aspects of nesting, rules, operations, constraints, and emergent properties. Each instantiation is substantial. Rating: 10
+
+---
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The forms accurately describe phase transitions, supercooling, crystallinity, viscosity, and hysteresis, consistent with thermodynamics. Rating: 10
+- PC 2 (Economic Bubble): The description of critical valuation, volatility clustering, market sentiment, and bubble asymmetry is correct and reflects financial physics. Rating: 10
+- PC 3 (Viral Outbreak): The forms correctly explain epidemic thresholds, cluster growth, infection prevalence, and hysteresis, matching epidemiology. Rating: 10
+- PC 4 (Traffic Flow): The explanation of critical density, speed variance, flow state, and traffic hysteresis is accurate and aligns with traffic physics. Rating: 10
+- PC 5 (Political Revolution): The forms accurately describe revolution points, protests, political order, and irreversibility, consistent with political science. Rating: 10
+
+#### Beauty
+The template is elegantly worded, with vivid metaphors and clear logical structure. The instantiations are well-written, and the idiomatic rewrites are polished and evocative. Rating: 9
+
+#### Intelligence
+This archetype demonstrates high intelligence in abstracting phase transitions across domains, including physical, economic, epidemiological, traffic, and political systems. The mapping is sophisticated and captures precursors, order parameters, and hysteresis. Rating: 10
+
+#### Domains far apart / metanyms not synonymous
+The domains are highly distinct—thermodynamics, financial physics, epidemiology, traffic physics, political science. The metanyms are not synonymous—e.g., "molecule" vs. "investor" vs. "individual" vs. "vehicle" vs. "citizen." Rating: 10
+
+#### Impressive length
+The template is long, detailed, and covers multiple stages of phase transition, precursors, order parameters, and hysteresis. Each instantiation is substantial. Rating: 10
+
+---
+
+### Structural diversity across the submitted set
+The five archetypal contexts span fundamentally different system structures: cascade amplification, selective barriers, competitive exclusion, recursive embedding, and phase transitions. Each context represents a distinct organizing principle, with no overlap in system structure. The submission demonstrates maximal structural diversity, including recursion in one archetype and a wide range of domains and mechanisms. Rating: 10
+
+---
+
+```json
+{
+  "scores": {
+    "1": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc":           [10, 10, 10, 10, 10],
+          "beauty":                   9,
+          "intelligence":             10,
+          "instantiation_distinctness": 10,
+          "impressive_length":        10
+        },
+        {
+          "name": "Selective Barrier",
+          "factual_per_pc":           [10, 10, 10, 10, 10],
+          "beauty":                   9,
+          "intelligence":             10,
+          "instantiation_distinctness": 10,
+          "impressive_length":        10
+        },
+        {
+          "name": "Competitive Exclusion",
+          "factual_per_pc":           [10, 10, 10, 10, 10],
+          "beauty":                   9,
+          "intelligence":             10,
+          "instantiation_distinctness": 10,
+          "impressive_length":        10
+        },
+        {
+          "name": "Recursive Embedding",
+          "factual_per_pc":           [10, 10, 10, 10, 10],
+          "beauty":                   9,
+          "intelligence":             10,
+          "instantiation_distinctness": 10,
+          "impressive_length":        10
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc":           [10, 10, 10, 10, 10],
+          "beauty":                   9,
+          "intelligence":             10,
+          "instantiation_distinctness": 10,
+          "impressive_length":        10
+        }
+      ],
+      "structural_diversity": 10
+    }
+  }
+}
+```

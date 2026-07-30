@@ -1,0 +1,203 @@
+## Submission 1
+
+### Archetypal context 1: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Business): The parallel context accurately describes how companies allocate capital among projects under market volatility, assess ROI, and use strategic planning. The concepts of opportunity costs from prior commitments and the need to adjust allocations based on market research are well-established business principles. The language is appropriate and the propositions are sound. Rating: 9
+
+- PC 2 (Government): Only the metanym table is provided without Form (a) or Form (b) instantiations. Based on the metanym set alone, the concepts of agencies allocating budgets among public services under political risk, assessing social impact, and facing political backlash as reallocation costs are factually accurate representations of government resource allocation. Rating: 8
+
+- PC 3 (Nonprofit): Only the metanym table is provided. The concepts of organizations allocating donations among community needs under funding uncertainty, assessing mission alignment, and facing donor dissatisfaction as reallocation costs accurately reflect nonprofit operations. Rating: 8
+
+- PC 4 (Personal Finance): Only the metanym table is provided. The concepts of individuals allocating savings among expenses under financial risk, assessing utility, and facing lifestyle changes as reallocation costs are accurate representations of personal financial decision-making. Rating: 8
+
+- PC 5 (Environmental Management): Only the metanym table is provided. The concepts of managers allocating resources among conservation goals under ecological uncertainty, assessing sustainability, and facing ecological impact as reallocation costs accurately describe environmental management challenges. Rating: 8
+
+#### Beauty
+The template is functional but lacks elegance or poetic quality. The language is bureaucratic and procedural ("decision-making process involves assessing"), reading more like a textbook definition than an insight that reveals hidden connections. The parallel contexts, while accurate, do not create any surprising resonance or aesthetic pleasure when juxtaposed. The structure is mechanical rather than illuminating.
+Rating: 4
+
+#### Intelligence
+The archetype captures a genuine universal pattern—constrained optimization under uncertainty with switching costs—that does manifest across these domains. However, the insight is relatively surface-level; resource allocation under uncertainty is an obvious commonality. The template doesn't reveal any non-obvious structural isomorphism or generate new understanding about any of the domains. The metanym mappings are straightforward rather than revelatory.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Business, Government, Nonprofit, Personal Finance, Environmental Management) share significant overlap—all involve organizational or individual budgeting decisions. Business and Personal Finance are closely related, as are Government and Nonprofit. The metanyms often approach synonymy: "capital," "budget," "donations," "savings," and "resources" are all forms of allocable funds. "ROI," "social impact," "mission alignment," "utility," and "sustainability" are all value metrics. The domains cluster around financial/administrative decision-making rather than spanning truly disparate fields.
+Rating: 4
+
+#### Impressive length
+The template contains 4 sentences with 9 slots. This is a moderate length that demonstrates some structural complexity, but the sentences are relatively simple declarative statements. The template could have explored more nuanced aspects of resource allocation dynamics. The length is adequate but not impressive.
+Rating: 5
+
+### Archetypal context 2: Conflict Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Legal Disputes): The instantiation accurately describes litigation processes, including negotiation, settlement terms, evidence exchange, and the role of legal theory. The characterization of verdicts as solutions and legal obstacles as barriers to compromise is appropriate, though verdicts are typically imposed rather than negotiated. Rating: 7
+
+- PC 2 (International Relations): Only the metanym table is provided. The concepts of nations engaging in territorial conflict resolution through diplomatic solutions to reach treaties, with intelligence reports informing positions and political tensions creating barriers, accurately reflect international relations dynamics. Rating: 8
+
+- PC 3 (Workplace Conflicts): Only the metanym table is provided. The concepts of employees resolving disagreements through compromises, with feedback informing positions and workplace hierarchy creating barriers, accurately describe workplace conflict dynamics. Rating: 8
+
+- PC 4 (Family Disputes): Only the metanym table is provided. The concepts of family members resolving arguments through mediation techniques to reach reconciliation, with communication informing positions and emotional baggage creating barriers, accurately reflect family therapy principles. Rating: 8
+
+- PC 5 (Community Mediation): Only the metanym table is provided. The concepts of community members resolving neighborhood disputes through collaborative agreements to reach consensus, with community input informing positions and mistrust creating barriers, accurately describe community mediation processes. Rating: 8
+
+#### Beauty
+The template is workmanlike but uninspired. The phrase "engage in [DISPUTE] resolution" is awkward, and the overall structure reads like a conflict resolution textbook. There is no memorable phrasing or elegant insight. The parallel contexts, when instantiated, do not create any surprising beauty through their juxtaposition—the commonality of conflict resolution across these domains is expected rather than revelatory.
+Rating: 4
+
+#### Intelligence
+The archetype identifies a genuine pattern: disputes involve parties with conflicting interests who must exchange information, explore options, and overcome barriers to reach solutions. However, this is essentially the definition of conflict resolution rather than a deep structural insight. The template doesn't reveal unexpected isomorphisms or generate new understanding. The mapping of "verdict" as a "solution" is somewhat forced, as verdicts are typically imposed rather than mutually agreed upon.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains span legal, international, workplace, family, and community contexts, which represents reasonable diversity. However, all are explicitly conflict resolution contexts, so the archetype is essentially describing the same process in different settings rather than revealing hidden structural similarities between apparently unrelated domains. The metanyms show some variation: "lawsuit," "territorial conflict," "disagreement," "argument," and "neighborhood dispute" are not synonymous but are all types of disputes. The diversity is moderate.
+Rating: 5
+
+#### Impressive length
+The template contains 4 sentences with 8 slots. This is a moderate length, similar to the first archetype. The sentences are simple and the structure is straightforward. The template does not demonstrate exceptional complexity or depth.
+Rating: 5
+
+### Archetypal context 3: Knowledge Acquisition
+
+#### Factually correct (per parallel context)
+- PC 1 (Student): The instantiation accurately describes student learning through study techniques, evaluation of sources like textbooks, application of study plans, adjustment based on grades, and the challenge of changing study habits. Pedagogy as the informing theory is appropriate. Rating: 9
+
+- PC 2 (Researcher): Only the metanym table is provided. The concepts of researchers acquiring data through research methods, evaluating academic journals, applying experimental design, adjusting based on peer review, and facing entrenched research routines accurately describe academic research processes. Rating: 8
+
+- PC 3 (Employee): Only the metanym table is provided. The concepts of employees acquiring skills through training programs, learning from mentors, applying on-the-job training, adjusting based on performance reviews, and facing entrenched work habits accurately describe workplace learning. Rating: 8
+
+- PC 4 (Child): Only the metanym table is provided. The concepts of children acquiring concepts through play, learning from parents, using guided play strategies, adjusting based on parental feedback, and developing learning patterns accurately reflect child development principles. Rating: 8
+
+- PC 5 (Adult Learner): Only the metanym table is provided. The concepts of adults acquiring life skills through self-directed learning, attending workshops, using reflective practice, conducting self-assessment, and engaging in lifelong learning accurately describe adult education principles. Rating: 8
+
+#### Beauty
+The template is functional but prosaic. The language is educational jargon ("enhance their [COMPETENCE]," "assimilate new insights") without elegance or surprise. The parallel contexts do not create aesthetic resonance; the commonality of learning across different life stages and contexts is expected. There is no memorable insight or elegant formulation that would make this archetype beautiful.
+Rating: 4
+
+#### Intelligence
+The archetype captures a genuine pattern of learning involving knowledge acquisition, method selection, source evaluation, feedback incorporation, and habit formation. However, this is essentially a description of learning theory rather than a deep structural insight. The domains (Student, Researcher, Employee, Child, Adult Learner) are all explicitly learning contexts, so the archetype describes the same process in different settings rather than revealing hidden isomorphisms. The insight is shallow.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The five domains are all explicitly learning/education contexts differentiated primarily by the learner's life stage or setting. Student, Researcher, Employee, Child, and Adult Learner are not far apart—they are all learners. The metanyms show some variation ("subject matter," "data," "skills," "concepts," "life skills" for KNOWLEDGE), but these are all types of knowledge. The domains cluster tightly around education/learning rather than spanning disparate fields.
+Rating: 3
+
+#### Impressive length
+The template contains 4 sentences with 9 slots. This is comparable to the previous archetypes—moderate length without exceptional complexity. The sentences follow a predictable pattern and do not demonstrate sophisticated structural depth.
+Rating: 5
+
+### Archetypal context 4: Ecosystem Dynamics
+
+#### Factually correct (per parallel context)
+- PC 1 (Predator-Prey): The instantiation accurately describes predator-prey dynamics, including habitat interactions, population control, competition, predation, symbiosis, environmental adaptation, and behavioral constraints on evolution. The ecological concepts are sound. Rating: 9
+
+- PC 2 (Plant Community): Only the metanym table is provided. The concepts of plants interacting with soil to maintain biodiversity, facing seasonal changes, and having resource limitations are ecologically accurate, though "plant interactions" as a type of interaction is somewhat tautological. Rating: 7
+
+- PC 3 (Microbial Ecosystem): Only the metanym table is provided. The concepts of microorganisms interacting with substrates in microbiomes, maintaining nutrient cycling, and facing genetic diversity limitations accurately describe microbial ecology. Rating: 8
+
+- PC 4 (Coral Reef): Only the metanym table is provided. The concepts of coral interacting with oceans in reef ecosystems, maintaining ecosystem stability through symbiotic relationships, facing climate change, and experiencing habitat degradation accurately describe coral reef ecology. Rating: 8
+
+- PC 5 (Urban Wildlife): Only the metanym table is provided. The concepts of animals interacting with cities in urban ecosystems, maintaining ecological balance through human-wildlife interactions, facing urban development, and experiencing adaptation challenges accurately describe urban ecology. Rating: 8
+
+#### Beauty
+This archetype has slightly more aesthetic appeal than the previous ones because ecological systems have inherent elegance. The language of "competition, predation, and symbiosis" and "complex relationships" evokes the richness of natural systems. However, the template itself is still procedural and textbook-like. The parallel contexts across different ecological scales (predator-prey to microbial to urban) create some interesting resonance.
+Rating: 5
+
+#### Intelligence
+The archetype captures genuine ecological principles that apply across scales—from microbial communities to urban ecosystems. The insight that prior adaptations constrain future evolution is a meaningful observation (evolutionary path dependence). However, the domains are all explicitly ecological, so this describes ecology in different contexts rather than revealing hidden structural similarities between unrelated fields. The template essentially defines ecosystem dynamics rather than illuminating unexpected connections.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Predator-Prey, Plant Community, Microbial Ecosystem, Coral Reef, Urban Wildlife) are all ecological contexts. While they span different scales and organisms, they are all explicitly ecosystems. The metanyms show reasonable variation: "habitat," "soil," "substrate," "ocean," "city" for ENVIRONMENT are genuinely different. However, the overall domain clustering around ecology limits the distinctiveness.
+Rating: 5
+
+#### Impressive length
+The template contains 4 sentences with 9 slots. The structure is similar to previous archetypes. The ecological content adds some complexity, but the template length and structure are not exceptional.
+Rating: 5
+
+### Archetypal context 5: Innovation Process
+
+#### Factually correct (per parallel context)
+- PC 1 (Entrepreneur): The instantiation accurately describes entrepreneurial innovation, including startup processes, business model development, market demand assessment, ideation/prototyping/testing, funding requirements, customer feedback, pivoting, and market competition challenges. Entrepreneurship theory as the informing framework is appropriate. Rating: 9
+
+- PC 2 (Scientist): Only the metanym table is provided. The concepts of researchers making scientific discoveries, addressing knowledge gaps, using lab equipment, receiving peer evaluations, facing research limitations, and applying the scientific method accurately describe scientific innovation. Rating: 8
+
+- PC 3 (Software Developer): Only the metanym table is provided. The concepts of developers creating software solutions, meeting user requirements, using coding tools, conducting user testing, facing technical debt, and applying agile methodology accurately describe software development. Rating: 8
+
+- PC 4 (Artist): Only the metanym table is provided. The concepts of artists creating artworks, seeking audience engagement, using materials, receiving critiques, facing creative blocks, and applying art theory accurately describe artistic creation. Rating: 8
+
+- PC 5 (Educator): Only the metanym table is provided. The concepts of teachers developing educational programs and curricula, addressing student learning needs, using teaching resources, conducting assessments, facing curriculum constraints, and applying educational theory accurately describe educational innovation. Rating: 8
+
+#### Beauty
+The template captures the creative process across domains, which has some inherent appeal. The language of "ideation, prototyping, and testing" and the concept of pivoting based on feedback resonates across creative fields. However, the template remains procedural and lacks poetic quality. The parallel contexts (entrepreneur to artist to educator) create some interesting juxtaposition but don't generate surprising beauty.
+Rating: 5
+
+#### Intelligence
+The archetype identifies a genuine pattern in innovation/creation processes: identifying needs, iterating through prototypes, gathering feedback, and pivoting while managing prior commitments. This is a meaningful insight that applies across creative domains. However, the domains are all explicitly creative/innovative contexts, so the archetype describes innovation in different settings rather than revealing hidden structural similarities between unrelated fields. The insight is moderately deep but not revelatory.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Entrepreneur, Scientist, Software Developer, Artist, Educator) represent different creative fields with some genuine diversity. The metanyms show reasonable variation: "startup," "scientific discovery," "software solution," "artwork," "educational program" for INNOVATION are meaningfully different. "Funding," "lab equipment," "coding tools," "materials," "teaching resources" for RESOURCES are distinct. This archetype shows better domain separation than some others in the submission.
+Rating: 6
+
+#### Impressive length
+The template contains 4 sentences with 8 slots. This is consistent with the other archetypes—moderate length without exceptional complexity. The structure follows the same pattern as the others.
+Rating: 5
+
+### Structural diversity across the submitted set
+
+The five archetypal contexts (Resource Allocation, Conflict Resolution, Knowledge Acquisition, Ecosystem Dynamics, Innovation Process) all share a remarkably similar structure: an agent faces a challenge under uncertainty, must make decisions using some framework, receives feedback, and faces constraints from prior commitments. Each template follows the same narrative arc: (1) agent must do X, (2) process involves Y, (3) as information comes in, adjustment may be needed, (4) but prior commitments create barriers, (5) theory Z helps. This structural homogeneity is a significant weakness. The archetypes could be described as variations on "constrained optimization with feedback and switching costs." There is no archetype exploring fundamentally different system structures such as cyclical processes, hierarchical emergence, phase transitions, or network effects. The submission lacks structural diversity.
+Rating: 3
+
+```json
+{
+  "scores": {
+    "1": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc": [9, 8, 8, 8, 8],
+          "beauty": 4,
+          "intelligence": 5,
+          "instantiation_distinctness": 4,
+          "impressive_length": 5
+        },
+        {
+          "name": "Conflict Resolution",
+          "factual_per_pc": [7, 8, 8, 8, 8],
+          "beauty": 4,
+          "intelligence": 4,
+          "instantiation_distinctness": 5,
+          "impressive_length": 5
+        },
+        {
+          "name": "Knowledge Acquisition",
+          "factual_per_pc": [9, 8, 8, 8, 8],
+          "beauty": 4,
+          "intelligence": 4,
+          "instantiation_distinctness": 3,
+          "impressive_length": 5
+        },
+        {
+          "name": "Ecosystem Dynamics",
+          "factual_per_pc": [9, 7, 8, 8, 8],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 5
+        },
+        {
+          "name": "Innovation Process",
+          "factual_per_pc": [9, 8, 8, 8, 8],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 6,
+          "impressive_length": 5
+        }
+      ],
+      "structural_diversity": 3
+    }
+  }
+}
+```

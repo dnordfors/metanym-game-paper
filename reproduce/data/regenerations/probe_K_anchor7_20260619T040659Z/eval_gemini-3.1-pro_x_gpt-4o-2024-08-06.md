@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecosystem Management): The factual correctness is significantly worse than the Reference. The template forces awkward and inaccurate phrasing like "nutrients must be allocated to species to achieve biodiversity" and "understanding the ecological balance of the ecosystem." Ecosystems do not "allocate" nutrients to "achieve" a goal; this implies a teleological manager that doesn't exist in nature. The Reference's biological contexts (like Bacterial Chemotaxis or Species Ecology) are highly accurate and use precise scientific terminology. Rating: 3
+- PC 2 (Corporate Strategy): This context is factually correct in a broad sense, as corporations do allocate capital to departments. However, the phrasing "understanding the market trends of the corporation" is grammatically and conceptually awkward (market trends belong to the market, not the corporation). It is much less precise and accurate than the Reference's economic contexts (like Market Competition). Rating: 5
+- PC 3 (Urban Planning): The statement "land must be allocated to districts to achieve livability" is a vast oversimplification of urban planning. Furthermore, "understanding the demographic of the city" is grammatically incorrect (should be demographics). The Reference maintains high factual accuracy and grammatical correctness across all its forms. Rating: 4
+- PC 4 (Education System): The phrasing "understanding the pedagogical of the school" is grammatically incorrect ("pedagogical" is an adjective used as a noun here). While schools do allocate funding, the causal link that "misallocation can lead to dropout" is overly simplistic. The Reference's contexts are much more nuanced and factually robust. Rating: 3
+- PC 5 (Personal Finance): This context is generally factually correct, as households do allocate income to expenses. However, "understanding the economic of the household" is again grammatically incorrect. The Reference does not suffer from these basic grammatical errors in its Form (a) substitutions. Rating: 4
+
+#### Beauty
+The prose in this archetype is highly repetitive, simplistic, and suffers from grammatical errors when the metanyms are inserted into the template (e.g., "the pedagogical of the school"). The Form (b) rewrites do little to elevate the prose, remaining dry and formulaic. The Reference, by contrast, features elegant, domain-expert prose in its Form (b) rewrites and grammatically sound Form (a) templates. The Target is significantly worse.
+Rating: 2
+
+#### Intelligence
+The underlying abstraction—that systems allocate resources to components to achieve goals—is extremely generic and lacks the depth or insight found in the Reference. The Reference's archetypes (like Competitive Exclusion or Scaffold and Autonomy) capture complex, dynamic mechanisms with specific failure modes and feedback loops. This Target archetype is merely a basic definition of resource management, offering no novel perspective or deep structural mapping.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (ecosystems, corporations, cities, schools, households) are reasonably distinct, covering biology, business, urban planning, education, and personal finance. However, the metanyms themselves are often very close to synonyms or generic terms (e.g., "budget," "funding," "income" for RESOURCE; "bankruptcy," "bankruptcy" for FAILURE). The Reference achieves much greater semantic distance between its metanyms while maintaining precise structural alignment.
+Rating: 4
+
+#### Impressive length
+The context-template is extremely short, consisting of only four brief sentences. It lacks the detailed elaboration of mechanisms, edge cases, and temporal dynamics present in the Reference's templates. The Reference templates are roughly three times as long and significantly more complex.
+Rating: 2
+
+### Archetypal context 2: Conflict Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (International Relations): The phrasing "War arises when nations have incompatible territory" is grammatically awkward and factually imprecise (they have incompatible territorial *claims*, as Form (b) attempts to fix, but Form (a) must be correct as written). "Failure to resolve war can lead to conflict" is tautological and nonsensical. The Reference maintains strict logical and factual coherence in Form (a). Rating: 3
+- PC 2 (Workplace Dynamics): "Dispute arises when employees have incompatible roles" is a plausible scenario, but "Failure to resolve dispute can lead to tension" is weak, as tension usually precedes or accompanies the dispute. The factual mapping is superficial compared to the Reference's precise causal chains. Rating: 5
+- PC 3 (Family Therapy): "Argument arises when family members have incompatible needs" is generally correct. However, the template's rigid structure forces simplistic causal statements that lack the nuance of actual family therapy dynamics. The Reference's psychological contexts (like Emotional Breakdown) are much more accurate to the discipline. Rating: 5
+- PC 4 (Environmental Policy): "Controversy arises when stakeholders have incompatible resources" is factually incorrect; they have incompatible *interests* in or *uses* for resources, not incompatible resources themselves. The Reference avoids such fundamental mapping errors. Rating: 3
+- PC 5 (Sports Management): "Rivalry arises when teams have incompatible victories" is an awkward way to describe zero-sum competition. "Successful resolution involves strategy session and rule change" is a bizarre and inaccurate description of how sports rivalries are "resolved" (they usually aren't resolved, they are managed or played out). Rating: 2
+
+#### Beauty
+The template is again very short and produces stilted, unnatural sentences in Form (a) (e.g., "War arises when nations have incompatible territory"). Form (b) improves the flow slightly but remains pedestrian. The Reference's prose is far more sophisticated, rhythmic, and evocative across all domains.
+Rating: 2
+
+#### Intelligence
+The archetype of "conflict resolution" presented here is trivial: parties have a conflict, they use a strategy to resolve it, success is good, failure is bad. It lacks any specific mechanism or structural insight. The Reference's archetypes, such as Debt Accumulation and Crisis, offer profound insights into how systems trade short-term gains for long-term vulnerabilities. This Target archetype is entirely superficial.
+Rating: 1
+
+#### Domains far apart / metanyms not synonymous
+The domains (international relations, workplace, family, environment, sports) are distinct. However, the metanyms are highly repetitive and synonymous (e.g., "dispute," "argument," "controversy" for CONFLICT; "diplomacy," "mediation," "negotiation" for STRATEGY). The Reference successfully uses highly distinct metanyms (e.g., "chemoattractant," "elevation," "opportunity signal") that map to a precise shared structure.
+Rating: 3
+
+#### Impressive length
+The template is only four sentences long and lacks any detailed elaboration of the conflict resolution process. It is significantly shorter and less complex than the Reference templates, which detail multi-step processes, failure modes, and systemic consequences.
+Rating: 2
+
+### Archetypal context 3: Growth and Development
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): "Evolution in a species is driven by mutation and shaped by environment" is a reasonable summary. However, "The process of evolution involves speciation and natural selection" mixes levels (speciation is an outcome, natural selection is a mechanism). "Understanding the ecological dynamics of evolution" is slightly off, as evolutionary dynamics are distinct from ecological ones, though related. The Reference's biological contexts are much more precise. Rating: 5
+- PC 2 (Economic Development): "Development in an economy is driven by investment and shaped by market" is grammatically awkward ("by the market"). "The process of development involves industrialization and globalization" is historically specific, not a universal law of economic development. The Reference maintains universal applicability within its chosen domains. Rating: 4
+- PC 3 (Personal Growth): "Growth in an individual is driven by experience and shaped by challenge" is a platitude but generally true. The mapping works reasonably well, though it remains superficial compared to the Reference's detailed psychological mappings. Rating: 6
+- PC 4 (Technological Innovation): "Innovation in an industry is driven by research and shaped by demand" is accurate. "The process of innovation involves prototyping and scaling" is also a valid description. This is one of the better mappings in the Target, though still less detailed than the Reference. Rating: 6
+- PC 5 (Cultural Evolution): "Evolution in a society is driven by interaction and shaped by tradition" is a plausible high-level summary. However, the overall template forces a very generic description that lacks the specific mechanisms found in the Reference's sociological contexts (like Idea Competition). Rating: 5
+
+#### Beauty
+The prose is highly repetitive and formulaic, reading like a fill-in-the-blank exercise rather than a cohesive narrative. Form (a) suffers from missing articles (e.g., "shaped by market," "adapt to challenge"). Form (b) corrects these but remains uninspired. The Reference's prose is significantly more beautiful, idiomatic, and engaging.
+Rating: 3
+
+#### Intelligence
+The archetype describes "growth" in the most generic terms possible: input leads to growth, shaped by conditions, resulting in maturity or stagnation. It offers no specific mechanism, feedback loop, or structural insight. The Reference's archetypes (like Competitive Exclusion) provide deep, specific models of system behavior. This Target archetype is a generic framework, not a specific structural insight.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains are broad and distinct (biology, economics, psychology, technology, culture). However, the metanyms often rely on generic terms or near-synonyms (e.g., "evolution," "development," "growth," "innovation," "evolution" for GROWTH). The Reference achieves much better semantic separation while maintaining structural rigor.
+Rating: 4
+
+#### Impressive length
+The template is extremely brief (four sentences) and lacks the detailed elaboration of mechanisms, edge cases, and temporal dynamics that characterize the Reference templates. It is significantly worse than the Reference on this criterion.
+Rating: 2
+
+### Archetypal context 4: Information Processing
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Networks): "Effective processing requires learning to experience" is grammatically incorrect and nonsensical in Form (a). "Failure in processing can lead to misfire" is a vast oversimplification of neural dysfunction. The Reference's scientific contexts are highly accurate and grammatically sound. Rating: 3
+- PC 2 (Computer Systems): "Effective computation requires upgrading to software update" is grammatically broken in Form (a). The mapping of "upgrading" to ADAPTATION and "software update" to CHANGE is clunky and inaccurate to how computation fundamentally works (computation itself doesn't require software updates to function). Rating: 3
+- PC 3 (Human Cognition): "Effective thinking requires adaptation to new information" is reasonable. However, the overall mapping is very high-level and lacks the precision of the Reference's cognitive/psychological contexts. Rating: 5
+- PC 4 (Organizational Management): "Effective decision-making requires restructuring to market change" is grammatically awkward. While organizations do process information, the specific mapping here is generic and less precise than the Reference's organizational contexts. Rating: 4
+- PC 5 (Ecosystem Dynamics): "Nutrient cycling in an ecosystem involves sunlight and growth" is factually confused; nutrient cycling involves the movement of matter (like nitrogen or carbon), while sunlight is energy flow. These are distinct processes in ecology. The Reference does not make such fundamental domain errors. Rating: 2
+
+#### Beauty
+The template produces grammatically broken sentences in Form (a) (e.g., "learning to experience," "upgrading to software update"). The prose is robotic and lacks any stylistic merit. The Reference is vastly superior in its grammatical correctness, flow, and domain-appropriate tone.
+Rating: 1
+
+#### Intelligence
+The archetype is a generic input-output model: systems take input, process it, and produce output, subject to constraints. This is the most basic definition of a system, offering no specific structural insight or novel mapping. The Reference's archetypes (like Gradient-Guided Navigation) describe specific, complex algorithms of behavior. This Target archetype is trivial.
+Rating: 1
+
+#### Domains far apart / metanyms not synonymous
+The domains are distinct, but the metanyms are often generic or poorly chosen (e.g., mapping "sunlight" to INPUT for "nutrient cycling"). The metanyms do not form a coherent, specific structure across the domains in the way the Reference's metanyms do.
+Rating: 3
+
+#### Impressive length
+The template is again only four sentences long, providing a bare-bones description with no depth or elaboration. It is significantly shorter and less impressive than the Reference templates.
+Rating: 2
+
+### Archetypal context 5: Risk Management
+
+#### Factually correct (per parallel context)
+- PC 1 (Financial Markets): "Effective risk management requires forecasting for market crash" is grammatically awkward. While the concepts map generally to finance, the phrasing forced by the template is unnatural and less precise than the Reference's financial contexts (like Sovereign Debt). Rating: 5
+- PC 2 (Healthcare): "Effective risk management requires readiness for outbreak" is missing an article in Form (a). The mapping is plausible but highly generic, lacking the specific mechanistic detail found in the Reference's medical/biological contexts. Rating: 5
+- PC 3 (Cybersecurity): "Effective risk management requires readiness for attack" is again missing an article. The mapping works at a high level but is superficial compared to the Reference's detailed Cybersecurity Breach context. Rating: 5
+- PC 4 (Disaster Preparedness): "Effective risk management requires readiness for emergency" (missing article). The mapping is straightforward but lacks depth. The Reference's contexts provide much more detailed causal narratives. Rating: 5
+- PC 5 (Project Management): "Effective risk management requires readiness for change request" (missing article). The mapping of "change request" to EVENT and "scope creep" to THREAT is a bit muddled (scope creep is often the result of poorly managed change requests, not a separate threat). Rating: 4
+
+#### Beauty
+The prose is highly repetitive and suffers from consistent grammatical issues in Form (a) (missing articles before singular countable nouns like "market crash," "outbreak," "attack"). Form (b) is dry and reads like a corporate manual. The Reference's prose is elegant, grammatically flawless in Form (a), and highly idiomatic in Form (b).
+Rating: 2
+
+#### Intelligence
+The archetype describes basic risk management: identify a threat, assess it, prepare, and respond. This is a standard operational procedure, not a deep structural archetype or a novel systemic insight. The Reference's archetypes reveal hidden structural similarities across disparate fields; this Target archetype merely applies a generic management framework to different domains.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains are distinct, but the metanyms are highly repetitive. The word "risk" is used as the metanym for RISK in all five contexts. "Readiness" is used four times for PREPARATION. "Monitoring" and "planning" are repeated. This completely fails the criterion that metanyms should not be synonymous, let alone identical. The Reference uses highly distinct metanyms for every slot.
+Rating: 1
+
+#### Impressive length
+The template is four sentences long, offering no detailed elaboration of the risk management process, failure modes, or systemic consequences. It is vastly inferior to the Reference in length and complexity.
+Rating: 2
+
+### Structural diversity across the submitted set
+The five archetypes submitted (Resource Allocation, Conflict Resolution, Growth and Development, Information Processing, Risk Management) are not distinct structural mechanisms; they are merely generic, high-level categories of system behavior. They all follow a nearly identical, simplistic logical structure: [System] does [Process] to achieve [Goal]; success is good, failure is bad. There is no diversity in the *shape* of the systems described, unlike the Reference, which features distinct structures like gradient descent, containment breaches, recursive competition, and temporal debt accumulation. The Target's archetypes are uniformly flat and structurally identical in their simplicity.
+Rating: 1
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc":           [3, 5, 4, 3, 4],
+          "beauty":                   2,
+          "intelligence":             2,
+          "instantiation_distinctness": 4,
+          "impressive_length":        2
+        },
+        {
+          "name": "Conflict Resolution",
+          "factual_per_pc":           [3, 5, 5, 3, 2],
+          "beauty":                   2,
+          "intelligence":             1,
+          "instantiation_distinctness": 3,
+          "impressive_length":        2
+        },
+        {
+          "name": "Growth and Development",
+          "factual_per_pc":           [5, 4, 6, 6, 5],
+          "beauty":                   3,
+          "intelligence":             2,
+          "instantiation_distinctness": 4,
+          "impressive_length":        2
+        },
+        {
+          "name": "Information Processing",
+          "factual_per_pc":           [3, 3, 5, 4, 2],
+          "beauty":                   1,
+          "intelligence":             1,
+          "instantiation_distinctness": 3,
+          "impressive_length":        2
+        },
+        {
+          "name": "Risk Management",
+          "factual_per_pc":           [5, 5, 5, 5, 4],
+          "beauty":                   2,
+          "intelligence":             2,
+          "instantiation_distinctness": 1,
+          "impressive_length":        2
+        }
+      ],
+      "structural_diversity": 1
+    }
+  }
+}
+```

@@ -1,0 +1,47 @@
+## Target Submission
+
+### Archetypal context 1: The Evolutionary Arms Race
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): The description accurately captures the coevolutionary cycle between host and pathogen, including the selective pressures and the resulting specialization. It aligns well with established evolutionary principles. Rating: 7
+- PC 2 (Cybersecurity): The depiction of an attacker and defender adapting through patches and exploits reflects the ongoing cybersecurity arms race, consistent with current understanding. Rating: 7
+- PC 3 (Military Technology): The cycle of developing defensive and offensive weapons, with specialization and resource costs, correctly models military innovation dynamics. Rating: 7
+- PC 4 (Corporate Competition): The depiction of firms developing countermeasures against disruptive innovations, with resource tradeoffs, aligns with competitive dynamics. Rating: 7
+- PC 5 (Immune System): The process of somatic hypermutation and antigen adaptation is accurately described, matching immunological mechanisms. Rating: 7
+
+#### Beauty
+The narrative effectively captures the relentless, cyclical nature of adaptation in various systems, illustrating the tension between innovation and cost. Its metaphorical richness and cross-domain consistency lend it a compelling, elegant structure. Rating: 8
+
+#### Intelligence
+The description demonstrates a clear understanding of the core dynamic of reciprocal adaptation, integrating biological, technological, and strategic perspectives. It shows insight into the systemic costs and evolutionary pressures involved. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The contexts span biology, cybersecurity, military, corporate, and immunology, illustrating the same fundamental arms race dynamic across vastly different systems. The metanyms (e.g., pathogen vs. virus, defender vs. attacker, firm vs. startup) are clearly distinct and domain-specific. Rating: 8
+
+#### Impressive length
+The five contexts are elaborately detailed, each capturing the core dynamic with sufficient depth and nuance, demonstrating a comprehensive and lengthily developed set. Rating: 8
+
+### Structural diversity across the submitted set
+The contexts exhibit a recursive and layered structure: biological evolution, technological cybersecurity, military innovation, corporate rivalry, and immune response—all embodying the same arms race principle at different scales and systems. This demonstrates a high degree of systemic variation and depth in the archetype's instantiation. Rating: 8
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Evolutionary Arms Race",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

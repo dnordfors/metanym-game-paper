@@ -1,0 +1,163 @@
+```
+## Target Submission
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): The description of the blood clotting process accurately reflects the biological mechanisms involved, including the roles of tissue factor and clotting factors in the coagulation cascade. The details about the thrombin burst and the consequences of anticoagulant failure are also correct. Rating: 7
+- PC 2 (Immune Response): This context correctly outlines the immune response mechanism, detailing how dendritic cells activate immune cells and the resulting inflammatory cascade. The mention of cytokine storms and the role of checkpoints is factually accurate. Rating: 7
+- PC 3 (Financial Crisis): The explanation of how a default can trigger a financial crisis through contagion is factually sound. It accurately describes the roles of credit monitors and institutions in amplifying the risk signal. Rating: 7
+- PC 4 (Avalanche): The context accurately describes how a small disturbance can lead to an avalanche, detailing the roles of weak layers and snow grains in the process. The mention of fracture propagation is also correct. Rating: 7
+- PC 5 (Social Movement): This context correctly explains how a small incident can trigger a social movement, detailing the roles of activists and the process of mobilization. The mention of moderation mechanisms is also accurate. Rating: 7
+
+#### Beauty
+The language used in the Target Submission is clear and engaging, effectively conveying complex processes in a way that is accessible. The metaphors employed enhance the beauty of the descriptions, making them vivid and relatable. Overall, the aesthetic quality is on par with the Reference. Rating: 7
+
+#### Intelligence
+The Target Submission demonstrates a high level of intelligence by effectively linking complex biological, social, and economic processes through the archetypal context of cascade amplification. The explanations are insightful and reflect a deep understanding of the mechanisms involved. This level of analytical depth is comparable to the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The metanym sets in the Target Submission span diverse domains, including biology, economics, and social sciences. The metanyms chosen are distinct and not synonymous, effectively illustrating the archetypal context of cascade amplification across different fields. This diversity is similar to that found in the Reference. Rating: 7
+
+#### Impressive length
+Each parallel context in the Target Submission is well-developed, providing thorough explanations of the processes involved. The length and detail of the descriptions are impressive and comparable to the Reference, which also features extensive elaboration. Rating: 7
+
+### Archetypal context 2: Boundary Maintenance
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The description accurately reflects the structure and function of cell membranes, including the roles of channel proteins and the consequences of membrane breach. Rating: 7
+- PC 2 (National Border): This context correctly outlines the function of national borders, including the roles of customs and the implications of border breaches. Rating: 7
+- PC 3 (Psychological Self): The explanation of ego boundaries and their role in maintaining identity is factually sound, accurately describing defense mechanisms and the consequences of boundary breaches. Rating: 7
+- PC 4 (Ecosystem Edge): The context accurately describes the function of ecotones and the role of keystone species in maintaining ecological integrity. Rating: 7
+- PC 5 (Corporate Brand): This context correctly outlines the function of brand identity and the implications of breaches in brand integrity, including the role of brand managers. Rating: 7
+
+#### Beauty
+The language in the Target Submission is articulate and effectively conveys the importance of boundaries in various contexts. The use of metaphors enhances the beauty of the descriptions, making them engaging and thought-provoking. Overall, the aesthetic quality is comparable to the Reference. Rating: 7
+
+#### Intelligence
+The Target Submission demonstrates a high level of intelligence by effectively linking the concept of boundary maintenance across diverse fields, including biology, sociology, and business. The explanations are insightful and reflect a nuanced understanding of the mechanisms involved. This analytical depth is on par with the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The metanym sets in the Target Submission span a wide range of domains, including biology, sociology, and corporate governance. The metanyms chosen are distinct and not synonymous, effectively illustrating the archetypal context of boundary maintenance across different fields. This diversity is similar to that found in the Reference. Rating: 7
+
+#### Impressive length
+Each parallel context in the Target Submission is well-developed, providing thorough explanations of the processes involved. The length and detail of the descriptions are impressive and comparable to the Reference, which also features extensive elaboration. Rating: 7
+
+### Archetypal context 3: Selective Pressure (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): The description accurately reflects the process of natural selection, including the roles of alleles, mutations, and fitness in shaping gene pools. Rating: 7
+- PC 2 (Cultural Evolution): This context correctly outlines the process of cultural evolution, detailing how memes arise and spread within societies. Rating: 7
+- PC 3 (Market Selection): The explanation of how firms arise and compete in markets is factually sound, accurately describing the roles of entrepreneurship and profitability. Rating: 7
+- PC 4 (Neural Pruning): The context accurately describes the process of synaptic pruning in neural networks, detailing how synapses strengthen or weaken based on efficiency. Rating: 7
+- PC 5 (Scientific Progress): This context correctly outlines the process of scientific progress, detailing how hypotheses arise and gain acceptance within scientific communities. Rating: 7
+
+#### Beauty
+The language used in the Target Submission is clear and engaging, effectively conveying complex processes in a way that is accessible. The metaphors employed enhance the beauty of the descriptions, making them vivid and relatable. Overall, the aesthetic quality is on par with the Reference. Rating: 7
+
+#### Intelligence
+The Target Submission demonstrates a high level of intelligence by effectively linking complex processes of evolution across biological, cultural, and scientific domains. The explanations are insightful and reflect a deep understanding of the mechanisms involved. This level of analytical depth is comparable to the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The metanym sets in the Target Submission span diverse domains, including biology, culture, and economics. The metanyms chosen are distinct and not synonymous, effectively illustrating the archetypal context of selective pressure across different fields. This diversity is similar to that found in the Reference. Rating: 7
+
+#### Impressive length
+Each parallel context in the Target Submission is well-developed, providing thorough explanations of the processes involved. The length and detail of the descriptions are impressive and comparable to the Reference, which also features extensive elaboration. Rating: 7
+
+### Archetypal context 4: Commitment Device
+
+#### Factually correct (per parallel context)
+- PC 1 (Individual Savings): The description accurately reflects the mechanisms of savings and retirement accounts, including the roles of penalties and present bias. Rating: 7
+- PC 2 (Constitutional Democracy): This context correctly outlines the function of constitutions in protecting rights and preventing majoritarian tyranny. Rating: 7
+- PC 3 (Addiction Recovery): The explanation of sponsor relationships in addiction recovery is factually sound, accurately describing the roles of accountability and support. Rating: 7
+- PC 4 (Military Strategy): The context accurately describes the use of burned bridges in military strategy, detailing how they prevent retreat and promote advance. Rating: 7
+- PC 5 (Software Development): This context correctly outlines the role of code freezes in software development, including the implications for project management and scope. Rating: 7
+
+#### Beauty
+The language in the Target Submission is articulate and effectively conveys the importance of commitment devices in various contexts. The use of metaphors enhances the beauty of the descriptions, making them engaging and thought-provoking. Overall, the aesthetic quality is comparable to the Reference. Rating: 7
+
+#### Intelligence
+The Target Submission demonstrates a high level of intelligence by effectively linking the concept of commitment devices across diverse fields, including economics, politics, and psychology. The explanations are insightful and reflect a nuanced understanding of the mechanisms involved. This analytical depth is on par with the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The metanym sets in the Target Submission span a wide range of domains, including personal finance, governance, addiction recovery, military strategy, and software development. The metanyms chosen are distinct and not synonymous, effectively illustrating the archetypal context of commitment devices across different fields. This diversity is similar to that found in the Reference. Rating: 7
+
+#### Impressive length
+Each parallel context in the Target Submission is well-developed, providing thorough explanations of the processes involved. The length and detail of the descriptions are impressive and comparable to the Reference, which also features extensive elaboration. Rating: 7
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The description accurately reflects the process of water freezing, including the roles of temperature and nucleation in the phase transition. Rating: 7
+- PC 2 (Economic Bubble): This context correctly outlines the dynamics of economic bubbles, detailing how speculation and leverage interact at critical thresholds. Rating: 7
+- PC 3 (Revolution): The explanation of societal revolutions is factually sound, accurately describing the roles of tension and breaking points in driving change. Rating: 7
+- PC 4 (Ecological Collapse): The context accurately describes the process of ecological collapse, detailing how stress and tipping points affect ecosystems. Rating: 7
+- PC 5 (Paradigm Shift): This context correctly outlines the dynamics of scientific progress, detailing how anomalies and crises lead to paradigm shifts. Rating: 7
+
+#### Beauty
+The language used in the Target Submission is clear and engaging, effectively conveying complex processes in a way that is accessible. The metaphors employed enhance the beauty of the descriptions, making them vivid and relatable. Overall, the aesthetic quality is on par with the Reference. Rating: 7
+
+#### Intelligence
+The Target Submission demonstrates a high level of intelligence by effectively linking complex processes of phase transitions across various domains, including physics, economics, sociology, and ecology. The explanations are insightful and reflect a deep understanding of the mechanisms involved. This level of analytical depth is comparable to the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The metanym sets in the Target Submission span diverse domains, including physical sciences, economics, social sciences, and ecology. The metanyms chosen are distinct and not synonymous, effectively illustrating the archetypal context of phase transitions across different fields. This diversity is similar to that found in the Reference. Rating: 7
+
+#### Impressive length
+Each parallel context in the Target Submission is well-developed, providing thorough explanations of the processes involved. The length and detail of the descriptions are impressive and comparable to the Reference, which also features extensive elaboration. Rating: 7
+
+### Structural diversity across the submitted set
+The Target Submission showcases a high degree of structural diversity across the submitted archetypal contexts, with each context addressing different domains and employing distinct mechanisms. This variety enhances the overall richness of the submission, similar to the diversity found in the Reference. Rating: 7
+```
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Selective Pressure (Recursive)",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Commitment Device",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

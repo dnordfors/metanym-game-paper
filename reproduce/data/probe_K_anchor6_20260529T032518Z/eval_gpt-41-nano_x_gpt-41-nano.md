@@ -1,0 +1,163 @@
+## Target Submission
+
+### Archetypal context 1: The Decision-Making Cycle
+
+#### Factually correct (per parallel context)
+- PC 1 (Business Strategy): The description accurately captures how a decision based on market data is difficult to reverse, and how accumulated information influences the decision-maker’s confidence and costs. It aligns well with the reference’s depiction of decision inertia and information updating. Rating: 6
+- PC 2 (Military Command): The scenario correctly models how intelligence updates affect tactical decisions, and how reversal costs (resources, risk) influence persistence. It is consistent with the reference’s emphasis on costs and information. Rating: 6
+- PC 3 (Personal Life): The example of personal choices based on accumulating information and the difficulty of reversal is appropriate, matching the reference’s core idea. Rating: 6
+- PC 4 (Scientific Research): The depiction of hypotheses and experimental data influencing research directions, with costs of changing hypotheses, is accurate and aligns with the reference. Rating: 6
+- PC 5 (Political Campaign): The scenario of policy decisions influenced by polling data and the costs of changing stances reflects the reference’s principles. Rating: 6
+
+#### Beauty
+The narrative effectively illustrates the tension between information accumulation and decision inertia across diverse domains, emphasizing the universal challenge of balancing new data against costs of change. Its clarity and coherence make it compelling, matching the reference’s emphasis on the elegance of the decision process. Rating: 6
+
+#### Intelligence
+The explanation demonstrates a solid understanding of how rational agents weigh benefits and costs, incorporating game theory and decision theory principles. It captures the essence of the archetype’s logic, matching the reference’s depth. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts span business, military, personal, scientific, and political spheres, illustrating the archetype’s broad applicability. The metanyms (e.g., plan, attack, choice, hypothesis, policy) are distinct and domain-specific, showing clear domain separation. Rating: 6
+
+#### Impressive length
+The five contexts are elaborated with sufficient detail, each capturing the core elements of the archetype without excessive verbosity. The consistent structure across contexts adds to the impression of a comprehensive treatment. Rating: 6
+
+### Archetypal context 2: The Resource Allocation Dilemma
+
+#### Factually correct (per parallel context)
+- PC 1 (Government Budgeting): The scenario correctly models how reallocations involve political costs, and how accumulated information influences decisions, aligning with the reference. Rating: 6
+- PC 2 (Corporate Investment): The depiction of resource reallocation with costs and information updates is accurate and consistent with the archetype. Rating: 6
+- PC 3 (Personal Time Management): The analogy of reallocating time with costs and information is appropriate, matching the reference’s principles. Rating: 6
+- PC 4 (Nonprofit Fundraising): The example of reallocating donations and the costs involved aligns well with the archetype. Rating: 6
+- PC 5 (Military Logistics): The scenario of convoy routing with reallocation costs and information updates fits the archetype’s pattern. Rating: 6
+
+#### Beauty
+The contexts illustrate the archetype’s core idea across diverse systems, emphasizing the universal trade-off between benefits of reallocation and costs. The narrative is clear and logically structured, matching the reference’s elegance. Rating: 6
+
+#### Intelligence
+The explanation captures the decision-making process involving costs and information, applying optimization principles across domains. It demonstrates understanding consistent with the reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts cover governance, corporate, personal, nonprofit, and military domains, with domain-specific metanyms (funds, capital, hours, donations, supplies). They are clearly distinct, fulfilling the diversity criterion. Rating: 6
+
+#### Impressive length
+Each context is sufficiently detailed, with parallel structure and domain-specific terminology, providing a comprehensive view of the archetype. Rating: 6
+
+### Archetypal context 3: The Evolutionary Arms Race
+
+#### Factually correct (per parallel context)
+- PC 1 (Military Rivalry): The scenario correctly models strategic choices with costs of switching, and how intelligence updates influence strategies, aligning with the reference. Rating: 6
+- PC 2 (Cybersecurity Competition): The depiction of attack and defense strategies with costs and information updates is accurate and consistent. Rating: 6
+- PC 3 (Biological Evolution): The analogy of strategies (mutation, stability) with costs and information is appropriate, matching the archetype. Rating: 6
+- PC 4 (Business Competition): The example of market strategies with costs of change and intelligence is fitting. Rating: 6
+- PC 5 (Political Rivalry): The scenario of policy stances with costs and intelligence updates aligns well. Rating: 6
+
+#### Beauty
+The contexts effectively demonstrate the archetype’s core across strategic, biological, and social systems, emphasizing the universal nature of adaptation costs. The coherence and clarity are high, matching the reference. Rating: 6
+
+#### Intelligence
+The explanation shows a nuanced understanding of game theory and strategic adaptation, applying the archetype broadly. It aligns with the reference’s depth. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts span military, cybersecurity, biology, business, and politics, with domain-specific metanyms (attack, defense, mutation, market, policy). They are domain-distinct, fulfilling the diversity criterion. Rating: 6
+
+#### Impressive length
+The five contexts are elaborated with domain-specific details, maintaining structural consistency and depth, matching the reference’s standards. Rating: 6
+
+### Archetypal context 4: The Cultural Transmission Process
+
+#### Factually correct (per parallel context)
+- PC 1 (Religious Tradition): The scenario correctly models belief propagation, costs of belief change, and influence of communication, aligning with the archetype. Rating: 6
+- PC 2 (Scientific Paradigm): The depiction of hypothesis adoption, information spread, and costs of paradigm shifts is accurate. Rating: 6
+- PC 3 (Political Ideology): The analogy of belief propagation via communication and costs of changing ideology is appropriate. Rating: 6
+- PC 4 (Social Norm): The example of norm adoption and resistance to change fits well. Rating: 6
+- PC 5 (Language Dialect): The scenario of dialect propagation and change with costs aligns with the archetype. Rating: 6
+
+#### Beauty
+The contexts illustrate the archetype’s core across social, scientific, political, and linguistic systems, emphasizing the role of communication and costs in belief stability. The narrative is clear and cohesive, matching the reference. Rating: 6
+
+#### Intelligence
+The explanation demonstrates understanding of how information, communication, and costs influence cultural stability, applying the archetype broadly. It aligns with the reference’s depth. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts cover religion, science, politics, social norms, and language, with domain-specific metanyms (faith, hypothesis, policy, norm, dialect). They are clearly distinct, fulfilling the diversity criterion. Rating: 6
+
+#### Impressive length
+Each context is elaborated with domain-specific details, maintaining structural symmetry and depth, matching the reference’s standards. Rating: 6
+
+### Archetypal context 5: The Scaffold-Dependent Assembly
+
+#### Factually correct (per parallel context)
+- PC 1 (Ribosome Assembly): The description accurately models how rRNA scaffolds position proteins, nucleation, and regulation, aligning with the reference. Rating: 6
+- PC 2 (Construction): The analogy of scaffolding in building aligns well with the archetype, correctly emphasizing spatial and temporal coordination. Rating: 6
+- PC 3 (Software Development): The depiction of frameworks providing structure and coordination is appropriate and consistent. Rating: 6
+- PC 4 (Crystal Growth): The seed crystal analogy correctly captures nucleation and structural templating. Rating: 6
+- PC 5 (Social Movement): The analogy of organization scaffolding in mobilization fits the archetype, emphasizing structure and communication. Rating: 6
+
+#### Beauty
+The contexts effectively demonstrate the archetype’s universality across biological, physical, technological, and social systems. The explanations are clear, cohesive, and domain-appropriate, matching the reference. Rating: 6
+
+#### Intelligence
+The explanation shows a deep understanding of how scaffolds provide necessary structure and coordination, applying the archetype across systems. It aligns with the reference’s depth. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts span molecular biology, construction, software, crystallography, and social movements, with domain-specific metanyms (rRNA, materials, code, seed crystal, organization). They are domain-distinct, fulfilling the diversity criterion. Rating: 6
+
+#### Impressive length
+Each context is elaborated with sufficient detail, maintaining structural symmetry and depth, matching the reference’s standards. Rating: 6
+
+---
+
+## Structural diversity across the submitted set
+The five contexts cover decision processes, resource management, strategic conflict, cultural evolution, and structural assembly, spanning biological, social, technological, and strategic systems. They demonstrate broad applicability and different structural features, including recursive elements (e.g., the decision cycle) and diverse mechanisms (costs, propagation, structure). This variety aligns well with the reference’s emphasis on system diversity. Rating: 6
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Decision-Making Cycle",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "The Resource Allocation Dilemma",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "The Evolutionary Arms Race",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "The Cultural Transmission Process",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "The Scaffold-Dependent Assembly",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

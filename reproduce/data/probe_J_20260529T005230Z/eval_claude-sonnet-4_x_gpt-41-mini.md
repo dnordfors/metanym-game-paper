@@ -1,0 +1,215 @@
+## Submission 1
+
+### Archetypal context 1: Resource Flow and Transformation
+
+#### Factually correct (per parallel context)
+- PC 1 (River System): The description accurately captures how rivers transport water and sediment, though the framing of sedimentation as primarily altering water quality rather than being a natural transport process is somewhat misleading. Evaporation as the primary loss mechanism is correct but incomplete. Rating: 7
+- PC 2 (Electrical Grid): The description correctly identifies power plants, transmission lines, voltage conversion, and line losses. The relationship between voltage conversion and power delivery is accurately portrayed, and blackouts as system failures are appropriately identified. Rating: 9
+- PC 3 (Supply Chain): The description accurately represents factory production, transportation routes, packaging processes, and spoilage as a loss mechanism. The connection between transportation efficiency and product delivery is correctly established. Rating: 9
+- PC 4 (Neural System): The description correctly identifies sensory neurons, axons, synaptic transmission, and signal degradation. The pathway from sensory to motor neurons and the relationship between signal integrity and paralysis are accurately portrayed. Rating: 9
+- PC 5 (Information Network): The description accurately represents data servers, communication links, encoding processes, and data corruption. The relationship between network reliability and data integrity is correctly established. Rating: 9
+
+#### Beauty
+The archetype captures an elegant universal pattern of flow, transformation, and loss that resonates across vastly different scales and domains. The template reveals the hidden structural similarity between a river carrying sediment and a neuron transmitting signals, creating moments of recognition that feel both surprising and inevitable. The progression from source to receiver with intermediate transformation creates a satisfying narrative arc that feels complete and purposeful.
+Rating: 8
+
+#### Intelligence
+This archetype demonstrates sophisticated insight into systems thinking by identifying the universal pattern of resource flow with transformation and loss. The recognition that efficiency, transformation quality, and failure modes are structurally identical across physical, biological, and technological systems shows deep analytical thinking. The template successfully abstracts away surface differences to reveal fundamental operational principles.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains span physical geography, electrical engineering, logistics, neuroscience, and computer networks - representing fundamentally different scales and phenomena. The metanyms are genuinely distinct: "sedimentation" vs "voltage conversion" vs "packaging" vs "synaptic transmission" vs "data encoding" share no semantic overlap while serving identical structural roles. The domains are sufficiently distant that the parallels feel genuinely insightful rather than obvious.
+Rating: 9
+
+#### Impressive length
+The template contains eight distinct slots and forms a substantial paragraph that captures multiple aspects of the flow-transformation-loss dynamic. The length allows for meaningful complexity including efficiency factors, failure modes, and optimization principles, creating a rich structural framework that can accommodate detailed instantiations across domains.
+Rating: 7
+
+### Archetypal context 2: Competitive Selection under Constraint
+
+#### Factually correct (per parallel context)
+- PC 1 (Animal Territory): The description accurately represents territorial behavior, display mechanisms, and displacement outcomes. The relationship between territory scarcity and conflict is correctly established, though the framing of territorial signals as "feedback from the ecosystem" is somewhat imprecise. Rating: 8
+- PC 2 (Market Competition): The description correctly identifies market dynamics, marketing strategies, and competitive outcomes including bankruptcy. The relationship between market share scarcity and price wars is accurately portrayed. Rating: 9
+- PC 3 (Academic Publishing): The description accurately represents the competitive nature of academic publishing, research focus strategies, and citation feedback. The connection between publication scarcity and priority disputes is correctly established. Rating: 9
+- PC 4 (Immune Response): The description contains significant factual errors. Immune cells don't compete for antigens in the described manner, and the characterization of autoimmune attacks as arising from antigen scarcity is incorrect. The relationship between immune cell competition and infection is fundamentally misrepresented. Rating: 3
+- PC 5 (Political Campaign): The description accurately represents electoral competition, campaign messaging, and polling feedback. The relationship between voter competition and negative advertising is correctly established. Rating: 9
+
+#### Beauty
+The archetype captures the fundamental tension between aspiration and limitation that drives competition across biological, economic, and social systems. There's an elegant recognition that whether we're observing animals fighting for territory or researchers competing for publication slots, the same underlying dynamics of strategy, feedback, and resource scarcity create similar patterns of behavior and outcome.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates good insight into competitive dynamics and feedback loops, recognizing how resource constraints shape strategic behavior across diverse domains. The identification of feedback mechanisms and strategy adaptation shows sophisticated understanding of dynamic systems, though the immune system instantiation reveals some limitations in biological knowledge.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains span animal behavior, economics, academia, immunology, and politics - representing genuinely different spheres of activity. The metanyms like "display behavior" vs "marketing" vs "research focus" vs "receptor binding" vs "campaign message" are appropriately distinct, though some (like marketing and campaign message) share more semantic similarity than ideal.
+Rating: 7
+
+#### Impressive length
+The template contains eight slots and forms a substantial paragraph that captures the complexity of competitive dynamics including strategy, feedback, conflict, and failure modes. The length supports meaningful instantiation across domains while maintaining structural coherence.
+Rating: 7
+
+### Archetypal context 3: Hierarchical Control and Feedback
+
+#### Factually correct (per parallel context)
+- PC 1 (Corporate Management): The description accurately represents management hierarchies, task delegation, reporting structures, and performance feedback loops. The relationship between communication failures and missed deadlines is correctly established. Rating: 9
+- PC 2 (Computer OS): The description correctly identifies operating system control, system calls, status codes, and crash scenarios. The relationship between OS-application communication and system stability is accurately portrayed. Rating: 9
+- PC 3 (Endocrine System): The description accurately represents hormone signaling, target organ responses, and feedback mechanisms. The relationship between hormonal communication and physiological regulation is correctly established. Rating: 9
+- PC 4 (Military Command): The description correctly identifies command structures, order transmission, situation reporting, and mission outcomes. The relationship between communication integrity and mission success is accurately portrayed. Rating: 9
+- PC 5 (Educational System): The description accurately represents teaching, learning assessment, and instructional adaptation. The relationship between feedback and educational effectiveness is correctly established. Rating: 9
+
+#### Beauty
+The archetype reveals the elegant universality of hierarchical control with feedback across biological, technological, and social systems. There's something deeply satisfying about recognizing that the same control-feedback loop governs everything from hormone regulation to military command, suggesting fundamental principles of organization that transcend domain boundaries.
+Rating: 8
+
+#### Intelligence
+This archetype demonstrates excellent insight into control theory and cybernetics, recognizing the universal pattern of hierarchical control with feedback adjustment. The identification of instruction-execution-feedback loops as a fundamental organizational principle shows sophisticated systems thinking and understanding of regulatory mechanisms across diverse domains.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span corporate management, computer science, endocrinology, military organization, and education - representing fundamentally different organizational contexts. The metanyms are genuinely distinct: "task" vs "system call" vs "hormone" vs "order" vs "lesson" share no semantic overlap while serving identical control functions.
+Rating: 9
+
+#### Impressive length
+The template contains seven slots and forms a substantial paragraph that captures the full complexity of hierarchical control including instruction delivery, execution, feedback, adjustment, and failure modes. The length supports rich instantiation while maintaining clear structural relationships.
+Rating: 7
+
+### Archetypal context 4: Growth and Constraint
+
+#### Factually correct (per parallel context)
+- PC 1 (Tree Growth): The description accurately represents nutrient uptake, soil limitations, and dormancy responses. However, the characterization of soil as the primary constraint rather than one of several limiting factors is somewhat oversimplified. Rating: 7
+- PC 2 (Urban Development): The description correctly identifies capital investment, land constraints, and zoning limitations. The relationship between land scarcity and urban development patterns is accurately portrayed. Rating: 8
+- PC 3 (Tumor Growth): The description contains some inaccuracies. While oxygen limitation can affect tumor growth, the primary constraints are typically nutrients and space rather than oxygen alone. The relationship between constraint and necrosis is correct but oversimplified. Rating: 6
+- PC 4 (Startup Company): The description accurately represents funding acquisition, market constraints, and growth limitations. The relationship between market saturation and business plateaus is correctly established. Rating: 8
+- PC 5 (Social Movement): The description correctly identifies supporter recruitment and societal constraints on movement growth. The relationship between social capacity and movement sustainability is accurately portrayed. Rating: 8
+
+#### Beauty
+The archetype captures the poignant universal pattern of growth meeting its limits, revealing how constraint shapes form across biological, urban, economic, and social systems. There's something profound about recognizing that a tree reaching soil limits and a startup hitting market saturation represent the same fundamental dynamic of expansion meeting resistance.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates good insight into growth dynamics and limiting factors, recognizing how constraints shape system development across diverse domains. The identification of stasis and decline phases shows understanding of system lifecycle dynamics, though some biological instantiations could be more precise.
+Rating: 7
+
+#### Domains far apart / metonyms not synonymous
+The domains span botany, urban planning, oncology, business, and sociology - representing genuinely different scales and phenomena. The metanyms like "nutrients" vs "capital" vs "oxygen" vs "funding" vs "supporters" are appropriately distinct, representing different types of growth-enabling resources.
+Rating: 8
+
+#### Impressive length
+The template contains seven slots and forms a substantial paragraph that captures growth dynamics, constraint mechanisms, stasis states, and failure modes. The length allows for meaningful complexity while maintaining focus on the growth-constraint relationship.
+Rating: 7
+
+### Archetypal context 5: Signal Detection and Decision
+
+#### Factually correct (per parallel context)
+- PC 1 (Radar System): The description accurately represents radar operation, signal detection, weather interference, and threshold setting. The relationship between detection criteria and false alarm rates is correctly established. Rating: 9
+- PC 2 (Medical Diagnosis): The description correctly identifies diagnostic processes, symptom recognition, and the trade-off between false positives and negatives. The relationship between diagnostic criteria and medical outcomes is accurately portrayed. Rating: 9
+- PC 3 (Animal Predator): The description accurately represents predator detection behavior, environmental noise, and hunting decisions. The relationship between detection thresholds and survival outcomes is correctly established. Rating: 9
+- PC 4 (Spam Filter): The description correctly identifies email filtering, classification algorithms, and error types. The relationship between filter sensitivity and inbox management is accurately portrayed. Rating: 9
+- PC 5 (Quality Control): The description accurately represents inspection processes, defect detection, and quality thresholds. The relationship between detection criteria and manufacturing outcomes is correctly established. Rating: 9
+
+#### Beauty
+The archetype reveals the elegant universality of signal detection theory across technological, biological, and human decision-making contexts. There's something beautiful about recognizing that a predator deciding whether to attack and a doctor making a diagnosis are engaged in fundamentally the same cognitive process of extracting signal from noise.
+Rating: 9
+
+#### Intelligence
+This archetype demonstrates excellent insight into signal detection theory and decision-making under uncertainty. The recognition that threshold setting, error trade-offs, and optimization principles are identical across radar systems, medical diagnosis, and biological behavior shows sophisticated understanding of information processing and decision theory.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span military technology, medicine, animal behavior, computer science, and manufacturing - representing fundamentally different contexts for decision-making. The metanyms are genuinely distinct: "aircraft echo" vs "disease symptom" vs "prey movement" vs "spam email" vs "defective product" share no semantic overlap while serving identical detection functions.
+Rating: 9
+
+#### Impressive length
+The template contains eight slots and forms a substantial paragraph that captures the full complexity of signal detection including noise sources, decision criteria, error types, optimization trade-offs, and system-level consequences. The length supports rich instantiation across domains.
+Rating: 8
+
+### Archetypal context 6: Cyclical Renewal and Decay
+
+#### Factually correct (per parallel context)
+- PC 1 (Leaf): The description accurately represents leaf development, photosynthesis, senescence, and seasonal cycles. The relationship between environmental factors and leaf lifecycle is correctly established. Rating: 9
+- PC 2 (Business): The description correctly identifies business lifecycle phases, capital dynamics, and market pressures. The relationship between business cycles and economic renewal is accurately portrayed. Rating: 8
+- PC 3 (Star): The description accurately represents stellar evolution, hydrogen fusion, and stellar death. The relationship between stellar lifecycles and galactic renewal is correctly established. Rating: 9
+- PC 4 (Human Life Cycle): The description correctly identifies human development phases, health dynamics, and aging processes. The relationship between individual lifecycles and societal renewal is accurately portrayed. Rating: 9
+- PC 5 (Software Project): The description accurately represents software development, maintenance, and deprecation phases. The relationship between technical debt and project lifecycle is correctly established. Rating: 8
+
+#### Beauty
+The archetype captures the profound universal pattern of birth, growth, maturity, decline, and renewal that governs everything from leaves to stars to human societies. There's something deeply moving about recognizing that the same cyclical pattern that governs our own lives also governs the lifecycle of software projects and stellar evolution.
+Rating: 9
+
+#### Intelligence
+This archetype demonstrates excellent insight into lifecycle dynamics and renewal processes, recognizing how cyclical patterns of growth, maturity, and decay contribute to system-level sustainability across biological, technological, and cosmic scales. The identification of both internal and external factors influencing lifecycle timing shows sophisticated systems thinking.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains span botany, business, astrophysics, human biology, and software engineering - representing vastly different scales from molecular to cosmic. The metanyms like "sprouting" vs "startup phase" vs "protostar" vs "childhood" vs "development" are appropriately distinct while capturing identical lifecycle phases.
+Rating: 9
+
+#### Impressive length
+The template contains nine slots and forms a substantial paragraph that captures the full complexity of cyclical processes including growth phases, resource dynamics, stress factors, aging mechanisms, and renewal contributions. The length supports rich instantiation while maintaining cyclical coherence.
+Rating: 8
+
+### Structural diversity across the submitted set
+The six archetypal contexts represent fundamentally different system structures: linear flow with transformation (Resource Flow), competitive multi-agent dynamics (Competitive Selection), hierarchical control loops (Hierarchical Control), growth-constraint relationships (Growth and Constraint), signal-noise decision processes (Signal Detection), and cyclical renewal patterns (Cyclical Renewal). Each archetype captures a distinct organizational principle - flow, competition, control, limitation, detection, and renewal - that operates across multiple scales and domains. The structural diversity is impressive, spanning static flows, dynamic competitions, regulatory hierarchies, constrained growth, probabilistic decisions, and temporal cycles.
+Rating: 9
+
+```json
+{
+  "scores": {
+    "1": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Flow and Transformation",
+          "factual_per_pc":           [7, 9, 9, 9, 9],
+          "beauty":                   8,
+          "intelligence":             8,
+          "instantiation_distinctness": 9,
+          "impressive_length":        7
+        },
+        {
+          "name": "Competitive Selection under Constraint",
+          "factual_per_pc":           [8, 9, 9, 3, 9],
+          "beauty":                   7,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Hierarchical Control and Feedback",
+          "factual_per_pc":           [9, 9, 9, 9, 9],
+          "beauty":                   8,
+          "intelligence":             9,
+          "instantiation_distinctness": 9,
+          "impressive_length":        7
+        },
+        {
+          "name": "Growth and Constraint",
+          "factual_per_pc":           [7, 8, 6, 8, 8],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 8,
+          "impressive_length":        7
+        },
+        {
+          "name": "Signal Detection and Decision",
+          "factual_per_pc":           [9, 9, 9, 9, 9],
+          "beauty":                   9,
+          "intelligence":             9,
+          "instantiation_distinctness": 9,
+          "impressive_length":        8
+        },
+        {
+          "name": "Cyclical Renewal and Decay",
+          "factual_per_pc":           [9, 8, 9, 9, 8],
+          "beauty":                   9,
+          "intelligence":             8,
+          "instantiation_distinctness": 9,
+          "impressive_length":        8
+        }
+      ],
+      "structural_diversity": 9
+    }
+  }
+}
+```

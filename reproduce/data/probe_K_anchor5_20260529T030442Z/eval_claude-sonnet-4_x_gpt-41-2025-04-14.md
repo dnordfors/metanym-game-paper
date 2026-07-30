@@ -1,0 +1,162 @@
+## Target Submission
+
+### Archetypal context 1: Inheritance and Transmission
+
+#### Factually correct (per parallel context)
+- PC 1 (Genetics): The description of genetic inheritance is accurate but oversimplified. The statement that "mutations can alter or eliminate genes" is correct, though mutations more commonly alter gene function rather than eliminate entire genes. The basic principles of inheritance, population genetics, and adaptation are sound. Rating: 4
+- PC 2 (Cultural Tradition): The account of cultural transmission is factually correct but lacks nuance. Communities do receive customs from ancestors, and reinterpretation does occur, though the process is more complex than described. The role of anthropology in studying cultural transmission is accurate. Rating: 4
+- PC 3 (Software Development): The description contains some inaccuracies. "Refactoring" typically refers to restructuring existing code without changing functionality, not inheriting functions from legacy systems. The term "generations" is inappropriately applied to software versions. The basic concept of code evolution is sound but poorly expressed. Rating: 3
+- PC 4 (Language Evolution): The description is generally accurate. Languages do borrow words, semantic shifts occur, and historical linguistics studies these processes. However, the relationship between "proto-languages" and borrowing is somewhat confused—borrowing typically occurs between contemporary languages, not from proto-languages. Rating: 4
+- PC 5 (Legal Precedent): The description is factually sound. Legal systems do adopt doctrines through citation, reinterpretation occurs, and legal scholarship studies these processes. The concept of doctrines accumulating or being abandoned within jurisdictions is accurate. Rating: 5
+
+#### Beauty
+The archetypal context lacks the elegance and aesthetic appeal found in the Reference. The template is mechanically repetitive without the graceful flow that characterizes beautiful writing. The parallel contexts feel forced and formulaic rather than naturally arising from a deeper structural insight. The language is pedestrian and lacks the poetic resonance that would elevate this to something beautiful. Rating: 3
+
+#### Intelligence
+The intellectual depth is significantly below the Reference level. The template captures only surface-level similarities without revealing profound structural insights. The concept of "inheritance and transmission" is too broad and obvious, lacking the sophisticated abstraction that demonstrates real intelligence. The analysis doesn't uncover non-obvious connections or provide surprising insights into the nature of these systems. Rating: 3
+
+#### Domains far apart / metonyms not synonymous
+The domains span reasonable breadth (biology, culture, technology, linguistics, law) but the metonyms are often near-synonymous. "Gene/custom/function/word/doctrine" are all essentially "transmitted units," and "inheritance/transmission/refactoring/borrowing/citation" are all variants of "passing along." The distinctiveness is much weaker than the Reference, which achieves true semantic distance between parallel terms. Rating: 3
+
+#### Impressive length
+The template is substantially shorter than the Reference templates. Where the Reference provides rich, detailed context with multiple interconnected concepts, this template offers only a basic sketch. The brevity undermines the ability to capture complex systemic relationships and reduces the template to a simple pattern rather than a comprehensive archetypal structure. Rating: 2
+
+### Archetypal context 2: Resource Allocation and Competition
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecology): The description is accurate regarding species competition for food and the role of game theory in understanding ecological dynamics. The balance between foraging and predation risk is correctly characterized, and the relationship between resource distribution and ecosystem stability is sound. Rating: 5
+- PC 2 (Business): The account of firms competing for market share is generally accurate. The balance between marketing investment and bankruptcy risk is correctly identified, and the role of economics in studying market dynamics is appropriate. However, the phrasing "balance marketing and bankruptcy" is awkward. Rating: 4
+- PC 3 (Academic Funding): The description accurately captures the competitive nature of research funding. The balance between proposal effort and rejection risk is realistic, and scientometrics does study these patterns. The relationship between funding distribution and disciplinary dynamics is correctly characterized. Rating: 5
+- PC 4 (Sports League): The description is factually sound regarding team competition for championships. The balance between tactical decisions and injury risk is appropriate, and sports analytics does examine these patterns. The relationship between championship distribution and league dynamics is accurate. Rating: 5
+- PC 5 (Internet Bandwidth): The technical description is generally accurate. Users do compete for bandwidth, and network theory studies congestion patterns. However, "download method" as a strategy is somewhat imprecise, and the risk of "throttling" is more about ISP policies than competitive dynamics. Rating: 4
+
+#### Beauty
+The archetypal context shows some improvement over the first but still lacks the aesthetic sophistication of the Reference. The template has a more natural flow than the inheritance context, and the competitive dynamics create some dramatic tension. However, the language remains utilitarian and doesn't achieve the elegant abstraction that characterizes beautiful intellectual work. Rating: 4
+
+#### Intelligence
+This context demonstrates moderate intellectual insight by recognizing the common structure of competitive resource allocation across diverse domains. The template captures meaningful strategic trade-offs and systemic effects. However, the analysis remains at a fairly obvious level without the deep structural insights that would indicate superior intelligence. The connections, while valid, are not particularly surprising or profound. Rating: 4
+
+#### Domains far apart / metonyms not synonymous
+The domains achieve reasonable separation (ecology, business, academia, sports, technology) and the metonyms show better distinctiveness than the first context. "Food/market share/grant/championship/bandwidth" represent genuinely different types of resources, though they're all still fundamentally "competed-for resources." The separation is better than the inheritance context but not as sophisticated as the Reference. Rating: 4
+
+#### Impressive length
+The template length is similar to the inheritance context—adequate but not impressive. It captures the basic competitive dynamics but lacks the rich detail and multiple interconnected concepts that would demonstrate comprehensive understanding of the archetypal structure. The brevity limits the depth of insight possible. Rating: 3
+
+### Archetypal context 3: Feedback and Regulation
+
+#### Factually correct (per parallel context)
+- PC 1 (Physiology): The description of homeostatic regulation is accurate. The pancreas does detect blood sugar changes and insulin does restore balance, and diabetes can result from feedback failure. However, the pancreas is more of an effector than a sensor—glucose sensing involves multiple mechanisms. Rating: 4
+- PC 2 (Climate Control): The description of thermostat function is accurate and straightforward. Thermometers detect temperature changes, and heating/cooling systems respond to restore set points. The potential for overheating from thermostat failure is correct. Rating: 5
+- PC 3 (Economic Policy): The description correctly identifies central banks as detecting inflation and using interest rates to maintain stability. The potential for recession from monetary policy failure is accurate. However, the relationship is more complex than the simple feedback loop described. Rating: 4
+- PC 4 (Computer Systems): The description of load balancing is generally accurate. Monitors do track CPU usage and schedulers redistribute tasks to maintain uptime. System crashes can result from load balancing failures. The technical details are sound if simplified. Rating: 5
+- PC 5 (Social Groups): The description captures the basic concept of social regulation through norms and mediation. However, "conflict deviating from expectation" is an awkward formulation, and the feedback mechanisms in social systems are much more complex than described. Rating: 3
+
+#### Beauty
+This context achieves better aesthetic quality than the previous two. The concept of feedback and regulation has an inherent elegance, and the template captures this with reasonable grace. The parallel between physiological homeostasis and social harmony has poetic appeal. However, the execution remains somewhat mechanical and lacks the sophisticated beauty of the Reference. Rating: 4
+
+#### Intelligence
+The intellectual content shows good insight into the universal nature of feedback mechanisms across diverse systems. The recognition that regulation requires sensors, effectors, and the potential for failure demonstrates solid analytical thinking. However, the analysis doesn't reveal particularly deep or surprising insights about the nature of regulatory systems. Rating: 4
+
+#### Domains far apart / metonyms not synonymous
+The domains span reasonable breadth (biology, technology, economics, computing, sociology) and achieve moderate distinctiveness. "Homeostasis/temperature/stability/uptime/harmony" represent different types of regulated states, though they're all fundamentally "desired system states." The metonymic relationships are clearer than in previous contexts but still somewhat predictable. Rating: 4
+
+#### Impressive length
+The template maintains the same modest length as previous contexts. While it captures the essential feedback loop structure, it lacks the comprehensive detail that would demonstrate deep understanding of regulatory systems. The brevity prevents exploration of more sophisticated aspects like multiple feedback loops or hierarchical regulation. Rating: 3
+
+### Archetypal context 4: Emergence from Simple Rules
+
+#### Factually correct (per parallel context)
+- PC 1 (Ant Colony): The description accurately captures how ant colonies create trail networks through simple pheromone-following rules. The role of ethology in studying these phenomena is correct, and the characterization of emergent behavior is sound. Rating: 5
+- PC 2 (Market Economy): The description correctly identifies how complex price systems emerge from simple supply and demand interactions. The role of economics in studying market emergence is appropriate, and the basic mechanism is accurately described. Rating: 5
+- PC 3 (Cellular Automata): The description is technically accurate regarding how complex patterns like gliders emerge from simple cellular update rules. The role of complexity theory in studying these phenomena is correct, and the characterization of emergent computation is sound. Rating: 5
+- PC 4 (Crowd Movement): The description accurately captures how crowd flows emerge from simple following behaviors. The role of urban studies in analyzing pedestrian dynamics is appropriate, and the basic mechanism is correctly characterized. Rating: 5
+- PC 5 (Internet Routing): The description correctly identifies how complex data paths emerge from simple routing protocols. The role of computer science in studying network behavior is appropriate, and the basic mechanism of distributed routing is accurately described. Rating: 5
+
+#### Beauty
+This context achieves the highest aesthetic quality among the five. The concept of emergence has inherent beauty—the idea that complex, surprising patterns arise from simple rules has genuine poetic appeal. The template captures this elegance reasonably well, and the parallel contexts demonstrate this beauty across diverse domains. However, it still lacks the sophisticated literary quality of the Reference. Rating: 5
+
+#### Intelligence
+This context demonstrates the strongest intellectual insight of the five. The recognition that emergence from simple rules is a fundamental principle across radically different domains shows genuine analytical depth. The template captures non-obvious connections between ant behavior, market dynamics, computation, crowd psychology, and network protocols. This represents solid intellectual work, though not quite at the Reference level. Rating: 5
+
+#### Domains far apart / metonyms not synonymous
+The domains achieve excellent separation (biology, economics, mathematics, urban planning, computer science) and the metonyms show good distinctiveness. "Pheromone rule/supply-demand/update rule/follow-the-leader/routing protocol" represent genuinely different types of simple rules, and the emergent patterns are truly diverse. This is the strongest performance on this criterion among the five contexts. Rating: 5
+
+#### Impressive length
+The template maintains the same modest length as other contexts. While it captures the essential emergence structure adequately, it could benefit from more detailed exploration of the mechanisms by which simple rules generate complex patterns. The brevity is less problematic here because the core concept is well-captured. Rating: 3
+
+### Archetypal context 5: Thresholds and Phase Transitions
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The description of phase transitions is accurate. Water does undergo rapid transition at the freezing point, ice crystals can signal the approach, and physics studies these phenomena. However, freezing is typically reversible, contrary to the claim of irreversibility. Rating: 4
+- PC 2 (Financial Crisis): The description captures the basic concept of financial tipping points accurately. Markets can collapse rapidly when leverage exceeds critical thresholds, and default spikes can signal approaching crises. The characterization of finance studying these phenomena is correct. Rating: 5
+- PC 3 (Social Movement): The description accurately captures how social movements can rapidly emerge when participation reaches critical mass. The role of sociology in studying these phenomena is appropriate, and the basic threshold mechanism is correctly characterized. Rating: 5
+- PC 4 (Magnetization): The description is technically accurate regarding magnetic phase transitions at the Curie point. Materials do transition between paramagnetic and ferromagnetic states, and materials science studies these phenomena. However, the transition is typically reversible, not irreversible as claimed. Rating: 4
+- PC 5 (Forest Fire): The description accurately captures how forests can rapidly transition from unburned to burning when dryness exceeds ignition thresholds. The role of ecology in studying fire dynamics is appropriate, and the basic mechanism is correctly characterized. Rating: 5
+
+#### Beauty
+This context achieves good aesthetic quality through the dramatic concept of sudden transitions. The idea of systems crossing thresholds and undergoing rapid, often irreversible change has inherent drama and appeal. The template captures this reasonably well across diverse domains. However, the execution remains somewhat formulaic and lacks the sophisticated beauty of the Reference. Rating: 4
+
+#### Intelligence
+The intellectual content demonstrates good insight into the universal nature of threshold phenomena across diverse systems. The recognition that many systems exhibit sudden transitions when parameters cross critical values shows solid analytical thinking. However, the analysis doesn't reveal particularly deep insights about the mathematical or physical principles underlying phase transitions. Rating: 4
+
+#### Domains far apart / metonyms not synonymous
+The domains achieve reasonable separation (physics, finance, sociology, materials science, ecology) and the metonyms show moderate distinctiveness. "Freezing point/tipping point/critical mass/Curie point/ignition point" represent different types of thresholds, though they're all fundamentally "critical transition points." The distinctiveness is adequate but not exceptional. Rating: 4
+
+#### Impressive length
+The template maintains the same modest length as other contexts. While it captures the essential threshold structure, it lacks detailed exploration of the mechanisms underlying phase transitions, hysteresis effects, or the mathematical principles governing critical phenomena. The brevity limits the depth of insight possible. Rating: 3
+
+### Structural diversity across the submitted set
+
+The five archetypal contexts show moderate structural diversity compared to the Reference. They span inheritance/transmission, competition/allocation, regulation/feedback, emergence, and phase transitions—representing different fundamental system behaviors. However, several contexts share similar linear cause-effect structures, and the overall set lacks the sophisticated variety of system architectures found in the Reference. The emergence context stands out as structurally distinct, while the others follow more predictable patterns. The diversity is adequate but not exceptional. Rating: 4
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Inheritance and Transmission",
+          "factual_per_pc":           [4, 4, 3, 4, 5],
+          "beauty":                   3,
+          "intelligence":             3,
+          "instantiation_distinctness": 3,
+          "impressive_length":        2
+        },
+        {
+          "name": "Resource Allocation and Competition",
+          "factual_per_pc":           [5, 4, 5, 5, 4],
+          "beauty":                   4,
+          "intelligence":             4,
+          "instantiation_distinctness": 4,
+          "impressive_length":        3
+        },
+        {
+          "name": "Feedback and Regulation",
+          "factual_per_pc":           [4, 5, 4, 5, 3],
+          "beauty":                   4,
+          "intelligence":             4,
+          "instantiation_distinctness": 4,
+          "impressive_length":        3
+        },
+        {
+          "name": "Emergence from Simple Rules",
+          "factual_per_pc":           [5, 5, 5, 5, 5],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        },
+        {
+          "name": "Thresholds and Phase Transitions",
+          "factual_per_pc":           [4, 5, 5, 4, 5],
+          "beauty":                   4,
+          "intelligence":             4,
+          "instantiation_distinctness": 4,
+          "impressive_length":        3
+        }
+      ],
+      "structural_diversity": 4
+    }
+  }
+}
+```

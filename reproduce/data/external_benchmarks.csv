@@ -1,0 +1,21 @@
+# external_benchmarks.csv — published external scores for the 12-model roster
+# Purpose: reproducible substrate for the §4.3 / §5.3 external-validation correlations
+#   (previously prose-only; see provenance audit, this was unbacked by repo data).
+# Benchmark: GPQA Diamond, no-extended-thinking figures (matches the thinking-off council protocol).
+# RULE: a value is filled ONLY if attributable to a cited source. Unverified cells are left EMPTY
+#   with the exact source-to-pull recorded in gpqa_source. Do not fill from memory or from
+#   search snippets that conflate snapshots (e.g. gpt-4.1 vs gpt-4.1-nano both reported as 50.3).
+# Parsers: read with comment='#' (pandas) or skip lines beginning with '#'.
+model,vendor,gpqa_diamond,gpqa_source,note
+claude-opus-4.5,Anthropic,94.1,"Vellum LLM Leaderboard 2026 (vellum.ai/llm-leaderboard)",confirm standard/thinking-off snapshot
+claude-opus-4.1,Anthropic,80.9,"repo: papers/v3/paper1_v2/draft_svd_consensus_limits.md frontier table",repo-internal; original external source not recorded
+claude-opus-4.0,Anthropic,79.6,"repo: papers/v3/paper1_v2/draft_svd_consensus_limits.md frontier table",repo-internal; original external source not recorded
+claude-sonnet-4,Anthropic,75.4,"repo: papers/v3/paper1_v2/draft_svd_consensus_limits.md frontier table",repo-internal; original external source not recorded
+gemini-3.1-pro,Google,94.3,"repo draft table; matches public (Vellum / IntuitionLabs GPQA-Diamond, both report 94.3)",
+gemini-2.5-flash,Google,82.8,"repo: papers/v3/paper1_v2/draft_svd_consensus_limits.md frontier table",repo-internal; original external source not recorded
+gpt-4.1-2025-04-14,OpenAI,,"PULL FROM: vals.ai/models/openai_gpt-4.1-2025-04-14 or OpenAI gpt-4.1 model card",NEEDS SOURCING
+gpt-4.1-mini,OpenAI,,"PULL FROM: vals.ai per-model page / OpenAI gpt-4.1 model card",NEEDS SOURCING
+gpt-4.1-nano,OpenAI,,"PULL FROM: OpenAI gpt-4.1 model card / vals.ai",NEEDS SOURCING — search returned 50.3 but conflated it with full gpt-4.1; do not trust
+gpt-4o,OpenAI,,"PULL FROM: vals.ai/models/openai_gpt-4o",NEEDS SOURCING
+gpt-4o-2024-08-06,OpenAI,,"PULL FROM: vals.ai (its 'GPT-4o' currently resolves to the 2024-08-06 snapshot)",NEEDS SOURCING
+gpt-4o-mini,OpenAI,,"PULL FROM: vals.ai/models/openai_gpt-4o-mini",NEEDS SOURCING

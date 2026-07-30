@@ -1,0 +1,174 @@
+{
+  "reference_model": "claude-opus-4.5",
+  "reference_anchor": 7.0,
+  "ranking": [
+    {
+      "model": "claude-opus-4.0",
+      "calibrated_overall": 7.1866666666666665,
+      "stdev": 0.5861154435188626,
+      "n": 11,
+      "per_axis": {
+        "factual_avg": 7.156363636363636,
+        "beauty": 7.054545454545455,
+        "intelligence": 7.290909090909091,
+        "instantiation_distinctness": 7.2,
+        "impressive_length": 6.963636363636364,
+        "structural_diversity": 7.454545454545454
+      }
+    },
+    {
+      "model": "claude-opus-4.1",
+      "calibrated_overall": 7.098888888888888,
+      "stdev": 0.5743649203497676,
+      "n": 12,
+      "per_axis": {
+        "factual_avg": 7.06,
+        "beauty": 7.05,
+        "intelligence": 7.183333333333334,
+        "instantiation_distinctness": 7.266666666666667,
+        "impressive_length": 6.95,
+        "structural_diversity": 7.083333333333333
+      }
+    },
+    {
+      "model": "claude-opus-4.5",
+      "calibrated_overall": 7.0,
+      "stdev": 0.0,
+      "n": "anchor",
+      "per_axis": {
+        "factual_avg": 7.0,
+        "beauty": 7.0,
+        "intelligence": 7.0,
+        "instantiation_distinctness": 7.0,
+        "impressive_length": 7.0,
+        "structural_diversity": 7.0
+      }
+    },
+    {
+      "model": "claude-sonnet-4",
+      "calibrated_overall": 6.8966666666666665,
+      "stdev": 0.6880380049795913,
+      "n": 12,
+      "per_axis": {
+        "factual_avg": 7.0633333333333335,
+        "beauty": 6.633333333333334,
+        "intelligence": 6.883333333333333,
+        "instantiation_distinctness": 7.1,
+        "impressive_length": 6.616666666666667,
+        "structural_diversity": 7.083333333333333
+      }
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "calibrated_overall": 6.55212962962963,
+      "stdev": 0.6824647382822266,
+      "n": 12,
+      "per_axis": {
+        "factual_avg": 6.66,
+        "beauty": 6.138888888888889,
+        "intelligence": 6.447222222222222,
+        "instantiation_distinctness": 6.822222222222222,
+        "impressive_length": 6.5777777777777775,
+        "structural_diversity": 6.666666666666667
+      }
+    },
+    {
+      "model": "gemini-3.1-pro",
+      "calibrated_overall": 6.421818181818182,
+      "stdev": 0.7803603980088513,
+      "n": 11,
+      "per_axis": {
+        "factual_avg": 6.694545454545454,
+        "beauty": 6.4363636363636365,
+        "intelligence": 6.345454545454546,
+        "instantiation_distinctness": 6.709090909090909,
+        "impressive_length": 5.890909090909091,
+        "structural_diversity": 6.454545454545454
+      }
+    },
+    {
+      "model": "gpt-41-mini",
+      "calibrated_overall": 6.243518518518519,
+      "stdev": 1.1781843143004616,
+      "n": 12,
+      "per_axis": {
+        "factual_avg": 6.644444444444445,
+        "beauty": 5.9,
+        "intelligence": 6.041666666666667,
+        "instantiation_distinctness": 6.7444444444444445,
+        "impressive_length": 5.6305555555555555,
+        "structural_diversity": 6.5
+      }
+    },
+    {
+      "model": "gpt-41-2025-04-14",
+      "calibrated_overall": 6.001666666666667,
+      "stdev": 1.0553817108305201,
+      "n": 12,
+      "per_axis": {
+        "factual_avg": 6.726666666666667,
+        "beauty": 5.833333333333333,
+        "intelligence": 5.833333333333333,
+        "instantiation_distinctness": 6.6,
+        "impressive_length": 4.85,
+        "structural_diversity": 6.166666666666667
+      }
+    },
+    {
+      "model": "gpt-41-nano",
+      "calibrated_overall": 5.204305555555555,
+      "stdev": 1.604321775810422,
+      "n": 12,
+      "per_axis": {
+        "factual_avg": 5.4174999999999995,
+        "beauty": 4.983333333333333,
+        "intelligence": 5.083333333333333,
+        "instantiation_distinctness": 5.833333333333333,
+        "impressive_length": 4.991666666666666,
+        "structural_diversity": 4.916666666666667
+      }
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "calibrated_overall": 5.061111111111111,
+      "stdev": 1.444173051427403,
+      "n": 12,
+      "per_axis": {
+        "factual_avg": 6.016666666666667,
+        "beauty": 4.883333333333334,
+        "intelligence": 4.833333333333333,
+        "instantiation_distinctness": 5.416666666666667,
+        "impressive_length": 4.633333333333334,
+        "structural_diversity": 4.583333333333333
+      }
+    },
+    {
+      "model": "gpt-4o",
+      "calibrated_overall": 4.98,
+      "stdev": 1.3795517253669625,
+      "n": 12,
+      "per_axis": {
+        "factual_avg": 5.88,
+        "beauty": 4.7,
+        "intelligence": 4.866666666666666,
+        "instantiation_distinctness": 5.516666666666667,
+        "impressive_length": 4.25,
+        "structural_diversity": 4.666666666666667
+      }
+    },
+    {
+      "model": "gpt-4o-mini",
+      "calibrated_overall": 4.791515151515152,
+      "stdev": 1.4595034188272433,
+      "n": 11,
+      "per_axis": {
+        "factual_avg": 4.985454545454545,
+        "beauty": 4.8545454545454545,
+        "intelligence": 4.890909090909091,
+        "instantiation_distinctness": 4.836363636363636,
+        "impressive_length": 4.7272727272727275,
+        "structural_diversity": 4.454545454545454
+      }
+    }
+  ]
+}

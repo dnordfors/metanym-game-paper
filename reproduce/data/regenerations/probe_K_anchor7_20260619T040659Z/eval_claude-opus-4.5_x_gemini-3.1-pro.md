@@ -1,0 +1,202 @@
+## Target Submission
+
+### Archetypal context 1: The Evolutionary Arms Race
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): The parallel context accurately describes host-pathogen coevolution, including the concepts of resistance traits, virulence factors, selective pressure, and metabolic costs. The description of mutation driving adaptation and the risk of extinction for both parties is scientifically sound. The Form (b) version provides expert-level prose that correctly describes reciprocal genetic change and phenotypic specialization. This is comparable to the Reference's accuracy in describing biological systems. Rating: 7
+
+- PC 2 (Cybersecurity): The context correctly describes the adversarial dynamic between network administrators and hackers, including the cycle of exploits and patches. However, the Form (a) statement that "the hacker faces data breaches if it cannot breach the security protocol" is awkward and somewhat nonsensical—hackers don't face data breaches, they cause them. The consequence for a failed hacker would be detection, arrest, or simply failure, not a data breach. This is a notable factual/logical error compared to the Reference. Rating: 5
+
+- PC 3 (Military Technology): The description of arms races between nation-states is accurate, including the concepts of defensive/offensive weapons, countermeasures, economic burden, and diversion from civilian infrastructure. The Form (b) version provides sophisticated analysis of military technological competition. This matches the Reference's level of factual accuracy. Rating: 7
+
+- PC 4 (Corporate Competition): The context accurately describes competitive dynamics between incumbents and startups, including market barriers, disruptive innovation, and strategic pivots. The Form (a) phrasing "comes at a resource allocation" is grammatically awkward but the underlying concepts are correct. The description is factually sound and comparable to the Reference. Rating: 7
+
+- PC 5 (Immune System): The context contains a significant error: "the pathogen faces infection if it cannot breach the antibody" is nonsensical—pathogens don't face infection, they cause it. The consequence for a pathogen that cannot evade antibodies is elimination/destruction, not infection. Additionally, describing "affinity maturation in both immune system and pathogen" is incorrect—affinity maturation is a process specific to B cells, not pathogens. These are notable factual errors. Rating: 5
+
+#### Beauty
+The Evolutionary Arms Race archetype captures an elegant and intuitive dynamic—the perpetual escalation between offense and defense. The template flows reasonably well, though some substitutions create awkward phrasing (e.g., "constant mutation comes at a metabolic cost"). The Form (b) versions are generally well-written and evocative, particularly the biological evolution and military technology contexts. However, the beauty is somewhat diminished by the mechanical feel of some substitutions and the logical inconsistencies in consequences (hackers facing data breaches, pathogens facing infection). Compared to the Reference's Gradient-Guided Navigation, which maintains poetic coherence across all instantiations, this archetype is slightly less elegant.
+Rating: 6
+
+#### Intelligence
+The archetype demonstrates solid conceptual insight by identifying the arms race dynamic across multiple domains. The recognition that adaptation drives innovation but comes at costs, and that failure to adapt leads to consequences, shows good structural thinking. However, the intelligence is somewhat undermined by the failure to properly differentiate consequences for attackers versus defenders—using the same consequence slot for both parties creates logical problems in several contexts. The Reference archetypes show more careful attention to asymmetric roles. The concept is fundamentally sound but the execution reveals less sophisticated structural analysis.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Biological Evolution, Cybersecurity, Military Technology, Corporate Competition, Immune System) show moderate diversity. However, Biological Evolution and Immune System are closely related biological domains with significant conceptual overlap (both involve host-pathogen dynamics, both use terms like "pathogen," "metabolic cost"). The metanyms show some synonymy issues: "pathogen" appears in both biological contexts, "coevolution" and "immune response" are conceptually similar processes. Compared to the Reference's Gradient-Guided Navigation, which spans bacteria, hiking, optimization, careers, and hydrology with more distinct metanyms, this archetype shows less domain separation.
+Rating: 5
+
+#### Impressive length
+The template contains approximately 120 words with 13 slots, which is comparable to the Reference templates. The template covers the core dynamics of arms races including adaptation cycles, innovation, costs, and consequences. However, it lacks some of the nuanced elaboration seen in Reference templates (e.g., the Gradient-Guided Navigation template's discussion of memory, interference, and navigation science). The length is adequate but not notably impressive.
+Rating: 6
+
+### Archetypal context 2: The Tragedy of the Commons
+
+#### Factually correct (per parallel context)
+- PC 1 (Environmental Conservation): The fishery example accurately describes the classic tragedy of the commons scenario, including open-access resources, individual incentives for overfishing, distributed costs, and the role of quotas. This is a canonical example and is presented correctly. Comparable to Reference accuracy. Rating: 7
+
+- PC 2 (Traffic Management): The highway congestion example correctly describes the social dilemma of road usage, though calling a highway a "public good" is technically imprecise (highways are often club goods or common-pool resources, not pure public goods). The dynamics of congestion and tolls are accurately described. Slightly below Reference due to the terminology issue. Rating: 6
+
+- PC 3 (Antibiotic Resistance): The context accurately describes antibiotic resistance as a tragedy of the commons, including overprescription, shared costs of resistance, and stewardship programs. The Form (a) phrasing "antibiotic efficacy is a shared resource" is slightly awkward but conceptually correct. The Form (b) version is well-articulated. Comparable to Reference. Rating: 7
+
+- PC 4 (Open Source Software): The description of technical debt in open-source projects as a commons problem is insightful and accurate. The dynamics of individual contributions creating shared maintenance burden are correctly described. However, framing code contributions themselves as the problem (rather than low-quality contributions) is slightly imprecise. Rating: 6
+
+- PC 5 (Space Debris): The orbital space debris example accurately describes the Kessler syndrome risk and the collective action problem in space. The description of mitigation guidelines and the global commons nature of orbit is correct. This is a sophisticated and accurate application. Rating: 7
+
+#### Beauty
+The Tragedy of the Commons is a well-established and elegant conceptual framework, and the template captures its essential dynamics clearly. The parallel contexts are well-chosen and the Form (b) versions are articulate and domain-appropriate. The antibiotic resistance and space debris examples are particularly evocative. However, the template itself is somewhat mechanical and lacks the poetic quality of the Reference's best templates. The phrase "Because the [RESOURCE] is [PROPERTY]" creates awkward constructions in some instantiations. Overall, the beauty is solid but not exceptional.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates strong conceptual insight by applying the tragedy of the commons framework to diverse domains including space debris and antibiotic resistance, which are less commonly cited examples. The recognition of different mechanisms (quotas, tolls, stewardship programs, code reviews, mitigation guidelines) shows sophisticated understanding of how the same structural problem requires domain-specific solutions. The inclusion of the free-rider problem variant for open source shows nuanced thinking. This matches or slightly exceeds the Reference's level of intelligence.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Environmental Conservation, Traffic Management, Antibiotic Resistance, Open Source Software, Space Debris) are genuinely diverse, spanning ecology, transportation, medicine, technology, and aerospace. The metanyms are appropriately distinct: fishery/highway/antibiotic efficacy/codebase/orbital space are not synonymous. The mechanisms (quota/toll/stewardship program/code review/mitigation guideline) show good differentiation. This is comparable to the Reference's domain diversity.
+Rating: 7
+
+#### Impressive length
+The template is approximately 130 words with 13 slots, which is comparable to the Reference. The template covers the core dynamics including shared resources, individual incentives, distributed costs, collective irrationality, and regulatory mechanisms. The structure is complete and well-developed. Length is adequate and comparable to Reference.
+Rating: 7
+
+### Archetypal context 3: The Network Effect
+
+#### Factually correct (per parallel context)
+- PC 1 (Social Media): The description of network effects in social media platforms is accurate, including viral expansion, switching costs, and advertising revenue extraction. The dynamics are correctly described. Comparable to Reference. Rating: 7
+
+- PC 2 (Telecommunications): The description correctly invokes Metcalfe's law and describes the natural monopoly tendency of telephone networks. The historical context of infrastructure costs and deregulation is accurate. The Form (b) version provides good historical perspective. Rating: 7
+
+- PC 3 (Payment Systems): The two-sided market dynamics of credit card networks are accurately described, including merchant acceptance, transaction fees, and the duopoly structure. The description of liquidity and acceptance barriers is correct. Rating: 7
+
+- PC 4 (Operating Systems): The description of ecosystem effects in operating systems is accurate, including developer incentives, platform adoption, and licensing fees. The dynamics of platform competition are correctly described. Rating: 7
+
+- PC 5 (Language): The application of network effects to language communities is creative and largely accurate. The description of lingua francas, learning curves, and linguistic convergence is sound. The mention of constructed languages targeting niche domains is appropriate. However, "extract cultural influence from its speakers" is an unusual framing—languages don't extract influence in the same transactional way as platforms extract fees. Rating: 6
+
+#### Beauty
+The Network Effect archetype elegantly captures the self-reinforcing dynamics of adoption and the barriers this creates for competitors. The template flows well and the parallel contexts are intuitive. The language example is particularly creative and adds aesthetic interest. The Form (b) versions are well-written and domain-appropriate. However, some substitutions create slightly awkward phrasing (e.g., "positive linguistic convergence creates a strong incentive for language acquisition"). The overall beauty is comparable to the Reference.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates good conceptual insight by identifying network effects across diverse domains including the creative application to language communities. The recognition of critical mass thresholds, switching costs, and monopoly dynamics shows solid structural understanding. The inclusion of different feedback mechanisms (Metcalfe's law, two-sided markets, ecosystem growth, linguistic convergence) demonstrates nuanced thinking about how the same fundamental dynamic manifests differently. This is comparable to the Reference's level of intelligence.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Social Media, Telecommunications, Payment Systems, Operating Systems, Language) show good diversity, spanning digital platforms, infrastructure, finance, technology, and linguistics. The metanyms are appropriately distinct: platform/telephone network/credit card network/operating system/language community are not synonymous. The feedback mechanisms and barriers show good differentiation. The language domain adds creative distance from the more obvious technology examples. Comparable to Reference.
+Rating: 7
+
+#### Impressive length
+The template is approximately 120 words with 16 slots, which is comparable to or slightly exceeds the Reference in slot density. The template covers network dynamics, adoption incentives, barriers to competition, monopoly extraction, and competitive strategies. The structure is comprehensive. Length is adequate and comparable to Reference.
+Rating: 7
+
+### Archetypal context 4: The Principal-Agent Problem
+
+#### Factually correct (per parallel context)
+- PC 1 (Corporate Governance): The description of shareholder-CEO agency problems is accurate, including information asymmetry, empire building, compensation design, and monitoring costs. This is a canonical example presented correctly. Rating: 7
+
+- PC 2 (Representative Democracy): The description of voter-politician agency problems is accurate, including rational ignorance, rent-seeking, and electoral accountability. The Form (a) phrasing "divergent public welfares" is awkward but the concepts are correct. Rating: 7
+
+- PC 3 (Healthcare): The description of patient-doctor agency problems is accurate, including information asymmetry, supplier-induced demand, and payment model design. The Form (b) version provides sophisticated analysis of fee-for-service versus pay-for-performance models. Rating: 7
+
+- PC 4 (Legal Representation): The description of client-lawyer agency problems is accurate, including billable hour incentives, contingency fees, and monitoring challenges. The dynamics are correctly described. Rating: 7
+
+- PC 5 (Real Estate): The description of homeowner-agent problems is accurate, including the incentive for quick sales over price maximization, commission structures, and monitoring through open houses. This is a well-known example presented correctly. Rating: 7
+
+#### Beauty
+The Principal-Agent Problem archetype captures a fundamental economic concept with clarity and precision. The template is well-structured and the parallel contexts are intuitive and relatable. The Form (b) versions are articulate and demonstrate domain expertise. However, the template is somewhat technical and lacks the evocative quality of the Reference's more poetic templates (like Gradient-Guided Navigation). The substitutions generally work well grammatically, though some create slightly awkward constructions. Overall beauty is solid but not exceptional.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates strong conceptual insight by applying principal-agent theory across diverse institutional contexts. The recognition of different monitoring mechanisms, contract designs, and manifestations of shirking shows sophisticated understanding of how the same structural problem appears in different domains. The inclusion of healthcare's supplier-induced demand and democracy's rational ignorance shows nuanced thinking about domain-specific variations. This matches the Reference's level of intelligence.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Corporate Governance, Representative Democracy, Healthcare, Legal Representation, Real Estate) are genuinely diverse, spanning business, politics, medicine, law, and property markets. The metanyms are appropriately distinct: shareholder/voter/patient/client/homeowner are not synonymous, nor are CEO/politician/doctor/lawyer/real estate agent. The shirking behaviors (empire building, rent-seeking, overtreatment, billable hour padding, quick sale) show excellent differentiation. This is comparable to or slightly better than the Reference's domain diversity.
+Rating: 7
+
+#### Impressive length
+The template is approximately 140 words with 17 slots, which exceeds the Reference in both length and slot density. The template covers delegation, goal divergence, monitoring challenges, shirking incentives, contract design, and disciplinary study. The structure is comprehensive and detailed. Length is impressive and exceeds Reference.
+Rating: 8
+
+### Archetypal context 5: The Signal and the Noise
+
+#### Factually correct (per parallel context)
+- PC 1 (Medical Diagnostics): The description of diagnostic thresholds, false positives/negatives, and the tradeoff between sensitivity and specificity is accurate. The connection to epidemiology and biostatistics is appropriate. Rating: 7
+
+- PC 2 (Financial Trading): The description of signal extraction in financial markets, including alpha, market volatility, and algorithmic trading, is accurate. The tradeoff between missed opportunities and bad trades is correctly described. Rating: 7
+
+- PC 3 (Radar Systems): The description of radar signal processing, including clutter, false tracks, and detection probability, is accurate. The security implications of missed targets versus false alarms are correctly described. Rating: 7
+
+- PC 4 (Scientific Research): The description of statistical inference, Type I and Type II errors, and statistical power is accurate. The connection to research methodology and the costs of different error types is correctly described. Rating: 7
+
+- PC 5 (Machine Learning): The description of overfitting/underfitting as analogous to false positives/negatives is insightful and accurate. The role of regularization and the goal of generalization are correctly described. Rating: 7
+
+#### Beauty
+The Signal and the Noise archetype elegantly captures the fundamental challenge of extracting meaningful information from noisy data. The template is well-structured and the parallel contexts span an impressive range from medicine to machine learning. The Form (b) versions are articulate and demonstrate domain expertise. The archetype has a certain intellectual elegance in showing how the same fundamental tradeoff appears across such diverse fields. The beauty is comparable to the Reference's best templates.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates excellent conceptual insight by identifying the signal-noise separation problem across diverse domains. The recognition that the same fundamental tradeoff (sensitivity vs. specificity, Type I vs. Type II error, overfitting vs. underfitting) appears in medicine, finance, radar, science, and machine learning shows sophisticated structural thinking. The mapping of false positives and false negatives to domain-specific concepts is particularly clever. This matches or slightly exceeds the Reference's level of intelligence.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Medical Diagnostics, Financial Trading, Radar Systems, Scientific Research, Machine Learning) are genuinely diverse, spanning medicine, finance, engineering, science, and computer science. The metanyms are appropriately distinct: physician/algorithmic trader/radar operator/scientist/algorithm are not synonymous. The noise sources (biological variation, market volatility, clutter, measurement error, random variance) and filters (diagnostic threshold, trading algorithm, signal processing algorithm, statistical test, regularization technique) show excellent differentiation. This is comparable to the Reference's domain diversity.
+Rating: 7
+
+#### Impressive length
+The template is approximately 130 words with 13 slots, which is comparable to the Reference. The template covers the core dynamics of signal extraction, filtering, error types, cost tradeoffs, and disciplinary study. The structure is complete and well-developed. Length is adequate and comparable to Reference.
+Rating: 7
+
+### Structural diversity across the submitted set
+The five archetypes in the Target Submission represent distinct system structures: (1) Evolutionary Arms Race captures adversarial coevolution with reciprocal adaptation; (2) Tragedy of the Commons captures shared resource depletion through individual incentives; (3) Network Effect captures positive feedback loops in adoption dynamics; (4) Principal-Agent Problem captures delegation with misaligned incentives and monitoring challenges; (5) Signal and the Noise captures information extraction from noisy data with error tradeoffs. These represent genuinely different structural patterns—adversarial dynamics, commons dilemmas, network externalities, agency relationships, and signal processing. However, compared to the Reference, which includes recursive archetypes (Competitive Exclusion, Scaffold and Autonomy) and explicitly identifies recursion across levels, the Target lacks this additional dimension of structural sophistication. The Reference also shows more variety in temporal dynamics (gradient navigation, breach cascades, debt accumulation). The Target's structures are diverse but somewhat more conventional in their framing.
+Rating: 6
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Evolutionary Arms Race",
+          "factual_per_pc":           [7, 5, 7, 7, 5],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 5,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Tragedy of the Commons",
+          "factual_per_pc":           [7, 6, 7, 6, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "The Network Effect",
+          "factual_per_pc":           [7, 7, 7, 7, 6],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "The Principal-Agent Problem",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        8
+        },
+        {
+          "name": "The Signal and the Noise",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             8,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

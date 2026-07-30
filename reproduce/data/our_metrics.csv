@@ -1,0 +1,14 @@
+"# E^F_svd and G^F_svd from generation_factuality_validation.py, anchor-7, with bootstrap 95% CIs. EF=evaluator factual competence (12); GF=generation factuality (11; opus-4.5 is the anchor)."
+model,EF,EF_lo,EF_hi,GF,GF_lo,GF_hi
+claude-opus-4.0,0.35,0.33,0.35,6.98,6.93,7.02
+claude-opus-4.1,0.28,0.28,0.3,6.97,6.89,7.03
+claude-opus-4.5,0.55,0.54,0.58,,,
+claude-sonnet-4,0.13,0.12,0.16,6.98,6.95,7.01
+gemini-2.5-flash,0.36,0.29,0.4,6.63,6.44,6.79
+gemini-3.1-pro,0.58,0.56,0.6,6.58,6.35,6.78
+gpt-4.1-2025-04-14,0.02,0.01,0.02,6.49,6.26,6.67
+gpt-4.1-mini,0.09,0.03,0.12,6.27,6.02,6.49
+gpt-4.1-nano,0.04,0.01,0.02,3.65,3.19,4.14
+gpt-4o,0.03,0.01,0.01,5.11,4.88,5.31
+gpt-4o-2024-08-06,0.05,0.02,0.03,5.21,5.02,5.37
+gpt-4o-mini,0.0,0.0,0.0,3.19,2.79,3.7

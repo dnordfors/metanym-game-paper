@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): The description accurately captures the coagulation cascade's amplification mechanism, where each activated clotting factor activates multiple downstream factors. The role of anticoagulants and fibrinogen depletion as termination mechanisms is correct. The threshold concept and pathway-dependent outcomes are scientifically sound. Comparable to the Reference in accuracy. Rating: 7
+
+- PC 2 (Neural Firing): The description contains some inaccuracies. Action potentials don't "amplify exponentially" in the same way cascades do—they propagate via all-or-none responses. The claim that "ions are depleted" as a termination mechanism oversimplifies; ionic gradients are maintained by pumps. The branching circuit concept is reasonable but the framing is slightly imprecise compared to the Reference's more careful domain translations. Rating: 6
+
+- PC 3 (Social Media): The viral spread mechanics are accurately described—exponential sharing, algorithmic suppression, attention depletion. The threshold concept for virality and network-dependent outcomes are reasonable. However, "each activated user recruits multiple downstream users" is somewhat mechanical for social behavior. Comparable to Reference quality. Rating: 7
+
+- PC 4 (Avalanche): The description has issues. "Each activated snow crystal recruits multiple downstream snow crystals" misrepresents avalanche physics—it's about slab failure and fracture propagation, not crystal-by-crystal recruitment. The critical angle concept is correct, but the mechanistic description is less accurate than Reference's careful domain translations. Rating: 5
+
+- PC 5 (Economic Crisis): The contagion mechanics are reasonably accurate—defaults triggering liquidations, intervention mechanisms, liquidity depletion. However, "each activated asset recruits multiple downstream assets" is awkward phrasing that doesn't quite capture how financial contagion works through counterparty exposure. Slightly below Reference precision. Rating: 6
+
+#### Beauty
+The template captures an elegant universal pattern of cascade amplification with clear structural elements. However, the prose is more mechanical than the Reference's templates, which flow more naturally. The Form (b) rewrites improve readability but lack the poetic quality seen in the Reference's best passages. The metanym choices are functional but not particularly evocative. Rating: 6
+
+#### Intelligence
+The archetype identifies a genuine cross-domain pattern of threshold-triggered exponential amplification. The structural insight is solid but somewhat obvious—cascades are a well-known phenomenon. The template captures key elements (trigger, threshold, inhibition, substrate depletion) but misses some nuances the Reference captures, such as the exploration-exploitation tradeoff or the debt-accumulation dynamics. The parallel is intellectually valid but not as deep. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (blood clotting, neural firing, social media, avalanche, economic crisis) span biology, neuroscience, technology, geophysics, and economics—reasonably diverse. However, several metanyms are near-synonymous: "cascade/cascade/viral spread/avalanche/contagion" are all essentially cascade-type words. "Threshold" appears almost identically across domains. The Reference achieves greater metanym distinctiveness while maintaining structural parallelism. Rating: 6
+
+#### Impressive length
+The template has 6 sentences with 12 slots—shorter than the Reference's templates which typically have 7-8 sentences and 13-15 slots. The template covers the essential cascade mechanics but lacks the elaboration on secondary effects (like the Reference's treatment of congestion effects or adaptation mechanisms). Rating: 5
+
+### Archetypal context 2: Boundary Maintenance
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): Accurate description of membrane function, channel proteins, selective permeability, and homeostasis. The balance between protection and exchange is correctly characterized. Minor issue: "excessive channel protein activity prevents necessary transport" is slightly awkward—it's more about channel dysfunction than overactivity. Comparable to Reference. Rating: 7
+
+- PC 2 (National Border): The description is factually reasonable but somewhat simplified. Border patrol facilitating trade while blocking threats captures the basic dynamic. The claim that failed borders "compromise economy" is debatable—the relationship is more complex. Slightly below Reference nuance. Rating: 6
+
+- PC 3 (Firewall): Accurate description of firewall function, security protocols, malware blocking, and the need for updates. The balance between protection and communication is well-characterized. Comparable to Reference accuracy. Rating: 7
+
+- PC 4 (Psychological Boundary): The psychological framing is reasonable—defense mechanisms, identity preservation, the balance between self-protection and connection. However, "therapy" as maintenance is somewhat specific; boundary maintenance involves many practices. The description is psychologically sound. Rating: 7
+
+- PC 5 (Academic Standards): The peer review framing is creative and largely accurate. However, "pseudoscience infiltrates the discipline" oversimplifies—the boundary issues in academia are more nuanced (replication crisis, methodological debates). The stagnation from excessive review is a real concern. Rating: 6
+
+#### Beauty
+The template articulates a clear and intuitive pattern of boundary maintenance with guardian mechanisms. The prose is clean but somewhat formulaic. The Form (b) rewrites are competent but lack the elegance of the Reference's domain-expert prose. The archetype itself is aesthetically satisfying in its symmetry (protection vs. exchange). Rating: 6
+
+#### Intelligence
+The boundary maintenance archetype captures a genuine universal pattern with the insight that both under- and over-protection are problematic. This bidirectional failure mode is intellectually interesting. However, the pattern is relatively straightforward compared to the Reference's more complex dynamics (like the debt-financed overshoot with its temporal dimension). The guardian concept is useful but not deeply novel. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (cell membrane, national border, firewall, psychological boundary, academic standards) span biology, politics, technology, psychology, and philosophy of science—good diversity. However, "boundary/border/firewall/boundary/standard" are quite similar conceptually. "Guardian" maps to fairly analogous concepts across domains. The Reference achieves slightly better metanym distinctiveness. Rating: 6
+
+#### Impressive length
+The template has 6 sentences with 14 slots—comparable to the Reference's templates in slot count but slightly shorter in sentence count. The template covers the essential dynamics but could elaborate more on the mechanisms of degradation or the consequences of imbalance. Rating: 6
+
+### Archetypal context 3: Competitive Exclusion
+
+#### Factually correct (per parallel context)
+- PC 1 (Species Ecology): Accurate representation of competitive exclusion principle, niche partitioning, and conditions for coexistence. The ecological concepts are correctly applied. Comparable to Reference accuracy. Rating: 7
+
+- PC 2 (Business Markets): The market competition framing is accurate—competitive exclusion leading to differentiation and market segmentation. The economic concepts are correctly applied, though "cannibalization" is a specific term that fits well. Rating: 7
+
+- PC 3 (Political Parties): The political competition framing is reasonable. Competitive exclusion in electoral systems is a real phenomenon (Duverger's law). Platform divergence and coalition building are accurate responses. However, "mobilization" as the key efficiency metric is somewhat narrow. Rating: 6
+
+- PC 4 (Neural Development): The neural competition framing is scientifically accurate—neurons do compete for synaptic targets during development, and tiling is a real phenomenon. The competitive exclusion principle applies well here. Rating: 7
+
+- PC 5 (Language Evolution): The linguistic framing is creative but somewhat strained. Dialects don't exactly "compete for speakers" in the same way species compete for resources. The mutual intelligibility and register concepts are reasonable, but the competitive exclusion framing is less natural here. Rating: 5
+
+#### Beauty
+The template captures the elegant logic of competitive exclusion leading to differentiation. The prose is clear and the structural symmetry is satisfying. However, the Form (b) rewrites are somewhat dry compared to the Reference's more evocative prose. The archetype has inherent elegance in showing how competition drives diversity. Rating: 6
+
+#### Intelligence
+The competitive exclusion archetype identifies a genuine cross-domain principle with deep theoretical foundations (Gause's principle, Porter's competitive strategy). The insight that exclusion drives differentiation is valuable. However, the pattern is well-established in ecology and economics, so the cross-domain extension is less surprising than some Reference archetypes. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (ecology, business, politics, neuroscience, linguistics) are reasonably diverse. However, "competitor/company/party/neuron/dialect" vary in how naturally they fit the competition frame. "Resource/customer/voter/synapse/speaker" are reasonably distinct. The linguistic domain feels somewhat forced compared to the others. Rating: 6
+
+#### Impressive length
+The template has 5 sentences with 12 slots—shorter than the Reference's typical templates. The template covers the core competitive exclusion logic but lacks elaboration on dynamics, temporal evolution, or secondary effects that the Reference templates often include. Rating: 5
+
+### Archetypal context 4: Recursive Embedding
+
+#### Factually correct (per parallel context)
+- PC 1 (Language Syntax): Accurate description of recursive clause embedding, syntax trees, and the emergence of meaning from hierarchical structure. The processing load limitation is linguistically sound. Rating: 7
+
+- PC 2 (Corporate Structure): Accurate description of hierarchical organizational structure with divisions containing subdivisions. The coordination, policy cascade, and overhead concepts are correct. Rating: 7
+
+- PC 3 (Biological Organization): The description conflates different types of hierarchy. "Organisms can embed smaller organisms" via endosymbiosis is accurate (mitochondria), but "taxonomic hierarchy" is a classification system, not an embedding relationship. The framing is somewhat confused. Rating: 5
+
+- PC 4 (Software Architecture): Accurate description of modular composition, hierarchical architecture, and API-mediated communication. The complexity and coupling limitations are correct. Rating: 7
+
+- PC 5 (Mathematical Sets): Accurate description of set nesting and hierarchical structure. The reference to paradoxes (Russell's paradox from unrestricted self-reference) is appropriate. The undecidability limitation is relevant. Rating: 7
+
+#### Beauty
+The template captures the elegant self-similar structure of recursive embedding. The explicit recursion identification adds intellectual appeal. However, the prose is somewhat mechanical, and the Form (b) rewrites, while clear, lack poetic quality. The archetype has inherent beauty in its self-referential structure. Rating: 7
+
+#### Intelligence
+The recursive embedding archetype demonstrates sophisticated structural thinking. The explicit identification of recursion and the n/n+1/n-1 level formulation shows mathematical precision. The insight about constraints propagating down and information flowing bidirectionally is valuable. This archetype shows comparable intelligence to the Reference's scaffold-dependent assembly (which also claims recursion). Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains (linguistics, management, biology, computer science, mathematics) are diverse. The metanyms show reasonable variation: "clause/division/organism/module/set" are distinct concepts. However, "hierarchy/org chart/taxonomic hierarchy/architecture/set hierarchy" are all essentially hierarchy terms. The biological domain's conflation of endosymbiosis with taxonomy weakens distinctiveness. Rating: 6
+
+#### Impressive length
+The template has 7 sentences with 13 slots—comparable to the Reference's templates. The template covers the essential recursive structure with appropriate elaboration on bidirectional information flow and depth limitations. Rating: 7
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The description has issues. "Above the freezing point, a new ice emerges" is backwards—ice forms below the freezing point. The claim that "crystallization becomes infinite" at the threshold is imprecise; it's about correlation length diverging. The universality concept is correctly applied. Rating: 5
+
+- PC 2 (Social Movement): The social movement framing is reasonable. The tipping point concept and cascade dynamics are appropriate. However, "mobilization becomes infinite" is metaphorical in a way that strains the physics analogy. Rating: 6
+
+- PC 3 (Market Crash): The market crash framing is reasonable. The panic threshold, herding behavior, and illiquidity concepts are accurate. The universality claim about "identical critical behavior" across markets is somewhat strong but defensible. Rating: 6
+
+- PC 4 (Ecosystem Collapse): The ecosystem collapse framing is accurate. Regime shifts, extinction cascades, and resilience theory are correctly applied. The critical threshold concept maps well to ecological tipping points. Rating: 7
+
+- PC 5 (Traffic Flow): The traffic flow framing is accurate. The critical density, congestion waves, and jamming transition are well-established in traffic science. The universality of jamming dynamics is a real phenomenon. Rating: 7
+
+#### Beauty
+The template captures the dramatic nature of phase transitions with the sudden transformation at critical thresholds. The universality concept adds elegance. However, the prose is somewhat formulaic, and the Form (b) rewrites are competent but not particularly evocative. The water freezing description's directional error detracts from beauty. Rating: 5
+
+#### Intelligence
+The phase transition archetype identifies a profound cross-domain pattern with deep theoretical foundations in statistical mechanics. The universality concept—that different systems show identical critical behavior—is a genuinely deep insight. However, the execution has some inaccuracies that undermine the intellectual achievement. The Reference's quorum-triggered phase transition covers similar ground with better precision. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (physics, sociology, finance, ecology, traffic) are diverse. The metanyms show reasonable variation: "molecule/individual/trader/species/vehicle" are distinct. However, "threshold/tipping point/panic threshold/critical load/critical density" are all threshold concepts. "Transformation/revolution/crash/collapse/gridlock" vary more. Rating: 6
+
+#### Impressive length
+The template has 7 sentences with 13 slots—comparable to the Reference's templates. The template covers the essential phase transition dynamics with appropriate elaboration on universality and critical behavior. Rating: 7
+
+### Structural diversity across the submitted set
+
+The five archetypes (Cascade Amplification, Boundary Maintenance, Competitive Exclusion, Recursive Embedding, Phase Transition) represent different system structures: amplification networks, selective barriers, resource competition, hierarchical nesting, and critical transitions. This provides reasonable structural diversity. However, there is some overlap: Cascade Amplification and Phase Transition both involve threshold-triggered collective behavior with positive feedback. The Reference's five archetypes (Gradient-Guided Navigation, Containment Breach Cascade, Scaffold-Dependent Assembly, Quorum-Triggered Phase Transition, Debt-Financed Overshoot) show slightly more structural distinctiveness, with clearer separation between navigation, containment, assembly, collective transition, and temporal overshoot dynamics. The Target's Recursive Embedding archetype adds a unique structural element (self-similar nesting) not present in the Reference. Rating: 6
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc": [7, 6, 7, 5, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 5
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [7, 6, 7, 7, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Competitive Exclusion",
+          "factual_per_pc": [7, 7, 6, 7, 5],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 5
+        },
+        {
+          "name": "Recursive Embedding",
+          "factual_per_pc": [7, 7, 5, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc": [5, 6, 6, 7, 7],
+          "beauty": 5,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

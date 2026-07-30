@@ -1,0 +1,239 @@
+## Target Submission
+
+### Archetypal context 1: Resource Allocation Under Scarcity
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecosystem Management): The Form (a) contains awkward phrasing like "Nature must make natural selections" which conflates natural selection (an evolutionary process) with resource allocation decisions. The statement "faces an exploitation between short-term biomass and long-term resilience" is grammatically incorrect and conceptually muddled. Form (b) improves but still has issues—ecosystems don't really face "predation from other ecosystems." The factual accuracy is below the Reference's clear, domain-appropriate statements. Rating: 6
+
+- PC 2 (Corporate Finance): Form (a) has grammatical issues ("These capital are finite") and the phrase "faces a short-term gain between short-term revenue and long-term growth" is nonsensical. Form (b) is more coherent and factually reasonable, describing CFO responsibilities accurately. The content is generally correct but less precise than the Reference. Rating: 7
+
+- PC 3 (Military Logistics): Form (a) has awkward constructions like "subject to enemy from other armies" and "faces a tactical advantage between short-term territory and long-term strategic depth." Form (b) is factually sound regarding quartermaster responsibilities and supply chain management. The core concepts are accurate but presentation is weaker than Reference. Rating: 7
+
+- PC 4 (Personal Time Management): Form (a) has grammatical errors ("These time are finite") and awkward phrasing ("faces an immediate gratification between short-term leisure and long-term health"). Form (b) is factually reasonable about time management principles. The content is accurate but less polished than Reference. Rating: 7
+
+- PC 5 (Urban Planning): Form (a) contains errors like "subject to gentrification from other cities" (gentrification is internal, not from other cities) and "faces a development between short-term tax base and long-term green space." Form (b) is more accurate but still has the gentrification error. Below Reference accuracy. Rating: 6
+
+#### Beauty
+The template lacks the elegant flow of the Reference. Phrases like "faces a [TRADE_OFF] between short-term [GAIN] and long-term [SUSTAINABILITY]" are functional but prosaic. The Form (a) versions consistently produce awkward, ungrammatical sentences that detract from aesthetic appeal. Form (b) versions are serviceable but lack the domain-expert polish seen in the Reference's idiomatic rewrites. The overall structure is mechanical rather than elegant.
+Rating: 5
+
+#### Intelligence
+The archetype captures a genuine universal pattern—resource allocation under scarcity—but does so at a fairly obvious level. The Reference's archetypes reveal deeper structural insights (e.g., gradient-guided navigation with memory, interference, and collective amplification). This template's slots are more surface-level (SYSTEM, RESOURCE, GOAL) without capturing the dynamic interplay that makes the Reference intellectually compelling. The interdependency concept is mentioned but not deeply explored.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (ecosystem, corporate, military, personal, urban) span different scales and contexts reasonably well. However, some metanyms are problematic: "natural selection" as a DECISION is conceptually incorrect (it's not a decision), and "nature" as an ALLOCATOR anthropomorphizes inappropriately. The Reference achieves cleaner mappings where each metanym genuinely functions analogously across domains. The domains are moderately diverse but not as far apart as the Reference's bacterial/mountain/career/ML/ant spread.
+Rating: 6
+
+#### Impressive length
+The template contains 15 slots and approximately 120 words, which is comparable to the Reference's templates. However, the template feels padded with generic concepts rather than building a complex, interconnected structure. The Reference's templates develop more sophisticated causal chains and feedback loops within similar length.
+Rating: 7
+
+### Archetypal context 2: Information Cascade and Collective Behavior
+
+#### Factually correct (per parallel context)
+- PC 1 (Stock Market Bubble): Form (a) has awkward phrasing ("faces a buy/sell decision under market future") but the core mechanism of information cascades in markets is accurately described. Form (b) is factually sound regarding bubble dynamics and herding behavior. Comparable to Reference accuracy. Rating: 8
+
+- PC 2 (Fashion Trends): Form (a) is grammatically awkward but conceptually reasonable about fashion adoption dynamics. Form (b) accurately describes how social conformity drives fashion trends. The cascade mechanism is appropriately applied. Rating: 7
+
+- PC 3 (Scientific Consensus): Form (a) has issues—"When the replication of independent peer review is high" is confusing. The concept of paradigms as information cascades is intellectually interesting but the execution is imprecise. Form (b) is better but "scientific fraud" as the disastrous outcome of paradigm formation is a stretch. Rating: 6
+
+- PC 4 (Political Campaigns): Form (a) is awkward ("When the debate of independent fact-checking is high"). Form (b) accurately describes bandwagon effects in voting behavior. The cascade mechanism applies reasonably well to political contexts. Rating: 7
+
+- PC 5 (Social Media Virality): Form (a) has grammatical issues but the core concept of viral spread as information cascade is accurate. Form (b) correctly describes how social proof drives sharing behavior. This is a natural fit for the archetype. Rating: 8
+
+#### Beauty
+The template has a clear logical flow describing the cascade mechanism. However, Form (a) versions consistently produce clunky sentences ("faces a buy/sell decision under market future"). The Reference's templates produce more naturally readable Form (a) outputs. Form (b) versions are competent but lack the domain-expert elegance of the Reference's rewrites.
+Rating: 6
+
+#### Intelligence
+The information cascade concept is genuinely insightful and captures an important social phenomenon. The template identifies key elements: private signals, public actions, verification costs, and cascade dynamics. This shows intellectual sophistication comparable to the Reference's archetypes. However, the template doesn't explore feedback mechanisms or recovery dynamics as deeply as the Reference's containment breach cascade.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains (markets, fashion, science, politics, social media) are reasonably diverse but share a common "social influence" thread that makes them feel somewhat similar. The Reference achieves greater domain separation (e.g., bacterial chemotaxis vs. gradient descent). Some metanyms like VERIFICATION (due diligence, personal trial, peer review, fact-checking, source checking) are fairly synonymous across domains.
+Rating: 6
+
+#### Impressive length
+The template is moderately long with 14 slots and approximately 130 words. It develops the cascade mechanism adequately but doesn't achieve the intricate multi-stage structure of the Reference's templates. The causal chain is simpler.
+Rating: 7
+
+### Archetypal context 3: Adaptive System Response to Perturbation
+
+#### Factually correct (per parallel context)
+- PC 1 (Human Body Homeostasis): Form (a) has issues—"maintains its health through a set of immune system" is grammatically wrong, and "may undergo evolution" conflates individual adaptation with evolutionary change. Form (b) is more accurate but still conflates timescales. Rating: 6
+
+- PC 2 (Climate System): Form (a) is problematic—"When a greenhouse gas occurs" is awkward, and "initiates a policy" anthropomorphizes the climate system inappropriately. The mixing of natural systems and human policy responses creates conceptual confusion. Form (b) acknowledges this but the mapping remains strained. Rating: 5
+
+- PC 3 (Cybersecurity): Form (a) has grammatical issues but the core concepts are accurate. Form (b) correctly describes network security mechanisms. This domain fits the template well. Rating: 7
+
+- PC 4 (Economic Policy): Form (a) is awkward ("maintains its growth through a set of central bank") but conceptually reasonable. Form (b) accurately describes monetary policy responses to recessions. Rating: 7
+
+- PC 5 (Organizational Change): Form (a) and Form (b) both reasonably describe organizational adaptation to market changes. The concepts are accurate if somewhat generic. Rating: 7
+
+#### Beauty
+The template produces consistently awkward Form (a) sentences due to grammatical mismatches between slots and their contexts. Phrases like "maintains its health through a set of immune system" are jarring. The Reference's templates are designed to produce grammatically smooth substitutions. Form (b) versions are serviceable but lack elegance.
+Rating: 5
+
+#### Intelligence
+The adaptive response concept is valid but generic—it's essentially describing feedback systems without the nuanced mechanisms of the Reference's archetypes. The Reference's gradient-guided navigation includes memory, interference, collective behavior, and noise filtering. This template's structure is simpler and less insightful.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (body, climate, cyber, economy, organization) span different scales but the metanyms often feel forced. "Evolution" for human body adaptation, "mitigation" for climate adaptation, and "learning" for organizational adaptation are not truly parallel processes. The Reference achieves cleaner functional analogies.
+Rating: 6
+
+#### Impressive length
+The template has 16 slots and approximately 140 words, which is substantial. However, the structure is somewhat repetitive (perturbation → detection → response → adaptation) without the branching complexity of the Reference's templates.
+Rating: 7
+
+### Archetypal context 4: Emergent Complexity from Simple Rules (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Ant Colony): Form (a) has issues—"each following a set of simple pheromone trail" conflates rules with signals. Form (b) is more accurate about ant colony emergence. The recursive claim is not well demonstrated. Rating: 6
+
+- PC 2 (Cellular Automata): Form (a) is awkward but conceptually accurate about cellular automata generating complex patterns. Form (b) correctly describes emergence in systems like Conway's Game of Life. Rating: 7
+
+- PC 3 (Traffic Flow): Form (a) and Form (b) accurately describe traffic congestion as emergent from individual driving behaviors. This is a well-established example of emergence. Rating: 8
+
+- PC 4 (Stock Market): Form (a) has grammatical issues but the concept of market volatility emerging from individual trading rules is accurate. Form (b) is factually sound. Rating: 7
+
+- PC 5 (Neural Networks): Form (a) conflates biological neurons with artificial neural networks ("activation function" is an ML term). Form (b) continues this conflation. The claim that "thought" emerges from activation functions oversimplifies neuroscience. Rating: 5
+
+#### Beauty
+The template captures the emergence concept but produces awkward Form (a) sentences. "Each following a set of simple pheromone trail" is grammatically incorrect. The Reference's templates are crafted to produce smooth substitutions. The recursive claim is stated but not elegantly demonstrated.
+Rating: 5
+
+#### Intelligence
+The emergence concept is intellectually valid and important. However, the template doesn't capture the depth of the Reference's recursive archetype (Debt Accumulation), which shows clear hierarchical nesting with propagation dynamics. The "recursive" label here seems applied superficially—the five domains don't form a nested hierarchy.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (ants, cellular automata, traffic, markets, brains) are reasonably diverse. However, some metanyms are problematic: "pheromone trail" as a RULE (it's a signal, not a rule), "activation function" for biological neurons (it's an ML abstraction). The Reference achieves cleaner conceptual mappings.
+Rating: 6
+
+#### Impressive length
+The template has 10 slots and approximately 120 words. This is shorter than the Reference's templates and develops less complex causal structure. The emergence concept is stated rather than elaborated.
+Rating: 6
+
+### Archetypal context 5: Iterative Refinement Towards an Ideal (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Software Development): Form (a) has awkward phrasing but the agile development concepts are accurate. Form (b) correctly describes iterative software development. Rating: 7
+
+- PC 2 (Artistic Creation): Form (a) and Form (b) reasonably describe the iterative artistic process. The concepts are accurate if somewhat generic. Rating: 7
+
+- PC 3 (Scientific Method): Form (a) has issues—"achieve a truth theory" is awkward. Form (b) accurately describes hypothesis refinement through experimentation. The p-hacking reference is appropriate. Rating: 7
+
+- PC 4 (Product Design): Form (a) has redundancy ("perfect product product") and awkward phrasing. Form (b) accurately describes design thinking iteration. Rating: 7
+
+- PC 5 (Personal Growth): Form (a) is awkward ("achieve a self-actualization self"). Form (b) reasonably describes personal development iteration. The concepts are accurate but generic. Rating: 7
+
+#### Beauty
+The template produces consistently awkward Form (a) sentences ("achieve a bug-free software," "achieve a masterpiece artwork"). The Reference's templates are designed for grammatical smoothness. Form (b) versions are competent but lack the domain-expert polish of the Reference.
+Rating: 5
+
+#### Intelligence
+The iterative refinement concept is valid but represents a fairly obvious pattern. The Reference's archetypes reveal deeper structural insights with more complex feedback mechanisms. This template's structure (create → get feedback → refine → repeat) is straightforward without the nuanced dynamics of the Reference's scaffold-dependent assembly or competitive exclusion archetypes.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (software, art, science, product design, personal growth) are moderately diverse but all involve human creative/improvement processes. The Reference achieves greater domain separation (e.g., ribosome assembly vs. crystal growth vs. social movements). Many metanyms are near-synonymous: FEEDBACK (user report, critique, data, user testing, reflection) all mean "evaluative input."
+Rating: 5
+
+#### Impressive length
+The template has 17 slots and approximately 140 words, which is substantial. However, the structure is linear (create → feedback → refine) without the branching complexity of the Reference's templates.
+Rating: 7
+
+### Archetypal context 6: The Unseen Hand of Coordination
+
+#### Factually correct (per parallel context)
+- PC 1 (Free Market): Form (a) has grammatical issues but the invisible hand concept is accurately applied. Form (b) correctly describes market equilibrium emergence. Rating: 7
+
+- PC 2 (Ecosystem): Form (a) is awkward ("makes reproductions") and "god" as PLANNER is inappropriate. Form (b) is more accurate about ecological balance emergence. Rating: 6
+
+- PC 3 (Open Source Project): Form (a) and Form (b) reasonably describe decentralized software development coordination. The concepts are accurate. Rating: 7
+
+- PC 4 (Ant Colony): Form (a) has issues—"without explicit queen" misrepresents ant colony organization (queens exist but don't centrally control). Form (b) is more nuanced. Rating: 6
+
+- PC 5 (Scientific Community): Form (a) is awkward but the concept of emergent scientific progress is valid. Form (b) accurately describes peer review as a coordination mechanism. Rating: 7
+
+#### Beauty
+The template captures the coordination concept but produces awkward Form (a) sentences. "Makes reproductions based on local resource availability" is clunky. The Reference's templates produce more natural language. The "god" as PLANNER for ecosystems is jarring and inappropriate.
+Rating: 5
+
+#### Intelligence
+The decentralized coordination concept is intellectually valid and connects to important ideas (invisible hand, self-organization). However, the template doesn't develop the mechanisms as deeply as the Reference's archetypes. The Reference's competitive exclusion archetype, for example, develops stabilizing mechanisms, fitness differences, and coexistence conditions with greater sophistication.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (markets, ecosystems, open source, ant colonies, science) are reasonably diverse. However, ant colonies appear in multiple archetypes in this submission, reducing overall diversity. Some metanyms are problematic: "god" for ecosystem PLANNER is inappropriate, and "queen" for ant CENTRAL_CONTROL misrepresents ant biology.
+Rating: 6
+
+#### Impressive length
+The template has 18 slots and approximately 130 words, which is substantial. The structure develops the coordination concept adequately but doesn't achieve the intricate causal chains of the Reference's templates.
+Rating: 7
+
+### Structural diversity across the submitted set
+The six archetypes cover: resource allocation, information cascades, adaptive response, emergence, iterative refinement, and decentralized coordination. These represent different system dynamics but share significant overlap—several involve emergence, feedback, and collective behavior. The Reference's five archetypes (gradient navigation, containment breach, competitive exclusion, debt accumulation, scaffold assembly) show greater structural diversity with distinct causal mechanisms. The Target's archetypes often feel like variations on "complex systems" themes rather than fundamentally different structures. The recursive claims for archetypes 4 and 5 are not well demonstrated—they don't show the clear hierarchical nesting of the Reference's debt accumulation archetype.
+Rating: 5
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation Under Scarcity",
+          "factual_per_pc": [6, 7, 7, 7, 6],
+          "beauty": 5,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        },
+        {
+          "name": "Information Cascade and Collective Behavior",
+          "factual_per_pc": [8, 7, 6, 7, 8],
+          "beauty": 6,
+          "intelligence": 7,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        },
+        {
+          "name": "Adaptive System Response to Perturbation",
+          "factual_per_pc": [6, 5, 7, 7, 7],
+          "beauty": 5,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        },
+        {
+          "name": "Emergent Complexity from Simple Rules",
+          "factual_per_pc": [6, 7, 8, 7, 5],
+          "beauty": 5,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Iterative Refinement Towards an Ideal",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 5,
+          "intelligence": 6,
+          "instantiation_distinctness": 5,
+          "impressive_length": 7
+        },
+        {
+          "name": "The Unseen Hand of Coordination",
+          "factual_per_pc": [7, 6, 7, 6, 7],
+          "beauty": 5,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 5
+    }
+  }
+}
+```

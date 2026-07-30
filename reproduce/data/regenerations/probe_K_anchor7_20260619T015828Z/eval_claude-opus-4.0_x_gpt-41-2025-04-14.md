@@ -1,0 +1,181 @@
+## Target Submission
+
+### Archetypal context 1: Inheritance and Transmission
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Organism): The biological inheritance description is accurate in its core concepts of genetic transmission from parent to offspring and the role of environment in gene expression. However, the statement about organisms "modifying" genes is imprecise—while epigenetic modifications occur, organisms don't directly modify their inherited DNA sequences during their lifetime in ways that affect inheritance. This is less precise than the Reference's careful handling of technical details. Rating: 6
+
+- PC 2 (Language Speaker): The linguistic borrowing description is factually sound, correctly identifying how words are transmitted between speakers and modified by community context. The terminology is appropriate and the process accurately described. This matches the Reference's level of accuracy in domain-specific content. Rating: 7
+
+- PC 3 (Software System): The software porting description is accurate in its portrayal of code transmission between systems and platforms. The concepts of repositories, platforms, and refactoring are correctly used. The factual accuracy is comparable to the Reference's handling of technical domains. Rating: 7
+
+- PC 4 (Cultural Group): The cultural transmission description accurately captures how customs are passed through tradition and modified by social context. The terminology and processes are correctly described, matching the Reference's standard for social science domains. Rating: 7
+
+- PC 5 (Legal Heir): The legal inheritance description is factually correct regarding bequest, jurisdiction, and succession. The concepts are appropriately used and the process accurately described. This meets the Reference's level of accuracy for specialized domains. Rating: 7
+
+#### Beauty
+The archetypal context has a clean, straightforward elegance in its simplicity. The template captures a fundamental pattern of transmission across generations with clarity. However, it lacks the conceptual richness and nuanced beauty found in the Reference's templates, which layer multiple interacting dynamics (like the Reference's "Gradient-Guided Navigation" with its noise, adaptation, and congestion elements). The prose is functional but doesn't achieve the evocative quality of the Reference's descriptions. Rating: 5
+
+#### Intelligence
+The archetype demonstrates solid conceptual understanding by identifying a universal pattern of inheritance across diverse domains. However, it represents a relatively simple, linear process compared to the Reference's more sophisticated system dynamics. The Reference's archetypes involve feedback loops, thresholds, cascading effects, and emergent properties that show deeper systemic thinking. This archetype, while valid, captures a more straightforward transmission pattern without the complex interdependencies that mark highly intelligent abstraction. Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains span biological, linguistic, technological, cultural, and legal spheres, showing good diversity. The metanyms are reasonably distinct—"gene," "word," "code," "custom," and "right" are clearly not synonymous. However, some metanym sets show less distinctiveness than the Reference's. For example, "inheritance," "borrowing," "porting," "tradition," and "bequest" are more closely related conceptually than the Reference's corresponding terms like "bacterium," "optimizer," "professional," "water droplet," and "investor." Rating: 6
+
+#### Impressive length
+The template is notably brief with only 7 slots, making it one of the shortest possible archetypal contexts. The Reference templates typically have 13-15 slots, allowing for much richer system descriptions. This brevity limits the archetype's ability to capture complex dynamics and interactions. The parallel context descriptions are also quite short, lacking the detailed elaboration found in the Reference. Rating: 3
+
+### Archetypal context 2: Competition and Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Animal Species): The ecological competition description is accurate in its portrayal of species competing for food resources through foraging strategies. The concepts of ecosystem constraints and community dynamics are correctly presented. This matches the Reference's accuracy in biological domains. Rating: 7
+
+- PC 2 (Firms): The business competition description accurately captures market dynamics, marketing strategies, and industry structure. The economic concepts are correctly applied. This meets the Reference's standard for economic domains. Rating: 7
+
+- PC 3 (Political Parties): The political competition description is factually sound, correctly describing electoral competition, campaigning strategies, and political system dynamics. The terminology and processes are accurate, matching the Reference's level. Rating: 7
+
+- PC 4 (Academic Researchers): The academic competition description accurately portrays grant funding competition and publishing strategies. The characterization of academic field dynamics is correct. This equals the Reference's accuracy in professional domains. Rating: 7
+
+- PC 5 (Sports Teams): The sports competition description is accurate regarding championship competition and training strategies. The concepts are appropriately applied to the sports domain. This matches the Reference's factual standards. Rating: 7
+
+#### Beauty
+The archetype captures a fundamental competitive dynamic with clarity but lacks aesthetic sophistication. The template is straightforward and functional but doesn't achieve the conceptual elegance of the Reference's more nuanced templates. The prose is clear but utilitarian, missing the evocative quality that makes the Reference's descriptions memorable. The beauty lies in its universality, but the execution is plain. Rating: 5
+
+#### Intelligence
+This archetype shows basic pattern recognition in identifying competition across domains but lacks the systemic sophistication of the Reference. It's essentially a simple input-output model (competitors use strategies to get resources) without the complex feedback mechanisms, emergent properties, or cascading effects that characterize the Reference's archetypes. The conceptual depth is limited compared to the Reference's multi-layered system dynamics. Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains show reasonable diversity (ecology, business, politics, academia, sports) but are all human or biological competitive systems, lacking the breadth of the Reference which spans physical, biological, technological, and social systems. The metanyms show some distinctiveness but many are near-synonyms: all five domains literally use "competition" for [COMPETITION], showing less creativity than the Reference's varied terminology. Rating: 5
+
+#### Impressive length
+With only 6 slots, this template is even shorter than the first, severely limiting its ability to capture complex dynamics. The Reference templates with 13-15 slots can describe rich, multi-faceted systems with feedback loops, thresholds, and emergent properties. This minimal template can only capture the most basic competitive dynamic. Rating: 2
+
+### Archetypal context 3: Feedback and Regulation
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Organism): The homeostasis description is accurate in its portrayal of blood sugar regulation through insulin. The feedback mechanism is correctly described. This matches the Reference's biological accuracy. Rating: 7
+
+- PC 2 (Thermostat): The thermostat description accurately captures temperature regulation through heating/cooling adjustments. The feedback control system is correctly presented. This equals the Reference's technical accuracy. Rating: 7
+
+- PC 3 (Economic Market): The market equilibrium description is somewhat simplified but factually sound regarding price adjustments through supply and demand. The feedback mechanism is accurately portrayed. This meets the Reference's economic accuracy. Rating: 7
+
+- PC 4 (Social Group): The social harmony description through mood monitoring and interaction adjustment is plausible though somewhat abstract. The feedback concept is appropriately applied to social dynamics. This matches the Reference's handling of social systems. Rating: 7
+
+- PC 5 (Computer Program): The memory management description through garbage collection is accurate. The feedback mechanism for maintaining program stability is correctly described. This equals the Reference's technical accuracy. Rating: 7
+
+#### Beauty
+The archetype has a clean symmetry in its feedback structure but lacks the aesthetic richness of the Reference. The template is functional but doesn't create the vivid imagery or conceptual elegance found in the Reference's descriptions. The parallel contexts are clear but prosaic, missing the evocative quality that elevates technical description to beautiful abstraction. Rating: 5
+
+#### Intelligence
+This archetype demonstrates understanding of feedback systems but at a basic level. It's essentially a simple negative feedback loop without the sophistication of the Reference's archetypes that include multiple interacting dynamics, thresholds, hysteresis, and emergent properties. The conceptual framework is valid but elementary compared to the Reference's complex systems thinking. Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains span biological, mechanical, economic, social, and computational systems, showing good diversity comparable to the Reference. However, the metanyms show less distinctiveness—all domains use identical terms for [FEEDBACK] and [BALANCE], while the Reference varies terminology more creatively. The core terms are reasonably distinct but could be more varied. Rating: 6
+
+#### Impressive length
+With only 8 slots, this template is still quite short compared to the Reference's 13-15 slot templates. This limits the richness of the system description and prevents inclusion of important feedback system properties like lag times, oscillation, or multiple feedback loops that the Reference templates capture. Rating: 4
+
+### Archetypal context 4: Emergence from Simple Rules
+
+#### Factually correct (per parallel context)
+- PC 1 (Cellular Automaton): The cellular automaton description is accurate in its portrayal of complex patterns emerging from simple rules. The technical concepts are correctly presented. This matches the Reference's accuracy in computational domains. Rating: 7
+
+- PC 2 (Ant Colony): The ant colony description accurately captures trail formation through simple behavioral rules and communication. The emergence concept is correctly applied to social insects. This equals the Reference's biological accuracy. Rating: 7
+
+- PC 3 (Market Economy): The economic emergence description is sound, showing how price trends emerge from simple trading rules. The concept is appropriately applied to economic systems. This meets the Reference's standards. Rating: 7
+
+- PC 4 (Neural Network): The neural network description accurately portrays activation patterns emerging from simple rules. The technical concepts are correctly used. This matches the Reference's technical accuracy. Rating: 7
+
+- PC 5 (Social Media Platform): The social media description correctly captures meme emergence from posting guidelines and user interactions. The application to digital social systems is accurate. This equals the Reference's accuracy in technological domains. Rating: 7
+
+#### Beauty
+This archetype has inherent beauty in its concept—the emergence of complexity from simplicity is aesthetically appealing. However, the execution lacks the poetic quality of the Reference. The template is clear but doesn't create the vivid imagery or conceptual elegance that makes the Reference's emergence descriptions (like crystallization or quorum sensing) so compelling. Rating: 6
+
+#### Intelligence
+The archetype shows good conceptual understanding of emergence, a sophisticated concept. However, it presents emergence in its simplest form without the nuanced dynamics found in the Reference. The Reference's emergence archetypes include thresholds, phase transitions, hysteresis, and feedback amplification that show deeper understanding of complex systems. This is intelligent but not as sophisticated as the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains show excellent diversity spanning computational, biological, economic, neural, and social systems. The metanyms are reasonably distinct, though all domains use "emergence" for [EMERGENCE]. The variety is comparable to the Reference, with good conceptual distance between terms like "cell," "ant," "agent," "neuron," and "user." Rating: 7
+
+#### Impressive length
+With only 7 slots, this template is among the shortest, limiting its ability to capture the full richness of emergent systems. The Reference templates include many more parameters that allow description of initial conditions, phase transitions, critical thresholds, and feedback mechanisms that are crucial to understanding emergence. Rating: 3
+
+### Archetypal context 5: Propagation and Cascade
+
+#### Factually correct (per parallel context)
+- PC 1 (Electrical Grid): The electrical grid cascade description is accurate in its portrayal of fault propagation and blackout prevention through circuit breakers. The technical concepts are correctly applied. This matches the Reference's technical accuracy. Rating: 7
+
+- PC 2 (Epidemic Spread): The epidemic description accurately captures disease transmission and the role of vaccination in prevention. The public health concepts are correctly presented. This equals the Reference's accuracy in health domains. Rating: 7
+
+- PC 3 (Financial System): The financial contagion description is accurate regarding bank defaults and systemic risk. The economic concepts are appropriately applied. This meets the Reference's financial accuracy. Rating: 7
+
+- PC 4 (Social Network): The viral trend description correctly captures rumor propagation and the role of fact-checking. The social dynamics are accurately portrayed. This matches the Reference's social system accuracy. Rating: 7
+
+- PC 5 (Forest Ecosystem): The wildfire description accurately portrays fire spread and prevention through firebreaks. The ecological concepts are correctly applied. This equals the Reference's environmental accuracy. Rating: 7
+
+#### Beauty
+The cascade archetype has dramatic appeal in its portrayal of spreading change, but the execution is workmanlike rather than beautiful. The template captures the essential dynamics but lacks the conceptual elegance and vivid imagery of the Reference's cascade descriptions. The prose is clear but doesn't achieve the evocative quality that makes the Reference's templates memorable. Rating: 6
+
+#### Intelligence
+This archetype demonstrates solid understanding of cascade dynamics, including thresholds and resistance mechanisms. It's more sophisticated than some of the other submitted archetypes but still lacks the multi-layered complexity of the Reference. The Reference's cascade archetypes include additional dynamics like viscosity, connectivity variations, and regenerative mechanisms that show deeper systems thinking. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains show very good diversity spanning infrastructure, health, finance, social, and ecological systems. The metanyms are well-differentiated—"fault," "infection," "default," "rumor," and "spark" are clearly distinct triggers. This matches the Reference's level of domain separation and metanym distinctiveness. Rating: 7
+
+#### Impressive length
+With 9 slots, this template is longer than the others in the submission but still significantly shorter than the Reference's 13-15 slot templates. It captures the basic cascade dynamic but misses opportunities to include important factors like cascade velocity, amplification mechanisms, or recovery dynamics that the Reference includes. Rating: 5
+
+### Structural diversity across the submitted set
+The five archetypal contexts show moderate structural diversity. They include transmission (inheritance), competition, regulation (feedback), emergence, and propagation (cascade) patterns. However, compared to the Reference's set, the structural diversity is limited. The Reference includes more complex structures like gradient navigation with noise and adaptation, containment breach with threshold dynamics, scaffold-dependent assembly with fate alternatives, quorum-triggered phase transitions with hysteresis, and debt-financed overshoot with regenerative damage. The submitted set covers basic system patterns but lacks the Reference's variety of complex, multi-stage processes with rich internal dynamics. The structures are also simpler, with fewer interacting components and feedback mechanisms. Rating: 5
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Inheritance and Transmission",
+          "factual_per_pc": [6, 7, 7, 7, 7],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 6,
+          "impressive_length": 3
+        },
+        {
+          "name": "Competition and Resource Allocation",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 5,
+          "intelligence": 4,
+          "instantiation_distinctness": 5,
+          "impressive_length": 2
+        },
+        {
+          "name": "Feedback and Regulation",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 6,
+          "impressive_length": 4
+        },
+        {
+          "name": "Emergence from Simple Rules",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 3
+        },
+        {
+          "name": "Propagation and Cascade",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 5
+        }
+      ],
+      "structural_diversity": 5
+    }
+  }
+}
+```

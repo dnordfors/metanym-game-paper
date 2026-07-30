@@ -1,0 +1,181 @@
+## Target Submission
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): The description of the coagulation cascade is accurate, correctly identifying tissue factor as the initiator and the exponential amplification through sequential activation of clotting factors. The term "thrombin burst" and the role of anticoagulants in preventing thrombosis are properly used. This matches the Reference's level of factual accuracy. Rating: 7
+
+- PC 2 (Immune Response): The immune cascade description is factually sound, accurately depicting dendritic cells as initiators and the cytokine storm as the amplification mechanism. The mention of immune checkpoints preventing autoimmunity is correct. The factual accuracy is comparable to the Reference. Rating: 7
+
+- PC 3 (Financial Crisis): The financial contagion model accurately describes how defaults can cascade through leveraged institutions. The terminology of "credit monitors," "deleveraging," and regulatory mechanisms is appropriate. This maintains the Reference's standard of accuracy. Rating: 7
+
+- PC 4 (Avalanche): The avalanche mechanics are correctly described, with weak layer activation and fracture propagation accurately portrayed. The exponential growth pattern and role of inter-grain bonding are factually correct. This equals the Reference's accuracy level. Rating: 7
+
+- PC 5 (Social Movement): The social mobilization cascade is accurately described in terms of viral spread and exponential growth. The role of moderating voices and the potential for violence with failed moderation is appropriately characterized. This matches the Reference's factual standard. Rating: 7
+
+#### Beauty
+The cascade amplification archetype achieves a pleasing symmetry across domains, with the exponential growth pattern creating a satisfying conceptual rhythm. The progression from tiny trigger to massive response has inherent dramatic appeal. However, the prose is somewhat mechanical and lacks the more elegant variations found in some Reference contexts. The beauty is solid but not exceptional compared to the Reference. Rating: 6
+
+#### Intelligence
+The archetype demonstrates good conceptual grasp by identifying cascade dynamics across diverse domains. The inclusion of regulation mechanisms and pathological states shows thoughtful analysis. However, the pattern is relatively straightforward compared to some Reference archetypes that incorporate more subtle relationships like hysteresis or recursive structures. The intelligence is competent but slightly less sophisticated than the Reference average. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains span biological (blood, immune), physical (avalanche), economic (financial), and social (movement) systems, showing good diversity. The metanyms are reasonably distinct - "thrombin burst" vs "cytokine storm" vs "leverage" vs "fracture propagation" vs "viral spread" are not synonymous. However, some Reference archetypes achieve even greater semantic distance between metanyms. The distinctness is solid but not exceptional. Rating: 7
+
+#### Impressive length
+The template contains 13 slots with substantial narrative structure, comparable to the Reference templates. The prose forms are appropriately detailed without being verbose. The length matches the Reference standard. Rating: 7
+
+### Archetypal context 2: Boundary Maintenance
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The cellular biology is accurate, correctly describing selective permeability, concentration gradients, membrane potential, and lysis. The role of repair enzymes in maintaining membrane integrity is properly characterized. Equals Reference accuracy. Rating: 7
+
+- PC 2 (National Border): The border dynamics are accurately described in economic and political terms. The concepts of sovereignty, wealth differentials, and border patrol functions are correctly applied. Matches Reference standard. Rating: 7
+
+- PC 3 (Psychological Self): The ego boundary concept is accurately presented from a psychological perspective, with appropriate use of terms like defense mechanisms, psychosis, and therapeutic intervention. The factual accuracy equals the Reference. Rating: 7
+
+- PC 4 (Ecosystem Edge): The ecotone description is ecologically accurate, correctly identifying diversity gradients, keystone species roles, and succession processes. The concept of homogenization as boundary failure is appropriate. Matches Reference accuracy. Rating: 7
+
+- PC 5 (Corporate Brand): The brand identity concepts are accurately presented, with appropriate business terminology around value propositions, brand equity, and commoditization. The accuracy equals the Reference standard. Rating: 7
+
+#### Beauty
+The boundary archetype has inherent elegance in its universal application of separation and selective permeability. The parallel between cell membranes and national borders creates satisfying conceptual bridges. The prose is clear and well-structured, matching the Reference's aesthetic quality. Rating: 7
+
+#### Intelligence
+The archetype shows solid conceptual understanding by recognizing boundaries as active maintenance systems rather than passive barriers. The inclusion of gradient storage and catastrophic equilibration demonstrates good analytical depth. The intelligence level matches the Reference standard. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span biological, political, psychological, ecological, and business systems with good diversity. The metanyms show reasonable distinctness - "lysis" vs "annexation" vs "psychosis" vs "homogenization" vs "commoditization" are clearly non-synonymous. The semantic distance equals the Reference standard. Rating: 7
+
+#### Impressive length
+The template contains 15 slots with comprehensive narrative structure, slightly exceeding some Reference templates. The prose forms are detailed and substantive. The length is comparable to or slightly better than the Reference average. Rating: 7
+
+### Archetypal context 3: Selective Pressure (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): The evolutionary biology is accurately presented, correctly describing natural selection without teleology. The mechanism of differential reproduction and allele frequency changes is properly characterized. Equals Reference accuracy. Rating: 7
+
+- PC 2 (Cultural Evolution): The cultural evolution model accurately applies selection dynamics to meme propagation. The terminology and mechanisms are appropriately adapted from biological evolution. Matches Reference standard. Rating: 7
+
+- PC 3 (Market Selection): The market selection dynamics are accurately described, with appropriate economic terminology. The concept of profitable firms spawning spinoffs as reproduction is well-applied. Equals Reference accuracy. Rating: 7
+
+- PC 4 (Neural Pruning): The neural selection process is accurately described, with correct neuroscience terminology about synaptic strengthening and pruning. The learning mechanism is properly characterized. Matches Reference standard. Rating: 7
+
+- PC 5 (Scientific Progress): The scientific selection model accurately describes how hypotheses compete based on explanatory power. The paradigm shift concept is appropriately integrated. Equals Reference accuracy. Rating: 7
+
+#### Beauty
+The selective pressure archetype has elegant simplicity in showing how blind variation and selection create apparent design. The recursive note adds conceptual depth. The prose is clean and well-structured, matching the Reference's aesthetic quality. Rating: 7
+
+#### Intelligence
+The archetype demonstrates strong conceptual grasp by recognizing selection as a universal pattern across multiple scales. The explicit note about recursion (biological evolution enabling cultural evolution) shows sophisticated thinking that slightly exceeds some Reference archetypes. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains span biological, cultural, economic, neural, and scientific systems with excellent diversity. The metanyms are well-differentiated - "allele" vs "meme" vs "firm" vs "synapse" vs "hypothesis" are clearly distinct. The semantic distance matches the Reference standard. Rating: 7
+
+#### Impressive length
+The template contains 9 slots, which is shorter than most Reference templates. While the content is substantive, the reduced slot count represents less impressive length compared to the Reference average. Rating: 5
+
+### Archetypal context 4: Commitment Device
+
+#### Factually correct (per parallel context)
+- PC 1 (Individual Savings): The behavioral economics of retirement savings is accurately presented, including present bias and commitment mechanisms. The penalty structure is correctly described. Equals Reference accuracy. Rating: 7
+
+- PC 2 (Constitutional Democracy): The constitutional theory is accurately presented, with correct understanding of amendment difficulty as a commitment device against majoritarian tyranny. Matches Reference standard. Rating: 7
+
+- PC 3 (Addiction Recovery): The recovery model accurately describes sponsor relationships as accountability mechanisms. The addiction dynamics and recovery theory are properly characterized. Equals Reference accuracy. Rating: 7
+
+- PC 4 (Military Strategy): The military tactic of burning bridges is historically accurate and well-applied as a commitment device. The justification note appropriately cites historical examples. Matches Reference standard. Rating: 7
+
+- PC 5 (Software Development): The software development practices are accurately described, with code freezes properly characterized as commitment devices against scope creep. Equals Reference accuracy. Rating: 7
+
+#### Beauty
+The commitment device archetype has inherent paradoxical beauty - achieving freedom through self-imposed constraints. The parallel between Ulysses and the mast and modern applications creates conceptual elegance. The prose quality matches the Reference standard. Rating: 7
+
+#### Intelligence
+The archetype shows sophisticated understanding of time-inconsistent preferences and strategic self-binding. The recognition that constraints create freedom demonstrates philosophical depth equal to the Reference standard. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span personal finance, political systems, health, military strategy, and software development with good diversity. The metanyms are distinct - "retirement account" vs "constitution" vs "sponsor" vs "burned bridge" vs "code freeze" are clearly non-synonymous. Matches Reference standard. Rating: 7
+
+#### Impressive length
+The template contains 14 slots with comprehensive narrative structure, comparable to Reference templates. The prose forms are detailed and substantive. The length matches the Reference standard. Rating: 7
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The thermodynamics of phase transitions is accurately described, including nucleation, latent heat, and the coexistence of phases at the transition point. Equals Reference accuracy. Rating: 7
+
+- PC 2 (Economic Bubble): The economic phase transition model accurately describes market regime changes and critical leverage points. The terminology is appropriate and well-applied. Matches Reference standard. Rating: 7
+
+- PC 3 (Revolution): The sociological model of revolutionary transitions is accurately presented, with appropriate concepts of tension accumulation and institutional reorganization. Equals Reference accuracy. Rating: 7
+
+- PC 4 (Ecological Collapse): The ecological tipping points are accurately described, with correct terminology about stable states, perturbations, and ecosystem reorganization. Matches Reference standard. Rating: 7
+
+- PC 5 (Paradigm Shift): The Kuhnian model of scientific revolutions is accurately presented, with appropriate terminology about anomalies, crisis, and paradigm replacement. Equals Reference accuracy. Rating: 7
+
+#### Beauty
+The phase transition archetype has mathematical elegance in its discontinuous change pattern. The universality of critical thresholds across domains creates satisfying conceptual unity. However, the prose is somewhat technical and lacks the narrative flow of some Reference archetypes. Rating: 6
+
+#### Intelligence
+The archetype demonstrates strong conceptual grasp of discontinuous change and critical phenomena. The inclusion of coexisting phases and interfaces shows sophisticated understanding. However, it lacks the additional layers (like recursion or hysteresis) that elevate some Reference archetypes. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span physical, economic, social, ecological, and intellectual systems with good diversity. The metanyms show reasonable distinctness - "freezing point" vs "critical leverage" vs "breaking point" vs "tipping point" vs "crisis" have some semantic overlap in the threshold concept but are applied distinctly. Slightly less distinctive than the best Reference examples. Rating: 6
+
+#### Impressive length
+The template contains 12 slots with substantial narrative structure, comparable to many Reference templates. The prose forms are appropriately detailed. The length matches the Reference standard. Rating: 7
+
+### Structural diversity across the submitted set
+The Target submission presents five archetypes with reasonably diverse structures: exponential amplification (cascade), selective permeability (boundary), iterative selection (evolution), self-binding (commitment), and discontinuous change (phase transition). However, compared to the Reference set which includes gradient navigation, containment breach, scaffold assembly, quorum sensing, and debt overshoot, the Target set shows somewhat less structural variety. The Reference set includes more complex temporal dynamics (debt accumulation over time) and multi-scale assembly processes. The Target's structural diversity is good but slightly less impressive than the Reference. Rating: 6
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Selective Pressure",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 8,
+          "instantiation_distinctness": 7,
+          "impressive_length": 5
+        },
+        {
+          "name": "Commitment Device",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 6,
+          "intelligence": 7,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

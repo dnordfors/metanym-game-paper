@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Resource Flow and Transformation
+
+#### Factually correct (per parallel context)
+- PC 1 (River System): The description of the river system is factually correct, detailing how water flows from a spring through a river to a lake, with tributaries affecting the flow. Rating: 7
+- PC 2 (Supply Chain): The supply chain context accurately describes the flow of goods from factories to retailers, with warehouses playing a role in modifying goods. Rating: 7
+- PC 3 (Neural Network): The neural network context correctly outlines the flow of signals from sensory neurons to motor neurons, with interneurons modifying the signals. Rating: 7
+- PC 4 (Economic Market): The economic market context accurately describes the flow of commodities from producers to consumers, with middlemen affecting the flow. Rating: 7
+- PC 5 (Ecosystem): The ecosystem context correctly describes the flow of energy from primary producers to apex predators, with decomposers playing a role. Rating: 7
+
+#### Beauty
+The beauty of this archetypal context is on par with the Reference. The language is clear and the structure is logical, but it lacks any particularly striking or elegant phrasing. Rating: 7
+
+#### Intelligence
+The intelligence of this archetypal context is comparable to the Reference. It demonstrates a solid understanding of the dynamics of resource flow and transformation across different domains. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains covered (river systems, supply chains, neural networks, economic markets, ecosystems) are distinct and the metanyms used are not synonymous, similar to the Reference. Rating: 7
+
+#### Impressive length
+The length of the context-template is comparable to the Reference, providing a detailed description of the resource flow and transformation process. Rating: 7
+
+### Archetypal context 2: Competitive Exclusion and Niche Partitioning
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecology): The ecological context accurately describes species competition and niche partitioning. Rating: 7
+- PC 2 (Business Market): The business market context correctly outlines firm competition and market segmentation. Rating: 7
+- PC 3 (Academic Fields): The academic fields context accurately describes researcher competition and specialization. Rating: 7
+- PC 4 (Social Groups): The social groups context correctly describes group competition and subculture differentiation. Rating: 7
+- PC 5 (Software Ecosystem): The software ecosystem context accurately describes application competition and plugin specialization. Rating: 7
+
+#### Beauty
+The beauty of this archetypal context is similar to the Reference. The language is clear and the structure is logical, but it lacks any particularly striking or elegant phrasing. Rating: 7
+
+#### Intelligence
+The intelligence of this archetypal context is comparable to the Reference. It demonstrates a solid understanding of competitive exclusion and niche partitioning across different domains. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains covered (ecology, business markets, academic fields, social groups, software ecosystems) are distinct and the metanyms used are not synonymous, similar to the Reference. Rating: 7
+
+#### Impressive length
+The length of the context-template is comparable to the Reference, providing a detailed description of competitive exclusion and niche partitioning. Rating: 7
+
+### Archetypal context 3: Feedback Regulation and Control
+
+#### Factually correct (per parallel context)
+- PC 1 (Thermostat System): The thermostat system context accurately describes temperature regulation through feedback loops. Rating: 7
+- PC 2 (Endocrine System): The endocrine system context correctly outlines hormone regulation through feedback mechanisms. Rating: 7
+- PC 3 (Organizational Management): The organizational management context accurately describes performance regulation through feedback. Rating: 7
+- PC 4 (Climate System): The climate system context correctly describes temperature regulation through policy actions and feedback. Rating: 7
+- PC 5 (Software System): The software system context accurately describes load regulation through feedback mechanisms. Rating: 7
+
+#### Beauty
+The beauty of this archetypal context is similar to the Reference. The language is clear and the structure is logical, but it lacks any particularly striking or elegant phrasing. Rating: 7
+
+#### Intelligence
+The intelligence of this archetypal context is comparable to the Reference. It demonstrates a solid understanding of feedback regulation and control across different domains. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains covered (thermostat systems, endocrine systems, organizational management, climate systems, software systems) are distinct and the metanyms used are not synonymous, similar to the Reference. Rating: 7
+
+#### Impressive length
+The length of the context-template is comparable to the Reference, providing a detailed description of feedback regulation and control. Rating: 7
+
+### Archetypal context 4: Information Encoding and Decoding
+
+#### Factually correct (per parallel context)
+- PC 1 (Human Communication): The human communication context accurately describes the encoding and decoding of messages through speech. Rating: 7
+- PC 2 (Digital Communication): The digital communication context correctly outlines data transmission and error correction. Rating: 7
+- PC 3 (Genetic System): The genetic system context accurately describes genetic information encoding and decoding. Rating: 7
+- PC 4 (Animal Signaling): The animal signaling context correctly describes signal encoding and decoding in animal communication. Rating: 7
+- PC 5 (Cultural Transmission): The cultural transmission context accurately describes the encoding and decoding of traditions through rituals. Rating: 7
+
+#### Beauty
+The beauty of this archetypal context is similar to the Reference. The language is clear and the structure is logical, but it lacks any particularly striking or elegant phrasing. Rating: 7
+
+#### Intelligence
+The intelligence of this archetypal context is comparable to the Reference. It demonstrates a solid understanding of information encoding and decoding across different domains. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains covered (human communication, digital communication, genetic systems, animal signaling, cultural transmission) are distinct and the metanyms used are not synonymous, similar to the Reference. Rating: 7
+
+#### Impressive length
+The length of the context-template is comparable to the Reference, providing a detailed description of information encoding and decoding. Rating: 7
+
+### Archetypal context 5: Growth and Saturation Dynamics
+
+#### Factually correct (per parallel context)
+- PC 1 (Bacterial Colony): The bacterial colony context accurately describes growth and saturation dynamics in microbial populations. Rating: 7
+- PC 2 (Startup Company): The startup company context correctly outlines growth and market saturation dynamics. Rating: 7
+- PC 3 (Tumor Growth): The tumor growth context accurately describes growth and saturation dynamics in cancer. Rating: 7
+- PC 4 (Social Media Platform): The social media platform context correctly describes user growth and market saturation dynamics. Rating: 7
+- PC 5 (Plant Growth): The plant growth context accurately describes growth and saturation dynamics in plants. Rating: 7
+
+#### Beauty
+The beauty of this archetypal context is similar to the Reference. The language is clear and the structure is logical, but it lacks any particularly striking or elegant phrasing. Rating: 7
+
+#### Intelligence
+The intelligence of this archetypal context is comparable to the Reference. It demonstrates a solid understanding of growth and saturation dynamics across different domains. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains covered (bacterial colonies, startup companies, tumor growth, social media platforms, plant growth) are distinct and the metanyms used are not synonymous, similar to the Reference. Rating: 7
+
+#### Impressive length
+The length of the context-template is comparable to the Reference, providing a detailed description of growth and saturation dynamics. Rating: 7
+
+### Structural diversity across the submitted set
+The structural diversity of the submitted set is comparable to the Reference. Each archetypal context represents a distinct system structure, and the submission covers a wide range of domains. Rating: 7
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Flow and Transformation",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Competitive Exclusion and Niche Partitioning",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Feedback Regulation and Control",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Information Encoding and Decoding",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Growth and Saturation Dynamics",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

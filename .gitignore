@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.toc
+*.synctex.gz
+submission/paper.pdf
+submission/out/
+
+# OS
+.DS_Store
+Thumbs.db
+.fuse_hidden*

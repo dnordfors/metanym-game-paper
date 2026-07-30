@@ -1,0 +1,182 @@
+## Submission 1
+
+### Archetypal context 1: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Business): The description accurately captures how companies allocate capital among projects, assess ROI, and face opportunity costs when reallocating resources. The role of market research and strategic planning frameworks is correctly portrayed. Rating: 9
+- PC 2 (Government): The characterization of government agencies allocating budgets among public services while considering political risks and social impact is accurate. The mention of political backlash as a cost of reallocation is realistic. Rating: 9
+- PC 3 (Nonprofit): The description correctly reflects how nonprofits manage donations, assess mission alignment, and face donor dissatisfaction when changing allocations. The uncertainty around funding is well-captured. Rating: 9
+- PC 4 (Personal Finance): The portrayal of individual financial decision-making, including utility assessment and lifestyle change costs, is accurate and relatable. The role of financial reports in decision-making is correctly identified. Rating: 9
+- PC 5 (Environmental Management): The description accurately reflects environmental resource management challenges, including ecological uncertainty and sustainability considerations. The concept of ecological impact as a cost is appropriate. Rating: 8
+
+#### Beauty
+The archetypal context reveals an elegant underlying structure that governs decision-making across vastly different scales and domains. There's a poetic quality in how the same fundamental tensions between commitment and flexibility, information and uncertainty, play out whether in corporate boardrooms or personal budgeting. The template captures the universal human struggle of making optimal choices under constraints.
+Rating: 8
+
+#### Intelligence
+The framework demonstrates sophisticated understanding of decision theory and resource allocation principles. It identifies key variables like uncertainty, value assessment, and switching costs that are central to economic and management theory. The recognition that prior commitments create barriers to reallocation shows deep insight into path dependence and institutional inertia.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains span from individual psychology to corporate strategy to environmental science, representing genuinely different scales and contexts. The metanyms are appropriately distinct: "capital" vs "donations" vs "savings" are different types of resources, while "ROI" vs "social impact" vs "utility" represent fundamentally different value frameworks.
+Rating: 8
+
+#### Impressive length
+The template contains nine distinct slots and forms a substantial paragraph that captures the complexity of resource allocation decisions. The length allows for meaningful instantiation across domains while maintaining coherent structure.
+Rating: 7
+
+### Archetypal context 2: Conflict Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Legal Disputes): The description accurately portrays litigation processes, including settlement negotiations, evidence exchange, and the role of legal theory. The mention of legal obstacles to compromise is realistic. Rating: 9
+- PC 2 (International Relations): The characterization of diplomatic conflict resolution, including territorial disputes and treaty negotiations, is accurate. Political tensions as barriers to compromise are well-identified. Rating: 8
+- PC 3 (Workplace Conflicts): The description correctly reflects workplace dispute resolution, including the role of hierarchy and organizational behavior theory. The dynamics are realistically portrayed. Rating: 9
+- PC 4 (Family Disputes): The portrayal of family conflict resolution, including emotional needs and mediation techniques, is accurate and sensitive to family dynamics. Rating: 9
+- PC 5 (Community Mediation): The description accurately reflects community-level dispute resolution and the role of restorative justice principles. The emphasis on consensus-building is appropriate. Rating: 8
+
+#### Beauty
+The archetypal context captures the fundamental human challenge of resolving competing interests across all scales of social organization. There's beauty in how the same principles of negotiation, information exchange, and barrier identification apply from intimate family disputes to international diplomacy. The template reveals conflict resolution as a universal social process.
+Rating: 7
+
+#### Intelligence
+The framework shows good understanding of conflict theory and negotiation principles. It identifies key elements like information asymmetry, commitment problems, and the role of theoretical frameworks in guiding resolution. The recognition that prior positions create barriers demonstrates insight into negotiation dynamics.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span from intimate family relationships to international relations, representing different scales of social organization. However, some metanyms are somewhat close: "disagreement," "argument," and "dispute" are near-synonymous, and "settlement terms" vs "compromises" vs "mediation techniques" overlap conceptually.
+Rating: 6
+
+#### Impressive length
+The template contains eight slots and forms a coherent paragraph, though it's somewhat shorter than the resource allocation template. The length is adequate for meaningful instantiation but could be more substantial.
+Rating: 6
+
+### Archetypal context 3: Knowledge Acquisition
+
+#### Factually correct (per parallel context)
+- PC 1 (Student): The description accurately portrays student learning processes, including study techniques, grade feedback, and the role of pedagogy. The challenge of changing study habits is realistically captured. Rating: 9
+- PC 2 (Researcher): The characterization of research methodology, peer review, and expertise development is accurate. The role of research routines in shaping future approaches is well-identified. Rating: 9
+- PC 3 (Employee): The description correctly reflects workplace learning, including training programs and performance reviews. The concept of work habits as constraints is appropriate. Rating: 9
+- PC 4 (Child): The portrayal of child development through play and parental feedback is accurate and developmentally appropriate. The role of learning patterns is well-captured. Rating: 9
+- PC 5 (Adult Learner): The description accurately reflects adult education principles, including self-directed learning and reflective practice. The concept of lifelong learning habits is appropriate. Rating: 8
+
+#### Beauty
+The archetypal context elegantly captures the universal process of learning and growth across the human lifespan. There's beauty in how the same fundamental dynamics of acquiring knowledge, receiving feedback, and adapting approaches apply from childhood play to professional development. The template reveals learning as a core human activity.
+Rating: 8
+
+#### Intelligence
+The framework demonstrates solid understanding of educational theory and learning psychology. It identifies key elements like feedback loops, source evaluation, and the role of prior learning in shaping future acquisition. The recognition that habits can constrain learning shows insight into cognitive psychology.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span different life stages and learning contexts, from childhood to professional development. However, the metanyms show some overlap: "study techniques," "training programs," and "self-directed learning" are related concepts, and the distinction between some learning contexts could be sharper.
+Rating: 7
+
+#### Impressive length
+The template contains eight slots and forms a coherent paragraph of moderate length. While adequate for instantiation, it could benefit from additional complexity to capture more nuanced aspects of learning processes.
+Rating: 6
+
+### Archetypal context 4: Ecosystem Dynamics
+
+#### Factually correct (per parallel context)
+- PC 1 (Predator-Prey): The description accurately portrays predator-prey dynamics, including population control and behavioral constraints. The ecological principles are correctly applied. Rating: 9
+- PC 2 (Plant Community): The characterization of plant interactions and seasonal adaptations is accurate. The role of resource limitations is well-identified. Rating: 8
+- PC 3 (Microbial Ecosystem): The description correctly reflects microbial ecology, including nutrient cycling and genetic diversity constraints. The substrate concept is appropriate. Rating: 8
+- PC 4 (Coral Reef): The portrayal of coral reef ecosystems and climate change impacts is accurate. The symbiotic relationships are well-captured. Rating: 9
+- PC 5 (Urban Wildlife): The description accurately reflects urban ecology challenges, including human-wildlife interactions and adaptation difficulties. Rating: 8
+
+#### Beauty
+The archetypal context captures the elegant complexity of ecological systems and the delicate balance between adaptation and constraint. There's beauty in how the same principles of interaction, balance, and evolutionary limitation apply across scales from microbes to urban ecosystems. The template reveals ecology as a universal organizing principle.
+Rating: 8
+
+#### Intelligence
+The framework demonstrates strong understanding of ecological theory and systems thinking. It identifies key concepts like population dynamics, environmental feedback, and evolutionary constraints. The recognition that adaptations can limit future evolution shows sophisticated understanding of evolutionary biology.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains span from microscopic to ecosystem scales, representing genuinely different biological contexts. The metanyms are appropriately distinct: "habitat" vs "soil" vs "substrate" vs "ocean" vs "city" represent different environmental contexts, though some ecological terms overlap.
+Rating: 7
+
+#### Impressive length
+The template contains eight slots and forms a substantial paragraph that captures ecological complexity. The length allows for meaningful differentiation across biological scales while maintaining coherent structure.
+Rating: 7
+
+### Archetypal context 5: Innovation Process
+
+#### Factually correct (per parallel context)
+- PC 1 (Entrepreneur): The description accurately portrays startup processes, including customer feedback and market competition challenges. The role of entrepreneurship theory is correctly identified. Rating: 8
+- PC 2 (Scientist): The characterization of scientific discovery processes and peer evaluation is accurate. The concept of research limitations as constraints is appropriate. Rating: 9
+- PC 3 (Software Developer): The description correctly reflects software development, including user testing and technical debt. The agile methodology reference is appropriate. Rating: 9
+- PC 4 (Artist): The portrayal of artistic creation and creative blocks is accurate. The role of critiques and art theory is well-captured. Rating: 8
+- PC 5 (Educator): The description accurately reflects educational program development and curriculum constraints. The assessment feedback loop is correctly identified. Rating: 8
+
+#### Beauty
+The archetypal context captures the universal human drive to create and innovate across diverse fields. There's beauty in how the same creative process of ideation, testing, and refinement applies whether developing technology, creating art, or designing education. The template reveals innovation as a fundamental human capacity.
+Rating: 7
+
+#### Intelligence
+The framework shows good understanding of innovation theory and creative processes. It identifies key elements like feedback loops, resource constraints, and the role of theoretical frameworks. The recognition that prior commitments can hinder innovation demonstrates insight into organizational behavior.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span from business to science to arts, representing different creative contexts. However, some metanyms show overlap: "business model," "research findings," "applications," "creative works," and "curricula" are all products but with varying degrees of distinction.
+Rating: 6
+
+#### Impressive length
+The template contains eight slots and forms a coherent paragraph of moderate length. While adequate for instantiation across creative domains, it could benefit from additional complexity to capture more nuanced aspects of innovation.
+Rating: 6
+
+### Structural diversity across the submitted set
+The five archetypal contexts represent genuinely different system structures: resource allocation (optimization under constraints), conflict resolution (negotiation dynamics), knowledge acquisition (learning processes), ecosystem dynamics (biological systems), and innovation (creative processes). Each captures different fundamental patterns of organization and interaction, from economic to social to biological to creative systems. The diversity spans multiple academic disciplines and scales of analysis.
+Rating: 8
+
+```json
+{
+  "scores": {
+    "1": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc": [9, 9, 9, 9, 8],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 7
+        },
+        {
+          "name": "Conflict Resolution",
+          "factual_per_pc": [9, 8, 9, 9, 8],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Knowledge Acquisition",
+          "factual_per_pc": [9, 9, 9, 9, 8],
+          "beauty": 8,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 6
+        },
+        {
+          "name": "Ecosystem Dynamics",
+          "factual_per_pc": [9, 8, 8, 9, 8],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Innovation Process",
+          "factual_per_pc": [8, 9, 9, 8, 8],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

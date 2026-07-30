@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: Hierarchical Control
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Control): The target submission accurately describes the hierarchical organization of the nervous system, from reflexes to cortical planning, and the concept of escalation when local capacity is exceeded. This is factually sound and comparable in accuracy to the reference's biological contexts. Rating: 5
+- PC 2 (Military Command): The description of military command structures, operational tempos, and the transfer of authority when threats exceed local capabilities is highly accurate and reflects standard military doctrine. This is on par with the reference's factual correctness. Rating: 5
+- PC 3 (Corporate Management): The portrayal of corporate hierarchies, planning horizons, and escalation procedures is a standard and accurate representation of organizational management theory. It matches the reference in factual reliability. Rating: 5
+- PC 4 (Immune System): The target correctly identifies the hierarchical nature of the immune system (innate, local, systemic, adaptive) and the escalation of responses based on threat level and timescale. This is factually accurate and comparable to the reference. Rating: 5
+- PC 5 (Computer Networks): The description of network protocols (physical, data link, network, transport, application) and the handling of traffic spikes through escalation and latency trade-offs is factually correct in the context of network theory. It is as accurate as the reference's technical contexts. Rating: 5
+
+#### Beauty
+The target's template is clear and well-structured, but it lacks the poetic resonance found in some of the reference's templates (like "Debt Accumulation"). The prose in Form (b) is functional and professional but somewhat dry, reading more like a textbook summary than an elegant abstraction. It is slightly less beautiful than the reference.
+Rating: 4
+
+#### Intelligence
+The abstraction of "Hierarchical Control" is a solid, recognizable systems concept. However, it feels slightly more generic and less insightful than the reference's "Debt Accumulation" or "Scaffold-Dependent Assembly." The mapping is logical but doesn't offer the same "aha" moment of seeing a complex dynamic perfectly distilled. It is slightly less intelligent than the reference.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (Neural, Military, Corporate, Immune, Networks) are distinct and span biology, human organization, and technology. The metanyms (e.g., homeostasis, mission success, profitability, health, connectivity) are well-chosen and far from synonymous, effectively demonstrating the versatility of the template. This is comparable to the reference's domain spread.
+Rating: 5
+
+#### Impressive length
+The template is 79 words long, which is significantly shorter than the reference templates (e.g., Gradient-Guided Navigation is 114 words, Debt Accumulation is 108 words). The shorter length limits the complexity and depth of the archetypal context. It is clearly worse than the reference in this regard.
+Rating: 3
+
+### Archetypal context 2: Competitive Displacement
+
+#### Factually correct (per parallel context)
+- PC 1 (Evolutionary Biology): The description of species competing for resources, natural selection favoring superior strategies, and competitive displacement leading to dominance or coexistence through niche differentiation is a highly accurate summary of ecological and evolutionary principles. Rating: 5
+- PC 2 (Market Economics): The mapping to market economics, where firms compete for market share and superior strategies lead to displacement or monopolization, is factually sound and aligns with standard economic theory. Rating: 5
+- PC 3 (Academic Research): The portrayal of researchers competing for funding and citations, with peer review acting as the selection mechanism leading to paradigm shifts, is an accurate reflection of the sociology of science (e.g., Kuhn's structure of scientific revolutions). Rating: 5
+- PC 4 (Political Elections): The description of candidates competing for votes, with electoral mechanisms favoring appealing platforms and leading to mandates or coalitions, is factually correct within political science. Rating: 5
+- PC 5 (Technology Adoption): The mapping to technology adoption, where features drive user acquisition and superior designs become standards, is an accurate representation of innovation theory. Rating: 5
+
+#### Beauty
+The template is functional but somewhat repetitive in its structure ("Over time, [COMPETITOR] with superior [STRATEGY] displace those with inferior [APPROACH]"). It lacks the narrative flow and elegance of the reference's better templates. Form (b) rewrites are clear but lack stylistic flair. It is slightly less beautiful than the reference.
+Rating: 4
+
+#### Intelligence
+The concept of "Competitive Displacement" is a fundamental dynamic across many fields, but the target's execution feels a bit simplistic compared to the reference's "Competitive Exclusion and Niche Partitioning." The reference's version includes more nuanced concepts like "stabilizing mechanisms" and "fitness differences," making it a more intelligent abstraction. The target is slightly worse.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains (Evolutionary Biology, Market Economics, Academic Research, Political Elections, Technology Adoption) are well-separated. The metanyms (e.g., survival, profit, citation, victory, adoption) are distinct and effectively instantiate the template across different fields. This is comparable to the reference.
+Rating: 5
+
+#### Impressive length
+The template is 78 words long, which is noticeably shorter than the reference templates. This brevity restricts the amount of detail and nuance that can be captured in the archetypal context. It is clearly worse than the reference.
+Rating: 3
+
+### Archetypal context 3: Information Cascade
+
+#### Factually correct (per parallel context)
+- PC 1 (Financial Markets): The description of investors ignoring private signals in favor of observed trading behavior, leading to bubbles and market instability, is a classic and accurate representation of information cascades in behavioral finance. Rating: 5
+- PC 2 (Medical Diagnosis): The concept of diagnostic cascades, where physicians might discount their own observations in favor of following previous diagnoses, is a recognized phenomenon in medical error analysis. The description is factually sound. Rating: 5
+- PC 3 (Social Media): The mapping to social media, where users share content based on observed popularity rather than private evaluation, leading to viral spread and misinformation, is highly accurate and relevant to media studies. Rating: 5
+- PC 4 (Scientific Research): The portrayal of scientific bandwagons, where researchers might follow prevailing trends or publications rather than their own data, is a valid concern in the philosophy and sociology of science. Rating: 5
+- PC 5 (Restaurant Choice): The classic example of diners choosing a crowded restaurant over an empty one, ignoring their own private cues, is a standard illustration of information cascades in behavioral economics. The description is accurate. Rating: 5
+
+#### Beauty
+The template is well-crafted and clearly articulates the mechanism of an information cascade. The Form (b) rewrites are engaging and effectively translate the abstract concept into domain-specific language. It is comparable in beauty to the reference.
+Rating: 5
+
+#### Intelligence
+The abstraction of "Information Cascade" is insightful and captures a complex, counter-intuitive dynamic (how rational individual behavior can lead to irrational collective outcomes). The mapping across diverse domains is clever and illuminating. This is on par with the intelligence of the reference's better archetypes.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (Finance, Medicine, Social Media, Science, Dining) are very distinct. The metanyms (e.g., bubble, misdiagnosis, viral spread, bandwagon, trend) are excellent choices that are far from synonymous but perfectly capture the concept in their respective fields. This is comparable to the reference.
+Rating: 5
+
+#### Impressive length
+The template is 98 words long, which is closer to the length of the reference templates. It provides enough detail to fully explain the mechanism and its consequences. It is comparable to the reference.
+Rating: 5
+
+### Archetypal context 4: Boundary Maintenance (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Biology): The description of cell membranes, energy-dependent maintenance, selective transport, and the consequences of lysis is highly accurate and fundamental to cell biology. Rating: 5
+- PC 2 (Nation States): The mapping to nation-states, borders, customs, and the balance between security and trade is a standard and accurate representation of political science concepts. Rating: 5
+- PC 3 (Ecosystems): The portrayal of ecological boundaries, keystone species controlling flows, and the impact of disturbances is factually sound within ecology. Rating: 5
+- PC 4 (Organizations): The description of organizational boundaries, gatekeepers, and the need to balance coherence with environmental interaction is accurate in the context of organization theory. Rating: 5
+- PC 5 (Psychological Self): The mapping to the psychological self, ego boundaries, and the balance between protection and interaction is a valid representation of psychoanalytic and psychological concepts. Rating: 5
+
+#### Beauty
+The template is clear and the recursive nature adds a layer of elegance. However, the Form (b) rewrites feel a bit formulaic and repetitive, lacking the varied sentence structure and domain-expert prose found in the reference's recursive "Debt Accumulation" archetype. It is slightly less beautiful than the reference.
+Rating: 4
+
+#### Intelligence
+The identification of "Boundary Maintenance" as a recursive archetype is a strong conceptual move. However, the execution is slightly less sophisticated than the reference's "Debt Accumulation." The reference's recursive archetype builds a clear hierarchy (molecules -> cells -> organisms -> institutions -> civilizations), whereas the target's domains (cells, nations, ecosystems, organizations, psyche) don't form as neat or compelling a nested hierarchy. It is slightly less intelligent than the reference.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains are distinct, spanning biology, politics, ecology, sociology, and psychology. The metanyms (e.g., membrane, border, boundary, ego) are well-chosen and not synonymous. This is comparable to the reference.
+Rating: 5
+
+#### Impressive length
+The template is 74 words long, which is significantly shorter than the reference templates. This brevity limits the depth of the abstraction, especially for a recursive concept that could benefit from more detail. It is clearly worse than the reference.
+Rating: 3
+
+### Archetypal context 5: Resonance Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Mechanical Systems): The description of mechanical resonance, natural frequencies, and the amplification of vibrations leading to potential structural failure is highly accurate and fundamental to mechanical engineering. Rating: 5
+- PC 2 (Social Movements): The mapping to social movements, where messages aligning with the movement's natural rhythm lead to rapid mobilization, is a plausible and factually sound application of sociological concepts. Rating: 5
+- PC 3 (Financial Markets): The portrayal of market cycles and the amplification of volatility into bubbles when trading pressures align with these cycles is an accurate representation of certain economic theories. Rating: 5
+- PC 4 (Neural Networks): The description of neural synchrony, where inputs matching the network's natural frequency lead to amplified activity (functional or pathological), is factually correct within neuroscience. Rating: 5
+- PC 5 (Laser Physics): The mapping to laser physics, where optical pumping at the medium's transition frequency leads to stimulated emission and amplified light intensity, is highly accurate. Rating: 5
+
+#### Beauty
+The template is well-written and effectively captures the dynamic of resonance. The Form (b) rewrites are clear and use appropriate domain-specific terminology. It is comparable in beauty to the reference.
+Rating: 5
+
+#### Intelligence
+The abstraction of "Resonance Amplification" is a powerful concept that translates well across physical and social sciences. The mapping is clever and highlights a fundamental systemic behavior. This is comparable to the intelligence of the reference.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (Mechanics, Sociology, Economics, Neuroscience, Optics) are very distinct. The metanyms (e.g., vibration, activity, fluctuation, oscillation) are well-chosen and not synonymous. This is comparable to the reference.
+Rating: 5
+
+#### Impressive length
+The template is 82 words long, which is shorter than the reference templates. While it covers the core concept, it lacks the detailed elaboration found in the reference. It is slightly worse than the reference.
+Rating: 4
+
+### Structural diversity across the submitted set
+The target submission presents five distinct archetypal contexts: Hierarchical Control, Competitive Displacement, Information Cascade, Boundary Maintenance, and Resonance Amplification. These represent different types of system structures (hierarchies, competitive arenas, sequential decision-making, boundary systems, and oscillatory systems). This diversity is comparable to the reference submission, which also covers a wide range of system dynamics (navigation, containment, competition, debt, assembly).
+Rating: 5
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Hierarchical Control",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 4,
+          "intelligence": 4,
+          "instantiation_distinctness": 5,
+          "impressive_length": 3
+        },
+        {
+          "name": "Competitive Displacement",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 4,
+          "intelligence": 4,
+          "instantiation_distinctness": 5,
+          "impressive_length": 3
+        },
+        {
+          "name": "Information Cascade",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 5
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 4,
+          "intelligence": 4,
+          "instantiation_distinctness": 5,
+          "impressive_length": 3
+        },
+        {
+          "name": "Resonance Amplification",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 4
+        }
+      ],
+      "structural_diversity": 5
+    }
+  }
+}
+```

@@ -1,0 +1,202 @@
+## Submission 1
+
+### Archetypal context 1: Inheritance and Transmission
+
+#### Factually correct (per parallel context)
+- PC 1 (Genetics): The description accurately captures genetic inheritance, mutation, and population genetics. The terminology is precise and the relationships between inheritance, variation, and evolution are correctly stated. The form (b) version maintains accuracy while improving readability. Rating: 10
+
+- PC 2 (Cultural Tradition): The parallel correctly describes cultural transmission and evolution. The concepts of customs being transmitted, reinterpreted, and evolving within societies is anthropologically sound. The form (b) appropriately references anthropology as the relevant field. Rating: 10
+
+- PC 3 (Software Development): The software parallel is mostly accurate, though "refactoring" typically means restructuring existing code rather than inheriting from legacy systems. The concept of functions accumulating and evolving through versions is correct, but the terminology could be more precise. Rating: 8
+
+- PC 4 (Language Evolution): The linguistic parallel accurately describes language evolution, though "borrowing" typically refers to taking words from contemporary languages rather than proto-languages. The concepts of semantic shift and language family evolution are correctly presented. Rating: 9
+
+- PC 5 (Legal Precedent): The legal parallel correctly captures how doctrines evolve through citation and reinterpretation. The concept of legal evolution through precedent is accurately described, and the terminology is appropriate for the domain. Rating: 10
+
+#### Beauty
+The archetypal context elegantly captures a fundamental pattern of transmission and evolution across vastly different domains. The template flows naturally, creating a narrative arc from acquisition through variation to population-level effects. The parallel contexts reveal surprising connections between biological evolution and cultural, technological, and legal evolution, creating moments of insight about the universality of inheritance patterns.
+Rating: 8
+
+#### Intelligence
+The archetype demonstrates sophisticated understanding by identifying a deep structural pattern that unifies disparate fields. The inclusion of variation/mutation as a key element shows insight into how inheritance systems evolve. The template captures not just transmission but the full cycle of inheritance, variation, and selection that drives evolution in multiple domains. This reveals a profound commonality across systems that appear superficially unrelated.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span natural sciences (genetics), social sciences (anthropology), technology (software), humanities (linguistics), and law. The metanyms are genuinely distinct - "gene" vs "custom" vs "function" vs "word" vs "doctrine" are not synonyms but domain-specific instantiations. "Mutation" vs "reinterpretation" vs "bug" vs "semantic shift" beautifully captures domain-specific variation mechanisms. The distance between biological inheritance and legal precedent is particularly impressive.
+Rating: 9
+
+#### Impressive length
+The template contains 8 slots and 4 complete sentences, creating a substantial narrative structure. It goes beyond simple relationships to include source, transmission mechanism, variation, population effects, and field of study. This length allows for rich instantiation while remaining coherent. The template successfully maintains meaning across all five domains despite its complexity.
+Rating: 8
+
+### Archetypal context 2: Resource Allocation and Competition
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecology): The ecological competition description is accurate, correctly using game theory to analyze species competition. The relationships between foraging, predation risk, and fitness are well-established in ecology. The connection to climate change and coexistence patterns is appropriate. Rating: 10
+
+- PC 2 (Business): The business parallel accurately describes market competition, though "bankruptcy" as a risk doesn't perfectly parallel "predation" - it might be better as "losses" or "market exit." The economic analysis of firm adaptation is correct. Rating: 9
+
+- PC 3 (Academic Funding): The academic funding parallel correctly captures grant competition dynamics. The balance between proposal effort and rejection risk is real, and scientometrics does study these patterns. The description of how funding affects discipline dynamics is accurate. Rating: 10
+
+- PC 4 (Sports League): The sports parallel is accurate, though "injury" as the primary risk seems narrow - "defeat" might be more parallel. The concept of championship distribution affecting league dynamics is correct, and sports analytics does study these patterns. Rating: 9
+
+- PC 5 (Internet Bandwidth): The network parallel accurately describes bandwidth competition and congestion. The concepts of throttling, throughput optimization, and network theory's role in analyzing traffic patterns are all correct. Rating: 10
+
+#### Beauty
+This archetype elegantly captures the universal pattern of competition for limited resources. The template creates a compelling narrative of strategic competition under constraints, revealing deep similarities between ecological competition and human institutional competition. The parallel between species competing for food and users competing for bandwidth creates unexpected resonance.
+Rating: 7
+
+#### Intelligence
+The archetype shows sophisticated understanding of game-theoretic competition across domains. Including both strategy and risk as key elements demonstrates insight into the trade-offs inherent in competitive systems. The template captures not just competition but its effects on system stability and dynamics, showing deep structural understanding of how resource allocation shapes system evolution.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains span biology, economics, academia, sports, and technology. The metanyms are appropriately distinct - "species" vs "firm" vs "researcher" vs "team" vs "user" represent genuinely different types of agents. "Food" vs "market share" vs "grant" vs "championship" vs "bandwidth" are non-synonymous resources. The span from ecological foraging to internet traffic is impressive.
+Rating: 9
+
+#### Impressive length
+The template contains 10 slots and multiple complex sentences, making it one of the longer templates. It captures agent, resource, system, competitor, strategy, risk, gain, theory, conditions, and outcome - a comprehensive view of competitive systems. This length allows for nuanced instantiation while maintaining coherence across domains.
+Rating: 9
+
+### Archetypal context 3: Feedback and Regulation
+
+#### Factually correct (per parallel context)
+- PC 1 (Physiology): The physiological description of homeostasis through negative feedback is textbook accurate. The insulin/blood sugar example is a classic case of biological feedback regulation. The connection to diabetes as feedback failure is medically correct. Rating: 10
+
+- PC 2 (Climate Control): The thermostat example accurately describes feedback control in HVAC systems. The mechanism of temperature sensing and heater/cooler activation is correctly presented. Overheating as a failure mode is appropriate. Rating: 10
+
+- PC 3 (Economic Policy): The monetary policy description correctly captures how central banks use interest rates to control inflation. The feedback mechanism and potential for recession if policy fails are economically sound. Rating: 10
+
+- PC 4 (Computer Systems): The server load balancing description is accurate. CPU monitoring, scheduler activation, and crash prevention through load distribution are correctly described. The feedback mechanism is appropriately technical. Rating: 10
+
+- PC 5 (Social Groups): The social norms as feedback mechanism is insightful and accurate. Mediators detecting and intervening in conflicts to maintain harmony correctly captures social regulation. Discord as a failure mode is appropriate. Rating: 10
+
+#### Beauty
+This archetype beautifully captures the universal pattern of homeostatic regulation. The template elegantly moves from detection through response to potential failure, creating a complete feedback narrative. The parallel between bodily homeostasis and social harmony reveals profound connections between biological and social systems.
+Rating: 8
+
+#### Intelligence
+The archetype demonstrates deep understanding of control theory across domains. The template captures the essential elements of feedback systems: sensors, effectors, set points, and failure modes. Including both the mechanism and its potential failure shows sophisticated understanding of system robustness. The insight that social norms function as feedback mechanisms is particularly intelligent.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span physiology, engineering, economics, computer science, and sociology. The metanyms are genuinely distinct - "pancreas" vs "thermometer" vs "central bank" vs "monitor" vs "mediator" as sensors shows creative non-synonymous mapping. "Insulin" vs "heater/cooler" vs "interest rate" vs "scheduler" vs "intervention" as effectors are appropriately domain-specific.
+Rating: 8
+
+#### Impressive length
+The template contains 8 slots forming a complete feedback narrative. It captures system, balance state, feedback mechanism, variable, setpoint, sensor, effector, and disorder - a comprehensive view of regulation. The length is substantial while remaining focused on the feedback pattern.
+Rating: 7
+
+### Archetypal context 4: Emergence from Simple Rules
+
+#### Factually correct (per parallel context)
+- PC 1 (Ant Colony): The ant colony description accurately captures stigmergic behavior through pheromone trails. The emergence of trail networks from simple pheromone-following rules is a well-studied phenomenon in ethology. Rating: 10
+
+- PC 2 (Market Economy): The market description correctly captures how prices emerge from individual trading decisions. The invisible hand concept of decentralized price formation is economically sound. Rating: 10
+
+- PC 3 (Cellular Automata): The cellular automata description is accurate, with gliders being a classic emergent phenomenon in systems like Conway's Game of Life. The terminology and mechanism are correct. Rating: 10
+
+- PC 4 (Crowd Movement): The crowd flow description accurately captures pedestrian dynamics. Follow-the-leader behavior leading to emergent flows is well-documented in urban studies. Rating: 10
+
+- PC 5 (Internet Routing): The network routing description correctly captures how global paths emerge from local routing decisions. The decentralized nature of internet routing and emergent path formation is technically accurate. Rating: 10
+
+#### Beauty
+This archetype beautifully captures the magic of emergence - how simple local rules create complex global patterns. The template creates a sense of wonder about decentralized systems. The parallel between ant trails and internet routing reveals unexpected poetry in how order arises from chaos across natural and artificial systems.
+Rating: 9
+
+#### Intelligence
+The archetype demonstrates profound understanding of complexity theory. The key insight that agents act on local information without global awareness, yet produce global patterns, captures the essence of emergence. Including the observer's surprise acknowledges the counter-intuitive nature of emergence. This shows deep comprehension of how complex systems self-organize.
+Rating: 10
+
+#### Domains far apart / metanyms not synonymous
+The domains span biology, economics, mathematics, urban planning, and computer science. The metanyms are excellently chosen - "ant" vs "trader" vs "cell" vs "pedestrian" vs "router" as agents with local rules. "Trail network" vs "price system" vs "glider" vs "flow" vs "data paths" as emergent patterns are creatively non-synonymous.
+Rating: 10
+
+#### Impressive length
+The template contains 7 slots and captures the full emergence narrative from simple rules through local action to global patterns. It includes system, pattern, rule, agent, local information, observer, and field - a complete description of emergent phenomena. The length effectively conveys the complexity of emergence.
+Rating: 7
+
+### Archetypal context 5: Thresholds and Phase Transitions
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The water freezing description is physically accurate. The phase transition at 0°C, ice crystal formation as an indicator, and irreversibility (under constant conditions) are all correct. Rating: 10
+
+- PC 2 (Financial Crisis): The financial crisis description accurately captures market tipping points. Leverage as a critical parameter and default spikes as warning indicators are economically sound. The irreversibility of market collapse is well-documented. Rating: 10
+
+- PC 3 (Social Movement): The social movement description correctly captures critical mass phenomena. The transition from apathy to action when participation reaches a threshold is sociologically accurate. Protests as indicators are appropriate. Rating: 10
+
+- PC 4 (Magnetization): The Curie point description is physically accurate. The paramagnetic to ferromagnetic transition, temperature dependence, and magnetic susceptibility as an indicator are all correct. Rating: 10
+
+- PC 5 (Forest Fire): The forest fire description accurately captures ignition thresholds. Dryness as the critical parameter and smoke as an indicator are correct. The irreversibility of wildfire spread is ecologically sound. Rating: 10
+
+#### Beauty
+This archetype elegantly captures the drama of sudden transitions. The template creates narrative tension around the threshold moment, conveying both the resistance before and the rapid change after. The parallel between water freezing and social uprising creates poetic resonance about transformation moments in radically different systems.
+Rating: 8
+
+#### Intelligence
+The archetype shows sophisticated understanding of critical phenomena. Including pre-threshold resistance and post-threshold irreversibility demonstrates deep comprehension of phase transitions. The template captures both the physics of transitions and their indicators, showing practical as well as theoretical understanding. The application to social and financial systems shows creative transfer of physical concepts.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span physics, finance, sociology, materials science, and ecology. The metanyms are well-differentiated - "temperature" vs "leverage" vs "participation" vs "dryness" as parameters shows creative mapping. "Freezing point" vs "tipping point" vs "critical mass" vs "Curie point" vs "ignition point" appropriately captures domain-specific thresholds.
+Rating: 9
+
+#### Impressive length
+The template contains 7 slots and tells a complete phase transition story. It includes parameter, threshold, system, transition, states, indicator, and field - comprehensively capturing critical phenomena. The before/after state specification adds valuable detail. The length effectively conveys the complexity of threshold phenomena.
+Rating: 8
+
+### Structural diversity across the submitted set
+The five archetypal contexts represent remarkably different system structures. Inheritance/transmission captures genealogical propagation patterns. Resource competition represents game-theoretic optimization under constraints. Feedback regulation describes homeostatic control loops. Emergence showcases bottom-up pattern formation from local rules. Phase transitions model critical phenomena and sudden state changes. These represent fundamentally different mathematical and conceptual structures - from evolutionary trees to control systems to complexity theory to catastrophe theory. The submission successfully avoids overlap while maintaining depth in each archetype.
+Rating: 9
+
+```json
+{
+  "scores": {
+    "1": {
+      "archetypal_contexts": [
+        {
+          "name": "Inheritance and Transmission",
+          "factual_per_pc": [10, 10, 8, 9, 10],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 9,
+          "impressive_length": 8
+        },
+        {
+          "name": "Resource Allocation and Competition",
+          "factual_per_pc": [10, 9, 10, 9, 10],
+          "beauty": 7,
+          "intelligence": 8,
+          "instantiation_distinctness": 9,
+          "impressive_length": 9
+        },
+        {
+          "name": "Feedback and Regulation",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 8,
+          "impressive_length": 7
+        },
+        {
+          "name": "Emergence from Simple Rules",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 9,
+          "intelligence": 10,
+          "instantiation_distinctness": 10,
+          "impressive_length": 7
+        },
+        {
+          "name": "Thresholds and Phase Transitions",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 9,
+          "impressive_length": 8
+        }
+      ],
+      "structural_diversity": 9
+    }
+  }
+}
+```

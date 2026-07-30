@@ -1,0 +1,202 @@
+## Target Submission
+
+### Archetypal context 1: The Filter
+
+#### Factually correct (per parallel context)
+- PC 1 (Sensory Perception): The description of sensory organs filtering stimuli based on thresholds is accurate. The concepts of sensory overload and sensory deprivation are correctly applied. However, the framing of sensory organs as "filters" is somewhat simplified—sensory systems actively process and transform information rather than simply passing or blocking stimuli. The Form (b) version is more nuanced and accurate. Comparable to the Reference in overall accuracy. Rating: 8
+
+- PC 2 (Information Retrieval): The description of search engines using algorithms to filter relevant results from spam is accurate. The concepts of precision/recall tradeoffs and information overload are correctly applied. The characterization of "spam" as the primary noise is somewhat narrow—irrelevant but legitimate content is also filtered. Form (b) correctly expands this. Slightly less precise than Reference examples. Rating: 7
+
+- PC 3 (Water Purification): The description contains a factual error: if a membrane is "too permissive," the result would be contaminated water passing through, not "clogging." Clogging occurs when membranes are too restrictive or when contaminants accumulate. The Form (b) partially corrects this but still conflates issues. This is less accurate than the Reference. Rating: 6
+
+- PC 4 (Financial Auditing): The description has logical issues. If an audit procedure is "too restrictive," it would not result in "undetected fraud"—that's the opposite problem. Overly restrictive audits would flag too many legitimate transactions as suspicious. The mapping of signal/noise to legitimate/fraudulent transactions is inverted in places. Less accurate than Reference. Rating: 5
+
+- PC 5 (Immune System): The description contains significant conceptual errors. Self-antigens are not "valuable" things that should "pass through"—they are markers that the immune system should ignore, not transmit. The framing of autoimmune disease as resulting from a "too permissive" filter is backwards; autoimmunity results from attacking self, not from letting pathogens through. Form (b) is more accurate but still has issues. Rating: 5
+
+#### Beauty
+The Filter archetype presents a clean, intuitive concept that most readers can grasp immediately. However, the template lacks the poetic quality and layered complexity found in the Reference. The prose is functional but not elegant—phrases like "blocking or discarding" are repetitive, and the structure feels mechanical. The Form (b) versions improve readability but don't achieve the sophisticated domain-expert voice seen in the Reference's parallel contexts. The archetype itself is somewhat pedestrian compared to the Reference's more evocative concepts like "Gradient-Guided Navigation" or "Containment Breach Cascade."
+Rating: 6
+
+#### Intelligence
+The Filter archetype captures a genuine cross-domain pattern, but it's a relatively surface-level abstraction. The insight that systems must balance selectivity is valid but not particularly deep or surprising. The Reference archetypes demonstrate more sophisticated structural thinking—for example, the "Debt Accumulation and Crisis" archetype shows recursive nesting across scales, and "Competitive Exclusion" captures nuanced dynamics of coexistence. The Filter lacks such depth; it doesn't explore feedback loops, temporal dynamics, or emergent behaviors. The metanym mappings sometimes feel forced (e.g., "self-tolerance" as criteria for filtering).
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (sensory perception, information retrieval, water purification, financial auditing, immune system) span different fields but share obvious filtering metaphors that are already commonly discussed. The metanyms show moderate distinctiveness—"sensory organ" vs. "algorithm" vs. "membrane" are genuinely different, but "signal" and "noise" are used almost synonymously across domains rather than as true metanyms. The Reference achieves greater separation, with metanyms like "methylation state" vs. "route memory" vs. "momentum" that are conceptually distant yet structurally parallel.
+Rating: 6
+
+#### Impressive length
+The template contains 9 slots and approximately 120 words, which is shorter than the Reference templates (which range from ~130-180 words with 10-16 slots). The template covers the basic filter concept but lacks the elaboration seen in Reference templates, which include secondary effects, collective behaviors, and preventive measures. The structure is complete but not impressively comprehensive.
+Rating: 6
+
+### Archetypal context 2: The Network
+
+#### Factually correct (per parallel context)
+- PC 1 (Transportation System): The description is generally accurate. Cities connected by roads forming a transportation network is correct. The concept of major hubs and their importance for goods flow is valid. However, "isolation" as the result of losing a hub is somewhat imprecise—disruption or rerouting would be more accurate. Comparable to Reference accuracy. Rating: 7
+
+- PC 2 (Social Network): The description accurately captures social network dynamics. Influencers as hubs, information flow through relationships, and polarization as a consequence of network disruption are all valid concepts. The Form (b) version adds appropriate nuance. Matches Reference quality. Rating: 8
+
+- PC 3 (Neural Network): The description is accurate regarding neurons, synapses, and signal transmission. The concept of highly connected neurons as hubs and cognitive impairment from their loss is valid. The term "plasticity" as robustness is appropriate. Form (b) adds accurate detail about synaptogenesis. Matches Reference. Rating: 8
+
+- PC 4 (Power Grid): The description accurately captures power grid structure and dynamics. Substations as hubs, cascading failures leading to blackouts, and the importance of transmission line connectivity are all correct. Form (b) appropriately mentions renewable energy integration. Matches Reference. Rating: 8
+
+- PC 5 (Supply Chain): The description accurately represents supply chain networks. Key suppliers as hubs, disruption cascades, and the role of contracts in connectivity are valid. The use of "disruption" for both the consequence and the general concept is slightly redundant but not incorrect. Rating: 7
+
+#### Beauty
+The Network archetype is clearly presented but lacks distinctive elegance. The template is straightforward and functional, using standard network terminology without creative flourishes. The parallel contexts read smoothly but don't achieve the domain-expert sophistication of the Reference. Phrases like "play a crucial role" are generic. The Form (b) versions improve somewhat but remain workmanlike rather than beautiful. The Reference's templates have more evocative language and richer conceptual texture.
+Rating: 6
+
+#### Intelligence
+The Network archetype captures a well-known pattern from network science. While valid, this is a heavily studied and widely recognized abstraction—the insight that networks have hubs, that hub removal causes fragmentation, and that connectivity affects robustness is standard textbook material. The Reference archetypes demonstrate more original thinking, such as the recursive debt accumulation across scales or the nuanced dynamics of competitive exclusion. The Network template doesn't reveal unexpected connections or deep structural insights.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (transportation, social, neural, power, supply chain) are all commonly discussed as networks in their respective literatures, making this a well-trodden comparison. The metanyms show moderate distinctiveness—"city" vs. "individual" vs. "neuron" are different, but "hub" appears almost identically across domains (major hub, influencer, highly connected neuron, major substation, key supplier). The Reference achieves greater metanym diversity with terms that are structurally parallel but lexically distant.
+Rating: 5
+
+#### Impressive length
+The template contains 10 slots and approximately 110 words, which is shorter than most Reference templates. The structure covers basic network properties but lacks the elaboration on dynamics, feedback mechanisms, or temporal evolution that would make it more comprehensive. The template is adequate but not impressively detailed.
+Rating: 5
+
+### Archetypal context 3: The Cycle
+
+#### Factually correct (per parallel context)
+- PC 1 (Economic Cycle): The description accurately captures business cycle phases. However, the claim that "released capital" initiates a new cycle is oversimplified—recovery involves complex factors beyond capital reallocation. The three-phase model (expansion, peak, contraction) omits the trough/recovery phase. Form (b) is more accurate. Rating: 7
+
+- PC 2 (Cell Cycle): The description contains inaccuracies. DNA is not "released" during cytokinesis—it is distributed to daughter cells. The framing of DNA as a "resource" that accumulates and releases doesn't match cell biology. Interphase involves DNA replication, not accumulation in the resource sense. The three-phase simplification loses important nuance. Rating: 5
+
+- PC 3 (Hydrological Cycle): The description is mostly accurate but has issues. Water vapor is not "released" during precipitation in the same sense as other cycles—it condenses and falls. The framing of "atmospheric transport" as the function during condensation is imprecise. The cycle is continuous rather than having discrete phases. Rating: 6
+
+- PC 4 (Product Life Cycle): The description is reasonably accurate. The phases of introduction, maturity, and decline are standard. However, the claim that "released market share" initiates a new cycle is metaphorical rather than mechanistically accurate. Form (b) handles this better. Rating: 7
+
+- PC 5 (Ecological Succession): The description has significant issues. Ecological succession is not truly "continuous" or cyclical in the same way as other examples—it's directional until disturbed. "Climax community" as a phase between primary succession and disturbance misrepresents the temporal relationship. Disturbance doesn't "release nutrients" in a way that directly initiates primary succession. Rating: 5
+
+#### Beauty
+The Cycle archetype presents a universal pattern but does so in a mechanical, formulaic way. The three-phase structure (growth, stability, decline) is overly simplified and loses the distinctive character of each domain's cyclical dynamics. The prose is functional but uninspired, with repetitive phrasing across parallel contexts. The Reference templates achieve greater elegance through varied vocabulary and domain-specific texture. The Form (b) versions improve readability but don't reach the sophisticated voice of Reference examples.
+Rating: 5
+
+#### Intelligence
+The Cycle archetype attempts to unify diverse cyclical phenomena but does so at the cost of accuracy and insight. The forced three-phase structure doesn't naturally fit all domains—the cell cycle has four phases, ecological succession isn't truly cyclical, and the hydrological cycle is continuous. The Reference archetypes demonstrate more careful structural analysis that respects domain-specific dynamics while revealing genuine parallels. The insight that "things go through phases" is too generic to be intellectually impressive.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (economic, cellular, hydrological, product, ecological) span different fields, which is positive. However, the metanyms are often forced fits—"DNA" as a resource that accumulates and releases doesn't parallel "capital" or "water vapor" in meaningful ways. The Reference achieves better metanym alignment where structural roles genuinely correspond across domains. Here, the mappings feel like surface-level analogies rather than deep structural parallels.
+Rating: 5
+
+#### Impressive length
+The template contains 12 slots and approximately 130 words, which is comparable to shorter Reference templates. However, the content is thin—the three-phase structure limits elaboration, and there's no discussion of feedback mechanisms, thresholds, or emergent dynamics that would add depth. The template covers basics but doesn't achieve impressive comprehensiveness.
+Rating: 5
+
+### Archetypal context 4: The Hierarchy
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Organization): The description contains a significant error: "trophic level" refers to positions in a food chain (producers, consumers), not levels of biological organization (cells, tissues, organs). This fundamental misuse of terminology undermines the entire parallel context. The concept of consciousness as emergent property is valid but misattributed. Rating: 4
+
+- PC 2 (Military Command): The description is accurate. Military hierarchies with ranks, downward flow of orders, and upward flow of intelligence are correctly characterized. Tactical maneuvers as emergent capabilities of higher echelons is valid. Form (b) adds appropriate detail. Matches Reference quality. Rating: 8
+
+- PC 3 (Corporate Structure): The description is accurate. Organizational hierarchies with management tiers, downward directives, and upward performance metrics are correctly characterized. Corporate strategy as emergent from executive levels is valid. Form (b) is well-written. Rating: 8
+
+- PC 4 (Computer Architecture): The description has issues. Memory hierarchy doesn't work as described—"instructions flow downwards" and "data flows upwards" is an oversimplification that misrepresents how CPUs interact with memory. Program execution isn't an emergent property of "bytes at higher storage levels." The mapping is forced. Rating: 5
+
+- PC 5 (Linguistic Syntax): The description is reasonably accurate. Syntactic trees with hierarchical structure, top-down syntactic rules, and bottom-up semantic interpretation are valid concepts. "Meaning" as emergent from word combinations is appropriate. Some technical imprecision but generally sound. Rating: 7
+
+#### Beauty
+The Hierarchy archetype addresses a fundamental organizational pattern but presents it in a dry, schematic way. The template reads like a textbook definition rather than an elegant abstraction. The parallel contexts vary in quality—military and corporate versions are clear, while biological and computer versions are awkward due to forced mappings. The Reference templates achieve greater fluency and domain-appropriate voice. The prose lacks the evocative quality that makes the Reference memorable.
+Rating: 5
+
+#### Intelligence
+The Hierarchy archetype captures a genuine cross-domain pattern, but the execution reveals shallow understanding of some domains. The misuse of "trophic level" for biological organization suggests surface-level engagement rather than deep structural analysis. The Reference archetypes demonstrate more careful domain expertise—for example, the "Scaffold-Dependent Assembly" archetype shows sophisticated understanding of ribosome biogenesis, construction, and crystallization. The Hierarchy template's insight is valid but its implementation undermines confidence in the analysis.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (biological, military, corporate, computer, linguistic) span different fields, which is positive. However, the metanym mappings are inconsistent in quality. "Rank" vs. "management tier" vs. "storage level" vs. "grammatical rank" show varying degrees of structural correspondence. The biological domain's use of "trophic level" is a category error that breaks the parallel. The Reference achieves more consistent metanym quality across all domains.
+Rating: 5
+
+#### Impressive length
+The template contains 10 slots and approximately 120 words, which is moderate compared to Reference templates. The structure covers basic hierarchical properties but lacks elaboration on dynamics, failure modes, or adaptive mechanisms. The template is adequate but not impressively comprehensive compared to Reference examples that include prevention, crisis, and recovery dynamics.
+Rating: 5
+
+### Archetypal context 5: The Equilibrium
+
+#### Factually correct (per parallel context)
+- PC 1 (Chemical Reaction): The description is accurate. Chemical equilibrium, Le Chatelier's principle, and phase transitions are correctly characterized. The relationship between temperature perturbation and concentration shifts is valid. Form (b) adds appropriate technical detail. Matches Reference quality. Rating: 8
+
+- PC 2 (Climate System): The description is mostly accurate. Thermal equilibrium, greenhouse gas perturbations, and climate tipping points are valid concepts. The cloud albedo effect as a feedback mechanism is correct. However, characterizing it as restoring "original state" oversimplifies—feedbacks can be positive or negative. Rating: 7
+
+- PC 3 (Market Economy): The description is accurate. Market equilibrium, supply/demand balance, price adjustments, and market crashes are correctly characterized. The concept of market correction as restoration is valid. Form (b) adds appropriate economic context. Rating: 8
+
+- PC 4 (Population Dynamics): The description is mostly accurate. Carrying capacity, density-dependent factors, and extinction thresholds are valid concepts. However, "carrying capacity" is the equilibrium state, not a "state of carrying capacity"—this is slightly awkward phrasing. Population recovery dynamics are correctly described. Rating: 7
+
+- PC 5 (Structural Engineering): The description is accurate. Structural stability, load/resistance balance, damping mechanisms, and structural failure are correctly characterized. The concept of earthquake perturbation and structural recovery is valid. Form (b) adds appropriate engineering detail. Rating: 8
+
+#### Beauty
+The Equilibrium archetype presents a fundamental physical concept with reasonable clarity. The template structure is logical and the parallel contexts flow well. However, the prose remains functional rather than elegant—phrases like "opposing forces are balanced" are accurate but not evocative. The Reference templates achieve greater sophistication through varied vocabulary and domain-specific texture. The Form (b) versions are competent but don't reach the expert voice quality of Reference examples.
+Rating: 6
+
+#### Intelligence
+The Equilibrium archetype captures a genuine cross-domain pattern with reasonable depth. The inclusion of feedback mechanisms, tipping points, and restoration dynamics shows structural thinking beyond simple analogy. However, the concept of equilibrium and perturbation is well-established across these fields—the insight is valid but not surprising. The Reference archetypes demonstrate more original connections, such as the recursive debt accumulation or the scaffold-dependent assembly pattern. The Equilibrium template is solid but conventional.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (chemical, climate, market, population, structural) span different fields with genuine structural parallels. The metanyms show good distinctiveness—"Le Chatelier's principle" vs. "cloud albedo effect" vs. "price adjustment" vs. "density-dependent factor" vs. "damping" are conceptually distant yet structurally parallel. This is the strongest metanym table in the submission, approaching Reference quality in domain separation and metanym distinctiveness.
+Rating: 7
+
+#### Impressive length
+The template contains 10 slots and approximately 130 words, which is comparable to Reference templates. The structure covers equilibrium, perturbation, feedback, restoration, and tipping points—a reasonably comprehensive treatment. However, it lacks the elaboration on prevention, collective dynamics, or temporal evolution that would make it more impressive. Adequate but not exceptional length.
+Rating: 6
+
+### Structural diversity across the submitted set
+The five archetypes (Filter, Network, Cycle, Hierarchy, Equilibrium) represent different system structures: selective transmission, interconnected nodes, temporal phases, nested levels, and balanced forces. This provides reasonable structural diversity. However, these are all extremely common systems-thinking frameworks that appear in introductory complexity science courses. The Reference submission includes more distinctive structures: gradient-guided navigation (directional search), containment breach cascade (boundary failure propagation), competitive exclusion (resource competition dynamics), debt accumulation (temporal obligation), and scaffold-dependent assembly (template-guided construction). The Reference also includes a recursive archetype demonstrating nested instantiation across scales. The Target's archetypes are valid but represent textbook categories rather than novel structural insights. The lack of any recursive structure or unusual system pattern reduces structural diversity compared to the Reference.
+Rating: 5
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Filter",
+          "factual_per_pc":           [8, 7, 6, 5, 5],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Network",
+          "factual_per_pc":           [7, 8, 8, 8, 7],
+          "beauty":                   6,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        5
+        },
+        {
+          "name": "The Cycle",
+          "factual_per_pc":           [7, 5, 6, 7, 5],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        5
+        },
+        {
+          "name": "The Hierarchy",
+          "factual_per_pc":           [4, 8, 8, 5, 7],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        5
+        },
+        {
+          "name": "The Equilibrium",
+          "factual_per_pc":           [8, 7, 8, 7, 8],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        6
+        }
+      ],
+      "structural_diversity": 5
+    }
+  }
+}
+```

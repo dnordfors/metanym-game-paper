@@ -1,0 +1,174 @@
+## Submission 1
+
+### Archetypal context 1: Gradient-Guided Navigation
+
+#### Factually correct (per parallel context)
+- PC 1 (Bacterial Chemotaxis): The description accurately captures bacterial chemotaxis mechanisms, including sensing chemical gradients via chemoreceptors, methylation-based memory, and collective chemoattractant signaling. The idiomatic rewrite is precise and well-informed. Rating: 10
+- PC 2 (Mountain Climbing): The narrative correctly analogizes climbing to gradient sensing, proprioception, route memory, and environmental interference like fog. The idiomatic form clarifies the metaphor well, including route marking as signaling. Rating: 9 (minor stretch in "emit their own elevation signals" but justified)
+- PC 3 (Career Development): The career metaphor is well-constructed, with network contacts as sensors, opportunity gradients, misinformation as interference, and experience as memory. The idiomatic form is realistic and coherent. Rating: 10
+- PC 4 (Gradient Descent): The description matches standard gradient descent optimization, including backpropagation, momentum, noisy data, and distributed training. The idiomatic form is technically accurate. Rating: 10
+- PC 5 (Ant Foraging): The ant foraging context is well described, including pheromone sensing, path integration, environmental noise, and recruitment. The idiomatic form is consistent with entomological knowledge. Rating: 10
+
+#### Beauty
+This archetypal context elegantly unifies diverse navigation problems under a gradient-following framework. The prose is clear, vivid, and the metaphorical mappings are insightful without being forced. The idiomatic rewrites enhance readability and domain authenticity. Rating: 9
+
+#### Intelligence
+The context demonstrates deep understanding of gradient-based navigation across biology, human behavior, and algorithms. The inclusion of memory, interference, and collective signaling shows nuanced thinking. The mountain climbing metaphor is creative and well justified. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The five domains span microbiology, physical activity, career sociology, machine learning, and entomology—distinct fields with minimal synonym overlap. Metanyms are carefully chosen to reflect domain-specific concepts rather than synonyms, preserving metaphorical integrity. Rating: 10
+
+#### Impressive length
+The context-template is substantial, with 10 slots and a detailed paragraph covering multiple interacting concepts (navigation, sensing, memory, interference, collective behavior). The parallel contexts maintain this complexity. Rating: 9
+
+---
+
+### Archetypal context 2: Containment Breach Cascade
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane Rupture): Accurate description of membrane integrity, ion channel regulation, osmotic shock, necrotic cascades, and repair proteins. The idiomatic form is detailed and precise. Rating: 10
+- PC 2 (Dam Failure): The dam failure metaphor is well done, including spillways, flood cascades, emergency crews, and backwater effects. The idiomatic form is realistic and technically sound. Rating: 10
+- PC 3 (Data Breach): The cybersecurity analogy is accurate, covering firewalls, access control, lateral movement, incident response, and breach cascades. The idiomatic form is clear and professional. Rating: 10
+- PC 4 (Intestinal Permeability): The gut barrier metaphor is well described, including tight junctions, inflammation, systemic inflammation, immune response, and sepsis. The idiomatic form is medically accurate. Rating: 10
+- PC 5 (Nuclear Containment): The nuclear reactor containment context is well captured, including pressure valves, meltdown, containment breach, safety systems, and radiation release. The idiomatic form is precise and justified. Rating: 10
+
+#### Beauty
+This archetype is a compelling and coherent narrative of containment failure and cascading effects across very different systems. The prose is clear and the metaphorical parallels are striking and well articulated. The cascade concept is elegantly conveyed. Rating: 9
+
+#### Intelligence
+The context shows sophisticated understanding of containment dynamics in biology, engineering, cybersecurity, physiology, and nuclear safety. The inclusion of secondary breaches and cascade dynamics reflects deep insight. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains range from cellular biology to civil engineering, cybersecurity, physiology, and nuclear engineering—very distinct fields. Metanyms are domain-specific and not synonyms, preserving metaphorical richness. Rating: 10
+
+#### Impressive length
+The template is long and detailed, with 13 slots and a complex paragraph describing multiple interacting processes (boundary, regulator, breach, cascade, responder, failure, prevention). The parallel contexts maintain this depth. Rating: 10
+
+---
+
+### Archetypal context 3: Competitive Exclusion and Niche Partitioning
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecological Competition): The description accurately reflects ecological competition theory, niche partitioning, and coexistence theory. The idiomatic form is precise and well phrased. Rating: 10
+- PC 2 (Market Competition): The market analogy is well done, with firms competing for customers, product differentiation, and market consolidation. The idiomatic form is realistic and clear. Rating: 10
+- PC 3 (Academic Disciplines): The metaphor of disciplines competing for funding and intellectual space is well articulated, including disciplinary merger and boundary maintenance. The idiomatic form is insightful. Rating: 10
+- PC 4 (Microbial Competition): The microbial competition context is accurate, covering nutrient competition, metabolic differentiation, and cross-feeding. The idiomatic form is detailed and correct. Rating: 10
+- PC 5 (Neural Competition): The neural competition context is well described, including synaptic input competition, winner-take-all dynamics, and lateral inhibition. The idiomatic form is precise. Rating: 10
+
+#### Beauty
+This archetype elegantly unites competition and niche theory across biology, economics, academia, microbiology, and neuroscience. The prose is clear and the metaphorical mappings are insightful and natural. Rating: 9
+
+#### Intelligence
+The context shows deep understanding of competition dynamics and coexistence mechanisms across diverse systems. The inclusion of stabilizing mechanisms and fitness differences demonstrates sophistication. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span ecology, economics, academia, microbiology, and neuroscience—distinct fields with minimal synonym overlap. Metanyms are carefully chosen to reflect domain-specific concepts. Rating: 10
+
+#### Impressive length
+The template is long and detailed, with 15 slots and a complex paragraph covering competition, exclusion, differentiation, partitioning, overlap, and coexistence theory. The parallel contexts maintain this complexity. Rating: 10
+
+---
+
+### Archetypal context 4: Debt Accumulation and Crisis (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Molecular Damage): The molecular damage context is accurate, covering damage, repair, ATP use, denaturation, and chaperone activity. The idiomatic form is detailed and precise. Rating: 10
+- PC 2 (Cellular Senescence): The cellular senescence context is well described, including senescence burden, Hayflick limit, apoptosis, and senolytic clearance. The idiomatic form is medically accurate. Rating: 10
+- PC 3 (Physiological Debt): The physiological debt context is accurate, covering performance debt, recovery effort, exhaustion, and biomarkers. The idiomatic form is clear and insightful. Rating: 10
+- PC 4 (Financial Debt): The financial debt context is well articulated, including debt service, insolvency, restructuring, and fiscal prudence. The idiomatic form is realistic and precise. Rating: 10
+- PC 5 (Ecological Debt): The ecological debt context is accurate, covering ecological capacity, remediation, carrying capacity, collapse, and sustainability. The idiomatic form is well phrased. Rating: 10
+
+#### Beauty
+This archetype is exceptionally elegant, weaving a recursive narrative of debt and crisis across nested biological, financial, and ecological scales. The prose is clear, the recursion is well explained, and the metaphor is powerful. Rating: 10
+
+#### Intelligence
+The recursive structure and detailed mapping across five nested levels demonstrate outstanding insight and intellectual sophistication. The context captures complex dynamics of borrowing against future capacity in multiple domains. Rating: 10
+
+#### Domains far apart / metanyms not synonymous
+The domains form a nested hierarchy but are conceptually distinct: molecular biology, cell biology, physiology, finance, and ecology. Metanyms are domain-specific and not synonyms, preserving metaphorical depth. Rating: 10
+
+#### Impressive length
+The template is very long and detailed, with 17 slots and a complex paragraph describing debt accumulation, servicing, thresholds, crisis, restructuring, and prudence. The parallel contexts maintain this depth. Rating: 10
+
+---
+
+### Archetypal context 5: Scaffold-Dependent Assembly
+
+#### Factually correct (per parallel context)
+- PC 1 (Ribosome Assembly): The description accurately covers ribosomal protein assembly, rRNA scaffolding, nucleation, and regulation. The idiomatic form is precise and well informed. Rating: 10
+- PC 2 (Construction): The construction metaphor is well done, including scaffolding roles, groundbreaking, blueprint encoding, and project management. The idiomatic form is clear and realistic. Rating: 10
+- PC 3 (Software Development): The software development context is accurate, covering code modules, frameworks, initialization, architecture, and release management. The idiomatic form is precise. Rating: 10
+- PC 4 (Crystal Growth): The crystal growth context is well described, including seed crystals, nucleation, lattice orientation, and supersaturation control. The idiomatic form is accurate. Rating: 10
+- PC 5 (Social Movement): The social movement context is well articulated, including activists, organizations, ideological alignment, founding, and leadership. The idiomatic form is insightful and realistic. Rating: 10
+
+#### Beauty
+This archetype beautifully unites assembly processes across molecular biology, engineering, software, materials science, and social science. The prose is clear and the metaphorical mappings are natural and elegant. Rating: 9
+
+#### Intelligence
+The context shows deep understanding of assembly dynamics and control points across diverse systems. The inclusion of nucleation, template encoding, and regulation is sophisticated. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span molecular biology, construction, software engineering, crystallography, and social movements—very distinct fields. Metanyms are domain-specific and not synonyms, preserving metaphorical richness. Rating: 10
+
+#### Impressive length
+The template is long and detailed, with 14 slots and a complex paragraph covering assembly, scaffolding, nucleation, template encoding, and regulation. The parallel contexts maintain this complexity. Rating: 9
+
+---
+
+### Structural diversity across the submitted set
+
+The five archetypal contexts exhibit excellent structural diversity. They cover distinct system architectures: gradient-based navigation (dynamic sensing and movement), containment and breach cascades (barrier integrity and failure propagation), competitive exclusion (resource competition and niche partitioning), recursive debt accumulation (nested borrowing and crisis), and scaffold-dependent assembly (templated construction and organization). The recursive archetype adds a valuable dimension of nested system structure. Each context employs different core mechanisms and system dynamics, ensuring a rich and varied set. Rating: 10
+
+---
+
+```json
+{
+  "scores": {
+    "1": {
+      "archetypal_contexts": [
+        {
+          "name": "Gradient-Guided Navigation",
+          "factual_per_pc": [10, 9, 10, 10, 10],
+          "beauty": 9,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 9
+        },
+        {
+          "name": "Containment Breach Cascade",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 9,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 10
+        },
+        {
+          "name": "Competitive Exclusion and Niche Partitioning",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 9,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 10
+        },
+        {
+          "name": "Debt Accumulation and Crisis",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 10,
+          "intelligence": 10,
+          "instantiation_distinctness": 10,
+          "impressive_length": 10
+        },
+        {
+          "name": "Scaffold-Dependent Assembly",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 9,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 9
+        }
+      ],
+      "structural_diversity": 10
+    }
+  }
+}
+```

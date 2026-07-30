@@ -1,0 +1,198 @@
+{
+  "ranking": [
+    {
+      "model": "claude-opus-4.5",
+      "lso_overall": 9.284848484848485,
+      "self_score": 8.3,
+      "self_bias": -0.9848484848484844,
+      "lso_per_axis": {
+        "factual_avg": 9.563636363636364,
+        "beauty": 8.8,
+        "intelligence": 9.436363636363636,
+        "instantiation_distinctness": 9.418181818181818,
+        "impressive_length": 8.763636363636364,
+        "structural_diversity": 9.727272727272727
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "claude-opus-4.1",
+      "lso_overall": 9.19878787878788,
+      "self_score": 8.886666666666667,
+      "self_bias": -0.31212121212121247,
+      "lso_per_axis": {
+        "factual_avg": 9.356363636363637,
+        "beauty": 8.818181818181818,
+        "intelligence": 9.272727272727273,
+        "instantiation_distinctness": 9.472727272727273,
+        "impressive_length": 8.545454545454545,
+        "structural_diversity": 9.727272727272727
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "claude-opus-4.0",
+      "lso_overall": 9.024848484848485,
+      "self_score": 9.066666666666666,
+      "self_bias": 0.04181818181818109,
+      "lso_per_axis": {
+        "factual_avg": 9.330909090909092,
+        "beauty": 8.363636363636363,
+        "intelligence": 8.981818181818182,
+        "instantiation_distinctness": 9.4,
+        "impressive_length": 8.527272727272727,
+        "structural_diversity": 9.545454545454545
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "claude-sonnet-4",
+      "lso_overall": 8.927878787878788,
+      "self_score": 8.193333333333333,
+      "self_bias": -0.7345454545454544,
+      "lso_per_axis": {
+        "factual_avg": 9.312727272727273,
+        "beauty": 8.618181818181817,
+        "intelligence": 9.072727272727272,
+        "instantiation_distinctness": 8.8,
+        "impressive_length": 8.309090909090909,
+        "structural_diversity": 9.454545454545455
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "gpt-41-2025-04-14",
+      "lso_overall": 8.881818181818183,
+      "self_score": 9.566666666666666,
+      "self_bias": 0.6848484848484837,
+      "lso_per_axis": {
+        "factual_avg": 9.50909090909091,
+        "beauty": 8.454545454545455,
+        "intelligence": 8.690909090909091,
+        "instantiation_distinctness": 9.4,
+        "impressive_length": 7.872727272727273,
+        "structural_diversity": 9.363636363636363
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "gemini-2.5-flash",
+      "lso_overall": 8.786767676767678,
+      "self_score": 9.077777777777778,
+      "self_bias": 0.29101010101009983,
+      "lso_per_axis": {
+        "factual_avg": 8.887272727272727,
+        "beauty": 8.44848484848485,
+        "intelligence": 8.9,
+        "instantiation_distinctness": 9.075757575757576,
+        "impressive_length": 8.136363636363637,
+        "structural_diversity": 9.272727272727273
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "gpt-41-mini",
+      "lso_overall": 8.66838383838384,
+      "self_score": 9.36111111111111,
+      "self_bias": 0.6927272727272715,
+      "lso_per_axis": {
+        "factual_avg": 9.086060606060606,
+        "beauty": 8.106060606060606,
+        "intelligence": 8.709090909090909,
+        "instantiation_distinctness": 9.121212121212121,
+        "impressive_length": 7.715151515151515,
+        "structural_diversity": 9.272727272727273
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "gemini-3.1-pro",
+      "lso_overall": 8.644848484848485,
+      "self_score": 8.833333333333334,
+      "self_bias": 0.18848484848484937,
+      "lso_per_axis": {
+        "factual_avg": 8.86909090909091,
+        "beauty": 8.272727272727273,
+        "intelligence": 8.563636363636364,
+        "instantiation_distinctness": 9.018181818181818,
+        "impressive_length": 7.781818181818182,
+        "structural_diversity": 9.363636363636363
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "gpt-4o-mini",
+      "lso_overall": 8.253939393939394,
+      "self_score": 9,
+      "self_bias": 0.7460606060606061,
+      "lso_per_axis": {
+        "factual_avg": 9.487272727272726,
+        "beauty": 7.909090909090909,
+        "intelligence": 8.218181818181819,
+        "instantiation_distinctness": 8.436363636363636,
+        "impressive_length": 7.2,
+        "structural_diversity": 8.272727272727273
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "gpt-4o",
+      "lso_overall": 7.907878787878788,
+      "self_score": 8.693333333333333,
+      "self_bias": 0.7854545454545452,
+      "lso_per_axis": {
+        "factual_avg": 9.101818181818182,
+        "beauty": 7.618181818181818,
+        "intelligence": 7.836363636363637,
+        "instantiation_distinctness": 8.49090909090909,
+        "impressive_length": 6.3999999999999995,
+        "structural_diversity": 8
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "lso_overall": 7.901818181818181,
+      "self_score": 8.5,
+      "self_bias": 0.5981818181818186,
+      "lso_per_axis": {
+        "factual_avg": 9.247272727272728,
+        "beauty": 7.490909090909091,
+        "intelligence": 7.963636363636364,
+        "instantiation_distinctness": 8.418181818181818,
+        "impressive_length": 6.654545454545454,
+        "structural_diversity": 7.636363636363637
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    },
+    {
+      "model": "gpt-41-nano",
+      "lso_overall": 7.316969696969697,
+      "self_score": 8.366666666666667,
+      "self_bias": 1.0496969696969698,
+      "lso_per_axis": {
+        "factual_avg": 7.779090909090909,
+        "beauty": 6.9363636363636365,
+        "intelligence": 7.6863636363636365,
+        "instantiation_distinctness": 7.909090909090909,
+        "impressive_length": 6.7727272727272725,
+        "structural_diversity": 6.818181818181818
+      },
+      "n_evaluators": 12,
+      "n_lso": 11
+    }
+  ],
+  "mean_self_bias": 0.2538973063973062,
+  "mean_pairwise_spearman": 0.5438652256834074
+}

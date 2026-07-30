@@ -1,0 +1,13 @@
+model,total,council
+claude-opus-4.5,7.0,yes
+gemini-3.1-pro,6.69,yes
+claude-opus-4.0,6.21,yes
+claude-opus-4.1,6.05,yes
+gemini-2.5-flash,5.76,yes
+claude-sonnet-4,5.3,no
+gpt-4.1-mini,4.74,no
+gpt-4.1-2025-04-14,4.44,no
+gpt-4o-2024-08-06,3.48,no
+gpt-4.1-nano,3.22,no
+gpt-4o,2.93,no
+gpt-4o-mini,2.24,no

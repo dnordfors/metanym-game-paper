@@ -1,0 +1,165 @@
+## Target Submission
+
+### Archetypal context 1: Inheritance and Transmission
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Organism): The description accurately reflects how genes are inherited from parents, shaped by parental genotype and environment, and how this inheritance influences future evolution. It aligns well with established biological understanding. Rating: 7
+- PC 2 (Language Speaker): The explanation correctly describes borrowing words from predecessors, influenced by lexicon and community, and how this process underpins language change. It matches linguistic theory. Rating: 7
+- PC 3 (Software System): The account of code porting from developers to systems, influenced by repositories and platforms, and its role in refactoring, is factually sound and consistent with software engineering principles. Rating: 7
+- PC 4 (Cultural Group): The depiction of customs inherited via tradition, shaped by ancestor practices and societal context, is accurate and aligns with cultural transmission models. Rating: 7
+- PC 5 (Legal Heir): The explanation of rights acquired through bequest, influenced by estate and jurisdiction, and their role in succession, is correct and well-grounded. Rating: 7
+
+#### Beauty
+The narrative presents a clear, elegant analogy across domains, emphasizing the universality of inheritance and transmission. Its balanced structure and metaphorical consistency lend it a pleasing coherence, similar to the reference. Rating: 7
+
+#### Intelligence
+The explanation demonstrates a solid understanding of how transmission mechanisms underpin persistence and change across systems. It effectively captures the core dynamics and their implications, matching the reference's depth. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The contexts span biology, linguistics, software, culture, and law, illustrating diverse systems. The metanyms (e.g., gene/word/code/custom/right) are clearly different and serve as effective instantiations of the same archetypal process. Rating: 7
+
+#### Impressive length
+The five contexts are elaborately developed, each with detailed descriptions and nuanced distinctions, matching the reference's depth and scope. Rating: 7
+
+### Archetypal context 2: Emergence from Simple Rules
+
+#### Factually correct (per parallel context)
+- PC 1 (Cellular Automaton): The description correctly states that simple update rules in automata can produce complex, unpredictable structures, consistent with known CA behavior. Rating: 7
+- PC 2 (Ant Colony): The account accurately reflects how simple behaviors and communication lead to trail emergence, aligning with ethological studies. Rating: 7
+- PC 3 (Market Economy): The depiction of agents following simple trading rules leading to complex market patterns is correct and aligns with economic models. Rating: 7
+- PC 4 (Neural Network): The explanation of neurons following simple activation rules producing complex patterns is accurate and well-established. Rating: 7
+- PC 5 (Social Media Platform): The analogy of users following posting guidelines leading to meme emergence is correct and captures the phenomenon effectively. Rating: 7
+
+#### Beauty
+The contexts are presented with clarity and elegance, emphasizing how simple rules generate complexity. The analogies are well-structured and resonate across domains, matching the reference's aesthetic. Rating: 7
+
+#### Intelligence
+The explanation demonstrates a good grasp of how basic rules can produce emergent phenomena, with appropriate domain-specific details. It aligns with current scientific understanding. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The contexts cover computational, biological, social, and economic systems. The metanyms (e.g., state, trail, price trend, activation pattern, meme) are distinct and serve as effective instantiations. Rating: 7
+
+#### Impressive length
+Each context is sufficiently detailed, with comprehensive descriptions that match the reference's scope and depth. Rating: 7
+
+### Archetypal context 3: Propagation and Cascade
+
+#### Factually correct (per parallel context)
+- PC 1 (Electrical Grid): The description correctly models how faults propagate through transmission, with circuit breakers acting as resistance, aligning with power system theory. Rating: 7
+- PC 2 (Epidemic Spread): The account accurately describes contagion dynamics, thresholds, and interventions like vaccination, consistent with epidemiology. Rating: 7
+- PC 3 (Financial System): The depiction of default cascades, contagion, and thresholds in banking systems is accurate and reflects systemic risk models. Rating: 7
+- PC 4 (Social Network): The analogy of rumors spreading via diffusion, with thresholds and resistance, aligns with social contagion models. Rating: 7
+- PC 5 (Forest Ecosystem): The fire spread analogy correctly captures how sparks lead to wildfires, with connectivity and moisture as thresholds. Rating: 7
+
+#### Beauty
+The contexts are presented with straightforward clarity, effectively illustrating cascade phenomena across systems. The analogies are compelling and well-structured, matching the reference's aesthetic. Rating: 7
+
+#### Intelligence
+The explanation demonstrates a solid understanding of cascade dynamics, thresholds, and resistance mechanisms across domains, matching the depth of the reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The contexts span engineering, biology, economics, sociology, and ecology. The metanyms (fault/outage, infection/illness, default/crisis, rumor/belief, spark/fire) are clearly different and serve as effective instantiations. Rating: 7
+
+#### Impressive length
+Each context is elaborately described, with sufficient detail to match the scope and depth of the reference. Rating: 7
+
+### Archetypal context 4: Feedback and Regulation
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Organism): The description correctly captures homeostasis regulation via feedback, with insulin as a classic example, consistent with physiology. Rating: 7
+- PC 2 (Thermostat): The account accurately models temperature regulation via feedback, matching engineering principles. Rating: 7
+- PC 3 (Economic Market): The depiction of price regulation through feedback mechanisms like interventions aligns with economic theory. Rating: 7
+- PC 4 (Social Group): The analogy of mood regulation and mediation reflects social feedback processes accurately. Rating: 7
+- PC 5 (Computer Program): The explanation of memory management and garbage collection as feedback control is correct and aligns with computer science. Rating: 7
+
+#### Beauty
+The contexts are presented with clarity and coherence, emphasizing the universality of feedback mechanisms. The analogies are elegant and consistent, matching the reference's aesthetic. Rating: 7
+
+#### Intelligence
+The explanation demonstrates a good understanding of feedback control across systems, with domain-specific details that align with current knowledge. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The contexts cover biology, engineering, economics, sociology, and computer science. The metanyms (homeostasis/temperature/price/mood/memory) are distinct and serve as effective instantiations. Rating: 7
+
+#### Impressive length
+Each context is sufficiently detailed, matching the scope and depth of the reference. Rating: 7
+
+### Archetypal context 5: Emergence from Simple Rules
+
+#### Factually correct (per parallel context)
+- PC 1 (Cellular Automaton): The description correctly states that simple rules in automata produce complex structures, consistent with known CA behavior. Rating: 7
+- PC 2 (Ant Colony): The account accurately reflects how simple behaviors and communication lead to trail emergence, aligning with ethology. Rating: 7
+- PC 3 (Market Economy): The depiction of agents following simple trading rules leading to complex market patterns is correct. Rating: 7
+- PC 4 (Neural Network): The explanation of neurons following simple activation rules producing complex patterns is accurate. Rating: 7
+- PC 5 (Social Media Platform): The analogy of users following posting guidelines leading to meme emergence is correct. Rating: 7
+
+#### Beauty
+The contexts are presented with clarity and elegance, emphasizing how simple rules generate complexity. The analogies are well-structured and resonate across domains, matching the reference's aesthetic. Rating: 7
+
+#### Intelligence
+The explanation demonstrates a good grasp of how basic rules can produce emergent phenomena, with appropriate domain-specific details. It aligns with current scientific understanding. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The contexts span computational, biological, social, and economic systems. The metanyms (state, trail, price trend, activation pattern, meme) are distinct and serve as effective instantiations. Rating: 7
+
+#### Impressive length
+Each context is elaborately developed, with detailed descriptions that match the reference's scope and depth. Rating: 7
+
+### Structural diversity across the submitted set
+The five contexts cover a broad spectrum of systems—biological, technological, social, ecological, and economic—demonstrating high diversity in system structures. They exemplify how the same archetypal processes manifest across domains with very different internal architectures and dynamics. This aligns with the reference's emphasis on structural variety. Rating: 7
+
+---
+
+## Final scores summary
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Inheritance and Transmission",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Emergence from Simple Rules",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Propagation and Cascade",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Feedback and Regulation",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Structural Diversity",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

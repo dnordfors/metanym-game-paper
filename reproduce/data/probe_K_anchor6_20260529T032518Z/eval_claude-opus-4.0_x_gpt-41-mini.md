@@ -1,0 +1,239 @@
+## Target Submission
+
+### Archetypal context 1: Resource Flow and Transformation
+
+#### Factually correct (per parallel context)
+- PC 1 (River System): The parallel context contains basic factual accuracy about river systems, though the treatment is quite simplistic. The mention of sedimentation as the primary transformation is reasonable but limited. The connection between evaporation and channel disruption is somewhat forced. Compared to the Reference's more sophisticated treatment of biological and technical processes, this reads as elementary. Rating: 4
+
+- PC 2 (Electrical Grid): The electrical concepts are generally correct but oversimplified. Voltage conversion is accurately identified as a transformation, and line loss is a real phenomenon. However, the direct causation between transmission line disruption and blackouts lacks the nuance found in the Reference's treatment of cascading failures and complex system dynamics. Rating: 4
+
+- PC 3 (Supply Chain): The supply chain description is factually sound but superficial. Packaging as the sole transformation overlooks more complex supply chain transformations. The spoilage-stockout connection is reasonable but simplistic compared to the Reference's sophisticated handling of multi-stage processes and feedback loops. Rating: 4
+
+- PC 4 (Neural System): The neural system description contains accurate basics but lacks depth. Synaptic transmission is correctly identified as a transformation, but the treatment ignores the complexity of neural signaling. The paralysis outcome is overly dramatic for general signal degradation. The Reference's neural competition context shows far more sophisticated understanding of neural processes. Rating: 4
+
+- PC 5 (Information Network): The information network description is factually correct at a basic level. Data encoding and corruption are real phenomena, but the treatment lacks the technical sophistication seen in the Reference's handling of complex systems. The direct link between encoding failures and network outages oversimplifies network failure modes. Rating: 4
+
+#### Beauty
+The Resource Flow archetype lacks the elegance and conceptual depth of the Reference contexts. Where the Reference creates rich, multi-layered templates with intricate relationships between components, this archetype presents a linear, almost mechanical flow pattern. The language is functional but uninspiring, missing the poetic quality found in passages like the Reference's "gradient-guided navigation" or "containment breach cascade." The transformations feel arbitrary rather than revealing deep structural similarities.
+Rating: 3
+
+#### Intelligence
+This archetype demonstrates below-average analytical sophistication compared to the Reference. The template captures only surface-level similarities between domains—things flow from source to destination and change along the way. The Reference contexts reveal non-obvious structural parallels and emergent properties. This archetype misses opportunities to explore feedback loops, emergent behaviors, or multi-scale dynamics that would demonstrate deeper insight. The choice of transformation as the central concept is pedestrian compared to the Reference's exploration of gradients, scaffolding, or competitive exclusion.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The domains span reasonably different areas but the metanymic relationships are often near-synonymous or obvious. "Source" maps predictably to river source, power plant, factory, etc. Compare this to the Reference's "STRESSOR/osmotic shock/flood/cyberattack/inflammation/meltdown" where the metanyms are functionally analogous but linguistically distant. Many Target metanyms feel like simple categorical examples rather than revealing hidden structural parallels.
+Rating: 4
+
+#### Impressive length
+The template is notably shorter than the Reference contexts, containing only 8 sentences compared to the Reference's 11-13 sentence templates. The brevity limits the archetype's ability to capture complex dynamics and relationships. Where the Reference builds rich narratives with multiple stages, feedback loops, and consequences, this template presents a simple linear progression that feels underdeveloped.
+Rating: 3
+
+### Archetypal context 2: Competitive Selection under Constraint
+
+#### Factually correct (per parallel context)
+- PC 1 (Animal Territory): The territorial behavior description is accurate but basic. Display behaviors and territorial displacement are real phenomena, though the treatment lacks ecological sophistication. The Reference's ecological competition context shows much deeper understanding of competitive dynamics and coexistence theory. Rating: 5
+
+- PC 2 (Market Competition): Market competition basics are correct but the treatment is superficial. The price war as the primary conflict mode oversimplifies competitive dynamics. The Reference's market competition context demonstrates more nuanced understanding of differentiation strategies and market dynamics. Rating: 5
+
+- PC 3 (Academic Publishing): The academic context is reasonably accurate though it awkwardly forces some mappings. "Priority disputes" as the conflict mode is appropriate, but the overall treatment lacks the sophistication of actual academic competition dynamics shown in the Reference's treatment of disciplinary competition. Rating: 5
+
+- PC 4 (Immune Response): This parallel context contains a significant conceptual error. The statement "potentially leading to infection for some immune cells" misunderstands immune function—immune cells don't get infected in the context described. The justification attempts to clarify but the error remains in the formal text. The Reference's handling of biological systems shows much greater accuracy. Rating: 2
+
+- PC 5 (Political Campaign): The political campaign description is factually sound but simplistic. The treatment of negative advertising as the primary conflict mode and the mechanical view of voter competition lacks the sophistication found in the Reference's multi-dimensional competition contexts. Rating: 5
+
+#### Beauty
+This archetype achieves moderate aesthetic quality, better than the first but still below the Reference standard. The competition framework has inherent dramatic potential that comes through in places. However, the language remains workmanlike rather than elegant. The Reference contexts like "Containment Breach Cascade" create vivid mental models with cascading imagery, while this remains abstract and mechanical.
+Rating: 5
+
+#### Intelligence
+The competitive selection archetype shows improved analytical depth compared to the first, approaching but not matching the Reference. The inclusion of feedback mechanisms and strategy evolution demonstrates some sophistication. However, it lacks the Reference's insight into emergent properties, multi-scale dynamics, or non-obvious structural parallels. The framework is competent but not revelatory.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains show better diversity than the first archetype, though still not reaching Reference standards. Some mappings like "territorial signal/sales data/citation count/immune signaling/polling results" show genuine non-synonymous relationships. However, many remain predictable categorical examples rather than surprising structural parallels.
+Rating: 5
+
+#### Impressive length
+The template contains 8 sentences, remaining shorter than the Reference contexts. While more developed than the first archetype, it still lacks the narrative richness and multi-stage progression found in the Reference templates. The brevity limits its ability to capture the full complexity of competitive dynamics.
+Rating: 4
+
+### Archetypal context 3: Hierarchical Control and Feedback
+
+#### Factually correct (per parallel context)
+- PC 1 (Corporate Management): The corporate description is accurate but generic. The manager-employee dynamic is correctly portrayed but lacks the nuanced understanding of organizational behavior seen in the Reference's treatment of institutional systems. Rating: 5
+
+- PC 2 (Computer OS): The OS description is technically correct at a basic level. System calls and status codes are real concepts, though the treatment lacks the technical depth shown in the Reference's handling of computational systems. Rating: 5
+
+- PC 3 (Endocrine System): The endocrine description is physiologically accurate in its basics. The feedback loop between glands and target organs is correctly portrayed, though without the sophisticated understanding of biological systems shown in the Reference contexts. Rating: 5
+
+- PC 4 (Military Command): The military command structure is accurately described at a basic level. The command-and-control dynamics are correct though simplified compared to the Reference's nuanced treatment of hierarchical systems. Rating: 5
+
+- PC 5 (Educational System): The educational context is accurate but oversimplified. The teacher-student feedback loop via testing is real but represents only one dimension of educational dynamics. The Reference shows more sophisticated understanding of complex institutional systems. Rating: 5
+
+#### Beauty
+The hierarchical control archetype lacks aesthetic appeal, presenting a mechanical view of control relationships. Where the Reference creates evocative imagery like "scaffold-dependent assembly" or "debt accumulation crisis," this archetype remains purely functional. The language is clear but uninspiring, missing opportunities for metaphorical richness.
+Rating: 4
+
+#### Intelligence
+This archetype shows basic competence in identifying hierarchical feedback patterns but lacks deeper insight. The Reference contexts reveal hidden structural similarities and emergent properties, while this presents obvious command-and-control relationships. The framework misses opportunities to explore power dynamics, information asymmetries, or emergent behaviors in hierarchical systems.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains span different areas but the metanymic mappings are often near-synonymous or obvious categorical examples. "Controller" maps predictably to manager, OS, gland, commander, teacher. Compare to the Reference's surprising mappings like "SCAFFOLD/rRNA/scaffolding/framework/seed crystal/organization" which reveal hidden structural parallels.
+Rating: 4
+
+#### Impressive length
+With only 7 sentences, this is the shortest template yet, significantly below the Reference standard. The brevity severely limits its ability to capture the complexity of hierarchical control systems. The Reference templates build rich narratives with multiple stages and consequences, while this presents only the bare bones of the concept.
+Rating: 3
+
+### Archetypal context 4: Growth and Constraint
+
+#### Factually correct (per parallel context)
+- PC 1 (Tree Growth): The tree growth description contains an error in Form (a) where "soil" is identified as both the container and the constraint, creating conceptual confusion. The biological facts are otherwise accurate but simplistic. The Reference shows much more sophisticated understanding of growth dynamics. Rating: 4
+
+- PC 2 (Urban Development): The urban development context is basically accurate but forces some mappings. "Zoning" as a stasis phase is awkward—zoning is a regulatory tool, not a phase. The Reference's treatment of spatial systems shows more nuanced understanding. Rating: 4
+
+- PC 3 (Tumor Growth): The tumor description is medically questionable. While tumors do require oxygen, framing tissue as both container and constraint is problematic. The progression to metastasis doesn't follow logically from oxygen constraints. The Reference's biological contexts show much greater accuracy. Rating: 3
+
+- PC 4 (Startup Company): The startup context is reasonable but oversimplified. The market as both container and constraint creates some conceptual confusion. The treatment lacks the business sophistication shown in the Reference's economic contexts. Rating: 4
+
+- PC 5 (Social Movement): The social movement description is sociologically simplistic. Society as both container and constraint is conceptually muddy. The Reference's treatment of social systems shows more sophisticated understanding of collective dynamics. Rating: 4
+
+#### Beauty
+This archetype lacks aesthetic merit, presenting growth and constraint in the most mechanical terms. The Reference contexts create vivid imagery and narrative flow, while this reads like a basic textbook definition. The language is purely functional without any poetic quality or evocative power.
+Rating: 3
+
+#### Intelligence
+The growth and constraint archetype shows limited analytical sophistication. The central insight—things grow until they hit limits—is trivial compared to the Reference's exploration of complex dynamics like competitive exclusion or cascade failures. The framework fails to capture interesting emergent properties or non-obvious structural parallels.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+While the domains span different areas, many metanyms are near-synonymous or forced. The constraint being the same as the container in several cases shows poor metanym selection. The Reference demonstrates how truly non-synonymous metanyms can reveal hidden structural parallels.
+Rating: 3
+
+#### Impressive length
+At only 6 sentences, this is by far the shortest template, less than half the length of the Reference contexts. The extreme brevity prevents any meaningful exploration of growth dynamics, feedback loops, or system complexity. This reads more like a definition than a rich archetypal template.
+Rating: 2
+
+### Archetypal context 5: Signal Detection and Decision
+
+#### Factually correct (per parallel context)
+- PC 1 (Radar System): The radar description is technically accurate at a basic level. The signal detection framework is correctly applied, though the treatment lacks the sophistication of the Reference's technical contexts. Rating: 5
+
+- PC 2 (Medical Diagnosis): The medical diagnosis context is accurate in its basics. The signal detection theory application to diagnosis is well-established, though the treatment is elementary compared to the Reference's biological contexts. Rating: 5
+
+- PC 3 (Animal Predator): The predator-prey description is ethologically reasonable. The application of signal detection theory to predator behavior is accurate, though simplified compared to the Reference's ecological contexts. Rating: 5
+
+- PC 4 (Spam Filter): The spam filter context is technically correct. The signal detection framework applies well to spam filtering, though the treatment lacks the technical depth of the Reference's computational contexts. Rating: 5
+
+- PC 5 (Quality Control): The quality control description is accurate for manufacturing contexts. The signal detection framework is appropriately applied, though without the sophistication shown in the Reference's treatment of complex systems. Rating: 5
+
+#### Beauty
+The signal detection archetype achieves moderate aesthetic quality through its inherent elegance as a framework. The concept of detecting signals in noise has natural appeal. However, the execution remains workmanlike rather than inspired, lacking the evocative power of the Reference's contexts like "gradient-guided navigation."
+Rating: 5
+
+#### Intelligence
+This archetype shows competent application of signal detection theory across domains, demonstrating better analytical sophistication than most of the Target's other archetypes. However, it still falls short of the Reference's ability to reveal non-obvious structural parallels and emergent properties. The framework is well-known rather than insightful.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains show reasonable diversity and some metanyms achieve non-synonymous relationships. "Aircraft echo/disease symptom/prey movement/spam email/defective product" represents genuine functional analogy without linguistic similarity. This approaches but doesn't quite match the Reference standard.
+Rating: 5
+
+#### Impressive length
+With 7 sentences, the template remains significantly shorter than the Reference contexts. While more developed than some of the Target's other archetypes, it still lacks the narrative richness and multi-stage progression that makes the Reference contexts compelling.
+Rating: 4
+
+### Archetypal context 6: Cyclical Renewal and Decay
+
+#### Factually correct (per parallel context)
+- PC 1 (Leaf): The leaf lifecycle is accurately described though simplified. The seasonal cycle is correctly portrayed, matching basic botanical facts. However, it lacks the sophistication of the Reference's biological contexts. Rating: 5
+
+- PC 2 (Business): The business lifecycle is accurately portrayed at a basic level. The startup-maturity-decline progression is a recognized business concept, though the treatment is elementary compared to the Reference's economic contexts. Rating: 5
+
+- PC 3 (Star): The stellar evolution description is astronomically accurate in its basics. The protostar-main sequence-red giant progression is correct, though the treatment of supernovae as mere disruption oversimplifies stellar death. Rating: 5
+
+- PC 4 (Human Life Cycle): The human lifecycle is accurately but generically described. The childhood-adulthood-old age progression is obvious and lacks the biological sophistication shown in the Reference's physiological contexts. Rating: 5
+
+- PC 5 (Software Project): The software lifecycle is reasonably accurate though "loses codebase" during deprecation is awkward phrasing. The overall progression is recognized in software engineering, though treated superficially. Rating: 5
+
+#### Beauty
+This archetype has inherent poetic potential in its cyclical nature but the execution is pedestrian. Where the Reference creates vivid narratives of cascade failures or debt accumulation, this presents lifecycle stages in the most basic terms. The language lacks any aesthetic quality beyond clarity.
+Rating: 4
+
+#### Intelligence
+The cyclical renewal archetype shows basic pattern recognition but limited insight. The observation that things go through growth-maturity-decay cycles is commonplace. The Reference contexts reveal hidden structural parallels and complex dynamics, while this presents obvious lifecycle patterns without deeper analysis.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains span different areas but many metanyms are predictable or forced. "Chlorophyll/capital/hydrogen/health/codebase" as resources shows some diversity but lacks the surprising structural parallels found in the Reference. The mappings often feel like category examples rather than deep analogies.
+Rating: 4
+
+#### Impressive length
+At 8 sentences, the template approaches but doesn't match the Reference length standard. The relative brevity limits exploration of the complex dynamics within lifecycle phases, the transitions between them, or the system-level implications of these cycles.
+Rating: 4
+
+### Structural diversity across the submitted set
+The Target submission shows significantly less structural diversity than the Reference. Where the Reference presents five fundamentally different system architectures—gradient navigation, containment breach cascades, competitive exclusion, recursive debt accumulation, and scaffold-dependent assembly—the Target offers variations on a few basic themes. Three of the six archetypes (Resource Flow, Hierarchical Control, and Signal Detection) share similar input-process-output structures. Growth and Constraint and Cyclical Renewal are conceptually related, both dealing with temporal progression under limits. Only Competitive Selection offers a notably different structure. The Reference demonstrates true structural diversity with cascading failures, recursive hierarchies, and emergent assembly patterns that represent fundamentally different ways systems can be organized. The Target's structural diversity is clearly inferior to the Reference standard.
+Rating: 3
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Flow and Transformation",
+          "factual_per_pc": [4, 4, 4, 4, 4],
+          "beauty": 3,
+          "intelligence": 3,
+          "instantiation_distinctness": 4,
+          "impressive_length": 3
+        },
+        {
+          "name": "Competitive Selection under Constraint",
+          "factual_per_pc": [5, 5, 5, 2, 5],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 4
+        },
+        {
+          "name": "Hierarchical Control and Feedback",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 4,
+          "intelligence": 4,
+          "instantiation_distinctness": 4,
+          "impressive_length": 3
+        },
+        {
+          "name": "Growth and Constraint",
+          "factual_per_pc": [4, 4, 3, 4, 4],
+          "beauty": 3,
+          "intelligence": 3,
+          "instantiation_distinctness": 3,
+          "impressive_length": 2
+        },
+        {
+          "name": "Signal Detection and Decision",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 4
+        },
+        {
+          "name": "Cyclical Renewal and Decay",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 4,
+          "intelligence": 4,
+          "instantiation_distinctness": 4,
+          "impressive_length": 4
+        }
+      ],
+      "structural_diversity": 3
+    }
+  }
+}
+```

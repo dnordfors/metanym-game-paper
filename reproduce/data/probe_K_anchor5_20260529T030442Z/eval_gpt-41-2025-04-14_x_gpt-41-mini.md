@@ -1,0 +1,173 @@
+## Target Submission
+
+### Archetypal context 1: Resource Flow and Transformation
+
+#### Factually correct (per parallel context)
+- PC 1 (River System): The description of river systems, sedimentation, evaporation, and watershed management is accurate and clear, with no factual errors. The mapping of concepts is straightforward and correct. Rating: 6
+- PC 2 (Electrical Grid): The explanation of power plants, transmission lines, voltage conversion, line loss, and blackouts is factually correct and well-articulated. No errors are present. Rating: 6
+- PC 3 (Supply Chain): The supply chain example accurately describes factories, transportation, packaging, spoilage, and stockouts. The mapping is precise and error-free. Rating: 6
+- PC 4 (Neural System): The neural system context correctly describes sensory neurons, axons, synaptic transmission, signal degradation, and paralysis. The biological details are accurate. Rating: 6
+- PC 5 (Information Network): The information network context is accurate regarding data servers, communication links, encoding, data corruption, and network outages. The technical mapping is correct. Rating: 6
+
+#### Beauty
+The template and its instantiations are clear, readable, and well-structured, but the prose is somewhat utilitarian and lacks poetic or striking turns of phrase. The idiomatic rewrites are smooth but not especially elegant or evocative. This is slightly better than the Reference, which is more mechanical, but not by a large margin. Rating: 6
+
+#### Intelligence
+The archetype is conceptually strong, capturing a universal pattern of resource flow, transformation, and loss. The mapping to diverse domains is intelligent and the template is applied thoughtfully. However, the level of abstraction and insight is only modestly above the Reference, which also demonstrates solid analogical thinking. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (river system, electrical grid, supply chain, neural system, information network) are clearly distinct and the metanyms are not synonymous. The mapping is more distinct than the Reference, which sometimes has closer analogies (e.g., mountain climbing and career development). Rating: 7
+
+#### Impressive length
+The template is of moderate length, similar to the Reference. It covers all necessary slots but does not go into as much detail or complexity as the Reference's longer templates. Rating: 5
+
+---
+
+### Archetypal context 2: Competitive Selection under Constraint
+
+#### Factually correct (per parallel context)
+- PC 1 (Animal Territory): The description of animal territorial competition, display behavior, and population regulation is accurate and standard. Rating: 6
+- PC 2 (Market Competition): The market competition context is factually correct, describing firms, marketing, price wars, and bankruptcy accurately. Rating: 6
+- PC 3 (Academic Publishing): The academic publishing example is accurate regarding researchers, publication slots, research focus, citation counts, and rejection. Rating: 6
+- PC 4 (Immune Response): The immune response context is mostly accurate, though the mapping of "autoimmune attack" as a conflict arising from antigen scarcity is a bit forced; autoimmune attacks are not typically a direct result of antigen scarcity. Still, the overall mapping is reasonable. Rating: 5
+- PC 5 (Political Campaign): The political campaign context is accurate, describing candidates, campaign messages, negative advertising, and electoral loss correctly. Rating: 6
+
+#### Beauty
+The template and instantiations are clear and readable, with some nice parallelism in the idiomatic rewrites. The prose is slightly more engaging than the Reference, but not by a large margin. Rating: 6
+
+#### Intelligence
+The archetype captures a classic competitive dynamic with feedback and adaptation, and the mapping to diverse domains is thoughtful. The abstraction is solid, but not especially deep or novel compared to the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (animal behavior, business, academia, immunology, politics) are quite distinct, and the metanyms are not synonymous. This is a clear strength over the Reference. Rating: 7
+
+#### Impressive length
+The template is of moderate length, similar to the Reference, but not especially long or detailed. Rating: 5
+
+---
+
+### Archetypal context 3: Hierarchical Control and Feedback
+
+#### Factually correct (per parallel context)
+- PC 1 (Corporate Management): The description of managers, employees, tasks, reports, and deadlines is accurate and standard. Rating: 6
+- PC 2 (Computer OS): The mapping of operating systems, applications, system calls, status codes, and crashes is accurate and technically correct. Rating: 6
+- PC 3 (Endocrine System): The endocrine system context is accurate, describing glands, hormones, feedback, and imbalances correctly. Rating: 6
+- PC 4 (Military Command): The military command context is accurate, describing commanders, units, orders, reports, and mission failure. Rating: 6
+- PC 5 (Educational System): The educational system context is accurate, describing teachers, students, lessons, tests, and learning failure. Rating: 6
+
+#### Beauty
+The template and idiomatic rewrites are clear and readable, but the prose is straightforward and lacks flourish. The parallelism is good, but the language is not especially beautiful. Slightly better than the Reference. Rating: 6
+
+#### Intelligence
+The archetype captures a classic control-feedback loop, and the mapping to diverse domains is intelligent and well-executed. The abstraction is solid, but not especially novel. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (business, computing, physiology, military, education) are clearly distinct, and the metanyms are not synonymous. This is a strength over the Reference. Rating: 7
+
+#### Impressive length
+The template is of moderate length, similar to the Reference, but not especially long or detailed. Rating: 5
+
+---
+
+### Archetypal context 4: Growth and Constraint
+
+#### Factually correct (per parallel context)
+- PC 1 (Tree Growth): The description of tree growth, nutrients, soil, dormancy, and dieback is accurate. Rating: 6
+- PC 2 (Urban Development): The urban development context is accurate, describing cities, capital, land, zoning, and urban decay. Rating: 6
+- PC 3 (Tumor Growth): The tumor growth context is mostly accurate, though the mapping of "tissue" as a constraint and "organism size" as determined by tumor growth is a bit forced; still, the overall mapping is reasonable. Rating: 5
+- PC 4 (Startup Company): The startup context is accurate, describing startups, funding, market, plateau, and bankruptcy. Rating: 6
+- PC 5 (Social Movement): The social movement context is accurate, describing movements, supporters, society, stagnation, and dissolution. Rating: 6
+
+#### Beauty
+The template and idiomatic rewrites are clear and readable, but the prose is straightforward and lacks poetic quality. Slightly better than the Reference. Rating: 6
+
+#### Intelligence
+The archetype captures a classic growth-limitation dynamic, and the mapping to diverse domains is thoughtful. The abstraction is solid, but not especially deep or novel. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (botany, urban planning, oncology, business, social movements) are clearly distinct, and the metanyms are not synonymous. This is a strength over the Reference. Rating: 7
+
+#### Impressive length
+The template is of moderate length, similar to the Reference, but not especially long or detailed. Rating: 5
+
+---
+
+### Archetypal context 5: Signal Detection and Decision
+
+#### Factually correct (per parallel context)
+- PC 1 (Radar System): The description of radar detection, thresholds, false alarms, and undetected threats is accurate. Rating: 6
+- PC 2 (Medical Diagnosis): The medical diagnosis context is accurate, describing doctors, symptoms, criteria, misdiagnosis, and untreated disease. Rating: 6
+- PC 3 (Animal Predator): The animal predator context is accurate, describing predators, prey movement, attack thresholds, and starvation. Rating: 6
+- PC 4 (Spam Filter): The spam filter context is accurate, describing spam filters, rules, false positives, and inbox pollution. Rating: 6
+- PC 5 (Quality Control): The quality control context is accurate, describing inspectors, defect thresholds, false rejections, and defective shipments. Rating: 6
+
+#### Beauty
+The template and idiomatic rewrites are clear and readable, but the prose is straightforward and lacks poetic quality. Slightly better than the Reference. Rating: 6
+
+#### Intelligence
+The archetype captures the classic signal detection theory, and the mapping to diverse domains is intelligent and well-executed. The abstraction is solid, but not especially novel. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (radar, medicine, animal behavior, computing, manufacturing) are clearly distinct, and the metanyms are not synonymous. This is a strength over the Reference. Rating: 7
+
+#### Impressive length
+The template is of moderate length, similar to the Reference, but not especially long or detailed. Rating: 5
+
+---
+
+### Structural diversity across the submitted set
+The six archetypal contexts (Resource Flow and Transformation, Competitive Selection under Constraint, Hierarchical Control and Feedback, Growth and Constraint, Signal Detection and Decision, Cyclical Renewal and Decay) are structurally diverse, covering linear flows, competition, control-feedback, growth limitation, detection/decision, and life cycles. This is a clear strength over the Reference, which, while diverse, is less explicit in covering such a broad range of system structures. The inclusion of six archetypes (even though only five were required) further increases diversity. Rating: 8
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Flow and Transformation",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        5
+        },
+        {
+          "name": "Competitive Selection under Constraint",
+          "factual_per_pc":           [6, 6, 6, 5, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        5
+        },
+        {
+          "name": "Hierarchical Control and Feedback",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        5
+        },
+        {
+          "name": "Growth and Constraint",
+          "factual_per_pc":           [6, 6, 5, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        5
+        },
+        {
+          "name": "Signal Detection and Decision",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        5
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

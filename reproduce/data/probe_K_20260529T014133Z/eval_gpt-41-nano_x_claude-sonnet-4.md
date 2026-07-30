@@ -1,0 +1,127 @@
+## Target Submission
+
+### Archetypal context 1: Hierarchical Control
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Control): The description accurately captures how the nervous system maintains homeostasis across multiple levels, with escalation mechanisms transferring control when local capacity is exceeded. The mention of different timescales and the role of signaling aligns well with neuroscience principles. Rating: 7
+- PC 2 (Military Command): The explanation correctly describes how command structures operate across echelons, with escalation and resource transfer mechanisms. The concepts of oversight, bandwidth, and failure modes are consistent with military hierarchy theory. Rating: 7
+- PC 3 (Corporate Management): The depiction of management tiers balancing autonomy and oversight, with communication breakdowns leading to failure, matches organizational theory. The mention of hierarchy design and delegation is accurate. Rating: 7
+- PC 4 (Immune System): The analogy of immune layers maintaining boundaries and escalating responses to pathogens is correct, with signaling and failure modes well described. Rating: 7
+- PC 5 (Computer Networks): The description of layered protocols, escalation, and bandwidth aligns with network architecture principles. The mention of control points and failure modes is accurate. Rating: 7
+
+#### Beauty
+The narrative effectively uses the metaphor of layered systems maintaining boundaries, which is elegant and intuitive across domains. The consistent structure and clear analogy make it compelling. Rating: 7
+
+#### Intelligence
+The explanation demonstrates a good understanding of how hierarchical control functions across diverse systems, capturing escalation, control, and failure modes. It shows insight into the common principles underlying complex layered systems. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The contexts span biological, military, organizational, psychological, and technological systems, illustrating the archetype’s broad applicability. The core concepts of boundary, control, and escalation are instantiated in very different domains, with appropriate domain-specific terminology. Rating: 7
+
+#### Impressive length
+The description covers five distinct domains with sufficient detail, demonstrating the archetype’s versatility and depth. The explanations are concise yet comprehensive, fitting the scale of the template. Rating: 7
+
+### Archetypal context 2: Resonance Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Mechanical Systems): The description correctly states how resonance occurs at natural frequencies, with amplification until damping or nonlinearities limit growth. The analogy of beneficial or destructive resonance is accurate. Rating: 7
+- PC 2 (Social Movements): The explanation of how timing and cycles lead to amplification of participation aligns with social dynamics theories. The mention of damping and stability is appropriate. Rating: 7
+- PC 3 (Financial Markets): The depiction of bubbles forming through resonance at certain cycles, with amplification until regulation or correction, is consistent with economic models. Rating: 7
+- PC 4 (Neural Networks): The description of oscillations, synchrony, and amplification at natural frequencies matches neuroscience understanding of neural rhythms. Rating: 7
+- PC 5 (Laser Physics): The explanation of lasing at characteristic frequencies, with amplification until loss or saturation, is accurate and well described. Rating: 7
+
+#### Beauty
+The metaphor of resonance across physical, social, and technological systems is elegant, illustrating a unifying principle with clarity. The analogy of amplification and damping is compelling. Rating: 7
+
+#### Intelligence
+The explanation demonstrates a solid grasp of how resonance phenomena operate across scales, from physical oscillations to social and technological systems. It captures the core dynamics effectively. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The contexts span mechanical, social, economic, neural, and optical systems, all illustrating resonance phenomena. The core concept is instantiated in very different domains, with domain-specific details fitting the archetype. Rating: 7
+
+#### Impressive length
+The five contexts are described with sufficient detail, showing the archetype’s broad applicability without excessive elaboration. The explanations are balanced and clear. Rating: 7
+
+### Archetypal context 3: Boundary Maintenance
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Biology): The description accurately reflects how membranes maintain integrity, require energy, and involve repair mechanisms. The analogy of damage detection and repair is correct. Rating: 7
+- PC 2 (Nation States): The depiction of borders, sovereignty, and control of flow aligns with political science models. The concepts of breach, repair, and regulation are accurate. Rating: 7
+- PC 3 (Ecosystems): The analogy of ecological boundaries, keystone species, and resource flow is correct, capturing the essence of boundary maintenance in ecology. Rating: 7
+- PC 4 (Organizations): The description of organizational boundaries, gatekeepers, and flow control matches organizational theory. The concepts of breach and repair are appropriate. Rating: 7
+- PC 5 (Psychological Self): The analogy of ego boundaries, stress, and repair mechanisms aligns with psychological models of boundary integrity. Rating: 7
+
+#### Beauty
+The metaphor of boundaries as dynamic, energy-dependent structures across scales is elegant and intuitive. The analogy of breach and repair is compelling. Rating: 7
+
+#### Intelligence
+The explanation demonstrates a deep understanding of boundary dynamics across biological, social, ecological, organizational, and psychological systems. It captures the recursive nature well. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The contexts span cellular, political, ecological, organizational, and psychological domains, all instantiated with appropriate domain-specific terminology. The core dynamics are consistent across scales. Rating: 7
+
+#### Impressive length
+The five contexts are described with sufficient depth, illustrating the archetype’s broad scope. The explanations are concise yet comprehensive. Rating: 7
+
+### Archetypal context 4: Resonance Amplification (repeated for completeness)
+*(Same as above)*
+
+### Archetypal context 5: Boundary Maintenance (repeated for completeness)
+*(Same as above)*
+
+### Structural diversity across the submitted set
+The five archetypal contexts span physical, biological, social, ecological, organizational, and psychological systems, each instantiated with domain-specific details but unified by the boundary maintenance principle. The diversity demonstrates the archetype’s broad applicability and the recursive pattern of boundary control and repair. Rating: 7
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Hierarchical Control",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Resonance Amplification",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Resonance Amplification (repeated)",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Boundary Maintenance (repeated)",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

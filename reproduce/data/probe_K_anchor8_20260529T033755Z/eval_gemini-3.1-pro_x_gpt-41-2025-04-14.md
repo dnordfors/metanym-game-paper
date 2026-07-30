@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Inheritance and Transmission
+
+#### Factually correct (per parallel context)
+- PC 1 (Genetics): The biological facts are generally correct, but the phrasing "genes accumulate, diversify, or disappear" is slightly imprecise compared to the Reference's rigorous domain-expert prose. The Reference's biological contexts (e.g., Bacterial Chemotaxis) use highly specific terminology ("transmembrane chemoreceptors," "methylation-based adaptation"). The Target's Form (b) is accurate but reads like a middle-school textbook rather than domain-expert prose. Rating: 6
+- PC 2 (Cultural Tradition): The anthropological facts are broadly correct, but "customs accumulate, diversify, or disappear" is a very simplistic view of cultural evolution. The Reference's social contexts (e.g., Market Competition) capture much more nuanced dynamics ("first-mover vs. fast-follower"). The Target's Form (b) is accurate but lacks depth. Rating: 6
+- PC 3 (Software Development): The software engineering facts are somewhat strained. While codebases do inherit functions from legacy systems, "refactoring" is not primarily a mechanism of *transmission* from a source to an entity in the way inheritance is; it's a restructuring of existing code. Bugs do not typically "modify or remove functions" in an evolutionary sense; they break them. The Reference's software context (Software Development in Scaffold-Dependent Assembly) is much more accurate regarding dependencies and frameworks. Rating: 4
+- PC 4 (Language Evolution): The linguistic facts are mostly correct. Languages do borrow words, and semantic shift does alter them. However, "borrowing" from a "proto-language" is historically inaccurate; languages *descend* from proto-languages (inheritance) and *borrow* from contemporary languages (contact). The Reference's contexts do not make such fundamental domain errors. Rating: 4
+- PC 5 (Legal Precedent): The legal facts are generally correct. Legal systems do adopt doctrines from prior cases via citation, and reinterpretation modifies them. However, the phrasing is again very basic compared to the Reference's nuanced legal/institutional contexts (e.g., Financial Debt). Rating: 6
+
+#### Beauty
+The prose in both Form (a) and Form (b) is extremely repetitive and simplistic. The template is short and lacks the rhythmic, cascading complexity of the Reference templates (e.g., the "Debt Accumulation" template). The sentences are short and choppy ("Organisms inherit genes from their parents. Mutations can alter..."). It lacks the elegance and flow of the Reference. Rating: 3
+
+#### Intelligence
+The underlying analogy (evolutionary transmission) is a classic and powerful one, but the execution here is superficial. The mapping of "refactoring" to "transmission" and "bug" to "variation" in the software context is particularly weak and shows a lack of deep understanding of the domain. The Reference's analogies (e.g., "Debt Accumulation" across molecular to civilizational scales) are profoundly insightful and rigorously mapped. Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains (Genetics, Culture, Software, Language, Law) are reasonably far apart, spanning biology, sociology, technology, linguistics, and law. The metanyms (gene, custom, function, word, doctrine) are not synonymous. This is a solid selection of domains, comparable to the Reference's spread, though the execution within those domains is weaker. Rating: 8
+
+#### Impressive length
+The template is very short (4 sentences, 48 words). The Reference templates are typically 6-8 sentences and 100-150 words, allowing for much more complex relational mapping. The Target's length is clearly worse than the Reference. Rating: 2
+
+### Archetypal context 2: Resource Allocation and Competition
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecology): The ecological facts are basic but correct. Species compete for food, balancing foraging and predation risk. However, "Game theory analyzes how species adapt to changing climate" is a slight mismatch; game theory analyzes strategic interactions (like foraging vs. predation), while climate adaptation is broader evolutionary ecology. The Reference's ecological contexts (e.g., Ecological Competition) are much more precise. Rating: 6
+- PC 2 (Business): The business facts are correct. Firms compete for market share and balance marketing against bankruptcy risk. The phrasing is again very simplistic compared to the Reference's business contexts (e.g., Market Competition). Rating: 7
+- PC 3 (Academic Funding): The academic facts are correct. Researchers compete for grants and balance proposal effort against rejection risk. The use of "Scientometrics" is slightly off; scientometrics measures output, but doesn't necessarily analyze the *strategy* of grant writing in the way game theory or economics does. Rating: 6
+- PC 4 (Sports League): The sports facts are correct. Teams compete for championships and balance tactics against injury risk. The phrasing is very basic. Rating: 7
+- PC 5 (Internet Bandwidth): The networking facts are somewhat strained. Users don't typically "balance download method and throttling" in a strategic sense to maximize throughput; throttling is usually imposed by the ISP, not a risk the user actively balances against a "download method." The Reference's technical contexts are much more accurate. Rating: 5
+
+#### Beauty
+Similar to the first archetype, the prose is repetitive and lacks sophistication. The template is short and formulaic. It does not achieve the domain-expert tone of the Reference's Form (b) rewrites. Rating: 3
+
+#### Intelligence
+The analogy of competition for resources is universal, but the specific mappings here are sometimes weak (e.g., balancing "download method" against "throttling"). The template fails to capture the deeper dynamics of competition (like niche partitioning or competitive exclusion, which the Reference explicitly models in its "Competitive Exclusion" archetype). Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains (Ecology, Business, Academia, Sports, Networking) are distinct and well-chosen. The metanyms (food, market share, grant, championship, bandwidth) are not synonymous. This aspect is on par with the Reference. Rating: 8
+
+#### Impressive length
+The template is very short (4 sentences, 45 words), significantly shorter and less complex than the Reference templates. Rating: 2
+
+### Archetypal context 3: Feedback and Regulation
+
+#### Factually correct (per parallel context)
+- PC 1 (Physiology): The physiological facts are correct (blood sugar, pancreas, insulin). However, the phrasing "activates insulin" is slightly awkward; the pancreas *secretes* insulin. The Reference's physiological contexts are much more precise. Rating: 7
+- PC 2 (Climate Control): The engineering facts are correct (thermostat, heater/cooler). The phrasing is very basic. Rating: 7
+- PC 3 (Economic Policy): The economic facts are correct (central bank, interest rates, inflation). The phrasing is basic. Rating: 7
+- PC 4 (Computer Systems): The computing facts are somewhat inaccurate. A server doesn't maintain "uptime" by balancing "CPU usage" via a "scheduler" to prevent a "crash" in a simple negative feedback loop. Load balancing distributes traffic across *multiple* servers; a scheduler manages processes on one CPU. High CPU usage doesn't necessarily cause a crash, just slowness. The Reference's technical contexts are much more rigorous. Rating: 4
+- PC 5 (Social Groups): The sociological facts are very abstract and simplistic. "When conflict deviates from its expectation, the mediator detects the change and activates intervention" is a very mechanical view of social dynamics, lacking the nuance of the Reference's social contexts. Rating: 5
+
+#### Beauty
+The prose is extremely repetitive ("The [SYSTEM] maintains [BALANCE] through..."). It reads like a fill-in-the-blank exercise rather than natural prose. The Reference's Form (b) rewrites are beautifully crafted to sound like authentic domain literature; the Target's Form (b) rewrites are just slight variations of the rigid Form (a). Rating: 2
+
+#### Intelligence
+The concept of negative feedback is fundamental, but the template is too simple to capture its interesting nuances (e.g., delays, oscillations, hysteresis). The mappings in the computer and social domains are weak. The Reference's archetypes (like "Gradient-Guided Navigation") capture much more complex systemic behaviors. Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains (Physiology, Climate Control, Economics, Computing, Sociology) are far apart. The metanyms (homeostasis, temperature, stability, uptime, harmony) are distinct. Rating: 8
+
+#### Impressive length
+The template is extremely short (4 sentences, 38 words). It is vastly inferior to the Reference in length and complexity. Rating: 1
+
+### Archetypal context 4: Emergence from Simple Rules
+
+#### Factually correct (per parallel context)
+- PC 1 (Ant Colony): The biological facts are correct. Ants follow local pheromone rules to create global trail networks. The phrasing is basic. Rating: 7
+- PC 2 (Market Economy): The economic facts are broadly correct, though "supply-demand rules" is a bit simplistic for individual trader behavior (they usually follow profit-maximization rules based on local prices). Rating: 6
+- PC 3 (Cellular Automata): The mathematical facts are correct (Conway's Game of Life gliders). The phrasing is basic. Rating: 7
+- PC 4 (Crowd Movement): The urban studies facts are correct. Crowd flow emerges from local avoidance/following rules. Rating: 7
+- PC 5 (Internet Routing): The networking facts are somewhat inaccurate. Routers do not typically follow simple, blind local rules that lead to "surprising" emergent data paths in the way ants or cellular automata do. Routing protocols (like BGP or OSPF) are highly structured algorithms designed to find optimal paths, often involving significant exchange of topology information, not just blind local reactions. Rating: 4
+
+#### Beauty
+The prose remains highly repetitive and simplistic. The Form (b) rewrites do not elevate the text to domain-expert quality. The Reference is vastly superior in its stylistic execution. Rating: 3
+
+#### Intelligence
+The concept of emergence is profound, but the template reduces it to a very basic "local rules -> global pattern -> surprise" formula. It misses the opportunity to model the *mechanisms* of emergence (e.g., positive feedback, symmetry breaking). The networking analogy is flawed. Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains (Ethology, Economics, Mathematics, Urban Studies, Computer Science) are diverse. The metanyms (trail network, price system, glider, flow, data paths) are distinct. Rating: 8
+
+#### Impressive length
+The template is very short (4 sentences, 42 words). Rating: 2
+
+### Archetypal context 5: Thresholds and Phase Transitions
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The physics facts are correct. The phrasing "water undergoes a rapid freezing from one state (liquid) to another (solid)" is awkward. Rating: 7
+- PC 2 (Financial Crisis): The financial facts are correct. Leverage tipping points lead to market collapse. Rating: 7
+- PC 3 (Social Movement): The sociological facts are correct. Critical mass leads to uprisings. Rating: 7
+- PC 4 (Magnetization): The physics facts are correct. The Curie point marks the transition between paramagnetic and ferromagnetic states. Rating: 8
+- PC 5 (Forest Fire): The ecological facts are correct. Ignition points lead to wildfires. Rating: 7
+
+#### Beauty
+The prose is repetitive and formulaic. The inclusion of parentheticals in Form (a) ("from one state (liquid) to another (solid)") breaks the flow and highlights the mechanical nature of the substitution. The Reference's Form (a) texts flow naturally despite the substitutions. Rating: 2
+
+#### Intelligence
+The concept of phase transitions is strong, and the mappings here are generally solid across the domains. However, the template is too brief to capture the interesting dynamics of phase transitions (e.g., critical slowing down, hysteresis, latent heat). It is a superficial treatment compared to the Reference's deep structural models. Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (Physics, Finance, Sociology, Materials Science, Ecology) are well-separated. The metanyms (temperature, leverage, participation, dryness) are distinct. Rating: 8
+
+#### Impressive length
+The template is very short (4 sentences, 45 words). Rating: 2
+
+### Structural diversity across the submitted set
+The submitted set covers transmission, competition, feedback, emergence, and phase transitions. These are distinct system structures, representing a good breadth of systems theory concepts. However, the Target's note on recursion is false; the archetypes are *not* recursive in the way the Reference's "Debt Accumulation" is. The Target simply lists different domains; it does not show how the *same* archetype nests within itself (e.g., it does not show how genes in an organism aggregate to customs in a community). Despite this false claim, the five archetypes themselves represent different structural motifs. Rating: 7
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Inheritance and Transmission",
+          "factual_per_pc":           [6, 6, 4, 4, 6],
+          "beauty":                   3,
+          "intelligence":             4,
+          "instantiation_distinctness": 8,
+          "impressive_length":        2
+        },
+        {
+          "name": "Resource Allocation and Competition",
+          "factual_per_pc":           [6, 7, 6, 7, 5],
+          "beauty":                   3,
+          "intelligence":             4,
+          "instantiation_distinctness": 8,
+          "impressive_length":        2
+        },
+        {
+          "name": "Feedback and Regulation",
+          "factual_per_pc":           [7, 7, 7, 4, 5],
+          "beauty":                   2,
+          "intelligence":             4,
+          "instantiation_distinctness": 8,
+          "impressive_length":        1
+        },
+        {
+          "name": "Emergence from Simple Rules",
+          "factual_per_pc":           [7, 6, 7, 7, 4],
+          "beauty":                   3,
+          "intelligence":             4,
+          "instantiation_distinctness": 8,
+          "impressive_length":        2
+        },
+        {
+          "name": "Thresholds and Phase Transitions",
+          "factual_per_pc":           [7, 7, 7, 8, 7],
+          "beauty":                   2,
+          "intelligence":             5,
+          "instantiation_distinctness": 8,
+          "impressive_length":        2
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

@@ -1,0 +1,45 @@
+=== Final leaderboard (sec 4.5): T = 1/4(G^F+G^C+E^F+E^C);  E = 1/2(E^F+E^C),  G = 1/2(G^F+G^C) ===
+ # model                  council      T      E      G
+ 1 gemini-3.1-pro             yes   7.99   9.33   6.65
+ 2 claude-opus-4.5            yes    7.0    7.0    7.0
+ 3 claude-opus-4.1            yes   6.57   6.09   7.04
+ 4 claude-opus-4.0            yes   6.56   6.55   6.56
+ 5 claude-sonnet-4             --   6.11   5.64   6.58
+ 6 gpt-4.1-2025-04-14          --   5.27    4.7   5.83
+ 7 gpt-4.1-mini                --   4.91   3.79   6.02
+ 8 gemini-2.5-flash           yes   4.68   3.19   6.17
+ 9 gpt-4o-2024-08-06           --    3.7   2.91    4.5
+10 gpt-4o                      --   3.47   2.45   4.49
+11 gpt-4.1-nano                --   2.45   0.33   4.56
+12 gpt-4o-mini                 --   2.15   0.25   4.04
+
+=== Competence breakdown (sec 4.5): the four anchored components ===
+model                     G^F    G^C    E^F    E^C
+gemini-3.1-pro           6.92   6.37  10.23   8.43
+claude-opus-4.5           7.0    7.0    7.0    7.0
+claude-opus-4.1          7.16   6.93   5.15   7.03
+claude-opus-4.0          6.99   6.14   5.41   7.69
+claude-sonnet-4          7.02   6.15   3.99   7.28
+gpt-4.1-2025-04-14       6.51   5.15   2.93   6.48
+gpt-4.1-mini             6.39   5.65   0.06   7.52
+gemini-2.5-flash         6.56   5.77   0.01   6.38
+gpt-4o-2024-08-06        5.28   3.71    0.0   5.82
+gpt-4o                   5.35   3.64    1.0    3.9
+gpt-4.1-nano             5.42    3.7    0.0   0.65
+gpt-4o-mini              4.25   3.84    0.0    0.5
+
+=== Per-criterion generator quality G (reliability-weighted) vs evaluator reliability E (sec 4.3) ===
+model                  beauty G beauty E  intel G  intel Edistinct Gdistinct E length G length E struct G struct E
+claude-opus-4.5             7.0      7.0      7.0      7.0      7.0      7.0      7.0      7.0      7.0      7.0
+claude-opus-4.1             6.6      7.5      7.2      7.7      6.7      6.5      6.8      5.6      7.3      8.0
+claude-opus-4.0             6.2      8.0      6.2      8.4      6.5      7.2      5.3      6.7      6.5      7.4
+claude-sonnet-4             6.3      7.1      6.5      7.3      4.8      8.6      7.2      5.8      6.0      7.5
+gemini-3.1-pro              6.4      8.2      6.7      8.8      6.2      9.3      6.9      7.2      5.7      7.7
+gemini-2.5-flash            5.2      6.5      5.9      5.0      6.4      3.6      5.8      6.8      5.5      7.1
+gpt-4.1-2025-04-14          5.0      5.4      5.0      6.4      5.9      7.2      4.1      6.5      5.8      7.0
+gpt-4.1-mini                5.6      6.8      5.8      5.9      6.3      8.5      4.5      7.0      6.0      7.4
+gpt-4.1-nano                4.1      2.5      4.0      2.6      4.6     -0.7      3.5      0.8      2.4     -0.2
+gpt-4o                      3.5      3.8      3.6      2.7      4.3      4.5      2.8      2.6      4.0      3.2
+gpt-4o-2024-08-06           3.9      6.1      3.5      5.2      4.4      5.0      3.4      4.7      3.3      6.2
+gpt-4o-mini                 3.9      1.8      3.6      1.2      4.2      0.2      4.1     -0.2      3.4     -0.2
+cos(G,E)                    0.8              0.85              0.64              0.78              0.81         

@@ -1,0 +1,174 @@
+## Target Submission
+
+### Archetypal context 1: Hierarchical Control
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Control): The neural control context accurately describes hierarchical homeostatic regulation with appropriate terminology and mechanisms. The use of "plasticity," "seizure," and "bandwidth" is well aligned with neuroscience concepts. Compared to the Reference, it is equally factually correct. Rating: 7
+- PC 2 (Corporate Management): The corporate management instantiation correctly captures hierarchical management dynamics, including discretion, mandates, and crisis propagation. The terminology and causal relations are accurate and domain-appropriate, matching the Reference’s factual correctness. Rating: 7
+- PC 3 (Immune System): The immune system context correctly uses immunological terms such as specificity, tolerance, inflammation, and signaling speed. The description of failure and cascade effects is accurate. It is on par with the Reference in factual correctness. Rating: 7
+- PC 4 (Government): The government context accurately reflects multi-level governance, federalism, sovereignty, and crisis management. The use of "revolution" as cascade failure is appropriate. The factual correctness is equal to the Reference. Rating: 7
+- PC 5 (Software Architecture): The software architecture context correctly uses terms like modularity, coupling, privilege, and latency. The description of failure cascades and orchestration is accurate. It matches the Reference in factual correctness. Rating: 7
+
+#### Beauty
+The writing is clear, precise, and well-structured across all parallel contexts. The prose balances technical accuracy with readability, and the idiomatic rewrites (Form b) are polished and domain-appropriate. However, the style is somewhat utilitarian and lacks the evocative or poetic qualities that might elevate beauty beyond the Reference. Overall, it is as beautiful as the Reference but not notably more so. Rating: 7
+
+#### Intelligence
+The submission demonstrates solid understanding of hierarchical control across diverse domains, capturing subtle tradeoffs like balancing centralization and autonomy, and the role of communication bandwidth. The analogies are coherent and insightful, showing good abstraction and domain knowledge. However, it does not introduce particularly novel or surprising insights beyond the Reference’s level. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five parallel contexts span neuroscience, corporate management, immunology, government, and software architecture—domains that are conceptually distinct and diverse. The metanyms chosen are well differentiated and avoid synonymy, reflecting domain-specific concepts rather than mere lexical substitutions. This diversity is comparable to the Reference. Rating: 7
+
+#### Impressive length
+The context-template and parallel contexts are of substantial length, with detailed explanations and multiple clauses per sentence. The submission matches the Reference in length and complexity, providing a rich and thorough instantiation of the archetype. Rating: 7
+
+---
+
+### Archetypal context 2: Competitive Dynamics
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): The description accurately reflects evolutionary competition, fitness, predation, and ecological dynamics. The use of terms like symbiosis, dominance, and selection pressure is correct. Rating: 7
+- PC 2 (Market Competition): The market competition context correctly uses economic and business terminology, including pivots, disruption, monopoly, and competition. The causal relations are factually sound. Rating: 7
+- PC 3 (Military Warfare): The military context accurately describes doctrine, alliances, hegemony, and battlefield dynamics. The terminology and causal structure are correct. Rating: 7
+- PC 4 (Academic Research): The academic research instantiation correctly captures funding competition, paradigms, critique, and scholarly advancement. The factual content is accurate. Rating: 7
+- PC 5 (Political Elections): The political elections context correctly uses terms like platforms, coalitions, mandates, and campaign dynamics. The description is factually sound. Rating: 7
+
+#### Beauty
+The prose is clear and well-structured, with idiomatic rewrites that read smoothly and naturally in each domain. The writing is engaging but remains straightforward and functional, similar in style to the Reference. No significant enhancement or diminishment in beauty is evident. Rating: 7
+
+#### Intelligence
+The submission shows good abstraction of competitive dynamics across very different domains, capturing key mechanisms like alliance formation, adaptation, and dominance emergence. The analogies are insightful but do not surpass the Reference in depth or novelty. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span biology, economics, military, academia, and politics—distinct and well-separated fields. The metanyms are domain-specific and not synonymous, maintaining clear conceptual distinctions. This matches the Reference’s diversity. Rating: 7
+
+#### Impressive length
+The context-template and parallel contexts are detailed and of substantial length, comparable to the Reference. The submission provides thorough instantiations without being overly verbose. Rating: 7
+
+---
+
+### Archetypal context 3: Information Processing
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Processing): The description accurately reflects neural signal processing, including integration, saturation, potentiation, and feedback. Rating: 7
+- PC 2 (Data Networks): The data networks context correctly describes routing, congestion, firewalls, and redundancy. Rating: 7
+- PC 3 (Genetic Expression): The genetic expression instantiation accurately covers transcription, translation, regulation, and mutation. Rating: 7
+- PC 4 (Sensory Perception): The sensory perception context correctly describes transduction, filtering, adaptation, and overload. Rating: 7
+- PC 5 (Economic Markets): The economic markets context accurately captures information aggregation, liquidity, leverage, and diversification. Rating: 7
+
+#### Beauty
+The writing is precise and clear, with idiomatic rewrites that are domain-appropriate and readable. The style is functional and technical, similar to the Reference, without particular flourish or poetic qualities. Rating: 7
+
+#### Intelligence
+The submission demonstrates a strong grasp of information processing principles across diverse domains, effectively mapping analogous concepts. The abstraction is solid but does not exceed the Reference in sophistication or originality. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains cover neuroscience, computer networks, molecular biology, sensory systems, and economics—distinct fields with well-differentiated metanyms. The submission maintains clear conceptual separation, matching the Reference. Rating: 7
+
+#### Impressive length
+The context-template and parallel contexts are comprehensive and detailed, matching the Reference’s length and complexity. Rating: 7
+
+---
+
+### Archetypal context 4: Resource Allocation (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Cellular Metabolism): The description accurately reflects ATP distribution among organelles, metabolic demand, and homeostasis. Rating: 7
+- PC 2 (Organ Blood Flow): The organ blood flow context correctly describes cardiac output distribution, perfusion, and circulatory constraints. Rating: 7
+- PC 3 (Organizational Budget): The organizational budget instantiation accurately covers budget allocation, priority, and performance tracking. Rating: 7
+- PC 4 (Ecosystem Energy): The ecosystem energy context correctly describes energy distribution among species, fitness, and ecological succession. Rating: 7
+- PC 5 (Economic Investment): The economic investment context accurately reflects capital allocation, scarcity, and portfolio management. Rating: 7
+
+#### Beauty
+The writing is clear and consistent, with idiomatic rewrites that read naturally in each domain. The recursive nature is well conveyed, though the prose remains straightforward and utilitarian, similar to the Reference. Rating: 7
+
+#### Intelligence
+The recursive structure is explicitly noted and well implemented, showing a sophisticated understanding of scaling resource allocation principles across biological, organizational, ecological, and economic systems. This recursion adds a layer of conceptual depth that is at least equal to the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span cellular biology, physiology, organizational management, ecology, and finance—distinct and well separated. The metanyms are domain-specific and non-synonymous, maintaining clear conceptual distinctions. Rating: 7
+
+#### Impressive length
+The context-template and parallel contexts are detailed and substantial, matching the Reference’s length and complexity. The recursive note adds conceptual richness without excessive verbosity. Rating: 7
+
+---
+
+### Archetypal context 5: Boundary Maintenance
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The description accurately reflects membrane selective permeability, transport, and homeostasis. Rating: 7
+- PC 2 (Immune System): The immune system context correctly describes immune barriers, recognition, and tolerance. Rating: 7
+- PC 3 (National Border): The national border instantiation accurately covers border security, identification, and policy adjustment. Rating: 7
+- PC 4 (Firewall Security): The firewall security context correctly describes network filtering, intrusion detection, and patching. Rating: 7
+- PC 5 (Psychological Defense): The psychological defense context accurately reflects ego boundaries, repression, and adaptation. Rating: 7
+
+#### Beauty
+The prose is clear, domain-appropriate, and well structured. The idiomatic rewrites are natural and readable. The writing style is consistent with the Reference, neither more nor less beautiful. Rating: 7
+
+#### Intelligence
+The submission shows a good understanding of boundary maintenance across biological, social, and technological domains. The analogies are coherent and insightful but do not surpass the Reference in novelty or depth. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains cover cell biology, immunology, national security, cybersecurity, and psychology—distinct and conceptually diverse. The metanyms are well differentiated and non-synonymous. Rating: 7
+
+#### Impressive length
+The context-template and parallel contexts are detailed and substantial, matching the Reference’s length and complexity. Rating: 7
+
+---
+
+### Structural diversity across the submitted set
+
+The Target Submission presents five archetypal contexts that are structurally diverse: hierarchical control, competitive dynamics, information processing, recursive resource allocation, and boundary maintenance. Each archetype embodies a distinct system structure and dynamic, ranging from control hierarchies to competition, signal processing, resource distribution, and selective barriers. The inclusion of a recursive archetype adds conceptual depth and variety. This structural diversity is at least equal to the Reference Submission, which also featured varied system structures. Rating: 7
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Hierarchical Control",
+          "factual_per_pc": [7,7,7,7,7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Competitive Dynamics",
+          "factual_per_pc": [7,7,7,7,7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Information Processing",
+          "factual_per_pc": [7,7,7,7,7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Resource Allocation (Recursive)",
+          "factual_per_pc": [7,7,7,7,7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [7,7,7,7,7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

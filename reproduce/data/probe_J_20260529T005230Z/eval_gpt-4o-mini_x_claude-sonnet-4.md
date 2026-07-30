@@ -1,0 +1,163 @@
+```
+## Submission 1
+
+### Archetypal context 1: Hierarchical Control
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Control): The description of the nervous system's function and its hierarchical structure is accurate, detailing how it maintains homeostasis and responds to stimuli. Rating: 10
+- PC 2 (Military Command): The military command structure is correctly portrayed, emphasizing the importance of coordination and the transfer of command during crises. Rating: 10
+- PC 3 (Corporate Management): The corporate management context accurately reflects how different tiers operate and the challenges faced in maintaining profitability and communication. Rating: 10
+- PC 4 (Immune System): The immune system's hierarchical response to pathogens is well-explained, highlighting the balance between local and systemic responses. Rating: 10
+- PC 5 (Computer Networks): The description of network protocols and their hierarchical nature is factually correct, detailing how they manage traffic and maintain connectivity. Rating: 10
+
+#### Beauty
+The language used in this archetypal context is both technical and poetic, effectively conveying complex ideas about hierarchical systems in a way that is engaging and aesthetically pleasing. The use of metaphors and structured sentences enhances its beauty. Rating: 9
+
+#### Intelligence
+This context demonstrates a high level of intelligence by effectively synthesizing complex systems across various domains. The parallels drawn between different hierarchical structures reveal deep insights into governance and control mechanisms. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains represented in this context are distinct and varied, ranging from biological systems to military and corporate structures. The metanyms used are appropriately chosen and not synonymous, showcasing a rich diversity in the application of the archetype. Rating: 10
+
+#### Impressive length
+The template and the parallel contexts are extensive, providing a thorough exploration of the archetypal context. The length allows for a detailed examination of each domain while maintaining coherence. Rating: 9
+
+### Archetypal context 2: Competitive Displacement
+
+#### Factually correct (per parallel context)
+- PC 1 (Evolutionary Biology): The description of species competing for resources and the mechanisms of natural selection is accurate and well-articulated. Rating: 10
+- PC 2 (Market Economics): The portrayal of firms competing for market share and the dynamics of profit and efficiency is factually sound. Rating: 10
+- PC 3 (Academic Research): The context accurately reflects the competitive nature of research funding and the impact of peer review on academic success. Rating: 10
+- PC 4 (Political Elections): The description of candidates vying for votes and the factors influencing electoral success is well-founded and clear. Rating: 10
+- PC 5 (Technology Adoption): The context effectively captures the competition among technologies for user adoption, highlighting the importance of features and market dynamics. Rating: 10
+
+#### Beauty
+The language in this archetypal context is compelling and well-structured, making complex ideas accessible and engaging. The use of vivid imagery and clear analogies enhances its overall beauty. Rating: 8
+
+#### Intelligence
+This context showcases a high level of intelligence by effectively linking competitive dynamics across various fields. The insights into how different systems operate under competition reveal a sophisticated understanding of the underlying principles. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains represented are diverse, including biology, economics, and technology, with metanyms that are distinct and appropriately chosen. This diversity enriches the context and demonstrates the archetype's applicability across different fields. Rating: 10
+
+#### Impressive length
+The template and parallel contexts are substantial, providing a comprehensive exploration of competitive dynamics. The length allows for a nuanced discussion of each domain while maintaining clarity. Rating: 8
+
+### Archetypal context 3: Information Cascade
+
+#### Factually correct (per parallel context)
+- PC 1 (Financial Markets): The description of investor behavior and the dynamics of market bubbles is accurate and well-supported by examples. Rating: 10
+- PC 2 (Medical Diagnosis): The context effectively captures the challenges of diagnostic decision-making and the potential for misdiagnosis due to information cascades. Rating: 10
+- PC 3 (Social Media): The portrayal of how users share content based on observed behavior is accurate and reflects current trends in social media dynamics. Rating: 10
+- PC 4 (Scientific Research): The context accurately describes the influence of peer review and publication trends on scientific conclusions. Rating: 10
+- PC 5 (Restaurant Choice): The description of how diners make choices based on observed behavior is a relatable and accurate representation of social influence. Rating: 10
+
+#### Beauty
+The language used in this archetypal context is engaging and thought-provoking, effectively conveying the complexities of decision-making under uncertainty. The use of metaphors and relatable examples enhances its beauty. Rating: 8
+
+#### Intelligence
+This context demonstrates a high level of intelligence by effectively analyzing the mechanisms of information cascades across various domains. The insights into how behavior is influenced by social dynamics reveal a deep understanding of the subject matter. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains represented are varied, including finance, medicine, and social behavior, with metanyms that are distinct and well-chosen. This diversity illustrates the archetype's relevance across different contexts. Rating: 10
+
+#### Impressive length
+The template and parallel contexts are well-developed, providing a thorough exploration of information cascades. The length allows for a detailed examination of each domain while maintaining coherence. Rating: 8
+
+### Archetypal context 4: Boundary Maintenance (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Biology): The description of cellular membranes and their functions is accurate and well-supported by biological principles. Rating: 10
+- PC 2 (Nation States): The portrayal of national borders and their role in sovereignty is factually sound and relevant to current geopolitical discussions. Rating: 10
+- PC 3 (Ecosystems): The context effectively captures the dynamics of ecological boundaries and the role of keystone species. Rating: 10
+- PC 4 (Organizations): The description of organizational boundaries and their importance in maintaining coherence is accurate and insightful. Rating: 10
+- PC 5 (Psychological Self): The portrayal of psychological boundaries and their role in identity is well-articulated and relevant to psychological theories. Rating: 10
+
+#### Beauty
+The language in this archetypal context is both technical and poetic, effectively conveying complex ideas about boundary maintenance in a way that is engaging and aesthetically pleasing. The recursive nature adds depth to its beauty. Rating: 9
+
+#### Intelligence
+This context demonstrates a high level of intelligence by effectively synthesizing the concept of boundary maintenance across various domains. The recursive aspect reveals deep insights into the fundamental dynamics of systems. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains represented are distinct and varied, ranging from biology to psychology, with metanyms that are appropriately chosen and not synonymous. This showcases a rich diversity in the application of the archetype. Rating: 10
+
+#### Impressive length
+The template and the parallel contexts are extensive, providing a thorough exploration of the archetypal context. The length allows for a detailed examination of each domain while maintaining coherence. Rating: 9
+
+### Archetypal context 5: Resonance Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Mechanical Systems): The description of mechanical resonance and its implications is accurate and well-supported by engineering principles. Rating: 10
+- PC 2 (Social Movements): The portrayal of social movements and the dynamics of participation is factually sound and relevant to sociological studies. Rating: 10
+- PC 3 (Financial Markets): The context effectively captures the dynamics of market bubbles and the role of trader behavior. Rating: 10
+- PC 4 (Neural Networks): The description of neural oscillations and their implications for network activity is accurate and insightful. Rating: 10
+- PC 5 (Laser Physics): The portrayal of lasing and its principles is well-articulated and relevant to optical physics. Rating: 10
+
+#### Beauty
+The language used in this archetypal context is engaging and thought-provoking, effectively conveying the complexities of resonance and amplification. The use of metaphors and structured sentences enhances its overall beauty. Rating: 8
+
+#### Intelligence
+This context showcases a high level of intelligence by effectively linking the concept of resonance across various fields. The insights into how different systems respond to external forces reveal a sophisticated understanding of the underlying principles. Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains represented are diverse, including mechanics, sociology, and physics, with metanyms that are distinct and appropriately chosen. This diversity enriches the context and demonstrates the archetype's applicability across different fields. Rating: 10
+
+#### Impressive length
+The template and parallel contexts are substantial, providing a comprehensive exploration of resonance dynamics. The length allows for a nuanced discussion of each domain while maintaining clarity. Rating: 8
+
+### Structural diversity across the submitted set
+The submitted set of archetypal contexts exhibits a high degree of structural diversity, with each context exploring different systems and dynamics across a wide range of domains. This variety enhances the overall richness of the submission and demonstrates the versatility of the archetypal framework. Rating: 9
+```
+
+```json
+{
+  "scores": {
+    "1": {
+      "archetypal_contexts": [
+        {
+          "name": "Hierarchical Control",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 9,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 9
+        },
+        {
+          "name": "Competitive Displacement",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 8
+        },
+        {
+          "name": "Information Cascade",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 8
+        },
+        {
+          "name": "Boundary Maintenance (Recursive)",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 9,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 9
+        },
+        {
+          "name": "Resonance Amplification",
+          "factual_per_pc": [10, 10, 10, 10, 10],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 10,
+          "impressive_length": 8
+        }
+      ],
+      "structural_diversity": 9
+    }
+  }
+}
+```

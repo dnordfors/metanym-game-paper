@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecosystem Management): The description of nutrient allocation in ecosystems is accurate, reflecting real ecological processes. Rating: 7
+- PC 2 (Corporate Strategy): The explanation of capital allocation in corporations is factually correct and aligns with standard business practices. Rating: 7
+- PC 3 (Urban Planning): The allocation of land in urban planning is described accurately, considering zoning and development. Rating: 7
+- PC 4 (Education System): The allocation of funding in educational systems is correctly portrayed, with a focus on curriculum and innovation. Rating: 7
+- PC 5 (Personal Finance): The allocation of income in personal finance is accurately described, balancing debt and investment. Rating: 7
+
+#### Beauty
+The language used in this archetypal context is clear and functional, but lacks the elegance or vividness that might elevate it above the Reference. Rating: 7
+
+#### Intelligence
+The submission demonstrates a solid understanding of resource allocation across various domains, but does not exhibit exceptional insight or depth beyond the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (ecosystem, corporation, city, school, household) are distinct and the metanyms are appropriately varied, though not exceptionally so. Rating: 7
+
+#### Impressive length
+The template is concise and covers the necessary elements of resource allocation, but it is not particularly lengthy or detailed compared to the Reference. Rating: 7
+
+### Archetypal context 2: Conflict Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (International Relations): The description of conflict resolution in international relations is accurate, reflecting diplomatic processes. Rating: 7
+- PC 2 (Workplace Dynamics): The portrayal of workplace disputes and their resolution is factually correct. Rating: 7
+- PC 3 (Family Therapy): The explanation of resolving family arguments through counseling is accurate. Rating: 7
+- PC 4 (Environmental Policy): The description of resolving environmental controversies is factually correct. Rating: 7
+- PC 5 (Sports Management): The portrayal of resolving sports rivalries is accurate and reflects common practices. Rating: 7
+
+#### Beauty
+The language is straightforward and clear, but lacks the aesthetic appeal or creativity that might distinguish it from the Reference. Rating: 7
+
+#### Intelligence
+The submission shows a competent understanding of conflict resolution across different domains, but does not demonstrate exceptional insight. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The chosen domains (international relations, workplace, family, environment, sports) are distinct, and the metanyms are varied, though not exceptionally so. Rating: 7
+
+#### Impressive length
+The template is concise and covers the necessary elements of conflict resolution, but it is not particularly lengthy or detailed compared to the Reference. Rating: 7
+
+### Archetypal context 3: Growth and Development
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): The description of evolution in species is accurate, reflecting biological processes. Rating: 7
+- PC 2 (Economic Development): The portrayal of economic development processes is factually correct. Rating: 7
+- PC 3 (Personal Growth): The explanation of personal growth is accurate and reflects psychological understanding. Rating: 7
+- PC 4 (Technological Innovation): The description of technological innovation processes is factually correct. Rating: 7
+- PC 5 (Cultural Evolution): The portrayal of cultural evolution is accurate and reflects social dynamics. Rating: 7
+
+#### Beauty
+The language is clear and functional, but lacks the elegance or vividness that might elevate it above the Reference. Rating: 7
+
+#### Intelligence
+The submission demonstrates a solid understanding of growth and development across various domains, but does not exhibit exceptional insight or depth beyond the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (biology, economy, individual, technology, culture) are distinct and the metanyms are appropriately varied, though not exceptionally so. Rating: 7
+
+#### Impressive length
+The template is concise and covers the necessary elements of growth and development, but it is not particularly lengthy or detailed compared to the Reference. Rating: 7
+
+### Archetypal context 4: Information Processing
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Networks): The description of neural processing is accurate, reflecting biological processes. Rating: 7
+- PC 2 (Computer Systems): The portrayal of computation in computer systems is factually correct. Rating: 7
+- PC 3 (Human Cognition): The explanation of human cognition is accurate and reflects psychological understanding. Rating: 7
+- PC 4 (Organizational Management): The description of decision-making in organizations is factually correct. Rating: 7
+- PC 5 (Ecosystem Dynamics): The portrayal of nutrient cycling in ecosystems is accurate and reflects ecological processes. Rating: 7
+
+#### Beauty
+The language is straightforward and clear, but lacks the aesthetic appeal or creativity that might distinguish it from the Reference. Rating: 7
+
+#### Intelligence
+The submission shows a competent understanding of information processing across different domains, but does not demonstrate exceptional insight. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The chosen domains (neural networks, computers, human cognition, organizations, ecosystems) are distinct, and the metanyms are varied, though not exceptionally so. Rating: 7
+
+#### Impressive length
+The template is concise and covers the necessary elements of information processing, but it is not particularly lengthy or detailed compared to the Reference. Rating: 7
+
+### Archetypal context 5: Risk Management
+
+#### Factually correct (per parallel context)
+- PC 1 (Financial Markets): The description of risk management in financial markets is accurate, reflecting standard practices. Rating: 7
+- PC 2 (Healthcare): The portrayal of risk management in healthcare is factually correct. Rating: 7
+- PC 3 (Cybersecurity): The explanation of risk management in cybersecurity is accurate. Rating: 7
+- PC 4 (Disaster Preparedness): The description of risk management in disaster preparedness is factually correct. Rating: 7
+- PC 5 (Project Management): The portrayal of risk management in project management is accurate and reflects common practices. Rating: 7
+
+#### Beauty
+The language is clear and functional, but lacks the elegance or vividness that might elevate it above the Reference. Rating: 7
+
+#### Intelligence
+The submission demonstrates a solid understanding of risk management across various domains, but does not exhibit exceptional insight or depth beyond the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (financial markets, healthcare, cybersecurity, disaster preparedness, project management) are distinct and the metanyms are appropriately varied, though not exceptionally so. Rating: 7
+
+#### Impressive length
+The template is concise and covers the necessary elements of risk management, but it is not particularly lengthy or detailed compared to the Reference. Rating: 7
+
+### Structural diversity across the submitted set
+The structural diversity of the submitted set is comparable to the Reference. Each archetypal context explores different systems and dynamics, but does not demonstrate exceptional diversity or complexity beyond the Reference. Rating: 7
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Conflict Resolution",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Growth and Development",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Information Processing",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        },
+        {
+          "name": "Risk Management",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

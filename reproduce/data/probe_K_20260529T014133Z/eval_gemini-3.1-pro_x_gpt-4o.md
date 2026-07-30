@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Growth and Adaptation
+
+#### Factually correct (per parallel context)
+- PC 1 (Plant): The statements are generally true but highly simplistic compared to the Reference. Plants do grow by accumulating nutrients and adapt to environmental changes, but the phrasing "reallocating nutrients to maintain homeostasis" is a very loose description of complex physiological responses (like altering root-to-shoot ratios). It lacks the domain-specific precision seen in the Reference (e.g., "run-and-tumble behavior" or "transmembrane chemoreceptors"). Rating: 5
+- PC 2 (Economy): The economic context is factually weak. Economies don't "reallocate capital to maintain equilibrium" in the way a biological organism maintains homeostasis; capital reallocation is driven by individual actors seeking profit, not a systemic drive for equilibrium. Furthermore, "failure to adapt can lead to recession" is a gross oversimplification of macroeconomic cycles. Rating: 4
+- PC 3 (Software System): This context is factually flawed. Software systems do not "undergo development through the accumulation of computational power." They develop through human engineering (writing code). While they might *use* computational power, accumulating it doesn't cause development. Reallocating computational power (e.g., load balancing) maintains stability, but this is a different concept from the "development" mentioned in the first sentence. Rating: 3
+- PC 4 (Human Body): Similar to the plant context, this is broadly true but overly simplistic. The body grows through energy (and nutrients), and adapts to health changes. However, "reallocating energy to maintain homeostasis" is a very generic way to describe physiological responses to illness or stress. It lacks the depth and accuracy of the Reference's biological examples. Rating: 5
+- PC 5 (Ecosystem): Ecosystems don't "expand" simply by accumulating resources; they develop through complex successional stages and species interactions. "Reallocating resources to maintain balance" implies a centralized control mechanism that ecosystems lack; resource flow changes due to population dynamics and environmental forcing. Rating: 4
+
+#### Beauty
+The prose in both Form (a) and Form (b) is extremely repetitive, simplistic, and lacks the elegance and flow of the Reference submission. The sentences are short and formulaic, reading more like a Mad Libs exercise than a thoughtful exploration of a concept. The Reference submission, even in Form (a), manages to sound somewhat natural, while Form (b) in the Reference is highly polished domain-expert prose. The Target's Form (b) barely improves upon Form (a). Rating: 2
+
+#### Intelligence
+The underlying concept ("Growth and Adaptation") is a very basic, almost trivial observation. It lacks the structural complexity and insight of the Reference's archetypes (like "Gradient-Guided Navigation" or "Scaffold-Dependent Assembly"). The mapping of metanyms is superficial and often forces concepts into ill-fitting boxes (e.g., software development as accumulating computational power). It demonstrates a much lower level of abstraction and analytical depth than the Reference. Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (Plant, Economy, Software, Human Body, Ecosystem) are reasonably distinct, covering biology, economics, and technology. However, the metanyms themselves are often very generic or nearly synonymous within the context of the template (e.g., "growth" and "expansion", "homeostasis" and "balance", "illness" and "collapse"). The Reference submission uses much more specific and distinct metanyms (e.g., "chemoreceptor" vs. "proprioception" vs. "backpropagation"). Rating: 4
+
+#### Impressive length
+The context-template is extremely short (only four sentences, 38 words) compared to the Reference templates (which are typically 6-8 sentences and over 100 words). It lacks the detail, nuance, and multiple interacting components present in the Reference. Rating: 1
+
+### Archetypal context 2: Conflict and Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Nation): The statements are factually correct at a very basic level. Nations do fight wars over territory and sign peace treaties. However, it is a massive oversimplification of international relations, lacking any of the nuanced mechanisms described in the Reference's examples. Rating: 5
+- PC 2 (Corporation): This context is factually problematic. While corporations compete for market share, a "merger" is not typically the "resolution" to competition in the way a peace treaty resolves a war. Mergers are strategic business decisions, often driven by factors other than simply ending competition (e.g., synergies, acquiring technology). Rating: 4
+- PC 3 (Family): Factually correct in a broad sense. Families do have disputes over inheritance and can reach reconciliation. Again, it is very simplistic. Rating: 5
+- PC 4 (Political Party): Factually weak. Political parties debate policy, but a "compromise" is not an agreement on "policy distribution." Policies aren't distributed like territory or inheritance; they are enacted or modified. Rating: 4
+- PC 5 (Animal Group): Factually correct but simplistic. Animal groups fight over territory and can reach truces (or establish stable boundaries). Rating: 5
+
+#### Beauty
+The prose is again highly repetitive and simplistic. The template forces awkward phrasing in Form (a), such as "Peace treaty is achieved when the nation reaches an agreement on territory distribution." Form (b) offers only minor improvements and remains far below the quality of the Reference's domain-expert prose. Rating: 2
+
+#### Intelligence
+The archetype "Conflict and Resolution" is a very common and basic narrative structure. It lacks the analytical depth and specific mechanistic insights of the Reference archetypes. The mapping is superficial, and the attempt to force "merger" as the resolution to corporate competition shows a lack of deep understanding of the domains. Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains (Nation, Corporation, Family, Political Party, Animal Group) are distinct. However, the metanyms are often very close in meaning or generic (e.g., "war", "competition", "dispute", "debate", "territorial fight"). The Reference achieves much greater semantic distance between its metanyms. Rating: 4
+
+#### Impressive length
+The template is very short (four sentences, 35 words), lacking the complexity and detail of the Reference templates. Rating: 1
+
+### Archetypal context 3: Innovation and Obsolescence
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): Factually weak. Scientists introduce theories or methods, not just "technology," to improve research. While technology can become redundant, the phrasing "As knowledge evolves, technology becomes less effective" is a poor description of scientific progress. Rating: 4
+- PC 2 (Entrepreneur): Factually correct at a basic level. Products do become obsolete as markets evolve. Rating: 5
+- PC 3 (Artist): Factually problematic. An artist introducing a "style" to "improve art creation" is a very utilitarian view of art. Styles don't necessarily become "less effective" or "irrelevant" in the way technology does; they fall out of fashion, but can be revived. Rating: 3
+- PC 4 (Engineer): Factually weak. Engineers introduce designs, but "As materials evolve, the design becomes less effective, leading to failure" is incorrect. New materials usually enable *better* designs; old designs don't necessarily "fail" just because new materials exist, they just become suboptimal. Rating: 3
+- PC 5 (Educator): Factually correct in a broad sense. Curricula can become ineffective as pedagogy evolves. Rating: 5
+
+#### Beauty
+The prose remains simplistic, repetitive, and formulaic. The sentences lack flow and sophistication. Form (b) is only marginally better than Form (a) and does not read like expert prose. Rating: 2
+
+#### Intelligence
+The concept of "Innovation and Obsolescence" is a standard lifecycle model, lacking the structural novelty or mechanistic detail of the Reference archetypes. The mappings are often forced and reveal a shallow understanding of the domains (especially Art and Engineering). Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains are distinct (Science, Business, Art, Engineering, Education). The metanyms show a bit more variety here than in previous archetypes (e.g., "redundancy", "obsolescence", "irrelevance", "failure", "ineffectiveness"), but they are still relatively close in meaning compared to the Reference. Rating: 5
+
+#### Impressive length
+The template is very short (three sentences, 33 words), offering very little detail or complexity. Rating: 1
+
+### Archetypal context 4: Exploration and Discovery
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): Factually awkward. A scientist doesn't embark on research to "uncover a hypothesis"; they test a hypothesis to uncover a theory or fact. The phrasing "The research is fraught with experiments" is nonsensical; experiments are the method, not the challenge. Rating: 3
+- PC 2 (Adventurer): Factually correct but simplistic. Adventurers explore uncharted lands and face obstacles. Rating: 5
+- PC 3 (Historian): Factually awkward. "The investigation is fraught with evidence" is incorrect; evidence is what they seek, not the challenge (the challenge might be a *lack* of evidence or conflicting evidence). Rating: 3
+- PC 4 (Astronaut): Factually correct but simplistic. Astronauts explore celestial bodies and face technical issues. Rating: 5
+- PC 5 (Philosopher): Factually correct in a broad sense. Philosophers inquire into truth and face paradoxes. Rating: 5
+
+#### Beauty
+The prose is highly repetitive and formulaic. The awkward phrasing forced by the template (e.g., "fraught with experiments", "fraught with evidence") makes Form (a) read very poorly. Form (b) attempts to fix this but remains simplistic. Rating: 2
+
+#### Intelligence
+The archetype is a very basic narrative trope (the hero's journey/exploration). It lacks any complex system dynamics or structural insights. The poor mapping of metanyms (like "experiments" as the challenge) shows a lack of careful thought. Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains are distinct. The metanyms for [CHALLENGE] (experiment, obstacle, evidence, technical issue, paradox) are distinct, although some are used incorrectly in context. Rating: 5
+
+#### Impressive length
+The template is very short (three sentences, 31 words). Rating: 1
+
+### Archetypal context 5: Structure and Function
+
+#### Factually correct (per parallel context)
+- PC 1 (Building): Factually correct but simplistic. Buildings provide shelter and can collapse if they fail to adapt to weather (though "adapt" usually means being built to withstand it initially, rather than actively adapting). Rating: 5
+- PC 2 (Organ): Factually correct but simplistic. Organs perform functions and can suffer dysfunction. Rating: 5
+- PC 3 (Machine): Factually correct but simplistic. Machines operate and can break down. Rating: 5
+- PC 4 (Organization): Factually awkward. An organization is designed to *achieve* a goal, not "perform" a goal. Rating: 4
+- PC 5 (Language): Factually awkward. A language is used for communication, it doesn't "perform" communication. Rating: 4
+
+#### Beauty
+The prose is extremely repetitive and simplistic. The phrasing is often awkward due to the rigid template (e.g., "perform shelter", "perform a goal"). Form (b) is only slightly better. Rating: 2
+
+#### Intelligence
+"Structure and Function" is a fundamental concept, but the execution here is incredibly shallow. It merely states that things have functions and fail if they can't perform them. It lacks any of the mechanistic detail or complex interactions seen in the Reference archetypes. Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains are distinct. The metanyms are somewhat generic (collapse, dysfunction, breakdown, failure, miscommunication). Rating: 4
+
+#### Impressive length
+The template is very short (four sentences, 36 words). Rating: 1
+
+### Structural diversity across the submitted set
+The five archetypal contexts submitted (Growth/Adaptation, Conflict/Resolution, Innovation/Obsolescence, Exploration/Discovery, Structure/Function) are conceptually distinct from one another. However, they all share a very similar, overly simplistic, linear structure (A happens, B changes, A must adapt/resolve, or else C happens). They lack the structural variety of the Reference set, which includes spatial navigation, containment breaches, competitive exclusion, recursive debt accumulation, and scaffolded assembly. The Target's archetypes feel like variations on a very basic "cause and effect" theme rather than distinct, complex system structures. Rating: 3
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Growth and Adaptation",
+          "factual_per_pc": [5, 4, 3, 5, 4],
+          "beauty": 2,
+          "intelligence": 2,
+          "instantiation_distinctness": 4,
+          "impressive_length": 1
+        },
+        {
+          "name": "Conflict and Resolution",
+          "factual_per_pc": [5, 4, 5, 4, 5],
+          "beauty": 2,
+          "intelligence": 2,
+          "instantiation_distinctness": 4,
+          "impressive_length": 1
+        },
+        {
+          "name": "Innovation and Obsolescence",
+          "factual_per_pc": [4, 5, 3, 3, 5],
+          "beauty": 2,
+          "intelligence": 2,
+          "instantiation_distinctness": 5,
+          "impressive_length": 1
+        },
+        {
+          "name": "Exploration and Discovery",
+          "factual_per_pc": [3, 5, 3, 5, 5],
+          "beauty": 2,
+          "intelligence": 2,
+          "instantiation_distinctness": 5,
+          "impressive_length": 1
+        },
+        {
+          "name": "Structure and Function",
+          "factual_per_pc": [5, 5, 5, 4, 4],
+          "beauty": 2,
+          "intelligence": 2,
+          "instantiation_distinctness": 4,
+          "impressive_length": 1
+        }
+      ],
+      "structural_diversity": 3
+    }
+  }
+}
+```

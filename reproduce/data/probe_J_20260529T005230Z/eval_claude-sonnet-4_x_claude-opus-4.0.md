@@ -1,0 +1,182 @@
+## Submission 1
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): The description accurately captures the coagulation cascade mechanism where activated clotting factors trigger downstream factors in an amplifying sequence. The role of antithrombin as an inhibitor and fibrinogen as substrate is correct, as is the concept of activation thresholds preventing inappropriate clotting. The connection between normal hemostasis and pathological thrombosis leading to stroke is medically accurate. Rating: 9
+- PC 2 (Nuclear Fission): The physics is sound - neutrons do trigger fission events that release multiple neutrons, creating exponential chain reactions. Critical mass as the threshold concept is correct, as is the role of control rods in absorbing neutrons. The description of controlled power generation versus uncontrolled criticality accurately reflects reactor physics principles. Rating: 9
+- PC 3 (Social Media): The viral spread mechanism through user sharing networks is accurately described. The concept of virality thresholds and algorithmic throttling reflects real platform dynamics. The attention economy framework and the distinction between beneficial viral communication and harmful misinformation cascades aligns with current platform governance research. Rating: 8
+- PC 4 (Avalanche): The fracture propagation mechanism and stress transfer between snow crystals is scientifically accurate. The role of slope angle as a critical threshold and terrain features in arresting movement is correct. However, the framing of mountains "harnessing power" is somewhat anthropomorphic, though the author acknowledges this limitation in their justification. Rating: 7
+- PC 5 (Neural Activation): The description of synaptic transmission and cascading neural activation is neurobiologically accurate. The role of firing thresholds, inhibitory neurons, and neurotransmitter depletion in regulating neural cascades is correct. The connection between normal signal processing and pathological seizures accurately reflects computational neuroscience understanding. Rating: 9
+
+#### Beauty
+The cascade amplification archetype captures something profound about how nature builds explosive power through iterative multiplication. There's an elegant symmetry in how the same architectural principle - each activated unit recruiting multiple downstream units - manifests across such diverse domains from molecular biology to social dynamics. The template reveals the inherent tension between beneficial amplification and dangerous runaway processes, creating a poetic duality that resonates across all instantiations. The branching network imagery evokes natural fractals and creates aesthetic coherence.
+Rating: 8
+
+#### Intelligence
+This archetype demonstrates sophisticated understanding of complex systems theory, particularly positive feedback loops and threshold dynamics. The insight that amplification architectures necessarily create vulnerability to dysfunction shows deep systems thinking. The template elegantly captures the universal trade-off between rapid response capability and stability. The recognition that the same network structure enabling beneficial cascades also enables pathological ones reveals genuine intellectual depth about the fundamental constraints of complex systems.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span from molecular biochemistry to nuclear physics to social media to natural disasters to neuroscience - representing vastly different scales, mechanisms, and fields of study. The metanyms are genuinely distinct: "injury" vs "neutron" vs "post" vs "disturbance" vs "stimulus" share no semantic overlap beyond their functional role as triggers. Similarly, "antithrombin" vs "control rod" vs "algorithm" vs "terrain feature" vs "inhibitory neuron" represent completely different inhibitory mechanisms across domains.
+Rating: 9
+
+#### Impressive length
+The template contains 14 distinct slots and constructs a substantial paragraph that captures the full dynamics of cascade amplification systems. The length allows for comprehensive coverage of the phenomenon including triggers, propagation mechanisms, amplification dynamics, control systems, failure modes, and the scientific study of these systems. The template is substantive enough to generate meaningful parallel contexts while maintaining coherent structure.
+Rating: 8
+
+### Archetypal context 2: Boundary Maintenance
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The description accurately represents membrane biology - channel proteins do selectively regulate permeability, requiring ATP for active transport. The distinction between nutrients and pathogens, and the role of receptor binding in molecular recognition is correct. The consequences of membrane dysfunction (infection vs cell death) accurately reflect cellular physiology. Rating: 9
+- PC 2 (National Border): The description accurately captures border control mechanisms and the trade-offs between security and economic benefits. The screening processes, resource requirements, and consequences of failed border control (infiltration vs economic decline) reflect real border studies research. The balance between security and trade is a genuine policy challenge. Rating: 8
+- PC 3 (Psychological Boundaries): The psychological concepts are sound - ego functions do regulate emotional boundaries, and the trade-off between openness and protection is central to psychological health. The consequences of boundary dysfunction (violation vs loneliness) accurately reflect clinical psychology understanding of boundary disorders. Rating: 8
+- PC 4 (Firewall): The cybersecurity concepts are accurate - firewalls do use pattern matching to filter traffic, requiring computational resources. The trade-off between security and functionality, and the consequences of failed filtering (breaches vs disconnection) correctly represent network security principles. Rating: 9
+- PC 5 (Academic Peer Review): The description accurately captures peer review dynamics and the gatekeeping function of academic disciplines. The trade-off between quality control and openness to innovation, and the consequences of review dysfunction (contamination vs stagnation) reflect genuine concerns in science studies. Rating: 8
+
+#### Beauty
+The boundary maintenance archetype captures a fundamental tension in all organized systems - the need to maintain identity while enabling beneficial exchange. There's elegance in how the same selective permeability principle manifests from cellular membranes to national borders to psychological boundaries. The template reveals the universal challenge of discrimination between beneficial and harmful inputs, creating a coherent aesthetic around the concept of intelligent filtering.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates understanding of systems theory, particularly the trade-offs inherent in boundary management. The insight that boundaries require active maintenance and energy expenditure shows sophisticated thinking about system dynamics. The recognition that failed boundaries create symmetric problems (excessive permeability vs excessive rigidity) reveals deep understanding of system failure modes. The template captures genuine complexity about how systems balance protection with exchange.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains span cellular biology, political science, psychology, cybersecurity, and academic sociology - representing different scales and mechanisms. The metanyms are distinct: "channel protein" vs "border agent" vs "ego" vs "security protocol" vs "reviewer" represent completely different types of gatekeeping mechanisms. Similarly, "infection" vs "infiltration" vs "violation" vs "breach" vs "contamination" are domain-specific threats with no semantic overlap.
+Rating: 8
+
+#### Impressive length
+The template contains 16 slots and constructs a comprehensive paragraph covering the full dynamics of boundary maintenance systems. The length allows for detailed exploration of the discrimination process, energy requirements, failure modes, and the scientific study of boundary systems. The template generates substantive parallel contexts while maintaining structural coherence.
+Rating: 8
+
+### Archetypal context 3: Competitive Exclusion
+
+#### Factually correct (per parallel context)
+- PC 1 (Species Ecology): The description accurately represents the competitive exclusion principle from ecology - species competing for identical resources cannot coexist indefinitely. The role of fitness advantages and resource partitioning in enabling coexistence is correct ecological theory. The mechanisms of niche differentiation are accurately described. Rating: 9
+- PC 2 (Market Economics): The economic concepts are sound - firms with cost advantages do drive out competitors in identical market segments. The tendency toward monopoly and the role of product differentiation in avoiding direct competition accurately reflect microeconomic theory and industrial organization research. Rating: 9
+- PC 3 (Social Media): The platform dynamics are accurately described - network effects do create winner-take-all dynamics in social media markets. The role of feature differentiation and audience segmentation in enabling platform coexistence reflects real platform competition dynamics. The attention economy framework is correct. Rating: 8
+- PC 4 (Language Evolution): The sociolinguistic concepts are accurate - dialects competing for the same speaker population do face competitive pressure. The role of prestige and register differentiation in language survival accurately reflects sociolinguistic research on language death and maintenance. Rating: 8
+- PC 5 (Political Parties): The political science concepts are sound - parties competing for identical voter segments do face competitive pressure. The role of platform differentiation and coalition building in enabling party coexistence accurately reflects electoral dynamics and party system research. Rating: 8
+
+#### Beauty
+The competitive exclusion archetype captures a fundamental principle about competition and diversity that resonates across multiple domains. There's elegance in how the same competitive dynamics play out from species ecology to market economics to platform competition. The template reveals the universal tension between competitive efficiency and diversity maintenance, creating aesthetic coherence around the theme of differentiation as a solution to competitive pressure.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates sophisticated understanding of competitive dynamics and the conditions for coexistence. The insight that even slight advantages compound over time shows understanding of exponential processes. The recognition that differentiation enables coexistence by reducing direct competition reveals deep thinking about how diversity persists despite competitive pressure. The template captures genuine complexity about the relationship between competition and specialization.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains span evolutionary biology, economics, technology platforms, linguistics, and political science - representing different competitive mechanisms and timescales. The metanyms are distinct: "fitness advantage" vs "cost advantage" vs "network effect" vs "prestige" vs "messaging advantage" represent completely different sources of competitive advantage. The competitive units (species, firms, platforms, dialects, parties) operate through entirely different mechanisms.
+Rating: 8
+
+#### Impressive length
+The template contains 14 slots and constructs a substantial paragraph covering competitive dynamics, exclusion mechanisms, and differentiation strategies. The length allows for comprehensive exploration of competitive processes while maintaining structural coherence across diverse domains. The template generates meaningful parallel contexts with sufficient detail.
+Rating: 7
+
+### Archetypal context 4: Stigmergic Coordination
+
+#### Factually correct (per parallel context)
+- PC 1 (Ant Colonies): The description accurately represents stigmergic coordination in ant colonies - ants do deposit pheromones that guide future foraging behavior. The positive feedback through trail reinforcement and negative feedback through evaporation is correct. The decentralized nature of the coordination without queen control accurately reflects swarm intelligence research. Rating: 9
+- PC 2 (Wikipedia): The description accurately captures how Wikipedia coordination works through environmental traces like red links and edit histories. The emergent article networks and the role of editing guidelines in producing collective outcomes correctly represents wiki dynamics research. The decentralized coordination without central control is accurate. Rating: 8
+- PC 3 (Urban Planning): The concept of desire lines and how pedestrian behavior creates emergent infrastructure patterns is accurate urban planning theory. The role of path reinforcement through paving and the organic coordination without central planning correctly represents urban morphology research. Rating: 8
+- PC 4 (Market Prices): The description of how trading creates price signals that coordinate future behavior accurately represents market dynamics. The role of momentum trading and arbitrage in creating feedback loops correctly reflects financial market theory. The decentralized price discovery mechanism is accurately described. Rating: 8
+- PC 5 (Scientific Citations): The description of how citations create visibility signals that guide research attention accurately represents scientometric research. The preferential attachment mechanism and the role of obsolescence in preventing citation inflation correctly reflects citation network dynamics. Rating: 8
+
+#### Beauty
+The stigmergic coordination archetype captures something beautiful about how complex order emerges from simple local interactions without central control. There's elegance in how the environment itself becomes a distributed memory system across such diverse domains. The template reveals the profound principle that coordination can emerge through environmental modification rather than direct communication, creating aesthetic unity around the theme of emergent intelligence.
+Rating: 8
+
+#### Intelligence
+The archetype demonstrates sophisticated understanding of complex adaptive systems and emergent coordination mechanisms. The insight that environments can serve as distributed memory systems shows deep systems thinking. The recognition that simple local rules can generate sophisticated collective outcomes reveals understanding of complexity science principles. The template captures genuine intellectual depth about decentralized coordination mechanisms.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span entomology, collaborative platforms, urban planning, financial markets, and scientific publishing - representing vastly different coordination challenges and mechanisms. The metanyms are distinct: "pheromone" vs "edit" vs "path" vs "transaction" vs "citation" represent completely different types of environmental traces. The coordination mechanisms operate through entirely different media and timescales.
+Rating: 9
+
+#### Impressive length
+The template contains 17 slots and constructs a comprehensive paragraph covering stigmergic coordination dynamics, feedback mechanisms, and emergent properties. The length allows for detailed exploration of how environmental modification enables coordination while maintaining structural coherence. The template generates substantive parallel contexts with sufficient complexity.
+Rating: 8
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water/Ice): The thermodynamic description is accurate - water does undergo phase transition at 0°C with dramatic changes in molecular organization. The role of impurities in seeding crystallization and the concept of supercooling as a warning sign are correct physics. The emergent crystalline structure in the solid phase is accurately described. Rating: 9
+- PC 2 (Economic Bubble): The financial physics concepts accurately represent bubble dynamics - speculation levels do create critical thresholds for market crashes. The role of leverage ratios and volatility clustering as warning signs correctly reflects financial market research. The credit freeze as an emergent property of crashed markets is accurate. Rating: 8
+- PC 3 (Revolution): The revolutionary dynamics are accurately described - discontent levels do create critical thresholds for social transformation. The role of triggering incidents and cascading protests correctly reflects revolution theory. The emergence of new institutions as qualitatively different properties is accurate political science. Rating: 8
+- PC 4 (Viral Outbreak): The epidemiological concepts are accurate - the basic reproduction number R₀ = 1 is indeed the critical threshold for epidemic transition. The role of superspreader events and cluster growth as warning signs correctly reflects epidemiological research. The exponential growth as emergent property is accurate. Rating: 9
+- PC 5 (Traffic Flow): The traffic physics concepts are accurate - critical density thresholds do create phase transitions from free flow to congestion. The role of accidents as perturbations and phantom jams as warning signs correctly reflects traffic flow research. The backward-propagating waves in congested traffic are real phenomena. Rating: 9
+
+#### Beauty
+The phase transition archetype captures something profound about how systems can undergo sudden qualitative transformations at critical thresholds. There's elegance in how the same threshold dynamics manifest across physical, social, and biological systems. The template reveals the universal principle that gradual parameter changes can produce sudden systemic reorganization, creating aesthetic coherence around the theme of criticality and emergence.
+Rating: 8
+
+#### Intelligence
+The archetype demonstrates sophisticated understanding of critical phenomena and nonlinear dynamics. The insight that systems become hypersensitive to perturbations near critical points shows deep understanding of phase transition theory. The recognition that emergent properties appear suddenly rather than gradually reveals genuine intellectual depth about system behavior. The template captures complex dynamics about how microscopic interactions produce macroscopic changes.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains span thermodynamics, financial markets, political science, epidemiology, and traffic engineering - representing different types of critical phenomena across physical, social, and biological systems. The metanyms are distinct: "molecular motion" vs "price volatility" vs "protest" vs "cluster" vs "speed variation" represent completely different types of fluctuations. The critical parameters operate through entirely different mechanisms.
+Rating: 9
+
+#### Impressive length
+The template contains 15 slots and constructs a substantial paragraph covering phase transition dynamics, critical phenomena, and emergent properties. The length allows for comprehensive exploration of threshold behavior, sensitivity to perturbations, and qualitative reorganization while maintaining structural coherence. The template generates detailed parallel contexts.
+Rating: 8
+
+### Structural diversity across the submitted set
+The five archetypal contexts represent fundamentally different system structures: exponential amplification networks (cascades), selective filtering systems (boundaries), competitive exclusion dynamics (competition), environmental coordination mechanisms (stigmergy), and critical threshold phenomena (phase transitions). Each archetype captures distinct organizational principles - amplification vs filtering vs competition vs coordination vs transition - operating through different mechanisms and timescales. The diversity spans from positive feedback systems to selective barriers to competitive dynamics to emergent coordination to critical phenomena, representing a comprehensive exploration of complex systems principles.
+Rating: 9
+
+```json
+{
+  "scores": {
+    "1": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc": [9, 9, 8, 7, 9],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 9,
+          "impressive_length": 8
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [9, 8, 8, 9, 8],
+          "beauty": 7,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        },
+        {
+          "name": "Competitive Exclusion",
+          "factual_per_pc": [9, 9, 8, 8, 8],
+          "beauty": 7,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 7
+        },
+        {
+          "name": "Stigmergic Coordination",
+          "factual_per_pc": [9, 8, 8, 8, 8],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 9,
+          "impressive_length": 8
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc": [9, 8, 8, 9, 9],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 9,
+          "impressive_length": 8
+        }
+      ],
+      "structural_diversity": 9
+    }
+  }
+}
+```

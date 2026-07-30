@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Business): The description of capital allocation, ROI, market volatility, and strategic planning is accurate and standard for business contexts. No factual errors. Rating: 7
+- PC 2 (Government): The government context accurately describes budget allocation, public services, political risk, and public administration. The mapping is correct and plausible. Rating: 7
+- PC 3 (Nonprofit): The nonprofit context correctly discusses donation allocation, community needs, funding uncertainty, and program evaluation. No factual issues. Rating: 7
+- PC 4 (Personal Finance): The personal finance context accurately covers savings, expenses, financial risk, and budgeting. The mapping is straightforward and correct. Rating: 7
+- PC 5 (Environmental Management): The environmental management context is factually correct in discussing resource allocation, conservation goals, ecological uncertainty, and resource management. Rating: 7
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is somewhat generic and lacks the vividness, metaphorical richness, or stylistic polish of the Reference. The language is functional but not especially elegant or evocative. Rating: 6
+
+#### Intelligence
+The context is conceptually solid and the mapping across domains is logical, but the abstraction is relatively basic compared to the Reference. The template does not introduce particularly deep or subtle insights about resource allocation, and the instantiations are straightforward. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (business, government, nonprofit, personal finance, environmental management) are somewhat distinct but all relate to organizational or managerial resource allocation. The metanyms are not synonyms, but the domains are not as far apart as in the Reference (which spans bacteria, mountain climbing, careers, optimization, and ants). Rating: 6
+
+#### Impressive length
+The template is concise and covers the main elements, but it is notably shorter and less detailed than the Reference templates. There are fewer slots and less elaboration. Rating: 5
+
+### Archetypal context 2: Conflict Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Legal Disputes): The description of litigation, negotiation, evidence, and legal theory is accurate and standard. No factual errors. Rating: 7
+- PC 2 (International Relations): The mapping to nations, territorial conflict, diplomatic solutions, and international law is correct and plausible. Rating: 7
+- PC 3 (Workplace Conflicts): The workplace context accurately describes employees, disagreements, compromises, and organizational behavior. Rating: 7
+- PC 4 (Family Disputes): The family context is factually correct in discussing arguments, emotional needs, mediation, and family therapy. Rating: 7
+- PC 5 (Community Mediation): The community mediation context is accurate regarding neighborhood disputes, community welfare, collaborative agreements, and restorative justice. Rating: 7
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is again somewhat generic and lacks the stylistic flair or metaphorical resonance of the Reference. The language is serviceable but not especially beautiful. Rating: 6
+
+#### Intelligence
+The abstraction is solid and the mapping across domains is logical, but the template does not introduce particularly deep or novel insights about conflict resolution. The instantiations are straightforward and do not show unusual cleverness. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (legal, international, workplace, family, community) are distinct social spheres, but all are forms of human conflict resolution. The metanyms are not synonyms, but the domains are not as far apart as in the Reference. Rating: 6
+
+#### Impressive length
+The template is concise and covers the main elements, but it is shorter and less detailed than the Reference templates. Rating: 5
+
+### Archetypal context 3: Knowledge Acquisition
+
+#### Factually correct (per parallel context)
+- PC 1 (Student): The description of students, study techniques, grades, and pedagogy is accurate and standard. Rating: 7
+- PC 2 (Researcher): The mapping to researchers, data, research methods, peer review, and research methodology is correct. Rating: 7
+- PC 3 (Employee): The employee context accurately describes skills, training, performance reviews, and organizational learning. Rating: 7
+- PC 4 (Child): The child context is factually correct in discussing play, parental feedback, and child development. Rating: 7
+- PC 5 (Adult Learner): The adult learner context is accurate regarding self-directed learning, workshops, self-assessment, and adult education. Rating: 7
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is again generic and lacks the vividness or stylistic polish of the Reference. The language is functional but not especially beautiful. Rating: 6
+
+#### Intelligence
+The abstraction is logical and the mapping across domains is reasonable, but the template does not introduce particularly deep or subtle insights about knowledge acquisition. The instantiations are straightforward. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (student, researcher, employee, child, adult learner) are all forms of learning, mostly within the human context. The metanyms are not synonyms, but the domains are not as far apart as in the Reference. Rating: 5
+
+#### Impressive length
+The template is concise and covers the main elements, but it is shorter and less detailed than the Reference templates. Rating: 5
+
+### Archetypal context 4: Ecosystem Dynamics
+
+#### Factually correct (per parallel context)
+- PC 1 (Predator-Prey): The description of predators, habitats, population control, and ecology is accurate and standard. Rating: 7
+- PC 2 (Plant Community): The plant community context accurately describes plants, soil, biodiversity, and plant ecology. Rating: 7
+- PC 3 (Microbial Ecosystem): The microbial context is correct regarding microorganisms, substrate, nutrient cycling, and microbial ecology. Rating: 7
+- PC 4 (Coral Reef): The coral reef context is accurate regarding coral, ocean, ecosystem stability, and marine ecology. Rating: 7
+- PC 5 (Urban Wildlife): The urban wildlife context is correct regarding animals, city, ecological balance, and urban ecology. Rating: 7
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is again somewhat generic and lacks the vividness or metaphorical resonance of the Reference. The language is serviceable but not especially beautiful. Rating: 6
+
+#### Intelligence
+The abstraction is logical and the mapping across domains is reasonable, but the template does not introduce particularly deep or novel insights about ecosystem dynamics. The instantiations are straightforward. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (predator-prey, plant community, microbial ecosystem, coral reef, urban wildlife) are all ecological, and while they cover different scales, they are not as far apart as in the Reference. The metanyms are not synonyms, but the domains are all within ecology. Rating: 6
+
+#### Impressive length
+The template is concise and covers the main elements, but it is shorter and less detailed than the Reference templates. Rating: 5
+
+### Archetypal context 5: Innovation Process
+
+#### Factually correct (per parallel context)
+- PC 1 (Entrepreneur): The description of entrepreneurship, startups, business models, funding, and entrepreneurship theory is accurate and standard. Rating: 7
+- PC 2 (Scientist): The scientist context accurately describes research, scientific discovery, lab equipment, peer evaluations, and scientific method. Rating: 7
+- PC 3 (Software Developer): The software developer context is correct regarding software solutions, coding tools, user testing, and agile methodology. Rating: 7
+- PC 4 (Artist): The artist context is accurate regarding creative works, materials, critiques, and art theory. Rating: 7
+- PC 5 (Educator): The educator context is correct regarding educational programs, teaching resources, assessments, and educational theory. Rating: 7
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is again somewhat generic and lacks the vividness or stylistic polish of the Reference. The language is functional but not especially beautiful. Rating: 6
+
+#### Intelligence
+The abstraction is logical and the mapping across domains is reasonable, but the template does not introduce particularly deep or subtle insights about the innovation process. The instantiations are straightforward. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (entrepreneur, scientist, software developer, artist, educator) are all forms of human creative or productive activity. The metanyms are not synonyms, but the domains are not as far apart as in the Reference. Rating: 6
+
+#### Impressive length
+The template is concise and covers the main elements, but it is shorter and less detailed than the Reference templates. Rating: 5
+
+### Structural diversity across the submitted set
+All five archetypal contexts are based on human organizational, social, or cognitive processes (resource allocation, conflict resolution, learning, ecosystem dynamics, innovation). There is some diversity (e.g., ecosystem dynamics is more biological), but overall the system structures are less varied than in the Reference, which includes physical, biological, social, and computational systems with more structural diversity and recursion. Rating: 6
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        },
+        {
+          "name": "Conflict Resolution",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        },
+        {
+          "name": "Knowledge Acquisition",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 5,
+          "impressive_length":        5
+        },
+        {
+          "name": "Ecosystem Dynamics",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        },
+        {
+          "name": "Innovation Process",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

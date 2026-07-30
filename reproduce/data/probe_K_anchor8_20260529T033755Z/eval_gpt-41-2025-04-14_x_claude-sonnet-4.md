@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Hierarchical Control
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Control): The description of neural control, hierarchical levels, escalation, and dysfunction is accurate and well-grounded in neuroscience. No factual errors. Rating: 8
+- PC 2 (Military Command): The military command structure, escalation, and failure modes are described accurately and in line with military science. Rating: 8
+- PC 3 (Corporate Management): The explanation of management tiers, escalation, and governance is factually correct and reflects real-world corporate structures. Rating: 8
+- PC 4 (Immune System): The immune system's hierarchical responses, escalation, and regulation are described accurately, matching immunological understanding. Rating: 8
+- PC 5 (Computer Networks): The layered architecture, escalation, and failure in computer networks are described correctly and align with network theory. Rating: 8
+
+#### Beauty
+The prose is clear, precise, and well-structured, but it is somewhat utilitarian and lacks the vividness or poetic touches found in the Reference. The idiomatic rewrites are competent but not especially elegant. Rating: 7
+
+#### Intelligence
+The mapping of hierarchical control across such diverse domains is insightful, and the template captures subtle aspects like escalation, autonomy, and bandwidth. The analogies are well-chosen and the recursive structure is implicit. However, the explanations are a bit more straightforward and less nuanced than the Reference. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains—neural control, military command, corporate management, immune system, and computer networks—are impressively distinct, and the metanyms are not close synonyms. The mapping is as strong as the Reference. Rating: 8
+
+#### Impressive length
+The template is of similar length and complexity to the Reference, with a comparable number of slots and depth. Rating: 8
+
+### Archetypal context 2: Competitive Displacement
+
+#### Factually correct (per parallel context)
+- PC 1 (Evolutionary Biology): The description of competition, adaptation, and displacement is accurate and reflects evolutionary theory. Rating: 8
+- PC 2 (Market Economics): The account of market competition, displacement, and monopoly is factually correct and aligns with economic principles. Rating: 8
+- PC 3 (Academic Research): The description of competition for funding, paradigm shifts, and specialization is accurate and reflects the sociology of science. Rating: 8
+- PC 4 (Political Elections): The explanation of electoral competition, victory, and coalition is correct and matches political science. Rating: 8
+- PC 5 (Technology Adoption): The account of technology competition, standardization, and interoperability is accurate and reflects innovation theory. Rating: 8
+
+#### Beauty
+The language is clear and the idiomatic rewrites are well-phrased, but the overall style is a bit dry and lacks the evocative metaphors or vivid imagery that would elevate it above the Reference. Rating: 7
+
+#### Intelligence
+The mapping of competitive displacement across such a wide range of domains is intelligent and the template captures the essential dynamics of competition and specialization. The analogies are apt and the explanations are thoughtful, on par with the Reference. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains are very distinct (biology, economics, academia, politics, technology), and the metanyms are not close synonyms. The mapping is as strong as the Reference. Rating: 8
+
+#### Impressive length
+The template is of similar length and complexity to the Reference, with a comparable number of slots and depth. Rating: 8
+
+### Archetypal context 3: Information Cascade
+
+#### Factually correct (per parallel context)
+- PC 1 (Financial Markets): The description of information cascades, bubbles, and market instability is accurate and reflects financial theory. Rating: 8
+- PC 2 (Medical Diagnosis): The account of diagnostic cascades and errors is correct and matches medical science. Rating: 8
+- PC 3 (Social Media): The explanation of viral spread, misinformation, and consensus is accurate and reflects media studies. Rating: 8
+- PC 4 (Scientific Research): The description of bandwagons, consensus, and bias is accurate and reflects philosophy of science. Rating: 8
+- PC 5 (Restaurant Choice): The account of dining trends and suboptimality is correct and matches behavioral economics. Rating: 8
+
+#### Beauty
+The prose is clear and the idiomatic rewrites are well-phrased, but the style is somewhat utilitarian and lacks the vividness or elegance that would make it stand out. Rating: 7
+
+#### Intelligence
+The mapping of information cascades across these domains is insightful, and the template captures subtle aspects like fragility and intervention. The analogies are apt and the explanations are thoughtful, on par with the Reference. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains are impressively distinct (finance, medicine, social media, science, dining), and the metanyms are not close synonyms. The mapping is as strong as the Reference. Rating: 8
+
+#### Impressive length
+The template is of similar length and complexity to the Reference, with a comparable number of slots and depth. Rating: 8
+
+### Archetypal context 4: Boundary Maintenance (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Biology): The description of membrane maintenance, transport, and lysis is accurate and reflects cell biology. Rating: 8
+- PC 2 (Nation States): The account of borders, sovereignty, and invasion is correct and matches political science. Rating: 8
+- PC 3 (Ecosystems): The explanation of ecosystem boundaries, keystone species, and collapse is accurate and reflects ecology. Rating: 8
+- PC 4 (Organizations): The description of organizational boundaries, gatekeepers, and dissolution is accurate and reflects organization theory. Rating: 8
+- PC 5 (Psychological Self): The account of ego boundaries, trauma, and healing is correct and matches psychology. Rating: 8
+
+#### Beauty
+The prose is clear and the idiomatic rewrites are well-phrased, but the style is somewhat utilitarian and lacks the vividness or elegance that would make it stand out. Rating: 7
+
+#### Intelligence
+The mapping of boundary maintenance across these recursive domains is insightful, and the template captures subtle aspects like permeability, repair, and protection. The analogies are apt and the explanations are thoughtful, on par with the Reference. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains are impressively distinct (cell, nation, ecosystem, organization, psyche), and the metanyms are not close synonyms. The mapping is as strong as the Reference. Rating: 8
+
+#### Impressive length
+The template is of similar length and complexity to the Reference, with a comparable number of slots and depth. Rating: 8
+
+### Archetypal context 5: Resonance Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Mechanical Systems): The description of resonance, amplification, and failure is accurate and reflects mechanics. Rating: 8
+- PC 2 (Social Movements): The account of resonance, participation, and collapse is correct and matches sociology. Rating: 8
+- PC 3 (Financial Markets): The explanation of bubbles, volatility, and crashes is accurate and reflects economics. Rating: 8
+- PC 4 (Neural Networks): The description of synchrony, amplification, and dysfunction is accurate and reflects neuroscience. Rating: 8
+- PC 5 (Laser Physics): The account of lasing, intensity, and damage is correct and matches optics. Rating: 8
+
+#### Beauty
+The prose is clear and the idiomatic rewrites are well-phrased, but the style is somewhat utilitarian and lacks the vividness or elegance that would make it stand out. Rating: 7
+
+#### Intelligence
+The mapping of resonance amplification across these domains is insightful, and the template captures subtle aspects like constructive/destructive resonance and control. The analogies are apt and the explanations are thoughtful, on par with the Reference. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains are impressively distinct (mechanics, sociology, finance, neuroscience, optics), and the metanyms are not close synonyms. The mapping is as strong as the Reference. Rating: 8
+
+#### Impressive length
+The template is of similar length and complexity to the Reference, with a comparable number of slots and depth. Rating: 8
+
+### Structural diversity across the submitted set
+The five archetypal contexts span a wide range of system structures: hierarchical control, competitive displacement, information cascades, recursive boundary maintenance, and resonance amplification. The set is as structurally diverse as the Reference, with both recursive and non-recursive archetypes and a broad sweep of system types. Rating: 8
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Hierarchical Control",
+          "factual_per_pc":           [8, 8, 8, 8, 8],
+          "beauty":                   7,
+          "intelligence":             8,
+          "instantiation_distinctness": 8,
+          "impressive_length":        8
+        },
+        {
+          "name": "Competitive Displacement",
+          "factual_per_pc":           [8, 8, 8, 8, 8],
+          "beauty":                   7,
+          "intelligence":             8,
+          "instantiation_distinctness": 8,
+          "impressive_length":        8
+        },
+        {
+          "name": "Information Cascade",
+          "factual_per_pc":           [8, 8, 8, 8, 8],
+          "beauty":                   7,
+          "intelligence":             8,
+          "instantiation_distinctness": 8,
+          "impressive_length":        8
+        },
+        {
+          "name": "Boundary Maintenance (Recursive)",
+          "factual_per_pc":           [8, 8, 8, 8, 8],
+          "beauty":                   7,
+          "intelligence":             8,
+          "instantiation_distinctness": 8,
+          "impressive_length":        8
+        },
+        {
+          "name": "Resonance Amplification",
+          "factual_per_pc":           [8, 8, 8, 8, 8],
+          "beauty":                   7,
+          "intelligence":             8,
+          "instantiation_distinctness": 8,
+          "impressive_length":        8
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

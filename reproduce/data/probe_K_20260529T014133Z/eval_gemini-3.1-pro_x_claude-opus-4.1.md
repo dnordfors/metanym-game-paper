@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): The description of the coagulation cascade is highly accurate. The mapping of tissue factor as the detector/initiator and the subsequent thrombin burst as the amplification mechanism is standard hematology. The role of antithrombin as the inhibitor preventing thrombosis is also correct. This is on par with the Reference's biological contexts. Rating: 7
+- PC 2 (Economic Panic): The mechanics of a bank run are accurately portrayed. A small failure triggering depositor panic, leading to capital flight, and the central bank's role as a lender of last resort (inhibitor) to prevent market crashes are all standard economic principles. This matches the factual rigor of the Reference. Rating: 7
+- PC 3 (Viral Marketing): The description of viral spread on social networks is factually sound. Seed posts, early adopters, exponential sharing, and the role of platform algorithms in throttling (inhibiting) runaway virality are all accurate concepts in network science and digital marketing. This is comparable to the Reference. Rating: 7
+- PC 4 (Nuclear Fission): The physics of nuclear fission are correctly described. A neutron triggering a fissile nucleus, leading to a chain reaction (criticality), and the use of control rods to absorb neutrons and prevent a meltdown are fundamental principles of nuclear reactor operation. This is factually solid, matching the Reference. Rating: 7
+- PC 5 (Avalanche Formation): The mechanics of avalanche formation are accurate. A trigger (like a snow crystal or small disturbance) causing a weak layer to fail, leading to fracture propagation and a catastrophic slide, is standard snow science. The role of snow bonds as the inhibitor is also correct. This is on par with the Reference. Rating: 7
+
+#### Beauty
+The template is well-written and clearly articulates the concept of exponential amplification from a small trigger. The Form (b) rewrites are elegant and use domain-specific terminology effectively (e.g., "thrombin burst," "capital flight," "criticality"). The prose flows well and captures the dramatic nature of cascading failures or successes. It is slightly more engaging than the Reference's templates due to the inherent drama of the "cascade" concept.
+Rating: 8
+
+#### Intelligence
+The archetype captures a fundamental system dynamic: positive feedback loops regulated by negative feedback mechanisms. The mapping across diverse domains (biology, economics, sociology, physics, geosciences) is insightful and demonstrates a deep understanding of how this abstract pattern manifests in reality. The inclusion of the "inhibitor" and "dysfunction" slots adds crucial depth, showing what happens when the system fails. This is slightly more sophisticated than the Reference's "Gradient-Guided Navigation" archetype.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (hematology, finance, social media, nuclear physics, snow science) are exceptionally diverse, spanning biological, social, technological, physical, and environmental systems. The metanyms are highly distinct (e.g., "tissue factor," "depositor," "fissile nucleus," "weak layer" for DETECTOR). There is virtually no synonymy across the columns. This is better than the Reference, which sometimes relies on slightly closer domains (e.g., two biological examples in the first archetype).
+Rating: 9
+
+#### Impressive length
+The template is concise but packs a significant amount of conceptual density into its length. It covers the trigger, the amplification mechanism, the regulatory mechanism, and the consequences of failure. While not overly long, it is efficient and comprehensive. It is comparable in length and density to the Reference templates.
+Rating: 7
+
+### Archetypal context 2: Selective Barrier
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The description of the cell membrane is accurate. Channel proteins acting as gatekeepers, recognizing ligands, and undergoing conformational changes to allow passage is standard cell biology. The consequences of dysfunction (cell death or lysis) are also correct. This matches the Reference. Rating: 7
+- PC 2 (National Border): The analogy of a national border is factually sound in a sociopolitical context. Border agents verifying documentation (visas) to allow entry, driven by economic gradients, and the consequences of dysfunction (isolationism or border crisis) are accurate representations of border dynamics. This is on par with the Reference. Rating: 7
+- PC 3 (Firewall): The cybersecurity context is highly accurate. Firewalls using ports to inspect packet headers and authenticate data flows, and the consequences of misconfiguration (network isolation or security breach) are standard networking concepts. This matches the factual rigor of the Reference. Rating: 7
+- PC 4 (Blood-Brain Barrier): The description of the blood-brain barrier is biologically accurate. Transporters recognizing molecular markers to allow glucose while blocking pathogens, and the consequences of failure (starvation or encephalitis) are correct. This is comparable to the Reference. Rating: 7
+- PC 5 (Social Circle): The sociological context is plausible and well-reasoned. Trusted friends acting as gatekeepers, evaluating social cues to allow information flow while blocking gossip, and the consequences of failure (isolation or privacy violation) are accurate sociological concepts. This matches the Reference. Rating: 7
+
+#### Beauty
+The template clearly describes the function of a semi-permeable boundary. The Form (b) rewrites are well-crafted and use appropriate domain terminology (e.g., "conformational changes," "economic disparities," "packet headers"). The prose is clear and functional, though perhaps slightly less dramatic than the "Cascade Amplification" archetype. It is on par with the Reference.
+Rating: 7
+
+#### Intelligence
+The archetype captures a universal concept: the need for systems to maintain an internal environment distinct from the external world while allowing necessary exchanges. The mapping across biology, politics, technology, and sociology is clever and highlights the structural similarities between these disparate systems. The inclusion of the "gradient" driving the flow adds a nice layer of physical realism. This is comparable in intelligence to the Reference's "Containment Breach Cascade."
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains (cell biology, border studies, cybersecurity, neuroscience, sociology) are very diverse. The metanyms are distinct (e.g., "channel protein," "border agent," "port," "trusted friend" for GATEKEEPER). There is no significant synonymy. This is slightly better than the Reference, which sometimes has closer domains.
+Rating: 8
+
+#### Impressive length
+The template is of moderate length, covering the barrier, the gatekeeper mechanism, the driving force (gradient), and the consequences of failure. It is efficient and comprehensive, comparable to the Reference templates.
+Rating: 7
+
+### Archetypal context 3: Competitive Exclusion
+
+#### Factually correct (per parallel context)
+- PC 1 (Species Ecology): The description of competitive exclusion in ecology is highly accurate. The concept that the most efficient forager will dominate unless niche partitioning occurs is a fundamental principle (Gause's Law). The role of keystone predators in maintaining biodiversity is also correct. This matches the Reference. Rating: 7
+- PC 2 (Market Competition): The economic context is factually sound. Companies competing for customers, leading to monopoly unless product differentiation occurs, and the role of antitrust authorities in maintaining market diversity are standard economic principles. This is on par with the Reference. Rating: 7
+- PC 3 (Academic Publishing): The bibliometric context is plausible. Journals competing for manuscripts, leading to dominance by those with faster review times unless specialization occurs, and the role of academic societies in maintaining diversity are accurate representations of the publishing landscape. This matches the Reference. Rating: 7
+- PC 4 (Social Media): The platform studies context is accurate. Platforms competing for user attention, leading to dominance via network effects unless feature differentiation occurs, and the potential role of regulators are standard concepts in digital economics. This is comparable to the Reference. Rating: 7
+- PC 5 (Urban Development): The urban planning context is factually sound. Developers competing for land, leading to dominance by the most efficient unless zoning creates distinct niches, and the role of planning commissions are accurate representations of urban development dynamics. This matches the Reference. Rating: 7
+
+#### Beauty
+The template clearly articulates the dynamics of competition for limited resources. The Form (b) rewrites are well-written and use domain-specific terminology effectively (e.g., "niche partitioning," "product differentiation," "network effects"). The prose is clear and analytical. It is on par with the Reference.
+Rating: 7
+
+#### Intelligence
+The archetype captures a fundamental dynamic present in many complex systems: the tendency toward monopoly or dominance in the absence of differentiation or external regulation. The mapping across ecology, economics, academia, technology, and urban planning is insightful and demonstrates a strong grasp of the underlying pattern. This is comparable to the Reference's "Competitive Exclusion and Niche Partitioning" archetype, though perhaps slightly less detailed in its exploration of the mechanisms of differentiation.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains (ecology, economics, bibliometrics, platform studies, urban planning) are diverse, spanning biological, social, and technological systems. The metanyms are distinct (e.g., "foraging efficiency," "operational efficiency," "review speed," "engagement algorithm" for EFFICIENCY). There is no significant synonymy. This is comparable to the Reference.
+Rating: 7
+
+#### Impressive length
+The template is concise but covers the core concepts of competition, dominance, differentiation, and regulation. It is slightly shorter than some of the Reference templates but still effective.
+Rating: 6
+
+### Archetypal context 4: Recursive Embedding
+
+#### Factually correct (per parallel context)
+- PC 1 (Russian Dolls): The description of Matryoshka dolls is accurate. The nested structure, the requirement to open outer dolls to access inner ones, and the physical size constraints are all correct. This is a simple but effective physical example. Rating: 7
+- PC 2 (Folder Systems): The computer science context is highly accurate. Hierarchical file systems, directory trees, path length limits, and the cascading effects of operations (like moving a folder) are standard concepts. This matches the Reference. Rating: 7
+- PC 3 (Biological Taxonomy): The description of biological taxonomy is factually sound. Nested taxa (species within genera, etc.), classification rules, and the limits imposed by genetic divergence are accurate representations of systematics. This is on par with the Reference. Rating: 7
+- PC 4 (Corporate Structure): The management science context is accurate. Nested divisions, reporting structures, the flow of information through management layers, and the limits imposed by span of control are standard organizational principles. This matches the Reference. Rating: 7
+- PC 5 (Grammatical Phrases): The linguistics context is highly accurate. Nested syntactic trees, grammatical rules, and the cognitive processing limits on embedding depth (center embedding) are fundamental concepts in syntax. This is comparable to the Reference. Rating: 7
+
+#### Beauty
+The template clearly describes the concept of recursive hierarchical structures. The Form (b) rewrites are elegant and use domain-specific terminology effectively (e.g., "directory trees," "taxonomic hierarchy," "syntactic trees"). The prose is clear and analytical. It is on par with the Reference.
+Rating: 7
+
+#### Intelligence
+The archetype captures a fundamental structural pattern found in many complex systems: recursive embedding. The mapping across physical objects, digital systems, biological classification, human organizations, and language is highly insightful and demonstrates a deep understanding of the concept. The inclusion of the "constraint" slot (e.g., physical size, path length, cognitive limits) adds crucial depth, explaining why infinite nesting is impossible in reality. This is slightly more sophisticated than the Reference's recursive archetype ("Debt Accumulation and Crisis"), as it focuses purely on the structural aspect of recursion.
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains (toy design, computer science, systematics, management science, linguistics) are exceptionally diverse. The metanyms are highly distinct (e.g., "physical size," "path length," "genetic divergence," "span of control," "processing limit" for CONSTRAINT). There is virtually no synonymy across the columns. This is better than the Reference.
+Rating: 9
+
+#### Impressive length
+The template is concise but covers the core concepts of nested hierarchy, access rules, cascading operations, and constraints. It is efficient and comprehensive, comparable to the Reference templates.
+Rating: 7
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The thermodynamics context is highly accurate. The transition from liquid to solid at a critical temperature, supercooling as a precursor, discontinuous changes in crystallinity, and hysteresis are all standard physics concepts. This matches the Reference. Rating: 7
+- PC 2 (Economic Bubble): The financial physics context is factually sound. The transition from a bull to a bear market at a critical valuation, volatility clustering as a precursor, and asymmetric hysteresis are accurate representations of market dynamics. This is on par with the Reference. Rating: 7
+- PC 3 (Viral Outbreak): The epidemiology context is accurate. The transition from endemic to epidemic states at a critical transmission rate, cluster growth as a precursor, and epidemic hysteresis are standard concepts in disease modeling. This matches the Reference. Rating: 7
+- PC 4 (Traffic Flow): The traffic physics context is highly accurate. The transition from free flow to congested traffic at a critical density, speed variance as a precursor, and traffic hysteresis are fundamental concepts in traffic engineering. This is comparable to the Reference. Rating: 7
+- PC 5 (Political Revolution): The political science context is plausible and well-reasoned. The transition from a stable regime to revolution at a critical level of discontent, protests as precursors, and revolutionary hysteresis are accurate sociological concepts. This matches the Reference. Rating: 7
+
+#### Beauty
+The template clearly articulates the complex dynamics of phase transitions. The Form (b) rewrites are exceptionally well-crafted, using precise domain terminology (e.g., "supercooling," "volatility clustering," "epidemic hysteresis"). The prose is elegant and captures the sudden, dramatic nature of these transitions. It is slightly more beautiful than the Reference templates.
+Rating: 8
+
+#### Intelligence
+The archetype captures a profound concept from statistical mechanics and applies it brilliantly across diverse fields. The inclusion of advanced concepts like "precursors" (fluctuations near criticality), "order parameters," and "hysteresis" demonstrates a very high level of intellectual sophistication. This is significantly more intelligent and nuanced than the Reference archetypes, showing a deep understanding of complex systems theory.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The domains (thermodynamics, finance, epidemiology, traffic engineering, political science) are exceptionally diverse. The metanyms are highly distinct (e.g., "supercooling," "volatility clustering," "cluster growth," "speed variance," "protest" for PRECURSOR). There is virtually no synonymy across the columns. This is better than the Reference.
+Rating: 9
+
+#### Impressive length
+The template is dense and comprehensive, covering the stable phase, the critical threshold, precursors, order parameters, emergent properties, and hysteresis. It packs a massive amount of complex theory into a concise paragraph. It is more impressive in its conceptual density than the Reference templates.
+Rating: 8
+
+### Structural diversity across the submitted set
+The submitted set demonstrates excellent structural diversity. "Cascade Amplification" describes an exponential positive feedback loop. "Selective Barrier" describes a spatial boundary and filtering mechanism. "Competitive Exclusion" describes resource competition and dominance dynamics. "Recursive Embedding" describes a static, nested hierarchical structure. "Phase Transition" describes a sudden, systemic state change driven by a critical parameter. These are five fundamentally different system structures, covering dynamics, boundaries, competition, hierarchy, and state changes. This is slightly more diverse than the Reference set, which had some overlap in the types of dynamic processes described.
+Rating: 8
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 9,
+          "impressive_length": 7
+        },
+        {
+          "name": "Selective Barrier",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 8,
+          "impressive_length": 7
+        },
+        {
+          "name": "Competitive Exclusion",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 6
+        },
+        {
+          "name": "Recursive Embedding",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 8,
+          "instantiation_distinctness": 9,
+          "impressive_length": 7
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 8,
+          "intelligence": 9,
+          "instantiation_distinctness": 9,
+          "impressive_length": 8
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

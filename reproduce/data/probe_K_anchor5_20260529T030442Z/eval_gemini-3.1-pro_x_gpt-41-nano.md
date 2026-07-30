@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: The Decision-Making Cycle
+
+#### Factually correct (per parallel context)
+- PC 1 (Business Strategy): The Target's Form (a) and Form (b) are factually correct descriptions of business strategy and sunk costs. However, the Target only provides two parallel contexts (Business Strategy and an unnamed Form (b) which is just a rewrite of the first), whereas the Reference provides five distinct parallel contexts per archetype. The prompt requires five parallel contexts per archetype. The Target fails to provide the required number of parallel contexts. Rating: 1
+- PC 2 (Military Command): The Target did not provide a parallel context for Military Command, despite listing it in the metanym table. Rating: 1
+- PC 3 (Personal Life): The Target did not provide a parallel context for Personal Life, despite listing it in the metanym table. Rating: 1
+- PC 4 (Scientific Research): The Target did not provide a parallel context for Scientific Research, despite listing it in the metanym table. Rating: 1
+- PC 5 (Political Campaign): The Target did not provide a parallel context for Political Campaign, despite listing it in the metanym table. Rating: 1
+
+#### Beauty
+The Target's template is a generic description of sunk cost fallacy. It lacks the poetic resonance and structural elegance of the Reference's templates (e.g., Gradient-Guided Navigation or Scaffold-Dependent Assembly). The prose is dry and repetitive ("A [DECISION] must be made based on [INFORMATION], and once a [DECISION] is taken..."). It is significantly worse than the Reference.
+Rating: 2
+
+#### Intelligence
+The Target's archetype describes a well-known cognitive bias (sunk cost fallacy) but does so in a very superficial way. It lacks the depth and insight of the Reference's archetypes, which capture complex systemic behaviors (e.g., Debt Accumulation and Crisis). The mapping is trivial and doesn't reveal any hidden structural similarities across domains. It is much worse than the Reference.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains listed in the metanym table (Business, Military, Personal, Science, Politics) are reasonably distinct, but the metanyms themselves are often near-synonyms or generic terms (e.g., plan/attack/choice/hypothesis/policy for DECISION; executive/general/individual/scientist/politician for DECISION-MAKER). This is less impressive than the Reference, which uses highly specific and distinct terms (e.g., bacterium/climber/professional/optimizer/ant).
+Rating: 3
+
+#### Impressive length
+The Target's template is very short (4 sentences, 74 words). The Reference's templates are significantly longer and more detailed (e.g., Gradient-Guided Navigation is 7 sentences, 115 words). The Target is much worse than the Reference on this criterion.
+Rating: 1
+
+### Archetypal context 2: The Resource Allocation Dilemma
+
+#### Factually correct (per parallel context)
+- PC 1 (Government Budgeting): The Target's Form (a) and Form (b) are factually correct descriptions of government budgeting and political costs. However, as with the first archetype, the Target only provides one parallel context (with two forms), failing to provide the required five. Rating: 1
+- PC 2 (Corporate Investment): The Target did not provide a parallel context for Corporate Investment. Rating: 1
+- PC 3 (Personal Time Management): The Target did not provide a parallel context for Personal Time Management. Rating: 1
+- PC 4 (Nonprofit Fundraising): The Target did not provide a parallel context for Nonprofit Fundraising. Rating: 1
+- PC 5 (Military Logistics): The Target did not provide a parallel context for Military Logistics. Rating: 1
+
+#### Beauty
+The template is a dry, mechanical description of resource allocation. It lacks the evocative language and conceptual elegance of the Reference's templates. The phrasing is clunky ("As [INFORMATION] about the effectiveness of each [TASK] becomes available..."). It is significantly worse than the Reference.
+Rating: 2
+
+#### Intelligence
+The archetype describes a basic optimization problem with switching costs. It is a common concept in economics and operations research, but the Target's formulation is simplistic and doesn't offer any novel insights or surprising connections across domains. It is much less intelligent than the Reference's archetypes.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains (Government, Corporate, Personal, Nonprofit, Military) are somewhat distinct, but they all revolve around human organizational management. The metanyms are often generic (e.g., funds/capital/hours/donations/supplies for RESOURCE). This is less impressive than the Reference's wide-ranging domains (e.g., biology, physics, sociology).
+Rating: 3
+
+#### Impressive length
+The template is very short (4 sentences, 72 words), significantly shorter and less detailed than the Reference's templates.
+Rating: 1
+
+### Archetypal context 3: The Evolutionary Arms Race
+
+#### Factually correct (per parallel context)
+- PC 1 (Military Rivalry): The Target's Form (a) and Form (b) are factually correct descriptions of military strategy and switching costs. However, the Target again fails to provide the required five parallel contexts. Rating: 1
+- PC 2 (Cybersecurity Competition): The Target did not provide a parallel context for Cybersecurity Competition. Rating: 1
+- PC 3 (Biological Evolution): The Target did not provide a parallel context for Biological Evolution. Rating: 1
+- PC 4 (Business Competition): The Target did not provide a parallel context for Business Competition. Rating: 1
+- PC 5 (Political Rivalry): The Target did not provide a parallel context for Political Rivalry. Rating: 1
+
+#### Beauty
+The template is a straightforward description of a game-theoretic scenario. It lacks the aesthetic appeal and narrative flow of the Reference's templates. The language is functional but uninspired. It is worse than the Reference.
+Rating: 3
+
+#### Intelligence
+The archetype describes a classic arms race/Red Queen dynamic. While a powerful concept, the Target's execution is superficial. The inclusion of "reversal cost" as the primary driver of persistence in an arms race is slightly awkward (often, persistence is driven by the need to match the opponent, not just the cost of switching). It is less insightful than the Reference.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The domains (Military, Cybersecurity, Biology, Business, Politics) are a good mix of human and natural systems. The metanyms are reasonably distinct (e.g., offensive tactic/attack vector/mutation/marketing campaign/policy stance for STRATEGY_A). This is closer to the Reference's quality, though still slightly less impressive.
+Rating: 4
+
+#### Impressive length
+The template is short (5 sentences, 78 words), significantly shorter than the Reference's templates.
+Rating: 2
+
+### Archetypal context 4: The Cultural Transmission Process
+
+#### Factually correct (per parallel context)
+- PC 1 (Religious Tradition): The Target's Form (a) and Form (b) are factually correct descriptions of religious belief persistence. However, the Target again fails to provide the required five parallel contexts. Rating: 1
+- PC 2 (Scientific Paradigm): The Target did not provide a parallel context for Scientific Paradigm. Rating: 1
+- PC 3 (Political Ideology): The Target did not provide a parallel context for Political Ideology. Rating: 1
+- PC 4 (Social Norm): The Target did not provide a parallel context for Social Norm. Rating: 1
+- PC 5 (Language Dialect): The Target did not provide a parallel context for Language Dialect. Rating: 1
+
+#### Beauty
+The template describes cultural transmission but focuses heavily on the "reversal cost" of changing beliefs. The prose is repetitive and lacks the elegance of the Reference. It is worse than the Reference.
+Rating: 3
+
+#### Intelligence
+The archetype attempts to model cultural evolution, but the focus on "reversal cost" (e.g., cognitive dissonance) as the primary mechanism for belief stability is a bit narrow. It misses other important factors like network effects or institutional reinforcement. It is less sophisticated than the Reference's archetypes.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The domains (Religion, Science, Politics, Social Norms, Language) are all sub-domains of human culture/society. They are not as far apart as the Reference's domains (which span biology, physics, engineering, etc.). The metanyms are okay but not exceptional.
+Rating: 3
+
+#### Impressive length
+The template is short (4 sentences, 73 words), significantly shorter than the Reference's templates.
+Rating: 2
+
+### Archetypal context 5: N/A
+
+#### Factually correct (per parallel context)
+- PC 1 (N/A): The Target only submitted four archetypal contexts, failing to meet the requirement of five. Rating: 1
+- PC 2 (N/A): Rating: 1
+- PC 3 (N/A): Rating: 1
+- PC 4 (N/A): Rating: 1
+- PC 5 (N/A): Rating: 1
+
+#### Beauty
+The Target failed to submit a fifth archetype.
+Rating: 1
+
+#### Intelligence
+The Target failed to submit a fifth archetype.
+Rating: 1
+
+#### Domains far apart / metanyms not synonymous
+The Target failed to submit a fifth archetype.
+Rating: 1
+
+#### Impressive length
+The Target failed to submit a fifth archetype.
+Rating: 1
+
+### Structural diversity across the submitted set
+The four submitted archetypes are structurally very similar. They all follow a nearly identical pattern: an agent makes a choice, new information arrives, but the agent doesn't change the choice because of a "reversal cost" or "sunk cost." Archetype 1 is about decisions, Archetype 2 is about resource allocation (a type of decision), Archetype 3 is about strategy selection (a type of decision), and Archetype 4 is about belief adoption (a type of decision). They are essentially variations on the exact same theme (sunk cost/switching cost). This is vastly inferior to the Reference, which presents five highly distinct system structures (navigation, containment breach, competitive exclusion, debt accumulation, scaffolded assembly).
+Rating: 1
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Decision-Making Cycle",
+          "factual_per_pc": [1, 1, 1, 1, 1],
+          "beauty": 2,
+          "intelligence": 2,
+          "instantiation_distinctness": 3,
+          "impressive_length": 1
+        },
+        {
+          "name": "The Resource Allocation Dilemma",
+          "factual_per_pc": [1, 1, 1, 1, 1],
+          "beauty": 2,
+          "intelligence": 2,
+          "instantiation_distinctness": 3,
+          "impressive_length": 1
+        },
+        {
+          "name": "The Evolutionary Arms Race",
+          "factual_per_pc": [1, 1, 1, 1, 1],
+          "beauty": 3,
+          "intelligence": 3,
+          "instantiation_distinctness": 4,
+          "impressive_length": 2
+        },
+        {
+          "name": "The Cultural Transmission Process",
+          "factual_per_pc": [1, 1, 1, 1, 1],
+          "beauty": 3,
+          "intelligence": 3,
+          "instantiation_distinctness": 3,
+          "impressive_length": 2
+        },
+        {
+          "name": "N/A",
+          "factual_per_pc": [1, 1, 1, 1, 1],
+          "beauty": 1,
+          "intelligence": 1,
+          "instantiation_distinctness": 1,
+          "impressive_length": 1
+        }
+      ],
+      "structural_diversity": 1
+    }
+  }
+}
+```

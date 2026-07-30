@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: The Filter
+
+#### Factually correct (per parallel context)
+- PC 1 (Sensory Perception): The description accurately captures how sensory organs filter stimuli based on thresholds, though the mapping of "relevant information" as the signal is somewhat imprecise—sensory organs don't inherently determine relevance, they detect physical properties. The forms correctly describe sensory overload and deprivation. This is slightly less precise than the Reference's biological accuracy. Rating: 6
+- PC 2 (Information Retrieval): The technical description is accurate regarding search algorithms, relevance ranking, and the precision-recall tradeoff. The explanation of information overload and poor recall correctly captures the fundamental challenges in information retrieval. This matches the Reference's level of factual accuracy. Rating: 7
+- PC 3 (Water Purification): The description correctly explains membrane filtration based on pore size, though "clogging" as the result of being "too permissive" is backwards—clogging typically results from particles being too large for pores, not from overly permissive membranes. This factual error is more significant than typical Reference inaccuracies. Rating: 5
+- PC 4 (Financial Auditing): The description contains a logical error—the text states that overly restrictive audit procedures result in "undetected fraud," when restrictive procedures would actually detect more fraud but might impede operations. This represents a clear factual mistake that undermines the parallel context. Rating: 4
+- PC 5 (Immune System): The description incorrectly states that overly permissive immune responses lead to "autoimmune disease" when they actually lead to immunodeficiency, and that overly restrictive responses cause "immunodeficiency" when they cause autoimmune disease. This fundamental reversal of immune system dysfunction is a serious factual error. Rating: 3
+
+#### Beauty
+The archetypal context captures an elegant and fundamental pattern of selective filtering that resonates across many domains. However, the template is relatively straightforward and lacks the sophisticated interconnections and nuanced dynamics present in the Reference. The metaphorical connections are clear but not particularly striking or poetic. The beauty is functional rather than profound. Rating: 6
+
+#### Intelligence
+The filter concept demonstrates solid analytical thinking and identifies a genuinely important pattern across diverse systems. However, the analysis remains at a fairly surface level without the deeper mechanistic insights or sophisticated understanding of system dynamics that characterizes higher intelligence. The template captures the basic tradeoff but misses more complex aspects like adaptive filtering or multi-stage processes. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (sensory perception, information retrieval, water purification, financial auditing, immune system) span biological, technological, industrial, and economic spheres effectively. The metanyms are appropriately distinct—"sensory organ" vs "algorithm" vs "membrane" vs "audit procedure" vs "immune response" represent genuinely different filtering mechanisms. This achieves good domain separation comparable to the Reference. Rating: 7
+
+#### Impressive length
+The context template is quite brief, consisting of only a few sentences that cover the basic filtering concept. While it captures the essential elements, it lacks the detailed elaboration and comprehensive coverage of system dynamics that would demonstrate impressive scope and depth. The template is functional but not particularly extensive. Rating: 5
+
+### Archetypal context 2: The Network
+
+#### Factually correct (per parallel context)
+- PC 1 (Transportation System): The description accurately captures network topology concepts applied to transportation, correctly identifying hubs, connectivity, and the effects of disruption. The explanation of how new roads improve distribution is sound. This matches the Reference's factual accuracy. Rating: 7
+- PC 2 (Social Network): The description correctly explains social network structure, the role of influencers, and information propagation dynamics. The explanation of how influencer loss leads to polarization and how new relationships improve connectivity is accurate. This demonstrates solid factual grounding. Rating: 7
+- PC 3 (Neural Network): The description accurately captures neural network structure, synaptic connectivity, and the role of highly connected neurons. The explanation of synaptogenesis and its effects on learning is correct. The factual content is sound and well-presented. Rating: 7
+- PC 4 (Power Grid): The description correctly explains power grid topology, the critical role of substations, and how transmission line failures can cause cascading blackouts. The technical understanding of grid reliability and expansion benefits is accurate. Rating: 7
+- PC 5 (Supply Chain): The description accurately captures supply chain network structure, the importance of key suppliers, and how disruptions propagate. The explanation of how new partnerships improve resilience is correct. The factual content is solid. Rating: 7
+
+#### Beauty
+The network archetype captures a fundamental and elegant pattern of interconnected systems that appears across many domains. The template effectively highlights the universal principles of connectivity, hubs, and emergent network properties. While not as sophisticated as the Reference's more complex dynamics, it demonstrates clear aesthetic appeal in its simplicity and universality. Rating: 7
+
+#### Intelligence
+The network concept shows good analytical insight into a fundamental organizational principle. The template identifies key concepts like hubs, robustness, and emergent properties that demonstrate understanding of complex systems. However, the analysis could be deeper—missing concepts like small-world properties, scale-free networks, or more sophisticated network dynamics present in advanced network theory. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (transportation, social networks, neural networks, power grids, supply chains) represent genuinely diverse spheres—physical infrastructure, social systems, biological systems, electrical systems, and economic systems. The metanyms are appropriately distinct: "road" vs "relationship" vs "synapse" vs "transmission line" vs "contract" represent fundamentally different connection types. Rating: 7
+
+#### Impressive length
+The context template is moderately detailed, covering the essential network concepts including nodes, links, hubs, efficiency, robustness, and fragmentation. While more comprehensive than the filter template, it still lacks the extensive elaboration and nuanced detail that would demonstrate truly impressive scope. Rating: 6
+
+### Archetypal context 3: The Cycle
+
+#### Factually correct (per parallel context)
+- PC 1 (Economic Cycle): The description accurately captures business cycle phases and the role of capital accumulation and release. However, the explanation of how "released capital" initiates new cycles is somewhat unclear—capital doesn't simply get "released" during recessions in the way described. This represents a minor conceptual imprecision. Rating: 6
+- PC 2 (Cell Cycle): The description contains significant factual errors. It incorrectly describes DNA as being "released" during cytokinesis and "accumulated" during interphase, when DNA is actually replicated and distributed. The characterization of mitosis as utilizing DNA to "maintain cell division" is also confused. Rating: 4
+- PC 3 (Hydrological Cycle): The description accurately captures the basic water cycle processes of evaporation, condensation, and precipitation. The explanation of solar energy driving the cycle and the role of atmospheric transport is correct. This demonstrates solid factual understanding. Rating: 7
+- PC 4 (Product Life Cycle): The description correctly explains product lifecycle stages and market share dynamics. The explanation of how declining products release market share for new products is accurate and well-articulated. The factual content is sound. Rating: 7
+- PC 5 (Ecological Succession): The description accurately captures succession stages and nutrient cycling. The explanation of how disturbances release nutrients that fuel new succession is correct. The role of climate change as an external factor is appropriately identified. Rating: 7
+
+#### Beauty
+The cycle archetype captures a profound and universal pattern of renewal and transformation that appears throughout nature and human systems. The template elegantly highlights the rhythm of growth, stability, decline, and renewal that characterizes many dynamic systems. This demonstrates good aesthetic sensibility, though not quite matching the Reference's sophistication. Rating: 6
+
+#### Intelligence
+The cycle concept shows solid analytical thinking about temporal patterns and system dynamics. The template identifies important concepts like phase transitions, resource cycling, and external influences. However, the analysis could be more sophisticated—missing deeper insights about feedback loops, non-linear dynamics, or the mathematical properties of cyclical systems. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (economics, cell biology, hydrology, marketing, ecology) span economic, biological, physical, commercial, and ecological spheres effectively. The metanyms show good distinctness: "business cycle" vs "cell cycle" vs "water cycle" vs "product life cycle" vs "ecological succession" represent genuinely different cyclical processes. Rating: 7
+
+#### Impressive length
+The context template provides moderate detail covering the three-phase structure, resource dynamics, external factors, and disciplinary study. While more comprehensive than simpler templates, it lacks the extensive elaboration and nuanced coverage that would demonstrate truly impressive scope and depth. Rating: 6
+
+### Archetypal context 4: The Hierarchy
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Organization): The description contains conceptual errors, particularly in using "trophic levels" to describe biological hierarchy (trophic levels refer to feeding relationships in ecosystems, not organizational levels within organisms) and in characterizing consciousness as emerging from "higher trophic levels." This misapplies ecological terminology to organismal biology. Rating: 4
+- PC 2 (Military Command): The description accurately captures military hierarchy, chain of command, and the flow of orders downward and intelligence upward. The explanation of how higher ranks enable tactical capabilities is correct. This demonstrates solid factual understanding. Rating: 7
+- PC 3 (Corporate Structure): The description correctly explains corporate hierarchy, management tiers, and the flow of directives and performance metrics. The characterization of strategic capabilities emerging at higher levels is accurate. The factual content is sound. Rating: 7
+- PC 4 (Computer Architecture): The description contains some confusion about memory hierarchy and program execution. The characterization of "program execution" as an emergent property of "higher storage levels" is imprecise—execution occurs in the CPU, not in storage levels. The description of instruction flow is also somewhat confused. Rating: 5
+- PC 5 (Linguistic Syntax): The description accurately captures syntactic hierarchy and the emergence of meaning from grammatical structure. The explanation of how syntactic rules govern structure and semantic context flows upward is correct. This demonstrates good understanding of linguistic principles. Rating: 7
+
+#### Beauty
+The hierarchy archetype captures a fundamental organizational principle that appears across many complex systems. The template effectively highlights how emergent properties arise from hierarchical organization and how control and information flow in different directions. This shows good aesthetic sensibility in identifying a universal structural pattern. Rating: 6
+
+#### Intelligence
+The hierarchy concept demonstrates solid analytical insight into organizational principles and emergent properties. The template identifies important concepts like levels, emergence, bidirectional flow, and complexity management. However, the analysis could be deeper, missing more sophisticated aspects of hierarchical systems like heterarchy, network effects, or non-linear emergence. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (biology, military, corporate, computer science, linguistics) represent diverse spheres—biological, organizational, technological, and linguistic systems. The metanyms show good distinctness: "biological hierarchy" vs "chain of command" vs "organizational chart" vs "memory hierarchy" vs "syntactic tree" represent genuinely different hierarchical structures. Rating: 7
+
+#### Impressive length
+The context template provides moderate detail covering hierarchical levels, emergent properties, bidirectional flows, and complexity management. While reasonably comprehensive, it lacks the extensive elaboration and sophisticated detail that would demonstrate truly impressive scope and depth. Rating: 6
+
+### Archetypal context 5: The Equilibrium
+
+#### Factually correct (per parallel context)
+- PC 1 (Chemical Reaction): The description accurately captures chemical equilibrium concepts, Le Chatelier's principle, and phase transitions. The explanation of how temperature changes affect equilibrium and how systems respond is correct. This demonstrates solid chemical understanding. Rating: 7
+- PC 2 (Climate System): The description correctly explains thermal equilibrium, greenhouse gas effects, and climate feedback mechanisms like cloud albedo. The concept of climate tipping points is accurately presented. The factual content is sound and well-articulated. Rating: 7
+- PC 3 (Market Economy): The description accurately captures market equilibrium, supply and demand dynamics, and how markets respond to shocks through price adjustments. The explanation of market crashes as tipping points is appropriate. Rating: 7
+- PC 4 (Population Dynamics): The description correctly explains carrying capacity, population crashes, density-dependent factors, and extinction thresholds. The ecological concepts are accurately presented and well-integrated into the equilibrium framework. Rating: 7
+- PC 5 (Structural Engineering): The description accurately captures structural stability, load-resistance balance, seismic effects, and damping mechanisms. The explanation of structural failure as a tipping point is correct. The engineering concepts are sound. Rating: 7
+
+#### Beauty
+The equilibrium archetype captures a profound and universal principle of balance and stability that appears across many systems. The template elegantly highlights the dynamics of perturbation, response, and potential state transitions. This demonstrates strong aesthetic sensibility in identifying a fundamental pattern of system behavior. Rating: 7
+
+#### Intelligence
+The equilibrium concept shows sophisticated analytical thinking about system stability, feedback mechanisms, and non-linear transitions. The template identifies important concepts like tipping points, restoration mechanisms, and the relationship between perturbation magnitude and system response. This demonstrates good understanding of complex systems dynamics. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains (chemistry, climatology, economics, ecology, engineering) span physical, environmental, economic, biological, and technological spheres effectively. The metanyms are appropriately distinct: "chemical equilibrium" vs "thermal equilibrium" vs "market equilibrium" vs "carrying capacity" vs "structural stability" represent genuinely different types of equilibrium. Rating: 7
+
+#### Impressive length
+The context template provides good detail covering equilibrium states, perturbations, feedback mechanisms, restoration processes, and tipping points. While reasonably comprehensive and more detailed than earlier templates, it still lacks the extensive elaboration that would demonstrate truly impressive scope. Rating: 6
+
+### Structural diversity across the submitted set
+The five archetypal contexts represent genuinely different system structures: selective filtering (The Filter), network connectivity (The Network), temporal cycling (The Cycle), hierarchical organization (The Hierarchy), and dynamic equilibrium (The Equilibrium). These span different fundamental organizational principles—selection, connection, temporality, stratification, and balance. However, the structural diversity is somewhat less sophisticated than the Reference, which includes more complex dynamics like recursive scaling, cascade propagation, and scaffold-dependent assembly. The Target's structures are more basic and don't demonstrate the same level of systematic complexity or innovative structural thinking. Rating: 6
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Filter",
+          "factual_per_pc":           [6, 7, 5, 4, 3],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        5
+        },
+        {
+          "name": "The Network",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Cycle",
+          "factual_per_pc":           [6, 4, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Hierarchy",
+          "factual_per_pc":           [4, 7, 7, 5, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 7,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Equilibrium",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        6
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

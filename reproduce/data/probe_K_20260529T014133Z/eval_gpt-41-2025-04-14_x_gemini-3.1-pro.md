@@ -1,0 +1,173 @@
+## Target Submission
+
+### Archetypal context 1: The Filter
+
+#### Factually correct (per parallel context)
+- PC 1 (Sensory Perception): The description of sensory organs as filters, the concepts of sensory thresholds, overload, and deprivation, and the role of neuroscience are all accurate and well-grounded. The mapping of "signal" and "noise" is appropriate. This is on par with the Reference. Rating: 7
+- PC 2 (Information Retrieval): The analogy of search algorithms as filters, the use of relevance ranking, and the consequences of being too permissive or restrictive are all factually correct. The explanation is clear and accurate. Rating: 7
+- PC 3 (Water Purification): The description of membranes, pore size, and the tradeoff between permeability and selectivity is accurate. The consequences of clogging and water scarcity are well described. Rating: 7
+- PC 4 (Financial Auditing): The mapping of audit procedures as filters is apt, and the explanation of standards, fraud, and the balance between permissiveness and restrictiveness is correct. However, the statement "valuable legitimate transactions are lost, resulting in undetected fraud" is a bit off—undetected fraud is not caused by losing legitimate transactions, but by missing fraudulent ones. Still, the overall mapping is sound. Slightly less precise than the Reference. Rating: 6
+- PC 5 (Immune System): The immune system as a filter is a valid analogy, and the explanation of self-tolerance, autoimmunity, and immunodeficiency is accurate. However, the mapping of "self-antigens" as the desired signal is a bit awkward; in reality, the immune system is supposed to ignore self-antigens, not "receive" them. Still, the overall mapping is reasonable. Slightly less precise than the Reference. Rating: 6
+
+#### Beauty
+The Filter archetype is elegantly expressed, with a clear, balanced template and well-structured parallel contexts. The prose is clean and the analogies are accessible. However, the language is a bit more utilitarian and less vivid than the Reference, and the forms (b) are less rich in technical or poetic detail. Rating: 6
+
+#### Intelligence
+The archetype is conceptually strong and the mapping to each domain is intelligent, but the template is somewhat generic and the slot mappings are more obvious than in the Reference. There is less subtlety in the analogies, and the template does not push the boundaries of abstraction as much as the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains—sensory perception, information retrieval, water purification, financial auditing, and immune system—are reasonably distinct, spanning biology, technology, engineering, business, and medicine. However, the mappings are all "filtering" in a fairly direct sense, and the metanyms are closer to being synonyms than in the Reference, where the mappings are more metaphorical and less literal. Rating: 6
+
+#### Impressive length
+The template is of moderate length, but not as long or as detailed as the Reference's archetypes. The number of slots is slightly lower, and the template is less intricate. Rating: 6
+
+---
+
+### Archetypal context 2: The Network
+
+#### Factually correct (per parallel context)
+- PC 1 (Transportation System): The description of cities, roads, hubs, and the effects of losing a hub is accurate. The mapping is sound. Rating: 7
+- PC 2 (Social Network): The explanation of individuals, relationships, influencers, and polarization is correct and well-mapped. Rating: 7
+- PC 3 (Neural Network): The mapping of neurons, synapses, hubs, and cognitive impairment is accurate. The explanation is clear and factually correct. Rating: 7
+- PC 4 (Power Grid): The description of power stations, transmission lines, substations, and blackouts is accurate. The mapping is appropriate. Rating: 7
+- PC 5 (Supply Chain): The mapping of companies, contracts, key suppliers, and disruptions is accurate and well-explained. Rating: 7
+
+#### Beauty
+The template is clear and the parallel contexts are well-written, but the prose is more functional than poetic. The forms (b) are competent but lack the depth and richness of the Reference. The overall effect is slightly less beautiful. Rating: 6
+
+#### Intelligence
+The archetype is conceptually strong, and the mapping to each domain is intelligent. However, the template is a fairly standard network abstraction, and the slot mappings are straightforward. There is less subtlety and less "aha" factor than in the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains—transportation, social, neural, power, and supply chain networks—are all networks, and the mappings are direct. The metanyms are close to being synonyms, and the domains, while different, are all classic examples of networks. The Reference achieves greater metaphorical distance. Rating: 5
+
+#### Impressive length
+The template is of moderate length, but not as long or as detailed as the Reference's archetypes. The number of slots is slightly lower, and the template is less intricate. Rating: 6
+
+---
+
+### Archetypal context 3: The Cycle
+
+#### Factually correct (per parallel context)
+- PC 1 (Economic Cycle): The description of expansion, peak, contraction, and the role of government policy is accurate. The mapping is sound. Rating: 7
+- PC 2 (Cell Cycle): The mapping of interphase, mitosis, cytokinesis, and growth factors is accurate. The explanation is correct. Rating: 7
+- PC 3 (Hydrological Cycle): The mapping of evaporation, condensation, precipitation, and solar radiation is accurate. The explanation is correct. Rating: 7
+- PC 4 (Product Life Cycle): The mapping of introduction, maturity, decline, and consumer preferences is accurate. The explanation is correct. Rating: 7
+- PC 5 (Ecological Succession): The mapping of primary succession, climax community, disturbance, and climate change is accurate. The explanation is correct. Rating: 7
+
+#### Beauty
+The template is clear and the parallel contexts are well-written, but the prose is more functional than poetic. The forms (b) are competent but lack the depth and richness of the Reference. The overall effect is slightly less beautiful. Rating: 6
+
+#### Intelligence
+The archetype is conceptually strong, and the mapping to each domain is intelligent. However, the template is a fairly standard cycle abstraction, and the slot mappings are straightforward. There is less subtlety and less "aha" factor than in the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains—economy, cell, water, product, and ecosystem—are reasonably distinct, but the mappings are all cycles in a direct sense. The metanyms are close to being synonyms, and the domains, while different, are all classic examples of cycles. The Reference achieves greater metaphorical distance. Rating: 6
+
+#### Impressive length
+The template is of moderate length, but not as long or as detailed as the Reference's archetypes. The number of slots is slightly lower, and the template is less intricate. Rating: 6
+
+---
+
+### Archetypal context 4: The Hierarchy
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Organization): The mapping of cells, tissues, organs, and emergent properties is accurate. The explanation is correct. Rating: 7
+- PC 2 (Military Command): The mapping of ranks, orders, intelligence reports, and tactical maneuvers is accurate. The explanation is correct. Rating: 7
+- PC 3 (Corporate Structure): The mapping of management tiers, directives, performance metrics, and corporate strategy is accurate. The explanation is correct. Rating: 7
+- PC 4 (Computer Architecture): The mapping of storage levels, instructions, data, and program execution is accurate. The explanation is correct. Rating: 7
+- PC 5 (Linguistic Syntax): The mapping of syntactic trees, grammatical ranks, rules, and meaning is accurate. The explanation is correct. Rating: 7
+
+#### Beauty
+The template is clear and the parallel contexts are well-written, but the prose is more functional than poetic. The forms (b) are competent but lack the depth and richness of the Reference. The overall effect is slightly less beautiful. Rating: 6
+
+#### Intelligence
+The archetype is conceptually strong, and the mapping to each domain is intelligent. However, the template is a fairly standard hierarchy abstraction, and the slot mappings are straightforward. There is less subtlety and less "aha" factor than in the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains—biology, military, corporate, computer, and linguistics—are reasonably distinct, but the mappings are all hierarchies in a direct sense. The metanyms are close to being synonyms, and the domains, while different, are all classic examples of hierarchies. The Reference achieves greater metaphorical distance. Rating: 6
+
+#### Impressive length
+The template is of moderate length, but not as long or as detailed as the Reference's archetypes. The number of slots is slightly lower, and the template is less intricate. Rating: 6
+
+---
+
+### Archetypal context 5: The Equilibrium
+
+#### Factually correct (per parallel context)
+- PC 1 (Chemical Reaction): The mapping of equilibrium, Le Chatelier's principle, and phase transitions is accurate. The explanation is correct. Rating: 7
+- PC 2 (Climate System): The mapping of thermal equilibrium, greenhouse gases, cloud albedo, and tipping points is accurate. The explanation is correct. Rating: 7
+- PC 3 (Market Economy): The mapping of supply and demand, price adjustment, and market crashes is accurate. The explanation is correct. Rating: 7
+- PC 4 (Population Dynamics): The mapping of carrying capacity, density-dependent factors, and extinction thresholds is accurate. The explanation is correct. Rating: 7
+- PC 5 (Structural Engineering): The mapping of load and resistance, damping, and structural failure is accurate. The explanation is correct. Rating: 7
+
+#### Beauty
+The template is clear and the parallel contexts are well-written, but the prose is more functional than poetic. The forms (b) are competent but lack the depth and richness of the Reference. The overall effect is slightly less beautiful. Rating: 6
+
+#### Intelligence
+The archetype is conceptually strong, and the mapping to each domain is intelligent. However, the template is a fairly standard equilibrium abstraction, and the slot mappings are straightforward. There is less subtlety and less "aha" factor than in the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains—chemistry, climate, market, population, and engineering—are reasonably distinct, but the mappings are all equilibria in a direct sense. The metanyms are close to being synonyms, and the domains, while different, are all classic examples of equilibrium. The Reference achieves greater metaphorical distance. Rating: 6
+
+#### Impressive length
+The template is of moderate length, but not as long or as detailed as the Reference's archetypes. The number of slots is slightly lower, and the template is less intricate. Rating: 6
+
+---
+
+### Structural diversity across the submitted set
+The five archetypes—Filter, Network, Cycle, Hierarchy, and Equilibrium—are all classic, foundational system structures. However, they are all standard textbook abstractions, and the mappings are direct and literal. There is little evidence of recursion, and the system structures, while distinct, are not as structurally diverse or as surprising as in the Reference, which includes more complex, cascading, or recursive structures. Rating: 6
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Filter",
+          "factual_per_pc":           [7, 7, 7, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Network",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 5,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Cycle",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Hierarchy",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        },
+        {
+          "name": "The Equilibrium",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

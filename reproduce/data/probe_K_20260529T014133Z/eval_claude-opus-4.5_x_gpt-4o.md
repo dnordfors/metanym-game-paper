@@ -1,0 +1,202 @@
+## Target Submission
+
+### Archetypal context 1: Growth and Adaptation
+
+#### Factually correct (per parallel context)
+- PC 1 (Plant): The statements are factually accurate but overly simplified. Plants do grow through nutrient accumulation, adapt to environmental changes, and can wilt when failing to adapt. Botany does study these processes. However, the description lacks the mechanistic depth seen in the Reference's parallel contexts. Rating: 6
+
+- PC 2 (Economy): The economic claims are broadly correct—economies grow through capital accumulation, must adapt to market changes, and can enter recession. Economics does study resource allocation. However, the framing is simplistic and the causal chain is oversimplified compared to real economic dynamics. Rating: 6
+
+- PC 3 (Software System): The claim that software systems "undergo development through the accumulation of computational power" is factually problematic. Software development is not primarily about accumulating computational power but about writing and integrating code. This represents a conceptual misunderstanding of the domain. Rating: 4
+
+- PC 4 (Human Body): The statements are generally accurate—human bodies do grow using energy, must adapt to health changes, and can become ill. Medicine does study these processes. However, "growth through accumulation of energy" is an oversimplification; growth involves complex biosynthesis, not just energy accumulation. Rating: 5
+
+- PC 5 (Ecosystem): The claims are factually reasonable—ecosystems do expand through resource utilization, must adapt to climate changes, and can collapse. Ecology studies these dynamics. The framing is acceptable though simplified. Rating: 6
+
+#### Beauty
+The template lacks elegance and depth compared to the Reference. The Reference's templates contain rich, interconnected concepts with multiple interacting elements (e.g., sensors, memory, noise, collective behavior). This template is sparse, with only seven slots and a linear, predictable structure. The prose in both Form (a) and Form (b) is functional but uninspired, lacking the evocative language and conceptual richness of the Reference. The parallel contexts feel like textbook summaries rather than illuminating structural insights.
+Rating: 4
+
+#### Intelligence
+The archetype captures a genuine pattern (growth requiring adaptation), but the insight is shallow compared to the Reference. The Reference's archetypes reveal non-obvious structural parallels (e.g., methylation states as memory, momentum as memory in gradient descent). This template merely observes that entities grow, adapt, and can decline—a truism that doesn't reveal deep structural homologies. The metanym mappings are often near-synonymous or trivially parallel rather than illuminating unexpected connections.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains (Plant, Economy, Software System, Human Body, Ecosystem) span different fields but share obvious conceptual overlap (all are "systems" that "grow"). The metanyms are often near-synonymous: "growth" maps to "growth" in four of five domains; "homeostasis" and "equilibrium" and "balance" are conceptually identical; "decline" maps to various failure modes that are semantically similar. Compared to the Reference, where "methylation state" maps to "momentum" maps to "route memory," these mappings lack the surprising, non-obvious quality that makes metanyms illuminating.
+Rating: 4
+
+#### Impressive length
+The template contains only three sentences and seven slots. The Reference templates contain 8-10 sentences with 10-16 slots, creating rich, multi-faceted structural descriptions. This template is notably shorter and less detailed, failing to capture the complexity that makes archetypal patterns interesting.
+Rating: 3
+
+### Archetypal context 2: Conflict and Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Nation): The claims are factually reasonable—nations do engage in wars over territory, and peace treaties resolve conflicts. International relations studies these dynamics. However, "peace treaty is achieved when the nation reaches an agreement on territory distribution" is grammatically awkward and oversimplified. Rating: 5
+
+- PC 2 (Corporation): The claim that mergers are achieved when corporations "agree on market share distribution" is factually problematic. Mergers are typically about combining operations, not distributing market share. This misrepresents how corporate mergers actually work. Rating: 4
+
+- PC 3 (Family): The statements are generally accurate—families do dispute over inheritance, and reconciliation involves agreement. Family therapy does study these dynamics. The framing is acceptable. Rating: 6
+
+- PC 4 (Political Party): The claim that "compromise is achieved when the political party reaches an agreement on policy distribution" is awkward. Policies aren't typically "distributed"—they're negotiated or adopted. The framing doesn't accurately capture political dynamics. Rating: 4
+
+- PC 5 (Animal Group): The claim that animal groups reach "truces" through "agreement on territory distribution" anthropomorphizes animal behavior inappropriately. Animals don't reach agreements; territorial boundaries emerge through behavioral mechanisms. Rating: 4
+
+#### Beauty
+The template is formulaic and lacks the elegance of the Reference. The four-sentence structure is repetitive and predictable. The prose in Form (b) versions is marginally better but still lacks the domain-expert sophistication seen in the Reference. The parallel contexts feel forced rather than naturally illuminating structural parallels.
+Rating: 4
+
+#### Intelligence
+The archetype captures a real pattern (conflict over resources leading to resolution), but the insight is superficial. The Reference reveals how different domains implement the same abstract mechanism through different concrete mechanisms. This template merely observes that conflicts happen and get resolved—a truism. The mapping of "merger" as resolution to corporate conflict is conceptually strained, as mergers aren't typically resolutions to competition but strategic decisions.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains (Nation, Corporation, Family, Political Party, Animal Group) are reasonably diverse. However, the metanyms are often near-synonymous or conceptually identical: "war," "competition," "dispute," "debate," and "territorial fight" are all forms of conflict; "territory" appears twice. The mappings lack the surprising quality of the Reference, where "chemoreceptor" maps to "backpropagation" maps to "antenna."
+Rating: 5
+
+#### Impressive length
+The template contains only four sentences and five slots. This is significantly shorter than the Reference templates, which contain 8-10 sentences and 10-16 slots. The brevity limits the archetype's ability to capture nuanced structural parallels.
+Rating: 3
+
+### Archetypal context 3: Innovation and Obsolescence
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): The claims are reasonable—scientists do develop technologies that can become redundant. However, "technology becomes less effective, leading to redundancy" oversimplifies how scientific progress works. Technologies don't become "less effective"; they may be superseded by better alternatives. Rating: 5
+
+- PC 2 (Entrepreneur): The statements are factually accurate—products can become obsolete as markets evolve. Business strategy does study product lifecycle management. Rating: 6
+
+- PC 3 (Artist): The claim that artists introduce styles "to improve art creation" is conceptually awkward. Artists don't typically innovate to "improve" art creation in an efficiency sense. The framing misrepresents artistic motivation. Rating: 4
+
+- PC 4 (Engineer): The claim that designs become "less effective, leading to failure" as materials evolve is problematic. Material advances don't typically cause existing designs to "fail"—they enable new designs. Rating: 4
+
+- PC 5 (Educator): The statements are reasonable—curricula can become ineffective as pedagogy evolves. Education theory does study curriculum development. Rating: 6
+
+#### Beauty
+The template is functional but lacks elegance. The three-sentence structure is sparse and predictable. The prose is workmanlike rather than evocative. Compared to the Reference's rich, multi-layered descriptions, this template feels like a skeleton rather than a fully realized archetype.
+Rating: 4
+
+#### Intelligence
+The archetype captures a real pattern (innovation followed by obsolescence), but the insight is shallow. The Reference reveals how different domains implement abstract mechanisms through surprising concrete parallels. This template merely observes that innovations become obsolete—a well-known phenomenon that doesn't reveal deep structural homologies across domains.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The domains (Scientist, Entrepreneur, Artist, Engineer, Educator) are all human roles, limiting diversity. The metanyms show some variation (technology, product, style, design, curriculum) but are all "innovations" in a broad sense. The mappings lack the surprising quality of the Reference's metanyms.
+Rating: 5
+
+#### Impressive length
+The template contains only three sentences and six slots. This is significantly shorter than the Reference templates, limiting the archetype's structural richness.
+Rating: 3
+
+### Archetypal context 4: Exploration and Discovery
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): The claim that scientists "embark on research to uncover a hypothesis" is conceptually confused. Scientists don't uncover hypotheses; they formulate hypotheses and test them. Research aims to test hypotheses, not discover them. Rating: 3
+
+- PC 2 (Adventurer): The statements are factually reasonable—adventurers do undertake expeditions to explore unknown lands. Travelogues document these journeys. Rating: 6
+
+- PC 3 (Historian): The claim that investigations are "fraught with evidence" is awkward. Evidence is what historians seek, not an obstacle to overcome. The framing misrepresents historical methodology. Rating: 4
+
+- PC 4 (Astronaut): The statements are reasonable—astronauts undertake missions to explore celestial bodies, facing technical challenges. Space exploration documents these efforts. Rating: 6
+
+- PC 5 (Philosopher): The statements are reasonable—philosophers do engage in inquiry to uncover truths, facing paradoxes. Philosophy documents these methods. Rating: 6
+
+#### Beauty
+The template is sparse and formulaic. The four-sentence structure lacks the richness and interconnection of the Reference templates. The prose is functional but uninspired, lacking the domain-expert sophistication that makes the Reference's parallel contexts compelling.
+Rating: 4
+
+#### Intelligence
+The archetype captures a real pattern (exploration leading to discovery), but the insight is superficial. The claim that scientists "uncover hypotheses" reveals a misunderstanding of scientific methodology. The Reference's archetypes demonstrate deep structural understanding of each domain; this template applies a generic exploration narrative without capturing domain-specific mechanisms.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The domains (Scientist, Adventurer, Historian, Astronaut, Philosopher) are reasonably diverse. However, the metanyms are often near-synonymous: "research," "expedition," "investigation," "mission," and "inquiry" are all forms of exploration. The mappings lack the surprising quality of the Reference.
+Rating: 5
+
+#### Impressive length
+The template contains only four sentences and six slots. This is significantly shorter than the Reference templates.
+Rating: 3
+
+### Archetypal context 5: Structure and Function
+
+#### Factually correct (per parallel context)
+- PC 1 (Building): The claim that buildings are "designed to perform shelter" is grammatically awkward. Buildings provide shelter; they don't "perform" it. The overall claims are reasonable but clumsily expressed. Rating: 5
+
+- PC 2 (Organ): The statements are factually reasonable—organs perform physiological functions and can become dysfunctional. Physiology studies these processes. Rating: 6
+
+- PC 3 (Machine): The statements are factually reasonable—machines perform operations and can break down under changing workloads. Engineering studies optimization. Rating: 6
+
+- PC 4 (Organization): The claim that organizations are "designed to perform a goal" is grammatically awkward. Organizations pursue goals; they don't "perform" them. Rating: 5
+
+- PC 5 (Language): The claim that languages are "designed to perform communication" is problematic. Languages aren't designed; they evolve. The framing misrepresents linguistic reality. Rating: 4
+
+#### Beauty
+The template is sparse and formulaic. The four-sentence structure lacks elegance. The grammatical awkwardness ("designed to perform shelter," "designed to perform a goal") detracts from aesthetic quality. Compared to the Reference's sophisticated prose, this template feels rough and unpolished.
+Rating: 3
+
+#### Intelligence
+The archetype captures a real pattern (structures serving functions), but the insight is trivial. The observation that structures must adapt to maintain function is a basic principle that doesn't reveal deep structural homologies. The Reference's archetypes reveal surprising parallels (e.g., methylation as memory); this template merely observes that things have purposes and can fail.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The domains (Building, Organ, Machine, Organization, Language) are reasonably diverse. However, the metanyms are often near-synonymous or conceptually identical: "collapse," "dysfunction," "breakdown," "failure," and "miscommunication" are all failure modes. The mappings lack the surprising quality of the Reference.
+Rating: 5
+
+#### Impressive length
+The template contains only four sentences and five slots. This is significantly shorter than the Reference templates.
+Rating: 3
+
+### Structural diversity across the submitted set
+The five archetypes (Growth/Adaptation, Conflict/Resolution, Innovation/Obsolescence, Exploration/Discovery, Structure/Function) all share similar system structures: an entity, a process, conditions, and outcomes. They lack the structural diversity of the Reference, which includes gradient-guided navigation (feedback loops, collective behavior), containment breach cascades (boundary dynamics, cascading failures), competitive exclusion (niche partitioning, coexistence conditions), debt accumulation (recursive hierarchical structure), and scaffold-dependent assembly (nucleation, template-guided construction). The Target's archetypes are variations on a single theme (entity adapts to conditions or fails) rather than genuinely different system structures. The Reference also includes a recursive archetype demonstrating nested scales; the Target has no such structural sophistication.
+Rating: 3
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Growth and Adaptation",
+          "factual_per_pc":           [6, 6, 4, 5, 6],
+          "beauty":                   4,
+          "intelligence":             4,
+          "instantiation_distinctness": 4,
+          "impressive_length":        3
+        },
+        {
+          "name": "Conflict and Resolution",
+          "factual_per_pc":           [5, 4, 6, 4, 4],
+          "beauty":                   4,
+          "intelligence":             4,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        },
+        {
+          "name": "Innovation and Obsolescence",
+          "factual_per_pc":           [5, 6, 4, 4, 6],
+          "beauty":                   4,
+          "intelligence":             4,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        },
+        {
+          "name": "Exploration and Discovery",
+          "factual_per_pc":           [3, 6, 4, 6, 6],
+          "beauty":                   4,
+          "intelligence":             3,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        },
+        {
+          "name": "Structure and Function",
+          "factual_per_pc":           [5, 6, 6, 5, 4],
+          "beauty":                   3,
+          "intelligence":             3,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        }
+      ],
+      "structural_diversity": 3
+    }
+  }
+}
+```

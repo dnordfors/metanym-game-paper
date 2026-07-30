@@ -1,0 +1,14 @@
+# Environment for reproduce.sh — deterministic re-analysis of the pinned data.
+# Usage: conda env create -f environment.yml && conda activate metanym-game
+#
+# reproduce.sh makes no API calls, so no model SDKs or credentials are needed.
+# Versions below are the ones the published results were produced with.
+
+name: metanym-game
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=2.2
+  - scipy=1.15
+  - matplotlib=3.10

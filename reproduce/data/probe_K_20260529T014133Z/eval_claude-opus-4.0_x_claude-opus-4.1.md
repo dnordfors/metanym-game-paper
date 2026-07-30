@@ -1,0 +1,181 @@
+## Target Submission
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): The description accurately captures the coagulation cascade mechanism, correctly identifying tissue factor as the initiator, the amplification through sequential factor activation, and antithrombin as a key regulator. The thrombin burst terminology and the pathological outcome of thrombosis are medically accurate. This matches the Reference's level of factual precision. Rating: 7
+
+- PC 2 (Economic Panic): The bank run cascade is well-described with accurate economic dynamics - depositor panic triggering wider investor flight, central bank intervention as a stabilizing force, and market crashes as the pathological outcome. The mechanism of contagion through the financial system is correctly portrayed. This maintains the Reference's standard of accuracy. Rating: 7
+
+- PC 3 (Viral Marketing): The viral spread mechanism through social networks is accurately depicted, including early adopter activation, exponential resharing, and platform algorithmic moderation. The connection to misinformation spread as a pathological outcome is timely and correct. The network science framing is appropriate. This equals the Reference's factual quality. Rating: 7
+
+- PC 4 (Nuclear Fission): The nuclear chain reaction description is scientifically accurate, correctly explaining neutron-induced fission, criticality, control rod function, and meltdown as the failure mode. The exponential amplification mechanism and the role of neutron absorption in control are properly represented. This matches the Reference's accuracy level. Rating: 7
+
+- PC 5 (Avalanche Formation): The avalanche mechanics are correctly described, including weak layer failure, fracture propagation, and the role of intergranular bonds. The exponential cascade through structural failure and the catastrophic slide outcome are accurately portrayed. Snow science terminology is used appropriately. This equals the Reference's factual standard. Rating: 7
+
+#### Beauty
+The cascade amplification archetype achieves a compelling aesthetic unity through its focus on exponential amplification from minute triggers. The progression from microscopic initiating events (tissue damage, single neutron) to macroscopic consequences (clot formation, nuclear criticality) creates a satisfying narrative arc. The parallel between natural phenomena (blood clotting, avalanches) and human systems (financial markets, social media) reveals unexpected connections. The template elegantly captures both the power and danger of amplification systems. This matches the Reference's aesthetic quality in revealing hidden patterns across disparate domains. Rating: 7
+
+#### Intelligence
+The archetype demonstrates solid analytical insight by identifying the common structure of cascade amplification across diverse fields. The recognition that systems must balance sensitivity (responding to small signals) with stability (preventing runaway cascades) shows good conceptual depth. The role of inhibitors/regulators as critical control points is well-articulated. However, the insight doesn't significantly exceed the Reference's level of revealing non-obvious connections - cascade amplification is a relatively well-recognized pattern. The template captures the essential elements competently without breakthrough originality. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains span from molecular biology to physics to social systems, achieving good diversity. The metanyms show reasonable distinctness - "tissue factor" vs "depositor" vs "early adopter" vs "fissile nucleus" vs "weak layer" are clearly non-synonymous. However, some mappings feel slightly forced ("seed post" as trigger in viral marketing) or use similar terminology across domains ("cascade" appears directly in multiple contexts). The spread is comparable to the Reference but doesn't exceed it in creative distance between domains. Rating: 7
+
+#### Impressive length
+The template contains 11 slots with substantial complexity, describing the full cascade process from initiation through amplification to regulation and potential dysfunction. This comprehensive coverage matches the Reference templates in capturing multiple stages of a complex process. The description adequately covers trigger, detection, amplification, regulation, and failure modes. The length is sufficient to capture the phenomenon's essential complexity without being excessive. Rating: 7
+
+### Archetypal context 2: Selective Barrier
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The cell membrane description is biologically accurate, correctly identifying channel proteins, ligand recognition, conformational changes, and concentration gradients. The pathological outcomes of cell death and lysis are appropriate. The selective permeability mechanism is well-represented. This matches the Reference's accuracy. Rating: 7
+
+- PC 2 (National Border): The border control analogy accurately captures immigration processes, documentation verification, and the balance between openness and security. The economic gradient driving migration and the extremes of isolationism versus border crisis are correctly identified. This equals the Reference's factual standard. Rating: 7
+
+- PC 3 (Firewall): The cybersecurity description correctly explains packet filtering, header inspection, authentication, and the balance between accessibility and protection. The network isolation and security breach outcomes are accurate. The technical details are appropriate. This matches the Reference's precision. Rating: 7
+
+- PC 4 (Blood-Brain Barrier): The neuroscience is accurate, correctly describing selective nutrient transport, molecular recognition by transporters, and the barrier's protective function. The pathological outcomes of starvation and encephalitis are medically appropriate. This equals the Reference's accuracy. Rating: 7
+
+- PC 5 (Social Circle): The social boundary concept is well-articulated with accurate sociological framing. Trust networks, information filtering, and the balance between privacy and connection are correctly described. The outcomes of isolation versus privacy violation are appropriate. This matches the Reference's standard. Rating: 7
+
+#### Beauty
+The selective barrier archetype elegantly unifies the concept of controlled permeability across scales from molecular to social. The template beautifully captures the universal tension between protection and exchange, isolation and vulnerability. The parallel between cell membranes and social boundaries reveals profound similarities in how systems maintain integrity while remaining open to necessary resources. The aesthetic appeal matches the Reference in revealing hidden structural similarities. Rating: 7
+
+#### Intelligence
+The archetype shows good conceptual insight in recognizing selective permeability as a fundamental pattern. The identification of gatekeepers, credentials, and gradients as universal elements demonstrates analytical depth. The balance between isolation and breach as failure modes is well-conceived. However, selective barriers are a fairly recognized pattern in systems thinking, so while competent, this doesn't exceed the Reference's level of non-obvious insight. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span biology, politics, technology, neuroscience, and sociology - a good spread. The metanyms show reasonable diversity: "channel protein" vs "border agent" vs "port" vs "transporter" vs "trusted friend" are clearly distinct. However, some terms are quite literal ("barrier" appears unchanged in blood-brain barrier, "border" in national border), reducing the metaphorical distance. The diversity is comparable to but doesn't exceed the Reference. Rating: 7
+
+#### Impressive length
+With 15 slots, this template is notably comprehensive, capturing the full complexity of selective barriers including the mechanism (gatekeeper, signal, credential), dynamics (gradient, flow), and failure modes (isolation, breach). This actually exceeds the Reference templates in thoroughness, providing more detailed coverage of the phenomenon. The length effectively captures multiple aspects of selective permeability. Rating: 8
+
+### Archetypal context 3: Competitive Exclusion
+
+#### Factually correct (per parallel context)
+- PC 1 (Species Ecology): The ecological competition description is scientifically accurate, correctly explaining competitive exclusion, niche partitioning, and the role of keystone predators. The coexistence theory and fitness differences are appropriately represented. This matches the Reference's accuracy. Rating: 7
+
+- PC 2 (Market Competition): The economic dynamics are correctly described, including operational efficiency, market segmentation, and antitrust intervention. The progression toward monopoly and the role of product differentiation are accurate. This equals the Reference's standard. Rating: 7
+
+- PC 3 (Academic Publishing): The journal competition dynamics are well-captured, including manuscript competition, review speed as competitive advantage, and specialization enabling coexistence. The bibliometrics framing is appropriate. This matches the Reference's accuracy. Rating: 7
+
+- PC 4 (Social Media): The platform competition description accurately captures network effects, winner-take-all dynamics, and the role of user attention as a limited resource. The regulatory intervention and platform death outcomes are correct. This equals the Reference's precision. Rating: 7
+
+- PC 5 (Urban Development): The development competition is accurately described with appropriate urban planning concepts. Land scarcity, zoning as differentiation mechanism, and planning commission intervention are correctly represented. This matches the Reference's standard. Rating: 7
+
+#### Beauty
+The competitive exclusion archetype elegantly reveals how competition for limited resources drives similar dynamics across wildly different domains. The parallel between species competing for food and platforms competing for user attention creates satisfying conceptual bridges. The template captures both the ruthlessness of competition and the creative solutions (differentiation, regulation) that enable diversity. This matches the Reference's aesthetic quality. Rating: 7
+
+#### Intelligence
+The archetype demonstrates solid understanding of competitive dynamics and coexistence theory. The insight that competition drives either efficiency improvement, niche differentiation, or extinction is well-articulated. The role of regulators in maintaining diversity adds depth. However, competitive exclusion is a well-established principle, so while the cross-domain application is competent, it doesn't exceed the Reference's level of revealing hidden connections. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span ecology, economics, academia, technology, and urban planning - good diversity. The metanyms are reasonably distinct: "species" vs "company" vs "journal" vs "platform" vs "developer" show clear differences. However, many terms remain quite literal across domains ("competition," "extinction/bankruptcy," "diversity"), reducing metaphorical distance. The spread is comparable to the Reference. Rating: 7
+
+#### Impressive length
+With 13 slots, the template thoroughly captures competitive dynamics including resources, efficiency, differentiation, regulation, and outcomes. The coverage of both competition and coexistence mechanisms is comprehensive. This matches the Reference templates in providing detailed coverage of a complex phenomenon. Rating: 7
+
+### Archetypal context 4: Recursive Embedding
+
+#### Factually correct (per parallel context)
+- PC 1 (Russian Dolls): The matryoshka description is accurate, correctly capturing physical nesting constraints and the sequential access requirement. The size limitations preventing infinite nesting are appropriately noted. This matches the Reference's accuracy. Rating: 7
+
+- PC 2 (Folder Systems): The file system hierarchy is correctly described, including path traversal, naming conventions, and path length limitations. The cascading effects of folder operations are accurate. This equals the Reference's standard. Rating: 7
+
+- PC 3 (Biological Taxonomy): The taxonomic hierarchy is scientifically accurate, properly describing nested classification, traversal from kingdom to species, and genetic divergence as a limiting factor. The reclassification effects are correctly noted. This matches the Reference's precision. Rating: 7
+
+- PC 4 (Corporate Structure): The organizational hierarchy is well-described with accurate management concepts. Span of control, information flow through layers, and restructuring cascades are correctly represented. This equals the Reference's accuracy. Rating: 7
+
+- PC 5 (Grammatical Phrases): The syntactic embedding is linguistically accurate, correctly describing phrase structure, recursive embedding, and cognitive processing limits. The justification about center embedding limits is particularly insightful. This matches the Reference's standard. Rating: 7
+
+#### Beauty
+The recursive embedding archetype beautifully captures the fractal nature of hierarchical organization. The elegance of the pattern - from the physical simplicity of nested dolls to the abstract complexity of syntactic trees - creates a satisfying conceptual unity. The recognition that each level has its own rules while being constrained by outer levels reveals a fundamental organizational principle. The explicit notation of recursion adds to its aesthetic appeal. This slightly exceeds the Reference by explicitly embracing and highlighting the recursive nature. Rating: 8
+
+#### Intelligence
+The archetype shows strong conceptual insight by explicitly recognizing and labeling recursion as a fundamental pattern. The observation that outer containers constrain but don't fully determine inner rules demonstrates nuanced understanding. The identification of traversal requirements and depth limitations adds analytical depth. The explicit recursive framing represents a modest advancement over the Reference's implicit recursion examples. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains span from physical objects to abstract hierarchies, achieving good diversity. The metanyms are well-differentiated: "doll" vs "folder" vs "taxon" vs "division" vs "phrase" are clearly non-synonymous. The recursive nature is expressed differently in each domain while maintaining the core pattern. This matches the Reference's level of domain diversity. Rating: 7
+
+#### Impressive length
+With 8 slots, the template is more concise than some others but still captures the essential elements of recursive embedding. It covers containers, hierarchy, rules, operations, and constraints effectively. While shorter than the Reference templates, it achieves good coverage of the phenomenon. The explicit recursive notation partially compensates for the shorter length. Rating: 6
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The thermodynamic description is scientifically accurate, including supercooling, density fluctuations, crystallinity changes, and hysteresis. The phase transition mechanics are correctly represented. This matches the Reference's accuracy. Rating: 7
+
+- PC 2 (Economic Bubble): The financial physics description accurately captures bubble dynamics, volatility clustering, sentiment shifts, and asymmetric bubble formation/collapse. The critical valuation concept is well-applied. This equals the Reference's standard. Rating: 7
+
+- PC 3 (Viral Outbreak): The epidemiological transition is correctly described, including epidemic thresholds, cluster growth, and the endemic-to-epidemic shift. The hysteresis in disease dynamics is accurately noted. This matches the Reference's precision. Rating: 7
+
+- PC 4 (Traffic Flow): The traffic physics is accurate, properly describing the free flow to congestion transition, critical density, and stop-and-go waves. The hysteresis in jam formation/dissolution is correctly represented. This equals the Reference's accuracy. Rating: 7
+
+- PC 5 (Political Revolution): The political phase transition is well-articulated, capturing discontent thresholds, discontinuous political order changes, and revolutionary irreversibility. The protest precursors are appropriately identified. This matches the Reference's standard. Rating: 7
+
+#### Beauty
+The phase transition archetype achieves remarkable aesthetic unity by revealing how discontinuous changes emerge from continuous parameter variations. The parallel between water freezing and political revolution creates a powerful conceptual bridge between physical and social phenomena. The template elegantly captures the drama of critical points where small changes trigger dramatic reorganization. This matches the Reference's ability to reveal profound connections across disparate domains. Rating: 7
+
+#### Intelligence
+The archetype demonstrates sophisticated understanding of critical phenomena and phase transitions. The identification of precursors, order parameters, and hysteresis shows deep analytical insight. The application to social systems (markets, politics) alongside physical systems represents creative extension of physics concepts. The understanding of emergence and discontinuous change at critical points shows strong conceptual grasp. This equals the Reference's level of insight. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains span physics, economics, epidemiology, and political science - excellent diversity. The metanyms are highly distinct: "molecule" vs "investor" vs "individual" vs "vehicle" vs "citizen" show no synonymy. The mapping of physical phase transition concepts to social phenomena is particularly creative. This matches the Reference's achievement in bridging distant domains. Rating: 7
+
+#### Impressive length
+With 11 slots, the template comprehensively captures phase transition phenomena including parameters, thresholds, precursors, order parameters, and hysteresis. The coverage of both the approach to criticality and the post-transition state is thorough. This matches the Reference templates in providing detailed coverage of a complex phenomenon. Rating: 7
+
+### Structural diversity across the submitted set
+The Target submission demonstrates comparable structural diversity to the Reference. The five archetypes - Cascade Amplification (exponential growth from small triggers), Selective Barrier (controlled permeability), Competitive Exclusion (resource competition dynamics), Recursive Embedding (hierarchical nesting), and Phase Transition (critical point phenomena) - represent distinctly different system structures. The first involves amplification chains, the second involves selective filtering, the third involves competitive dynamics, the fourth involves hierarchical organization, and the fifth involves discontinuous state changes. While each is competently executed, they represent relatively well-known system patterns rather than novel structural insights. The explicit recognition of recursion in one archetype shows some advancement. Overall, the structural diversity matches but does not exceed the Reference's variety of system architectures. Rating: 7
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Selective Barrier",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 8
+        },
+        {
+          "name": "Competitive Exclusion",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Recursive Embedding",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 7,
+          "impressive_length": 6
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

@@ -1,0 +1,142 @@
+## Target Submission
+
+### Archetypal context 1: Inheritance and Transmission
+
+#### Factually correct (per parallel context)
+- PC 1 (Genetics): The description accurately reflects how genes are inherited from parents via biological processes, and how mutations can modify or eliminate genes over generations. It aligns well with the reference's emphasis on transmission and variation. Rating: 6
+- PC 2 (Cultural Tradition): The explanation correctly describes cultural transmission through social learning and reinterpretation, matching the reference's focus on how customs are passed and modified. Rating: 6
+- PC 3 (Software Development): The account of code inheritance from legacy systems and refactoring is factually sound, paralleling biological inheritance and variation. It correctly notes how functions are transmitted and modified. Rating: 6
+- PC 4 (Language Evolution): The depiction of borrowing and semantic shifts as transmission and variation is accurate, consistent with the reference's themes. Rating: 6
+- PC 5 (Legal Precedent): The explanation of how doctrines are inherited via citation and reinterpreted aligns with the concept of transmission and variation in legal systems. Rating: 6
+
+#### Beauty
+The narrative effectively captures the essence of inheritance and transmission across diverse domains, emphasizing the flow of traits, customs, or functions over time. Its clarity and coherence make it engaging, though it follows a familiar pattern. Rating: 6
+
+#### Intelligence
+The explanation demonstrates a solid understanding of how transmission mechanisms operate across biological, social, and technological systems, highlighting common principles. It shows good cross-domain insight. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts span biology, culture, software, language, and law, which are distinct domains. The metanyms (genes, customs, functions, words, doctrines) are clearly different and not synonyms, illustrating the archetype's broad applicability. Rating: 8
+
+#### Impressive length
+The descriptions are detailed and elaborated, providing sufficient depth for each domain, matching the reference's length and complexity. Rating: 6
+
+### Archetypal context 2: Feedback and Regulation
+
+#### Factually correct (per parallel context)
+- PC 1 (Physiology): The description of homeostasis via negative feedback, involving sensors and effectors like insulin, is accurate and aligns with the reference. Rating: 6
+- PC 2 (Climate Control): The thermostat mechanism with sensors and effectors (heater/cooler) correctly models feedback regulation. Rating: 6
+- PC 3 (Economic Policy): The central bank adjusting interest rates based on inflation signals is a correct example of feedback regulation. Rating: 6
+- PC 4 (Computer Systems): Load balancing responding to CPU usage is a valid feedback mechanism. Rating: 6
+- PC 5 (Social Groups): Social norms mediating conflict resolution through intervention reflect feedback regulation principles. Rating: 6
+
+#### Beauty
+The explanation coherently illustrates feedback mechanisms across systems, emphasizing their role in maintaining stability. It is straightforward and clear, matching the reference's clarity. Rating: 6
+
+#### Intelligence
+The account demonstrates understanding of feedback loops across multiple systems, recognizing their common structure and function. It shows cross-domain reasoning. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts include physiology, building systems, economics, computing, and social groups. The metanyms (homeostasis, thermostat, monetary policy, load balancing, norms) are domain-specific and not synonyms, illustrating diversity. Rating: 8
+
+#### Impressive length
+The descriptions are sufficiently detailed, matching the reference's elaboration and length. Rating: 6
+
+### Archetypal context 3: Emergence from Simple Rules
+
+#### Factually correct (per parallel context)
+- PC 1 (Ant Colony): The description of trail networks emerging from pheromone rules is accurate and well-aligned with the reference. Rating: 6
+- PC 2 (Market Economy): The depiction of price systems arising from trader interactions following simple rules is correct. Rating: 6
+- PC 3 (Cellular Automata): The explanation of glider emergence from local update rules is accurate and matches the reference. Rating: 6
+- PC 4 (Crowd Movement): The description of flow emerging from follow-the-leader rules is correct. Rating: 6
+- PC 5 (Internet Routing): The account of data paths forming from routing protocols is accurate. Rating: 6
+
+#### Beauty
+The narrative captures the fascinating phenomenon of complex patterns arising from simple local rules, across domains. It is engaging and illustrative. Rating: 6
+
+#### Intelligence
+The explanation shows a good grasp of how decentralized local interactions can produce emergent global patterns, across multiple systems. It demonstrates cross-domain insight. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts include biological (ants), economic (markets), computational (automata), social (crowds), and technological (networks). The metanyms (trail network, price system, glider, flow, data paths) are domain-specific and not synonyms. Rating: 8
+
+#### Impressive length
+The descriptions are detailed and elaborated, matching the reference's depth. Rating: 6
+
+### Archetypal context 4: Thresholds and Phase Transitions
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The description of crossing the freezing point and phase change is accurate. Rating: 6
+- PC 2 (Financial Crisis): The concept of crossing leverage thresholds leading to rapid market collapse is correct. Rating: 6
+- PC 3 (Social Movement): The critical mass leading to rapid uprising aligns with phase transition ideas. Rating: 6
+- PC 4 (Magnetization): The crossing of Curie point causing rapid magnetization is correct. Rating: 6
+- PC 5 (Forest Fire): The ignition point triggering wildfire is accurate. Rating: 6
+
+#### Beauty
+The explanations clearly illustrate how small parameter changes can lead to abrupt systemic shifts, across domains. They are coherent and illustrative. Rating: 6
+
+#### Intelligence
+The account demonstrates understanding of phase transition phenomena and thresholds across physical, social, and economic systems, showing cross-domain reasoning. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts include physics, finance, sociology, materials science, and ecology. The metanyms (freezing point, tipping point, critical mass, Curie point, ignition point) are domain-specific and not synonyms. Rating: 8
+
+#### Impressive length
+The descriptions are sufficiently detailed, matching the reference's elaboration. Rating: 6
+
+### Structural diversity across the submitted set
+The five contexts cover physical phase transitions, economic tipping points, social critical mass, magnetic phenomena, and ecological ignition points. They span natural sciences, social sciences, and engineering, illustrating broad diversity in system types and mechanisms. The contexts are distinct in their systems and phenomena, demonstrating high structural diversity. Rating: 8
+
+## Summary of scores
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Inheritance and Transmission",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 8,
+          "impressive_length": 6
+        },
+        {
+          "name": "Feedback and Regulation",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 8,
+          "impressive_length": 6
+        },
+        {
+          "name": "Emergence from Simple Rules",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 8,
+          "impressive_length": 6
+        },
+        {
+          "name": "Thresholds and Phase Transitions",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 8,
+          "impressive_length": 6
+        },
+        {
+          "name": "Resource Allocation and Competition",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 8,
+          "impressive_length": 6
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

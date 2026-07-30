@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Cascade Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Blood Clotting): The description of the coagulation cascade, tissue factor initiation, and the thrombin burst is highly accurate and standard in hematology. The trade-off between efficiency and speed is a valid biological interpretation. This is on par with the Reference's biological contexts. Rating: 7
+- PC 2 (Immune Response): The description of dendritic cells initiating a cytokine storm via an inflammatory cascade is generally accurate, though "cytokine storm" is usually reserved for pathological overreactions rather than the standard healthy response, making its use as the generic `[AMPLIFICATION]` slightly imprecise compared to the Reference's careful biological descriptions. Rating: 6
+- PC 3 (Financial Crisis): The mechanics of financial contagion, leverage acting as an amplifier, and market freezes are standard concepts in systemic risk literature. It is factually sound and comparable to the Reference's financial contexts. Rating: 7
+- PC 4 (Avalanche): The description of weak layer failure, fracture propagation, and exponential avalanche growth is accurate to snow science. The trade-off involving "energy efficiency" is a bit strained (snow doesn't "trade" efficiency for speed in an evolutionary or designed sense), making it slightly less rigorous than the Reference's physical science contexts. Rating: 6
+- PC 5 (Social Movement): The description of viral spread, mobilization, and the role of activists is sociologically plausible. However, the idea that social movements have built-in "moderation mechanisms" to ensure protests are "proportional to the injustice" is highly debatable and less factually grounded than the Reference's social movement context. Rating: 5
+
+#### Beauty
+The template captures a classic exponential growth/cascade dynamic. The prose is clear and functional, but lacks the poetic resonance or elegant phrasing found in the Reference's best templates (like River Hydrology or Scaffold-Dependent Assembly). The Form (b) rewrites are competent but somewhat repetitive in their structure. Rating: 6
+
+#### Intelligence
+The abstraction of a cascade (trigger -> detector -> exponential amplification -> massive response) is a fundamental systems concept. However, it is a very common and somewhat basic abstraction compared to the more nuanced dynamics explored in the Reference (e.g., Quorum-Triggered Phase Transition or Debt-Financed Overshoot). The mapping of "regulation" and "pathology" works well across most domains, but the "resource efficiency vs. speed" trade-off feels forced in several contexts (avalanche, social movement). Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (hematology, immunology, finance, snow science, sociology) are well-separated. The metanyms (e.g., tissue factor, credit monitor, weak layer) are distinct and not mere synonyms. This is comparable to the Reference's domain spread. Rating: 7
+
+#### Impressive length
+The template is 91 words long, which is significantly shorter than the Reference templates (which average around 120-140 words). It contains fewer slots and less complex internal logic. Rating: 4
+
+### Archetypal context 2: Boundary Maintenance
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The description of the cell membrane, concentration gradients, membrane potential, and lysis is biologically accurate and standard. Rating: 7
+- PC 2 (National Border): The mapping of borders, customs, and wealth differentials is politically and economically sound. The idea that a border breach causes "catastrophic annexation" is a bit extreme for a general breach, but works within the context of the metaphor. Rating: 7
+- PC 3 (Psychological Self): The concept of ego boundaries, defense mechanisms, and psychosis resulting from boundary failure aligns well with psychoanalytic theory. Rating: 7
+- PC 4 (Ecosystem Edge): The description of ecotones and species migration is accurate. However, "keystone species" do not typically act as "gatekeepers" that "recognize specific environmental cues to determine what may cross" an ecotone in the way customs agents or channel proteins do. This is a significant ecological inaccuracy. Rating: 4
+- PC 5 (Corporate Brand): The mapping of brand identity as a boundary that maintains a value proposition and prevents commoditization is a clever and accurate business concept. Rating: 7
+
+#### Beauty
+The template elegantly captures the tension between separation and exchange, and the energetic cost of maintaining identity. The prose is strong, and the Form (b) rewrites are fluid and natural. It possesses a conceptual elegance similar to the Reference's Containment Breach archetype. Rating: 7
+
+#### Intelligence
+The abstraction is deep, linking physical boundaries (membranes) with conceptual ones (brands, egos). The insight that boundaries store potential energy (or economic/psychological equivalents) that powers work is a profound systems-level observation, matching the intellectual depth of the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains (cytology, geopolitics, psychology, ecology, business) are highly diverse. The metanyms (channel, customs, defense mechanism, brand manager) are distinct and creative instantiations of the gatekeeper concept. Rating: 8
+
+#### Impressive length
+The template is 96 words long. While concise and impactful, it is shorter and slightly less complex than the Reference templates. Rating: 5
+
+### Archetypal context 3: Selective Pressure (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): The description of alleles, mutation, fitness, and fixation is a textbook summary of natural selection. Rating: 7
+- PC 2 (Cultural Evolution): The application of memetics is accurate to the theory, describing how appealing memes spread and become fixed in a culture. Rating: 7
+- PC 3 (Market Selection): The evolutionary view of markets (firms, profitability, market share) is a standard and accurate economic model. Rating: 7
+- PC 4 (Neural Pruning): The description of synaptic sprouting, efficiency, and pruning (Neural Darwinism) is a valid and accurate neurobiological model. Rating: 7
+- PC 5 (Scientific Progress): The evolutionary epistemology model (hypotheses, explanatory power, paradigm shifts) accurately reflects theories by Popper and Kuhn. Rating: 7
+
+#### Beauty
+The template is a clean, classic articulation of the universal Darwinian algorithm. The recursive note adds a layer of conceptual beauty. However, the prose is somewhat dry and mechanical compared to the Reference's more evocative descriptions. Rating: 6
+
+#### Intelligence
+Identifying the universal algorithm of selection and applying it across biology, culture, economics, neuroscience, and science is a hallmark of systems thinking. The explicit identification of recursion elevates the submission. It is highly intelligent, on par with the Reference's Scaffold-Dependent Assembly. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The domains are distinct, though they all share the underlying evolutionary framework. The metanyms (allele, meme, firm, synapse, hypothesis) are perfectly chosen and non-synonymous. Rating: 7
+
+#### Impressive length
+The template is 98 words long. It is efficient but lacks the extended narrative arc or secondary mechanisms found in the longer Reference templates. Rating: 5
+
+### Archetypal context 4: Commitment Device
+
+#### Factually correct (per parallel context)
+- PC 1 (Individual Savings): The description of retirement accounts as commitment devices to overcome present bias is a standard and accurate behavioral economics concept. Rating: 7
+- PC 2 (Constitutional Democracy): The view of constitutions as pre-commitments against majoritarian tyranny is a foundational concept in constitutional theory (e.g., Ulysses and the Sirens). Rating: 7
+- PC 3 (Addiction Recovery): The use of sponsors and accountability as constraints against relapse is accurate to recovery models. Rating: 7
+- PC 4 (Military Strategy): The "burning bridges" tactic to remove the option of retreat is a historically accurate military strategy. Rating: 7
+- PC 5 (Software Development): The use of code freezes to prevent feature creep is a standard and accurate software engineering practice. Rating: 7
+
+#### Beauty
+The template beautifully captures the paradox of restricting choice to gain freedom. The Form (b) rewrites are crisp and effectively convey the domain-specific nuances. It has a philosophical elegance that matches the Reference. Rating: 7
+
+#### Intelligence
+The abstraction of the "Ulysses pact" or commitment device is a powerful and widely applicable concept. The mapping across personal finance, political science, addiction, warfare, and software is clever and insightful, demonstrating strong lateral thinking comparable to the Reference. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains are very well separated. The metanyms for the constraint (retirement account, constitution, sponsor, burned bridge, code freeze) are highly distinct and creative. Rating: 8
+
+#### Impressive length
+The template is 94 words long. It is well-constructed but shorter and less intricate than the Reference templates. Rating: 5
+
+### Archetypal context 5: Phase Transition
+
+#### Factually correct (per parallel context)
+- PC 1 (Water Freezing): The description of freezing, nucleation, latent heat, and crystal lattices is thermodynamically accurate. Rating: 7
+- PC 2 (Economic Bubble): The mapping of phase transitions to market crashes (critical leverage, sentiment shifts) is a common and accurate application of econophysics. Rating: 7
+- PC 3 (Revolution): The application of tipping points and phase transitions to societal revolutions is a standard sociological model. Rating: 7
+- PC 4 (Ecological Collapse): The description of ecological tipping points, alternative stable states, and perturbations is accurate to resilience theory in ecology. Rating: 7
+- PC 5 (Paradigm Shift): The mapping of phase transitions to scientific revolutions (anomalies, crisis, new paradigms) accurately reflects Kuhnian theory. Rating: 7
+
+#### Beauty
+The template describes a profound natural phenomenon with clarity. However, it overlaps significantly with the Reference's "Quorum-Triggered Phase Transition" archetype, making it feel less novel or striking in this specific comparison. Rating: 5
+
+#### Intelligence
+The concept of phase transitions is a core systems archetype. The mapping is solid, but as noted, it is conceptually very close to the Reference's Quorum archetype, lacking the unique specificities (like quorum sensing or hysteresis) that made the Reference's version stand out. Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains are diverse (physics, economics, sociology, ecology, philosophy of science). The metanyms are distinct. However, several domains (economics, sociology) overlap with the Reference's Quorum archetype. Rating: 6
+
+#### Impressive length
+The template is 96 words long. It is shorter and less detailed than the Reference templates. Rating: 5
+
+### Structural diversity across the submitted set
+The submitted set includes a linear cascade (Cascade Amplification), a spatial/energetic boundary model (Boundary Maintenance), an evolutionary algorithm (Selective Pressure), a temporal/game-theoretic model (Commitment Device), and a non-linear threshold model (Phase Transition). This represents a very strong diversity of system structures, arguably slightly broader in its fundamental geometries than the Reference set (which leans heavily on gradients, thresholds, and flows). Rating: 8
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascade Amplification",
+          "factual_per_pc": [7, 6, 7, 6, 5],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 4
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [7, 7, 7, 4, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 8,
+          "impressive_length": 5
+        },
+        {
+          "name": "Selective Pressure",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 6,
+          "intelligence": 8,
+          "instantiation_distinctness": 7,
+          "impressive_length": 5
+        },
+        {
+          "name": "Commitment Device",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 8,
+          "impressive_length": 5
+        },
+        {
+          "name": "Phase Transition",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 6,
+          "impressive_length": 5
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

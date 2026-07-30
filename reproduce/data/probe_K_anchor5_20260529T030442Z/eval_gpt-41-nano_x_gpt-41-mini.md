@@ -1,0 +1,192 @@
+## Target Submission
+
+### Archetypal context 1: Resource Flow and Transformation
+
+#### Factually correct (per parallel context)
+- PC 1 (River System): The description accurately captures how water flows from source to mouth, with sedimentation as a transformation process, and how disruptions like evaporation reduce effective delivery. It aligns well with natural hydrological dynamics. Rating: 6
+- PC 2 (Electrical Grid): The flow of electricity from plant to consumer, with voltage conversion as a transformation, and line loss as a disruption, is a good analogy. The description correctly emphasizes the importance of flow and transformation processes. Rating: 6
+- PC 3 (Supply Chain): The flow of goods through transportation with packaging as a transformation, and spoilage as loss, is appropriate. The description correctly models the resource flow and potential disruptions. Rating: 6
+- PC 4 (Neural System): Nerve impulses traveling along axons with synaptic transmission as transformation, and signal degradation as loss, is accurate. The analogy correctly captures flow and transformation in neural signaling. Rating: 6
+- PC 5 (Information Network): Data packets flowing through communication links with data encoding as transformation, and data corruption as loss, is correct. The analogy appropriately models information flow and processing. Rating: 6
+
+#### Beauty
+The description effectively uses familiar natural and engineered systems to illustrate resource flow and transformation, maintaining clarity while capturing the essential relational dynamics. The analogy across diverse domains is coherent and elegant, emphasizing the universality of flow and transformation principles. Rating: 6
+
+#### Intelligence
+The explanation demonstrates a solid understanding of how flow and transformation processes operate across systems, correctly identifying key components and disruptions. The analogies are well-chosen and logically consistent, showing good insight into systemic dynamics. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts span hydrology, electrical engineering, logistics, neuroscience, and information technology, which are very different domains. The metanyms (water, electricity, goods, nerve impulses, data packets) are clearly not synonyms and instantiate the same relational template in distinct systems. Rating: 7
+
+#### Impressive length
+The description provides detailed, domain-specific elaborations for each context, including mechanisms, feedback, and disruptions, resulting in a comprehensive and lengthier treatment than the reference. Rating: 7
+
+### Archetypal context 2: Competitive Selection under Constraint
+
+#### Factually correct (per parallel context)
+- PC 1 (Animal Territory): The description correctly models animals competing for territory, with display behaviors, feedback, conflict, and displacement, aligning with ecological principles. Rating: 6
+- PC 2 (Market Competition): The analogy of firms competing for market share with marketing strategies, feedback, and conflicts like price wars is accurate and well-structured. Rating: 6
+- PC 3 (Academic Publishing): The competition for publication slots, with research focus and citation feedback, correctly captures the dynamics of academic competition. Rating: 6
+- PC 4 (Immune Response): The competition for antigens among immune cells, with receptor binding and feedback, is a good biological analogy. Rating: 6
+- PC 5 (Political Campaign): The competition for voters with campaign messages, polling feedback, and negative advertising is appropriate and accurate. Rating: 6
+
+#### Beauty
+The analogy set effectively spans biological, economic, scientific, immunological, and political systems, illustrating the archetype’s universality. The descriptions are clear, with each context distinct yet connected by the relational template. Rating: 6
+
+#### Intelligence
+The explanations demonstrate a good grasp of competitive dynamics, feedback mechanisms, and strategy adaptation across domains. The analogies are appropriate and logically consistent, reflecting systemic understanding. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts are from ecology, economics, science, immunology, and politics, with metanyms like territory, market share, publication slots, antigen, voters, which are clearly not synonyms. Rating: 7
+
+#### Impressive length
+Each context is elaborated with mechanisms, feedback, and strategic considerations, resulting in a detailed, lengthier treatment than the reference. Rating: 7
+
+### Archetypal context 3: Hierarchical Control and Feedback
+
+#### Factually correct (per parallel context)
+- PC 1 (Corporate Management): The description correctly models a manager-employee feedback loop with tasks, reports, and adjustments, aligning with organizational control principles. Rating: 6
+- PC 2 (Computer OS): The analogy of system calls, status codes, and feedback for system performance is accurate and well-explained. Rating: 6
+- PC 3 (Endocrine System): The hormone signaling, feedback signals, and regulation are correctly depicted, matching biological control systems. Rating: 6
+- PC 4 (Military Command): The command-unit feedback loop with orders, situation reports, and adjustments is appropriate and accurate. Rating: 6
+- PC 5 (Educational System): Teacher-student feedback with lessons, test results, and adjustments aligns well with control and regulation models. Rating: 6
+
+#### Beauty
+The set spans organizational, technological, biological, military, and educational domains, illustrating the archetype’s broad applicability. The analogies are clear and logically consistent, emphasizing the control-feedback structure. Rating: 6
+
+#### Intelligence
+The explanations show a good understanding of feedback loops, control mechanisms, and their importance across systems. The analogies are appropriate and demonstrate systemic insight. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts are from management, computing, biology, military, and education, with metanyms like tasks, system calls, hormones, orders, lessons, which are not synonyms. Rating: 7
+
+#### Impressive length
+The elaborations include mechanisms, feedback, and control considerations, making the set lengthier and more detailed than the reference. Rating: 7
+
+### Archetypal context 4: Growth and Constraint
+
+#### Factually correct (per parallel context)
+- PC 1 (Tree Growth): The description correctly models growth limited by soil nutrients, with dormancy and dieback as outcomes, consistent with botanical principles. Rating: 6
+- PC 2 (Urban Development): The analogy of city expansion constrained by land, with zoning and decay, is accurate and well-structured. Rating: 6
+- PC 3 (Tumor Growth): The model of tumor expansion limited by tissue and oxygen, with necrosis and metastasis, aligns with biological understanding. Rating: 6
+- PC 4 (Startup Company): The analogy of growth limited by market, with plateau and bankruptcy, is appropriate and accurate. Rating: 6
+- PC 5 (Social Movement): The expansion constrained by societal capacity, with stagnation or dissolution, is a good socio-political analogy. Rating: 6
+
+#### Beauty
+The contexts span natural, urban, biological, economic, and social systems, illustrating the archetype’s universality. The analogies are clear, with consistent relational structure. Rating: 6
+
+#### Intelligence
+The explanations demonstrate understanding of growth dynamics, constraints, and systemic limits across domains. The analogies are appropriate and logically consistent. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts are from ecology, urban planning, biology, economics, and sociology, with metanyms like nutrients, capital, oxygen, market, societal capacity, which are not synonyms. Rating: 7
+
+#### Impressive length
+The elaborations include mechanisms, feedback, and systemic implications, making the set lengthier than the reference. Rating: 7
+
+### Archetypal context 5: Signal Detection and Decision
+
+#### Factually correct (per parallel context)
+- PC 1 (Radar System): The description correctly models detection amid noise, with thresholds, false alarms, and errors, aligning with detection theory. Rating: 6
+- PC 2 (Medical Diagnosis): The analogy of detecting disease symptoms in variation, with thresholds and errors, is accurate. Rating: 6
+- PC 3 (Animal Predator): The model of prey movement detection against background motion, with thresholds and errors, is appropriate. Rating: 6
+- PC 4 (Spam Filter): The analogy of classifying emails with rules, thresholds, and errors, is correct. Rating: 6
+- PC 5 (Quality Control): Detecting defects among normal products with thresholds and errors is accurate. Rating: 6
+
+#### Beauty
+The set spans technological, medical, biological, informational, and manufacturing systems, illustrating the archetype’s broad applicability. The analogies are clear and consistent. Rating: 6
+
+#### Intelligence
+The explanations demonstrate understanding of detection theory, error trade-offs, and decision thresholds across systems. The analogies are appropriate and logically consistent. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts are from radar, medicine, biology, IT, and manufacturing, with metanyms like aircraft echo, disease symptom, prey movement, spam email, defect, which are not synonyms. Rating: 7
+
+#### Impressive length
+The elaborations include mechanisms, thresholds, errors, and trade-offs, making the set lengthier than the reference. Rating: 7
+
+### Archetype context 6: Cyclical Renewal and Decay
+
+#### Factually correct (per parallel context)
+- PC 1 (Leaf): The description correctly models leaf growth, maturity, and senescence, with environmental influences, aligning with botanical cycles. Rating: 6
+- PC 2 (Business): The lifecycle of a startup—growth, stability, decline—is well captured, consistent with business theory. Rating: 6
+- PC 3 (Star): The stellar lifecycle from protostar to red giant, with evolution and potential supernova, is accurate. Rating: 6
+- PC 4 (Human Life Cycle): The stages of childhood, adulthood, old age, with aging and death, are correctly modeled. Rating: 6
+- PC 5 (Software Project): The phases of development, maintenance, and deprecation, with lifecycle influences, are appropriate. Rating: 6
+
+#### Beauty
+The contexts span biological, economic, astrophysical, human, and technological systems, illustrating the archetype’s universality. The analogies are clear and well-structured. Rating: 6
+
+#### Intelligence
+The explanations demonstrate understanding of cyclical processes, growth, maturity, decay, and their systemic roles across domains. The analogies are appropriate and consistent. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The contexts are from botany, business, astrophysics, human biology, and software engineering, with metanyms like leaf, company, star, person, software, which are not synonyms. Rating: 7
+
+#### Impressive length
+The elaborations include mechanisms, phases, influences, and systemic implications, making the set lengthier than the reference. Rating: 7
+
+## Structural diversity across the submitted set
+The five archetypal contexts span resource flow, competition, control systems, growth constraints, detection, and lifecycle processes, each instantiated in very different domains—natural, social, technological, biological, astrophysical. The metanyms are distinct and non-synonymous, demonstrating broad applicability and diversity of the archetype template. This variety underscores the universality and flexibility of the relational structures, fulfilling the diversity criterion effectively. Rating: 8
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Flow and Transformation",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Competitive Selection under Constraint",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Hierarchical Control and Feedback",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Growth and Constraint",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Signal Detection and Decision",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Cyclical Renewal and Decay",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

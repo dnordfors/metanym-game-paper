@@ -1,0 +1,2540 @@
+{
+  "run_id": "20260529T014133Z",
+  "reference_model": "claude-opus-4.5",
+  "reference_anchor_score": 7,
+  "evaluator_prompt_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/prompts/evaluator_calibrated.md",
+  "evaluator_prompt_chars": 5373,
+  "pairs": 132,
+  "results": [
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 92.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4722,
+      "text_chars": 21808,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 92.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4953,
+      "text_chars": 21780,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 86.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4260,
+      "text_chars": 19321,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 79.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4283,
+      "text_chars": 19725,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 72.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3970,
+      "text_chars": 18825,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 67.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3710,
+      "text_chars": 16584,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 72.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3816,
+      "text_chars": 17325,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 60.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3537,
+      "text_chars": 14877,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 78.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4065,
+      "text_chars": 17882,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 88.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4765,
+      "text_chars": 21578,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 56.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3319,
+      "text_chars": 15106,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.5_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 128.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3622,
+      "text_chars": 17055,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 96.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3263,
+      "text_chars": 15258,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "claude-opus-4.1",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 113.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3837,
+      "text_chars": 18400,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 125.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3703,
+      "text_chars": 17619,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 110.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2968,
+      "text_chars": 14143,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 162.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4609,
+      "text_chars": 23280,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 95.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3359,
+      "text_chars": 15406,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 102.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3577,
+      "text_chars": 16963,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 145.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4313,
+      "text_chars": 20257,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 156.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4621,
+      "text_chars": 21662,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 101.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3554,
+      "text_chars": 17093,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.1_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 99.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3607,
+      "text_chars": 17108,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 105.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3537,
+      "text_chars": 16523,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 124.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4253,
+      "text_chars": 20768,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "claude-opus-4.0",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 108.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3933,
+      "text_chars": 19551,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 102.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3595,
+      "text_chars": 18015,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 106.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3532,
+      "text_chars": 16364,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 118.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3827,
+      "text_chars": 18013,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 106.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3989,
+      "text_chars": 19328,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 117.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3718,
+      "text_chars": 17320,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 159.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 5775,
+      "text_chars": 27835,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 87.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3075,
+      "text_chars": 14006,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-opus-4.0_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 73.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3813,
+      "text_chars": 18689,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 81.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4348,
+      "text_chars": 21547,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 67.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3407,
+      "text_chars": 16715,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 74.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3946,
+      "text_chars": 19596,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "claude-sonnet-4",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 76.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3875,
+      "text_chars": 19679,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 54.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3075,
+      "text_chars": 14929,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 85.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4415,
+      "text_chars": 21955,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 66.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3511,
+      "text_chars": 18165,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 69.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3808,
+      "text_chars": 18978,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 106.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 5254,
+      "text_chars": 26801,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 54.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2714,
+      "text_chars": 13585,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_claude-sonnet-4_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "gemini-3.1-pro",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 31.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3056,
+      "text_chars": 13833,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 32.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3559,
+      "text_chars": 15947,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 29.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3866,
+      "text_chars": 18776,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 38.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3543,
+      "text_chars": 17048,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 24.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3200,
+      "text_chars": 15065,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 31.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3249,
+      "text_chars": 14258,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 23.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3259,
+      "text_chars": 15152,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 28.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2723,
+      "text_chars": 11630,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 29.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3209,
+      "text_chars": 15003,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 29.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3277,
+      "text_chars": 14814,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "gemini-3.1-pro",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 21.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2597,
+      "text_chars": 11549,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-3.1-pro_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 21.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4155,
+      "text_chars": 20088,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "gemini-2.5-flash",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 22.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4821,
+      "text_chars": 23457,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 22.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4283,
+      "text_chars": 21485,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 23.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4071,
+      "text_chars": 20234,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 20.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4205,
+      "text_chars": 20752,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 20.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3851,
+      "text_chars": 17917,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 22.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4226,
+      "text_chars": 20371,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 18.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3111,
+      "text_chars": 14058,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 20.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 4226,
+      "text_chars": 20722,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 28.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 5320,
+      "text_chars": 25620,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 21.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3747,
+      "text_chars": 18025,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0,
+        "thinkingBudget": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gemini-2.5-flash_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 20.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2925,
+      "text_chars": 13085,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 20.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2909,
+      "text_chars": 12798,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 13.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2451,
+      "text_chars": 11297,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 18.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2587,
+      "text_chars": 11579,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 15.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2276,
+      "text_chars": 10532,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 16.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2293,
+      "text_chars": 9907,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 18.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2457,
+      "text_chars": 10863,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 28.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2427,
+      "text_chars": 11348,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 13.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2968,
+      "text_chars": 13568,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 18.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2686,
+      "text_chars": 12424,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 15.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2198,
+      "text_chars": 10104,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-2025-04-14_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 31.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2724,
+      "text_chars": 13210,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 30.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2753,
+      "text_chars": 13150,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 38.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2754,
+      "text_chars": 13533,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 42.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3270,
+      "text_chars": 16222,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 31.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2922,
+      "text_chars": 14538,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 24.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2351,
+      "text_chars": 10915,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 25.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2349,
+      "text_chars": 11538,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 34.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2695,
+      "text_chars": 13408,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 36.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2629,
+      "text_chars": 12700,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "gpt-41-mini",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 44.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3252,
+      "text_chars": 15743,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 27.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2153,
+      "text_chars": 10281,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-mini_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 3.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 656,
+      "text_chars": 3345,
+      "json_parsed_ok": false,
+      "json_parse_error": "Expecting ',' delimiter: line 13 column 9 (char 296)",
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 7.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 1818,
+      "text_chars": 8358,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 10.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2274,
+      "text_chars": 10785,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 3.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 656,
+      "text_chars": 3157,
+      "json_parsed_ok": false,
+      "json_parse_error": "Expecting ',' delimiter: line 13 column 9 (char 307)",
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 7.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 1712,
+      "text_chars": 8257,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 9.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2144,
+      "text_chars": 9906,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 8.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 1970,
+      "text_chars": 9334,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 9.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2343,
+      "text_chars": 11491,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 9.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2054,
+      "text_chars": 9248,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 11.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2471,
+      "text_chars": 11675,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "target": "gpt-41-nano",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 11.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2399,
+      "text_chars": 11819,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-41-nano_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 15.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2266,
+      "text_chars": 10783,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 13.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2121,
+      "text_chars": 10023,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 11.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 1956,
+      "text_chars": 8742,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 19.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2708,
+      "text_chars": 13349,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 12.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 1964,
+      "text_chars": 9161,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "gpt-4o",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 13.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2397,
+      "text_chars": 11596,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 18.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2170,
+      "text_chars": 10126,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 14.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2313,
+      "text_chars": 11113,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 13.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 1938,
+      "text_chars": 8461,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 14.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2119,
+      "text_chars": 9731,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "gpt-4o",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 17.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2252,
+      "text_chars": 10699,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 11.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2051,
+      "text_chars": 9673,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 13.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2194,
+      "text_chars": 10476,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 13.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2462,
+      "text_chars": 12298,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 18.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2589,
+      "text_chars": 12480,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 15.4,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2453,
+      "text_chars": 12201,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 12.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2177,
+      "text_chars": 10061,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 13.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2126,
+      "text_chars": 9816,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "gpt-4o-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 19.6,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2193,
+      "text_chars": 10455,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 10.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 1803,
+      "text_chars": 7818,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 9.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 1998,
+      "text_chars": 9023,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 18.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2242,
+      "text_chars": 10637,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-2024-08-06_x_gpt-41-nano.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "gemini-3.1-pro",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 23.1,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2778,
+      "text_chars": 14146,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gemini-3.1-pro.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gemini-3.1-pro.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "gemini-2.5-flash",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 33.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3218,
+      "text_chars": 17081,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gemini-2.5-flash.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gemini-2.5-flash.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "claude-opus-4.1",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 28.9,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2826,
+      "text_chars": 13825,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_claude-opus-4.1.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_claude-opus-4.1.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "claude-opus-4.0",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 24.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2964,
+      "text_chars": 15022,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_claude-opus-4.0.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_claude-opus-4.0.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "claude-sonnet-4",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 20.7,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2503,
+      "text_chars": 12373,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_claude-sonnet-4.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_claude-sonnet-4.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "gpt-4o",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 25.3,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2918,
+      "text_chars": 14579,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-4o.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-4o.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "gpt-41-2025-04-14",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 33.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2854,
+      "text_chars": 14463,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-41-2025-04-14.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-41-2025-04-14.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "gpt-4o-mini",
+      "self_eval": true,
+      "ok": true,
+      "wall_clock_s": 21.5,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 3006,
+      "text_chars": 15904,
+      "json_parsed_ok": false,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-4o-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-4o-mini.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "gpt-4o-2024-08-06",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 30.0,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2814,
+      "text_chars": 13757,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-4o-2024-08-06.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-4o-2024-08-06.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "gpt-41-mini",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 21.8,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2438,
+      "text_chars": 12233,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-41-mini.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-41-mini.json"
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "target": "gpt-41-nano",
+      "self_eval": false,
+      "ok": true,
+      "wall_clock_s": 24.2,
+      "response_status": 200,
+      "finish_reason": "stop",
+      "thoughts_tokens": 0,
+      "completion_tokens": 2294,
+      "text_chars": 11979,
+      "json_parsed_ok": true,
+      "json_parse_error": null,
+      "extra_sent": {
+        "Temperature": 0
+      },
+      "md_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-41-nano.md",
+      "json_path": "/Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/eval_gpt-4o-mini_x_gpt-41-nano.json"
+    }
+  ]
+}

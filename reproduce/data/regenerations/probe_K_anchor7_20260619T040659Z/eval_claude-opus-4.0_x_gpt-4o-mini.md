@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Business Management): The parallel context accurately describes budget allocation among projects under market volatility, though it lacks the depth and specificity of the Reference's contexts. The concepts are correct but somewhat generic compared to the Reference's precise technical details like "membrane-bound receptors" or "gradient calculations." Rating: 6
+- PC 2 (Urban Planning): The zoning and land allocation description is factually sound but superficial. Unlike the Reference's rich detail about "proprioceptive feedback" or "stochastic noise," this context merely states basic truths without technical depth or nuanced understanding. Rating: 5
+- PC 3 (Environmental Science): The conservation efforts description is accurate but vague. Where the Reference provides specific mechanisms like "momentum terms that accumulate information," this context offers only general statements about resource allocation without mechanistic detail. Rating: 5
+- PC 4 (Personal Finance): The personal budgeting context is correct but elementary. It lacks the sophisticated understanding shown in the Reference's contexts, which explain specific processes like "temporal adaptation mechanisms" or "lateral movement." Rating: 5
+- PC 5 (Healthcare Management): The healthcare resource distribution is factually accurate but lacks depth. Unlike the Reference's detailed explanations of how systems actually work, this provides only surface-level descriptions of administrative processes. Rating: 5
+
+#### Beauty
+The Resource Allocation archetype lacks the elegance and conceptual beauty of the Reference contexts. Where the Reference creates vivid, almost poetic descriptions of bacteria swimming toward nutrients or water carving channels through landscapes, this archetype presents dry, administrative scenarios. The template itself is functional but uninspiring, missing the dynamic tension and narrative arc present in contexts like "Containment Breach Cascade" or "Scaffold and Autonomy."
+Rating: 4
+
+#### Intelligence
+This archetype demonstrates significantly less intellectual sophistication than the Reference. The core concept—allocating resources among competing needs—is trivially simple compared to the Reference's complex dynamics like gradient navigation with incomplete information, cascading system failures, or recursive competitive exclusion. The template lacks the deep structural insights that make the Reference contexts intellectually compelling.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen are reasonably diverse but the metanyms often feel like near-synonyms rather than true parallel concepts. "Budget," "land," "natural resources," "savings," and "healthcare budget" are all just different types of resources, lacking the conceptual distance between metanyms like "bacterium/hiker/optimizer" or "membrane/dam/firewall." The domains themselves cluster around administrative and planning contexts rather than spanning truly different fields.
+Rating: 4
+
+#### Impressive length
+The template is notably shorter than the Reference templates, containing only 8 slots compared to the Reference's 11-15 slots. The sentences are simpler and the overall narrative less developed. Where Reference templates build complex multi-stage processes with feedback loops and failure modes, this template presents a basic allocation scenario without rich detail.
+Rating: 4
+
+### Archetypal context 2: Conflict Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (International Relations): The diplomatic negotiation context is accurate but simplistic. It lacks the mechanistic precision of the Reference contexts, which explain exactly how processes unfold rather than just stating that they occur. Rating: 5
+- PC 2 (Family Therapy): The family conflict description is correct but shallow. Unlike the Reference's detailed explanations of how systems function, this merely describes conflict resolution at a high level without specific mechanisms. Rating: 5
+- PC 3 (Labor Negotiation): The labor dispute context is factually sound but generic. It misses the kind of specific detail that makes the Reference contexts compelling, such as how exactly negotiations progress or fail. Rating: 5
+- PC 4 (Legal Mediation): The legal conflict description is accurate but uninformative. Where the Reference provides rich detail about system dynamics, this offers only basic descriptions of mediation processes. Rating: 5
+- PC 5 (Community Dispute Resolution): The community dispute context is correct but lacks depth. It doesn't approach the sophistication of the Reference's explanations of how systems actually operate. Rating: 5
+
+#### Beauty
+The Conflict Resolution archetype lacks aesthetic appeal. The template reads like a generic description of negotiation rather than revealing deep structural patterns. Unlike the Reference's evocative contexts that create vivid mental images, this archetype feels bureaucratic and uninspiring.
+Rating: 3
+
+#### Intelligence
+This archetype shows minimal intellectual depth. The concept of parties negotiating to resolve conflicts is obvious and lacks the profound insights of the Reference archetypes. There's no clever revelation of hidden structural similarities or unexpected parallels across domains.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+While the domains span from international relations to family therapy, the metanyms are often just different words for the same concept. "Nation/family/union/parties/community members" are all just different types of groups. This lacks the conceptual distance of the Reference's truly distinct metanyms.
+Rating: 4
+
+#### Impressive length
+The template is short with only 8 slots, significantly less than the Reference templates. The narrative structure is simple and doesn't build the kind of complex, multi-stage processes that characterize the Reference archetypes.
+Rating: 4
+
+### Archetypal context 3: Learning and Adaptation
+
+#### Factually correct (per parallel context)
+- PC 1 (Education): The student learning context is accurate but basic. It describes education at such a high level that it adds little value beyond common knowledge. Rating: 5
+- PC 2 (Ecology): The organism adaptation context is correct but vague. Unlike the Reference's precise ecological descriptions, this lacks specific mechanisms or processes. Rating: 5
+- PC 3 (Business Development): The entrepreneur context is factually sound but generic. It doesn't approach the specificity of the Reference's business contexts. Rating: 5
+- PC 4 (Personal Growth): The self-improvement context is accurate but trivial. It lacks the depth and insight of the Reference's psychological contexts. Rating: 5
+- PC 5 (Artificial Intelligence): The machine learning context is correct but superficial. Where the Reference provides detailed technical explanations, this offers only high-level descriptions. Rating: 5
+
+#### Beauty
+The Learning and Adaptation archetype lacks aesthetic quality. The template is functional but uninspiring, missing the narrative elegance and conceptual beauty of the Reference archetypes. It reads more like a textbook definition than a profound insight.
+Rating: 4
+
+#### Intelligence
+This archetype demonstrates limited intellectual sophistication. The concept of learning from feedback is obvious and well-known, lacking the surprising insights and deep structural patterns revealed in the Reference archetypes.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The domains show some diversity but the metanyms often overlap conceptually. "Student/organism/entrepreneur/individual/algorithm" show more variety than previous archetypes, but still lack the stark conceptual differences of the Reference's metanyms.
+Rating: 5
+
+#### Impressive length
+The template contains 10 slots, which is closer to the Reference range but still on the shorter side. The narrative complexity doesn't match the Reference templates' sophisticated multi-stage processes.
+Rating: 5
+
+### Archetypal context 4: Innovation and Change
+
+#### Factually correct (per parallel context)
+- PC 1 (Technology Development): The software development context is accurate but lacks technical depth. It doesn't provide the kind of specific mechanisms found in the Reference contexts. Rating: 5
+- PC 2 (Organizational Change): The organizational restructuring context is correct but generic. It lacks the detailed understanding of how change actually propagates through systems. Rating: 5
+- PC 3 (Social Movements): The activism context is factually sound but superficial. Unlike the Reference's rich descriptions of social dynamics, this offers only basic observations. Rating: 5
+- PC 4 (Environmental Policy): The policy context is accurate but uninformative. It doesn't explain how policy changes actually work or fail. Rating: 5
+- PC 5 (Healthcare Innovation): The medical innovation context is correct but lacks the sophistication of the Reference's healthcare contexts. Rating: 5
+
+#### Beauty
+The Innovation and Change archetype lacks aesthetic appeal. The template describes a basic change process without the elegance or conceptual beauty of the Reference archetypes. It feels mechanical rather than insightful.
+Rating: 4
+
+#### Intelligence
+This archetype shows limited intellectual depth. The concept of innovators facing resistance is well-worn and lacks the surprising structural insights of the Reference archetypes.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The domains span different fields but the metanyms often feel like variations on the same theme. "Software update/restructuring/reform/regulation/new treatment" are all just types of changes, lacking true conceptual distance.
+Rating: 4
+
+#### Impressive length
+The template has 10 slots, which is moderate but still shorter than most Reference templates. The narrative structure is simpler and less developed than the Reference's complex processes.
+Rating: 5
+
+### Archetypal context 5: Social Interaction
+
+#### Factually correct (per parallel context)
+- PC 1 (Sociology): The social interaction context is accurate but elementary. It describes basic social processes without the depth or insight of the Reference contexts. Rating: 5
+- PC 2 (Team Dynamics): The team collaboration context is correct but generic. It lacks specific mechanisms or processes that would make it informative. Rating: 5
+- PC 3 (Online Communities): The online discussion context is factually sound but superficial. It doesn't explore how online interactions actually differ from other social contexts. Rating: 5
+- PC 4 (Family Relationships): The family gathering context is accurate but trivial. It lacks the psychological depth of the Reference's family-related contexts. Rating: 5
+- PC 5 (Negotiation): The negotiation context is correct but adds little beyond common knowledge. It doesn't approach the sophistication of the Reference's negotiation-related contexts. Rating: 5
+
+#### Beauty
+The Social Interaction archetype lacks aesthetic quality. The template is dry and functional, missing the narrative elegance and conceptual beauty that characterizes the Reference archetypes.
+Rating: 3
+
+#### Intelligence
+This archetype demonstrates minimal intellectual sophistication. The concept of people interacting and adjusting based on feedback is obvious and lacks the profound insights of the Reference archetypes.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+While the domains show some variety, the metanyms are often just different words for similar concepts. The conceptual distance between metanyms is much smaller than in the Reference contexts.
+Rating: 4
+
+#### Impressive length
+The template has 10 slots, which is moderate but still shorter than most Reference templates. The narrative lacks the complexity and multi-stage processes of the Reference archetypes.
+Rating: 5
+
+### Structural diversity across the submitted set
+The Target submission shows significantly less structural diversity than the Reference. All five archetypes follow a similar pattern: an agent faces a challenge, uses some process to address it, receives feedback, and adjusts. This is essentially the same structure repeated five times with different vocabulary. In contrast, the Reference presents five fundamentally different system structures: gradient navigation (agent following local signals), containment breach (boundary failure cascading), competitive exclusion (population dynamics with differentiation), debt accumulation (temporal burden transfer), and scaffolding (developmental support withdrawal). The Reference also includes two recursive archetypes that demonstrate self-similar patterns across scales, while the Target shows no recursion. The Target's archetypes feel like variations on a theme rather than genuinely different system architectures.
+Rating: 3
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc": [6, 5, 5, 5, 5],
+          "beauty": 4,
+          "intelligence": 3,
+          "instantiation_distinctness": 4,
+          "impressive_length": 4
+        },
+        {
+          "name": "Conflict Resolution",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 3,
+          "intelligence": 3,
+          "instantiation_distinctness": 4,
+          "impressive_length": 4
+        },
+        {
+          "name": "Learning and Adaptation",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 4,
+          "intelligence": 3,
+          "instantiation_distinctness": 5,
+          "impressive_length": 5
+        },
+        {
+          "name": "Innovation and Change",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 4,
+          "intelligence": 3,
+          "instantiation_distinctness": 4,
+          "impressive_length": 5
+        },
+        {
+          "name": "Social Interaction",
+          "factual_per_pc": [5, 5, 5, 5, 5],
+          "beauty": 3,
+          "intelligence": 3,
+          "instantiation_distinctness": 4,
+          "impressive_length": 5
+        }
+      ],
+      "structural_diversity": 3
+    }
+  }
+}
+```

@@ -1,0 +1,41 @@
+# Citation File Format — https://citation-file-format.github.io
+# GitHub renders this as "Cite this repository".
+cff-version: 1.2.0
+message: "If you use this work, please cite both the paper and this repository."
+title: "The Metanym Game: A Self-Contained, Self-Consistent LLM Peer-Community Benchmark for Structural Intelligence"
+abstract: >-
+  Reproduction package for The Metanym Game: the arXiv manuscript, the arXiv
+  submission bundle, and the scripts and pinned evaluation data that regenerate
+  every number, table and figure in the paper.
+authors:
+  - family-names: Nordfors
+    given-names: David
+    email: david.nordfors@archetypes.ai
+version: "1.0.0"
+date-released: "2026-07-29"
+url: "https://github.com/dnordfors/metanym-game-paper"
+repository-code: "https://github.com/dnordfors/metanym-game-paper"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - LLM benchmark
+  - structural intelligence
+  - analogy
+  - peer evaluation
+  - singular value decomposition
+identifiers:
+  - type: doi
+    value: 10.48550/arXiv.2606.21008
+    description: arXiv DOI for the paper
+preferred-citation:
+  type: article
+  title: "The Metanym Game: A Self-Contained, Self-Consistent LLM Peer-Community Benchmark for Structural Intelligence"
+  authors:
+    - family-names: Nordfors
+      given-names: David
+      email: david.nordfors@archetypes.ai
+  year: 2026
+  journal: "arXiv"
+  doi: "10.48550/arXiv.2606.21008"
+  url: "https://arxiv.org/abs/2606.21008"

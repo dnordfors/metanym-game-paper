@@ -1,0 +1,88 @@
+{
+  "reliability_ranked": [
+    {
+      "evaluator": "gemini-3.1-pro",
+      "slope": 0.7375757575757573,
+      "rank_stability_7_5": 0.9636363636363636,
+      "panel_correlation_J": 0.9090909090909091,
+      "composite_reliability": 0.8645213234968381
+    },
+    {
+      "evaluator": "claude-opus-4.0",
+      "slope": 0.680429292929293,
+      "rank_stability_7_5": 0.9727272727272728,
+      "panel_correlation_J": 0.965034965034965,
+      "composite_reliability": 0.8612033578734586
+    },
+    {
+      "evaluator": "gpt-41-mini",
+      "slope": 0.7215151515151517,
+      "rank_stability_7_5": 0.8818181818181818,
+      "panel_correlation_J": 0.9090909090909091,
+      "composite_reliability": 0.8331897907865411
+    },
+    {
+      "evaluator": "claude-opus-4.1",
+      "slope": 0.6251515151515152,
+      "rank_stability_7_5": 0.9818181818181818,
+      "panel_correlation_J": 0.9020979020979021,
+      "composite_reliability": 0.8211516005997173
+    },
+    {
+      "evaluator": "claude-opus-4.5",
+      "slope": 0.5590909090909089,
+      "rank_stability_7_5": 0.9545454545454546,
+      "panel_correlation_J": 0.958041958041958,
+      "composite_reliability": 0.7996277514047797
+    },
+    {
+      "evaluator": "claude-sonnet-4",
+      "slope": 0.6904040404040406,
+      "rank_stability_7_5": 0.9363636363636364,
+      "panel_correlation_J": 0.7692307692307693,
+      "composite_reliability": 0.792260804313967
+    },
+    {
+      "evaluator": "gpt-41-nano",
+      "slope": 1.0166666666666666,
+      "rank_stability_7_5": 0.4523809523809524,
+      "panel_correlation_J": 0.6993006993006993,
+      "composite_reliability": 0.6813800665880461
+    },
+    {
+      "evaluator": "gpt-41-2025-04-14",
+      "slope": 0.42601010101010095,
+      "rank_stability_7_5": 0.8545454545454545,
+      "panel_correlation_J": 0.7412587412587412,
+      "composite_reliability": 0.6462119193556052
+    },
+    {
+      "evaluator": "gemini-2.5-flash",
+      "slope": 0.3632070707070709,
+      "rank_stability_7_5": 0.9363636363636364,
+      "panel_correlation_J": 0.7272727272727273,
+      "composite_reliability": 0.6277191509286862
+    },
+    {
+      "evaluator": "gpt-4o-2024-08-06",
+      "slope": 0.41969696969696946,
+      "rank_stability_7_5": 0.7454545454545455,
+      "panel_correlation_J": 0.4195804195804196,
+      "composite_reliability": 0.5082266149427177
+    },
+    {
+      "evaluator": "gpt-4o-mini",
+      "slope": 0.8250000000000002,
+      "rank_stability_7_5": 0.15151515151515152,
+      "panel_correlation_J": 0.40559440559440557,
+      "composite_reliability": 0.37011270172633404
+    },
+    {
+      "evaluator": "gpt-4o",
+      "slope": 0.3372727272727274,
+      "rank_stability_7_5": 0.19090909090909092,
+      "panel_correlation_J": 0.43356643356643354,
+      "composite_reliability": 0.30335733148361504
+    }
+  ]
+}

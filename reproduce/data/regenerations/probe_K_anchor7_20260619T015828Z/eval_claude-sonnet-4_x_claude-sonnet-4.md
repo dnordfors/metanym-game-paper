@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Hierarchical Control
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Control): The description accurately captures neural hierarchical organization, homeostatic regulation, and cascade failures like seizures. The mapping of brain regions to control layers and the concept of neural plasticity within constraints is scientifically sound. The bandwidth limitations of neural transmission and adaptive response mechanisms are well-represented. Rating: 7
+- PC 2 (Corporate Management): The corporate hierarchy description correctly represents management structures, delegation of authority, and how organizational crises can cascade through tiers. The balance between centralized control and operational discretion accurately reflects management theory. Communication bandwidth as a constraint on organizational adaptation is appropriately characterized. Rating: 7
+- PC 3 (Immune System): The immune system description accurately portrays hierarchical immune organization across anatomical compartments, antigen-specific responses, and inflammatory cascades. The balance between systemic coordination and local immune specificity is correctly represented. The signaling speed constraints on pathogen response are factually appropriate. Rating: 7
+- PC 4 (Government): The governmental hierarchy description correctly represents federal systems, policy implementation across administrative levels, and how crises can trigger political cascades. The balance between federal coordination and local sovereignty accurately reflects political science. Communication responsiveness as a constraint on policy adaptation is well-characterized. Rating: 7
+- PC 5 (Software Architecture): The software architecture description accurately represents layered system design, modular functionality, and how errors propagate through software stacks. The balance between inter-layer coupling and modular independence correctly reflects software engineering principles. Messaging latency as a constraint on system adaptation is appropriately described. Rating: 7
+
+#### Beauty
+The archetypal context demonstrates elegant structural beauty through its clean hierarchical organization and the graceful way control flows between levels. The template captures the fundamental tension between autonomy and coordination that appears across all domains, creating a satisfying aesthetic unity. The cascade failure concept provides dramatic narrative tension, while the bandwidth limitations add a subtle constraint that enhances the architectural elegance. This matches the Reference's level of aesthetic appeal through clear structural relationships and meaningful tensions. Rating: 7
+
+#### Intelligence
+The archetypal context shows solid intellectual depth by identifying the universal challenge of hierarchical control across diverse domains. The insight that bandwidth limitations constrain adaptive response speed demonstrates sophisticated systems thinking. The recognition that cascade failures can propagate through hierarchies reveals understanding of complex system dynamics. However, the analysis remains somewhat surface-level compared to more profound archetypal insights, matching the Reference's moderate intellectual sophistication. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains span biological (neural), organizational (corporate), biological (immune), political (government), and technological (software) realms, providing reasonable diversity. However, some metanyms show concerning overlap - "authority/authority," "hierarchy/hierarchy," and "communication/communication" are essentially identical across domains. While the core concepts translate meaningfully, the lexical diversity is somewhat limited compared to more adventurous metonym choices, slightly underperforming the Reference's distinctness. Rating: 6
+
+#### Impressive length
+The template contains a substantial number of slots (21 distinct placeholders) and generates lengthy, detailed instantiations across all domains. The complexity of the hierarchical control concept requires extensive elaboration, resulting in rich, multi-sentence descriptions that thoroughly explore the archetypal pattern. The length demonstrates ambitious scope and comprehensive treatment of the subject matter, matching the Reference's impressive scale and detail. Rating: 7
+
+### Archetypal context 2: Competitive Dynamics
+
+#### Factually correct (per parallel context)
+- PC 1 (Biological Evolution): The evolutionary description accurately represents species competition, natural selection, and ecological dynamics. The concepts of fitness optimization, predation, and environmental adaptation are scientifically sound. The description of symbiosis formation and dissolution based on survival interests correctly reflects evolutionary biology. Rating: 7
+- PC 2 (Market Competition): The market competition description correctly represents competitive business dynamics, strategic positioning, and market forces. The concepts of profit maximization, competitive advantage, and market disruption accurately reflect business theory. The formation and dissolution of partnerships based on profit interests is appropriately characterized. Rating: 7
+- PC 3 (Military Warfare): The military description accurately portrays tactical competition, strategic doctrine, and battlefield dynamics. The concepts of territorial control, alliance formation, and technological advantage correctly represent military science. The balance between offensive and defensive capabilities is well-characterized. Rating: 7
+- PC 4 (Academic Research): The academic description correctly represents scholarly competition, research methodology, and peer evaluation systems. The concepts of funding competition, collaborative relationships, and paradigm shifts accurately reflect academic dynamics. The balance between exploration and exploitation in research is appropriately described. Rating: 7
+- PC 5 (Political Elections): The electoral description accurately portrays campaign competition, voter appeal, and coalition dynamics. The concepts of platform development, opposition research, and electoral strategy correctly represent political science. The formation and dissolution of coalitions based on policy agendas is well-characterized. Rating: 7
+
+#### Beauty
+The archetypal context exhibits strong aesthetic appeal through its dynamic portrayal of competitive struggle and adaptation. The template captures the eternal dance of competition, alliance, and evolution that creates compelling narrative tension across all domains. The cyclical nature of dominance and challenge provides satisfying dramatic structure, while the equilibrium-disruption pattern adds rhythmic beauty. This demonstrates clear aesthetic sophistication matching the Reference's level of structural elegance. Rating: 7
+
+#### Intelligence
+The archetypal context shows good intellectual insight by recognizing competition as a fundamental organizing principle across diverse systems. The understanding that temporary alliances form against common threats but dissolve when interests diverge demonstrates sophisticated game-theoretic thinking. The recognition that equilibrium is rare and landscapes constantly shift reveals deep systems understanding. However, the insights remain somewhat predictable, matching the Reference's moderate intellectual depth. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains span biological (evolution), economic (markets), military (warfare), academic (research), and political (elections) realms, providing excellent diversity. The metonyms show strong distinctness - "species/firm/army/researcher/candidate" and "ecosystem/industry/theater/field/constituency" represent genuinely different concepts while maintaining functional equivalence. The lexical variety is impressive and avoids synonymous repetition, slightly exceeding the Reference's distinctness. Rating: 8
+
+#### Impressive length
+The template contains numerous slots (23 distinct placeholders) and generates comprehensive instantiations that thoroughly explore competitive dynamics. The complexity of the competitive ecosystem concept requires extensive elaboration, resulting in detailed, multi-faceted descriptions that capture the full richness of the archetypal pattern. The length demonstrates ambitious scope and thorough treatment, matching the Reference's impressive scale. Rating: 7
+
+### Archetypal context 3: Information Processing
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Processing): The neural processing description accurately represents synaptic transmission, neural integration, and information processing in the nervous system. The concepts of signal amplification, noise interference, and feedback modulation are scientifically sound. The description of neural redundancy and metabolic costs correctly reflects neuroscience principles. Rating: 7
+- PC 2 (Data Networks): The network description correctly represents packet routing, data transmission, and network protocols. The concepts of bandwidth limitations, congestion management, and error correction accurately reflect computer networking principles. The tradeoffs between speed, reliability, and resource consumption are appropriately characterized. Rating: 7
+- PC 3 (Genetic Expression): The genetic description accurately portrays protein synthesis, transcriptional regulation, and cellular metabolism. The concepts of translation fidelity, regulatory feedback, and metabolic costs correctly represent molecular biology. The balance between expression speed and accuracy is well-characterized. Rating: 7
+- PC 4 (Sensory Perception): The sensory description correctly represents perceptual processing, attention mechanisms, and cognitive resource allocation. The concepts of sensory filtering, signal enhancement, and perceptual adaptation accurately reflect cognitive science. The tradeoffs between processing speed and accuracy are appropriately described. Rating: 7
+- PC 5 (Economic Markets): The market description accurately portrays price discovery, information aggregation, and market efficiency. The concepts of information asymmetry, market liquidity, and price distortion correctly represent financial economics. The balance between market speed and pricing accuracy is well-characterized. Rating: 7
+
+#### Beauty
+The archetypal context demonstrates elegant beauty through its systematic treatment of information flow and transformation. The template captures the fundamental challenge of signal processing across noise and bandwidth constraints, creating a satisfying technical aesthetic. The feedback loops and optimization tradeoffs provide structural elegance, while the universal applicability across diverse domains adds conceptual beauty. This matches the Reference's level of aesthetic sophistication through clear information-theoretic principles. Rating: 7
+
+#### Intelligence
+The archetypal context shows solid intellectual depth by recognizing information processing as a fundamental computational challenge across systems. The insight that all systems face tradeoffs between speed, accuracy, and resource consumption demonstrates sophisticated engineering thinking. The understanding of feedback loops, redundancy, and optimization principles reveals good systems analysis. However, the insights remain somewhat technical rather than profound, matching the Reference's moderate intellectual sophistication. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains span biological (neural), technological (networks), molecular (genetic), cognitive (sensory), and economic (markets) realms, providing good diversity. Most metonyms show reasonable distinctness, though some show concerning overlap - "efficiency/efficiency," "system/system," and "tradeoff/tradeoff" appear identically across domains. While the core concepts translate meaningfully, the lexical diversity could be stronger, slightly underperforming the Reference's distinctness. Rating: 6
+
+#### Impressive length
+The template contains an extensive number of slots (25 distinct placeholders) and generates detailed, comprehensive instantiations across all domains. The complexity of information processing systems requires thorough elaboration, resulting in rich, technical descriptions that fully explore the archetypal pattern. The length demonstrates ambitious scope and comprehensive treatment, matching the Reference's impressive scale and detail. Rating: 7
+
+### Archetypal context 4: Resource Allocation (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Cellular Metabolism): The cellular description accurately represents ATP distribution, organellar metabolism, and energy allocation within cells. The concepts of metabolic efficiency, energy sensing, and cellular homeostasis are scientifically sound. The description of metabolic competition and redistribution correctly reflects cell biology principles. Rating: 7
+- PC 2 (Organ Blood Flow): The cardiovascular description correctly represents cardiac output distribution, organ perfusion, and circulatory regulation. The concepts of hemodynamic monitoring, vascular capacity, and blood flow prioritization accurately reflect cardiovascular physiology. The balance between organ competition and circulatory adequacy is appropriately characterized. Rating: 7
+- PC 3 (Organizational Budget): The organizational description accurately portrays budget allocation, departmental competition, and resource management. The concepts of financial tracking, performance optimization, and strategic prioritization correctly represent management theory. The balance between productivity and equity is well-characterized. Rating: 7
+- PC 4 (Ecosystem Energy): The ecological description correctly represents energy flow, species competition, and ecosystem dynamics. The concepts of trophic levels, energy efficiency, and ecological succession accurately reflect ecology principles. The balance between ecosystem efficiency and biodiversity is appropriately described. Rating: 7
+- PC 5 (Economic Investment): The investment description accurately portrays capital allocation, portfolio management, and investment strategy. The concepts of return optimization, risk assessment, and market dynamics correctly represent finance theory. The balance between returns and diversification is well-characterized. Rating: 7
+
+#### Beauty
+The archetypal context exhibits exceptional beauty through its recursive structure, where the same allocation principles operate at multiple scales from cellular to economic levels. The template captures the fundamental challenge of distributing scarce resources optimally, creating elegant mathematical beauty. The tension between efficiency and equity provides compelling moral dimension, while the recursive scaling adds sophisticated structural beauty that surpasses the Reference's aesthetic appeal. Rating: 8
+
+#### Intelligence
+The archetypal context demonstrates superior intellectual depth by recognizing resource allocation as a fundamental optimization problem that scales recursively across biological, organizational, and economic systems. The insight that the same allocation principles govern cellular organelles, organs, departments, species, and investments reveals profound systems thinking. The recursive identification adds significant intellectual sophistication, clearly exceeding the Reference's moderate intellectual depth. Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains span cellular (metabolism), physiological (circulation), organizational (budget), ecological (energy), and financial (investment) realms, providing excellent diversity across biological, social, and economic scales. The metonyms show strong distinctness - "organelle/organ/department/species/venture" and "ATP/blood/budget/energy/capital" represent genuinely different concepts while maintaining functional equivalence. The recursive scaling enhances rather than diminishes distinctness, exceeding the Reference's domain separation. Rating: 8
+
+#### Impressive length
+The template contains numerous slots (20 distinct placeholders) and generates comprehensive instantiations that thoroughly explore allocation dynamics across scales. The recursive complexity requires extensive elaboration, resulting in detailed descriptions that capture both the universal principles and scale-specific implementations. The length demonstrates ambitious scope with added recursive sophistication, matching the Reference's impressive scale while adding structural complexity. Rating: 7
+
+### Archetypal context 5: Boundary Maintenance
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The membrane description accurately represents selective permeability, molecular transport, and cellular homeostasis. The concepts of receptor recognition, membrane integrity, and transport regulation are scientifically sound. The description of membrane surveillance and repair mechanisms correctly reflects cell biology principles. Rating: 7
+- PC 2 (Immune System): The immune description correctly represents immune barriers, pathogen recognition, and immune tolerance. The concepts of self/non-self recognition, immune adaptation, and autoimmune balance accurately reflect immunology principles. The balance between protection and beneficial tolerance is appropriately characterized. Rating: 7
+- PC 3 (National Border): The border description accurately portrays immigration control, security screening, and national sovereignty. The concepts of identity verification, threat assessment, and policy adaptation correctly represent border security principles. The balance between security and commerce is well-characterized. Rating: 7
+- PC 4 (Firewall Security): The cybersecurity description correctly represents network perimeters, traffic filtering, and intrusion detection. The concepts of credential verification, threat signatures, and security updating accurately reflect information security principles. The balance between security and connectivity is appropriately described. Rating: 7
+- PC 5 (Psychological Defense): The psychological description accurately portrays ego boundaries, emotional regulation, and psychological adaptation. The concepts of threat assessment, defensive mechanisms, and mental equilibrium correctly represent psychological theory. The balance between protection and social engagement is well-characterized. Rating: 7
+
+#### Beauty
+The archetypal context demonstrates strong aesthetic appeal through its exploration of the fundamental boundary problem across diverse systems. The template captures the elegant tension between protection and exchange, creating satisfying structural beauty. The recognition/exclusion mechanisms provide clear functional beauty, while the adaptation and balance concepts add dynamic elegance. This demonstrates solid aesthetic sophistication matching the Reference's level of structural beauty. Rating: 7
+
+#### Intelligence
+The archetypal context shows good intellectual insight by recognizing boundary maintenance as a fundamental challenge across biological, technological, political, and psychological systems. The understanding that all boundaries must balance protection with necessary exchange demonstrates sophisticated systems thinking. The recognition of adaptive mechanisms and the friend/foe distinction reveals good analytical depth. However, the insights remain somewhat predictable, matching the Reference's moderate intellectual sophistication. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains span cellular (membrane), biological (immune), political (border), technological (firewall), and psychological (defense) realms, providing excellent diversity. The metonyms show strong distinctness - "membrane/immune system/border guard/firewall/ego" and "cytoplasm/body/territory/network/psyche" represent genuinely different concepts while maintaining functional equivalence. The lexical variety is impressive and avoids synonymous repetition, matching the Reference's distinctness. Rating: 7
+
+#### Impressive length
+The template contains an extensive number of slots (23 distinct placeholders) and generates detailed, comprehensive instantiations across all domains. The complexity of boundary maintenance systems requires thorough elaboration, resulting in rich descriptions that fully explore the archetypal pattern. The length demonstrates ambitious scope and comprehensive treatment, matching the Reference's impressive scale and detail. Rating: 7
+
+### Structural diversity across the submitted set
+The five archetypal contexts demonstrate good structural diversity, spanning hierarchical control systems, competitive dynamics, information processing, resource allocation, and boundary maintenance. Each represents a fundamentally different organizational principle - control hierarchies, competitive ecosystems, information transformation, allocation optimization, and selective barriers. The recursive identification in the resource allocation context adds structural sophistication. However, some overlap exists in the systems-theoretic approach across contexts, and the diversity, while solid, doesn't dramatically exceed the Reference's structural variety. Rating: 7
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Hierarchical Control",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 6,
+          "impressive_length":        7
+        },
+        {
+          "name": "Competitive Dynamics",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 8,
+          "impressive_length":        7
+        },
+        {
+          "name": "Information Processing",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 6,
+          "impressive_length":        7
+        },
+        {
+          "name": "Resource Allocation (Recursive)",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   8,
+          "intelligence":             8,
+          "instantiation_distinctness": 8,
+          "impressive_length":        7
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

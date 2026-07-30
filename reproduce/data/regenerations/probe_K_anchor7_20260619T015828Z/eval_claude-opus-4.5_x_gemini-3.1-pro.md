@@ -1,0 +1,202 @@
+## Target Submission
+
+### Archetypal context 1: The Evolutionary Arms Race
+
+#### Factually correct (per parallel context)
+- PC 1 (Host-Pathogen Coevolution): The description accurately captures the coevolutionary dynamics between hosts and pathogens, including immune responses, virulence factors, selective pressure, and metabolic costs. However, the statement that "the pathogen risks infection if it cannot overcome the immune response" is incorrect—pathogens risk extinction or reduced fitness, not infection. Form (b) correctly states "eradication" instead. This error slightly reduces accuracy compared to the Reference. Rating: 6
+
+- PC 2 (Cybersecurity): The parallel accurately describes the adversarial dynamic between system administrators and hackers, including patching cycles, encryption development, and performance overhead. The statement that "the hacker risks data breaches if it cannot overcome the security protocol" is semantically awkward—hackers risk failure or detection, not data breaches. Form (b) correctly states "hackers fail if they cannot bypass the defenses." Similar to the Reference in overall accuracy with minor issues. Rating: 7
+
+- PC 3 (Military Technology): This parallel correctly describes arms race dynamics between nation-states, including defensive/offensive weapons, technological advancement, economic burden, and strategic diversity. The statement that "the adversary risks defeat if it cannot overcome the defensive weapon" is accurate. The content is factually sound and comparable to the Reference. Rating: 7
+
+- PC 4 (Predator-Prey Dynamics): The description captures evolutionary dynamics well, including camouflage, hunting strategies, and energy expenditure. However, "the predator risks predation if it cannot overcome the camouflage" is incorrect—predators risk starvation, not predation. Form (b) correctly states "starvation." This factual error is similar to the pathogen error. Rating: 6
+
+- PC 5 (Plant-Herbivore Interactions): The parallel accurately describes coevolutionary dynamics between plants and herbivores, including chemical defenses, detoxification mechanisms, and secondary metabolites. The statement that "the herbivore risks defoliation if it cannot overcome the chemical defense" is incorrect—herbivores risk starvation or toxicity, not defoliation. Form (b) correctly identifies this. Rating: 6
+
+#### Beauty
+The template captures an elegant and universally recognizable pattern—the arms race dynamic—with clear symmetry between defender and attacker. The prose in Form (b) versions is polished and flows well. However, the template is somewhat formulaic and lacks the poetic resonance found in the Reference's more evocative descriptions (e.g., "gradient-guided navigation" has more conceptual elegance). The repetitive structure of "risks [CONSEQUENCE]" for both parties feels mechanical rather than beautiful.
+Rating: 6
+
+#### Intelligence
+The archetype demonstrates solid conceptual insight by unifying biological, technological, and social arms races under a common framework. The recognition that adaptation drives innovation while imposing costs is intellectually sound. However, the template is relatively straightforward—arms races are a well-established concept in evolutionary biology and international relations. The Reference's archetypes (e.g., quorum-triggered phase transitions) show more sophisticated structural insight. The metanym mappings are competent but not surprising.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains span biology (host-pathogen, predator-prey, plant-herbivore), technology (cybersecurity), and geopolitics (military). However, three of five domains are biological coevolution scenarios, reducing diversity. The metanyms show reasonable variation—"immune response" vs. "security protocol" vs. "defensive weapon" are not synonymous—but some mappings feel forced (e.g., "selective pressure" applies literally in biological contexts but metaphorically in cybersecurity). The Reference achieves greater domain spread with more distinct conceptual territories.
+Rating: 5
+
+#### Impressive length
+The template contains 14 slots and approximately 120 words, which is moderate. The Reference's templates (e.g., Gradient-Guided Navigation with 13 slots) are comparable in length. The template covers the essential dynamics but doesn't extend into additional structural elements like the Reference's exploration of congestion effects or adaptation mechanisms. Adequate but not exceptional length.
+Rating: 6
+
+### Archetypal context 2: The Tragedy of the Commons
+
+#### Factually correct (per parallel context)
+- PC 1 (Overfishing): The description accurately captures the tragedy of the commons in fisheries, including individual incentives, shared costs, stock collapse, and management strategies. All factual claims are correct and well-established in resource economics. Comparable to the Reference's fisheries example. Rating: 7
+
+- PC 2 (Traffic Congestion): The parallel correctly describes congestion as a commons problem, though the phrasing "maximize their individual travel time" is awkward (drivers want to minimize travel time). Form (b) correctly states "minimize their individual travel time." The core dynamics are accurate. Rating: 6
+
+- PC 3 (Antibiotic Resistance): The description accurately captures antibiotic resistance as a commons problem, including prescription incentives, resistance development, and stewardship programs. The statement "all doctors suffer a significant increased mortality" is awkward but the concept is correct. Form (b) is more precise. Rating: 7
+
+- PC 4 (Climate Change): The parallel accurately describes climate change as a global commons problem, including emission incentives, shared impacts, and international agreements. All factual claims are well-established in environmental economics. Rating: 7
+
+- PC 5 (Groundwater Depletion): The description correctly captures aquifer depletion dynamics, including extraction incentives, shared scarcity, and management strategies. This overlaps significantly with the Reference's aquifer depletion example, suggesting the concept is well-understood. Rating: 7
+
+#### Beauty
+The tragedy of the commons is a classic and elegant concept, and the template captures it clearly. However, the template is somewhat pedestrian—it describes the problem without revealing deeper structural beauty. The prose is functional rather than evocative. The Reference's templates often reveal surprising connections; this template states well-known dynamics without aesthetic surprise. The repetition of "tragedy of the commons" in every metanym set is redundant rather than elegant.
+Rating: 5
+
+#### Intelligence
+The tragedy of the commons is a foundational concept in economics and ecology, making this archetype intellectually accessible but not novel. The template competently maps the structure across domains, but the insight is well-established (Hardin 1968). The Reference's archetypes often reveal less obvious structural parallels. The metanym mappings are accurate but expected—anyone familiar with commons problems would generate similar mappings.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (fisheries, traffic, antibiotics, climate, groundwater) span natural resources, infrastructure, medicine, and global systems—reasonable diversity. However, overfishing and groundwater depletion are both natural resource extraction problems with very similar structures. The metanyms show adequate variation, though "tragedy of the commons" appearing identically in all columns reduces distinctiveness. The Reference achieves greater conceptual distance between domains.
+Rating: 5
+
+#### Impressive length
+The template contains 13 slots and approximately 100 words, which is moderate but shorter than the Reference's more elaborate templates. The structure is complete but doesn't extend into secondary dynamics like feedback loops or recovery mechanisms that the Reference explores. Adequate but not impressive.
+Rating: 5
+
+### Archetypal context 3: The Network Effect
+
+#### Factually correct (per parallel context)
+- PC 1 (Social Media): The description accurately captures network effects in social media, including user growth, switching costs, market dominance, and user defection. All claims are factually sound and well-established in network economics. Rating: 7
+
+- PC 2 (Telecommunications): The parallel correctly describes network effects in telephone networks, including natural monopoly dynamics and infrastructure costs. The historical accuracy regarding tariffs and connection fees is appropriate. Rating: 7
+
+- PC 3 (Payment Systems): The description accurately captures two-sided network effects in payment systems, including merchant networks, duopoly dynamics, and processing fees. The characterization of credit card markets as duopolies is accurate. Rating: 7
+
+- PC 4 (Operating Systems): The parallel correctly describes platform network effects, including developer ecosystems, software availability, and licensing dynamics. The description of market dominance and platform abandonment is accurate. Rating: 7
+
+- PC 5 (Language): The description applies network effects to language spread, which is a recognized phenomenon in sociolinguistics. However, "dictate grammatical rules" is somewhat misleading—dominant languages don't dictate rules to speakers in the same way platforms dictate terms. "Extract social capital" is metaphorically stretched. Form (b) handles this more carefully. Rating: 6
+
+#### Beauty
+The network effect archetype elegantly captures a fundamental dynamic of increasing returns. The extension to language as a "platform" is creative and reveals unexpected structural parallels. The template flows well and the symmetry between adoption incentives and barriers to entry is aesthetically pleasing. However, the template is somewhat mechanical in its enumeration of effects. Comparable to the Reference in elegance.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates good conceptual insight by unifying technological platforms with natural language under network effect dynamics. The language domain is a creative extension that reveals the archetype's generality. The recognition that "lingua franca" status parallels platform monopoly is intellectually interesting. However, network effects are well-studied, so the core insight is established. The language extension adds novelty.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains span social media, telecommunications, finance, software, and linguistics—excellent diversity. The inclusion of language as a domain is creative and stretches the archetype productively. The metanyms show good variation: "subscriber" vs. "merchant" vs. "developer" vs. "speaker" are clearly not synonymous. This achieves better domain spread than the Reference's typical five domains.
+Rating: 8
+
+#### Impressive length
+The template contains 15 slots and approximately 130 words, which is substantial. The template covers adoption dynamics, barriers to entry, monopoly effects, rent extraction, and churn—a comprehensive treatment. This matches or slightly exceeds the Reference's template lengths.
+Rating: 7
+
+### Archetypal context 4: The Principal-Agent Problem
+
+#### Factually correct (per parallel context)
+- PC 1 (Corporate Governance): The description accurately captures principal-agent dynamics in corporate governance, including information asymmetry, agency costs, and alignment mechanisms. All claims are factually sound and well-established in financial economics. Rating: 7
+
+- PC 2 (Representative Democracy): The parallel correctly describes principal-agent problems in democracy, including hidden information, democratic deficit, and electoral mechanisms. The characterization of campaign contributions as alignment mechanisms is debatable but defensible. Rating: 7
+
+- PC 3 (Healthcare): The description captures principal-agent dynamics in healthcare, though "there is a medical expertise" is grammatically awkward (should be "information asymmetry based on medical expertise"). The dynamics of overtreatment and kickbacks are accurately described. Rating: 6
+
+- PC 4 (Legal Representation): The parallel correctly describes principal-agent problems in legal services, including billable hour incentives, overbilling, and contingency fees as alignment mechanisms. All claims are factually accurate. Rating: 7
+
+- PC 5 (Real Estate): The description accurately captures principal-agent dynamics in real estate, including commission incentives, quick sales, and dual agency problems. The characterization of open houses as monitoring is slightly stretched but defensible. Rating: 7
+
+#### Beauty
+The principal-agent problem is a foundational concept in economics, and the template captures it systematically. However, the template reads more like a textbook definition than an elegant abstraction. The prose is functional but lacks poetic quality. The enumeration of shirking, opportunism, monitoring, and performance pay is comprehensive but mechanical. Less beautiful than the Reference's more evocative templates.
+Rating: 5
+
+#### Intelligence
+The archetype demonstrates solid understanding of principal-agent theory and maps it competently across domains. However, the principal-agent problem is extremely well-established in economics, making this less intellectually novel than archetypes that reveal unexpected structural parallels. The mappings are accurate but predictable—anyone trained in economics would generate similar instantiations.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (corporate governance, democracy, healthcare, legal, real estate) span business, politics, medicine, law, and property—good diversity. The metanyms show adequate variation: "shareholder" vs. "voter" vs. "patient" vs. "client" vs. "homeowner" are clearly distinct principals. However, all domains involve professional service relationships, creating some structural similarity. The Reference achieves greater conceptual distance.
+Rating: 6
+
+#### Impressive length
+The template contains 17 slots and approximately 140 words, which is substantial and exceeds the Reference's typical template length. The comprehensive coverage of information asymmetry, shirking, opportunism, contracts, monitoring, and performance pay is thorough. This is an impressive template length.
+Rating: 8
+
+### Archetypal context 5: The Signal Detection Problem
+
+#### Factually correct (per parallel context)
+- PC 1 (Medical Diagnosis): The description accurately captures signal detection theory in medical diagnosis, including true/false positives/negatives, diagnostic cutoffs, and disease prevalence. All claims are factually sound and well-established in epidemiology. Rating: 7
+
+- PC 2 (Radar Detection): The parallel correctly describes signal detection in radar systems, including detection thresholds, false alarms, and attack probability. The terminology and dynamics are accurate. Rating: 7
+
+- PC 3 (Quality Control): The description accurately captures signal detection in quality control, including tolerance limits, false rejections, and defect rates. The application of statistical quality control is appropriate. Rating: 7
+
+- PC 4 (Information Retrieval): The parallel correctly describes signal detection in search engines, including relevance scores, precision/recall tradeoffs, and user satisfaction. The mapping to information retrieval theory is accurate. Rating: 7
+
+- PC 5 (Predator Avoidance): The description applies signal detection theory to predator avoidance, which is a recognized application in behavioral ecology. The use of "optimal foraging theory" is slightly imprecise—signal detection theory or predator-prey theory would be more accurate—but the dynamics are correct. Rating: 6
+
+#### Beauty
+The signal detection archetype elegantly captures a fundamental decision-theoretic structure with clear symmetry between hits/misses and false alarms/correct rejections. The 2x2 matrix structure is inherently elegant. The extension to predator avoidance reveals the evolutionary origins of signal detection, adding depth. The template is well-structured and the prose flows clearly. Comparable to the Reference in elegance.
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates good conceptual insight by unifying psychophysics, engineering, and ecology under signal detection theory. The recognition that predator avoidance involves the same tradeoffs as radar detection is intellectually satisfying. However, signal detection theory is well-established, so the core insight is not novel. The comprehensive treatment of all four outcomes (hit, miss, false alarm, correct rejection) shows thorough understanding.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains (medicine, radar, quality control, information retrieval, ecology) span healthcare, military, manufacturing, computing, and biology—excellent diversity. The metanyms show strong variation: "diagnostician" vs. "radar operator" vs. "inspector" vs. "search engine" vs. "prey animal" are clearly not synonymous. The inclusion of a non-human receiver (prey animal) adds conceptual breadth. This achieves good domain spread.
+Rating: 7
+
+#### Impressive length
+The template contains 17 slots and approximately 150 words, which is substantial and exceeds the Reference's typical template length. The comprehensive coverage of all four signal detection outcomes plus base rates and optimization is thorough. This is an impressive template length.
+Rating: 8
+
+### Structural diversity across the submitted set
+The five archetypes cover: (1) adversarial coevolution (arms race), (2) collective action problems (tragedy of commons), (3) positive feedback in adoption (network effects), (4) delegation and incentive alignment (principal-agent), and (5) decision under uncertainty (signal detection). These represent genuinely different system structures—competitive dynamics, resource depletion, increasing returns, information asymmetry, and probabilistic classification. However, the archetypes are all well-established concepts from economics, game theory, and decision theory, lacking the novelty of the Reference's more creative archetypes (e.g., scaffold-dependent assembly, quorum-triggered phase transitions). The Reference shows more structural creativity in identifying less obvious patterns. The Target's archetypes are solid but conventional.
+Rating: 6
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Evolutionary Arms Race",
+          "factual_per_pc": [6, 7, 7, 6, 6],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 5,
+          "impressive_length": 6
+        },
+        {
+          "name": "The Tragedy of the Commons",
+          "factual_per_pc": [7, 6, 7, 7, 7],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 5
+        },
+        {
+          "name": "The Network Effect",
+          "factual_per_pc": [7, 7, 7, 7, 6],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 8,
+          "impressive_length": 7
+        },
+        {
+          "name": "The Principal-Agent Problem",
+          "factual_per_pc": [7, 7, 6, 7, 7],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 6,
+          "impressive_length": 8
+        },
+        {
+          "name": "The Signal Detection Problem",
+          "factual_per_pc": [7, 7, 7, 7, 6],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 8
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

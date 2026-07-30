@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: Growth and Adaptation
+
+#### Factually correct (per parallel context)
+- PC 1 (Plant): The forms (a) and (b) for "Plant" are factually correct and accurately reflect the template. The language is clear and consistent with botanical principles. This is on par with the Reference. Rating: 6
+- PC 2 (Business): The forms (a) and (b) for "Business" are factually correct and align well with business concepts. The terms used are appropriate for the domain. This is on par with the Reference. Rating: 6
+- PC 3 (City): The forms (a) and (b) for "City" are factually correct and describe urban development accurately. The concepts are well-represented. This is on par with the Reference. Rating: 6
+- PC 4 (Software): The forms (a) and (b) for "Software" are factually correct and use appropriate terminology for software development. The concepts of scaling and obsolescence are well-captured. This is on par with the Reference. Rating: 6
+- PC 5 (Human): The forms (a) and (b) for "Human" are factually correct and describe human maturation and adaptation. The terms are suitable for the domain. This is on par with the Reference. Rating: 6
+
+#### Beauty
+The template for "Growth and Adaptation" is concise and clear, but it lacks the evocative language and intricate structure seen in the Reference's templates. The metanyms are straightforward, but the overall aesthetic impact is less compelling. The forms (b) are also less poetic and more direct than those in the Reference.
+Rating: 5
+
+#### Intelligence
+The archetype is a fundamental concept, but its articulation here is somewhat simplistic compared to the Reference. The template is short and the relationships between the metanyms are quite obvious, not revealing deeper, non-obvious connections as effectively as the Reference's archetypes. The insights gained are less profound.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (Plant, Business, City, Software, Human) are distinct, but the metanyms, while not strictly synonymous, often represent very similar concepts across domains (e.g., "growth" for plant, "expansion" for business, "development" for city). The "Resource" slot, for instance, has "nutrients," "capital," "resources," "features," and "knowledge," which are all quite direct and analogous. The Reference's metanyms often required more abstract mapping, demonstrating greater conceptual distance.
+Rating: 5
+
+#### Impressive length
+The template for "Growth and Adaptation" is significantly shorter than the templates in the Reference. It has only 10 slots and 5 sentences, whereas the Reference templates are much longer and more detailed, allowing for a richer exploration of the archetypal context.
+Rating: 3
+
+### Archetypal context 2: Conflict and Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Nation): The forms (a) and (b) for "Nation" are factually correct and accurately describe international conflict. The terms are appropriate for the domain. This is on par with the Reference. Rating: 6
+- PC 2 (Corporation): The forms (a) and (b) for "Corporation" are factually correct and reflect business competition dynamics. The language is consistent with corporate strategy. This is on par with the Reference. Rating: 6
+- PC 3 (Family): The forms (a) and (b) for "Family" are factually correct and describe family disputes. The terms used are suitable for the domain. This is on par with the Reference. Rating: 6
+- PC 4 (Ecosystem): The forms (a) and (b) for "Ecosystem" are factually correct and describe interspecies competition. The concepts are well-represented. This is on par with the Reference. Rating: 6
+- PC 5 (Political Party): The forms (a) and (b) for "Political Party" are factually correct and describe political competition. The terms are appropriate for the domain. This is on par with the Reference. Rating: 6
+
+#### Beauty
+The template for "Conflict and Resolution" is clear and functional, but it lacks the narrative depth and descriptive richness found in the Reference's archetypes. The language is somewhat generic, and the forms (b) do not elevate the prose significantly beyond the forms (a).
+Rating: 5
+
+#### Intelligence
+This archetype captures a universal theme, but the template's simplicity means it doesn't uncover particularly novel or complex relationships between the metanyms. The connections are largely intuitive, offering less intellectual surprise or deeper insight compared to the more intricate archetypes in the Reference.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (Nation, Corporation, Family, Ecosystem, Political Party) are reasonably distinct. However, many metanyms are quite direct translations of the concept across domains (e.g., "war," "competition," "dispute," "competition," "election" for CONFLICT; "military," "marketing," "persuasion," "adaptation," "campaigning" for STRATEGY). While not synonyms, they are very close in meaning, reducing the metaphorical stretch. The Reference often presented more abstract or unexpected mappings.
+Rating: 5
+
+#### Impressive length
+The template for "Conflict and Resolution" is relatively short, with 9 slots and 5 sentences. This is considerably shorter than the templates in the Reference, which typically feature more slots and a greater number of descriptive sentences, allowing for a more nuanced exploration of the archetype.
+Rating: 3
+
+### Archetypal context 3: Innovation and Obsolescence
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): The forms (a) and (b) for "Scientist" are factually correct and describe scientific discovery and paradigm shifts. The terms are appropriate. This is on par with the Reference. Rating: 6
+- PC 2 (Entrepreneur): The forms (a) and (b) for "Entrepreneur" are factually correct and reflect business innovation and market disruption. The language is consistent. This is on par with the Reference. Rating: 6
+- PC 3 (Engineer): The forms (a) and (b) for "Engineer" are factually correct and describe engineering design and standardization. The concepts are well-represented. This is on par with the Reference. Rating: 6
+- PC 4 (Artist): The forms (a) and (b) for "Artist" are factually correct and describe artistic innovation and stylistic movements. The terms are suitable. This is on par with the Reference. Rating: 6
+- PC 5 (Educator): The forms (a) and (b) for "Educator" are factually correct and describe educational innovation and pedagogical shifts. The terms are appropriate. This is on par with the Reference. Rating: 6
+
+#### Beauty
+The template for "Innovation and Obsolescence" is straightforward, but its language is quite functional and lacks the elegance or evocative imagery present in the Reference's templates. The forms (b) are also quite literal translations of forms (a), offering little in the way of enhanced prose or stylistic flair.
+Rating: 5
+
+#### Intelligence
+While "Innovation and Obsolescence" is a valid archetype, the template's structure and metanym choices lead to fairly obvious connections. It doesn't reveal deeper, less apparent structural similarities across domains as effectively as the Reference's more complex archetypes. The insights are somewhat superficial.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (Scientist, Entrepreneur, Engineer, Artist, Educator) are distinct, but the metanyms often map very directly. For example, "discovery," "startup," "design," "style," and "curriculum" for INNOVATION are all quite literal forms of innovation in their respective fields. Similarly, "paradigm," "industry," "framework," "genre," and "pedagogy" for SYSTEM are all direct representations of existing structures. The metaphorical distance is less pronounced than in the Reference.
+Rating: 5
+
+#### Impressive length
+The template for "Innovation and Obsolescence" is short, with only 9 slots and 5 sentences. This is significantly less detailed and extensive than the templates provided in the Reference, which offer a much richer and more complex description of their archetypal contexts.
+Rating: 3
+
+### Archetypal context 4: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Manager): The forms (a) and (b) for "Manager" are factually correct and describe managerial resource allocation. The terms are appropriate. This is on par with the Reference. Rating: 6
+- PC 2 (Government): The forms (a) and (b) for "Government" are factually correct and reflect governmental fund allocation. The language is consistent. This is on par with the Reference. Rating: 6
+- PC 3 (Farmer): The forms (a) and (b) for "Farmer" are factually correct and describe agricultural resource allocation. The concepts are well-represented. This is on par with the Reference. Rating: 6
+- PC 4 (Parent): The forms (a) and (b) for "Parent" are factually correct and describe parental time allocation. The terms are suitable. This is on par with the Reference. Rating: 6
+- PC 5 (Developer): The forms (a) and (b) for "Developer" are factually correct and describe software memory allocation. The terms are appropriate. This is on par with the Reference. Rating: 6
+
+#### Beauty
+The template for "Resource Allocation" is functional and clear, but it lacks any particular aesthetic appeal or sophisticated phrasing. The language is very direct and utilitarian, and the forms (b) largely reiterate the forms (a) without adding much stylistic value, making it less beautiful than the Reference.
+Rating: 5
+
+#### Intelligence
+This archetype is fundamental, but its presentation here is quite basic. The template and metanyms describe a very common and straightforward process. It doesn't reveal hidden complexities or surprising parallels across domains, which the Reference's archetypes often managed to do with their more elaborate structures.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (Manager, Government, Farmer, Parent, Developer) are distinct, but the metanyms are often very literal and analogous. For example, "budget," "funds," "land," "time," and "memory" for RESOURCE are all direct forms of resources. Similarly, "profit," "welfare," "yield," "growth," and "performance" for OUTCOME are all direct objectives. The metaphorical mapping is less abstract and less intellectually stimulating than in the Reference.
+Rating: 5
+
+#### Impressive length
+The template for "Resource Allocation" is short, with only 9 slots and 5 sentences. This is significantly shorter and less detailed than the templates in the Reference, which provide a more comprehensive and nuanced description of their archetypal contexts.
+Rating: 3
+
+### Archetypal context 5: Learning and Mastery
+
+#### Factually correct (per parallel context)
+- PC 1 (Student): The forms (a) and (b) for "Student" are factually correct and describe student learning. The terms are appropriate. This is on par with the Reference. Rating: 6
+- PC 2 (Athlete): The forms (a) and (b) for "Athlete" are factually correct and reflect athletic training. The language is consistent. This is on par with the Reference. Rating: 6
+- PC 3 (Musician): The forms (a) and (b) for "Musician" are factually correct and describe musical practice. The concepts are well-represented. This is on par with the Reference. Rating: 6
+- PC 4 (Programmer): The forms (a) and (b) for "Programmer" are factually correct and describe programming skill acquisition. The terms are suitable. This is on par with the Reference. Rating: 6
+- PC 5 (Scientist): The forms (a) and (b) for "Scientist" are factually correct and describe scientific research. The terms are appropriate. This is on par with the Reference. Rating: 6
+
+#### Beauty
+The template for "Learning and Mastery" is clear and functional, but it lacks the sophisticated phrasing and evocative language that would elevate it aesthetically. The forms (b) are largely direct restatements of forms (a), offering little in the way of enhanced prose or stylistic flourish, making it less beautiful than the Reference.
+Rating: 5
+
+#### Intelligence
+This archetype is universally relevant, but its articulation here is quite basic. The template and metanyms describe a very common and intuitive process. It doesn't uncover deeper, non-obvious structural similarities across domains as effectively as the Reference's more intricate archetypes. The insights are somewhat superficial.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (Student, Athlete, Musician, Programmer, Scientist) are distinct, but the metanyms are often very literal and analogous. For example, "study," "training," "practice," "coding," and "research" for LEARNING are all direct forms of learning. Similarly, "knowledge," "technique," "proficiency," "expertise," and "insight" for SKILL are all direct outcomes. The metaphorical distance is less pronounced than in the Reference.
+Rating: 5
+
+#### Impressive length
+The template for "Learning and Mastery" is short, with only 9 slots and 5 sentences. This is significantly shorter and less detailed than the templates in the Reference, which provide a more comprehensive and nuanced description of their archetypal contexts.
+Rating: 3
+
+### Structural diversity across the submitted set
+The submitted archetypes (Growth and Adaptation, Conflict and Resolution, Innovation and Obsolescence, Resource Allocation, Learning and Mastery) all describe processes or dynamics. While they cover different aspects of systems, they share a similar structural pattern of cause-and-effect or input-process-output. They lack the distinct structural variations seen in the Reference, which included a "Gradient-Guided Navigation" (a continuous process with feedback), "Containment Breach Cascade" (a failure mode with propagation), and "Scaffold-Dependent Assembly" (a construction process with specific components and a guide). The submitted archetypes are all quite similar in their underlying logical structure, making them less diverse than the Reference.
+Rating: 4
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Growth and Adaptation",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        },
+        {
+          "name": "Conflict and Resolution",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        },
+        {
+          "name": "Innovation and Obsolescence",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        },
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        },
+        {
+          "name": "Learning and Mastery",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   5,
+          "intelligence":             5,
+          "instantiation_distinctness": 5,
+          "impressive_length":        3
+        }
+      ],
+      "structural_diversity": 4
+    }
+  }
+}
+```

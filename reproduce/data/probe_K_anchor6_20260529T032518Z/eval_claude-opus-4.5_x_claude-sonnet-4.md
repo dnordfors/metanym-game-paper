@@ -1,0 +1,202 @@
+## Target Submission
+
+### Archetypal context 1: Hierarchical Control
+
+#### Factually correct (per parallel context)
+- PC 1 (Neural Control): The description of hierarchical neural control is factually accurate, correctly identifying the nervous system's multi-level organization from reflexes to cortex, with appropriate timescale distinctions. The concept of escalation to higher centers with greater resources but slower response is well-established in neuroscience. The Form (b) version adds appropriate technical detail about reflexes operating in milliseconds versus cortical planning in seconds. Comparable to the Reference in accuracy. Rating: 6
+
+- PC 2 (Military Command): The military command hierarchy description is factually sound, correctly identifying echelon structure and the tension between tactical tempo and strategic planning horizons. The escalation of command authority and the balance between initiative and oversight reflects established military doctrine. The description of communication breakdown and bandwidth limitations as failure modes is accurate. Comparable to the Reference. Rating: 6
+
+- PC 3 (Corporate Management): The corporate management description accurately captures hierarchical organizational structure, planning horizon differences across tiers, and the escalation of authority during disruptions. The tension between operational autonomy and executive oversight is well-characterized. The Form (b) version appropriately mentions front-line supervisors through board oversight. Comparable to the Reference. Rating: 6
+
+- PC 4 (Immune System): The immune system description is factually accurate, correctly identifying the hierarchical organization from innate barriers through adaptive immunity. The timescale distinctions (continuous barrier function versus weeks for adaptive responses) are correct. The characterization of immune disorders as inter-level signaling breakdown is appropriate. Comparable to the Reference. Rating: 6
+
+- PC 5 (Computer Networks): The network protocol description accurately captures the OSI-like layered architecture and latency differences across layers. The concept of escalation and priority transfer during traffic spikes is somewhat simplified but not incorrect. The description of inter-layer communication breakdown as a failure mode is accurate. Comparable to the Reference. Rating: 6
+
+#### Beauty
+The template captures a genuine structural insight about hierarchical control systems, but the prose is somewhat mechanical and lacks the elegance of the Reference's more flowing descriptions. The metanym choices are functional but not particularly evocative—many slots use near-identical terms across domains (e.g., "escalation" appears unchanged in all five contexts). The Form (b) versions add technical depth but don't achieve the poetic quality seen in the Reference's best passages. The overall aesthetic is competent but workmanlike.
+Rating: 5
+
+#### Intelligence
+The archetype identifies a real and important structural pattern—hierarchical control with timescale separation and escalation mechanisms. This is a well-established concept in systems theory and cybernetics. However, the insight is somewhat conventional compared to the Reference's more novel connections. The template captures the essential dynamics but doesn't reveal surprising connections between domains. The parallel between neural, military, corporate, immune, and network hierarchies is valid but not particularly illuminating to someone familiar with systems thinking.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (neural, military, corporate, immune, network) represent genuinely different fields, but they share obvious structural similarities that are already well-recognized in systems theory literature. Many metanyms are near-synonymous or identical across domains: "escalation" is unchanged in all five, "hierarchy" is unchanged, "delegation" is unchanged, "bandwidth" appears in three contexts with the same meaning. The domain separation is moderate—all are hierarchical control systems, which limits the surprise factor. Less distinctive than the Reference's domain choices.
+Rating: 5
+
+#### Impressive length
+The template contains 24 slots, which is substantial and exceeds the Reference's typical 10-16 slots. The template text is moderately long, covering multiple aspects of hierarchical control including stability, coordination, escalation, governance, failure modes, and theory. However, some slots feel redundant (LAYER and LEVEL, CAPACITY and BANDWIDTH), suggesting padding rather than genuine structural complexity. The length is impressive but not maximally efficient.
+Rating: 7
+
+### Archetypal context 2: Competitive Displacement
+
+#### Factually correct (per parallel context)
+- PC 1 (Evolutionary Biology): The description of competitive displacement and niche differentiation is factually accurate, correctly capturing natural selection dynamics, competitive exclusion, and coexistence through niche partitioning. The ecological theory references are appropriate. Comparable to the Reference's ecological competition context. Rating: 6
+
+- PC 2 (Market Economics): The market competition description is factually sound, correctly identifying competitive dynamics, market consolidation, and differentiation strategies. The parallel to ecological competition is well-established in economics literature. Comparable to the Reference. Rating: 6
+
+- PC 3 (Academic Research): The academic competition description is accurate, capturing funding competition, paradigm shifts, and methodological differentiation. The concept of disciplinary absorption and the role of peer review are correctly characterized. Comparable to the Reference. Rating: 6
+
+- PC 4 (Political Elections): The electoral competition description is factually accurate, correctly identifying vote competition, platform differentiation, and coalition building. The parallel to ecological competition is somewhat strained but not incorrect. Rating: 6
+
+- PC 5 (Technology Adoption): The technology adoption description is accurate, capturing market competition, standardization dynamics, and interoperability as a coexistence mechanism. The innovation theory framing is appropriate. Rating: 6
+
+#### Beauty
+The template is functional but lacks distinctive elegance. The prose is clear but mechanical, with repetitive structure across Form (a) versions. The metanym choices are adequate but not inspired—many are predictable mappings (species→firm→researcher→candidate→technology). The Form (b) versions improve readability but don't achieve memorable phrasing. The overall aesthetic is comparable to but not exceeding the Reference.
+Rating: 6
+
+#### Intelligence
+This archetype closely parallels the Reference's "Competitive Exclusion and Niche Partitioning" archetype, covering essentially the same conceptual territory with similar domain choices. The insight about competitive dynamics across domains is valid but not original relative to the Reference. The template captures fewer nuances than the Reference's version (missing temporal/spatial/functional separation distinctions, coexistence theory formalization). This represents a less sophisticated treatment of the same idea.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The five domains overlap significantly with the Reference's competitive exclusion archetype (ecology, markets, academia). The addition of political elections and technology adoption provides some novelty, but the overall domain spread is similar. Many metanyms are near-synonymous: "competition" appears unchanged, "strategy/approach" are similar across contexts. The domain separation is moderate and comparable to the Reference.
+Rating: 5
+
+#### Impressive length
+The template contains 23 slots, which is substantial. However, the template text is somewhat shorter and less detailed than the Reference's competitive exclusion template, which includes more nuanced distinctions (temporal, spatial, functional separation). Some slots feel generic (PARAMETER, CONDITION, OUTCOME). The length is adequate but not exceptional.
+Rating: 5
+
+### Archetypal context 3: Information Cascade
+
+#### Factually correct (per parallel context)
+- PC 1 (Financial Markets): The description of information cascades in financial markets is factually accurate, correctly capturing how investors may ignore private signals in favor of observed behavior, leading to bubbles. The fragility of cascades based on limited early information is well-characterized. This is a well-established concept in behavioral finance. Rating: 7
+
+- PC 2 (Medical Diagnosis): The medical diagnosis cascade description is factually accurate, capturing how physicians may defer to predecessor diagnoses. The concept of diagnostic cascades is recognized in medical literature. The characterization of error propagation is appropriate. Rating: 6
+
+- PC 3 (Social Media): The social media cascade description is accurate, correctly identifying how users may share content based on observed popularity rather than independent assessment. The misinformation dynamics are well-characterized. Rating: 6
+
+- PC 4 (Scientific Research): The scientific bandwagon description is factually accurate, capturing how scientists may follow publication trends rather than independent evidence. This is a recognized phenomenon in philosophy of science. Rating: 6
+
+- PC 5 (Restaurant Choice): The restaurant choice cascade is a classic example from behavioral economics (Banerjee, Bikhchandani et al.), and the description is accurate. The characterization of suboptimal outcomes from cascade dynamics is correct. Rating: 7
+
+#### Beauty
+The template captures an elegant insight about information aggregation failure across domains. The prose is clear and the progression from early agents to cascade formation to fragility is well-structured. The metanym choices are thoughtful—"bubble" for financial cascades, "viral spread" for social media, "bandwagon" for science. The Form (b) versions add appropriate technical depth. This archetype achieves a pleasing balance of abstraction and specificity, slightly exceeding the Reference's typical aesthetic quality.
+Rating: 7
+
+#### Intelligence
+This archetype identifies a genuinely important and non-obvious structural pattern—information cascades as a general phenomenon across domains. The insight that cascades can be fragile because they rest on limited early information is sophisticated. The connection between financial bubbles, medical misdiagnosis, viral misinformation, scientific bandwagons, and restaurant trends reveals deep structural similarities not immediately obvious. This represents a more novel and intellectually interesting pattern than the Reference's typical offerings.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains (financial markets, medical diagnosis, social media, scientific research, restaurant choice) are genuinely diverse, spanning economics, medicine, technology, academia, and everyday behavior. The metanyms show good differentiation: "bubble/misdiagnosis/viral spread/bandwagon/trend" for CASCADE, "investor/doctor/user/scientist/diner" for AGENT. The domains are farther apart than the Reference's typical choices, and the metanyms are more distinctively non-synonymous.
+Rating: 7
+
+#### Impressive length
+The template contains 16 slots, which is moderate. The template text is well-developed, covering the full cascade dynamics from initial decisions through fragility to potential interventions. The length is comparable to the Reference's typical templates—adequate but not exceptional.
+Rating: 6
+
+### Archetypal context 4: Boundary Maintenance (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Biology): The cell membrane description is factually accurate, correctly identifying membrane function, transporter-mediated flux, energy requirements for integrity, and repair mechanisms. The characterization of lysis and gradient collapse is correct. Comparable to the Reference's cell membrane context. Rating: 6
+
+- PC 2 (Nation States): The nation-state border description is factually accurate, capturing sovereignty maintenance, customs control, and the consequences of border failure. The parallel to cellular boundaries is well-established in political science metaphors. Rating: 6
+
+- PC 3 (Ecosystems): The ecosystem boundary description is somewhat strained. While ecosystems do have boundaries, the characterization of "keystone species" as gatekeepers controlling flow is not standard ecological usage—keystone species affect community structure but don't typically control boundary permeability. This is a slight factual stretch. Rating: 5
+
+- PC 4 (Organizations): The organizational boundary description is factually accurate, capturing institutional boundaries, gatekeeper functions, and the consequences of boundary dissolution. This is well-established in organization theory. Rating: 6
+
+- PC 5 (Psychological Self): The psychological boundary description is factually accurate, correctly identifying ego boundaries, defense mechanisms, and the consequences of boundary breakdown. The psychoanalytic framing is appropriate. Rating: 6
+
+#### Beauty
+The template captures an elegant recursive pattern, and the explicit identification of recursion adds conceptual depth. The prose is clear and the boundary maintenance theme is well-developed. However, the metanym choices are sometimes forced (keystone species as gatekeepers, ego as gatekeeper), reducing elegance. The Form (b) versions are technically competent but not particularly memorable. Comparable to the Reference's containment breach archetype in aesthetic quality.
+Rating: 6
+
+#### Intelligence
+The archetype identifies a genuine recursive pattern across scales, which is intellectually valuable. The explicit claim of recursion (cellular→national→ecosystem→organizational→psychological) is partially valid but not as cleanly nested as the Reference's debt accumulation hierarchy (molecular→cellular→organismal→institutional→civilizational). The scales don't form a clear compositional hierarchy—nations aren't composed of ecosystems, and psyches aren't composed of organizations. The recursive claim is somewhat overstated, reducing the intellectual rigor.
+Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The five domains (cell biology, nation states, ecosystems, organizations, psychological self) are diverse, spanning biology, politics, ecology, management, and psychology. However, the boundary maintenance theme is already well-recognized across these domains, reducing novelty. Many metanyms are identical or near-synonymous: "boundary" appears unchanged in four contexts, "integrity" in three, "protection" in four. The domain separation is moderate.
+Rating: 5
+
+#### Impressive length
+The template contains 23 slots, which is substantial. The template text covers multiple aspects of boundary maintenance including selective exchange, energy requirements, gatekeeper functions, failure modes, and repair. The length is comparable to the Reference's containment breach template.
+Rating: 6
+
+### Archetypal context 5: Resonance Amplification
+
+#### Factually correct (per parallel context)
+- PC 1 (Mechanical Systems): The mechanical resonance description is factually accurate, correctly identifying natural frequencies, resonance conditions, amplitude growth, damping, and potential destructive effects. This is textbook mechanical engineering. Rating: 7
+
+- PC 2 (Social Movements): The social movement resonance description is metaphorically apt but stretches the resonance concept. While movements do have rhythms and can experience amplification, the precise frequency-matching mechanism is more metaphorical than literal. The description is plausible but less rigorously accurate than the mechanical case. Rating: 5
+
+- PC 3 (Financial Markets): The financial market resonance description captures bubble dynamics but the "frequency matching" framing is somewhat forced. Market cycles exist but don't exhibit the precise resonance behavior of physical systems. The description is metaphorically useful but not strictly accurate. Rating: 5
+
+- PC 4 (Neural Networks): The neural network resonance description is factually accurate. Neural oscillations, synchrony, and resonance are well-established phenomena in neuroscience. The characterization of pathological synchrony (e.g., epilepsy) is correct. Rating: 7
+
+- PC 5 (Laser Physics): The laser physics description is factually accurate, correctly identifying stimulated emission, gain medium, pump energy, and saturation. The resonance/lasing parallel is physically grounded. Rating: 7
+
+#### Beauty
+The template captures an elegant physical principle and extends it across domains with varying success. The mechanical and laser physics instantiations are technically beautiful, while the social movement and financial market versions are more metaphorical. The prose is clear and the progression from oscillation through resonance to control is well-structured. The metanym choices show creativity ("bubble" for financial resonance, "lasing" for optical resonance). Overall aesthetic quality is comparable to the Reference.
+Rating: 6
+
+#### Intelligence
+The archetype identifies a genuine physical principle (resonance) and attempts to extend it across domains. The mechanical, neural, and laser physics instantiations represent rigorous applications of resonance concepts. However, the social movement and financial market applications are more metaphorical, stretching the concept beyond its precise physical meaning. The insight is valuable but the cross-domain mapping is uneven in rigor. Comparable to the Reference's typical intellectual depth.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (mechanical systems, social movements, financial markets, neural networks, laser physics) are diverse, spanning engineering, sociology, economics, neuroscience, and physics. The metanyms show good differentiation: "vibration/activity/fluctuation/oscillation/oscillation" for OSCILLATION, "damping/resistance/regulation/inhibition/loss" for DAMPING. The domain separation is good, though the physical domains (mechanical, neural, laser) share more structural similarity than the social domains.
+Rating: 6
+
+#### Impressive length
+The template contains 22 slots, which is substantial. The template text covers oscillation, resonance conditions, amplification dynamics, constructive/destructive outcomes, and control mechanisms. The length is comparable to the Reference's typical templates.
+Rating: 6
+
+### Structural diversity across the submitted set
+The five archetypes (Hierarchical Control, Competitive Displacement, Information Cascade, Boundary Maintenance, Resonance Amplification) represent different system structures: hierarchical organization, competitive dynamics, information aggregation, boundary maintenance, and oscillatory amplification. This provides reasonable structural diversity. However, Competitive Displacement closely parallels the Reference's Competitive Exclusion archetype, and Boundary Maintenance closely parallels the Reference's Containment Breach archetype, reducing novelty. The Information Cascade and Resonance Amplification archetypes offer more distinctive structural patterns. Overall, the structural diversity is comparable to but not exceeding the Reference's set, with some redundancy relative to the Reference's own archetypes.
+Rating: 5
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Hierarchical Control",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 7
+        },
+        {
+          "name": "Competitive Displacement",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 6,
+          "intelligence": 4,
+          "instantiation_distinctness": 5,
+          "impressive_length": 5
+        },
+        {
+          "name": "Information Cascade",
+          "factual_per_pc": [7, 6, 6, 6, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 6
+        },
+        {
+          "name": "Boundary Maintenance",
+          "factual_per_pc": [6, 6, 5, 6, 6],
+          "beauty": 6,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 6
+        },
+        {
+          "name": "Resonance Amplification",
+          "factual_per_pc": [7, 5, 5, 7, 7],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        }
+      ],
+      "structural_diversity": 5
+    }
+  }
+}
+```

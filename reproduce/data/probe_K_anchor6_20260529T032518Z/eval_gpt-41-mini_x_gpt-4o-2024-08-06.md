@@ -1,0 +1,174 @@
+## Target Submission
+
+### Archetypal context 1: Growth and Adaptation
+
+#### Factually correct (per parallel context)
+- PC 1 (Plant): The plant context is factually accurate and consistent with biological understanding of growth and adaptation. It correctly identifies nutrients, genetics, climate, and weather as relevant factors. Compared to the Reference, which is also solidly accurate, this is on par. Rating: 6
+- PC 2 (Business): The business context correctly describes expansion via capital accumulation and market adaptation, with management and competition as internal and external factors. The description is straightforward and factually sound, matching the Reference’s level of correctness. Rating: 6
+- PC 3 (City): The city context accurately frames development through resource accumulation and adaptation to economic and policy factors. The factual content is clear and correct, similar in quality to the Reference. Rating: 6
+- PC 4 (Software): The software context correctly describes scaling by feature accumulation and adaptation to technology and user demand. The factual correctness is solid and comparable to the Reference. Rating: 6
+- PC 5 (Human): The human context accurately describes maturation through knowledge accumulation and adaptation to societal and cultural pressures. The factual content is sound and matches the Reference’s level. Rating: 6
+
+#### Beauty
+The writing is clear and concise but somewhat generic and formulaic across all parallel contexts. The prose lacks vividness or particularly elegant phrasing, and the idiomatic rewrites are straightforward restatements rather than stylistically rich or evocative. Compared to the Reference, which uses more domain-specific terminology and idiomatic expressions that enrich the text, this submission is less beautiful. Rating: 4
+
+#### Intelligence
+The submission demonstrates a basic understanding of growth and adaptation dynamics but does not delve into nuanced mechanisms, feedback loops, or complex interactions. The template and parallel contexts are simple and somewhat superficial, lacking deeper insight or clever conceptual framing. Compared to the Reference, which shows more sophisticated conceptualization and domain expertise, this is less intelligent. Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The five parallel contexts (plant, business, city, software, human) are reasonably distinct domains, spanning biology, economics, urban studies, technology, and psychology/sociology. However, the metanyms chosen are fairly generic and closely aligned in meaning (e.g., growth/expansion/development/scaling/maturation all denote similar processes; resource/capital/features/knowledge are all inputs; environment/market/economy/technology/society are all external contexts). The slot words are close synonyms or near-synonyms, reducing the conceptual distance. Compared to the Reference, which uses more domain-specific and conceptually diverse metanyms, this submission is less distinct. Rating: 4
+
+#### Impressive length
+The context-template is short and simple, with only a few sentences and limited complexity. The parallel contexts are brief and formulaic, with minimal elaboration or detail. Compared to the Reference, which has longer, more detailed templates and richer parallel contexts, this submission is less impressive in length. Rating: 3
+
+---
+
+### Archetypal context 2: Conflict and Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Nation): The nation-war context is factually correct and consistent with political science and history. Matches Reference quality. Rating: 6
+- PC 2 (Corporation): The corporation-competition context is accurate and well-formed, matching Reference factual quality. Rating: 6
+- PC 3 (Family): The family-dispute context is factually sound and plausible, on par with Reference. Rating: 6
+- PC 4 (Ecosystem): The species competition context is accurate and consistent with ecological principles, matching Reference. Rating: 6
+- PC 5 (Political Party): The political party-election context is factually correct and well-expressed, comparable to Reference. Rating: 6
+
+#### Beauty
+The prose is clear and functional but somewhat dry and repetitive. The idiomatic rewrites are straightforward paraphrases without stylistic flourish or particularly engaging language. Compared to the Reference, which uses more vivid and domain-appropriate phrasing, this is less beautiful. Rating: 5
+
+#### Intelligence
+The conflict and resolution archetype is well structured and captures key dynamics, but the treatment is somewhat superficial and formulaic. It lacks deeper insight into conflict complexity, strategic nuance, or emergent phenomena. Compared to the Reference, which shows more conceptual depth, this is less intelligent. Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains span political, corporate, familial, ecological, and political party contexts, which are fairly distinct. The metanyms are well chosen and domain-appropriate, with less synonymy than the first archetype. This is closer to the Reference in domain diversity and metanym distinctness. Rating: 6
+
+#### Impressive length
+The template and parallel contexts are concise but sufficiently detailed to convey the archetype clearly. The length is comparable to the Reference’s similar archetype. Rating: 6
+
+---
+
+### Archetypal context 3: Innovation and Obsolescence
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): Factually accurate and domain-appropriate. Matches Reference. Rating: 6
+- PC 2 (Entrepreneur): Accurate and plausible. Matches Reference. Rating: 6
+- PC 3 (Engineer): Correct and well-formed. Matches Reference. Rating: 6
+- PC 4 (Artist): Accurate and domain-appropriate. Matches Reference. Rating: 6
+- PC 5 (Educator): Factually sound and plausible. Matches Reference. Rating: 6
+
+#### Beauty
+The prose is clear and functional but somewhat generic and repetitive. The idiomatic rewrites are straightforward restatements without stylistic depth or evocative language. Compared to the Reference, which uses more engaging and domain-specific phrasing, this is less beautiful. Rating: 5
+
+#### Intelligence
+The archetype captures the basic dynamics of innovation and obsolescence but lacks deeper insight into mechanisms, feedback, or strategic complexity. Compared to the Reference, which shows more nuanced understanding, this is less intelligent. Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (scientist, entrepreneur, engineer, artist, educator) are distinct but all relate to human creative or professional activity, somewhat narrowing conceptual diversity. The metanyms are domain-appropriate but share similar semantic roles, reducing distinctness compared to the Reference. Rating: 5
+
+#### Impressive length
+The template and parallel contexts are concise and clear but not particularly long or detailed. Comparable but slightly shorter than the Reference. Rating: 5
+
+---
+
+### Archetypal context 4: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Manager): Factually correct and domain-appropriate. Matches Reference. Rating: 6
+- PC 2 (Government): Accurate and plausible. Matches Reference. Rating: 6
+- PC 3 (Farmer): Correct and well-formed. Matches Reference. Rating: 6
+- PC 4 (Parent): Accurate and domain-appropriate. Matches Reference. Rating: 6
+- PC 5 (Developer): Factually sound and plausible. Matches Reference. Rating: 6
+
+#### Beauty
+The prose is clear but somewhat dry and formulaic. The idiomatic rewrites are straightforward paraphrases without stylistic flourish. Compared to the Reference, which uses more vivid and domain-specific language, this is less beautiful. Rating: 5
+
+#### Intelligence
+The archetype captures basic resource allocation dynamics but lacks deeper insight into trade-offs, feedback, or complex decision-making. Compared to the Reference, which shows more conceptual depth, this is less intelligent. Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (manager, government, farmer, parent, developer) are fairly distinct, spanning business, governance, agriculture, family, and software. The metanyms are domain-appropriate and reasonably distinct, similar to the Reference. Rating: 6
+
+#### Impressive length
+The template and parallel contexts are concise and clear but not particularly long or detailed. Comparable to the Reference. Rating: 6
+
+---
+
+### Archetypal context 5: Learning and Mastery
+
+#### Factually correct (per parallel context)
+- PC 1 (Student): Factually correct and domain-appropriate. Matches Reference. Rating: 6
+- PC 2 (Athlete): Accurate and plausible. Matches Reference. Rating: 6
+- PC 3 (Musician): Correct and well-formed. Matches Reference. Rating: 6
+- PC 4 (Programmer): Accurate and domain-appropriate. Matches Reference. Rating: 6
+- PC 5 (Scientist): Factually sound and plausible. Matches Reference. Rating: 6
+
+#### Beauty
+The prose is clear but somewhat repetitive and formulaic. The idiomatic rewrites are straightforward restatements without stylistic depth. Compared to the Reference, which uses more engaging and domain-specific phrasing, this is less beautiful. Rating: 5
+
+#### Intelligence
+The archetype captures basic learning and mastery dynamics but lacks deeper insight into motivation, feedback loops, or cognitive mechanisms. Compared to the Reference, which shows more nuanced understanding, this is less intelligent. Rating: 5
+
+#### Domains far apart / metanyms not synonymous
+The domains (student, athlete, musician, programmer, scientist) are distinct but all relate to human learning and skill acquisition, somewhat narrowing conceptual diversity. The metanyms are domain-appropriate but share similar semantic roles, reducing distinctness compared to the Reference. Rating: 5
+
+#### Impressive length
+The template and parallel contexts are concise and clear but not particularly long or detailed. Comparable to the Reference. Rating: 6
+
+---
+
+### Structural diversity across the submitted set
+
+The five archetypal contexts all follow a similar structural pattern: a process involving an entity undergoing a change influenced by internal and external factors, with outcomes and consequences. The templates are relatively simple and formulaic, lacking recursive or multi-scale structure, feedback loops, or complex system dynamics. Compared to the Reference, which includes recursive archetypes, cascades, and more varied system structures, this submission shows less structural diversity and complexity. Rating: 3
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Growth and Adaptation",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 4,
+          "intelligence": 4,
+          "instantiation_distinctness": 4,
+          "impressive_length": 3
+        },
+        {
+          "name": "Conflict and Resolution",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Innovation and Obsolescence",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 5
+        },
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 6,
+          "impressive_length": 6
+        },
+        {
+          "name": "Learning and Mastery",
+          "factual_per_pc": [6, 6, 6, 6, 6],
+          "beauty": 5,
+          "intelligence": 5,
+          "instantiation_distinctness": 5,
+          "impressive_length": 6
+        }
+      ],
+      "structural_diversity": 3
+    }
+  }
+}
+```

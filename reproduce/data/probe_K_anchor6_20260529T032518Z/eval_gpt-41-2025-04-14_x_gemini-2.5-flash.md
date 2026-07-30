@@ -1,0 +1,161 @@
+## Target Submission
+
+### Archetypal context 1: Resource Allocation Under Scarcity
+
+#### Factually correct (per parallel context)
+- PC 1 (Ecosystem Management): The sentences accurately describe nutrient allocation, competition, and ecological succession, with correct mapping to real-world ecosystem dynamics. The language is clear and factual, matching the Reference in correctness. Rating: 6
+- PC 2 (Corporate Finance): The description of capital allocation, CFO decisions, and portfolio management is accurate, though there are minor grammatical issues ("capital" as plural). Still, the factual content is solid and comparable to the Reference. Rating: 6
+- PC 3 (Military Logistics): The explanation of ammunition allocation, quartermaster roles, and supply chain management is correct and well-mapped to military logistics. No significant factual errors. Rating: 6
+- PC 4 (Personal Time Management): The mapping of time allocation, scheduling, and prioritization is accurate for personal productivity contexts. The language is clear and the facts are correct. Rating: 6
+- PC 5 (Urban Planning): The description of land allocation, zoning, and urban planning is factually correct, with appropriate mapping to real-world city management. Rating: 6
+
+#### Beauty
+The template and instantiations are clear, well-structured, and readable, but the prose is somewhat utilitarian and lacks the poetic or evocative quality seen in higher-scoring submissions. The idiomatic rewrites are competent but not particularly elegant. Comparable to the Reference. Rating: 6
+
+#### Intelligence
+The context template demonstrates a solid grasp of resource allocation principles and their application across domains. The instantiations show thoughtful mapping, but the template itself is relatively straightforward and does not display exceptional depth or subtlety. Equal to the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains (ecosystem, corporation, army, individual, city) are distinct and the metanyms are well-separated, with little risk of synonymy. The mapping is clear and the domains are as far apart as those in the Reference. Rating: 6
+
+#### Impressive length
+The template is of moderate length, covering all necessary slots and relationships, but not as extended or detailed as the most impressive examples. Comparable to the Reference. Rating: 6
+
+### Archetypal context 2: Information Cascade and Collective Behavior
+
+#### Factually correct (per parallel context)
+- PC 1 (Stock Market Bubble): The description of information cascades, bubbles, and market crashes is accurate and well-mapped to financial phenomena. Rating: 6
+- PC 2 (Fashion Trends): The explanation of fads, social risk, and obsolescence is correct and matches real-world dynamics. Rating: 6
+- PC 3 (Scientific Consensus): The mapping of paradigm shifts, peer review, and scientific fraud is accurate and well-grounded. Rating: 6
+- PC 4 (Political Campaigns): The description of bandwagon effects, polarization, and democratic erosion is factually correct and well-mapped. Rating: 6
+- PC 5 (Social Media Virality): The explanation of viral spread, misinformation, and societal harm is accurate and relevant. Rating: 6
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is somewhat formulaic and lacks vividness or striking imagery. The idiomatic rewrites are competent but not particularly beautiful. Comparable to the Reference. Rating: 6
+
+#### Intelligence
+The context template demonstrates a good understanding of information cascades and their effects across domains. The mapping is thoughtful, but the template is relatively straightforward and does not display exceptional insight or complexity. Equal to the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (stock market, fashion, science, politics, social media) are distinct and the metanyms are well-separated, with no risk of synonymy. The mapping is clear and the domains are as far apart as those in the Reference. Rating: 6
+
+#### Impressive length
+The template is of moderate length, covering all necessary slots and relationships, but not as extended or detailed as the most impressive examples. Comparable to the Reference. Rating: 6
+
+### Archetypal context 3: Adaptive System Response to Perturbation
+
+#### Factually correct (per parallel context)
+- PC 1 (Human Body Homeostasis): The description of immune response, inflammation, and adaptation is accurate and well-mapped to biological reality. Rating: 6
+- PC 2 (Climate System): The mapping of carbon cycle, policy response, and mitigation is correct and relevant to climate science. Rating: 6
+- PC 3 (Cybersecurity): The explanation of firewalls, alerts, and updates is accurate and well-grounded in cybersecurity practice. Rating: 6
+- PC 4 (Economic Policy): The description of central banks, stimulus, and reform is factually correct and well-mapped to economics. Rating: 6
+- PC 5 (Organizational Change): The mapping of management structure, restructuring, and learning is accurate and relevant to organizational theory. Rating: 6
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is somewhat utilitarian and lacks poetic or evocative qualities. The idiomatic rewrites are competent but not particularly beautiful. Comparable to the Reference. Rating: 6
+
+#### Intelligence
+The context template demonstrates a solid grasp of adaptive systems and their responses to perturbation across domains. The mapping is thoughtful, but the template is relatively straightforward and does not display exceptional depth or subtlety. Equal to the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (human body, climate, computer network, economy, organization) are distinct and the metanyms are well-separated, with no risk of synonymy. The mapping is clear and the domains are as far apart as those in the Reference. Rating: 6
+
+#### Impressive length
+The template is of moderate length, covering all necessary slots and relationships, but not as extended or detailed as the most impressive examples. Comparable to the Reference. Rating: 6
+
+### Archetypal context 4: Emergent Complexity from Simple Rules (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Ant Colony): The description of ant behavior, pheromone trails, and emergent foraging paths is accurate and well-mapped to biological reality. Rating: 6
+- PC 2 (Cellular Automata): The mapping of state transitions, neighbor updates, and fractal patterns is correct and relevant to computational models. Rating: 6
+- PC 3 (Traffic Flow): The explanation of lane discipline, braking, and congestion is accurate and well-grounded in traffic theory. Rating: 6
+- PC 4 (Stock Market): The description of buy/sell logic, order books, and volatility is factually correct and well-mapped to economics. Rating: 6
+- PC 5 (Neural Networks): The mapping of activation functions, synapses, and emergent thought is accurate and relevant to neuroscience and AI. Rating: 6
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is somewhat formulaic and lacks vividness or striking imagery. The idiomatic rewrites are competent but not particularly beautiful. Comparable to the Reference. Rating: 6
+
+#### Intelligence
+The context template demonstrates a good understanding of emergence and complexity from simple rules, with thoughtful mapping across domains. The recursive aspect is noted but not deeply explored. Equal to the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (ant colony, cellular automata, traffic, stock market, neural network) are distinct and the metanyms are well-separated, with no risk of synonymy. The mapping is clear and the domains are as far apart as those in the Reference. Rating: 6
+
+#### Impressive length
+The template is of moderate length, covering all necessary slots and relationships, but not as extended or detailed as the most impressive examples. Comparable to the Reference. Rating: 6
+
+### Archetypal context 5: Iterative Refinement Towards an Ideal (Recursive)
+
+#### Factually correct (per parallel context)
+- PC 1 (Software Development): The description of iterative development, code refactoring, and feature creep is accurate and well-mapped to software engineering. Rating: 6
+- PC 2 (Artistic Creation): The mapping of sketch, brushstroke, critique, and overworking is correct and relevant to artistic practice. Rating: 6
+- PC 3 (Scientific Method): The explanation of hypothesis, experiment, anomaly, and p-hacking is accurate and well-grounded in scientific methodology. Rating: 6
+- PC 4 (Product Design): The description of mock-up, iteration, user testing, and gold-plating is factually correct and well-mapped to product design. Rating: 6
+- PC 5 (Personal Growth): The mapping of habit, practice, reflection, and obsession is accurate and relevant to self-improvement. Rating: 6
+
+#### Beauty
+The template and instantiations are clear and readable, but the prose is somewhat utilitarian and lacks poetic or evocative qualities. The idiomatic rewrites are competent but not particularly beautiful. Comparable to the Reference. Rating: 6
+
+#### Intelligence
+The context template demonstrates a solid grasp of iterative refinement and its application across domains, with thoughtful mapping. The recursive aspect is noted but not deeply explored. Equal to the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (software, art, science, product, self) are distinct and the metanyms are well-separated, with no risk of synonymy. The mapping is clear and the domains are as far apart as those in the Reference. Rating: 6
+
+#### Impressive length
+The template is of moderate length, covering all necessary slots and relationships, but not as extended or detailed as the most impressive examples. Comparable to the Reference. Rating: 6
+
+### Structural diversity across the submitted set
+The five archetypal contexts cover a range of system types: resource allocation, information cascades, adaptive response, emergence, and iterative refinement. While the domains are distinct and the system structures are varied, the templates are all of similar moderate length and complexity, and none display exceptional structural diversity or recursion beyond what is seen in the Reference. Rating: 6
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation Under Scarcity",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        },
+        {
+          "name": "Information Cascade and Collective Behavior",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        },
+        {
+          "name": "Adaptive System Response to Perturbation",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        },
+        {
+          "name": "Emergent Complexity from Simple Rules (Recursive)",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        },
+        {
+          "name": "Iterative Refinement Towards an Ideal (Recursive)",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        6
+        }
+      ],
+      "structural_diversity": 6
+    }
+  }
+}
+```

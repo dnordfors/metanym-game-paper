@@ -1,0 +1,182 @@
+## Target Submission
+
+### Archetypal context 1: Growth and Adaptation
+
+#### Factually correct (per parallel context)
+- PC 1 (Plant): The statements are generally true, but highly simplistic. Plants do grow by accumulating nutrients and adapting to climate, and genetics/weather are internal/external factors. However, compared to the Reference's detailed and precise biological descriptions (e.g., bacterial chemotaxis), this is superficial. It lacks the depth and specificity that make the Reference's factual claims impressive. Rating: 4
+- PC 2 (Business): The claims are factually correct in a broad sense—businesses expand via capital and adapt to markets. However, the phrasing is generic and lacks the domain-specific rigor seen in the Reference's market competition example. It's a very basic summary rather than a nuanced factual description. Rating: 4
+- PC 3 (City): Cities do develop through resources and adapt to economies, influenced by governance and policy. Again, the facts are correct but extremely high-level and lack the intricate, specific mechanisms detailed in the Reference's examples. Rating: 4
+- PC 4 (Software): Software scaling via features and adapting to technology is a reasonable high-level description. However, "architecture factors" and "user demand pressures" are clunky and lack the technical precision of the Reference's software development example. Rating: 4
+- PC 5 (Human): Humans maturing through knowledge and adapting to society is a valid, albeit very broad, psychological/sociological observation. It lacks the specific, mechanistic factual grounding present in the Reference's biological or social examples. Rating: 4
+
+#### Beauty
+The prose in both Form (a) and Form (b) is highly repetitive, simplistic, and lacks any poetic or elegant flow. The sentences are short, choppy, and follow a very basic subject-verb-object structure without variation. The Reference, in contrast, uses sophisticated vocabulary and varied sentence structures to create engaging, domain-expert prose. The Target's writing feels mechanical and uninspired.
+Rating: 2
+
+#### Intelligence
+The underlying archetype ("things grow and adapt, or they fail") is a trivial observation. It lacks the structural complexity, nuanced relationships, and insightful mapping present in the Reference's archetypes (e.g., the intricate balance of debt accumulation or the specific mechanisms of scaffold-dependent assembly). The Target offers a very shallow abstraction that requires little intellectual effort to map across domains.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains chosen (Plant, Business, City, Software, Human) are reasonably distinct from one another, spanning biology, economics, urban planning, technology, and sociology. However, the metanyms used are often very generic or near-synonyms (e.g., "growth," "expansion," "development," "scaling," "maturation" are all very close in meaning in this context). The Reference achieves much greater semantic distance between its metanyms while maintaining structural integrity.
+Rating: 4
+
+#### Impressive length
+The context-template is extremely short, consisting of only five brief sentences. It contains far fewer slots and less complex logical structure than the Reference templates. The resulting parallel contexts are correspondingly brief and lack detail.
+Rating: 2
+
+### Archetypal context 2: Conflict and Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Nation): The statements are factually correct at a very basic level (nations fight over territory, use military strategy, seek treaties). However, it is a gross oversimplification of geopolitics compared to the nuanced factual descriptions in the Reference. Rating: 4
+- PC 2 (Corporation): Corporations competing over market share due to innovation is a standard business concept. Seeking resolution through a merger/acquisition is also factually sound. Yet, the description remains superficial compared to the Reference. Rating: 4
+- PC 3 (Family): Family disputes over inheritance are common, and mediation is a factual resolution method. The facts are correct but lack the depth and specific terminology that characterize the Reference's examples. Rating: 4
+- PC 4 (Ecosystem): Species competing over habitat due to scarcity is a core ecological concept. However, "symbiosis" is not typically a direct "resolution" to acute competition in the way a treaty or merger is; it's a long-term evolutionary outcome. This makes the factual mapping slightly strained compared to the Reference's precise ecological descriptions. Rating: 3
+- PC 5 (Political Party): Political parties contesting elections for votes is factually correct. However, "debate" aiming for "coalition" to resolve an election is a somewhat inaccurate or overly specific description of political systems (coalitions happen in parliamentary systems, but debates don't directly aim for them). The factual mapping is weaker here. Rating: 3
+
+#### Beauty
+Similar to the first archetype, the prose is stilted, repetitive, and lacks elegance. Form (b) offers only minor variations from Form (a) and fails to achieve the domain-expert tone present in the Reference. The writing is purely functional and lacks aesthetic appeal.
+Rating: 2
+
+#### Intelligence
+The archetype of "conflict and resolution" is a very common and basic narrative structure. The mapping across domains is straightforward and lacks the surprising or insightful connections found in the Reference (e.g., mapping a cell membrane rupture to a data breach). The template does not capture complex systemic dynamics, only a simple sequence of events.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains (Nation, Corporation, Family, Ecosystem, Political Party) are distinct. However, the metanyms are often quite generic (e.g., "war," "competition," "dispute," "election"). While they are not strict synonyms, they don't demonstrate the creative and distant mapping seen in the Reference.
+Rating: 4
+
+#### Impressive length
+The template is very short, consisting of only five sentences. It lacks the detailed elaboration and complex slot interactions present in the Reference templates.
+Rating: 2
+
+### Archetypal context 3: Innovation and Obsolescence
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): The description of scientific paradigms being disrupted by discoveries is factually aligned with Kuhnian philosophy of science. However, it is a very high-level summary lacking the specific mechanistic details found in the Reference. Rating: 4
+- PC 2 (Entrepreneur): Startups disrupting industries and causing previous products to fail is a standard description of market disruption. It is factually correct but superficial. Rating: 4
+- PC 3 (Engineer): Engineers introducing designs that become standards and make old techniques redundant is factually accurate. Again, it lacks the depth and domain-specific terminology of the Reference. Rating: 4
+- PC 4 (Artist): Artistic styles disrupting genres and becoming movements is a valid historical observation. The facts are correct but presented in a very basic manner. Rating: 4
+- PC 5 (Educator): Curricula disrupting pedagogies and becoming models is a reasonable description of educational reform. The factual basis is sound but lacks complexity. Rating: 4
+
+#### Beauty
+The writing remains highly formulaic and repetitive. The sentences are short and lack the varied cadence and sophisticated vocabulary of the Reference. Form (b) does not significantly elevate the prose to a domain-expert level.
+Rating: 2
+
+#### Intelligence
+The concept of "innovation leading to obsolescence" is a well-worn trope. The template captures a very basic sequence of events without delving into the complex systemic interactions or feedback loops that characterize the Reference's archetypes. The mapping is obvious and lacks intellectual depth.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains (Scientist, Entrepreneur, Engineer, Artist, Educator) are somewhat related, all falling under human professional/creative endeavors. This is less diverse than the Reference's spans (e.g., from molecules to civilizations). The metanyms (e.g., "discovery," "startup," "design," "style," "curriculum") are distinct but operate within a relatively narrow conceptual space.
+Rating: 3
+
+#### Impressive length
+The template is extremely brief, containing only four sentences. It is significantly shorter and less complex than the Reference templates.
+Rating: 2
+
+### Archetypal context 4: Resource Allocation
+
+#### Factually correct (per parallel context)
+- PC 1 (Manager): Managers allocating budgets to optimize profit based on cost and strategy is a fundamental and factually correct business principle. However, it is a very basic statement compared to the Reference's detailed descriptions. Rating: 4
+- PC 2 (Government): Governments allocating funds for welfare based on policy is factually accurate. The description is high-level and lacks specific mechanisms. Rating: 4
+- PC 3 (Farmer): Farmers allocating land for yield based on climate is factually correct. It is a simple observation lacking the depth of the Reference's ecological examples. Rating: 4
+- PC 4 (Parent): Parents allocating time for a child's growth based on schedules is a reasonable, albeit slightly clinical, description of parenting. It is factually sound but superficial. Rating: 4
+- PC 5 (Developer): Developers allocating memory for performance based on capacity is a factually correct computer science concept. However, it lacks the technical precision and detail of the Reference's software example. Rating: 4
+
+#### Beauty
+The prose is monotonous and lacks any stylistic flair. The repetitive structure across all parallel contexts makes for dull reading. The Reference's ability to craft engaging, domain-specific narratives is entirely absent here.
+Rating: 2
+
+#### Intelligence
+"Resource allocation" is a very basic economic and decision-making concept. The template provides a trivial abstraction that does not capture any complex systemic dynamics or surprising relationships. The mapping is straightforward and requires little analytical thought.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains (Manager, Government, Farmer, Parent, Developer) offer a decent spread across business, public sector, agriculture, personal life, and technology. The metanyms (e.g., "budget," "funds," "land," "time," "memory") are distinct and not synonymous. This is the strongest aspect of this archetype, though still not as impressive as the Reference.
+Rating: 5
+
+#### Impressive length
+The template is very short, consisting of only five sentences. It lacks the elaboration and structural complexity of the Reference.
+Rating: 2
+
+### Archetypal context 5: Learning and Mastery
+
+#### Factually correct (per parallel context)
+- PC 1 (Student): Students studying to acquire knowledge through repetition and assessment is a factually correct, basic description of education. Rating: 4
+- PC 2 (Athlete): Athletes training to acquire technique through drills and coaching is factually accurate. Rating: 4
+- PC 3 (Musician): Musicians practicing to acquire proficiency through rehearsal and critique is factually sound. Rating: 4
+- PC 4 (Programmer): Programmers coding to acquire expertise through debugging and testing is a correct description of skill acquisition in software. Rating: 4
+- PC 5 (Scientist): Scientists researching to acquire insight through experimentation and peer review is factually accurate. Rating: 4
+
+#### Beauty
+The writing is extremely repetitive and formulaic. The sentences are short and lack the sophisticated flow and vocabulary of the Reference. Form (b) offers minimal improvement over Form (a).
+Rating: 2
+
+#### Intelligence
+The archetype of "learning and mastery" is a simple, linear process. It lacks the systemic complexity, feedback loops, or nuanced interactions present in the Reference's archetypes. The mapping across domains is very obvious and lacks intellectual creativity.
+Rating: 2
+
+#### Domains far apart / metanyms not synonymous
+The domains (Student, Athlete, Musician, Programmer, Scientist) are all variations on human skill acquisition. They are not "very different domains" in the way the Reference spans biology, physics, sociology, and technology. The metanyms (e.g., "study," "training," "practice," "coding," "research") are very close in meaning, bordering on synonyms in this context.
+Rating: 2
+
+#### Impressive length
+The template is very short, consisting of only five sentences. It is significantly less developed than the Reference templates.
+Rating: 2
+
+### Structural diversity across the submitted set
+The five archetypal contexts in the Target submission are structurally very similar. They all follow a simple, linear narrative: an entity does something, influenced by factors, leading to success or failure. There is no variation in the complexity of the systems described—no feedback loops, no nested hierarchies (like the Reference's recursive debt archetype), no spatial/temporal coordination (like the Reference's scaffold archetype). The templates are all roughly the same very short length and use the same basic sentence structures. The Reference demonstrates a much wider variety of system structures (gradient navigation, containment breach, competitive exclusion, recursive debt, scaffold assembly).
+Rating: 2
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Growth and Adaptation",
+          "factual_per_pc":           [4, 4, 4, 4, 4],
+          "beauty":                   2,
+          "intelligence":             2,
+          "instantiation_distinctness": 4,
+          "impressive_length":        2
+        },
+        {
+          "name": "Conflict and Resolution",
+          "factual_per_pc":           [4, 4, 4, 3, 3],
+          "beauty":                   2,
+          "intelligence":             2,
+          "instantiation_distinctness": 4,
+          "impressive_length":        2
+        },
+        {
+          "name": "Innovation and Obsolescence",
+          "factual_per_pc":           [4, 4, 4, 4, 4],
+          "beauty":                   2,
+          "intelligence":             2,
+          "instantiation_distinctness": 3,
+          "impressive_length":        2
+        },
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc":           [4, 4, 4, 4, 4],
+          "beauty":                   2,
+          "intelligence":             2,
+          "instantiation_distinctness": 5,
+          "impressive_length":        2
+        },
+        {
+          "name": "Learning and Mastery",
+          "factual_per_pc":           [4, 4, 4, 4, 4],
+          "beauty":                   2,
+          "intelligence":             2,
+          "instantiation_distinctness": 2,
+          "impressive_length":        2
+        }
+      ],
+      "structural_diversity": 2
+    }
+  }
+}
+```

@@ -1,0 +1,173 @@
+## Target Submission
+
+### Archetypal context 1: Growth and Adaptation
+
+#### Factually correct (per parallel context)
+- PC 1 (Plant): The statements about plant growth, nutrient allocation, adaptation to environment, and wilting are accurate and reflect basic plant physiology. However, the description is somewhat simplified compared to the Reference, lacking nuance about mechanisms. Rating: 7
+- PC 2 (Economy): The description of economic growth, capital allocation, adaptation to market changes, and recession is factually correct, though again simplified and omitting complexities such as multiple forms of capital or economic actors. Rating: 7
+- PC 3 (Software System): The idea that software systems develop via computational power and must adapt to user demand is broadly correct, but the notion of "accumulation of computational power" is awkward—software systems develop via code, features, or architecture, not just computational power. This is a factual imprecision. Rating: 6
+- PC 4 (Human Body): The statements about energy, adaptation, homeostasis, and illness are correct, though "accumulation of energy" is not the usual way to describe human growth (it's more about cell division, tissue growth, etc.). Still, the overall meaning is accurate. Rating: 7
+- PC 5 (Ecosystem): The description of ecosystems expanding via resource accumulation, adapting to climate, and facing collapse is broadly correct, though "expansion" is not always the main form of ecosystem growth, and the mechanisms are more complex. Rating: 7
+
+#### Beauty
+The template and instantiations are clear and readable, but the language is quite plain and lacks the evocative or elegant phrasing seen in the Reference. There is little metaphorical or poetic quality. Rating: 6
+
+#### Intelligence
+The archetype captures a basic pattern of growth, adaptation, and decline, but the abstraction is relatively shallow and does not reveal deep or surprising parallels. The mapping is straightforward and lacks the layered insight of the Reference. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains (plant, economy, software, human body, ecosystem) are reasonably distinct, but the metanyms are often close to synonymous (e.g., "growth" in all domains, "resource" is generic). The mappings are not especially far apart, and the template is so generic that the differences are muted. Rating: 6
+
+#### Impressive length
+The template is short—just a few sentences—and the instantiations are brief. Compared to the Reference, which has long, detailed templates, this is clearly less impressive in length. Rating: 5
+
+---
+
+### Archetypal context 2: Conflict and Resolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Nation): The description of nations engaging in war over territory, escalation, peace treaties, and international relations is accurate, though simplified. Rating: 7
+- PC 2 (Corporation): The description of corporations competing for market share, escalation, mergers, and business strategy is correct, though the idea that a merger is always the resolution is simplistic. Rating: 7
+- PC 3 (Family): The description of family disputes over inheritance, escalation, reconciliation, and family therapy is accurate, though it omits the complexity of family dynamics. Rating: 7
+- PC 4 (Political Party): The description of political parties debating policy, escalation, compromise, and political science is correct, though "policy distribution" is an odd phrase. Rating: 7
+- PC 5 (Animal Group): The description of animal groups fighting over territory, escalation, truce, and ethology is broadly correct, though in animal behavior, truces are rare and territory is not always "distributed" by agreement. Rating: 6
+
+#### Beauty
+The template and instantiations are clear but plain, with repetitive structure and little stylistic flair. The language is functional but not beautiful. Rating: 6
+
+#### Intelligence
+The archetype captures a basic conflict-resolution cycle, but the abstraction is shallow and the mappings are obvious. There is little depth or subtlety in the analogies. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains are reasonably distinct (nation, corporation, family, political party, animal group), but the template is so generic that the metanyms are close to synonymous ("conflict," "resolution," "resource"). The mappings are not especially creative. Rating: 6
+
+#### Impressive length
+The template is short and the instantiations are brief, with little elaboration or detail. Rating: 5
+
+---
+
+### Archetypal context 3: Innovation and Obsolescence
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): The description of scientists introducing technology, knowledge evolving, redundancy, and science studying these processes is accurate. Rating: 7
+- PC 2 (Entrepreneur): The description of entrepreneurs introducing products, market evolution, obsolescence, and business strategy is correct. Rating: 7
+- PC 3 (Artist): The description of artists introducing styles, trends evolving, irrelevance, and art history is accurate. Rating: 7
+- PC 4 (Engineer): The description of engineers introducing designs, materials evolving, failure, and engineering is correct, though "design becomes less effective, leading to failure" is a bit simplistic. Rating: 7
+- PC 5 (Educator): The description of educators introducing curricula, pedagogy evolving, ineffectiveness, and education theory is accurate. Rating: 7
+
+#### Beauty
+The template and instantiations are clear but lack elegance or evocative language. The structure is repetitive and the prose is utilitarian. Rating: 6
+
+#### Intelligence
+The archetype captures a basic pattern of innovation and obsolescence, but the abstraction is shallow and the mappings are straightforward. There is little depth or surprising insight. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains are reasonably distinct (science, business, art, engineering, education), but the template is so generic that the metanyms are close to synonymous ("innovation," "obsolescence," "process"). The mappings are not especially creative. Rating: 6
+
+#### Impressive length
+The template is short and the instantiations are brief, with little elaboration or detail. Rating: 5
+
+---
+
+### Archetypal context 4: Exploration and Discovery
+
+#### Factually correct (per parallel context)
+- PC 1 (Scientist): The description of scientists conducting research, experiments, theory, and scientific literature is accurate. Rating: 7
+- PC 2 (Adventurer): The description of adventurers on expeditions, obstacles, new land, and travelogues is accurate. Rating: 7
+- PC 3 (Historian): The description of historians investigating past events, evidence, historical fact, and historiography is accurate. Rating: 7
+- PC 4 (Astronaut): The description of astronauts on missions, technical issues, discovery, and space exploration is accurate. Rating: 7
+- PC 5 (Philosopher): The description of philosophers in inquiry, paradoxes, insight, and philosophy is accurate. Rating: 7
+
+#### Beauty
+The template and instantiations are clear but plain, with little stylistic flair or evocative language. The structure is repetitive. Rating: 6
+
+#### Intelligence
+The archetype captures a basic exploration-discovery pattern, but the abstraction is shallow and the mappings are straightforward. There is little depth or surprising insight. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains are reasonably distinct (science, adventure, history, space, philosophy), but the template is so generic that the metanyms are close to synonymous ("explorer," "journey," "discovery"). The mappings are not especially creative. Rating: 6
+
+#### Impressive length
+The template is short and the instantiations are brief, with little elaboration or detail. Rating: 5
+
+---
+
+### Archetypal context 5: Structure and Function
+
+#### Factually correct (per parallel context)
+- PC 1 (Building): The description of buildings providing shelter, adapting to weather, collapse, and architecture is accurate. Rating: 7
+- PC 2 (Organ): The description of organs performing physiological functions, adapting to health, dysfunction, and physiology is accurate. Rating: 7
+- PC 3 (Machine): The description of machines operating, adapting to workload, breakdown, and engineering is accurate. Rating: 7
+- PC 4 (Organization): The description of organizations achieving goals, adapting to market, failure, and management is accurate. Rating: 7
+- PC 5 (Language): The description of language facilitating communication, adapting to context, miscommunication, and linguistics is accurate. Rating: 7
+
+#### Beauty
+The template and instantiations are clear but plain, with little stylistic flair or evocative language. The structure is repetitive. Rating: 6
+
+#### Intelligence
+The archetype captures a basic structure-function pattern, but the abstraction is shallow and the mappings are straightforward. There is little depth or surprising insight. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains are reasonably distinct (building, organ, machine, organization, language), but the template is so generic that the metanyms are close to synonymous ("structure," "function," "failure"). The mappings are not especially creative. Rating: 6
+
+#### Impressive length
+The template is short and the instantiations are brief, with little elaboration or detail. Rating: 5
+
+---
+
+### Structural diversity across the submitted set
+All five archetypes follow a similar pattern: a short, generic template with five instantiations in different domains. The system structures are not especially diverse; most are simple input-output or process-outcome cycles, and none demonstrate recursion or deep structural variation. Compared to the Reference, which includes cascades, navigation, competition, debt recursion, and scaffolded assembly, this set is much less structurally diverse. Rating: 5
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Growth and Adaptation",
+          "factual_per_pc":           [7, 7, 6, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        },
+        {
+          "name": "Conflict and Resolution",
+          "factual_per_pc":           [7, 7, 7, 7, 6],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        },
+        {
+          "name": "Innovation and Obsolescence",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        },
+        {
+          "name": "Exploration and Discovery",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        },
+        {
+          "name": "Structure and Function",
+          "factual_per_pc":           [7, 7, 7, 7, 7],
+          "beauty":                   6,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        }
+      ],
+      "structural_diversity": 5
+    }
+  }
+}
+```
