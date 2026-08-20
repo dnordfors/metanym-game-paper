@@ -46,6 +46,8 @@ Before the rules, a second example --- this one not authored for the paper but b
 
 and its metanym table:
 
+\protect\phantomsection\label{tab-anchor-metanym}{}
+
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1094}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1719}}
@@ -132,6 +134,8 @@ The two elements are deliberately complete --- a player generates and judges, an
 
 Twelve frontier LLMs from three providers are the game's \textbf{participants} --- each serves simultaneously as generator and as evaluator (\hyperref[tab-panel]{the participant roster}):
 
+\protect\phantomsection\label{tab-panel}{}
+
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
   >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
@@ -168,6 +172,8 @@ All twelve are called with \textbf{Temperature=0}, \textbf{reasoning disabled}, 
 Each model generates one portfolio: five archetypal contexts, each with a context template (typically 5--8 sentences with UPPERCASE {[}SLOT{]} labels and 6--10 slots --- the prompt fixes only the counts of archetypes and metanym sets, Appendix B.1) and a metanym table of five domain columns, yielding 25 parallel-context instantiations per portfolio.
 
 Each model then evaluates every other model's portfolio under \hyperref[tab-rubric]{a six-axis rubric}:
+
+\protect\phantomsection\label{tab-rubric}{}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
@@ -207,6 +213,8 @@ What it measures
 Scores are on a 1--10 cardinal scale. Each evaluator call presents one anonymised target portfolio alongside a fixed \textbf{anchor} portfolio pinned at 7 on every axis; the evaluator scores the target relative to the anchor. The full evaluation yields a 12×11 evaluator-by-generator matrix (the self-diagonal is filled by convention, Appendix A.2.a).
 
 What one such evaluation looks like --- the same kind of artifact worked in §2.a, judged --- is shown whole in \hyperref[fig-council-evaluation]{the council-evaluation exhibit}.
+
+\protect\phantomsection\label{fig-council-evaluation}{}
 
 \begin{figure}
 \centering
@@ -253,6 +261,8 @@ The bootstrap opens with a raw pass: every portfolio is scored 1--10 by every ot
 \subsubsection{4.2 Evaluator factual competence}\label{evaluator-factual-competence}
 
 The anchored protocol --- the 12-by-12 evaluation matrix re-run with every target rated \emph{relative to} the anchor --- increases the evaluators' discriminative power (\hyperref[fig-anchoring-resolution]{the resolution figure}): the division into a leading eight and a trailing four widens, while ranks within either group stay unresolved. Both \(F\) values sit below 1 --- judges still disagree about a single target more than targets differ from one another --- so what the anchored data will bear is settled by the bootstrap intervals, not by \(F\) alone.
+
+\protect\phantomsection\label{fig-anchoring-resolution}{}
 
 \begin{figure}
 \centering
@@ -303,6 +313,8 @@ Why it stops there & agreement on taste would convert alignment into authority -
 \[\tilde F_{sj} \;\approx\; \sigma_1\, u_s\, v_j, \qquad f \equiv u\ \text{(left singular vector).} \tag{1}\]
 
 An evaluator's rating tracks the consensus in proportion to its competence \(u_s\) times the instantiation's factual standing \(v_j\) --- competence and standing fall out of one factorisation, with \textbf{no answer key}. The \emph{left} singular vector scores each \textbf{evaluator}: high when its ratings align with the participants' shared signal, ≈ 0 when it rates everything alike or idiosyncratically. That is \(E^{F}\). The \emph{right} singular vector, aggregated per generator, gives \(G^{F}\) --- not an independent measurement but the participants' own factual ratings weighted by each judge's competence (the two computations --- right singular vector, and \(E^{F}\)-weighted mean of the raw ratings --- agree within 0.14 on the anchored scale, \(r = 1.00\); Appendix A.2.a). Both are tabulated below, bootstrapped over the 275 columns (interval conventions in Appendix A.2.a and A.5; the full-sample axis is well separated, \(\sigma_1/\sigma_2 = 2.6\)); the five inert-band rows (†) --- loadings not distinguishable from zero --- get no interval. \(E^{F}\) is shown raw and \textbf{anchored} to the 1--10 scale (\(7f/f_a\), the form that enters \(T\)); Opus-4.5 is the anchor reference, \(E^{F}=G^{F}=7\) by construction:
+
+\protect\phantomsection\label{tab-criterion-a}{}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
@@ -368,6 +380,8 @@ The official total built from these ratings is checked against an independent ex
 
 \textbf{Same-vendor robustness.} The key-free factual axis assumes near-independent errors, so the fair worry is that a Claude-heavy evaluator set reads Claude-bloc agreement as truth --- ``Anthropic models grade Anthropic models first.'' They do not. Recomputing the generator-factuality ordering \(G^{F}\) with each vendor's judges removed leaves it essentially unchanged, and a \emph{Claude-free} evaluator set (Google + OpenAI judges only) still places \hyperref[tab-vendor-robustness]{the Claude generators at the top}:
 
+\protect\phantomsection\label{tab-vendor-robustness}{}
+
 \begin{longtable}[]{@{}lrcc@{}}
 \caption{Same-vendor robustness of the factual ordering.}\tabularnewline
 \toprule\noalign{}
@@ -404,6 +418,8 @@ The benchmark \textbf{scales by addition}: any future model can be evaluated aga
 \subsubsection{4.4 Anchor-sweep consistency and the initial council}\label{anchor-sweep-consistency-and-the-initial-council}
 
 \textbf{Rating consistency.} Beyond catching factual errors, a reliable evaluator needs a stable internal standard for each non-factual criterion --- a clear, reusable sense of what makes one submission more beautiful, more intelligent, more distinct than another. We call this the evaluator's \textbf{rating consistency}, and we measure it with the \textbf{anchor sweep}. The anchor is the fixed reference every submission is scored against; we sweep its value across 5, 6, 7, and 8 --- the \emph{only} difference between the four runs (at T=0 every cell is otherwise identical). A consistent evaluator gives the submissions the same pattern of relative scores whichever value is used. For each evaluator, and \textbf{for each rating axis separately}, we correlate (Pearson) the scores at one anchor with the scores at another, averaged over the six anchor pairs; this per-axis consistency is the diagnostic \(E^{C}_a\) (the five non-factual axes are the gate's diagnostics; the factual column is reported for comparison only). The measure is \textbf{leave-self-out} (unit counts and balancing in Appendix A.2.b). Because the anchor is the only thing that changed, a low correlation has two readings: the evaluator lacks a clear sense for that axis, or it holds no stable standard at all. The uniform case is not an arithmetic deficit --- the models that fail that way handle standard maths fine (gpt-4o scores 95\% on GSM8K) --- so it reflects inconsistent evaluation, not weak numeracy.
+
+\protect\phantomsection\label{tab-criterion-b}{}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1111}}
@@ -471,6 +487,8 @@ gpt-4o-mini & n/a & 0.25 & 0.36 & 0.27 & 0.10 & 0.23 \\
 Two patterns matter. Collapse is either \emph{uniform} --- gpt-4o and gpt-4o-mini hold no stable signal on any axis --- or \emph{axis-specific}: gpt-4.1-2025-04-14 (0.24) and gemini-2.5-flash (0.31) collapse on factual while their other axes hold. Distinctness is the axis the participants find hardest to hold steady (mean 0.59). Because the factual axis is peer centrality's responsibility, council eligibility is assessed on the non-factual axes. The gate value is the \textbf{collapsed} consistency \(\bar r\): the four per-archetype axis scores are averaged per unit before correlating across anchors (A11), so axis-idiosyncratic noise partially cancels and \(\bar r\) reads higher than the row means above (Flash: row mean \(\approx 0.70\), collapsed \(0.81\)).
 
 \textbf{Rating consistency (anchored).} The anchor sweep applies the familiar LLM-judge reliability principle --- a competent judge is invariant under non-semantic perturbation --- to a controlled perturbation of the calibration value itself, and turns that invariance into a key-free, per-criterion gate (its place among prior reliability and anchor-selection work is §5.4). Rescaled to the anchor (\(E^{C}_a = 7\,r_a/r_{a,\text{anchor}}\), so Opus-4.5 reads 7), the consistency becomes a competence on the \(1\)--\(10\) scale, directly comparable with a generator's quality on the same criterion. The hypothesis is testable on the one axis that also carries an \emph{independent} competence measure --- factual, where the key-free error-detection loading \(E^{F}\) exists: factual consistency \(E^{C}_f\) and \(E^{F}\) correlate at Pearson \(r = 0.52\) (Spearman \(\rho = 0.72\)), a decent agreement that supports reading consistency as competence. The looseness is the consistency-vs-accuracy gap --- a model can rate factuality consistently yet uninformatively (gpt-4.1-mini, consistency \(0.87\) against competence \(\approx 0.09\)). \hyperref[tab-per-criterion]{The table} pairs, per non-factual criterion, the \textbf{generator} competence \(G\) with the \textbf{evaluator} competence \(E\), both anchored to Opus-4.5 = 7, and gives their \textbf{anchored cosine} alignment --- the cosine between the models' generator- and evaluator-deviations from the anchor point \((7,7)\), defined in Appendix A.6 (eq A15):
+
+\protect\phantomsection\label{tab-per-criterion}{}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
@@ -562,6 +580,8 @@ On all five non-factual criteria, generation and evaluation move together (ancho
 
 \textbf{Constituting the initial council.} The participants certify their own reliable subset from internal evidence alone --- a bootstrap in the epistemic sense: no production score, no external key. We keep the selection \textbf{fully key-free}: a reliable evaluator must show factual competence --- a key-free SVD loading clear of the inert band --- \emph{and} rating consistency (collapsed across the four per-archetype non-factual axes, \(\bar r \ge 0.78\), Pearson; structural diversity, rated once per portfolio, sits outside the collapse). Five evaluators clear both bars: Gemini 3.1 Pro, Claude Opus 4.5, Gemini 2.5 Flash, Claude Opus 4.0 and Claude Opus 4.1, whose factual-competence loadings (0.28--0.58) separate from the inert band and whose rating consistency clears the floor. Claude Sonnet-4 is the marginal case the other way: its loading (0.13) is the boundary case --- its 95\% interval touches gpt-4.1-mini's below, so the decisive cut falls after the top five (§4.2) --- and it does not clear the factual bar --- even though its consistency is comfortable (0.84). Gemini 2.5 Flash is the weakest seat: its loading (0.37) clears the band, but its rating consistency (\(\bar r = 0.81\)) is the lowest of the five and the closest to the floor --- its interval {[}0.75, 0.86{]} straddles the bar --- a caveat we carry in the open. The council is seated on the factual axis because it is the one axis where competence is objective --- agreement there is licensed to mean truth (§5.2) --- with rating consistency as the accompanying bar: a factually competent judge must also hold stable standards to sit. \hyperref[tab-initial-council]{The five members}:
 
+\protect\phantomsection\label{tab-initial-council}{}
+
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.2727}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
@@ -615,6 +635,8 @@ Two \textbf{guards}, read off the contest's own matrix and reported with every r
 \subsubsection{4.6 The ballast}\label{the-ballast}
 
 A contest convenes the top of the field --- five seats and one contestant --- and with the weak submissions gone, the factual axis breaks: the seats' anchored \(E^{F}\) come out wrong in scale and wrong in order, swinging by up to 9.2 points depending on who the contestant is (anchored \(E^{F}=7f/f_a\) is not confined to the 1--10 rubric when the axis breaks). The \textbf{ballast} repairs this: the weakest archived submissions, added to the contest's graded set and held fixed through anchor replacements and council rotations (§5.3). Two suffice (\hyperref[tab-ballast]{the ballast table}).
+
+\protect\phantomsection\label{tab-ballast}{}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1304}}
@@ -677,6 +699,8 @@ The benchmark's two ratings combine into one official total, and each splits the
 
 The \textbf{\hyperref[tab-final-leaderboard]{final leaderboard}} ranks all twelve models by \(T\). Every rating is issued against the fixed anchor (claude-opus-4.5, pinned at 7), so the anchor reads 7 on \(T\), \(E\) and \(G\) alike. Every number in the official rating is \textbf{council-issued}: each model is rated by the council when it stands as contestant (§4.5) --- the five seats, joined by the model itself when it holds no seat, grading the incumbents' portfolios, the two ballast submissions, and the contestant's own --- leave-self-out throughout: no evaluator's ratings of its own portfolio enter its scores. The twelve-evaluator matrix of §4.2--§4.4 is \emph{selection} evidence only --- the roster is an output of the bootstrap, so it cannot also produce the official rating --- and the two bases agree closely (Spearman 0.986, mean absolute difference 0.12, the same five seats either way).
 
+\protect\phantomsection\label{tab-final-leaderboard}{}
+
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1364}}
   >{\raggedright\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1364}}
@@ -736,6 +760,8 @@ Council
 
 Each half resolves into \hyperref[tab-competence-breakdown]{two anchored competences} --- generation: generator factual \(G^{F}\) (§4.2) and criterion \(G^{C}\) (the five non-factual generation axes, §4.7); evaluation: evaluator factual \(E^{F}\) (§4.2) and criterion \(E^{C}=7\bar r/\bar r_a\) (the leave-self-out collapsed anchor-sweep consistency, §4.4):
 
+\protect\phantomsection\label{tab-competence-breakdown}{}
+
 \begin{longtable}[]{@{}llcrrrr@{}}
 \caption{Competence breakdown --- the four anchored components behind each model's evaluator (\(E\)) and generator (\(G\)) scores.}\tabularnewline
 \toprule\noalign{}
@@ -773,11 +799,15 @@ Three readings. \textbf{The top five are the council.} The five reliable evaluat
 
 We test the key-free rating against an instrument built outside the run: GPQA Diamond (Rein et al.~2023; 198 expert multiple-choice questions with a human answer key), put to the same twelve models, through the same gateway, under the same protocol --- Temperature=0, reasoning and tools off --- and scored against the key (administration details, including a void-retry pass, in Appendix D.2). We correlate GPQA accuracy with one quantity: the official total \(T\) (§4.7). \hyperref[fig-gpqa-scatter]{The scatter} plots the twelve models; \hyperref[tab-gpqa-values]{the table} lists them.
 
+\protect\phantomsection\label{fig-gpqa-scatter}{}
+
 \begin{figure}
 \centering
 \pandocbounded{\includegraphics[keepaspectratio,alt={The official total rating T (§4.7, council basis) against self-administered GPQA Diamond accuracy, twelve models. Pearson r = 0.97 (95\% bootstrap CI {[}0.92, 0.99{]} --- Appendix D.1), Spearman \textbackslash rho = 0.93. Filled markers are council seats; horizontal bars the A.5 bootstrap 95\% CI on T, vertical bars the GPQA binomial 95\% CI; the shaded band is the confidence band of the fitted line, not a prediction interval. The blue star is the anchor (opus-4.5): T = 7 by calibration, GPQA measured independently, so it is a legitimate point; excluding it leaves Pearson at 0.97. The audit behind this figure is Appendix D.}]{figures/total_validation.png}}
 \caption{The official total rating \(T\) (§4.7, council basis) against self-administered GPQA Diamond accuracy, twelve models. Pearson \(r = 0.97\) (95\% bootstrap CI \([0.92, 0.99]\) --- Appendix D.1), Spearman \(\rho = 0.93\). Filled markers are council seats; horizontal bars the A.5 bootstrap 95\% CI on \(T\), vertical bars the GPQA binomial 95\% CI; the shaded band is the confidence band of the fitted line, not a prediction interval. The blue star is the anchor (opus-4.5): \(T = 7\) by calibration, GPQA measured independently, so it is a legitimate point; excluding it leaves Pearson at 0.97. The audit behind this figure is Appendix D.}
 \end{figure}
+
+\protect\phantomsection\label{tab-gpqa-values}{}
 
 \begin{longtable}[]{@{}lrr@{}}
 \caption{The two instruments side by side --- the key-free total rating \(T\) (§4.7) and self-administered GPQA Diamond accuracy (voids counted as wrong), sorted by \(T\) --- the per-model values behind the family-order comparisons of §5.1.}\tabularnewline
@@ -816,6 +846,8 @@ gpt-4o-mini & 2.10 & 43.94 \\
 The leaderboard of §4.7 rests on one portfolio per model. To check that the result is not an artefact of that single draw, we re-ran the full pipeline three times, each run regenerating all twelve portfolios at T=0 and re-scoring them against the frozen anchor. The regeneration is substantive: the gateway is not deterministic at T=0, eleven of twelve portfolios differ between runs, and a total can move by as much as 1.1 between the two same-day runs (gpt-4.1-2025-04-14, 4.62→5.72) and 1.45 across all three (gemini-3.1-pro).
 
 The benchmark's categorical output is robust to this, its ordinal output largely so: the council is \textbf{identical} across all three runs, and \hyperref[tab-reruns]{the ranking is broadly preserved} --- pairwise Pearson 0.92--0.96, Spearman 0.84--0.90. In runs 2 and 3 gemini-3.1-pro's total (7.35, 8.10) exceeds the anchor's pinned 7.00: the anchor's first place is a calibration convention, not a measured victory --- a standing result of this kind is what the recalibration rule of §5.3 exists for.
+
+\protect\phantomsection\label{tab-reruns}{}
 
 \begin{longtable}[]{@{}lrrrr@{}}
 \caption{Total rating \(T\) across three full re-runs (run 1 = the bootstrap generation, re-analysed on the council basis; runs 2--3 the same day, two hours apart), all on the council basis of §4.7. ★ marks a council seat --- the five seats are identical across all three runs. SD is the per-model run-to-run standard deviation (mean 0.43, max 0.72, the two Gemini seats and gpt-4.1-2025-04-14 highest). Run 3's \(E^{F}\) quarter is read off a factual axis the §4.5 guard (sized in §4.6) reports as unidentified (\(\sigma_1/\sigma_2 = 1.28\)); its totals carry that caveat.}\tabularnewline
@@ -903,6 +935,8 @@ The metanym game tests both, and broadly. Playing demands at least eight constru
 \end{enumerate}
 
 \hyperref[tab-constructs]{The table} maps each construct to the two tasks that call on it (● marks a primary demand):
+
+\protect\phantomsection\label{tab-constructs}{}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
@@ -1227,6 +1261,8 @@ The anchor scores \(7\) on every component, hence \(\approx7\) on \(T\): each ra
 \subsubsection{A.5 Confidence intervals}\label{a.5-confidence-intervals}
 
 Every rating is reported with a 95\% \textbf{percentile bootstrap} interval: the rating's resampling unit is drawn with replacement, the rating is recomputed, and the 2.5th and 97.5th percentiles of the replicates form the interval (\(\sim10^3\)--\(10^4\) replicates). \hyperref[tab-bootstrap-units]{The unit} is the natural independent observation for each rating:
+
+\protect\phantomsection\label{tab-bootstrap-units}{}
 
 \begin{longtable}[]{@{}
   >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
@@ -1628,6 +1664,8 @@ A {[}SYSTEM{]} requires various {[}RESOURCE{]} to function and achieve its {[}GO
 \end{quote}
 
 \textbf{Metanym table}
+
+\protect\phantomsection\label{tab-target-metanym}{}
 
 {\def\LTcaptype{none} % do not increment counter
 \begin{longtable}[]{@{}

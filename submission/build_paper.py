@@ -50,6 +50,9 @@ def combine():
     c = c.replace("](../reproduce/figures/", "](figures/")
     c = c.replace("](../submission/figures/", "](figures/")
     c = re.sub(r"<!-- REVIEW.*?-->\s*", "", c, flags=re.S)
+    # Pandoc drops a bare <a id="..."> sitting in front of a table or figure.
+    # A span identifier survives and becomes \label{...}, which the hyperrefs need.
+    c = re.sub(r'<a id="([^"]+)"></a>', r'[]{#\1}', c)
     (SUB / "_paper_combined.md").write_text(c)
     return c
 
@@ -502,9 +505,11 @@ def main():
                        capture_output=True, text=True)
     over = re.findall(r"Overfull \\hbox \(([\d.]+)pt", r.stderr)
     errs = [l for l in r.stderr.splitlines() if l.startswith("error")]
+    undef = sorted(set(re.findall(r"Hyper reference `([^']+)' .* undefined", r.stderr)))
     print("errors:", errs or "none")
+    print("undefined refs:", undef or "none")
     print("overfull:", sorted(set(float(x) for x in over), reverse=True)[:6] or "none")
-    if errs:
+    if errs or undef:
         sys.exit(1)
 
 if __name__ == "__main__":
