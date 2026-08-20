@@ -1,4 +1,4 @@
-# The Metanym Game: A Self-Contained, Self-Consistent LLM Peer-Community Benchmark for Structural Intelligence
+# The Metanym Game: An LLM Benchmark Without Ground Truth That Rises With the Models It Measures
 
 ## Abstract
 

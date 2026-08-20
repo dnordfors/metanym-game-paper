@@ -2,7 +2,7 @@
 # GitHub renders this as "Cite this repository".
 cff-version: 1.2.0
 message: "If you use this work, please cite both the paper and this repository."
-title: "The Metanym Game: A Self-Contained, Self-Consistent LLM Peer-Community Benchmark for Structural Intelligence"
+title: "The Metanym Game: An LLM Benchmark Without Ground Truth That Rises With the Models It Measures"
 abstract: >-
   Reproduction package for The Metanym Game: the arXiv manuscript, the arXiv
   submission bundle, and the scripts and pinned evaluation data that regenerate
@@ -30,7 +30,7 @@ identifiers:
     description: arXiv DOI for the paper
 preferred-citation:
   type: article
-  title: "The Metanym Game: A Self-Contained, Self-Consistent LLM Peer-Community Benchmark for Structural Intelligence"
+  title: "The Metanym Game: An LLM Benchmark Without Ground Truth That Rises With the Models It Measures"
   authors:
     - family-names: Nordfors
       given-names: David
