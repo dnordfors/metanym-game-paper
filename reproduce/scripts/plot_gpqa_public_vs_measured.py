@@ -42,10 +42,12 @@ ax.scatter(x, y, s=48, color="#2a78d6", zorder=3)
 lo = min(x.min(), y.min()) - 4
 hi = max(x.max(), y.max()) + 4
 ax.plot([lo, hi], [lo, hi], ls=":", color="#c9ccd1", lw=1, label="y = x")
+OFFSETS = {"claude-opus-4.5": (-6, -11), "gemini-3.1-pro": (6, 3)}
 for m in models:
+    dx, dy = OFFSETS.get(m, (6, -3))
     ax.annotate(m.replace("-2024-08-06", "").replace("-2025-04-14", ""),
-                (meas[m], pub[m]), textcoords="offset points", xytext=(6, -3),
-                fontsize=7, color="#52514e")
+                (meas[m], pub[m]), textcoords="offset points", xytext=(dx, dy),
+                ha="right" if dx < 0 else "left", fontsize=7, color="#52514e")
 ax.set_xlabel("self-administered GPQA Diamond, % (T=0, reasoning off)")
 ax.set_ylabel("publicly reported GPQA Diamond, %")
 ax.set_title(f"Two administrations of the same test  (n={len(models)}, "

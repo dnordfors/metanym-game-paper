@@ -1,8 +1,7 @@
-# Appendix D. The total rating's GPQA correlation: provenance and audit
+# Appendix D. Auditing the Metanym Game–GPQA correlation: No Leaks Found
 
 The total rating $T$ tracks self-administered GPQA Diamond at Pearson $r = 0.97$ — closer
-than any of its components and closer than the factual pair the benchmark was validated on
-(§4.7_TMP). A correlation that strong between a key-free peer rating and an externally keyed
+than any of its components, the factual pair $\tfrac12(E^{F}+G^{F})$ included (the ladder below). A correlation that strong between a key-free peer rating and an externally keyed
 benchmark invites the suspicion that something leaked. This appendix records the audit that
 looked for the leak and did not find one, the administration detail the audit surfaced and
 the paper must disclose, the decompositions that make the number unremarkable in hindsight,
@@ -23,9 +22,9 @@ agreement of the rankings alone):
 | $G^{F}$ alone | 0.83 | 0.86 | [0.48, 0.95] | [0.66, 0.94] |
 | $E^{F}$ alone | 0.83 | 0.88 | [0.49, 0.95] | [0.68, 0.93] |
 | $G^{C}$ alone | 0.92 | 0.88 | [0.73, 0.98] | [0.51, 0.98] |
-| $G = \tfrac12(G^{F}+G^{C})$ — making half | 0.91 | 0.86 | [0.70, 0.97] | [0.73, 0.97] |
-| $E = \tfrac12(E^{F}+E^{C})$ — judging half | 0.92 | 0.93 | [0.73, 0.98] | [0.78, 0.98] |
-| $\tfrac12(E^{F}+G^{F})$ — §4.7_TMP's factual pair | 0.92 | 0.92 | [0.73, 0.98] | [0.84, 0.97] |
+| $G = \tfrac12(G^{F}+G^{C})$ — generation half | 0.91 | 0.86 | [0.70, 0.97] | [0.73, 0.97] |
+| $E = \tfrac12(E^{F}+E^{C})$ — evaluation half | 0.92 | 0.93 | [0.73, 0.98] | [0.78, 0.98] |
+| $\tfrac12(E^{F}+G^{F})$ — §4.7's factual pair | 0.92 | 0.92 | [0.73, 0.98] | [0.84, 0.97] |
 | $T = \tfrac14(G^{F}+G^{C}+E^{F}+E^{C})$ | **0.97** | **0.93** | **[0.90, 0.99]** | **[0.92, 0.99]** |
 
 Two interval constructions are reported because each covers the other's weakness at
@@ -36,7 +35,7 @@ interval on $T$, $[0.94, 0.99]$, was too narrow for exactly that reason and is r
 Where the two constructions disagree ($G^{C}$: Fisher $[0.73, 0.98]$ vs BCa
 $[0.51, 0.98]$), the BCa is detecting leverage sensitivity and the wider bound is the
 honest one. Read as validation: every component's interval sits well clear of zero —
-GPQA validates $T$ and, with varying strength, each of its components as capability
+GPQA corroborates $T$ and, with varying strength, each of its components as capability
 measures — with $T$'s interval the tightest under both constructions.
 
 **Measurement error, propagated (sensitivity).** All correlations above are computed on
@@ -101,10 +100,10 @@ The two $E$-side estimators are statistically indistinguishable as GPQA predicto
 weak coupling belongs to the quantity, not the choice between them. This is the paper's
 central dissociation replicated on a third instrument: making tracks answering; judging is
 its own trait, and no keyed answering benchmark measures it. Had $E$-side quantities
-tracked GPQA at 0.95, the judging half of $T$ would be redundant with existing benchmarks.
+tracked GPQA at 0.95, the evaluation half of $T$ would be redundant with existing benchmarks.
 
 **Why $T$ beats every part: diversity, not construct-matching.** If construct-matching
-governed, the making half would lead; it does not ($G$ 0.91 vs $E$ 0.92). The compounds are
+governed, the generation half would lead; it does not ($G$ 0.91 vs $E$ 0.92). The compounds are
 governed by error-diversity: the four quarters are four *differently distorted* reads of
 capability — one ceilinged, one refuge-prone, one knowledge-loaded, one saturating — with
 substantially independent distortions, so equal-weight averaging cancels them
@@ -125,7 +124,7 @@ ordering:
 |---|---:|---:|
 | $G^{F}$ | 0.83 | 0.60 |
 | $G^{C}$ | **0.92** | 0.66 |
-| $E^{F}$ | 0.83 | **0.84** ($\rho = 0.85$) |
+| $E^{F}$ | 0.83 | **0.84** |
 | $E^{C}$ | 0.81 | 0.37 |
 | $\tfrac12(E^{F}+G^{F})$ | 0.92 | 0.88 |
 | $\tfrac12(G^{C}+E^{F})$ | 0.93 | 0.91 |
@@ -154,7 +153,7 @@ ordering is genuinely unresolved by the
 evaluators (§4.2), the agreement with GPQA dissolves
 too. The two instruments agree on coarse capability structure, not on fine ranks; the
 trailing four alone ($r = 0.71$, $n = 4$) are too few to inform either way. This is
-consistent with §4.7_TMP_TMP's position that the benchmark's reliable products are membership and
+consistent with §4.9's position that the benchmark's reliable products are membership and
 rank order, not fine placement.
 
 **It survives the basis change that makes the benchmark scalable.** Recomputing every
@@ -167,7 +166,7 @@ capability instrument can see. $T$ absorbs the distortion (a quarter of four), s
 switch to the standing-service basis costs the headline nothing.
 
 **It survives regeneration — with one flagged run.** Across the three full re-runs of
-§4.7_TMP_TMP: $r = 0.97, 0.97, 0.92$ ($\rho = 0.93, 0.95, 0.88$). The dip is run 3, whose factual
+§4.9: $r = 0.97, 0.97, 0.92$ ($\rho = 0.93, 0.95, 0.88$). The dip is run 3, whose factual
 axis the §4.6 diagnostic reports as unidentified ($\sigma_1/\sigma_2 = 1.28$); $T$'s three
 healthy quarters buffer the broken one (the factual pair alone falls to 0.83 there).
 Excluding the anchor changes nothing ($r = 0.97, 0.97, 0.91$; run 1 anchor-excluded 0.971).
@@ -264,7 +263,11 @@ per-model public record is too poorly sourced to reconcile cell by cell: of the 
 models, only six have citable public values (`data/external_benchmarks.csv` records the
 sourcing state). On those six, public vs self-administered agreement is $r = 0.86$
 ($\rho = 0.81$, $n = 6$) — real but visibly weaker than any correlation in D.1, which is
-the expected signature of two administrations under different protocols. The two administrations are plotted against each other in `figures/gpqa_public_vs_measured.png` (`scripts/plot_gpqa_public_vs_measured.py`): the relation is smooth and monotone with the reasoning-budget offset above the diagonal — corroboration that the self-administered numbers measure the same capability under a leaner protocol.
+the expected signature of two administrations under different protocols. [The two administrations are plotted against each other below](#fig-gpqa-two-admins): the relation is smooth and monotone with the reasoning-budget offset above the diagonal — corroboration that the self-administered numbers measure the same capability under a leaner protocol.
+
+<a id="fig-gpqa-two-admins"></a>
+
+![Two administrations of the same test: publicly reported GPQA Diamond (typically reasoning-on) against this protocol's self-administered accuracy (T=0, reasoning off), for the six models with a citable public value. Pearson $r = 0.86$, Spearman $\rho = 0.81$. The offset above the diagonal is the reasoning budget. Produced by `scripts/plot_gpqa_public_vs_measured.py`.](../reproduce/figures/gpqa_public_vs_measured.png)
 
 ## D.5 Artifacts
 

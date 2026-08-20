@@ -421,6 +421,51 @@ def unbreak_rest(tex):
         return "\\begin{center}\n" + inner_block + "\n\\end{center}"
     return pat.sub(repl, tex), n[0]
 
+
+def build_d_ladder(md):
+    rows = md_rows(md, "| Quantity | Pearson $r$ | Spearman",
+                   lambda c: len(c) == 5 and "Quantity" not in c[0] and "---" not in c[0] and c[0].strip())
+    cs = (r"{>{\RaggedRight\arraybackslash\hspace{0pt}\hyphenpenalty=10000\exhyphenpenalty=10000}m{4.95cm} "
+          r">{\centering\arraybackslash}m{1.6cm} >{\centering\arraybackslash}m{1.7cm} "
+          r">{\centering\arraybackslash}m{1.85cm} >{\centering\arraybackslash}m{1.85cm}}")
+    hdr = (r"\multicolumn{1}{l}{\textbf{Quantity}} & \multicolumn{1}{c}{\textbf{\shortstack{Pearson\\$r$}}} & "
+           r"\multicolumn{1}{c}{\textbf{\shortstack{Spearman\\$\rho$}}} & \multicolumn{1}{c}{\textbf{\shortstack{Fisher-$z$\\95\%}}} & "
+           r"\multicolumn{1}{c}{\textbf{\shortstack{BCa\\95\%}}}\\")
+    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
+    for q, pe, sp, fz, bca in rows:
+        L.append(clean_math(q) + " & " + datacell(num(pe), 0, 1) + " & " + datacell(num(sp), 0, 1)
+                 + " & " + clean_math(fz) + " & " + clean_math(bca) + r"\\")
+    L += [r"\bottomrule", r"\end{tabular}"]
+    return wrap("The aggregation ladder --- each component's GPQA correlation, then the total's.", "\n".join(L))
+
+def build_d_subjective(md):
+    rows = md_rows(md, "| Subjective quarter | Estimator |",
+                   lambda c: len(c) == 4 and "Subjective quarter" not in c[0] and "---" not in c[0] and c[0].strip())
+    cs = (r"{>{\RaggedRight\arraybackslash\hspace{0pt}}m{2.9cm} "
+          r">{\RaggedRight\arraybackslash\hspace{0pt}}m{6.1cm} H H}")
+    hdr = (r"\multicolumn{1}{l}{\textbf{Subjective quarter}} & \multicolumn{1}{l}{\textbf{Estimator}} & "
+           r"\multicolumn{1}{c}{\textbf{$r$}} & \multicolumn{1}{c}{\textbf{$\rho$}}\\")
+    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
+    for q, est, pe, sp in rows:
+        L.append(clean_math(q) + " & " + clean_math(est) + " & "
+                 + datacell(num(pe), 0, 1) + " & " + datacell(num(sp), 0, 1) + r"\\")
+    L += [r"\bottomrule", r"\end{tabular}"]
+    return wrap("The two subjective quarters, and the declined variant, against GPQA.", "\n".join(L))
+
+def build_d_regimes(md):
+    rows = md_rows(md, "| Quantity | Full roster",
+                   lambda c: len(c) == 3 and "Quantity" not in c[0] and "---" not in c[0] and c[0].strip())
+    cs = (r"{>{\RaggedRight\arraybackslash\hspace{0pt}}m{3.6cm} "
+          r">{\centering\arraybackslash}m{2.6cm} >{\centering\arraybackslash}m{2.6cm}}")
+    hdr = (r"\multicolumn{1}{l}{\textbf{Quantity}} & \multicolumn{1}{c}{\textbf{Full roster ($n=12$)}} & "
+           r"\multicolumn{1}{c}{\textbf{Leading eight ($n=8$)}}\\")
+    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
+    for q, full, lead in rows:
+        L.append(clean_math(q) + " & " + datacell(num(full), 0, 1) + " & "
+                 + datacell(num(lead), 0, 1) + r"\\")
+    L += [r"\bottomrule", r"\end{tabular}"]
+    return wrap("Regime invariance --- the same correlations within the leading band alone.", "\n".join(L))
+
 # -------------------------------------------------------------------- main
 def main():
     md = combine()
@@ -441,6 +486,9 @@ def main():
         ("The two instruments side by side", build_gpqa_side),
         ("across three full re-runs", build_reruns),
         ("by contest composition", build_ballast),
+        ("BCa bootstrap 95", build_d_ladder),
+        ("Subjective quarter", build_d_subjective),
+        ("Leading eight", build_d_regimes),
     ]:
         body = replace_longtable(body, marker, builder(md))
 

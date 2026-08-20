@@ -117,7 +117,7 @@ The prose in Form (b) is generally clear and readable, but it lacks the domain-e
 
 **Administrator summary:** The council was tightly aligned in finding the aesthetic quality wanting, with ratings clustering at 4-5. All five converged on the same point: the template and prose are functional but mechanical, reading like a fill-in-the-blank checklist rather than the Reference's flowing narratives. They repeatedly cited awkward constructions such as "nature must make natural selections" and "various time," and judged the metanym choices uninspired compared to the Reference's poetic selections.
 
-Beauty is the axis one would expect to be least tractable, and it is the one the council agrees on most tightly here — a 4–5 cluster with all five naming the same defect. This is why criterion competence is estimated from *consistency under anchor shift* (§4.4) rather than from agreement: agreement on a subjective axis can be high without indicating that the standard is stable.
+Beauty is the axis one would expect to be least tractable, and it is the one the council agrees on most tightly here — a 4–5 cluster with all five naming the same defect. This is why rating consistency is estimated from *invariance under the anchor sweep* (§4.4) rather than from agreement: agreement on a subjective axis can be high without indicating that the standard is stable.
 
 #### Impressive length — judges disagreeing on a countable quantity
 
