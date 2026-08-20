@@ -1,10 +1,10 @@
 # Appendix C. Council evaluation of a target submission — gemini-2.5-flash
 
-This is the council's evaluation of gemini-2.5-flash's portfolio from the canonical run (`probe_K_anchor7`), the worked example of the scoring machinery described in §4.3 and §4.2. Ratings are on the anchored 1–10 scale, with the anchor portfolio of Appendix C pinned at 7 on every criterion.
+This is the council's evaluation of gemini-2.5-flash's portfolio from the canonical run (`probe_K_anchor7`), the worked example of the scoring machinery described in §3.2 and §4.3. Ratings are on the anchored 1–10 scale, with the anchor portfolio (claude-opus-4.5's, §4.1) pinned at 7 on every criterion.
 
-The rubric operates at three levels, and one unit of each is reproduced here in full: a **parallel context**, graded for factual truth sentence by sentence; an **archetype-level axis**, where the five council members score a whole archetype on one non-factual criterion; and the **whole-portfolio** structural-diversity judgement. Each unit shows the submitted material, all five council members' ratings and comments, and the administrator's synthesis of the anonymised council view. Every rating and comment quoted below is taken from the pinned evaluation JSON in `reproduce/data/`.
+The rubric operates at three levels, and one unit of each is reproduced here in full: a **parallel context**, graded for factual truth sentence by sentence; an **archetype-level axis**, where the five evaluators score a whole archetype on one non-factual criterion; and the **whole-portfolio** structural-diversity judgement. Each unit shows the submitted material, all five evaluators' ratings and comments, and the administrator's synthesis of the anonymised council view. Every rating and comment quoted below is taken from the pinned evaluation JSON in `reproduce/data/`.
 
-As in Appendix C, **metanyms in the Instantiations are set in capitals**, so that everything in lower case is template wording carried over unchanged. The capitalisation is ours, added for legibility; the submission and every rating and comment below are otherwise verbatim, and the models wrote in ordinary sentence case. It is worth the ink here, because on this portfolio the substituted words are usually where the trouble is.
+As in §2.a, **metanyms in the Instantiations are set in capitals**, so that everything in lower case is template wording carried over unchanged. The capitalisation is ours, added for legibility; the submission and every rating and comment below are otherwise verbatim, and the models wrote in ordinary sentence case. It is worth the ink here, because on this portfolio the substituted words are usually where the trouble is.
 
 Two things are worth watching across the units below, because they are what the estimators of Appendix A are built to exploit. First, the criticism is *specific and checkable*: evaluators quote the offending clause rather than assigning an impression. Second, the evaluators **disagree**, and they disagree by different amounts on different units — tightly where the submission contains a plain error, widely where the judgement is a matter of standard. That variation in spread, not the mean rating, is the signal the singular value decomposition reads competence from.
 
@@ -38,7 +38,7 @@ Two things are worth watching across the units below, because they are what the 
 | GAIN                | biomass              | revenue           | territory          | leisure                  | tax base       |
 | SUSTAINABILITY      | resilience           | long-term growth  | strategic depth    | health                   | green space    |
 
-Comparing [this table](#tab-target-metanym) with the anchor's (Appendix C) shows what the council objected to on *domain span*: several rows here map to near-synonyms across columns — ALLOCATION\_STRATEGY becomes ecological succession, portfolio management, supply chain management — where the anchor's MEMORY row spans methylation state, route memory, and momentum. The mechanical consequence appears immediately below: the ALLOCATOR row assigns "nature" the role the other columns give a CFO or a quartermaster, and that substitution is what makes the first parallel context false.
+Comparing [this table](#tab-target-metanym) with the anchor's (§2.a) shows what the council objected to on *domain span*: several rows here map to near-synonyms across columns — ALLOCATION\_STRATEGY becomes ecological succession, portfolio management, supply chain management — where the anchor's MEMORY row spans methylation state, route memory, and momentum. The mechanical consequence appears immediately below: the ALLOCATOR row assigns "nature" the role the other columns give a CFO or a quartermaster, and that substitution is what makes the first parallel context false.
 
 ### Per parallel context
 
@@ -129,7 +129,7 @@ The template contains 15 slots and approximately 120 words, which is comparable 
 **3.1-pro** — Rating: 4  
 The context-template is 79 words long. The Reference's templates are generally longer (e.g., Gradient-Guided Navigation is 108 words, Containment Breach is 92 words). The Target's template is noticeably shorter and less detailed than the Reference
 
-The object is a fixed string and the question is arithmetic, yet the two judges report 120 words and 79 words and reach opposite verdicts on the same criterion. Across all five, the reported counts ranged from 79 to 120. This is the clearest single illustration in the run of why the benchmark cannot treat any judge as an oracle, and why competence has to be estimated from the panel rather than assumed — the substance of §4.2 and the motivation for the whole construction.
+The object is a fixed string and the question is arithmetic, yet the two judges report 120 words and 79 words and reach opposite verdicts on the same criterion. Across all five, the reported counts ranged from 79 to 120. This is the clearest single illustration in the run of why the benchmark cannot treat any judge as an oracle, and why competence has to be estimated from the participants rather than assumed — the substance of §4.2 and the motivation for the whole construction.
 
 ---
 
@@ -137,7 +137,7 @@ The object is a fixed string and the question is arithmetic, yet the two judges 
 
 The portfolio's remaining five archetypes were **Information Cascade and Collective Behavior**, **Adaptive System Response to Perturbation**, **Emergent Complexity from Simple Rules** (recursive), **Iterative Refinement Towards an Ideal** (recursive), and **The Unseen Hand of Coordination**.
 
-*[Their context-templates, metanym tables, parallel contexts and per-unit evaluations are elided here. Each was evaluated under the identical protocol and contributes to the ratings of §4.4–§4.8 exactly as archetype 1 does; nothing about them is summarised or down-weighted.]*
+*[Their context-templates, metanym tables, parallel contexts and per-unit evaluations are elided here. Each was evaluated under the identical protocol and archetypes 2–5 contribute to the ratings of §4.2–§4.7 exactly as archetype 1 does; the sixth is excluded by the balancing convention of Appendix A.2.b.]*
 
 ## Structural diversity across the portfolio
 
@@ -151,4 +151,4 @@ The submitted set includes Resource Allocation, Information Cascade, Adaptive Re
 
 **Administrator summary:** The council mostly agreed the set showed only moderate structural diversity, with four evaluators rating 5-6 and one dissenting upward at 8. The convergent view was that the five archetypes (resource allocation, information cascades, adaptive response, emergence, iterative refinement) tend toward familiar feedback-and-optimization and human-centered themes, lacking the Reference's bolder, more dramatically contrasted structures (gradient navigation, containment breach, scaffold assembly). The lone dissenter argued the set is arguably more diverse than the Reference's spatially-biased metaphors, while another noted internal overlap, with archetypes 4 and 6 both centering on emergence.
 
-The dissent is instructive rather than anomalous. 3.1-pro is not scoring carelessly — it advances a substantive counter-argument, that the anchor's own set is biased toward spatial metaphors — and it is the only judge to notice and handle the fact that this portfolio contains six archetypes where the format specifies five. A rating that is both an outlier and better-reasoned than the majority is exactly the case that a naive majority vote mishandles and a competence-weighted factorisation is meant to price correctly (§4.7, Appendix A.3).
+The dissent is instructive rather than anomalous. 3.1-pro is not scoring carelessly — it advances a substantive counter-argument, that the anchor's own set is biased toward spatial metaphors — and it is the only judge to notice and handle the fact that this portfolio contains six archetypes where the format specifies five. A rating that is both an outlier and better-reasoned than the majority is exactly the case that a naive majority vote mishandles and a competence-weighted factorisation is meant to price correctly (§4.2, Appendix A.2.a).

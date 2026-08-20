@@ -210,9 +210,10 @@ to 8,192 and the void responses — only the void ones — were re-asked; the pu
 records are the patched set (13 residual voids per Gemini seat, still counted as wrong).
 Two facts bound the bias this asymmetric repair could introduce: retries targeted only
 *unparseable* responses, never parsed-but-wrong answers; and the retry success rate
-(≈87% correct) matches the original pass's scored-only accuracy (gemini-3.1-pro 86.3% on
-its 95 parseable responses — *above* the published 80.81%), so the second pass did not
-score better than the first pass's readable fraction. The single-pass description of §3.1
+did not exceed the first pass's scored-only accuracy on either seat (gemini-3.1-pro: 78/90
+retried items correct, 86.7%, vs 86.3% on its 95 parseable first-pass responses — *above*
+the published 80.81%; gemini-2.5-flash: 22/37, 59%, vs 81.8% scored-only on the first
+pass), so the second pass did not score better than the first pass's readable fraction. The single-pass description of §3.1
 therefore holds for the council run but not for the GPQA administration, which was
 single-pass-with-void-retry; both stages' evidence ships in `data/gpqa_runs/`.
 
@@ -238,6 +239,7 @@ on any mismatch. Its checks, all passing:
    80.81 → 77.27, and gpt-4.1-mini 63.13 → 60.10. The $T$–GPQA correlation moves from
    0.972 to 0.966. Scored the opposite way — voids excluded rather than counted wrong —
    it reads 0.967. The headline survives both directions of the scoring convention.
+6. **First-pass log reconciliation** — the archived first-pass log (gemini-3.1-pro 82/198, gemini-2.5-flash 121/198, truncation voids counted as wrong) reconciles exactly with the shipped two-stage records of D.2.
 
 **What the audit cannot rule out.** It certifies the path from raw records to published
 numbers; it cannot re-run the models. Two residual channels remain. Both instruments share

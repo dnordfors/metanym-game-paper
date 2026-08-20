@@ -1,4 +1,4 @@
-<!-- 2026-06-11: appendix filenames aligned with the paper's letters (A=rating estimators, B=prompts, C=anchor, D=council evaluation); stale shifted-letter duplicates removed. See commit history. -->
+<!-- 2026-06-11: appendix filenames aligned with the paper's letters (A=rating estimators, B=prompts, C=council evaluation, D=GPQA audit); stale shifted-letter duplicates removed. See commit history. -->
 # Appendix B. Generation and evaluation prompts
 
 The verbatim prompts used in the canonical run of §4. All are run with
@@ -313,7 +313,7 @@ All ratings are integers 1–10 inclusive. Equal to the Reference = {ANCHOR_SCOR
 
 ### Bootstrap note — the un-anchored form (§4.1 initial selection)
 
-The bootstrap's initial all-against-all leaderboard (§4.1, stage 1 of §3.4) is
+The bootstrap's initial all-against-all leaderboard (§4.1) is
 produced with the **same six criteria, output format, and JSON schema** as B.2,
 but with the calibration machinery removed. Relative to the anchored prompt
 above, the un-anchored form **omits** the following, and makes the substitutions
