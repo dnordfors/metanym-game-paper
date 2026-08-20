@@ -264,7 +264,7 @@ per-model public record is too poorly sourced to reconcile cell by cell: of the 
 models, only six have citable public values (`data/external_benchmarks.csv` records the
 sourcing state). On those six, public vs self-administered agreement is $r = 0.86$
 ($\rho = 0.81$, $n = 6$) — real but visibly weaker than any correlation in D.1, which is
-the expected signature of two administrations under different protocols.
+the expected signature of two administrations under different protocols. The two administrations are plotted against each other in `figures/gpqa_public_vs_measured.png` (`scripts/plot_gpqa_public_vs_measured.py`): the relation is smooth and monotone with the reasoning-budget offset above the diagonal — corroboration that the self-administered numbers measure the same capability under a leaner protocol.
 
 ## D.5 Artifacts
 
@@ -274,7 +274,7 @@ the expected signature of two administrations under different protocols.
 | Published accuracy table | `reproduce/data/gpqa_selfadministered.csv` |
 | Scoring audit (hard-fail checks) | `reproduce/scripts/gpqa_audit.py` |
 | Official council-basis totals + CIs | `reproduce/data/total_rating_council.csv` |
-| The §4.7_TMP figure | `reproduce/scripts/plot_total_validation.py` |
+| The §4.8 figure | `reproduce/scripts/plot_total_validation.py` |
 | Every D.1 number (ladder, compounds, regimes, bases, per-run) | `reproduce/scripts/t_gpqa_ladder.py` |
 | Bootstrap-basis components; per-run council-basis totals; the declined $E^{C}_{\text{svd}}$ | `reproduce/data/total_rating_twelve.csv`, `total_rating_runs.csv`, `ec_svd_twelve.csv` |
 | Public-value sourcing state | `reproduce/data/external_benchmarks.csv` |
