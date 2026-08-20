@@ -185,9 +185,9 @@ scripts + pinned data that regenerate every number, table, and figure in it.
 ```
 paper/         Final manuscript (metanym_game.md), the built PDF, and the appendix sources.
 submission/    The arXiv upload bundle — paper.tex + figures + bundled fonts, plus the
-               ready-to-upload metanym_game_arxiv.tar.gz, and splice_appendices.py, which
-               regenerates paper.tex's Appendix C and D bodies from paper/appendices/. (Fonts are
-               loaded by path, so no system fonts are required.)
+               ready-to-upload metanym_game_arxiv.tar.gz, and build_paper.py, which
+               regenerates paper.tex + paper.pdf from paper/metanym_game.md and the appendices.
+               (Fonts are loaded by path, so no system fonts are required.)
 reproduce/     Scripts + pinned evaluation data that regenerate the paper's results.
 ```
 
@@ -250,23 +250,18 @@ council judging gemini-2.5-flash, which is `eval_*_x_gemini-2.5-flash.{json,md}`
 From the top of the repository:
 
 ```bash
-python3 submission/splice_appendices.py    # only needed if you edited appendix C or D
-cd submission && tectonic -X compile paper.tex
-cp paper.pdf ../paper/metanym_game.pdf     # refresh the committed PDF
+python3 submission/build_paper.py
 ```
 
-The fonts are bundled and loaded by path, so nothing needs to be installed system-wide.
-`tectonic` is what the committed 71-page PDF was built and verified with; `xelatex paper.tex`
-run twice works too.
-
-The first command is only for when you have changed Appendix C or D under `paper/appendices/`.
-It rewrites just those two bodies of `paper.tex`, leaving the rest of the file alone, because
-the preamble is hand-tuned and would be lost if the whole file were regenerated. Appendices A
-and B are not spliced; edits to them must be propagated into `paper.tex` by hand.
-
-The build writes `submission/paper.pdf`; the third command copies it to
-`paper/metanym_game.pdf`, which is the tracked copy readers see. Do it whenever `paper.tex`
-changes, or the committed PDF drifts from the source.
+One deterministic pipeline (`submission/build_paper.py`): it combines `paper/metanym_game.md`
+with the appendices, converts via pandoc, re-sets every table as an unbreakable `[H]` float —
+the numeric tables as YlGnBu heat tables, the metanym tables with a data-sized no-wrap slot
+column — assembles against the hand-tuned `submission/preamble.tex` (never regenerated), and
+compiles with tectonic, reporting any compile errors and overfull boxes. It writes
+`submission/paper.tex` and `submission/paper.pdf`; copy the latter to `paper/metanym_game.pdf`
+(the tracked copy readers see) and re-pack `submission/metanym_game_arxiv.tar.gz`
+(`tar czf metanym_game_arxiv.tar.gz paper.tex figures fonts` from `submission/`).
+The fonts are bundled and loaded by path; nothing needs to be installed system-wide.
 
 ## License & citation
 
