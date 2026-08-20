@@ -329,11 +329,19 @@ Two **guards**, read off the contest's own matrix and reported with every result
 
 ### 4.6 The ballast
 
-A contest convenes the top of the field — five seats and one contestant — and with the weak submissions gone, the factual axis breaks: the seats' anchored $E^{F}$ come out wrong in scale and wrong in order, swinging by up to 9.2 points depending on who the contestant is (anchored $E^{F}=7f/f_a$ is not confined to the 1–10 rubric when the axis breaks). The **ballast** repairs this: the weakest archived submissions, added to the contest's graded set. Two suffice ([the heatmap](#fig-ballast)).
+A contest convenes the top of the field — five seats and one contestant — and with the weak submissions gone, the factual axis breaks: the seats' anchored $E^{F}$ come out wrong in scale and wrong in order, swinging by up to 9.2 points depending on who the contestant is (anchored $E^{F}=7f/f_a$ is not confined to the 1–10 rubric when the axis breaks). The **ballast** repairs this: the weakest archived submissions, added to the contest's graded set. Two suffice ([the ballast table](#tab-ballast)).
 
-<a id="fig-ballast"></a>
+<a id="tab-ballast"></a>
 
-![Each seat's anchored evaluator factual competence $E^{F}$ under contests with 0–3 ballast blocks (mean over the seven possible contestants), beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean $|\Delta|$ 0.33 over the seven contests, and the same seat is lowest in all seven). The boxed column is the protocol's configuration. Sized by re-analysis of the pinned run — a contest is a sub-matrix of the bootstrap, so no new generation is needed. Reproduced by `scripts/ballast_sizing.py`.](figures/ballast_heatmap.png)
+| Seat | council alone | +1 ballast | +2 ballast | +3 ballast | all 12 (§4.2) |
+|---|---:|---:|---:|---:|---:|
+| gemini-3.1-pro | 6.03 | 7.24 | 7.27 | 7.34 | 7.36 |
+| ★ claude-opus-4.5 | 7.00 | 7.00 | 7.00 | 7.00 | 7.00 |
+| gemini-2.5-flash | 2.11 | 6.69 | 5.25 | 5.06 | 4.68 |
+| claude-opus-4.0 | 7.42 | 3.84 | 3.89 | 4.09 | 4.47 |
+| claude-opus-4.1 | 7.81 | 2.93 | 3.13 | 3.36 | 3.55 |
+
+Table: Each seat's anchored $E^{F}$ by contest composition — 0–3 ballast blocks (mean over the seven possible contestants) beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean $|\Delta|$ 0.33 over the seven contests, and the same seat is lowest in all seven). The **+2 ballast** column is the protocol's configuration. Sized by re-analysis of the pinned run — a contest is a sub-matrix of the bootstrap, so no new generation is needed. Values from `scripts/ballast_sizing.py` via `scripts/plot_ballast_heatmap.py` (`data/ballast_heatmap.csv`).
 
 Why two and not one: a single block is the contest's only substantial error source, so the axis narrows toward *did this judge notice the one bad portfolio* and the §4.5 guards fail in 7% of bootstrap resamples. Two blocks carry two independent error patterns; the guards hold in every resample, $\sigma_1/\sigma_2 = 2.99$ with both interval ends inside the band. A third changes nothing and costs twenty-five more columns of grading.
 

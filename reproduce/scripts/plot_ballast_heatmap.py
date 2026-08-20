@@ -83,6 +83,12 @@ ax.set_title("Seat evaluator factual competence $E^F$ (anchored) by contest comp
              fontsize=9.5, pad=10)
 fig.tight_layout()
 fig.savefig(OUT, bbox_inches="tight", facecolor="white")
+CSV = Path("data/ballast_heatmap.csv")
+with open(CSV, "w") as fh:
+    fh.write("seat,council_alone,plus1,plus2,plus3,all12\n")
+    for m in seats:
+        fh.write(",".join([m] + [f"{means[n][m]:.2f}" for n in range(4)] + [f"{ref[m]:.2f}"]) + "\n")
+print("wrote", CSV)
 print("wrote", OUT)
 print("worst council-alone swing over the seven contestants:",
       round(max(swings[0].values()), 2))

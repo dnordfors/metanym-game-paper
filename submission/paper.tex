@@ -229,48 +229,15 @@ Before the rules, a second example --- this one not authored for the paper but b
 
 and its metanym table:
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1094}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1719}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1875}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1719}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1875}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1719}}@{}}
-\caption{The example's metanym table --- one context template (rows are slots) filled by five metanym sets (columns are domains).}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-{[}SLOT{]}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Bacterial Chemotaxis
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Mountain Climbing
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Career Development
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Gradient Descent
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Ant Foraging
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-{[}SLOT{]}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Bacterial Chemotaxis
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Mountain Climbing
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Career Development
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Gradient Descent
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Ant Foraging
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\begin{table}[H]
+\centering
+\caption{The example's metanym table --- one context template (rows are slots) filled by five metanym sets (columns are domains).}
+\par\nobreak\smallskip
+{\tablefont\scriptsize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{>{\arraybackslash}p{67pt} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-67pt-12\tabcolsep)/5\relax} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-67pt-12\tabcolsep)/5\relax} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-67pt-12\tabcolsep)/5\relax} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-67pt-12\tabcolsep)/5\relax} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-67pt-12\tabcolsep)/5\relax}}
+\toprule
+\multicolumn{1}{l}{\textbf{{[}SLOT{]}}} & \textbf{Bacterial Chemotaxis} & \textbf{Mountain Climbing} & \textbf{Career Development} & \textbf{Gradient Descent} & \textbf{Ant Foraging}\\
+\midrule
 NAVIGATOR & bacterium & climber & professional & optimizer & ant \\
 SPACE & chemical environment & mountain & job market & loss landscape & terrain \\
 GRADIENT & chemical gradient & slope & opportunity gradient & gradient & pheromone trail \\
@@ -281,8 +248,10 @@ ATTRACTOR & nutrient source & summit & desirable position & minimum & food sourc
 INTERFERENCE & toxin & fog & misinformation & noisy data & rain \\
 MEMORY & methylation state & route memory & experience & momentum & path integration \\
 NOISE & Brownian motion & wind & market volatility & stochastic noise & environmental noise \\
-\end{longtable}
-
+\bottomrule
+\end{tabular}
+}
+\end{table}
 Note the span a single row achieves: MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's accumulated experience, an optimiser's momentum term, and an ant's path integration --- five mechanisms that share a structural role without being synonyms.
 
 Each parallel context is played in two forms. The \textbf{instantiation}, \emph{Form (a)}, is the mechanical substitution --- only the slots are filled, every other word carried over untouched --- and it is the form the factual grading acts on, because it is the one that must come out true sentence by sentence. The \textbf{idiomatic rewrite}, \emph{Form (b)}, restates the same propositions in the target domain's own register, showing the claim is not an artefact of the template's phrasing. The first parallel context in both forms (metanyms are set in capitals for legibility; the submission is otherwise verbatim):
@@ -315,33 +284,28 @@ The two elements are deliberately complete --- a player generates and judges, an
 
 Twelve frontier LLMs from three providers are the game's \textbf{participants} --- each serves simultaneously as generator and as evaluator (\hyperref[tab-panel]{the participant roster}):
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+\begin{table}[H]
+\centering
+\caption{The twelve participants, by provider.}
+\par\nobreak\smallskip
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\caption{The twelve participants, by provider.}\tabularnewline
-\toprule\noalign{}
+
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Provider
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Models
 \end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Provider
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Models
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 Anthropic & claude-opus-4.5, claude-opus-4.1, claude-opus-4.0, claude-sonnet-4 \\
 Google & gemini-3.1-pro, gemini-2.5-flash \\
 OpenAI & gpt-4.1-2025-04-14, gpt-4.1-mini, gpt-4.1-nano, gpt-4o, gpt-4o-2024-08-06, gpt-4o-mini \\
-\end{longtable}
-
+\end{tabular}
+}
+\end{table}
 The roster is deliberately heterogeneous --- the models at hand, not a census of the frontier. It spans an order of magnitude in scale, three vendors (so cross-vendor agreement can be tested rather than assumed), adjacent versions within one family (Opus 4.0 / 4.1 / 4.5, stressing resolution and the safeguard against same-vendor agreement masquerading as competence), and size tiers within a family. Ratings are relative to the evaluator set, so no conclusion depends on this particular roster --- and taking what was at hand removes any concern that it was chosen to flatter the method.
 
 All twelve are called with \textbf{Temperature=0}, \textbf{reasoning disabled}, and \textbf{tools disabled} --- three confounds removed at once. T=0 makes the one greedy response the measurement (the gateway does not guarantee bit-identical replay; §4.9 measures what moves on regeneration). No reasoning tests the direct response rather than a provider-opaque deliberation loop. No tools closes external channels that could leak factual content the model does not represent.
@@ -352,12 +316,17 @@ Each model generates one portfolio: five archetypal contexts, each with a contex
 
 Each model then evaluates every other model's portfolio under \hyperref[tab-rubric]{a six-axis rubric}:
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+\begin{table}[H]
+\centering
+\caption{The six-axis evaluation rubric.}
+\par\nobreak\smallskip
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\caption{The six-axis evaluation rubric.}\tabularnewline
-\toprule\noalign{}
+
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Axis
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -365,28 +334,16 @@ Granularity
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 What it measures
 \end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Axis
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Granularity
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-What it measures
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 \texttt{factual\_\allowbreak{}per\_\allowbreak{}pc} & per parallel context & factual defensibility of the substituted text in its target domain \\
 \texttt{beauty} & per archetype & aesthetic quality of the context template \\
 \texttt{intelligence} & per archetype & depth and non-triviality of the abstraction \\
 \texttt{instantiation\_\allowbreak{}distinctness} & per archetype & ``Domains far apart / metanyms not synonymous'' \\
 \texttt{impressive\_\allowbreak{}length} & per archetype & template length and slot count \\
 \texttt{structural\_\allowbreak{}diversity} & per portfolio & how different the five archetypes are from one another \\
-\end{longtable}
-
+\end{tabular}
+}
+\end{table}
 Scores are on a 1--10 cardinal scale. Each evaluator call presents one anonymised target portfolio alongside a fixed \textbf{anchor} portfolio pinned at 7 on every axis; the evaluator scores the target relative to the anchor. The full evaluation yields a 12×12 evaluator-by-generator matrix.
 
 What one such evaluation looks like --- the same kind of artifact worked in §2.a, judged --- is shown whole in \hyperref[fig-council-evaluation]{the council-evaluation exhibit}.
@@ -449,100 +406,63 @@ Anchored data in hand, we ask of each evaluator the two questions on which their
 
 The two criteria are both trustworthiness measures, read from opposite directions --- one collective, one individual. The graded \textbf{singular value decomposition (SVD)} measures \textbf{peer centrality} --- it is \emph{collective}: weight accrues to the judge the other judges most often agree with, once each judge's leniency is removed, on the single hypothesis that the only thing competent judges share is the truth. Formally, the weight is each judge's eigenvector centrality in the leniency-removed agreement network --- the recursion that also underlies PageRank: agreement counts for more when it comes from judges who are themselves central. It is the fact-checking instrument --- the replacement for the golden key --- and serves exactly where a ground truth exists to be shared. \textbf{Rating consistency} is \emph{individual}: no judge is compared with any other. The anchor is the scale's tare; if a judge's view of which work is better moves when the tare moves, the judge holds no stable standard --- it scores inconsistently, and is less competent. That makes it the instrument for the axes where there may be no right or wrong. Neither estimator can do the other's job:
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+\begin{table}[H]
+\centering
+\caption{The two estimators and their division of labour.}
+\par\nobreak\smallskip
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\caption{The two estimators and their division of labour.}\tabularnewline
-\toprule\noalign{}
+
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Peer centrality (graded SVD)
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Rating consistency (anchor sweep)
 \end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Peer centrality (graded SVD)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Rating consistency (anchor sweep)
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 Character & \emph{collective}: each judge weighted by the other judges' agreement with it & \emph{individual}: each judge measured only against itself across the sweep \\
 Licensing assumption & the only thing competent judges share is the truth & a stable standard is the only competence a subjective axis can show \\
 Use for & fact-checking --- replaces the golden key (\(E^{F}\), \(G^{F}\)) & axes with no right or wrong (\(E^{C}\); the per-axis weights in \(G^{C}\)) \\
 Blind spot & a misunderstanding \emph{shared} by the judges reads as truth (§5.8) & a \emph{private} misconception, held consistently, passes as a standard \\
 Why it stops there & agreement on taste would convert alignment into authority --- the mainstreaming §5.2 declines & consistency cannot certify truth: a consistent judge can be consistently \emph{wrong} \\
-\end{longtable}
-
+\end{tabular}
+}
+\end{table}
 \textbf{Factual competence.} We assume that good evaluators agree with one another about which instantiations are factually weaker, once each evaluator's own leniency is removed --- the better two evaluators are, the more they agree. In its mathematical form this is an eigen-equation, whose leading solution assigns each evaluator a factual-competence coefficient obtained not by knowing the truth about what is judged but by comparing the evaluators' judgements with one another. This matters beyond convenience: instantiations generated in the run can assert claims no answer key covers, and for new knowledge no key can exist --- leaving the considered agreement of competent peers as the only available standard, the logic scientific peer review already runs on. We stack the participants' factual scores into one matrix --- twelve evaluators against the 275 parallel contexts of the eleven scored portfolios (balancing conventions in Appendix A.2.b) --- each entry the evaluator's \(1\)--\(10\) rating used directly, row-centre it to remove each evaluator's leniency, and take its \textbf{singular value decomposition} (Appendix A.2.a). The construction is a graded relative of the classical label-free aggregators (Dawid \& Skene 1979; Parisi et al.~2014), which need binarised verdicts --- and the threshold matters: binarising this matrix at \(t \in \{4,5,6\}\) shifts the competence ordering and flips the marginal council seat. The graded SVD needs no threshold. The row-centred matrix \(\tilde F\) (evaluators × instantiations) is well approximated by its leading rank-one factor,
 
 \[\tilde F_{sj} \;\approx\; \sigma_1\, u_s\, v_j, \qquad f \equiv u\ \text{(left singular vector).} \tag{1}\]
 
 An evaluator's rating tracks the consensus in proportion to its competence \(u_s\) times the instantiation's factual standing \(v_j\) --- competence and standing fall out of one factorisation, with \textbf{no answer key}. The \emph{left} singular vector scores each \textbf{evaluator}: high when its ratings align with the participants' shared signal, ≈ 0 when it rates everything alike or idiosyncratically. That is \(E^{F}\). The \emph{right} singular vector, aggregated per generator, gives \(G^{F}\) --- not an independent measurement but the participants' own factual ratings weighted by each judge's competence (the two computations --- right singular vector, and \(E^{F}\)-weighted mean of the raw ratings --- agree within 0.14 on the anchored scale, \(r = 1.00\); Appendix A.2.a). Both are tabulated below, bootstrapped over the 275 columns (interval conventions in Appendix A.2.a and A.5; the full-sample axis is well separated, \(\sigma_1/\sigma_2 = 2.6\)); the five inert-band rows (†) --- loadings not distinguishable from zero --- get no interval. \(E^{F}\) is shown raw and \textbf{anchored} to the 1--10 scale (\(7f/f_a\), the form that enters \(T\)); Opus-4.5 is the anchor reference, \(E^{F}=G^{F}=7\) by construction:
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1905}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1905}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1905}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}@{}}
-\caption{Evaluator factual competence and generator factuality (key-free SVD).}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Model
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(E^{F}\) loading
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(E^{F}\) anchored
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-95\% CI
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(G^{F}\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-95\% CI
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Model
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(E^{F}\) loading
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(E^{F}\) anchored
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-95\% CI
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(G^{F}\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-95\% CI
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-gemini-3.1-pro & 0.58 & 7.36 & {[}7.14, 7.65{]} & 6.58 & {[}6.33, 6.78{]} \\
-claude-opus-4.5 & 0.55 & 7.00 & {[}7.00, 7.00{]} & 7.00 & (anchor) \\
-gemini-2.5-flash & 0.37 & 4.68 & {[}3.95, 5.10{]} & 6.57 & {[}6.35, 6.76{]} \\
-claude-opus-4.0 & 0.35 & 4.47 & {[}4.08, 4.46{]} & 6.98 & {[}6.93, 7.02{]} \\
-claude-opus-4.1 & 0.28 & 3.55 & {[}3.44, 3.82{]} & 6.97 & {[}6.89, 7.03{]} \\
-claude-sonnet-4 & 0.13 & 1.62 & {[}1.40, 2.04{]} & 6.98 & {[}6.95, 7.01{]} \\
-gpt-4.1-mini & 0.09 & 1.21 & {[}0.38, 1.53{]} & 6.18 & {[}5.89, 6.43{]} \\
-gpt-4o-2024-08-06 & 0.05 & 0.62† & --- & 5.22 & {[}5.04, 5.37{]} \\
-gpt-4.1-nano & 0.04 & 0.49† & --- & 3.66 & {[}3.16, 4.13{]} \\
-gpt-4o & 0.03 & 0.34† & --- & 5.11 & {[}4.90, 5.32{]} \\
-gpt-4.1-2025-04-14 & 0.02 & 0.20† & --- & 6.50 & {[}6.28, 6.69{]} \\
-gpt-4o-mini & 0.00 & 0.00† & --- & 3.20 & {[}2.80, 3.73{]} \\
-\end{longtable}
-
+\begin{table}[H]
+\centering
+\caption{Evaluator factual competence and generator factuality (key-free SVD).}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{B >{\centering\arraybackslash}m{1.5cm} >{\centering\arraybackslash}m{1.6cm} >{\centering\arraybackslash}m{1.8cm}!{\vrule width 1pt} >{\centering\arraybackslash}m{1.1cm} >{\centering\arraybackslash}m{1.8cm}}
+\toprule
+\multicolumn{1}{l}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{\shortstack{$E^{F}$\\loading}}} & \multicolumn{1}{c}{\textbf{\shortstack{$E^{F}$\\anchored}}} & \multicolumn{1}{c}{\textbf{95\% CI}} & \multicolumn{1}{c}{\textbf{$G^{F}$}} & \multicolumn{1}{c}{\textbf{95\% CI}}\\
+\midrule
+gemini-3.1-pro & \cellcolor[HTML]{299EC1}\textcolor[HTML]{FFFFFF}{0.58} & \cellcolor[HTML]{2163AA}\textcolor[HTML]{FFFFFF}{7.36} & [7.14, 7.65] & \cellcolor[HTML]{1E83B9}\textcolor[HTML]{FFFFFF}{6.58} & [6.33, 6.78]\\
+claude-opus-4.5 & \cellcolor[HTML]{32A7C2}\textcolor[HTML]{FFFFFF}{0.55} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & [7.00, 7.00] & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & (anchor)\\
+gemini-2.5-flash & \cellcolor[HTML]{82CEBA}\textcolor[HTML]{000000}{0.37} & \cellcolor[HTML]{51BCC1}\textcolor[HTML]{000000}{4.68} & [3.95, 5.10] & \cellcolor[HTML]{1E83B9}\textcolor[HTML]{FFFFFF}{6.57} & [6.35, 6.76]\\
+claude-opus-4.0 & \cellcolor[HTML]{8DD2B9}\textcolor[HTML]{000000}{0.35} & \cellcolor[HTML]{5BBFC0}\textcolor[HTML]{000000}{4.47} & [4.08, 4.46] & \cellcolor[HTML]{1F73B1}\textcolor[HTML]{FFFFFF}{6.98} & [6.93, 7.02]\\
+claude-opus-4.1 & \cellcolor[HTML]{B6E2B5}\textcolor[HTML]{000000}{0.28} & \cellcolor[HTML]{8BD1B9}\textcolor[HTML]{000000}{3.55} & [3.44, 3.82] & \cellcolor[HTML]{1F73B1}\textcolor[HTML]{FFFFFF}{6.97} & [6.89, 7.03]\\
+claude-sonnet-4 & \cellcolor[HTML]{EBF7B1}\textcolor[HTML]{000000}{0.13} & \cellcolor[HTML]{E2F3B1}\textcolor[HTML]{000000}{1.62} & [1.40, 2.04] & \cellcolor[HTML]{1F73B1}\textcolor[HTML]{FFFFFF}{6.98} & [6.95, 7.01]\\
+gpt-4.1-mini & \cellcolor[HTML]{F2F9BC}\textcolor[HTML]{000000}{0.09} & \cellcolor[HTML]{EEF8B3}\textcolor[HTML]{000000}{1.21} & [0.38, 1.53] & \cellcolor[HTML]{1E92C0}\textcolor[HTML]{FFFFFF}{6.18} & [5.89, 6.43]\\
+gpt-4o-2024-08-06 & \cellcolor[HTML]{F8FCC9}\textcolor[HTML]{000000}{0.05} & \cellcolor[HTML]{F6FBC6}\textcolor[HTML]{000000}{0.62}$\dagger$ & — & \cellcolor[HTML]{3AAFC3}\textcolor[HTML]{000000}{5.22} & [5.04, 5.37]\\
+gpt-4.1-nano & \cellcolor[HTML]{F9FCCC}\textcolor[HTML]{000000}{0.04} & \cellcolor[HTML]{F8FCC9}\textcolor[HTML]{000000}{0.49}$\dagger$ & — & \cellcolor[HTML]{84CFBA}\textcolor[HTML]{000000}{3.66} & [3.16, 4.13]\\
+gpt-4o & \cellcolor[HTML]{FBFDD0}\textcolor[HTML]{000000}{0.03} & \cellcolor[HTML]{FAFDCE}\textcolor[HTML]{000000}{0.34}$\dagger$ & — & \cellcolor[HTML]{3EB3C3}\textcolor[HTML]{000000}{5.11} & [4.90, 5.32]\\
+gpt-4.1-2025-04-14 & \cellcolor[HTML]{FCFDD2}\textcolor[HTML]{000000}{0.02} & \cellcolor[HTML]{FCFDD2}\textcolor[HTML]{000000}{0.20}$\dagger$ & — & \cellcolor[HTML]{1E86BB}\textcolor[HTML]{FFFFFF}{6.50} & [6.28, 6.69]\\
+gpt-4o-mini & \cellcolor[HTML]{FFFFD9}\textcolor[HTML]{000000}{0.00} & \cellcolor[HTML]{FFFFD9}\textcolor[HTML]{000000}{0.00}$\dagger$ & — & \cellcolor[HTML]{A0D9B7}\textcolor[HTML]{000000}{3.20} & [2.80, 3.73]\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 \emph{One SVD of the row-centred evaluator×instantiation factual-rating matrix, with no answer key. † inert band: loading not robustly distinguishable from zero; the anchored value is convention-dependent (see the interval-conventions passage above) and no interval is printed. These are the twelve-evaluator bootstrap values --- the selection evidence; the official contest values (§4.7) differ. \(E^{F}\) = evaluator factual competence (left singular vector): ``loading'' is the raw competence weight (0 = no factual signal), ``anchored'' rescales it to the 1--10 scale as \(7f/f_a\). \(G^{F}\) = generator factual competence (right vector): the participants' 1--10 factual ratings of that generator, weighted by each evaluator's \(E^{F}\). claude-opus-4.5 is the anchor (\(E^{F}=7\) and \(G^{F}=7\) by construction, the generation reference). 95\% CI: percentile bootstrap over the 275 instantiation columns, replicates Procrustes-aligned before loadings are read --- a convention under which an interval can exclude the full-sample point by rounding-scale amounts (opus-4.0: 4.47 vs {[}4.08, 4.46{]}). Higher = more factually competent.}
 
 Five evaluators (0.28--0.58) separate decisively from the rest. The lower seven taper from claude-sonnet-4 (0.13) into an inert band whose small positive loadings are not robustly distinguishable from zero: those models rate near-identically and carry little error signal. Sonnet-4 sits closest to the boundary, its CI touching gpt-4.1-mini's, so the decisive cut falls after the top five.
@@ -551,25 +471,24 @@ The official total built from these ratings is checked against an independent ex
 
 \textbf{Same-vendor robustness.} The key-free factual axis assumes near-independent errors, so the fair worry is that a Claude-heavy evaluator set reads Claude-bloc agreement as truth --- ``Anthropic models grade Anthropic models first.'' They do not. Recomputing the generator-factuality ordering \(G^{F}\) with each vendor's judges removed leaves it essentially unchanged, and a \emph{Claude-free} evaluator set (Google + OpenAI judges only) still places \hyperref[tab-vendor-robustness]{the Claude generators at the top}:
 
-\begin{longtable}[]{@{}lrcc@{}}
-\caption{Same-vendor robustness of the factual ordering.}\tabularnewline
-\toprule\noalign{}
-Evaluator set & Spearman vs full & Claude generators & GPT-4o family \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Evaluator set & Spearman vs full & Claude generators & GPT-4o family \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-full (12 judges) & 1.00 & top & bottom \\
-− Anthropic judges & 0.96 & still top & bottom \\
-− Google judges & 0.98 & top & bottom \\
-− OpenAI judges & 0.99 & top & bottom \\
-Claude-free (Google + OpenAI) & 0.96 & top (\(\ge 7.0\)) & bottom \\
-\end{longtable}
-
+\begin{table}[H]
+\centering
+\caption{Same-vendor robustness of the factual ordering.}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{>{\raggedright\arraybackslash}m{3.7cm} >{\centering\arraybackslash}m{2.0cm} >{\centering\arraybackslash}m{2.6cm} >{\centering\arraybackslash}m{2.2cm}}
+\toprule
+\multicolumn{1}{l}{\textbf{Evaluator set}} & \multicolumn{1}{c}{\textbf{\shortstack{Spearman\\vs full}}} & \multicolumn{1}{c}{\textbf{\shortstack{Claude\\generators}}} & \multicolumn{1}{c}{\textbf{\shortstack{GPT-4o\\family}}}\\
+\addlinespace[2pt]\midrule
+full (12 judges) & \cellcolor[HTML]{081D58}\textcolor[HTML]{FFFFFF}{1.00} & top & bottom\\
+− Anthropic judges & \cellcolor[HTML]{11246A}\textcolor[HTML]{FFFFFF}{0.96} & still top & bottom\\
+− Google judges & \cellcolor[HTML]{0C2061}\textcolor[HTML]{FFFFFF}{0.98} & top & bottom\\
+− OpenAI judges & \cellcolor[HTML]{091E5B}\textcolor[HTML]{FFFFFF}{0.99} & top & bottom\\
+Claude-free (Google + OpenAI) & \cellcolor[HTML]{11246A}\textcolor[HTML]{FFFFFF}{0.96} & top ($\ge 7.0$) & bottom\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 \emph{The generator factual ordering \(G^{F}\) recomputed with each vendor's evaluators removed. Spearman vs full: rank correlation of the reduced-set ordering against the full twelve-judge ordering (1.00 = identical). The last two columns report where each model group lands. The Claude models' standing survives even a Claude-free evaluator set, so it is a cross-vendor verdict, not same-vendor agreement.}
 
 The ordering survives dropping any single vendor's judges (Spearman \(\ge 0.96\) throughout), the inert GPT-4o family stays at the floor under every evaluator set, and --- against the self-preference worry specifically --- Anthropic's own judges rate if anything slightly \emph{harsher} than the cross-vendor sets (dropping them \emph{raises} several non-Claude scores). The Claude models' lead is a cross-vendor verdict, not Claude grading Claude.
@@ -588,156 +507,67 @@ The benchmark \textbf{scales by addition}: any future model can be evaluated aga
 
 \textbf{Rating consistency.} Beyond catching factual errors, a reliable evaluator needs a stable internal standard for each non-factual criterion --- a clear, reusable sense of what makes one submission more beautiful, more intelligent, more distinct than another. We call this the evaluator's \textbf{rating consistency}, and we measure it with the \textbf{anchor sweep}. The anchor is the fixed reference every submission is scored against; we sweep its value across 5, 6, 7, and 8 --- the \emph{only} difference between the four runs (at T=0 every cell is otherwise identical). A consistent evaluator gives the submissions the same pattern of relative scores whichever value is used. For each evaluator, and \textbf{for each rating axis separately}, we correlate (Pearson) the scores at one anchor with the scores at another, averaged over the six anchor pairs; this per-axis consistency is the diagnostic \(E^{C}_a\) (the five non-factual axes are the gate's diagnostics; the factual column is reported for comparison only). The measure is \textbf{leave-self-out} (unit counts and balancing in Appendix A.2.b). Because the anchor is the only thing that changed, a low correlation has two readings: the evaluator lacks a clear sense for that axis, or it holds no stable standard at all. The uniform case is not an arithmetic deficit --- the models that fail that way handle standard maths fine (gpt-4o scores 95\% on GSM8K) --- so it reflects inconsistent evaluation, not weak numeracy.
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 12\tabcolsep) * \real{0.1111}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}@{}}
-\caption{Anchor-sweep consistency, per evaluator and axis.}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Evaluator
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-factual
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-beauty
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-intelligence
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-distinctness
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-length
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-struct
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Evaluator
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-factual
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-beauty
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-intelligence
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-distinctness
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-length
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-struct
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-gemini-3.1-pro & 0.88 & 0.83 & 0.90 & 0.87 & 0.90 & 0.89 \\
-claude-opus-4.5 & 0.90 & 0.86 & 0.85 & 0.84 & 0.91 & 0.85 \\
-claude-opus-4.1 & 0.83 & 0.84 & 0.85 & 0.72 & 0.84 & 0.92 \\
-claude-opus-4.0 & 0.78 & 0.83 & 0.84 & 0.69 & 0.83 & 0.86 \\
-gpt-4.1-mini & 0.87 & 0.77 & 0.75 & 0.76 & 0.84 & 0.81 \\
-claude-sonnet-4 & 0.70 & 0.75 & 0.77 & 0.75 & 0.78 & 0.81 \\
-gpt-4.1-2025-04-14 & 0.24 & 0.64 & 0.73 & 0.74 & 0.82 & 0.84 \\
-gemini-2.5-flash & 0.31 & 0.77 & 0.66 & 0.50 & 0.82 & 0.85 \\
-gpt-4.1-nano & 0.65 & 0.63 & 0.64 & 0.44 & 0.37 & 0.36 \\
-gpt-4o-2024-08-06 & 0.59 & 0.58 & 0.55 & 0.38 & 0.53 & 0.69 \\
-gpt-4o & 0.13 & 0.32 & 0.24 & 0.12 & 0.40 & 0.34 \\
-gpt-4o-mini & n/a & 0.25 & 0.36 & 0.27 & 0.10 & 0.23 \\
-\end{longtable}
-
+\begin{table}[H]
+\centering
+\caption{Anchor-sweep consistency, per evaluator and axis.}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{B H!{\vrule width 1pt} H H H H H}
+\toprule
+\multicolumn{1}{l}{\textbf{Evaluator}} & \multicolumn{1}{c}{\textbf{factual}} & \multicolumn{1}{c}{\textbf{beauty}} & \multicolumn{1}{c}{\textbf{intel}} & \multicolumn{1}{c}{\textbf{distinct}} & \multicolumn{1}{c}{\textbf{length}} & \multicolumn{1}{c}{\textbf{struct}}\\
+\midrule
+gemini-3.1-pro & \cellcolor[HTML]{233290}\textcolor[HTML]{FFFFFF}{0.88} & \cellcolor[HTML]{23429A}\textcolor[HTML]{FFFFFF}{0.83} & \cellcolor[HTML]{1E2F87}\textcolor[HTML]{FFFFFF}{0.90} & \cellcolor[HTML]{243594}\textcolor[HTML]{FFFFFF}{0.87} & \cellcolor[HTML]{1E2F87}\textcolor[HTML]{FFFFFF}{0.90} & \cellcolor[HTML]{21318C}\textcolor[HTML]{FFFFFF}{0.89}\\
+claude-opus-4.5 & \cellcolor[HTML]{1E2F87}\textcolor[HTML]{FFFFFF}{0.90} & \cellcolor[HTML]{243895}\textcolor[HTML]{FFFFFF}{0.86} & \cellcolor[HTML]{243C97}\textcolor[HTML]{FFFFFF}{0.85} & \cellcolor[HTML]{243E99}\textcolor[HTML]{FFFFFF}{0.84} & \cellcolor[HTML]{1C2D83}\textcolor[HTML]{FFFFFF}{0.91} & \cellcolor[HTML]{243C97}\textcolor[HTML]{FFFFFF}{0.85}\\
+claude-opus-4.1 & \cellcolor[HTML]{23429A}\textcolor[HTML]{FFFFFF}{0.83} & \cellcolor[HTML]{243E99}\textcolor[HTML]{FFFFFF}{0.84} & \cellcolor[HTML]{243C97}\textcolor[HTML]{FFFFFF}{0.85} & \cellcolor[HTML]{2069AD}\textcolor[HTML]{FFFFFF}{0.72} & \cellcolor[HTML]{243E99}\textcolor[HTML]{FFFFFF}{0.84} & \cellcolor[HTML]{1A2B7D}\textcolor[HTML]{FFFFFF}{0.92}\\
+claude-opus-4.0 & \cellcolor[HTML]{2253A3}\textcolor[HTML]{FFFFFF}{0.78} & \cellcolor[HTML]{23429A}\textcolor[HTML]{FFFFFF}{0.83} & \cellcolor[HTML]{243E99}\textcolor[HTML]{FFFFFF}{0.84} & \cellcolor[HTML]{1F76B3}\textcolor[HTML]{FFFFFF}{0.69} & \cellcolor[HTML]{23429A}\textcolor[HTML]{FFFFFF}{0.83} & \cellcolor[HTML]{243895}\textcolor[HTML]{FFFFFF}{0.86}\\
+gpt-4.1-mini & \cellcolor[HTML]{243594}\textcolor[HTML]{FFFFFF}{0.87} & \cellcolor[HTML]{2256A4}\textcolor[HTML]{FFFFFF}{0.77} & \cellcolor[HTML]{225DA7}\textcolor[HTML]{FFFFFF}{0.75} & \cellcolor[HTML]{225AA6}\textcolor[HTML]{FFFFFF}{0.76} & \cellcolor[HTML]{243E99}\textcolor[HTML]{FFFFFF}{0.84} & \cellcolor[HTML]{23499E}\textcolor[HTML]{FFFFFF}{0.81}\\
+claude-sonnet-4 & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{0.70} & \cellcolor[HTML]{225DA7}\textcolor[HTML]{FFFFFF}{0.75} & \cellcolor[HTML]{2256A4}\textcolor[HTML]{FFFFFF}{0.77} & \cellcolor[HTML]{225DA7}\textcolor[HTML]{FFFFFF}{0.75} & \cellcolor[HTML]{2253A3}\textcolor[HTML]{FFFFFF}{0.78} & \cellcolor[HTML]{23499E}\textcolor[HTML]{FFFFFF}{0.81}\\
+gpt-4.1-2025-04-14 & \cellcolor[HTML]{CAEAB3}\textcolor[HTML]{000000}{0.24} & \cellcolor[HTML]{1D8BBD}\textcolor[HTML]{FFFFFF}{0.64} & \cellcolor[HTML]{2166AB}\textcolor[HTML]{FFFFFF}{0.73} & \cellcolor[HTML]{2161A9}\textcolor[HTML]{FFFFFF}{0.74} & \cellcolor[HTML]{23469C}\textcolor[HTML]{FFFFFF}{0.82} & \cellcolor[HTML]{243E99}\textcolor[HTML]{FFFFFF}{0.84}\\
+gemini-2.5-flash & \cellcolor[HTML]{A4DBB7}\textcolor[HTML]{000000}{0.31} & \cellcolor[HTML]{2256A4}\textcolor[HTML]{FFFFFF}{0.77} & \cellcolor[HTML]{1E83B9}\textcolor[HTML]{FFFFFF}{0.66} & \cellcolor[HTML]{40B5C3}\textcolor[HTML]{000000}{0.50} & \cellcolor[HTML]{23469C}\textcolor[HTML]{FFFFFF}{0.82} & \cellcolor[HTML]{243C97}\textcolor[HTML]{FFFFFF}{0.85}\\
+gpt-4.1-nano & \cellcolor[HTML]{1E86BB}\textcolor[HTML]{FFFFFF}{0.65} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{0.63} & \cellcolor[HTML]{1D8BBD}\textcolor[HTML]{FFFFFF}{0.64} & \cellcolor[HTML]{5FC1BF}\textcolor[HTML]{000000}{0.44} & \cellcolor[HTML]{82CEBA}\textcolor[HTML]{000000}{0.37} & \cellcolor[HTML]{87D0BA}\textcolor[HTML]{000000}{0.36}\\
+gpt-4o-2024-08-06 & \cellcolor[HTML]{269AC1}\textcolor[HTML]{FFFFFF}{0.59} & \cellcolor[HTML]{299EC1}\textcolor[HTML]{FFFFFF}{0.58} & \cellcolor[HTML]{32A7C2}\textcolor[HTML]{FFFFFF}{0.55} & \cellcolor[HTML]{7CCCBB}\textcolor[HTML]{000000}{0.38} & \cellcolor[HTML]{38ADC3}\textcolor[HTML]{000000}{0.53} & \cellcolor[HTML]{1F76B3}\textcolor[HTML]{FFFFFF}{0.69}\\
+gpt-4o & \cellcolor[HTML]{EBF7B1}\textcolor[HTML]{000000}{0.13} & \cellcolor[HTML]{A0D9B7}\textcolor[HTML]{000000}{0.32} & \cellcolor[HTML]{CAEAB3}\textcolor[HTML]{000000}{0.24} & \cellcolor[HTML]{EEF8B3}\textcolor[HTML]{000000}{0.12} & \cellcolor[HTML]{72C8BC}\textcolor[HTML]{000000}{0.40} & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{0.34}\\
+gpt-4o-mini & \cellcolor[HTML]{EEEEEE}\textcolor[HTML]{777777}{n/a} & \cellcolor[HTML]{C6E8B4}\textcolor[HTML]{000000}{0.25} & \cellcolor[HTML]{87D0BA}\textcolor[HTML]{000000}{0.36} & \cellcolor[HTML]{BBE4B5}\textcolor[HTML]{000000}{0.27} & \cellcolor[HTML]{F0F9B9}\textcolor[HTML]{000000}{0.10} & \cellcolor[HTML]{CDEBB3}\textcolor[HTML]{000000}{0.23}\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 \emph{For each evaluator and axis, the mean pairwise Pearson correlation of its scores across the four anchor values (5/6/7/8). It measures self-consistency, not accuracy: the \texttt{factual} column is distinct from the factual-competence loading (Sonnet-4 reads 0.70 here but 0.13 there). gpt-4o-mini's factual entry is n/a --- near-zero variance makes the correlations undefined (A10). The anchored \textbf{rating consistency} that enters \(T\) (§4.7) is defined below.}
 
 Two patterns matter. Collapse is either \emph{uniform} --- gpt-4o and gpt-4o-mini hold no stable signal on any axis --- or \emph{axis-specific}: gpt-4.1-2025-04-14 (0.24) and gemini-2.5-flash (0.31) collapse on factual while their other axes hold. Distinctness is the axis the participants find hardest to hold steady (mean 0.59). Because the factual axis is peer centrality's responsibility, council eligibility is assessed on the non-factual axes. The gate value is the \textbf{collapsed} consistency \(\bar r\): the four per-archetype axis scores are averaged per unit before correlating across anchors (A11), so axis-idiosyncratic noise partially cancels and \(\bar r\) reads higher than the row means above (Flash: row mean \(\approx 0.70\), collapsed \(0.81\)).
 
 \textbf{Rating consistency (anchored).} The anchor sweep applies the familiar LLM-judge reliability principle --- a competent judge is invariant under non-semantic perturbation --- to a controlled perturbation of the calibration value itself, and turns that invariance into a key-free, per-criterion gate (its place among prior reliability and anchor-selection work is §5.5). Rescaled to the anchor (\(E^{C}_a = 7\,r_a/r_{a,\text{anchor}}\), so Opus-4.5 reads 7), the consistency becomes a competence on the \(1\)--\(10\) scale, directly comparable with a generator's quality on the same criterion. The hypothesis is testable on the one axis that also carries an \emph{independent} competence measure --- factual, where the key-free error-detection loading \(E^{F}\) exists: factual consistency \(E^{C}_f\) and \(E^{F}\) correlate at Pearson \(r = 0.52\) (Spearman \(\rho = 0.72\)), a decent agreement that supports reading consistency as competence. The looseness is the consistency-vs-accuracy gap --- a model can rate factuality consistently yet uninformatively (gpt-4.1-mini, consistency \(0.87\) against competence \(\approx 0.09\)). \hyperref[tab-per-criterion]{The table} pairs, per non-factual criterion, the \textbf{generator} competence \(G\) with the \textbf{evaluator} competence \(E\), both anchored to Opus-4.5 = 7, and gives their \textbf{anchored cosine} alignment --- the cosine between the models' maker- and judge-deviations from the anchor point \((7,7)\), defined in Appendix A.6 (eq A15):
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}@{}}
-\caption{Per-criterion generator quality (G) vs evaluator reliability (E).}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Model
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-beauty \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-beauty \(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-intel \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-intel \(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-dist \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-dist \(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-len \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-len \(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-struct \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-struct \(E\)
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Model
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-beauty \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-beauty \(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-intel \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-intel \(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-dist \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-dist \(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-len \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-len \(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-struct \(G\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-struct \(E\)
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-★ claude-opus-4.5 & 7.0 & 7.0 & 7.0 & 7.0 & 7.0 & 7.0 & 7.0 & 7.0 & 7.0 & 7.0 \\
-claude-opus-4.1 & 7.1 & 6.8 & 7.2 & 7.0 & 7.4 & 6.0 & 6.7 & 6.5 & 7.3 & 7.6 \\
-claude-opus-4.0 & 6.9 & 6.7 & 6.9 & 7.0 & 7.0 & 5.7 & 6.8 & 6.3 & 7.3 & 7.1 \\
-claude-sonnet-4 & 6.3 & 6.1 & 6.3 & 6.4 & 6.5 & 6.2 & 6.1 & 6.0 & 6.4 & 6.7 \\
-gemini-3.1-pro & 5.8 & 6.8 & 5.7 & 7.4 & 6.0 & 7.3 & 5.5 & 6.9 & 5.7 & 7.4 \\
-gemini-2.5-flash & 5.4 & 6.2 & 5.5 & 5.5 & 6.2 & 4.2 & 5.7 & 6.3 & 5.8 & 7.0 \\
-gpt-4.1-mini & 4.8 & 6.3 & 5.0 & 6.2 & 5.9 & 6.3 & 4.2 & 6.5 & 5.4 & 6.7 \\
-gpt-4.1-2025-04-14 & 5.1 & 5.2 & 5.0 & 6.0 & 6.0 & 6.2 & 3.6 & 6.3 & 5.6 & 7.0 \\
-gpt-4.1-nano & 3.5 & 5.1 & 3.7 & 5.3 & 4.2 & 3.7 & 3.5 & 2.8 & 3.2 & 2.9 \\
-gpt-4o-2024-08-06 & 3.5 & 4.7 & 3.3 & 4.5 & 4.1 & 3.1 & 3.3 & 4.0 & 3.0 & 5.7 \\
-gpt-4o & 3.4 & 2.6 & 3.4 & 2.0 & 4.7 & 1.0 & 2.6 & 3.1 & 3.2 & 2.8 \\
-gpt-4o-mini & 3.5 & 2.1 & 3.5 & 3.0 & 3.3 & 2.3 & 3.8 & 0.8 & 3.0 & 1.9 \\
-\textbf{cos(G,E)} & \textbf{0.91} & {[}.83,.95{]} & \textbf{0.90} & {[}.80,.93{]} & \textbf{0.89} & {[}.82,.92{]} & \textbf{0.84} & {[}.80,.87{]} & \textbf{0.87} & {[}.86,.87{]} \\
-\end{longtable}
-
-\emph{Per criterion: \(E\) = evaluator rating consistency (the anchored consistency of \hyperref[tab-criterion-b]{the consistency table}, rescaled to 1--10) and \(G\) = generator quality --- the council's leave-self-out mean on that axis, \textbf{each member's vote weighted by its own reliability \(E\) there} (eq A12b; the same weighting §4.7 applies to \(G^{C}\)), so \(E\) both scores the judge and sets its weight in \(G\). Both anchored to claude-opus-4.5 (★) = 7. \(\cos(G,E)\) = cosine of each model's deviation from \((7,7)\) across the participants, 95\% CI from the A.5 joint bootstrap; 1 = making and judging perfectly aligned. Higher \(G\) = better generator; higher \(E\) = more stable evaluator.}
+\begin{table}[H]
+\centering
+\caption{Per-criterion generator quality (G) vs evaluator reliability (E).}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{B HH!{\vrule width 1pt}HH!{\vrule width 1pt}HH!{\vrule width 1pt}HH!{\vrule width 1pt}HH}
+\toprule
+\multicolumn{1}{l}{} & \multicolumn{2}{c}{\textbf{beauty}} & \multicolumn{2}{c}{\textbf{intel}} & \multicolumn{2}{c}{\textbf{distinct}} & \multicolumn{2}{c}{\textbf{length}} & \multicolumn{2}{c}{\textbf{struct}}\\
+\multicolumn{1}{l}{\textbf{Model}} & \multicolumn{1}{c}{$G$} & \multicolumn{1}{c}{$E$} & \multicolumn{1}{c}{$G$} & \multicolumn{1}{c}{$E$} & \multicolumn{1}{c}{$G$} & \multicolumn{1}{c}{$E$} & \multicolumn{1}{c}{$G$} & \multicolumn{1}{c}{$E$} & \multicolumn{1}{c}{$G$} & \multicolumn{1}{c}{$E$}\\
+\midrule
+$\star$ claude-opus-4.5 & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0}\\
+claude-opus-4.1 & \cellcolor[HTML]{206EAF}\textcolor[HTML]{FFFFFF}{7.1} & \cellcolor[HTML]{1F79B4}\textcolor[HTML]{FFFFFF}{6.8} & \cellcolor[HTML]{2069AD}\textcolor[HTML]{FFFFFF}{7.2} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2161A9}\textcolor[HTML]{FFFFFF}{7.4} & \cellcolor[HTML]{2498C0}\textcolor[HTML]{FFFFFF}{6.0} & \cellcolor[HTML]{1E7EB7}\textcolor[HTML]{FFFFFF}{6.7} & \cellcolor[HTML]{1E86BB}\textcolor[HTML]{FFFFFF}{6.5} & \cellcolor[HTML]{2166AB}\textcolor[HTML]{FFFFFF}{7.3} & \cellcolor[HTML]{225AA6}\textcolor[HTML]{FFFFFF}{7.6}\\
+claude-opus-4.0 & \cellcolor[HTML]{1F76B3}\textcolor[HTML]{FFFFFF}{6.9} & \cellcolor[HTML]{1E7EB7}\textcolor[HTML]{FFFFFF}{6.7} & \cellcolor[HTML]{1F76B3}\textcolor[HTML]{FFFFFF}{6.9} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0} & \cellcolor[HTML]{2DA1C1}\textcolor[HTML]{FFFFFF}{5.7} & \cellcolor[HTML]{1F79B4}\textcolor[HTML]{FFFFFF}{6.8} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{6.3} & \cellcolor[HTML]{2166AB}\textcolor[HTML]{FFFFFF}{7.3} & \cellcolor[HTML]{206EAF}\textcolor[HTML]{FFFFFF}{7.1}\\
+claude-sonnet-4 & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{6.3} & \cellcolor[HTML]{2094C0}\textcolor[HTML]{FFFFFF}{6.1} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{6.3} & \cellcolor[HTML]{1D8BBD}\textcolor[HTML]{FFFFFF}{6.4} & \cellcolor[HTML]{1E86BB}\textcolor[HTML]{FFFFFF}{6.5} & \cellcolor[HTML]{1E92C0}\textcolor[HTML]{FFFFFF}{6.2} & \cellcolor[HTML]{2094C0}\textcolor[HTML]{FFFFFF}{6.1} & \cellcolor[HTML]{2498C0}\textcolor[HTML]{FFFFFF}{6.0} & \cellcolor[HTML]{1D8BBD}\textcolor[HTML]{FFFFFF}{6.4} & \cellcolor[HTML]{1E7EB7}\textcolor[HTML]{FFFFFF}{6.7}\\
+gemini-3.1-pro & \cellcolor[HTML]{299EC1}\textcolor[HTML]{FFFFFF}{5.8} & \cellcolor[HTML]{1F79B4}\textcolor[HTML]{FFFFFF}{6.8} & \cellcolor[HTML]{2DA1C1}\textcolor[HTML]{FFFFFF}{5.7} & \cellcolor[HTML]{2161A9}\textcolor[HTML]{FFFFFF}{7.4} & \cellcolor[HTML]{2498C0}\textcolor[HTML]{FFFFFF}{6.0} & \cellcolor[HTML]{2166AB}\textcolor[HTML]{FFFFFF}{7.3} & \cellcolor[HTML]{32A7C2}\textcolor[HTML]{FFFFFF}{5.5} & \cellcolor[HTML]{1F76B3}\textcolor[HTML]{FFFFFF}{6.9} & \cellcolor[HTML]{2DA1C1}\textcolor[HTML]{FFFFFF}{5.7} & \cellcolor[HTML]{2161A9}\textcolor[HTML]{FFFFFF}{7.4}\\
+gemini-2.5-flash & \cellcolor[HTML]{35A9C2}\textcolor[HTML]{FFFFFF}{5.4} & \cellcolor[HTML]{1E92C0}\textcolor[HTML]{FFFFFF}{6.2} & \cellcolor[HTML]{32A7C2}\textcolor[HTML]{FFFFFF}{5.5} & \cellcolor[HTML]{32A7C2}\textcolor[HTML]{FFFFFF}{5.5} & \cellcolor[HTML]{1E92C0}\textcolor[HTML]{FFFFFF}{6.2} & \cellcolor[HTML]{68C4BE}\textcolor[HTML]{000000}{4.2} & \cellcolor[HTML]{2DA1C1}\textcolor[HTML]{FFFFFF}{5.7} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{6.3} & \cellcolor[HTML]{299EC1}\textcolor[HTML]{FFFFFF}{5.8} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0}\\
+gpt-4.1-mini & \cellcolor[HTML]{4BB9C2}\textcolor[HTML]{000000}{4.8} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{6.3} & \cellcolor[HTML]{40B5C3}\textcolor[HTML]{000000}{5.0} & \cellcolor[HTML]{1E92C0}\textcolor[HTML]{FFFFFF}{6.2} & \cellcolor[HTML]{269AC1}\textcolor[HTML]{FFFFFF}{5.9} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{6.3} & \cellcolor[HTML]{68C4BE}\textcolor[HTML]{000000}{4.2} & \cellcolor[HTML]{1E86BB}\textcolor[HTML]{FFFFFF}{6.5} & \cellcolor[HTML]{35A9C2}\textcolor[HTML]{FFFFFF}{5.4} & \cellcolor[HTML]{1E7EB7}\textcolor[HTML]{FFFFFF}{6.7}\\
+gpt-4.1-2025-04-14 & \cellcolor[HTML]{3EB3C3}\textcolor[HTML]{000000}{5.1} & \cellcolor[HTML]{3AAFC3}\textcolor[HTML]{000000}{5.2} & \cellcolor[HTML]{40B5C3}\textcolor[HTML]{000000}{5.0} & \cellcolor[HTML]{2498C0}\textcolor[HTML]{FFFFFF}{6.0} & \cellcolor[HTML]{2498C0}\textcolor[HTML]{FFFFFF}{6.0} & \cellcolor[HTML]{1E92C0}\textcolor[HTML]{FFFFFF}{6.2} & \cellcolor[HTML]{87D0BA}\textcolor[HTML]{000000}{3.6} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{6.3} & \cellcolor[HTML]{2FA4C2}\textcolor[HTML]{FFFFFF}{5.6} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.0}\\
+gpt-4.1-nano & \cellcolor[HTML]{8DD2B9}\textcolor[HTML]{000000}{3.5} & \cellcolor[HTML]{3EB3C3}\textcolor[HTML]{000000}{5.1} & \cellcolor[HTML]{82CEBA}\textcolor[HTML]{000000}{3.7} & \cellcolor[HTML]{38ADC3}\textcolor[HTML]{000000}{5.3} & \cellcolor[HTML]{68C4BE}\textcolor[HTML]{000000}{4.2} & \cellcolor[HTML]{82CEBA}\textcolor[HTML]{000000}{3.7} & \cellcolor[HTML]{8DD2B9}\textcolor[HTML]{000000}{3.5} & \cellcolor[HTML]{B6E2B5}\textcolor[HTML]{000000}{2.8} & \cellcolor[HTML]{A0D9B7}\textcolor[HTML]{000000}{3.2} & \cellcolor[HTML]{AFDFB6}\textcolor[HTML]{000000}{2.9}\\
+gpt-4o-2024-08-06 & \cellcolor[HTML]{8DD2B9}\textcolor[HTML]{000000}{3.5} & \cellcolor[HTML]{4FBBC1}\textcolor[HTML]{000000}{4.7} & \cellcolor[HTML]{99D7B8}\textcolor[HTML]{000000}{3.3} & \cellcolor[HTML]{59BFC0}\textcolor[HTML]{000000}{4.5} & \cellcolor[HTML]{6EC6BD}\textcolor[HTML]{000000}{4.1} & \cellcolor[HTML]{A4DBB7}\textcolor[HTML]{000000}{3.1} & \cellcolor[HTML]{99D7B8}\textcolor[HTML]{000000}{3.3} & \cellcolor[HTML]{72C8BC}\textcolor[HTML]{000000}{4.0} & \cellcolor[HTML]{ABDEB6}\textcolor[HTML]{000000}{3.0} & \cellcolor[HTML]{2DA1C1}\textcolor[HTML]{FFFFFF}{5.7}\\
+gpt-4o & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{3.4} & \cellcolor[HTML]{C1E7B4}\textcolor[HTML]{000000}{2.6} & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{3.4} & \cellcolor[HTML]{D6EFB2}\textcolor[HTML]{000000}{2.0} & \cellcolor[HTML]{4FBBC1}\textcolor[HTML]{000000}{4.7} & \cellcolor[HTML]{F0F9B9}\textcolor[HTML]{000000}{1.0} & \cellcolor[HTML]{C1E7B4}\textcolor[HTML]{000000}{2.6} & \cellcolor[HTML]{A4DBB7}\textcolor[HTML]{000000}{3.1} & \cellcolor[HTML]{A0D9B7}\textcolor[HTML]{000000}{3.2} & \cellcolor[HTML]{B6E2B5}\textcolor[HTML]{000000}{2.8}\\
+gpt-4o-mini & \cellcolor[HTML]{8DD2B9}\textcolor[HTML]{000000}{3.5} & \cellcolor[HTML]{D3EEB2}\textcolor[HTML]{000000}{2.1} & \cellcolor[HTML]{8DD2B9}\textcolor[HTML]{000000}{3.5} & \cellcolor[HTML]{ABDEB6}\textcolor[HTML]{000000}{3.0} & \cellcolor[HTML]{99D7B8}\textcolor[HTML]{000000}{3.3} & \cellcolor[HTML]{CDEBB3}\textcolor[HTML]{000000}{2.3} & \cellcolor[HTML]{7CCCBB}\textcolor[HTML]{000000}{3.8} & \cellcolor[HTML]{F3FABF}\textcolor[HTML]{000000}{0.8} & \cellcolor[HTML]{ABDEB6}\textcolor[HTML]{000000}{3.0} & \cellcolor[HTML]{D9F0B2}\textcolor[HTML]{000000}{1.9}\\
+\midrule
+\textbf{cos(G,E)} & \multicolumn{2}{c}{\textbf{0.91}} & \multicolumn{2}{c}{\textbf{0.90}} & \multicolumn{2}{c}{\textbf{0.89}} & \multicolumn{2}{c}{\textbf{0.84}} & \multicolumn{2}{c}{\textbf{0.87}}\\
+{\footnotesize 95\% CI} & \multicolumn{2}{c}{\footnotesize [.83,.95]} & \multicolumn{2}{c}{\footnotesize [.80,.93]} & \multicolumn{2}{c}{\footnotesize [.82,.92]} & \multicolumn{2}{c}{\footnotesize [.80,.87]} & \multicolumn{2}{c}{\footnotesize [.86,.87]}\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\emph{Per criterion: \(E\) = evaluator rating consistency (the anchored consistency of \hyperref[tab-criterion-b]{the consistency table}, rescaled to 1--10) and \(G\) = generator quality --- the council's leave-self-out mean on that axis, \textbf{each member's vote weighted by its own reliability \(E\) there} (eq A12b; the same weighting §4.7 applies to \(G^{C}\)), so \(E\) both scores the judge and sets its weight in \(G\). Both anchored to claude-opus-4.5 (\(\star\)) = 7. \(\cos(G,E)\) = cosine of each model's deviation from \((7,7)\) across the participants, 95\% CI from the A.5 joint bootstrap; 1 = making and judging perfectly aligned. Higher \(G\) = better generator; higher \(E\) = more stable evaluator.}
 
 On all five non-factual criteria, generation and evaluation move together (anchored cosine \(0.84\)--\(0.91\)): a model that generates well on a criterion also tends to hold a stable standard when judging it. Evaluating and generating are largely one capability on the aesthetic and structural axes --- the counterpoint to the factual axis, where the two come apart (§4.8): the dissociation is specific to judging truth.
 
@@ -745,40 +575,25 @@ On all five non-factual criteria, generation and evaluation move together (ancho
 
 \textbf{Constituting the initial council.} The participants certify their own reliable subset from internal evidence alone --- a bootstrap in the epistemic sense: no production score, no external key. We keep the selection \textbf{fully key-free}: a reliable evaluator must show factual competence --- a key-free SVD loading clear of the inert band --- \emph{and} rating consistency (collapsed across the four per-archetype non-factual axes, \(\bar r \ge 0.78\), Pearson; structural diversity, rated once per portfolio, sits outside the collapse). Five evaluators clear both bars: Gemini 3.1 Pro, Claude Opus 4.5, Gemini 2.5 Flash, Claude Opus 4.0 and Claude Opus 4.1, whose factual-competence loadings (0.28--0.58) separate from the inert band and whose rating consistency clears the floor. Claude Sonnet-4 is the marginal case the other way: its loading (0.13) is the boundary case --- its 95\% interval touches gpt-4.1-mini's below, so the decisive cut falls after the top five (§4.2) --- and it does not clear the factual bar --- even though its consistency is comfortable (0.84). Gemini 2.5 Flash is the weakest seat: its loading (0.37) clears the band, but its rating consistency (\(\bar r = 0.81\)) is the lowest of the five and the closest to the floor --- its interval {[}0.75, 0.86{]} straddles the bar --- a caveat we carry in the open. The council is seated on the factual axis because it is the one axis where competence is objective --- agreement there is licensed to mean truth (§5.2) --- with rating consistency as the accompanying bar: a factually competent judge must also hold stable standards to sit. \hyperref[tab-initial-council]{The five members}:
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.2727}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}@{}}
-\caption{The initial council --- the five reliable evaluators.}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Council member
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Factual competence {[}95\% CI{]}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Rating consistency {[}95\% CI{]}
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Council member
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Factual competence {[}95\% CI{]}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Rating consistency {[}95\% CI{]}
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-gemini-3.1-pro & 0.58 {[}0.56, 0.60{]} & 0.94 {[}0.92, 0.96{]} \\
-claude-opus-4.5 & 0.55 {[}0.54, 0.58{]} & 0.93 {[}0.89, 0.96{]} \\
-gemini-2.5-flash & 0.37 {[}0.31, 0.40{]} & 0.81 {[}0.75, 0.86{]} \\
-claude-opus-4.0 & 0.35 {[}0.32, 0.35{]} & 0.85 {[}0.80, 0.89{]} \\
-claude-opus-4.1 & 0.28 {[}0.27, 0.30{]} & 0.87 {[}0.82, 0.91{]} \\
-\end{longtable}
-
+\begin{table}[H]
+\centering
+\caption{The initial council --- the five reliable evaluators.}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{B >{\centering\arraybackslash}m{1.2cm} >{\centering\arraybackslash}m{2.0cm}!{\vrule width 1pt} >{\centering\arraybackslash}m{1.2cm} >{\centering\arraybackslash}m{2.0cm}}
+\toprule
+\multicolumn{1}{l}{\textbf{Council member}} & \multicolumn{2}{c}{\textbf{Factual competence}} & \multicolumn{2}{c}{\textbf{Rating consistency}}\\
+\multicolumn{1}{l}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{95\% CI} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{95\% CI}\\
+\midrule
+gemini-3.1-pro & \cellcolor[HTML]{0F2267}\textcolor[HTML]{FFFFFF}{0.58} & [0.56, 0.60] & \cellcolor[HTML]{152774}\textcolor[HTML]{FFFFFF}{0.94} & [0.92, 0.96]\\
+claude-opus-4.5 & \cellcolor[HTML]{1B2C7F}\textcolor[HTML]{FFFFFF}{0.55} & [0.54, 0.58] & \cellcolor[HTML]{172978}\textcolor[HTML]{FFFFFF}{0.93} & [0.89, 0.96]\\
+gemini-2.5-flash & \cellcolor[HTML]{1F93C0}\textcolor[HTML]{FFFFFF}{0.37} & [0.31, 0.40] & \cellcolor[HTML]{23499E}\textcolor[HTML]{FFFFFF}{0.81} & [0.75, 0.86]\\
+claude-opus-4.0 & \cellcolor[HTML]{289DC1}\textcolor[HTML]{FFFFFF}{0.35} & [0.32, 0.35] & \cellcolor[HTML]{243C97}\textcolor[HTML]{FFFFFF}{0.85} & [0.80, 0.89]\\
+claude-opus-4.1 & \cellcolor[HTML]{51BCC1}\textcolor[HTML]{000000}{0.28} & [0.27, 0.30] & \cellcolor[HTML]{243594}\textcolor[HTML]{FFFFFF}{0.87} & [0.82, 0.91]\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 \emph{The five evaluators that clear both reliability bars: factual competence (SVD loading clear of the inert band) and rating consistency (leave-self-out, collapsed across the four per-archetype non-factual axes, \(\bar r \ge 0.78\)). Values are the key-free competence scores with 95\% bootstrap CIs over the (submission, archetype) grid. These five form the council that issues the official ratings (§4.7); the other seven evaluators carry no weight in any other model's rating --- each is an evaluator only in its own contest (§4.7).}
 
 The council size --- five --- follows from the key-free bars; the seven excluded evaluators carry no weight in the official rating.
@@ -797,14 +612,26 @@ Two \textbf{guards}, read off the contest's own matrix and reported with every r
 
 \subsubsection{4.6 The ballast}\label{the-ballast}
 
-A contest convenes the top of the field --- five seats and one contestant --- and with the weak submissions gone, the factual axis breaks: the seats' anchored \(E^{F}\) come out wrong in scale and wrong in order, swinging by up to 9.2 points depending on who the contestant is (anchored \(E^{F}=7f/f_a\) is not confined to the 1--10 rubric when the axis breaks). The \textbf{ballast} repairs this: the weakest archived submissions, added to the contest's graded set. Two suffice (\hyperref[fig-ballast]{the heatmap}).
+A contest convenes the top of the field --- five seats and one contestant --- and with the weak submissions gone, the factual axis breaks: the seats' anchored \(E^{F}\) come out wrong in scale and wrong in order, swinging by up to 9.2 points depending on who the contestant is (anchored \(E^{F}=7f/f_a\) is not confined to the 1--10 rubric when the axis breaks). The \textbf{ballast} repairs this: the weakest archived submissions, added to the contest's graded set. Two suffice (\hyperref[tab-ballast]{the ballast table}).
 
-\begin{figure}
+\begin{table}[H]
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Each seat's anchored evaluator factual competence E\^{}\{F\} under contests with 0--3 ballast blocks (mean over the seven possible contestants), beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean \textbar\textbackslash Delta\textbar{} 0.33 over the seven contests, and the same seat is lowest in all seven). The boxed column is the protocol's configuration. Sized by re-analysis of the pinned run --- a contest is a sub-matrix of the bootstrap, so no new generation is needed. Reproduced by scripts/ballast\_\allowbreak{}sizing.py.}]{figures/ballast_heatmap.png}}
-\caption{Each seat's anchored evaluator factual competence \(E^{F}\) under contests with 0--3 ballast blocks (mean over the seven possible contestants), beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean \(|\Delta|\) 0.33 over the seven contests, and the same seat is lowest in all seven). The boxed column is the protocol's configuration. Sized by re-analysis of the pinned run --- a contest is a sub-matrix of the bootstrap, so no new generation is needed. Reproduced by \protect\texttt{scripts/\allowbreak{}ballast\_\allowbreak{}sizing.py}.}
-\end{figure}
-
+\caption{Each seat's anchored \(E^{F}\) by contest composition --- 0--3 ballast blocks (mean over the seven possible contestants) beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean \(|\Delta|\) 0.33 over the seven contests, and the same seat is lowest in all seven). The ruled column is the protocol's configuration. Values from \texttt{scripts/ballast\_sizing.py} via \texttt{scripts/plot\_ballast\_heatmap.py}.}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{B >{\centering\arraybackslash}m{1.55cm} >{\centering\arraybackslash}m{1.45cm}!{\vrule width 1.2pt} >{\centering\arraybackslash}m{1.45cm}!{\vrule width 1.2pt} >{\centering\arraybackslash}m{1.45cm} >{\centering\arraybackslash}m{1.6cm}}
+\toprule
+\multicolumn{1}{l}{\textbf{Seat}} & \multicolumn{1}{c}{\textbf{\shortstack{council\\alone}}} & \multicolumn{1}{c}{\textbf{\shortstack{+1\\ballast}}} & \multicolumn{1}{c}{\textbf{\shortstack{+2\\ballast}}} & \multicolumn{1}{c}{\textbf{\shortstack{+3\\ballast}}} & \multicolumn{1}{c}{\textbf{\shortstack{all\\12\\(§4.2)}}}\\
+\midrule
+gemini-3.1-pro & \cellcolor[HTML]{2397C0}\textcolor[HTML]{FFFFFF}{6.03} & \cellcolor[HTML]{2168AC}\textcolor[HTML]{FFFFFF}{7.24} & \cellcolor[HTML]{2166AB}\textcolor[HTML]{FFFFFF}{7.27} & \cellcolor[HTML]{2164AB}\textcolor[HTML]{FFFFFF}{7.34} & \cellcolor[HTML]{2163AA}\textcolor[HTML]{FFFFFF}{7.36}\\
+$\star$ claude-opus-4.5 & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00}\\
+gemini-2.5-flash & \cellcolor[HTML]{D2EDB3}\textcolor[HTML]{000000}{2.11} & \cellcolor[HTML]{1E7EB7}\textcolor[HTML]{FFFFFF}{6.69} & \cellcolor[HTML]{39AEC3}\textcolor[HTML]{000000}{5.25} & \cellcolor[HTML]{3FB4C3}\textcolor[HTML]{000000}{5.06} & \cellcolor[HTML]{51BCC1}\textcolor[HTML]{000000}{4.68}\\
+claude-opus-4.0 & \cellcolor[HTML]{2161A9}\textcolor[HTML]{FFFFFF}{7.42} & \cellcolor[HTML]{7ACBBB}\textcolor[HTML]{000000}{3.84} & \cellcolor[HTML]{78CABB}\textcolor[HTML]{000000}{3.89} & \cellcolor[HTML]{6EC6BD}\textcolor[HTML]{000000}{4.09} & \cellcolor[HTML]{5BBFC0}\textcolor[HTML]{000000}{4.47}\\
+claude-opus-4.1 & \cellcolor[HTML]{2253A3}\textcolor[HTML]{FFFFFF}{7.81} & \cellcolor[HTML]{ADDFB6}\textcolor[HTML]{000000}{2.93} & \cellcolor[HTML]{A2DAB7}\textcolor[HTML]{000000}{3.13} & \cellcolor[HTML]{94D5B8}\textcolor[HTML]{000000}{3.36} & \cellcolor[HTML]{8BD1B9}\textcolor[HTML]{000000}{3.55}\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 Why two and not one: a single block is the contest's only substantial error source, so the axis narrows toward \emph{did this judge notice the one bad portfolio} and the §4.5 guards fail in 7\% of bootstrap resamples. Two blocks carry two independent error patterns; the guards hold in every resample, \(\sigma_1/\sigma_2 = 2.99\) with both interval ends inside the band. A third changes nothing and costs twenty-five more columns of grading.
 
 Two scope notes. The sizing holds on runs 1 and 2; on run 3 (§4.9) the guards fail at every ballast size --- that run's separation is 1.28, the factual axis is not identified, and no column set can stabilise a measurement that was never there: the §4.5 abstention behaving as intended. And the ballast fixes what the evaluators are measured \emph{on}, not what they can see (§5.8).
@@ -817,92 +644,60 @@ The benchmark's two ratings combine into one official total, and each splits the
 
 The \textbf{\hyperref[tab-final-leaderboard]{final leaderboard}} ranks all twelve models by \(T\). Every rating is issued against the fixed anchor (claude-opus-4.5, pinned at 7), so the anchor reads 7 on \(T\), \(E\) and \(G\) alike. Every number in the official rating is \textbf{council-issued}: each model is rated by the council when it stands as contestant (§4.5) --- the five seats, joined by the model itself when it holds no seat, grading the incumbents' portfolios, the two ballast submissions, and the contestant's own --- leave-self-out throughout: no evaluator's ratings of its own portfolio enter its scores. The twelve-evaluator matrix of §4.2--§4.4 is \emph{selection} evidence only --- the roster is an output of the bootstrap, so it cannot also produce the official rating --- and the two bases agree closely (Spearman 0.986, mean absolute difference 0.12, the same five seats either way).
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1364}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1364}}
-  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1818}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1818}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1818}}
-  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1818}}@{}}
-\caption{Final leaderboard --- total rating \(T\) (95\% CI) with its evaluator half \(E\) and generator half \(G\), all twelve models ranked; council seats marked. Every rating is council-issued: each model is rated by the five seats --- joined by the model itself when it holds no seat --- over the incumbents' portfolios, the ballast, and its own. The anchor (claude-opus-4.5) is 7 by construction. Adjacent ranks are resolved (non-overlapping intervals) only at 1--2, 2--3, 5--6 and 8--9; the remaining adjacent pairs are statistical ties.}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Rank
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Model
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
-Council
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\textbf{\(T\) {[}95\% CI{]}}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(G\)
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Rank
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Model
-\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
-Council
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\textbf{\(T\) {[}95\% CI{]}}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(E\)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-\(G\)
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-1 & ★ claude-opus-4.5 (anchor) & council & \textbf{7.00 {[}7.00, 7.00{]}} & 7.00 & 7.00 \\
-2 & gemini-3.1-pro & council & \textbf{6.65 {[}6.53, 6.80{]}} & 7.14 & 6.16 \\
-3 & claude-opus-4.0 & council & \textbf{6.04 {[}5.73, 6.39{]}} & 5.12 & 6.96 \\
-4 & gemini-2.5-flash & council & \textbf{6.03 {[}5.20, 6.53{]}} & 5.93 & 6.14 \\
-5 & claude-opus-4.1 & council & \textbf{5.92 {[}5.59, 6.30{]}} & 4.78 & 7.06 \\
-⎯⎯ & ⎯⎯ & ⎯⎯ & ⎯⎯ & ⎯⎯ & ⎯⎯ \\
-6 & claude-sonnet-4 & --- & \textbf{5.22 {[}4.92, 5.47{]}} & 3.80 & 6.64 \\
-7 & gpt-4.1-mini & --- & \textbf{4.88 {[}4.15, 5.58{]}} & 4.16 & 5.60 \\
-8 & gpt-4.1-2025-04-14 & --- & \textbf{4.44 {[}4.24, 4.67{]}} & 3.11 & 5.78 \\
-9 & gpt-4.1-nano & --- & \textbf{3.42 {[}2.74, 3.87{]}} & 3.39 & 3.45 \\
-10 & gpt-4o-2024-08-06 & --- & \textbf{3.34 {[}3.01, 3.61{]}} & 2.43 & 4.25 \\
-11 & gpt-4o & --- & \textbf{2.85 {[}2.38, 3.22{]}} & 1.48 & 4.21 \\
-12 & gpt-4o-mini & --- & \textbf{2.10 {[}1.75, 2.46{]}} & 1.17 & 3.02 \\
-\end{longtable}
-
+\clearpage
+\begingroup\centering\null\vfill
+{\tablefont\LARGE\bfseries Final leaderboard\par}\smallskip
+\captionof{table}{Total rating \(T\) (95\% CI) with its evaluator (\(E\)) and generator (\(G\)) halves; all twelve models ranked, council seats marked. The anchor (claude-opus-4.5) is 7 by construction.}\par\medskip
+{\tablefont\normalsize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.7}
+\begin{tabular}{>{\centering\arraybackslash}m{1.0cm} B >{\centering\arraybackslash}m{1.6cm}!{\vrule width 1pt} >{\centering\arraybackslash}m{1.5cm} >{\centering\arraybackslash}m{2.4cm} >{\centering\arraybackslash}m{1.5cm} >{\centering\arraybackslash}m{1.5cm}}
+\toprule
+\multicolumn{1}{c}{\textbf{Rank}} & \multicolumn{1}{l}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{Council}} & \multicolumn{1}{c}{\textbf{$T$}} & \multicolumn{1}{c}{\textbf{95\% CI}} & \multicolumn{1}{c}{\textbf{$E$}} & \multicolumn{1}{c}{\textbf{$G$}}\\
+\midrule
+1 & $\star$ claude-opus-4.5 (anchor) & council & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & [7.00, 7.00] & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00}\\
+2 & gemini-3.1-pro & council & \cellcolor[HTML]{1E80B8}\textcolor[HTML]{FFFFFF}{6.65} & [6.53, 6.80] & \cellcolor[HTML]{206CAE}\textcolor[HTML]{FFFFFF}{7.14} & \cellcolor[HTML]{1F93C0}\textcolor[HTML]{FFFFFF}{6.16}\\
+3 & claude-opus-4.0 & council & \cellcolor[HTML]{2397C0}\textcolor[HTML]{FFFFFF}{6.04} & [5.73, 6.39] & \cellcolor[HTML]{3DB1C3}\textcolor[HTML]{000000}{5.12} & \cellcolor[HTML]{1F73B1}\textcolor[HTML]{FFFFFF}{6.96}\\
+4 & gemini-2.5-flash & council & \cellcolor[HTML]{2397C0}\textcolor[HTML]{FFFFFF}{6.03} & [5.20, 6.53] & \cellcolor[HTML]{269AC1}\textcolor[HTML]{FFFFFF}{5.93} & \cellcolor[HTML]{1F93C0}\textcolor[HTML]{FFFFFF}{6.14}\\
+5 & claude-opus-4.1 & council & \cellcolor[HTML]{269AC1}\textcolor[HTML]{FFFFFF}{5.92} & [5.59, 6.30] & \cellcolor[HTML]{4BB9C2}\textcolor[HTML]{000000}{4.78} & \cellcolor[HTML]{2070B0}\textcolor[HTML]{FFFFFF}{7.06}\\
+\midrule[\heavyrulewidth]
+6 & claude-sonnet-4 & -- & \cellcolor[HTML]{3AAFC3}\textcolor[HTML]{000000}{5.22} & [4.92, 5.47] & \cellcolor[HTML]{7CCCBB}\textcolor[HTML]{000000}{3.80} & \cellcolor[HTML]{1E81B8}\textcolor[HTML]{FFFFFF}{6.64}\\
+7 & gpt-4.1-mini & -- & \cellcolor[HTML]{47B8C3}\textcolor[HTML]{000000}{4.88} & [4.15, 5.58] & \cellcolor[HTML]{6AC5BD}\textcolor[HTML]{000000}{4.16} & \cellcolor[HTML]{2FA4C2}\textcolor[HTML]{FFFFFF}{5.60}\\
+8 & gpt-4.1-2025-04-14 & -- & \cellcolor[HTML]{5DC0BF}\textcolor[HTML]{000000}{4.44} & [4.24, 4.67] & \cellcolor[HTML]{A4DBB7}\textcolor[HTML]{000000}{3.11} & \cellcolor[HTML]{2A9FC1}\textcolor[HTML]{FFFFFF}{5.78}\\
+9 & gpt-4.1-nano & -- & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{3.42} & [2.74, 3.87] & \cellcolor[HTML]{94D5B8}\textcolor[HTML]{000000}{3.39} & \cellcolor[HTML]{90D3B9}\textcolor[HTML]{000000}{3.45}\\
+10 & gpt-4o-2024-08-06 & -- & \cellcolor[HTML]{97D6B8}\textcolor[HTML]{000000}{3.34} & [3.01, 3.61] & \cellcolor[HTML]{C9E9B3}\textcolor[HTML]{000000}{2.43} & \cellcolor[HTML]{66C4BE}\textcolor[HTML]{000000}{4.25}\\
+11 & gpt-4o & -- & \cellcolor[HTML]{B4E1B5}\textcolor[HTML]{000000}{2.85} & [2.38, 3.22] & \cellcolor[HTML]{E6F5B1}\textcolor[HTML]{000000}{1.48} & \cellcolor[HTML]{68C4BE}\textcolor[HTML]{000000}{4.21}\\
+12 & gpt-4o-mini & -- & \cellcolor[HTML]{D3EEB2}\textcolor[HTML]{000000}{2.10} & [1.75, 2.46] & \cellcolor[HTML]{EEF8B4}\textcolor[HTML]{000000}{1.17} & \cellcolor[HTML]{A9DDB6}\textcolor[HTML]{000000}{3.02}\\
+\bottomrule
+\end{tabular}\par}
+\vfill\endgroup\clearpage
 Each half resolves into \hyperref[tab-competence-breakdown]{two anchored competences} --- generation: generator factual \(G^{F}\) (§4.2) and criterion \(G^{C}\) (the five non-factual generation axes, §4.7); evaluation: evaluator factual \(E^{F}\) (§4.2) and criterion \(E^{C}=7\bar r/\bar r_a\) (the leave-self-out collapsed anchor-sweep consistency, §4.4):
 
-\begin{longtable}[]{@{}llcrrrr@{}}
-\caption{Competence breakdown --- the four anchored components behind each model's evaluator (\(E\)) and generator (\(G\)) scores.}\tabularnewline
-\toprule\noalign{}
-Rank & Model & Council? & \(G^{F}\) & \(G^{C}\) & \(E^{F}\) & \(E^{C}\) \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Rank & Model & Council? & \(G^{F}\) & \(G^{C}\) & \(E^{F}\) & \(E^{C}\) \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-1 & ★ claude-opus-4.5 (anchor) & council & 7.00 & 7.00 & 7.00 & 7.00 \\
-2 & gemini-3.1-pro & council & 6.58 & 5.75 & 7.27 & 7.01 \\
-3 & claude-opus-4.0 & council & 6.94 & 6.98 & 3.83 & 6.41 \\
-4 & gemini-2.5-flash & council & 6.54 & 5.73 & 5.34 & 6.52 \\
-5 & claude-opus-4.1 & council & 6.95 & 7.16 & 3.10 & 6.47 \\
-⎯⎯ & ⎯⎯ & ⎯⎯ & ⎯⎯ & ⎯⎯ & ⎯⎯ & \\
-6 & claude-sonnet-4 & --- & 6.96 & 6.31 & 1.48 & 6.13 \\
-7 & gpt-4.1-mini & --- & 6.15 & 5.05 & 1.36 & 6.97 \\
-8 & gpt-4.1-2025-04-14 & --- & 6.50 & 5.05 & 0.00 & 6.23 \\
-9 & gpt-4.1-nano & --- & 3.27 & 3.64 & 0.35 & 6.43 \\
-10 & gpt-4o-2024-08-06 & --- & 5.07 & 3.43 & 0.36 & 4.51 \\
-11 & gpt-4o & --- & 4.97 & 3.46 & 0.36 & 2.61 \\
-12 & gpt-4o-mini & --- & 2.61 & 3.43 & 0.00 & 2.34 \\
-\end{longtable}
-
+\begin{table}[H]
+\centering
+\caption{Competence breakdown --- the four anchored components behind each model's evaluator (\(E\)) and generator (\(G\)) scores.}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{>{\centering\arraybackslash}m{0.6cm} B >{\centering\arraybackslash}m{1.3cm} HH!{\vrule width 1pt}HH}
+\toprule
+\multicolumn{3}{l}{} & \multicolumn{2}{c}{\textbf{generation}} & \multicolumn{2}{c}{\textbf{evaluation}}\\
+\multicolumn{1}{l}{\textbf{\#}} & \multicolumn{1}{l}{\textbf{Model}} & \multicolumn{1}{l}{\textbf{Council}} & \multicolumn{1}{c}{$G^{F}$} & \multicolumn{1}{c}{$G^{C}$} & \multicolumn{1}{c}{$E^{F}$} & \multicolumn{1}{c}{$E^{C}$}\\
+\midrule
+1 & $\star$ claude-opus-4.5 (anchor) & council & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00}\\
+2 & gemini-3.1-pro & council & \cellcolor[HTML]{1E83B9}\textcolor[HTML]{FFFFFF}{6.58} & \cellcolor[HTML]{2A9FC1}\textcolor[HTML]{FFFFFF}{5.75} & \cellcolor[HTML]{2166AB}\textcolor[HTML]{FFFFFF}{7.27} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.01}\\
+3 & claude-opus-4.0 & council & \cellcolor[HTML]{1F74B2}\textcolor[HTML]{FFFFFF}{6.94} & \cellcolor[HTML]{1F73B1}\textcolor[HTML]{FFFFFF}{6.98} & \cellcolor[HTML]{7ACBBB}\textcolor[HTML]{000000}{3.83} & \cellcolor[HTML]{1D89BC}\textcolor[HTML]{FFFFFF}{6.41}\\
+4 & gemini-2.5-flash & council & \cellcolor[HTML]{1E84BA}\textcolor[HTML]{FFFFFF}{6.54} & \cellcolor[HTML]{2CA0C1}\textcolor[HTML]{FFFFFF}{5.73} & \cellcolor[HTML]{37ACC2}\textcolor[HTML]{FFFFFF}{5.34} & \cellcolor[HTML]{1E86BB}\textcolor[HTML]{FFFFFF}{6.52}\\
+5 & claude-opus-4.1 & council & \cellcolor[HTML]{1F74B2}\textcolor[HTML]{FFFFFF}{6.95} & \cellcolor[HTML]{206BAE}\textcolor[HTML]{FFFFFF}{7.16} & \cellcolor[HTML]{A4DBB7}\textcolor[HTML]{000000}{3.10} & \cellcolor[HTML]{1D88BB}\textcolor[HTML]{FFFFFF}{6.47}\\
+\midrule[\heavyrulewidth]
+6 & claude-sonnet-4 & -- & \cellcolor[HTML]{1F73B1}\textcolor[HTML]{FFFFFF}{6.96} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{6.31} & \cellcolor[HTML]{E6F5B1}\textcolor[HTML]{000000}{1.48} & \cellcolor[HTML]{2094C0}\textcolor[HTML]{FFFFFF}{6.13}\\
+7 & gpt-4.1-mini & -- & \cellcolor[HTML]{1F93C0}\textcolor[HTML]{FFFFFF}{6.15} & \cellcolor[HTML]{3FB4C3}\textcolor[HTML]{000000}{5.05} & \cellcolor[HTML]{EAF7B1}\textcolor[HTML]{000000}{1.36} & \cellcolor[HTML]{1F73B1}\textcolor[HTML]{FFFFFF}{6.97}\\
+8 & gpt-4.1-2025-04-14 & -- & \cellcolor[HTML]{1E86BB}\textcolor[HTML]{FFFFFF}{6.50} & \cellcolor[HTML]{3FB4C3}\textcolor[HTML]{000000}{5.05} & \cellcolor[HTML]{FFFFD9}\textcolor[HTML]{000000}{0.00} & \cellcolor[HTML]{1D91C0}\textcolor[HTML]{FFFFFF}{6.23}\\
+9 & gpt-4.1-nano & -- & \cellcolor[HTML]{9BD8B8}\textcolor[HTML]{000000}{3.27} & \cellcolor[HTML]{84CFBA}\textcolor[HTML]{000000}{3.64} & \cellcolor[HTML]{FAFDCE}\textcolor[HTML]{000000}{0.35} & \cellcolor[HTML]{1D89BC}\textcolor[HTML]{FFFFFF}{6.43}\\
+10 & gpt-4o-2024-08-06 & -- & \cellcolor[HTML]{3FB4C3}\textcolor[HTML]{000000}{5.07} & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{3.43} & \cellcolor[HTML]{F9FDCD}\textcolor[HTML]{000000}{0.36} & \cellcolor[HTML]{59BFC0}\textcolor[HTML]{000000}{4.51}\\
+11 & gpt-4o & -- & \cellcolor[HTML]{41B6C3}\textcolor[HTML]{000000}{4.97} & \cellcolor[HTML]{90D3B9}\textcolor[HTML]{000000}{3.46} & \cellcolor[HTML]{F9FDCD}\textcolor[HTML]{000000}{0.36} & \cellcolor[HTML]{C1E7B4}\textcolor[HTML]{000000}{2.61}\\
+12 & gpt-4o-mini & -- & \cellcolor[HTML]{C1E7B4}\textcolor[HTML]{000000}{2.61} & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{3.43} & \cellcolor[HTML]{FFFFD9}\textcolor[HTML]{000000}{0.00} & \cellcolor[HTML]{CCEBB3}\textcolor[HTML]{000000}{2.34}\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 \emph{(\(G^{F}\), \(E^{F}\) are §4.2's anchored factual competences, computed on each model's contest; \(G^{C}\) the council consistency-weighted leave-self-out mean of the five non-factual generation axes; \(E^{C}=7\bar r/\bar r_a\) the collapsed rating consistency over the contest's graded set. All quantities are carried unrounded to the last step; the \(T\) interval is the per-contest A.5 joint bootstrap (a CI device only). Two scope notes. Inert-band factual loadings are construction-sensitive --- printed to two decimals for arithmetic, not asserted precision --- and the ordering of ranks 9--11 does not rest on them: those models' totals separate on the other components, chiefly \(E^{C}\). And contest-basis \(E^{C}\) reads higher for inert-band models than the consistency table (gpt-4.1-mini 6.97): the contest's graded set is an easier consistency test than the full field. The council gate is untouched --- it reads the twelve-evaluator consistency --- but a quarter of a non-council model's total rests on this easier test, a caveat for ranks 6--12.)}
 
 Three readings. \textbf{The top five are the council.} The five reliable evaluators occupy the top five totals; the anchor leads by construction, and Gemini 3.1 Pro is second on the strength of its factual judging despite mid-pack generation. \textbf{The cliff is in the evaluation, not the generation.} Models with little factual competence sink regardless of how well they generate --- Sonnet-4's top-tier generation still leaves it at rank 6; a quarter of the total is error detection, and it is what production cannot buy (§5.4's independence thesis made quantitative). \textbf{Generation and evaluation do not coincide.} The strongest generators --- the three Opus models --- are middling factual judges (\(E^{F}\) 3.1--3.8, the pinned anchor aside), while the strongest judge, Gemini 3.1 Pro (\(E^{F}=7.27\)), generates mid-pack. A model can top one half of the benchmark and not the other --- which is what makes a two-part total worth reporting.
@@ -919,32 +714,31 @@ We test the key-free rating against an instrument built outside the run: GPQA Di
 \caption{The official total rating \(T\) (§4.7, council basis) against self-administered GPQA Diamond accuracy, twelve models. Pearson \(r = 0.97\) (95\% bootstrap CI \([0.92, 0.99]\) --- Appendix D.1), Spearman \(\rho = 0.93\). Filled markers are council seats; horizontal bars the A.5 bootstrap 95\% CI on \(T\), vertical bars the GPQA binomial 95\% CI; the shaded band is the confidence band of the fitted line, not a prediction interval. The blue star is the anchor (opus-4.5): \(T = 7\) by calibration, GPQA measured independently, so it is a legitimate point; excluding it leaves Pearson at 0.97. The audit behind this figure is Appendix D.}
 \end{figure}
 
-\begin{longtable}[]{@{}lrr@{}}
-\caption{The two instruments side by side --- the key-free total rating \(T\) (§4.7) and self-administered GPQA Diamond accuracy (voids counted as wrong), sorted by \(T\) --- the per-model values behind the family-order comparisons of §5.1.}\tabularnewline
-\toprule\noalign{}
-Model & \(T\) & GPQA Diamond (\%) \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Model & \(T\) & GPQA Diamond (\%) \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-★ claude-opus-4.5 (anchor) & 7.00 & 78.79 \\
-gemini-3.1-pro & 6.65 & 80.81 \\
-claude-opus-4.0 & 6.04 & 71.21 \\
-gemini-2.5-flash & 6.03 & 72.22 \\
-claude-opus-4.1 & 5.92 & 76.77 \\
-claude-sonnet-4 & 5.22 & 72.22 \\
-gpt-4.1-mini & 4.88 & 63.13 \\
-gpt-4.1-2025-04-14 & 4.44 & 61.62 \\
-gpt-4.1-nano & 3.42 & 55.05 \\
-gpt-4o-2024-08-06 & 3.34 & 46.46 \\
-gpt-4o & 2.85 & 48.48 \\
-gpt-4o-mini & 2.10 & 43.94 \\
-\end{longtable}
-
+\begin{table}[H]
+\centering
+\caption{The two instruments side by side --- the key-free total rating \(T\) (§4.7) and self-administered GPQA Diamond accuracy (voids counted as wrong), sorted by \(T\).}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{B >{\centering\arraybackslash}m{1.8cm} >{\centering\arraybackslash}m{2.6cm}}
+\toprule
+\multicolumn{1}{l}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{$T$}} & \multicolumn{1}{c}{\textbf{GPQA Diamond (\%)}}\\
+\midrule
+$\star$ claude-opus-4.5 (anchor) & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2251A1}\textcolor[HTML]{FFFFFF}{78.8}\\
+gemini-3.1-pro & \cellcolor[HTML]{1E80B8}\textcolor[HTML]{FFFFFF}{6.65} & \cellcolor[HTML]{234A9E}\textcolor[HTML]{FFFFFF}{80.8}\\
+claude-opus-4.0 & \cellcolor[HTML]{2397C0}\textcolor[HTML]{FFFFFF}{6.04} & \cellcolor[HTML]{206CAE}\textcolor[HTML]{FFFFFF}{71.2}\\
+gemini-2.5-flash & \cellcolor[HTML]{2397C0}\textcolor[HTML]{FFFFFF}{6.03} & \cellcolor[HTML]{2069AD}\textcolor[HTML]{FFFFFF}{72.2}\\
+claude-opus-4.1 & \cellcolor[HTML]{269AC1}\textcolor[HTML]{FFFFFF}{5.92} & \cellcolor[HTML]{2257A5}\textcolor[HTML]{FFFFFF}{76.8}\\
+claude-sonnet-4 & \cellcolor[HTML]{3AAFC3}\textcolor[HTML]{000000}{5.22} & \cellcolor[HTML]{2069AD}\textcolor[HTML]{FFFFFF}{72.2}\\
+gpt-4.1-mini & \cellcolor[HTML]{47B8C3}\textcolor[HTML]{000000}{4.88} & \cellcolor[HTML]{1D8EBE}\textcolor[HTML]{FFFFFF}{63.1}\\
+gpt-4.1-2025-04-14 & \cellcolor[HTML]{5DC0BF}\textcolor[HTML]{000000}{4.44} & \cellcolor[HTML]{1F93C0}\textcolor[HTML]{FFFFFF}{61.6}\\
+gpt-4.1-nano & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{3.42} & \cellcolor[HTML]{32A7C2}\textcolor[HTML]{FFFFFF}{55.0}\\
+gpt-4o-2024-08-06 & \cellcolor[HTML]{97D6B8}\textcolor[HTML]{000000}{3.34} & \cellcolor[HTML]{53BCC1}\textcolor[HTML]{000000}{46.5}\\
+gpt-4o & \cellcolor[HTML]{B4E1B5}\textcolor[HTML]{000000}{2.85} & \cellcolor[HTML]{47B8C3}\textcolor[HTML]{000000}{48.5}\\
+gpt-4o-mini & \cellcolor[HTML]{D3EEB2}\textcolor[HTML]{000000}{2.10} & \cellcolor[HTML]{5FC1BF}\textcolor[HTML]{000000}{43.9}\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 \textbf{A key-free benchmark replicates a keyed one.} GPQA Diamond is an established benchmark; ours is not --- and the two could hardly be more different. One has professors writing expert-level multiple-choice questions --- quantum mechanics, organic chemistry, molecular biology --- scored as the percentage answered correctly against their key. The other has LLMs inventing sets of analogies and subjectively rating one another's, with no correct answer anywhere in the loop. Different item authors, different task, different scoring, different notion of truth --- yet \(T\) reproduces GPQA's ordering at Pearson \(r = 0.97\) \([0.92, 0.99]\) (Spearman \(0.93\)), stable under regeneration (\(0.97/0.97/0.92\); §4.9). A benchmark with no key replicates one built entirely of keys --- and it needs no experts to write items and no revision to keep pace with improving models (§5.3). Since GPQA is no golden key, the corroboration runs both ways: the concordance makes it improbable that either instrument sits far from the truth (§5.7).
 
 \textbf{The number survives an audit.} A correlation that strong between a key-free peer rating and an externally keyed benchmark invites the suspicion of a leak, and we audited for one rather than celebrating. No key ever enters a prompt; every published accuracy re-derives exactly from the shipped raw per-question artefacts; the shuffled key is balanced; an independently written answer-extractor reproduces the verdicts; and rescoring under a strict extraction rule moves the correlation by \(0.007\). We find no leak, and the number's anatomy is unremarkable in hindsight: four noisy reads of capability with near-independent noise, averaged. The agreement is not carried by the field's two-cluster structure --- it holds at \(r = 0.91\) within the leading eight alone. \(T\) is also the right quantity to report: it is the benchmark's official total, defined before any GPQA comparison --- any other combination would be selected for its correlation at \(n=12\) --- and every quarter earns its place (dropping even the weakest lowers the agreement, Appendix D.1). The full audit, the raw data, and the comparison with publicly reported GPQA values (higher, because reasoning-on) are in Appendix D.
@@ -957,32 +751,31 @@ The leaderboard of §4.7 rests on one portfolio per model. To check that the res
 
 The benchmark's categorical output is robust to this, its ordinal output largely so: the council is \textbf{identical} across all three runs, and \hyperref[tab-reruns]{the ranking is broadly preserved} --- pairwise Pearson 0.92--0.96, Spearman 0.84--0.90. In runs 2 and 3 gemini-3.1-pro's total (7.35, 8.10) exceeds the anchor's pinned 7.00: the anchor's first place is a calibration convention, not a measured victory --- a standing result of this kind is what the anchor-replacement rule exists for.
 
-\begin{longtable}[]{@{}lrrrr@{}}
-\caption{Total rating \(T\) across three full re-runs (run 1 = the bootstrap generation, re-analysed on the council basis; runs 2--3 the same day, two hours apart), all on the council basis of §4.7. ★ marks a council seat --- the five seats are identical across all three runs. SD is the per-model run-to-run standard deviation (mean 0.43, max 0.72, the two Gemini seats and gpt-4.1-2025-04-14 highest). Run 3's \(E^{F}\) quarter is read off a factual axis the §4.5 guard (sized in §4.6) reports as unidentified (\(\sigma_1/\sigma_2 = 1.28\)); its totals carry that caveat.}\tabularnewline
-\toprule\noalign{}
-Model & \(T_1\) & \(T_2\) & \(T_3\) & SD \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Model & \(T_1\) & \(T_2\) & \(T_3\) & SD \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-★ claude-opus-4.5 & 7.00 & 7.00 & 7.00 & 0.00 \\
-★ gemini-3.1-pro & 6.65 & 7.35 & 8.10 & 0.72 \\
-★ claude-opus-4.0 & 6.04 & 5.50 & 6.26 & 0.39 \\
-★ gemini-2.5-flash & 6.03 & 5.84 & 4.78 & 0.68 \\
-★ claude-opus-4.1 & 5.92 & 6.77 & 6.19 & 0.43 \\
-claude-sonnet-4 & 5.22 & 5.82 & 6.16 & 0.47 \\
-gpt-4.1-mini & 4.88 & 5.93 & 4.93 & 0.59 \\
-gpt-4.1-2025-04-14 & 4.44 & 4.62 & 5.72 & 0.69 \\
-gpt-4.1-nano & 3.42 & 3.55 & 2.72 & 0.45 \\
-gpt-4o-2024-08-06 & 3.34 & 3.08 & 3.63 & 0.27 \\
-gpt-4o & 2.85 & 2.76 & 2.93 & 0.09 \\
-gpt-4o-mini & 2.10 & 2.25 & 1.60 & 0.34 \\
-\end{longtable}
-
+\begin{table}[H]
+\centering
+\caption{Total rating \(T\) across three full re-runs (run 1 = the bootstrap generation, re-analysed on the council basis; runs 2--3 the same day), all on the council basis of §4.7.}
+\par\nobreak\smallskip
+{\tablefont\footnotesize\setlength{\tabcolsep}{0pt}\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{B >{\centering\arraybackslash}m{1.35cm} >{\centering\arraybackslash}m{1.35cm} >{\centering\arraybackslash}m{1.35cm}!{\vrule width 1pt} >{\centering\arraybackslash}m{1.35cm}}
+\toprule
+\multicolumn{1}{l}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{$T_1$}} & \multicolumn{1}{c}{\textbf{$T_2$}} & \multicolumn{1}{c}{\textbf{$T_3$}} & \multicolumn{1}{c}{\textbf{SD}}\\
+\midrule
+$\star$ claude-opus-4.5 & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{2071B1}\textcolor[HTML]{FFFFFF}{7.00} & \cellcolor[HTML]{FFFFD9}\textcolor[HTML]{000000}{0.00}\\
+$\star$ gemini-3.1-pro & \cellcolor[HTML]{1E80B8}\textcolor[HTML]{FFFFFF}{6.65} & \cellcolor[HTML]{2163AA}\textcolor[HTML]{FFFFFF}{7.35} & \cellcolor[HTML]{23499E}\textcolor[HTML]{FFFFFF}{8.10} & \cellcolor[HTML]{2069AD}\textcolor[HTML]{FFFFFF}{0.72}\\
+$\star$ claude-opus-4.0 & \cellcolor[HTML]{2397C0}\textcolor[HTML]{FFFFFF}{6.04} & \cellcolor[HTML]{32A7C2}\textcolor[HTML]{FFFFFF}{5.50} & \cellcolor[HTML]{1D90BF}\textcolor[HTML]{FFFFFF}{6.26} & \cellcolor[HTML]{78CABB}\textcolor[HTML]{000000}{0.39}\\
+$\star$ gemini-2.5-flash & \cellcolor[HTML]{2397C0}\textcolor[HTML]{FFFFFF}{6.03} & \cellcolor[HTML]{289DC1}\textcolor[HTML]{FFFFFF}{5.84} & \cellcolor[HTML]{4BB9C2}\textcolor[HTML]{000000}{4.78} & \cellcolor[HTML]{1F79B4}\textcolor[HTML]{FFFFFF}{0.68}\\
+$\star$ claude-opus-4.1 & \cellcolor[HTML]{269AC1}\textcolor[HTML]{FFFFFF}{5.92} & \cellcolor[HTML]{1F7BB5}\textcolor[HTML]{FFFFFF}{6.77} & \cellcolor[HTML]{1E92C0}\textcolor[HTML]{FFFFFF}{6.19} & \cellcolor[HTML]{63C2BF}\textcolor[HTML]{000000}{0.43}\\
+claude-sonnet-4 & \cellcolor[HTML]{3AAFC3}\textcolor[HTML]{000000}{5.22} & \cellcolor[HTML]{299EC1}\textcolor[HTML]{FFFFFF}{5.82} & \cellcolor[HTML]{1F93C0}\textcolor[HTML]{FFFFFF}{6.16} & \cellcolor[HTML]{4FBBC1}\textcolor[HTML]{000000}{0.47}\\
+gpt-4.1-mini & \cellcolor[HTML]{47B8C3}\textcolor[HTML]{000000}{4.88} & \cellcolor[HTML]{269AC1}\textcolor[HTML]{FFFFFF}{5.93} & \cellcolor[HTML]{43B7C3}\textcolor[HTML]{000000}{4.93} & \cellcolor[HTML]{269AC1}\textcolor[HTML]{FFFFFF}{0.59}\\
+gpt-4.1-2025-04-14 & \cellcolor[HTML]{5DC0BF}\textcolor[HTML]{000000}{4.44} & \cellcolor[HTML]{53BCC1}\textcolor[HTML]{000000}{4.62} & \cellcolor[HTML]{2CA0C1}\textcolor[HTML]{FFFFFF}{5.72} & \cellcolor[HTML]{1F76B3}\textcolor[HTML]{FFFFFF}{0.69}\\
+gpt-4.1-nano & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{3.42} & \cellcolor[HTML]{8BD1B9}\textcolor[HTML]{000000}{3.55} & \cellcolor[HTML]{BBE4B5}\textcolor[HTML]{000000}{2.72} & \cellcolor[HTML]{59BFC0}\textcolor[HTML]{000000}{0.45}\\
+gpt-4o-2024-08-06 & \cellcolor[HTML]{97D6B8}\textcolor[HTML]{000000}{3.34} & \cellcolor[HTML]{A6DCB7}\textcolor[HTML]{000000}{3.08} & \cellcolor[HTML]{87D0BA}\textcolor[HTML]{000000}{3.63} & \cellcolor[HTML]{BBE4B5}\textcolor[HTML]{000000}{0.27}\\
+gpt-4o & \cellcolor[HTML]{B4E1B5}\textcolor[HTML]{000000}{2.85} & \cellcolor[HTML]{B8E3B5}\textcolor[HTML]{000000}{2.76} & \cellcolor[HTML]{ADDFB6}\textcolor[HTML]{000000}{2.93} & \cellcolor[HTML]{F2F9BC}\textcolor[HTML]{000000}{0.09}\\
+gpt-4o-mini & \cellcolor[HTML]{D3EEB2}\textcolor[HTML]{000000}{2.10} & \cellcolor[HTML]{CFECB3}\textcolor[HTML]{000000}{2.25} & \cellcolor[HTML]{E3F4B1}\textcolor[HTML]{000000}{1.60} & \cellcolor[HTML]{92D4B9}\textcolor[HTML]{000000}{0.34}\\
+\bottomrule
+\end{tabular}
+}
+\end{table}
 The cardinal totals carry wider uncertainty than the within-run bootstrap conveys: the run-to-run SD of \(T\) is 0.43 on average (max 0.72), and several totals move beyond their within-run interval between runs --- the bootstrap measures dispersion within \emph{one} generation, not the generation being itself a random draw. The benchmark's reliable products are council membership and rank order, not the precise total.
 
 External validity holds where the factual axis is identified, and weakens exactly where the benchmark's own diagnostic says it should. The total rating tracks GPQA Diamond at Pearson 0.92--0.97 (Spearman 0.88--0.95) across the three runs; the dip is run 3, the same run whose factual axis §4.6 reports as not identified at full strength (\(\sigma_1/\sigma_2 = 1.28\); per-run detail in Appendix D.1).
@@ -1048,12 +841,17 @@ The metanym game tests both, and broadly. Playing demands at least eight constru
 
 \hyperref[tab-constructs]{The table} maps each construct to the two tasks that call on it (● marks a primary demand):
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+\begin{table}[H]
+\centering
+\caption{The eight cognitive-science constructs the metanym game demands, mapped to its two tasks.}
+\par\nobreak\smallskip
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\caption{The eight cognitive-science constructs the metanym game demands, mapped to its two tasks.}\tabularnewline
-\toprule\noalign{}
+
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Construct
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1061,20 +859,7 @@ Generation --- invent the template
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Evaluation --- judge a portfolio
 \end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Construct
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Generation --- invent the template
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Evaluation --- judge a portfolio
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 Higher-order relational reasoning & ● lay out the relational skeleton & ● check the relations survive \\
 Structure-mapping & ● the slots-and-domains scaffold & ● verify one-to-one correspondence \\
 Essence-seeing (analogy as core cognition) & ● see the archetype behind the surface & \\
@@ -1083,8 +868,9 @@ Crystallised intelligence & ● supply true domain terms and facts & ● detect 
 Convergent production & & ● pass/fail, no near-misses \\
 Divergent production & ● invent a structure that travels & \\
 Theory formation by analogy & ● template = root analogy, tested by fact & \\
-\end{longtable}
-
+\end{tabular}
+}
+\end{table}
 Breadth matters because general ability is, empirically, what broad batteries measure --- across 591 language models and twelve diverse tests, a single general factor explains about two thirds of performance variance (Ilić \& Gignac 2024). The total rating behaves the way a broad battery should: it tracks GPQA Diamond, a keyed test built on entirely different principles, at \(r = 0.97\) (§4.8) --- the simplest reading is that both instruments load on the same general factor.
 
 The deeper requirement is subjectivity --- and it is the one this benchmark is built around. Every rating here is a model's own: no definition of beauty or intelligence is supplied, and each judge rates on its personal understanding (§3.2). That is not a concession; it is how the construct has always worked. Intelligence has no ground truth and never did. Psychology's own definition is an aggregate of individual conceptions: Neisser (1979) showed ``intelligent'' is a prototype assembled from people's judgements, and Sternberg et al.~(1981) measured the construct by pooling personal ratings. Objectivity itself, in the philosophy of science, is constituted not by the absence of subjectivity but by a community holding individual judgements to mutual criticism under shared standards (Longino 1990). The benchmark mechanises exactly this collective--individual link. Individually, a judge must know its own mind: a firm standard, stable as the tare shifts. Collectively, the community turns those held standards into one measure: trust flows to the judge the other trusted judges agree with. Intelligence, measured this way, is the two-sided capacity the link demands --- to hold a standard of one's own and to build a shared one with others --- and that, we suggest, is the part of general intelligence that answering someone else's questions can never test.
@@ -1370,12 +1156,17 @@ The anchor scores \(7\) on every component, hence \(\approx7\) on \(T\): each ra
 
 Every rating is reported with a 95\% \textbf{percentile bootstrap} interval: the rating's resampling unit is drawn with replacement, the rating is recomputed, and the 2.5th and 97.5th percentiles of the replicates form the interval (\(\sim10^3\)--\(10^4\) replicates). \hyperref[tab-bootstrap-units]{The unit} is the natural independent observation for each rating:
 
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+\begin{table}[H]
+\centering
+\caption{The bootstrap resampling unit for each rating, with the convention each one applies.}
+\par\nobreak\smallskip
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\caption{The bootstrap resampling unit for each rating, with the convention each one applies.}\tabularnewline
-\toprule\noalign{}
+
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Rating
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1383,25 +1174,13 @@ Resampled unit
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Notes
 \end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Rating
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Resampled unit
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Notes
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 \(G\) (A3) & the per-(submission, archetype) scoring units & paired across two models for a \emph{resolvable} gap (interval of \(G_s-G_{s'}\) excludes \(0\)) \\
 \(f\), hence \(E^{F}\) (A7, A12) & the \(N\) parallel contexts & align each replicate's top-2 left subspace to the full-sample one by 2-component Procrustes, then read the aligned leading loading --- the leading axis is near-degenerate between the Anthropic and Google blocs, so a single-vector resample would swap components \\
 \(\bar r\), hence \(E^{C}\) (A11, A12) & the \(55\) (submission, archetype) atoms of the shared grid & the evaluator reads only the resampled atoms that are not its own (\(50\) of the \(55\); all \(55\) for the anchor); a constant (zero-variance) anchor pair is dropped \\
-\end{longtable}
-
+\end{tabular}
+}
+\end{table}
 The evaluation rating \(E\) and the total \(T\) are \textbf{not} obtained by combining the component intervals with an analytic (independent-variance) formula. The components are computed from the same evaluation data and are therefore correlated --- \(G\), \(E^{F}\) and \(E^{C}\) all derive from the free-generation evaluations, so their sampling errors move together --- and an independent-variance sum would misstate the interval. Instead \(E\) and \(T\) are bootstrapped \textbf{jointly}, resampling on the coarsest shared grid so a single draw serves all three free-generation components: the \textbf{(submission, archetype) atom}. The grid holds \(55\) atoms --- eleven graded portfolios \(\times\) five archetypes --- and they are resampled with replacement once per replicate; each atom carries the parallel contexts inside it, so the resampled atoms \emph{induce} both the factual rating columns of \(f\) (A5--A7) and the score vectors of \(\bar r\) (A11), while \(G\) averages over the resampled atoms of each submission. Leave-self-out is applied \emph{after} the resample, so a graded evaluator's replicate vector is built from whichever draws fall outside its own portfolio (in expectation \(50\) of the \(55\)) and the anchor's from all of them; the grid is shared, the per-evaluator sample is not. Every component --- including the anchor's \(f_a,\bar r_a\) --- is recomputed on that one resample, \(T\) is formed, and the percentiles of the \(T\) replicates give the interval; the joint resample captures the inter-component covariance automatically. The council is the one exception: it is held at its selected membership rather than re-selected within each replicate, because the gate of A.3 is itself defined by a bootstrap CI on \(f\) and re-selecting inside a replicate would require a nested bootstrap. The interval is therefore conditional on that selection.
 
 \subsubsection{A.6 Generation--evaluation alignment}\label{a.6-generationevaluation-alignment}
@@ -1771,32 +1550,12 @@ A {[}SYSTEM{]} requires various {[}RESOURCE{]} to function and achieve its {[}GO
 
 \textbf{Metanym table}
 
-{\relax % do not increment counter
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1694}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1774}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1532}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1613}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.2097}}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1290}}@{}}
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-{[}SLOT{]}
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Ecosystem Management
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Corporate Finance
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Military Logistics
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Personal Time Management
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Urban Planning
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\begin{center}
+{\tablefont\scriptsize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{>{\arraybackslash}p{104pt} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-104pt-12\tabcolsep)/5\relax} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-104pt-12\tabcolsep)/5\relax} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-104pt-12\tabcolsep)/5\relax} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-104pt-12\tabcolsep)/5\relax} >{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-104pt-12\tabcolsep)/5\relax}}
+\toprule
+\multicolumn{1}{l}{\textbf{{[}SLOT{]}}} & \textbf{Ecosystem Management} & \textbf{Corporate Finance} & \textbf{Military Logistics} & \textbf{Personal Time Management} & \textbf{Urban Planning}\\
+\midrule
 SYSTEM & ecosystem & corporation & army & individual & city \\
 RESOURCE & nutrient & capital & ammunition & time & land \\
 GOAL & biodiversity & profit & victory & well-being & livability \\
@@ -1812,8 +1571,10 @@ CONDITION & climate & economy & intelligence & mood & demographics \\
 TRADE\_\allowbreak{}OFF & exploitation & short-term gain & tactical advantage & immediate gratification & development \\
 GAIN & biomass & revenue & territory & leisure & tax base \\
 SUSTAINABILITY & resilience & long-term growth & strategic depth & health & green space \\
-\end{longtable}
+\bottomrule
+\end{tabular}
 }
+\end{center}
 
 Comparing \hyperref[tab-target-metanym]{this table} with the anchor's (Appendix C) shows what the council objected to on \emph{domain span}: several rows here map to near-synonyms across columns --- ALLOCATION\_\allowbreak{}STRATEGY becomes ecological succession, portfolio management, supply chain management --- where the anchor's MEMORY row spans methylation state, route memory, and momentum. The mechanical consequence appears immediately below: the ALLOCATOR row assigns ``nature'' the role the other columns give a CFO or a quartermaster, and that substitution is what makes the first parallel context false.
 
@@ -1938,14 +1699,15 @@ The total rating \(T\) tracks self-administered GPQA Diamond at Pearson \(r = 0.
 
 \textbf{The aggregation ladder is monotone.} Council-basis official values vs GPQA, \(n = 12\) throughout (Pearson \(r\) measures agreement of the values on a line; Spearman \(\rho\), agreement of the rankings alone):
 
-{\relax % do not increment counter
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 8\tabcolsep) * \real{0.1765}}
+\begin{center}
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 8\tabcolsep) * \real{0.1765}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2353}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2353}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 8\tabcolsep) * \real{0.1765}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 8\tabcolsep) * \real{0.1765}}@{}}
-\toprule\noalign{}
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Quantity
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
@@ -1957,10 +1719,7 @@ Fisher-\(z\) 95\%
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 BCa bootstrap 95\%
 \end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 \(E^{C}\) alone & 0.81 & 0.82 & {[}0.45, 0.95{]} & {[}0.43, 0.94{]} \\
 \(G^{F}\) alone & 0.83 & 0.86 & {[}0.48, 0.95{]} & {[}0.66, 0.94{]} \\
 \(E^{F}\) alone & 0.83 & 0.88 & {[}0.49, 0.95{]} & {[}0.68, 0.93{]} \\
@@ -1969,19 +1728,21 @@ BCa bootstrap 95\%
 \(E = \tfrac12(E^{F}+E^{C})\) --- judging half & 0.92 & 0.93 & {[}0.73, 0.98{]} & {[}0.78, 0.98{]} \\
 \(\tfrac12(E^{F}+G^{F})\) --- §4.7\_\allowbreak{}TMP's factual pair & 0.92 & 0.92 & {[}0.73, 0.98{]} & {[}0.84, 0.97{]} \\
 \(T = \tfrac14(G^{F}+G^{C}+E^{F}+E^{C})\) & \textbf{0.97} & \textbf{0.93} & \textbf{{[}0.90, 0.99{]}} & \textbf{{[}0.92, 0.99{]}} \\
-\end{longtable}
+\end{tabular}
 }
+\end{center}
 
 Two interval constructions are reported because each covers the other's weakness at \(n = 12\): Fisher-\(z\) assumes bivariate normality but unbends the skew of a bounded statistic; the BCa bootstrap is assumption-lighter and corrects the bias and skew that make the naive percentile bootstrap anti-conservative here (the earlier percentile interval on \(T\), \([0.94, 0.99]\), was too narrow for exactly that reason and is retired). Where the two constructions disagree (\(G^{C}\): Fisher \([0.73, 0.98]\) vs BCa \([0.51, 0.98]\)), the BCa is detecting leverage sensitivity and the wider bound is the honest one. Read as validation: every component's interval sits well clear of zero --- GPQA validates \(T\) and, with varying strength, each of its components as capability measures --- with \(T\)'s interval the tightest under both constructions.
 
 \textbf{Measurement error, propagated (sensitivity).} All correlations above are computed on point estimates. Both coordinates carry known measurement distributions --- each model's \(T\) has its A.5 replicate distribution (shipped in \texttt{total\_\allowbreak{}rating\_\allowbreak{}council\_\allowbreak{}replicates.csv}), and GPQA accuracy is binomial --- so the fit can be re-derived with them propagated (\texttt{scripts/\allowbreak{}slope\_\allowbreak{}full\_\allowbreak{}bootstrap.py}; slope point estimate 8.0 GPQA points per \(T\) unit):
 
-{\relax % do not increment counter
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+\begin{center}
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\toprule\noalign{}
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Uncertainty propagated
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1989,15 +1750,13 @@ slope 95\%
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 \(r\) 95\%
 \end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 sampling of models only (pairs bootstrap) & {[}7.1, 9.4{]} & {[}0.94, 0.99{]} \\
 measurement only (coordinate draws, models fixed) & {[}6.5, 9.2{]} & {[}0.88, 0.98{]} \\
 both simultaneously & {[}6.1, 9.8{]} & {[}0.83, 0.98{]} \\
-\end{longtable}
+\end{tabular}
 }
+\end{center}
 
 The last row modestly overstates total uncertainty --- the observed scatter already contains one realization of each point's measurement noise, and jittering observed values adds a second --- so it is a conservative bound, under which the correlation still does not fall below 0.83. Two notes keep every approximation's direction honest: the figure retains the classical confidence band by convention (per-point uncertainties are drawn as bars, not folded into the band); and measurement error in the \(x\) coordinate \emph{attenuates} a correlation rather than inflating it, so the point estimates above are themselves conservative --- the classical disattenuation correction (reliabilities \(\approx 0.98\) for \(T\) and \(\approx 0.94\) for GPQA, from the shipped intervals) places the latent-quantity correlation at the measurement ceiling, reported here as context, not as a claim.
 
@@ -2017,13 +1776,14 @@ The last row modestly overstates total uncertainty --- the observed scatter alre
 
 \textbf{The subjective quarters, by estimator.} The making-vs-judging asymmetry above is not an estimator artifact. \(G^{C}\)'s 0.92 is carried by the ratings' content (the A12b reliability weights only set each judge's influence, and the council's weights are near-uniform); judging couples weakly to GPQA under \emph{either} available estimator:
 
-{\relax % do not increment counter
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 6\tabcolsep) * \real{0.2143}}
+\begin{center}
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 6\tabcolsep) * \real{0.2143}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 6\tabcolsep) * \real{0.2143}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2857}}
   >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2857}}@{}}
-\toprule\noalign{}
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Subjective quarter
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -2033,15 +1793,13 @@ Estimator
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
 \(\rho\)
 \end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 \(G^{C}\) (official) & reliability-weighted council mean of the model's \emph{output} quality & 0.92 & 0.88 \\
 \(E^{C}\) (official) & anchor-sweep consistency of the model's own \emph{judging} & 0.81 & 0.82 \\
 \(E^{C}_{\text{svd}}\) (declined; §4.4) & alignment with the participants' collective taste (twelve-evaluator basis) & 0.80 & 0.76 \\
-\end{longtable}
+\end{tabular}
 }
+\end{center}
 
 The two \(E\)-side estimators are statistically indistinguishable as GPQA predictors; the weak coupling belongs to the quantity, not the choice between them. This is the paper's central dissociation replicated on a third instrument: making tracks answering; judging is its own trait, and no keyed answering benchmark measures it. Had \(E\)-side quantities tracked GPQA at 0.95, the judging half of \(T\) would be redundant with existing benchmarks.
 
@@ -2049,14 +1807,12 @@ The two \(E\)-side estimators are statistically indistinguishable as GPQA predic
 
 \textbf{The regimes invert --- and \(T\) is the only regime-invariant indicator.} Restricting to the leading eight (the roster above the GPT-4o-family cliff) reverses the single-quarter ordering:
 
-{\relax % do not increment counter
-\begin{longtable}[]{@{}lrr@{}}
-\toprule\noalign{}
+\begin{center}
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrr@{}}
+\toprule
 Quantity & Full roster (\(n=12\)) & Leading eight (\(n=8\)) \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 \(G^{F}\) & 0.83 & 0.60 \\
 \(G^{C}\) & \textbf{0.92} & 0.66 \\
 \(E^{F}\) & 0.83 & \textbf{0.84} (\(\rho = 0.85\)) \\
@@ -2064,8 +1820,9 @@ Quantity & Full roster (\(n=12\)) & Leading eight (\(n=8\)) \\
 \(\tfrac12(E^{F}+G^{F})\) & 0.92 & 0.88 \\
 \(\tfrac12(G^{C}+E^{F})\) & 0.93 & 0.91 \\
 \(T\) & \textbf{0.97} & \textbf{0.91} \\
-\end{longtable}
+\end{tabular}
 }
+\end{center}
 
 The mechanism is the same law with the \emph{range} term changing owners. Across the full roster, the capability cliff gives the subjective making axis its discriminating range, so \(G^{C}\) carries the agreement. Among the elite, every model is a competent maker --- making quality decouples from knowledge (gemini-3.1-pro tops GPQA yet is a middling maker, so \(G^{C}\) falls to 0.66) --- and what still separates frontier models is knowledge, which is \(E^{F}\)'s content: detecting errors in others' work stays hard after producing clean work has become easy, so \(E^{F}\) keeps its spread (7.27 down to 0.00 across the eight) exactly where \(G^{F}\) compresses into 6.15--7.00. \(E^{C}\), a pure disposition, saturates among the competent and collapses to 0.37. Among frontier models, the best key-free predictor of a keyed knowledge benchmark is how well a model judges \emph{other models'} truth --- §5.4's dissociation thesis in empirical form. \(T\) leads or ties in both regimes because the equal-weight aggregate always contains whichever quarter is currently doing the discriminating; any single quarter is the best proxy only in the population where its range lives. (Leading-eight values are point estimates on eight points.)
 
@@ -2124,20 +1881,18 @@ Public GPQA Diamond figures for the frontier seats are substantially higher than
 
 \subsubsection{D.5 Artifacts}\label{d.5-artifacts}
 
-{\relax % do not increment counter
-\begin{longtable}[]{@{}
-  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+\begin{center}
+{\tablefont\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}
+>{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
   >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
-\toprule\noalign{}
+\toprule
 \begin{minipage}[b]{\linewidth}\raggedright
 Artifact
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Path
 \end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
+\midrule
 Raw per-question responses, all models, both stages' outcome + first-pass log & \texttt{reproduce/\allowbreak{}data/\allowbreak{}gpqa\_\allowbreak{}runs/\allowbreak{}} \\
 Published accuracy table & \texttt{reproduce/\allowbreak{}data/\allowbreak{}gpqa\_\allowbreak{}selfadministered.csv} \\
 Scoring audit (hard-fail checks) & \texttt{reproduce/\allowbreak{}scripts/\allowbreak{}gpqa\_\allowbreak{}audit.py} \\
@@ -2146,8 +1901,10 @@ The §4.7\_\allowbreak{}TMP figure & \texttt{reproduce/\allowbreak{}scripts/\all
 Every D.1 number (ladder, compounds, regimes, bases, per-run) & \texttt{reproduce/\allowbreak{}scripts/\allowbreak{}t\_\allowbreak{}gpqa\_\allowbreak{}ladder.py} \\
 Bootstrap-basis components; per-run council-basis totals; the declined \(E^{C}_{\text{svd}}\) & \texttt{reproduce/\allowbreak{}data/\allowbreak{}total\_\allowbreak{}rating\_\allowbreak{}twelve.csv}, \texttt{total\_\allowbreak{}rating\_\allowbreak{}runs.csv}, \texttt{ec\_\allowbreak{}svd\_\allowbreak{}twelve.csv} \\
 Public-value sourcing state & \texttt{reproduce/\allowbreak{}data/\allowbreak{}external\_\allowbreak{}benchmarks.csv} \\
-\end{longtable}
+\end{tabular}
 }
+\end{center}
 
 Every number in this appendix recomputes from the shipped data: \texttt{scripts/\allowbreak{}gpqa\_\allowbreak{}audit.py} (six hard-fail checks, including the first-pass log reconciliation) and \texttt{scripts/\allowbreak{}t\_\allowbreak{}gpqa\_\allowbreak{}ladder.py} (all of D.1, with headline assertions).
+
 \end{document}
