@@ -45,7 +45,7 @@
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
 \newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\},breaklines=true,breakanywhere=true,fontsize=\small}
 % Add ',fontsize=\small' for more characters per line
 \newenvironment{Shaded}{}{}
 \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
@@ -80,6 +80,7 @@
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
 \usepackage{calc}
+\usepackage{ragged2e}
 \usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -206,7 +207,7 @@ Switching a few keywords and leaving everything else in place has turned a descr
 
 Two properties follow from building the items this way. Every item is produced fresh in the run, so there is no fixed test set to leak into a later model's training data: the benchmark is contamination-resistant by construction (§3). And because correctness is settled sentence by sentence --- does this claim hold in its new domain? --- the players' own verdicts suffice: stack every model's graded factual ratings into one matrix, and its dominant direction reveals which judges are competent, with no labels at all (§4.2, Appendix A). That competent subset is seated as the \emph{council} that grades everyone: the benchmark certifies its own judges.
 
-The canonical twelve-model run then delivers two findings (§4). Judgement is the bottleneck: most models cannot reliably tell a true cross-domain claim from a false one, even when they produce competent structure themselves --- the strongest generators are middling judges, and the council's seats go to the strongest judges, not the strongest makers. And the key-free ratings are corroborated from outside: the official total tracks GPQA Diamond at Pearson \(r = 0.97\), audited for a leak and found clean (§4.8, Appendix D).
+The canonical twelve-model run then delivers two findings (§4). Judgement is the bottleneck: most models cannot reliably tell a true cross-domain claim from a false one, even when they produce competent structure themselves --- the strongest generators are middling judges, and the council's seats go to the strongest judges, not the strongest generators. And the key-free ratings are corroborated from outside: the official total tracks GPQA Diamond at Pearson \(r = 0.97\), audited for a leak and found clean (§4.8, Appendix D).
 
 The rest of the paper builds the game (§2), turns it into the self-administering council benchmark (§3), reports the canonical twelve-model run (§4), and weighs what the numbers do and do not license (§5).
 
@@ -228,14 +229,44 @@ Before the rules, a second example --- this one not authored for the paper but b
 
 and its metanym table:
 
-\begin{longtable}[]{@{}llllll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1094}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1719}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1875}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1719}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1875}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1719}}@{}}
 \caption{The example's metanym table --- one context template (rows are slots) filled by five metanym sets (columns are domains).}\tabularnewline
 \toprule\noalign{}
-{[}SLOT{]} & Bacterial Chemotaxis & Mountain Climbing & Career Development & Gradient Descent & Ant Foraging \\
+\begin{minipage}[b]{\linewidth}\raggedright
+{[}SLOT{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bacterial Chemotaxis
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mountain Climbing
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Career Development
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Gradient Descent
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ant Foraging
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-{[}SLOT{]} & Bacterial Chemotaxis & Mountain Climbing & Career Development & Gradient Descent & Ant Foraging \\
+\begin{minipage}[b]{\linewidth}\raggedright
+{[}SLOT{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bacterial Chemotaxis
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Mountain Climbing
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Career Development
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Gradient Descent
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ant Foraging
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -284,14 +315,24 @@ The two elements are deliberately complete --- a player generates and judges, an
 
 Twelve frontier LLMs from three providers are the game's \textbf{participants} --- each serves simultaneously as generator and as evaluator (\hyperref[tab-panel]{the participant roster}):
 
-\begin{longtable}[]{@{}ll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
 \caption{The twelve participants, by provider.}\tabularnewline
 \toprule\noalign{}
-Provider & Models \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Provider
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Models
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Provider & Models \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Provider
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Models
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -311,24 +352,39 @@ Each model generates one portfolio: five archetypal contexts, each with a contex
 
 Each model then evaluates every other model's portfolio under \hyperref[tab-rubric]{a six-axis rubric}:
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
 \caption{The six-axis evaluation rubric.}\tabularnewline
 \toprule\noalign{}
-Axis & Granularity & What it measures \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Axis
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Granularity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What it measures
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Axis & Granularity & What it measures \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Axis
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Granularity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+What it measures
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-\texttt{factual\_per\_pc} & per parallel context & factual defensibility of the substituted text in its target domain \\
+\texttt{factual\_\allowbreak{}per\_\allowbreak{}pc} & per parallel context & factual defensibility of the substituted text in its target domain \\
 \texttt{beauty} & per archetype & aesthetic quality of the context template \\
 \texttt{intelligence} & per archetype & depth and non-triviality of the abstraction \\
-\texttt{instantiation\_distinctness} & per archetype & ``Domains far apart / metanyms not synonymous'' \\
-\texttt{impressive\_length} & per archetype & template length and slot count \\
-\texttt{structural\_diversity} & per portfolio & how different the five archetypes are from one another \\
+\texttt{instantiation\_\allowbreak{}distinctness} & per archetype & ``Domains far apart / metanyms not synonymous'' \\
+\texttt{impressive\_\allowbreak{}length} & per archetype & template length and slot count \\
+\texttt{structural\_\allowbreak{}diversity} & per portfolio & how different the five archetypes are from one another \\
 \end{longtable}
 
 Scores are on a 1--10 cardinal scale. Each evaluator call presents one anonymised target portfolio alongside a fixed \textbf{anchor} portfolio pinned at 7 on every axis; the evaluator scores the target relative to the anchor. The full evaluation yields a 12×12 evaluator-by-generator matrix.
@@ -337,8 +393,8 @@ What one such evaluation looks like --- the same kind of artifact worked in §2.
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={One evaluation, shown whole: the instantiation with its metanyms marked (top left), the idiomatic rewrite (top right), the administrator's synthesis (middle), and three of the five ratings with their full justifications (bottom; the complete evaluation is Appendix C). The ``Reference'' is the anchor submission, pinned at 7 on every axis (§4.1). All five judges independently isolate the same clause --- ``nature must make natural selections'' --- and the disagreement that remains, 4 versus 5, is about severity, not about what is wrong: the falsifiability property doing its work. Drawn verbatim from Appendix C by plot\_council\_evaluation.py.}]{figures/council_evaluation_pc1.png}}
-\caption{One evaluation, shown whole: the instantiation with its metanyms marked (top left), the idiomatic rewrite (top right), the administrator's synthesis (middle), and three of the five ratings with their full justifications (bottom; the complete evaluation is Appendix C). The ``Reference'' is the anchor submission, pinned at 7 on every axis (§4.1). All five judges independently isolate the same clause --- ``nature must make natural selections'' --- and the disagreement that remains, 4 versus 5, is about severity, not about what is wrong: the falsifiability property doing its work. Drawn verbatim from Appendix C by \protect\texttt{plot\_council\_evaluation.py}.}
+\pandocbounded{\includegraphics[keepaspectratio,alt={One evaluation, shown whole: the instantiation with its metanyms marked (top left), the idiomatic rewrite (top right), the administrator's synthesis (middle), and three of the five ratings with their full justifications (bottom; the complete evaluation is Appendix C). The ``Reference'' is the anchor submission, pinned at 7 on every axis (§4.1). All five judges independently isolate the same clause --- ``nature must make natural selections'' --- and the disagreement that remains, 4 versus 5, is about severity, not about what is wrong: the falsifiability property doing its work. Drawn verbatim from Appendix C by plot\_\allowbreak{}council\_\allowbreak{}evaluation.py.}]{figures/council_evaluation_pc1.png}}
+\caption{One evaluation, shown whole: the instantiation with its metanyms marked (top left), the idiomatic rewrite (top right), the administrator's synthesis (middle), and three of the five ratings with their full justifications (bottom; the complete evaluation is Appendix C). The ``Reference'' is the anchor submission, pinned at 7 on every axis (§4.1). All five judges independently isolate the same clause --- ``nature must make natural selections'' --- and the disagreement that remains, 4 versus 5, is about severity, not about what is wrong: the falsifiability property doing its work. Drawn verbatim from Appendix C by \protect\texttt{plot\_\allowbreak{}council\_\allowbreak{}evaluation.py}.}
 \end{figure}
 
 \textbf{Why these settings.} Four design choices justify themselves on first principles.
@@ -352,7 +408,7 @@ What one such evaluation looks like --- the same kind of artifact worked in §2.
 \item
   \textbf{Holistic axes, minimally prescribed.} The five non-factual axes are high-level concepts, not sub-criteria. A detailed scoring rubric is also a template-construction tutorial --- every clause leaks back into the generation prompt as guidance about what to produce --- and every additional directive measurably shifts the score distribution. We want to score what models \emph{recognise} as beautiful or intelligent, not how well they can be taught to recognise it.
 \item
-  \textbf{\texttt{impressive\_length} counterweights per-sentence factual scoring.} Without it the dominant strategy is the minimal template --- fewest sentences, least error exposure. A longer template that stays true in every sentence is the harder accomplishment, and padding is not free: every added sentence is another claim \texttt{factual\_per\_pc} scores.
+  \textbf{\texttt{impressive\_\allowbreak{}length} counterweights per-sentence factual scoring.} Without it the dominant strategy is the minimal template --- fewest sentences, least error exposure. A longer template that stays true in every sentence is the harder accomplishment, and padding is not free: every added sentence is another claim \texttt{factual\_\allowbreak{}per\_\allowbreak{}pc} scores.
 \end{enumerate}
 
 \subsection{4. Results: validating the benchmark and bootstrapping the first council}\label{results-validating-the-benchmark-and-bootstrapping-the-first-council}
@@ -383,8 +439,8 @@ The anchored protocol --- the 12-by-12 evaluation matrix re-run with every targe
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={What anchoring does to resolution. Each model's leave-self-out overall mean with its 95\% bootstrap CI, un-anchored and anchored; models are unlabelled deliberately --- the message is structural, not a ranking. Filled markers are the leading eight, open the trailing four, the shaded band the gap between them; the orange star is the anchor --- a scored target on the left, the pinned reference (7) on the right. Anchored scores spread around the yardstick instead of piling against the ceiling: the gap more than doubles relative to the spread of the means (every scored cross-band pair holds at bootstrap probability 1.00), the variance ratio --- between-target over within-target variance, Fisher's F-statistic, the standard measure of resolution --- doubles from 0.33 to 0.66, and the intervals still overlap within each band. Produced by plot\_anchoring\_resolution.py.}]{figures/anchoring_resolution.png}}
-\caption{What anchoring does to resolution. Each model's leave-self-out overall mean with its 95\% bootstrap CI, un-anchored and anchored; models are unlabelled deliberately --- the message is structural, not a ranking. Filled markers are the leading eight, open the trailing four, the shaded band the gap between them; the orange star is the anchor --- a scored target on the left, the pinned reference (7) on the right. Anchored scores spread around the yardstick instead of piling against the ceiling: the gap more than doubles relative to the spread of the means (every scored cross-band pair holds at bootstrap probability 1.00), the variance ratio --- between-target over within-target variance, Fisher's \(F\)-statistic, the standard measure of resolution --- doubles from 0.33 to 0.66, and the intervals still overlap within each band. Produced by \protect\texttt{plot\_anchoring\_resolution.py}.}
+\pandocbounded{\includegraphics[keepaspectratio,alt={What anchoring does to resolution. Each model's leave-self-out overall mean with its 95\% bootstrap CI, un-anchored and anchored; models are unlabelled deliberately --- the message is structural, not a ranking. Filled markers are the leading eight, open the trailing four, the shaded band the gap between them; the orange star is the anchor --- a scored target on the left, the pinned reference (7) on the right. Anchored scores spread around the yardstick instead of piling against the ceiling: the gap more than doubles relative to the spread of the means (every scored cross-band pair holds at bootstrap probability 1.00), the variance ratio --- between-target over within-target variance, Fisher's F-statistic, the standard measure of resolution --- doubles from 0.33 to 0.66, and the intervals still overlap within each band. Produced by plot\_\allowbreak{}anchoring\_\allowbreak{}resolution.py.}]{figures/anchoring_resolution.png}}
+\caption{What anchoring does to resolution. Each model's leave-self-out overall mean with its 95\% bootstrap CI, un-anchored and anchored; models are unlabelled deliberately --- the message is structural, not a ranking. Filled markers are the leading eight, open the trailing four, the shaded band the gap between them; the orange star is the anchor --- a scored target on the left, the pinned reference (7) on the right. Anchored scores spread around the yardstick instead of piling against the ceiling: the gap more than doubles relative to the spread of the means (every scored cross-band pair holds at bootstrap probability 1.00), the variance ratio --- between-target over within-target variance, Fisher's \(F\)-statistic, the standard measure of resolution --- doubles from 0.33 to 0.66, and the intervals still overlap within each band. Produced by \protect\texttt{plot\_\allowbreak{}anchoring\_\allowbreak{}resolution.py}.}
 \end{figure}
 
 Anchored data in hand, we ask of each evaluator the two questions on which their official-rating eligibility depends.
@@ -393,14 +449,27 @@ Anchored data in hand, we ask of each evaluator the two questions on which their
 
 The two criteria are both trustworthiness measures, read from opposite directions --- one collective, one individual. The graded \textbf{singular value decomposition (SVD)} measures \textbf{peer centrality} --- it is \emph{collective}: weight accrues to the judge the other judges most often agree with, once each judge's leniency is removed, on the single hypothesis that the only thing competent judges share is the truth. Formally, the weight is each judge's eigenvector centrality in the leniency-removed agreement network --- the recursion that also underlies PageRank: agreement counts for more when it comes from judges who are themselves central. It is the fact-checking instrument --- the replacement for the golden key --- and serves exactly where a ground truth exists to be shared. \textbf{Rating consistency} is \emph{individual}: no judge is compared with any other. The anchor is the scale's tare; if a judge's view of which work is better moves when the tare moves, the judge holds no stable standard --- it scores inconsistently, and is less competent. That makes it the instrument for the axes where there may be no right or wrong. Neither estimator can do the other's job:
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
 \caption{The two estimators and their division of labour.}\tabularnewline
 \toprule\noalign{}
-& Peer centrality (graded SVD) & Rating consistency (anchor sweep) \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Peer centrality (graded SVD)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rating consistency (anchor sweep)
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-& Peer centrality (graded SVD) & Rating consistency (anchor sweep) \\
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Peer centrality (graded SVD)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Rating consistency (anchor sweep)
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -418,14 +487,44 @@ Why it stops there & agreement on taste would convert alignment into authority -
 
 An evaluator's rating tracks the consensus in proportion to its competence \(u_s\) times the instantiation's factual standing \(v_j\) --- competence and standing fall out of one factorisation, with \textbf{no answer key}. The \emph{left} singular vector scores each \textbf{evaluator}: high when its ratings align with the participants' shared signal, ≈ 0 when it rates everything alike or idiosyncratically. That is \(E^{F}\). The \emph{right} singular vector, aggregated per generator, gives \(G^{F}\) --- not an independent measurement but the participants' own factual ratings weighted by each judge's competence (the two computations --- right singular vector, and \(E^{F}\)-weighted mean of the raw ratings --- agree within 0.14 on the anchored scale, \(r = 1.00\); Appendix A.2.a). Both are tabulated below, bootstrapped over the 275 columns (interval conventions in Appendix A.2.a and A.5; the full-sample axis is well separated, \(\sigma_1/\sigma_2 = 2.6\)); the five inert-band rows (†) --- loadings not distinguishable from zero --- get no interval. \(E^{F}\) is shown raw and \textbf{anchored} to the 1--10 scale (\(7f/f_a\), the form that enters \(T\)); Opus-4.5 is the anchor reference, \(E^{F}=G^{F}=7\) by construction:
 
-\begin{longtable}[]{@{}lrrlrl@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1905}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1905}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1905}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1429}}@{}}
 \caption{Evaluator factual competence and generator factuality (key-free SVD).}\tabularnewline
 \toprule\noalign{}
-Model & \(E^{F}\) loading & \(E^{F}\) anchored & 95\% CI & \(G^{F}\) & 95\% CI \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(E^{F}\) loading
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(E^{F}\) anchored
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+95\% CI
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(G^{F}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+95\% CI
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Model & \(E^{F}\) loading & \(E^{F}\) anchored & 95\% CI & \(G^{F}\) & 95\% CI \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(E^{F}\) loading
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(E^{F}\) anchored
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+95\% CI
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(G^{F}\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+95\% CI
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -489,14 +588,49 @@ The benchmark \textbf{scales by addition}: any future model can be evaluated aga
 
 \textbf{Rating consistency.} Beyond catching factual errors, a reliable evaluator needs a stable internal standard for each non-factual criterion --- a clear, reusable sense of what makes one submission more beautiful, more intelligent, more distinct than another. We call this the evaluator's \textbf{rating consistency}, and we measure it with the \textbf{anchor sweep}. The anchor is the fixed reference every submission is scored against; we sweep its value across 5, 6, 7, and 8 --- the \emph{only} difference between the four runs (at T=0 every cell is otherwise identical). A consistent evaluator gives the submissions the same pattern of relative scores whichever value is used. For each evaluator, and \textbf{for each rating axis separately}, we correlate (Pearson) the scores at one anchor with the scores at another, averaged over the six anchor pairs; this per-axis consistency is the diagnostic \(E^{C}_a\) (the five non-factual axes are the gate's diagnostics; the factual column is reported for comparison only). The measure is \textbf{leave-self-out} (unit counts and balancing in Appendix A.2.b). Because the anchor is the only thing that changed, a low correlation has two readings: the evaluator lacks a clear sense for that axis, or it holds no stable standard at all. The uniform case is not an arithmetic deficit --- the models that fail that way handle standard maths fine (gpt-4o scores 95\% on GSM8K) --- so it reflects inconsistent evaluation, not weak numeracy.
 
-\begin{longtable}[]{@{}lrrrrrr@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 12\tabcolsep) * \real{0.1111}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 12\tabcolsep) * \real{0.1481}}@{}}
 \caption{Anchor-sweep consistency, per evaluator and axis.}\tabularnewline
 \toprule\noalign{}
-Evaluator & factual & beauty & intelligence & distinctness & length & struct \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Evaluator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+factual
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+beauty
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+intelligence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+distinctness
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+length
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+struct
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Evaluator & factual & beauty & intelligence & distinctness & length & struct \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Evaluator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+factual
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+beauty
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+intelligence
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+distinctness
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+length
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+struct
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -521,14 +655,69 @@ Two patterns matter. Collapse is either \emph{uniform} --- gpt-4o and gpt-4o-min
 
 \textbf{Rating consistency (anchored).} The anchor sweep applies the familiar LLM-judge reliability principle --- a competent judge is invariant under non-semantic perturbation --- to a controlled perturbation of the calibration value itself, and turns that invariance into a key-free, per-criterion gate (its place among prior reliability and anchor-selection work is §5.5). Rescaled to the anchor (\(E^{C}_a = 7\,r_a/r_{a,\text{anchor}}\), so Opus-4.5 reads 7), the consistency becomes a competence on the \(1\)--\(10\) scale, directly comparable with a generator's quality on the same criterion. The hypothesis is testable on the one axis that also carries an \emph{independent} competence measure --- factual, where the key-free error-detection loading \(E^{F}\) exists: factual consistency \(E^{C}_f\) and \(E^{F}\) correlate at Pearson \(r = 0.52\) (Spearman \(\rho = 0.72\)), a decent agreement that supports reading consistency as competence. The looseness is the consistency-vs-accuracy gap --- a model can rate factuality consistently yet uninformatively (gpt-4.1-mini, consistency \(0.87\) against competence \(\approx 0.09\)). \hyperref[tab-per-criterion]{The table} pairs, per non-factual criterion, the \textbf{generator} competence \(G\) with the \textbf{evaluator} competence \(E\), both anchored to Opus-4.5 = 7, and gives their \textbf{anchored cosine} alignment --- the cosine between the models' maker- and judge-deviations from the anchor point \((7,7)\), defined in Appendix A.6 (eq A15):
 
-\begin{longtable}[]{@{}lrrrrrrrrrr@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 20\tabcolsep) * \real{0.0909}}@{}}
 \caption{Per-criterion generator quality (G) vs evaluator reliability (E).}\tabularnewline
 \toprule\noalign{}
-Model & beauty \(G\) & beauty \(E\) & intel \(G\) & intel \(E\) & dist \(G\) & dist \(E\) & len \(G\) & len \(E\) & struct \(G\) & struct \(E\) \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+beauty \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+beauty \(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+intel \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+intel \(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+dist \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+dist \(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+len \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+len \(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+struct \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+struct \(E\)
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Model & beauty \(G\) & beauty \(E\) & intel \(G\) & intel \(E\) & dist \(G\) & dist \(E\) & len \(G\) & len \(E\) & struct \(G\) & struct \(E\) \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+beauty \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+beauty \(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+intel \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+intel \(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+dist \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+dist \(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+len \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+len \(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+struct \(G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+struct \(E\)
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -556,14 +745,29 @@ On all five non-factual criteria, generation and evaluation move together (ancho
 
 \textbf{Constituting the initial council.} The participants certify their own reliable subset from internal evidence alone --- a bootstrap in the epistemic sense: no production score, no external key. We keep the selection \textbf{fully key-free}: a reliable evaluator must show factual competence --- a key-free SVD loading clear of the inert band --- \emph{and} rating consistency (collapsed across the four per-archetype non-factual axes, \(\bar r \ge 0.78\), Pearson; structural diversity, rated once per portfolio, sits outside the collapse). Five evaluators clear both bars: Gemini 3.1 Pro, Claude Opus 4.5, Gemini 2.5 Flash, Claude Opus 4.0 and Claude Opus 4.1, whose factual-competence loadings (0.28--0.58) separate from the inert band and whose rating consistency clears the floor. Claude Sonnet-4 is the marginal case the other way: its loading (0.13) is the boundary case --- its 95\% interval touches gpt-4.1-mini's below, so the decisive cut falls after the top five (§4.2) --- and it does not clear the factual bar --- even though its consistency is comfortable (0.84). Gemini 2.5 Flash is the weakest seat: its loading (0.37) clears the band, but its rating consistency (\(\bar r = 0.81\)) is the lowest of the five and the closest to the floor --- its interval {[}0.75, 0.86{]} straddles the bar --- a caveat we carry in the open. The council is seated on the factual axis because it is the one axis where competence is objective --- agreement there is licensed to mean truth (§5.2) --- with rating consistency as the accompanying bar: a factually competent judge must also hold stable standards to sit. \hyperref[tab-initial-council]{The five members}:
 
-\begin{longtable}[]{@{}lrr@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.2727}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.3636}}@{}}
 \caption{The initial council --- the five reliable evaluators.}\tabularnewline
 \toprule\noalign{}
-Council member & Factual competence {[}95\% CI{]} & Rating consistency {[}95\% CI{]} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Council member
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Factual competence {[}95\% CI{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Rating consistency {[}95\% CI{]}
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Council member & Factual competence {[}95\% CI{]} & Rating consistency {[}95\% CI{]} \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Council member
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Factual competence {[}95\% CI{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Rating consistency {[}95\% CI{]}
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -597,8 +801,8 @@ A contest convenes the top of the field --- five seats and one contestant --- an
 
 \begin{figure}
 \centering
-\pandocbounded{\includegraphics[keepaspectratio,alt={Each seat's anchored evaluator factual competence E\^{}\{F\} under contests with 0--3 ballast blocks (mean over the seven possible contestants), beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean \textbar\textbackslash Delta\textbar{} 0.33 over the seven contests, and the same seat is lowest in all seven). The boxed column is the protocol's configuration. Sized by re-analysis of the pinned run --- a contest is a sub-matrix of the bootstrap, so no new generation is needed. Reproduced by scripts/ballast\_sizing.py.}]{figures/ballast_heatmap.png}}
-\caption{Each seat's anchored evaluator factual competence \(E^{F}\) under contests with 0--3 ballast blocks (mean over the seven possible contestants), beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean \(|\Delta|\) 0.33 over the seven contests, and the same seat is lowest in all seven). The boxed column is the protocol's configuration. Sized by re-analysis of the pinned run --- a contest is a sub-matrix of the bootstrap, so no new generation is needed. Reproduced by \protect\texttt{scripts/ballast\_sizing.py}.}
+\pandocbounded{\includegraphics[keepaspectratio,alt={Each seat's anchored evaluator factual competence E\^{}\{F\} under contests with 0--3 ballast blocks (mean over the seven possible contestants), beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean \textbar\textbackslash Delta\textbar{} 0.33 over the seven contests, and the same seat is lowest in all seven). The boxed column is the protocol's configuration. Sized by re-analysis of the pinned run --- a contest is a sub-matrix of the bootstrap, so no new generation is needed. Reproduced by scripts/ballast\_\allowbreak{}sizing.py.}]{figures/ballast_heatmap.png}}
+\caption{Each seat's anchored evaluator factual competence \(E^{F}\) under contests with 0--3 ballast blocks (mean over the seven possible contestants), beside the reference from all 12 participants (§4.2). Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean \(|\Delta|\) 0.33 over the seven contests, and the same seat is lowest in all seven). The boxed column is the protocol's configuration. Sized by re-analysis of the pinned run --- a contest is a sub-matrix of the bootstrap, so no new generation is needed. Reproduced by \protect\texttt{scripts/\allowbreak{}ballast\_\allowbreak{}sizing.py}.}
 \end{figure}
 
 Why two and not one: a single block is the contest's only substantial error source, so the axis narrows toward \emph{did this judge notice the one bad portfolio} and the §4.5 guards fail in 7\% of bootstrap resamples. Two blocks carry two independent error patterns; the guards hold in every resample, \(\sigma_1/\sigma_2 = 2.99\) with both interval ends inside the band. A third changes nothing and costs twenty-five more columns of grading.
@@ -613,14 +817,44 @@ The benchmark's two ratings combine into one official total, and each splits the
 
 The \textbf{\hyperref[tab-final-leaderboard]{final leaderboard}} ranks all twelve models by \(T\). Every rating is issued against the fixed anchor (claude-opus-4.5, pinned at 7), so the anchor reads 7 on \(T\), \(E\) and \(G\) alike. Every number in the official rating is \textbf{council-issued}: each model is rated by the council when it stands as contestant (§4.5) --- the five seats, joined by the model itself when it holds no seat, grading the incumbents' portfolios, the two ballast submissions, and the contestant's own --- leave-self-out throughout: no evaluator's ratings of its own portfolio enter its scores. The twelve-evaluator matrix of §4.2--§4.4 is \emph{selection} evidence only --- the roster is an output of the bootstrap, so it cannot also produce the official rating --- and the two bases agree closely (Spearman 0.986, mean absolute difference 0.12, the same five seats either way).
 
-\begin{longtable}[]{@{}llcrrr@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1364}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1364}}
+  >{\centering\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1818}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1818}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1818}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 10\tabcolsep) * \real{0.1818}}@{}}
 \caption{Final leaderboard --- total rating \(T\) (95\% CI) with its evaluator half \(E\) and generator half \(G\), all twelve models ranked; council seats marked. Every rating is council-issued: each model is rated by the five seats --- joined by the model itself when it holds no seat --- over the incumbents' portfolios, the ballast, and its own. The anchor (claude-opus-4.5) is 7 by construction. Adjacent ranks are resolved (non-overlapping intervals) only at 1--2, 2--3, 5--6 and 8--9; the remaining adjacent pairs are statistical ties.}\tabularnewline
 \toprule\noalign{}
-Rank & Model & Council & \textbf{\(T\) {[}95\% CI{]}} & \(E\) & \(G\) \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Rank
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Council
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\textbf{\(T\) {[}95\% CI{]}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(G\)
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Rank & Model & Council & \textbf{\(T\) {[}95\% CI{]}} & \(E\) & \(G\) \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Rank
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Model
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Council
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\textbf{\(T\) {[}95\% CI{]}}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(E\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(G\)
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -814,14 +1048,29 @@ The metanym game tests both, and broadly. Playing demands at least eight constru
 
 \hyperref[tab-constructs]{The table} maps each construct to the two tasks that call on it (● marks a primary demand):
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
 \caption{The eight cognitive-science constructs the metanym game demands, mapped to its two tasks.}\tabularnewline
 \toprule\noalign{}
-Construct & Generation --- invent the template & Evaluation --- judge a portfolio \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Construct
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Generation --- invent the template
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Evaluation --- judge a portfolio
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Construct & Generation --- invent the template & Evaluation --- judge a portfolio \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Construct
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Generation --- invent the template
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Evaluation --- judge a portfolio
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -876,9 +1125,9 @@ The run characterises one operating point --- Temperature 0, no reasoning, no to
 
 \subsection{Data and code availability}\label{data-and-code-availability}
 
-Everything needed to check this paper is in one repository, \href{https://github.com/dnordfors/metanym-game-paper}{\texttt{github.com/dnordfors/metanym-game-paper}}: the manuscript, the arXiv source, the pinned evaluation runs, the raw per-question GPQA administration (re-scorable end to end --- Appendix D), the analysis scripts that regenerate every number, table and figure, and the two ballast submissions. \texttt{bash\ reproduce.sh} is deterministic re-analysis of fixed model outputs --- no API calls, no credentials, about a minute, each step labelled by the exhibit it produces. Because the benchmark uses no answer key and no oracle, nothing external is required to verify the ratings.
+Everything needed to check this paper is in one repository, \href{https://github.com/dnordfors/metanym-game-paper}{\texttt{github.com/\allowbreak{}dnordfors/\allowbreak{}metanym-game-paper}}: the manuscript, the arXiv source, the pinned evaluation runs, the raw per-question GPQA administration (re-scorable end to end --- Appendix D), the analysis scripts that regenerate every number, table and figure, and the two ballast submissions. \texttt{bash\ reproduce.sh} is deterministic re-analysis of fixed model outputs --- no API calls, no credentials, about a minute, each step labelled by the exhibit it produces. Because the benchmark uses no answer key and no oracle, nothing external is required to verify the ratings.
 
-Producing a \emph{new} run --- re-querying the models for a fresh \(N\) --- is deliberately not part of that package: it costs API budget and is non-deterministic by construction. The published results derive from the runs pinned under \texttt{reproduce/data/}, and §4.9 reports what moves across three independent regenerations.
+Producing a \emph{new} run --- re-querying the models for a fresh \(N\) --- is deliberately not part of that package: it costs API budget and is non-deterministic by construction. The published results derive from the runs pinned under \texttt{reproduce/\allowbreak{}data/\allowbreak{}}, and §4.9 reports what moves across three independent regenerations.
 
 \subsection{Use of AI assistants}\label{use-of-ai-assistants}
 
@@ -1067,7 +1316,7 @@ The right singular vector \(v\) orders the instantiations by factual standing; t
 
 \[ \hat r_j \;=\; C+\kappa\,v_j,\qquad C=\frac{\sum_s f^{+}_s\,\bar r_s}{\sum_s f^{+}_s},\quad \kappa=\sigma_1\,\frac{\sum_s f^{+}_s\,u_s}{\sum_s f^{+}_s}>0, \tag{A8}\]
 
-an affine read-off of the right vector (\(C\) the competence-weighted clean level, \(\kappa\) the rank-one scale). It is exactly the rank-one approximation of the competence-weighted mean rating \(\big(\sum_s f^{+}_s F_{sj}\big)/\sum_s f^{+}_s\), the two differing only by the discarded higher-rank residual --- on the canonical run they agree within \(0.14\) on the anchored scale (\(r = 1.00\); \texttt{generation\_factuality\_validation.py}). Averaging over a generator's own instantiations \(J_g\) gives the key-free \textbf{generation-factuality} rating
+an affine read-off of the right vector (\(C\) the competence-weighted clean level, \(\kappa\) the rank-one scale). It is exactly the rank-one approximation of the competence-weighted mean rating \(\big(\sum_s f^{+}_s F_{sj}\big)/\sum_s f^{+}_s\), the two differing only by the discarded higher-rank residual --- on the canonical run they agree within \(0.14\) on the anchored scale (\(r = 1.00\); \texttt{generation\_\allowbreak{}factuality\_\allowbreak{}validation.py}). Averaging over a generator's own instantiations \(J_g\) gives the key-free \textbf{generation-factuality} rating
 
 \[ G^{F}_{\text{svd},g} \;=\; \frac1{|J_g|}\sum_{j\in J_g}\hat r_j. \tag{A9}\]
 
@@ -1121,14 +1370,29 @@ The anchor scores \(7\) on every component, hence \(\approx7\) on \(T\): each ra
 
 Every rating is reported with a 95\% \textbf{percentile bootstrap} interval: the rating's resampling unit is drawn with replacement, the rating is recomputed, and the 2.5th and 97.5th percentiles of the replicates form the interval (\(\sim10^3\)--\(10^4\) replicates). \hyperref[tab-bootstrap-units]{The unit} is the natural independent observation for each rating:
 
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
 \caption{The bootstrap resampling unit for each rating, with the convention each one applies.}\tabularnewline
 \toprule\noalign{}
-Rating & Resampled unit & Notes \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Rating
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Resampled unit
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notes
+\end{minipage} \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-Rating & Resampled unit & Notes \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Rating
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Resampled unit
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Notes
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -1142,17 +1406,17 @@ The evaluation rating \(E\) and the total \(T\) are \textbf{not} obtained by com
 
 \subsubsection{A.6 Generation--evaluation alignment}\label{a.6-generationevaluation-alignment}
 
-§4.4 asks, criterion by criterion, how closely a model's skill as a \emph{generator} tracks its competence as a \emph{judge} across the panel, on the five non-factual criteria (factual competence is the factual-competence estimator's separate, key-free measure, A.2.a, and is not an anchor-sweep criterion). For each criterion \(x\) we hold two vectors over the models \(s\): the generator competence \(G_{s,x}\) --- the per-axis generation rating, formed by the \textbf{reliability-weighted} council estimator (A12b), not the unweighted mean of (A3): the council's leave-self-out mean of its members' scores of \(s\) on axis \(x\), each member's vote weighted by its own \(\max(r_{t,x},0)\) on that axis, with the anchor pinned at \(7\). This is the same weighting §4.7 applies to \(G^{C}\), so the per-axis table and the aggregate agree by construction, and \(E\) both scores the judge and sets its weight in \(G\). Against it we hold the evaluator competence \(E_{s,x}=7\,r_{s,x}/r_{a,x}\), the per-axis rating consistency (A10, A12). Both are anchored so the anchor model reads \(7\) on each (\(G_a\equiv7\) by the anchor convention --- A12b pins the anchor at \(7\) on each axis --- and \(E_a\equiv7\) by A12), and both are carried unrounded into (A15) and rounded once for display. Their agreement is the \textbf{anchored cosine} --- the cosine taken after subtracting the anchor point \((7,7)\), i.e.~of each model's deviation-from-anchor in making against its deviation-from-anchor in judging,
+§4.4 asks, criterion by criterion, how closely a model's skill as a \emph{generator} tracks its competence as a \emph{judge} across the panel, on the five non-factual criteria (factual competence is the factual-competence estimator's separate, key-free measure, A.2.a, and is not an anchor-sweep criterion). For each criterion \(x\) we hold two vectors over the models \(s\): the generator competence \(G_{s,x}\) --- the per-axis generation rating, formed by the \textbf{reliability-weighted} council estimator (A12b), not the unweighted mean of (A3): the council's leave-self-out mean of its members' scores of \(s\) on axis \(x\), each member's vote weighted by its own \(\max(r_{t,x},0)\) on that axis, with the anchor pinned at \(7\). This is the same weighting §4.7 applies to \(G^{C}\), so the per-axis table and the aggregate agree by construction, and \(E\) both scores the judge and sets its weight in \(G\). Against it we hold the evaluator competence \(E_{s,x}=7\,r_{s,x}/r_{a,x}\), the per-axis rating consistency (A10, A12). Both are anchored so the anchor model reads \(7\) on each (\(G_a\equiv7\) by the anchor convention --- A12b pins the anchor at \(7\) on each axis --- and \(E_a\equiv7\) by A12), and both are carried unrounded into (A15) and rounded once for display. Their agreement is the \textbf{anchored cosine} --- the cosine taken after subtracting the anchor point \((7,7)\), i.e.~of each model's deviation-from-anchor as generator against its deviation-from-anchor as evaluator,
 
 \[ \mathrm{cos}(G,E)_x=\frac{\sum_{s}(G_{s,x}-7)\,(E_{s,x}-7)}{\sqrt{\sum_{s}(G_{s,x}-7)^2}\;\sqrt{\sum_{s}(E_{s,x}-7)^2}}. \tag{A15} \]
 
-Centering on the anchor rather than on each vector's own mean is deliberate: \(7\) is one fixed external reference shared by all six criteria, so the values are comparable across axes, and the anchor --- at \((7,7)\) by construction --- contributes nothing to either sum. Because (A15) is scale-free in each argument, it is invariant to the (A12) rescaling; the raw competences \(r\) and \(G\) give the same value. The score is \(1\) when making and judging deviate from the anchor in lockstep and falls as the two profiles diverge: it is high across all five criteria (cosine \(0.84\)--\(0.91\)), so being a strong maker and a sharp judge are largely the same capability on the aesthetic and structural axes. The interval is the joint (submission, archetype) bootstrap of A.5 --- each replicate recomputes \(G\) and the per-axis \(r\) on the resampled atoms and re-forms (A15) --- and is reported alongside the point value in the §4.4 table; both come from the one code path (\texttt{build\_paper1\_tables.py} for the point, \texttt{alignment\_cosine.py} for the interval, the latter importing the former). The statistic is a diagnostic of §4.4 and does not feed the total \(T\).
+Centering on the anchor rather than on each vector's own mean is deliberate: \(7\) is one fixed external reference shared by all six criteria, so the values are comparable across axes, and the anchor --- at \((7,7)\) by construction --- contributes nothing to either sum. Because (A15) is scale-free in each argument, it is invariant to the (A12) rescaling; the raw competences \(r\) and \(G\) give the same value. The score is \(1\) when generation and evaluation deviate from the anchor in lockstep and falls as the two profiles diverge: it is high across all five criteria (cosine \(0.84\)--\(0.91\)), so being a strong generator and a sharp evaluator are largely the same capability on the aesthetic and structural axes. The interval is the joint (submission, archetype) bootstrap of A.5 --- each replicate recomputes \(G\) and the per-axis \(r\) on the resampled atoms and re-forms (A15) --- and is reported alongside the point value in the §4.4 table; both come from the one code path (\texttt{build\_\allowbreak{}paper1\_\allowbreak{}tables.py} for the point, \texttt{alignment\_\allowbreak{}cosine.py} for the interval, the latter importing the former). The statistic is a diagnostic of §4.4 and does not feed the total \(T\).
 
 \subsubsection{A.7 The contest and its guards}\label{a.7-the-contest-and-its-guards}
 
 The official leaderboard (§4.7) is issued on the \textbf{contest} basis. A contest for model \(c\) convenes the five council seats and \(c\) itself as evaluators, over a graded set of the incumbents' portfolios, the two ballast blocks (§4.6), and \(c\)'s own --- every estimator above unchanged: the factual factorisation (A5--A9) on the contest's columns, the consistency statistics (A10--A11) on its graded units, the anchored components and total (A12--A14), leave-self-out throughout. The anchor's \(f_a\) and \(\bar r_a\) are the contest's own. The \(T\) interval is the A.5 joint bootstrap run on the contest's (submission, archetype) atoms.
 
-Two \textbf{guards} decide whether the contest's factual axis is identified: the separation \(\sigma_1/\sigma_2\) of (A6) must lie in \([2.0, 5.0]\), and the seats' anchored \(E^{F}\) (A12) must spread by more than \(2.5\) points; if either fails, the contest abstains (§4.5). Both thresholds are sized by re-analysis of the pinned run in §4.6 (\texttt{ballast\_sizing.py}); the guards-hold rate is the fraction of bootstrap resamples --- parallel contexts within portfolios --- in which both pass.
+Two \textbf{guards} decide whether the contest's factual axis is identified: the separation \(\sigma_1/\sigma_2\) of (A6) must lie in \([2.0, 5.0]\), and the seats' anchored \(E^{F}\) (A12) must spread by more than \(2.5\) points; if either fails, the contest abstains (§4.5). Both thresholds are sized by re-analysis of the pinned run in §4.6 (\texttt{ballast\_\allowbreak{}sizing.py}); the guards-hold rate is the fraction of bootstrap resamples --- parallel contexts within portfolios --- in which both pass.
 
 The \textbf{authority} variant of §4.4 runs the construction (A5--A7) unchanged, one SVD per non-factual axis, reading each judge's alignment with the collective standard on that axis; it is a disclosed diagnostic and feeds nothing in (A12)--(A14).
 
@@ -1165,14 +1429,14 @@ The verbatim prompts used in the canonical run of §4. All are run with Temperat
 \item
   \textbf{B.1} is the generation prompt: each model produces its five-archetype portfolio from it.
 \item
-  \textbf{B.2} is the evaluation prompt, shown in its \textbf{calibrated/anchored} form --- the version used for the anchored re-evaluation and the official council ratings (§4.2--§4.4) and in the steady-state protocol (§4.3). It scores one \emph{Target} submission against a fixed \emph{Reference} submission pinned at \texttt{\{ANCHOR\_SCORE\}} on every criterion.
+  \textbf{B.2} is the evaluation prompt, shown in its \textbf{calibrated/anchored} form --- the version used for the anchored re-evaluation and the official council ratings (§4.2--§4.4) and in the steady-state protocol (§4.3). It scores one \emph{Target} submission against a fixed \emph{Reference} submission pinned at \texttt{\{ANCHOR\_\allowbreak{}SCORE\}} on every criterion.
 \end{itemize}
 
 The bootstrap's initial all-against-all selection (§4.1) uses the \textbf{un-anchored} form of the same prompt --- identical six criteria and JSON schema, with the calibration machinery removed. The exact passages that are absent in the un-anchored bootstrap pass are listed in the \textbf{Bootstrap note} after B.2, so both forms are fully specified from the single prompt below.
 
-Template variables appear in braces: \texttt{\{SUBMISSIONS\}}, \texttt{\{REFERENCE\_SUBMISSION\}}, \texttt{\{TARGET\_SUBMISSION\}}, and \texttt{\{ANCHOR\_SCORE\}} (swept across \{5, 6, 7, 8\}; fixed at 7 for the official ratings).
+Template variables appear in braces: \texttt{\{SUBMISSIONS\}}, \texttt{\{REFERENCE\_\allowbreak{}SUBMISSION\}}, \texttt{\{TARGET\_\allowbreak{}SUBMISSION\}}, and \texttt{\{ANCHOR\_\allowbreak{}SCORE\}} (swept across \{5, 6, 7, 8\}; fixed at 7 for the official ratings).
 
-Source files in the repository: - B.1 --- \texttt{projects/active/council-of-peers-benchmark-4/prompts/generator.md} - B.2 (anchored) --- \texttt{papers/v3/experiments/17\_bold\_api\_probe/prompts/evaluator\_calibrated.md} - B.2 (un-anchored bootstrap form) --- \texttt{projects/active/council-of-peers-benchmark-4/prompts/evaluator.md}
+Source files in the repository: - B.1 --- \texttt{projects/\allowbreak{}active/\allowbreak{}council-of-peers-benchmark-4/\allowbreak{}prompts/\allowbreak{}generator.md} - B.2 (anchored) --- \texttt{papers/\allowbreak{}v3/\allowbreak{}experiments/\allowbreak{}17\_\allowbreak{}bold\_\allowbreak{}api\_\allowbreak{}probe/\allowbreak{}prompts/\allowbreak{}evaluator\_\allowbreak{}calibrated.md} - B.2 (un-anchored bootstrap form) --- \texttt{projects/\allowbreak{}active/\allowbreak{}council-of-peers-benchmark-4/\allowbreak{}prompts/\allowbreak{}evaluator.md}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -1235,7 +1499,7 @@ Source files in the repository: - B.1 --- \texttt{projects/active/council-of-pee
 
 \FunctionTok{\#\#\#\# Template}
 
-\NormalTok{"A }\CommentTok{[}\OtherTok{AGENT}\CommentTok{]}\NormalTok{ must commit }\CommentTok{[}\OtherTok{RESOURCE}\CommentTok{]}\NormalTok{ under uncertainty, and once a }\CommentTok{[}\OtherTok{COMMITMENT}\CommentTok{]}\NormalTok{ is observed it cannot be costlessly reversed. As }\CommentTok{[}\OtherTok{INFORMATION}\CommentTok{]}\NormalTok{ arrives, the }\CommentTok{[}\OtherTok{AGENT}\CommentTok{]}\NormalTok{ learns that earlier }\CommentTok{[}\OtherTok{COMMITMENT}\CommentTok{]}\NormalTok{ are increasingly suboptimal. }\CommentTok{[}\OtherTok{REVERSAL\_COST}\CommentTok{]}\NormalTok{ grows with the depth of prior }\CommentTok{[}\OtherTok{COMMITMENT}\CommentTok{]}\NormalTok{, so the }\CommentTok{[}\OtherTok{AGENT}\CommentTok{]}\NormalTok{ often continues along the original }\CommentTok{[}\OtherTok{PATH}\CommentTok{]}\NormalTok{ even when fresh }\CommentTok{[}\OtherTok{INFORMATION}\CommentTok{]}\NormalTok{ favors a different one. }\CommentTok{[}\OtherTok{DECISION\_THEORY}\CommentTok{]}\NormalTok{ studies how rational }\CommentTok{[}\OtherTok{AGENT}\CommentTok{]}\NormalTok{ balance the value of }\CommentTok{[}\OtherTok{INFORMATION}\CommentTok{]}\NormalTok{ against the cost of }\CommentTok{[}\OtherTok{REVERSAL\_COST}\CommentTok{]}\NormalTok{."}
+\NormalTok{"A }\CommentTok{[}\OtherTok{AGENT}\CommentTok{]}\NormalTok{ must commit }\CommentTok{[}\OtherTok{RESOURCE}\CommentTok{]}\NormalTok{ under uncertainty, and once a }\CommentTok{[}\OtherTok{COMMITMENT}\CommentTok{]}\NormalTok{ is observed it cannot be costlessly reversed. As }\CommentTok{[}\OtherTok{INFORMATION}\CommentTok{]}\NormalTok{ arrives, the }\CommentTok{[}\OtherTok{AGENT}\CommentTok{]}\NormalTok{ learns that earlier }\CommentTok{[}\OtherTok{COMMITMENT}\CommentTok{]}\NormalTok{ are increasingly suboptimal. }\CommentTok{[}\OtherTok{REVERSAL\_\allowbreak{}COST}\CommentTok{]}\NormalTok{ grows with the depth of prior }\CommentTok{[}\OtherTok{COMMITMENT}\CommentTok{]}\NormalTok{, so the }\CommentTok{[}\OtherTok{AGENT}\CommentTok{]}\NormalTok{ often continues along the original }\CommentTok{[}\OtherTok{PATH}\CommentTok{]}\NormalTok{ even when fresh }\CommentTok{[}\OtherTok{INFORMATION}\CommentTok{]}\NormalTok{ favors a different one. }\CommentTok{[}\OtherTok{DECISION\_\allowbreak{}THEORY}\CommentTok{]}\NormalTok{ studies how rational }\CommentTok{[}\OtherTok{AGENT}\CommentTok{]}\NormalTok{ balance the value of }\CommentTok{[}\OtherTok{INFORMATION}\CommentTok{]}\NormalTok{ against the cost of }\CommentTok{[}\OtherTok{REVERSAL\_\allowbreak{}COST}\CommentTok{]}\NormalTok{."}
 
 \FunctionTok{\#\#\#\# Substitution table}
 
@@ -1245,9 +1509,9 @@ Source files in the repository: - B.1 --- \texttt{projects/active/council-of-pee
 \PreprocessorTok{|}\NormalTok{ RESOURCE          }\PreprocessorTok{|}\NormalTok{ capital              }\PreprocessorTok{|}\NormalTok{ endorsement          }\PreprocessorTok{|}
 \PreprocessorTok{|}\NormalTok{ COMMITMENT        }\PreprocessorTok{|}\NormalTok{ investment           }\PreprocessorTok{|}\NormalTok{ public statement     }\PreprocessorTok{|}
 \PreprocessorTok{|}\NormalTok{ INFORMATION       }\PreprocessorTok{|}\NormalTok{ market signal        }\PreprocessorTok{|}\NormalTok{ polling data         }\PreprocessorTok{|}
-\PreprocessorTok{|}\NormalTok{ REVERSAL\_COST     }\PreprocessorTok{|}\NormalTok{ switching cost       }\PreprocessorTok{|}\NormalTok{ reputational cost    }\PreprocessorTok{|}
+\PreprocessorTok{|}\NormalTok{ REVERSAL\_\allowbreak{}COST     }\PreprocessorTok{|}\NormalTok{ switching cost       }\PreprocessorTok{|}\NormalTok{ reputational cost    }\PreprocessorTok{|}
 \PreprocessorTok{|}\NormalTok{ PATH              }\PreprocessorTok{|}\NormalTok{ strategy             }\PreprocessorTok{|}\NormalTok{ position             }\PreprocessorTok{|}
-\PreprocessorTok{|}\NormalTok{ DECISION\_THEORY   }\PreprocessorTok{|}\NormalTok{ investment theory    }\PreprocessorTok{|}\NormalTok{ political science    }\PreprocessorTok{|}
+\PreprocessorTok{|}\NormalTok{ DECISION\_\allowbreak{}THEORY   }\PreprocessorTok{|}\NormalTok{ investment theory    }\PreprocessorTok{|}\NormalTok{ political science    }\PreprocessorTok{|}
 
 \FunctionTok{\#\#\#\# Capital Investment}
 
@@ -1313,18 +1577,18 @@ Source files in the repository: - B.1 --- \texttt{projects/active/council-of-pee
 \FunctionTok{\#\# Score this submission against a calibration reference.}
 
 \NormalTok{You are evaluating one contest submission ("Target Submission") against a fixed}
-\NormalTok{reference ("Reference Submission") that has been pre{-}scored at **\{ANCHOR\_SCORE\}/10 on every}
+\NormalTok{reference ("Reference Submission") that has been pre{-}scored at **\{ANCHOR\_\allowbreak{}SCORE\}/10 on every}
 \NormalTok{criterion**. Score the Target Submission only — the Reference is your yardstick.}
 
 \NormalTok{For each criterion below, ask: *is the Target\textquotesingle{}s quality on this criterion better}
 \NormalTok{or worse than the Reference, and by how much?*}
 
-\SpecialStringTok{{-} }\NormalTok{Equal quality to the Reference → **\{ANCHOR\_SCORE\}**}
-\SpecialStringTok{{-} }\NormalTok{Clearly better than the Reference → **above \{ANCHOR\_SCORE\}** (with magnitude reflecting how much better, up to 10)}
-\SpecialStringTok{{-} }\NormalTok{Clearly worse than the Reference → **below \{ANCHOR\_SCORE\}** (with magnitude reflecting how much worse, down to 1)}
+\SpecialStringTok{{-} }\NormalTok{Equal quality to the Reference → **\{ANCHOR\_\allowbreak{}SCORE\}**}
+\SpecialStringTok{{-} }\NormalTok{Clearly better than the Reference → **above \{ANCHOR\_\allowbreak{}SCORE\}** (with magnitude reflecting how much better, up to 10)}
+\SpecialStringTok{{-} }\NormalTok{Clearly worse than the Reference → **below \{ANCHOR\_\allowbreak{}SCORE\}** (with magnitude reflecting how much worse, down to 1)}
 
 \NormalTok{Use the full 1–10 scale relative to the calibration anchor. Do not score the}
-\NormalTok{Reference Submission itself — its scores are fixed at \{ANCHOR\_SCORE\}.}
+\NormalTok{Reference Submission itself — its scores are fixed at \{ANCHOR\_\allowbreak{}SCORE\}.}
 
 \FunctionTok{\#\#\# Terminology}
 
@@ -1346,7 +1610,7 @@ Source files in the repository: - B.1 --- \texttt{projects/active/council-of-pee
 \SpecialStringTok{  {-} }\NormalTok{**Form (b)** — an idiomatic rewrite of Form (a), same propositions in domain{-}expert prose.}
 \SpecialStringTok{  {-} }\NormalTok{Optionally a **Justification** sentence.}
 
-\NormalTok{Score the Target Submission on **six criteria**, each rated 1–10 relative to the Reference (which is fixed at \{ANCHOR\_SCORE\} on every criterion). The scope tag at the start of each criterion — }\InformationTok{\textasciigrave{}(Each parallel context)\textasciigrave{}}\NormalTok{, }\InformationTok{\textasciigrave{}(Each archetypal context)\textasciigrave{}}\NormalTok{, or }\InformationTok{\textasciigrave{}(Each submitted set of archetypal contexts)\textasciigrave{}}\NormalTok{ — tells you the unit of judgment. For each scored unit, write one paragraph justifying the rating relative to the Reference, then give the number.}
+\NormalTok{Score the Target Submission on **six criteria**, each rated 1–10 relative to the Reference (which is fixed at \{ANCHOR\_\allowbreak{}SCORE\} on every criterion). The scope tag at the start of each criterion — }\InformationTok{\textasciigrave{}(Each parallel context)\textasciigrave{}}\NormalTok{, }\InformationTok{\textasciigrave{}(Each archetypal context)\textasciigrave{}}\NormalTok{, or }\InformationTok{\textasciigrave{}(Each submitted set of archetypal contexts)\textasciigrave{}}\NormalTok{ — tells you the unit of judgment. For each scored unit, write one paragraph justifying the rating relative to the Reference, then give the number.}
 
 \NormalTok{{-}{-}{-}}
 
@@ -1374,15 +1638,15 @@ Source files in the repository: - B.1 --- \texttt{projects/active/council-of-pee
 
 \FunctionTok{\#\#\# The submissions}
 
-\FunctionTok{\#\#\#\# Reference Submission (fixed at \{ANCHOR\_SCORE\}/10 on every criterion)}
+\FunctionTok{\#\#\#\# Reference Submission (fixed at \{ANCHOR\_\allowbreak{}SCORE\}/10 on every criterion)}
 
-\NormalTok{\{REFERENCE\_SUBMISSION\}}
+\NormalTok{\{REFERENCE\_\allowbreak{}SUBMISSION\}}
 
 \NormalTok{{-}{-}{-}}
 
 \FunctionTok{\#\#\#\# Target Submission (to be scored relative to the Reference)}
 
-\NormalTok{\{TARGET\_SUBMISSION\}}
+\NormalTok{\{TARGET\_\allowbreak{}SUBMISSION\}}
 
 \NormalTok{{-}{-}{-}}
 
@@ -1441,24 +1705,24 @@ Source files in the repository: - B.1 --- \texttt{projects/active/council-of-pee
 \FunctionTok{\{}
   \DataTypeTok{"scores"}\FunctionTok{:} \FunctionTok{\{}
     \DataTypeTok{"Target"}\FunctionTok{:} \FunctionTok{\{}
-      \DataTypeTok{"archetypal\_contexts"}\FunctionTok{:} \OtherTok{[}
+      \DataTypeTok{"archetypal\_\allowbreak{}contexts"}\FunctionTok{:} \OtherTok{[}
         \FunctionTok{\{}
           \DataTypeTok{"name"}\FunctionTok{:} \StringTok{"\textless{}short name\textgreater{}"}\FunctionTok{,}
-          \DataTypeTok{"factual\_per\_pc"}\FunctionTok{:}           \OtherTok{[}\ErrorTok{N}\OtherTok{,} \ErrorTok{N}\OtherTok{,} \ErrorTok{N}\OtherTok{,} \ErrorTok{N}\OtherTok{,} \ErrorTok{N}\OtherTok{]}\FunctionTok{,}
+          \DataTypeTok{"factual\_\allowbreak{}per\_\allowbreak{}pc"}\FunctionTok{:}           \OtherTok{[}\ErrorTok{N}\OtherTok{,} \ErrorTok{N}\OtherTok{,} \ErrorTok{N}\OtherTok{,} \ErrorTok{N}\OtherTok{,} \ErrorTok{N}\OtherTok{]}\FunctionTok{,}
           \DataTypeTok{"beauty"}\FunctionTok{:}                   \ErrorTok{N}\FunctionTok{,}
           \DataTypeTok{"intelligence"}\FunctionTok{:}             \ErrorTok{N}\FunctionTok{,}
-          \DataTypeTok{"instantiation\_distinctness"}\FunctionTok{:} \ErrorTok{N}\FunctionTok{,}
-          \DataTypeTok{"impressive\_length"}\FunctionTok{:}        \ErrorTok{N}
+          \DataTypeTok{"instantiation\_\allowbreak{}distinctness"}\FunctionTok{:} \ErrorTok{N}\FunctionTok{,}
+          \DataTypeTok{"impressive\_\allowbreak{}length"}\FunctionTok{:}        \ErrorTok{N}
         \FunctionTok{\}}
         \ErrorTok{/*} \ErrorTok{five} \ErrorTok{entries} \ErrorTok{in} \ErrorTok{this} \ErrorTok{list}\OtherTok{,} \ErrorTok{one} \ErrorTok{per} \ErrorTok{archetypal} \ErrorTok{context} \ErrorTok{*/}
       \OtherTok{]}\FunctionTok{,}
-      \DataTypeTok{"structural\_diversity"}\FunctionTok{:} \ErrorTok{N}
+      \DataTypeTok{"structural\_\allowbreak{}diversity"}\FunctionTok{:} \ErrorTok{N}
     \FunctionTok{\}}
   \FunctionTok{\}}
 \FunctionTok{\}}
 \InformationTok{\textasciigrave{}\textasciigrave{}\textasciigrave{}}
 
-\NormalTok{All ratings are integers 1–10 inclusive. Equal to the Reference = \{ANCHOR\_SCORE\}.}
+\NormalTok{All ratings are integers 1–10 inclusive. Equal to the Reference = \{ANCHOR\_\allowbreak{}SCORE\}.}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1472,24 +1736,24 @@ The bootstrap's initial all-against-all leaderboard (§4.1, stage 1 of §3.4) is
 \item
   \textbf{Title line.} ``Score this submission against a calibration reference.'' becomes ``Score these. You are evaluating contest submissions.''
 \item
-  \textbf{The entire calibration preamble is removed} --- i.e.~everything from ``You are evaluating one contest submission ("Target Submission") against a fixed reference\ldots{}'' down to and including ``\ldots Do not score the Reference Submission itself --- its scores are fixed at \{ANCHOR\_SCORE\}.'' (the opening paragraph, the three ``Equal / Clearly better / Clearly worse'' bullets, and the ``Use the full 1--10 scale relative to the calibration anchor'' sentence).
+  \textbf{The entire calibration preamble is removed} --- i.e.~everything from ``You are evaluating one contest submission ("Target Submission") against a fixed reference\ldots{}'' down to and including ``\ldots Do not score the Reference Submission itself --- its scores are fixed at \{ANCHOR\_\allowbreak{}SCORE\}.'' (the opening paragraph, the three ``Equal / Clearly better / Clearly worse'' bullets, and the ``Use the full 1--10 scale relative to the calibration anchor'' sentence).
 \item
-  \textbf{The scoring-instruction sentence drops its reference clause.} ``Score the Target Submission on six criteria, each rated 1--10 relative to the Reference (which is fixed at \{ANCHOR\_SCORE\} on every criterion)\ldots{} justifying the rating relative to the Reference'' becomes ``Score each submission on six criteria, each rated 1--10\ldots{} justifying the rating'' (all ``relative to the Reference'' qualifiers dropped).
+  \textbf{The scoring-instruction sentence drops its reference clause.} ``Score the Target Submission on six criteria, each rated 1--10 relative to the Reference (which is fixed at \{ANCHOR\_\allowbreak{}SCORE\} on every criterion)\ldots{} justifying the rating relative to the Reference'' becomes ``Score each submission on six criteria, each rated 1--10\ldots{} justifying the rating'' (all ``relative to the Reference'' qualifiers dropped).
 \item
-  \textbf{The Reference Submission block is removed.} The ``\#\# The submissions → \#\#\# Reference Submission (fixed at \{ANCHOR\_SCORE\}/10\ldots) \{REFERENCE\_SUBMISSION\} → \#\#\# Target Submission \ldots{} \{TARGET\_SUBMISSION\}'' section is replaced by a single batch: ``\#\# The proposals to evaluate'' followed by \texttt{\{SUBMISSIONS\}}.
+  \textbf{The Reference Submission block is removed.} The ``\#\# The submissions → \#\#\# Reference Submission (fixed at \{ANCHOR\_\allowbreak{}SCORE\}/10\ldots) \{REFERENCE\_\allowbreak{}SUBMISSION\} → \#\#\# Target Submission \ldots{} \{TARGET\_\allowbreak{}SUBMISSION\}'' section is replaced by a single batch: ``\#\# The proposals to evaluate'' followed by \texttt{\{SUBMISSIONS\}}.
 \item
-  \textbf{The output is per-submission, not per-target.} ``\#\# Target Submission'' becomes ``\#\# Submission '' repeated for each submission; all ``\textless\ldots relative to Reference\textgreater{}'' annotations in the output template are dropped; and the JSON top-level key changes from the single \texttt{"Target"} to one entry per \texttt{"\textless{}submission\_id\textgreater{}"}.
+  \textbf{The output is per-submission, not per-target.} ``\#\# Target Submission'' becomes ``\#\# Submission '' repeated for each submission; all ``\textless\ldots relative to Reference\textgreater{}'' annotations in the output template are dropped; and the JSON top-level key changes from the single \texttt{"Target"} to one entry per \texttt{"\textless{}submission\_\allowbreak{}id\textgreater{}"}.
 \item
-  \textbf{The closing line drops its anchor clause.} ``All ratings are integers 1--10 inclusive. Equal to the Reference = \{ANCHOR\_SCORE\}.'' becomes ``All ratings are integers 1--10 inclusive.''
+  \textbf{The closing line drops its anchor clause.} ``All ratings are integers 1--10 inclusive. Equal to the Reference = \{ANCHOR\_\allowbreak{}SCORE\}.'' becomes ``All ratings are integers 1--10 inclusive.''
 \end{enumerate}
 
 Everything else --- the six criteria and their scope tags, the terminology block, the recursion note, and the per-archetype/per-PC/per-portfolio output structure --- is identical between the two forms.
 
 \subsection{Appendix C. Council evaluation of a target submission --- gemini-2.5-flash}\label{appendix-c.-council-evaluation-of-a-target-submission-gemini-2.5-flash}
 
-This is the council's evaluation of gemini-2.5-flash's portfolio from the canonical run (\texttt{probe\_K\_anchor7}), the worked example of the scoring machinery described in §4.3 and §4.2. Ratings are on the anchored 1--10 scale, with the anchor portfolio of Appendix C pinned at 7 on every criterion.
+This is the council's evaluation of gemini-2.5-flash's portfolio from the canonical run (\texttt{probe\_\allowbreak{}K\_\allowbreak{}anchor7}), the worked example of the scoring machinery described in §4.3 and §4.2. Ratings are on the anchored 1--10 scale, with the anchor portfolio of Appendix C pinned at 7 on every criterion.
 
-The rubric operates at three levels, and one unit of each is reproduced here in full: a \textbf{parallel context}, graded for factual truth sentence by sentence; an \textbf{archetype-level axis}, where the five council members score a whole archetype on one non-factual criterion; and the \textbf{whole-portfolio} structural-diversity judgement. Each unit shows the submitted material, all five council members' ratings and comments, and the administrator's synthesis of the anonymised council view. Every rating and comment quoted below is taken from the pinned evaluation JSON in \texttt{reproduce/data/}.
+The rubric operates at three levels, and one unit of each is reproduced here in full: a \textbf{parallel context}, graded for factual truth sentence by sentence; an \textbf{archetype-level axis}, where the five council members score a whole archetype on one non-factual criterion; and the \textbf{whole-portfolio} structural-diversity judgement. Each unit shows the submitted material, all five council members' ratings and comments, and the administrator's synthesis of the anonymised council view. Every rating and comment quoted below is taken from the pinned evaluation JSON in \texttt{reproduce/\allowbreak{}data/\allowbreak{}}.
 
 As in Appendix C, \textbf{metanyms in the Instantiations are set in capitals}, so that everything in lower case is template wording carried over unchanged. The capitalisation is ours, added for legibility; the submission and every rating and comment below are otherwise verbatim, and the models wrote in ordinary sentence case. It is worth the ink here, because on this portfolio the substituted words are usually where the trouble is.
 
@@ -1502,15 +1766,33 @@ Two things are worth watching across the units below, because they are what the 
 \paragraph{Submitted context-template}\label{submitted-context-template}
 
 \begin{quote}
-A {[}SYSTEM{]} requires various {[}RESOURCE{]} to function and achieve its {[}GOAL{]}. These {[}RESOURCE{]} are finite and often subject to {[}COMPETITION{]} from other {[}SYSTEM{]} or internal {[}DEMAND{]}. The {[}ALLOCATOR{]} must make {[}DECISION{]} about how to distribute the available {[}RESOURCE{]} among competing {[}PRIORITY{]}. Misallocation of {[}RESOURCE{]} can lead to {[}FAILURE{]} of the {[}SYSTEM{]} or hinder its ability to reach its {[}GOAL{]}. Effective {[}ALLOCATION\_STRATEGY{]} involves understanding the {[}INTERDEPENDENCY{]} of different {[}RESOURCE{]} and {[}PRIORITY{]}, and adapting to changing {[}CONDITION{]}. The {[}ALLOCATOR{]} often faces a {[}TRADE\_OFF{]} between short-term {[}GAIN{]} and long-term {[}SUSTAINABILITY{]}.
+A {[}SYSTEM{]} requires various {[}RESOURCE{]} to function and achieve its {[}GOAL{]}. These {[}RESOURCE{]} are finite and often subject to {[}COMPETITION{]} from other {[}SYSTEM{]} or internal {[}DEMAND{]}. The {[}ALLOCATOR{]} must make {[}DECISION{]} about how to distribute the available {[}RESOURCE{]} among competing {[}PRIORITY{]}. Misallocation of {[}RESOURCE{]} can lead to {[}FAILURE{]} of the {[}SYSTEM{]} or hinder its ability to reach its {[}GOAL{]}. Effective {[}ALLOCATION\_\allowbreak{}STRATEGY{]} involves understanding the {[}INTERDEPENDENCY{]} of different {[}RESOURCE{]} and {[}PRIORITY{]}, and adapting to changing {[}CONDITION{]}. The {[}ALLOCATOR{]} often faces a {[}TRADE\_\allowbreak{}OFF{]} between short-term {[}GAIN{]} and long-term {[}SUSTAINABILITY{]}.
 \end{quote}
 
 \textbf{Metanym table}
 
 {\relax % do not increment counter
-\begin{longtable}[]{@{}llllll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1694}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1774}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1532}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1613}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.2097}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 10\tabcolsep) * \real{0.1290}}@{}}
 \toprule\noalign{}
-{[}SLOT{]} & Ecosystem Management & Corporate Finance & Military Logistics & Personal Time Management & Urban Planning \\
+\begin{minipage}[b]{\linewidth}\raggedright
+{[}SLOT{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ecosystem Management
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Corporate Finance
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Military Logistics
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Personal Time Management
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Urban Planning
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -1524,16 +1806,16 @@ ALLOCATOR & nature & CFO & quartermaster & self & city council \\
 DECISION & natural selection & budget & deployment & schedule & zoning \\
 PRIORITY & species & department & unit & activity & district \\
 FAILURE & collapse & bankruptcy & defeat & burnout & sprawl \\
-ALLOCATION\_STRATEGY & ecological succession & portfolio management & supply chain management & prioritization & master plan \\
+ALLOCATION\_\allowbreak{}STRATEGY & ecological succession & portfolio management & supply chain management & prioritization & master plan \\
 INTERDEPENDENCY & food web & supply chain & battle plan & energy level & infrastructure \\
 CONDITION & climate & economy & intelligence & mood & demographics \\
-TRADE\_OFF & exploitation & short-term gain & tactical advantage & immediate gratification & development \\
+TRADE\_\allowbreak{}OFF & exploitation & short-term gain & tactical advantage & immediate gratification & development \\
 GAIN & biomass & revenue & territory & leisure & tax base \\
 SUSTAINABILITY & resilience & long-term growth & strategic depth & health & green space \\
 \end{longtable}
 }
 
-Comparing \hyperref[tab-target-metanym]{this table} with the anchor's (Appendix C) shows what the council objected to on \emph{domain span}: several rows here map to near-synonyms across columns --- ALLOCATION\_STRATEGY becomes ecological succession, portfolio management, supply chain management --- where the anchor's MEMORY row spans methylation state, route memory, and momentum. The mechanical consequence appears immediately below: the ALLOCATOR row assigns ``nature'' the role the other columns give a CFO or a quartermaster, and that substitution is what makes the first parallel context false.
+Comparing \hyperref[tab-target-metanym]{this table} with the anchor's (Appendix C) shows what the council objected to on \emph{domain span}: several rows here map to near-synonyms across columns --- ALLOCATION\_\allowbreak{}STRATEGY becomes ecological succession, portfolio management, supply chain management --- where the anchor's MEMORY row spans methylation state, route memory, and momentum. The mechanical consequence appears immediately below: the ALLOCATOR row assigns ``nature'' the role the other columns give a CFO or a quartermaster, and that substitution is what makes the first parallel context false.
 
 \paragraph{Per parallel context}\label{per-parallel-context}
 
@@ -1585,7 +1867,7 @@ This mapping is highly accurate and standard. A CFO allocating capital among dep
 
 \textbf{Administrator summary:} The council largely agreed the corporate-finance context was factually reasonable, with ratings spread modestly from 5 to 7. The convergent view was that the CFO/capital-allocation framework is accurate and standard, with one evaluator calling it a textbook description on par with the Reference. Dissent was mild: the lowest scorer found it elementary next to the Reference's nuanced debt context, and several flagged Form (a)'s nonsensical ``short-term gain between short-term revenue and long-term growth'' phrasing.
 
-The contrast with PC 1 is the point of showing these two together. The same template, the same five judges, one step across the metanym table --- and the ratings move from a 4--5 cluster to a 5--7 spread, with one judge calling it ``on par with the Reference'' while another calls it elementary. Note also that every judge still flags the same broken clause, and the capitalisation shows exactly why it broke: the submitter declared the TRADE\_OFF metanym as ``short-term gain'', which collides with the template's own ``short-term {[}GAIN{]}'', so the substitution yields ``faces a SHORT-TERM GAIN between short-term REVENUE''. The defect is in the metanym table, not the prose. What the judges disagree about is how much such a mechanical-substitution artefact should cost when the underlying domain claim is sound. This is precisely the leniency-and-standard variation that row-centring removes before the factorisation (Appendix A.2.a).
+The contrast with PC 1 is the point of showing these two together. The same template, the same five judges, one step across the metanym table --- and the ratings move from a 4--5 cluster to a 5--7 spread, with one judge calling it ``on par with the Reference'' while another calls it elementary. Note also that every judge still flags the same broken clause, and the capitalisation shows exactly why it broke: the submitter declared the TRADE\_\allowbreak{}OFF metanym as ``short-term gain'', which collides with the template's own ``short-term {[}GAIN{]}'', so the substitution yields ``faces a SHORT-TERM GAIN between short-term REVENUE''. The defect is in the metanym table, not the prose. What the judges disagree about is how much such a mechanical-substitution artefact should cost when the underlying domain claim is sound. This is precisely the leniency-and-standard variation that row-centring removes before the factorisation (Appendix A.2.a).
 
 \emph{{[}PC 3 (Military Logistics), PC 4 (Personal Time Management) and PC 5 (Urban Planning) are elided here; all three were rated 5--7 with the same pattern.{]}}
 
@@ -1650,16 +1932,31 @@ The dissent is instructive rather than anomalous. 3.1-pro is not scoring careles
 
 \subsection{Appendix D. The total rating's GPQA correlation: provenance and audit}\label{appendix-d.-the-total-ratings-gpqa-correlation-provenance-and-audit}
 
-The total rating \(T\) tracks self-administered GPQA Diamond at Pearson \(r = 0.97\) --- closer than any of its components and closer than the factual pair the benchmark was validated on (§4.7\_TMP). A correlation that strong between a key-free peer rating and an externally keyed benchmark invites the suspicion that something leaked. This appendix records the audit that looked for the leak and did not find one, the administration detail the audit surfaced and the paper must disclose, the decompositions that make the number unremarkable in hindsight, and the artifacts shipped so that anyone can repeat the search. Statistics are reported at the caution \(n = 12\) demands: intervals are Fisher-\(z\) unless marked, and differences between the strong correlations below are point-estimate observations --- none of them is individually resolved at this sample size.
+The total rating \(T\) tracks self-administered GPQA Diamond at Pearson \(r = 0.97\) --- closer than any of its components and closer than the factual pair the benchmark was validated on (§4.7\_\allowbreak{}TMP). A correlation that strong between a key-free peer rating and an externally keyed benchmark invites the suspicion that something leaked. This appendix records the audit that looked for the leak and did not find one, the administration detail the audit surfaced and the paper must disclose, the decompositions that make the number unremarkable in hindsight, and the artifacts shipped so that anyone can repeat the search. Statistics are reported at the caution \(n = 12\) demands: intervals are Fisher-\(z\) unless marked, and differences between the strong correlations below are point-estimate observations --- none of them is individually resolved at this sample size.
 
 \subsubsection{D.1 The correlation, decomposed}\label{d.1-the-correlation-decomposed}
 
 \textbf{The aggregation ladder is monotone.} Council-basis official values vs GPQA, \(n = 12\) throughout (Pearson \(r\) measures agreement of the values on a line; Spearman \(\rho\), agreement of the rankings alone):
 
 {\relax % do not increment counter
-\begin{longtable}[]{@{}lrrll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 8\tabcolsep) * \real{0.1765}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2353}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 8\tabcolsep) * \real{0.2353}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 8\tabcolsep) * \real{0.1765}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 8\tabcolsep) * \real{0.1765}}@{}}
 \toprule\noalign{}
-Quantity & Pearson \(r\) & Spearman \(\rho\) & Fisher-\(z\) 95\% & BCa bootstrap 95\% \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Quantity
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Pearson \(r\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Spearman \(\rho\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fisher-\(z\) 95\%
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+BCa bootstrap 95\%
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -1670,19 +1967,28 @@ Quantity & Pearson \(r\) & Spearman \(\rho\) & Fisher-\(z\) 95\% & BCa bootstrap
 \(G^{C}\) alone & 0.92 & 0.88 & {[}0.73, 0.98{]} & {[}0.51, 0.98{]} \\
 \(G = \tfrac12(G^{F}+G^{C})\) --- making half & 0.91 & 0.86 & {[}0.70, 0.97{]} & {[}0.73, 0.97{]} \\
 \(E = \tfrac12(E^{F}+E^{C})\) --- judging half & 0.92 & 0.93 & {[}0.73, 0.98{]} & {[}0.78, 0.98{]} \\
-\(\tfrac12(E^{F}+G^{F})\) --- §4.7\_TMP's factual pair & 0.92 & 0.92 & {[}0.73, 0.98{]} & {[}0.84, 0.97{]} \\
+\(\tfrac12(E^{F}+G^{F})\) --- §4.7\_\allowbreak{}TMP's factual pair & 0.92 & 0.92 & {[}0.73, 0.98{]} & {[}0.84, 0.97{]} \\
 \(T = \tfrac14(G^{F}+G^{C}+E^{F}+E^{C})\) & \textbf{0.97} & \textbf{0.93} & \textbf{{[}0.90, 0.99{]}} & \textbf{{[}0.92, 0.99{]}} \\
 \end{longtable}
 }
 
 Two interval constructions are reported because each covers the other's weakness at \(n = 12\): Fisher-\(z\) assumes bivariate normality but unbends the skew of a bounded statistic; the BCa bootstrap is assumption-lighter and corrects the bias and skew that make the naive percentile bootstrap anti-conservative here (the earlier percentile interval on \(T\), \([0.94, 0.99]\), was too narrow for exactly that reason and is retired). Where the two constructions disagree (\(G^{C}\): Fisher \([0.73, 0.98]\) vs BCa \([0.51, 0.98]\)), the BCa is detecting leverage sensitivity and the wider bound is the honest one. Read as validation: every component's interval sits well clear of zero --- GPQA validates \(T\) and, with varying strength, each of its components as capability measures --- with \(T\)'s interval the tightest under both constructions.
 
-\textbf{Measurement error, propagated (sensitivity).} All correlations above are computed on point estimates. Both coordinates carry known measurement distributions --- each model's \(T\) has its A.5 replicate distribution (shipped in \texttt{total\_rating\_council\_replicates.csv}), and GPQA accuracy is binomial --- so the fit can be re-derived with them propagated (\texttt{scripts/slope\_full\_bootstrap.py}; slope point estimate 8.0 GPQA points per \(T\) unit):
+\textbf{Measurement error, propagated (sensitivity).} All correlations above are computed on point estimates. Both coordinates carry known measurement distributions --- each model's \(T\) has its A.5 replicate distribution (shipped in \texttt{total\_\allowbreak{}rating\_\allowbreak{}council\_\allowbreak{}replicates.csv}), and GPQA accuracy is binomial --- so the fit can be re-derived with them propagated (\texttt{scripts/\allowbreak{}slope\_\allowbreak{}full\_\allowbreak{}bootstrap.py}; slope point estimate 8.0 GPQA points per \(T\) unit):
 
 {\relax % do not increment counter
-\begin{longtable}[]{@{}lll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 4\tabcolsep) * \real{0.3333}}@{}}
 \toprule\noalign{}
-Uncertainty propagated & slope 95\% & \(r\) 95\% \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Uncertainty propagated
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+slope 95\%
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\(r\) 95\%
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -1712,9 +2018,21 @@ The last row modestly overstates total uncertainty --- the observed scatter alre
 \textbf{The subjective quarters, by estimator.} The making-vs-judging asymmetry above is not an estimator artifact. \(G^{C}\)'s 0.92 is carried by the ratings' content (the A12b reliability weights only set each judge's influence, and the council's weights are near-uniform); judging couples weakly to GPQA under \emph{either} available estimator:
 
 {\relax % do not increment counter
-\begin{longtable}[]{@{}llrr@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 6\tabcolsep) * \real{0.2143}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 6\tabcolsep) * \real{0.2143}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2857}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2857}}@{}}
 \toprule\noalign{}
-Subjective quarter & Estimator & \(r\) & \(\rho\) \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Subjective quarter
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Estimator
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(r\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(\rho\)
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
@@ -1751,11 +2069,11 @@ Quantity & Full roster (\(n=12\)) & Leading eight (\(n=8\)) \\
 
 The mechanism is the same law with the \emph{range} term changing owners. Across the full roster, the capability cliff gives the subjective making axis its discriminating range, so \(G^{C}\) carries the agreement. Among the elite, every model is a competent maker --- making quality decouples from knowledge (gemini-3.1-pro tops GPQA yet is a middling maker, so \(G^{C}\) falls to 0.66) --- and what still separates frontier models is knowledge, which is \(E^{F}\)'s content: detecting errors in others' work stays hard after producing clean work has become easy, so \(E^{F}\) keeps its spread (7.27 down to 0.00 across the eight) exactly where \(G^{F}\) compresses into 6.15--7.00. \(E^{C}\), a pure disposition, saturates among the competent and collapses to 0.37. Among frontier models, the best key-free predictor of a keyed knowledge benchmark is how well a model judges \emph{other models'} truth --- §5.4's dissociation thesis in empirical form. \(T\) leads or ties in both regimes because the equal-weight aggregate always contains whichever quarter is currently doing the discriminating; any single quarter is the best proxy only in the population where its range lives. (Leading-eight values are point estimates on eight points.)
 
-\textbf{It is not the cluster gap --- but fine ordering is beyond it.} Within the leading eight alone, \(T\) vs GPQA reads \(r = 0.91\) (\(\rho = 0.79\)), so the correlation is not carried by the division between the leading eight and the GPT-4o-family cliff. The honest boundary: within the Anthropic family alone (\(n = 4\)) the rank agreement is \(\rho = 0.40\) --- where ordering is genuinely unresolved by the evaluators (§4.2), the agreement with GPQA dissolves too. The two instruments agree on coarse capability structure, not on fine ranks; the trailing four alone (\(r = 0.71\), \(n = 4\)) are too few to inform either way. This is consistent with §4.7\_TMP\_TMP's position that the benchmark's reliable products are membership and rank order, not fine placement.
+\textbf{It is not the cluster gap --- but fine ordering is beyond it.} Within the leading eight alone, \(T\) vs GPQA reads \(r = 0.91\) (\(\rho = 0.79\)), so the correlation is not carried by the division between the leading eight and the GPT-4o-family cliff. The honest boundary: within the Anthropic family alone (\(n = 4\)) the rank agreement is \(\rho = 0.40\) --- where ordering is genuinely unresolved by the evaluators (§4.2), the agreement with GPQA dissolves too. The two instruments agree on coarse capability structure, not on fine ranks; the trailing four alone (\(r = 0.71\), \(n = 4\)) are too few to inform either way. This is consistent with §4.7\_\allowbreak{}TMP\_\allowbreak{}TMP's position that the benchmark's reliable products are membership and rank order, not fine placement.
 
 \textbf{It survives the basis change that makes the benchmark scalable.} Recomputing every quantity on the twelve-evaluator bootstrap basis instead of the official council+ballast contests moves \(T\)'s correlation from 0.972 to 0.969 and leaves \(G^{F}\), \(G^{C}\), \(E^{F}\) and the factual pair within 0.02 of themselves. The one real difference is \(E^{C}\): 0.81 on the contest basis against 0.89 on the twelve-evaluator basis --- the contest's easier consistency test (§4.7's scope note) inflates inert-band judges in a way an external capability instrument can see. \(T\) absorbs the distortion (a quarter of four), so the switch to the standing-service basis costs the headline nothing.
 
-\textbf{It survives regeneration --- with one flagged run.} Across the three full re-runs of §4.7\_TMP\_TMP: \(r = 0.97, 0.97, 0.92\) (\(\rho = 0.93, 0.95, 0.88\)). The dip is run 3, whose factual axis the §4.6 diagnostic reports as unidentified (\(\sigma_1/\sigma_2 = 1.28\)); \(T\)'s three healthy quarters buffer the broken one (the factual pair alone falls to 0.83 there). Excluding the anchor changes nothing (\(r = 0.97, 0.97, 0.91\); run 1 anchor-excluded 0.971).
+\textbf{It survives regeneration --- with one flagged run.} Across the three full re-runs of §4.7\_\allowbreak{}TMP\_\allowbreak{}TMP: \(r = 0.97, 0.97, 0.92\) (\(\rho = 0.93, 0.95, 0.88\)). The dip is run 3, whose factual axis the §4.6 diagnostic reports as unidentified (\(\sigma_1/\sigma_2 = 1.28\)); \(T\)'s three healthy quarters buffer the broken one (the factual pair alone falls to 0.83 there). Excluding the anchor changes nothing (\(r = 0.97, 0.97, 0.91\); run 1 anchor-excluded 0.971).
 
 \textbf{What it does and does not corroborate.} \(T\) and GPQA are both broad capability measures, so their agreement corroborates the benchmark as a whole --- its one number tracks real capability. It is distinct from, and does not strengthen, an axis-specific claim: with \(G^{C}\) alone at 0.92, GPQA concordance cannot by itself certify that the factual axis recovered \emph{truth} rather than capability-correlated quality.
 
@@ -1777,17 +2095,17 @@ D) {D}
 
 Option order is shuffled deterministically per question (seeded by question index, one shuffle applied identically for every model).
 
-\textbf{The administration was two-stage, and the first stage is in the shipped log.} ``No dedicated reasoning channel'' is not deliberation-off: models write visible derivations of vendor-idiosyncratic length before the answer line, and under the initial 2,048-token cap the two Gemini seats were massively truncated --- the original pass (preserved in the run's \texttt{log.txt}) scored gemini-3.1-pro at 82/198 with 103 unparseable responses and gemini-2.5-flash at 121/198 with 50, truncation voids counted as wrong. The cap was raised to 8,192 and the void responses --- only the void ones --- were re-asked; the published records are the patched set (13 residual voids per Gemini seat, still counted as wrong). Two facts bound the bias this asymmetric repair could introduce: retries targeted only \emph{unparseable} responses, never parsed-but-wrong answers; and the retry success rate (≈87\% correct) matches the original pass's scored-only accuracy (gemini-3.1-pro 86.3\% on its 95 parseable responses --- \emph{above} the published 80.81\%), so the second pass did not score better than the first pass's readable fraction. The single-pass description of §3.1 therefore holds for the council run but not for the GPQA administration, which was single-pass-with-void-retry; both stages' evidence ships in \texttt{data/gpqa\_runs/}.
+\textbf{The administration was two-stage, and the first stage is in the shipped log.} ``No dedicated reasoning channel'' is not deliberation-off: models write visible derivations of vendor-idiosyncratic length before the answer line, and under the initial 2,048-token cap the two Gemini seats were massively truncated --- the original pass (preserved in the run's \texttt{log.txt}) scored gemini-3.1-pro at 82/198 with 103 unparseable responses and gemini-2.5-flash at 121/198 with 50, truncation voids counted as wrong. The cap was raised to 8,192 and the void responses --- only the void ones --- were re-asked; the published records are the patched set (13 residual voids per Gemini seat, still counted as wrong). Two facts bound the bias this asymmetric repair could introduce: retries targeted only \emph{unparseable} responses, never parsed-but-wrong answers; and the retry success rate (≈87\% correct) matches the original pass's scored-only accuracy (gemini-3.1-pro 86.3\% on its 95 parseable responses --- \emph{above} the published 80.81\%), so the second pass did not score better than the first pass's readable fraction. The single-pass description of §3.1 therefore holds for the council run but not for the GPQA administration, which was single-pass-with-void-retry; both stages' evidence ships in \texttt{data/\allowbreak{}gpqa\_\allowbreak{}runs/\allowbreak{}}.
 
 \subsubsection{D.3 The audit: no leak found}\label{d.3-the-audit-no-leak-found}
 
-\texttt{scripts/gpqa\_audit.py} re-derives the published table from the raw records and hard-fails on any mismatch. Its checks, all passing:
+\texttt{scripts/\allowbreak{}gpqa\_\allowbreak{}audit.py} re-derives the published table from the raw records and hard-fails on any mismatch. Its checks, all passing:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{CSV reconciliation} --- per-model \texttt{n\_correct} recomputed from raw equals \texttt{gpqa\_selfadministered.csv} exactly, all twelve models.
+  \textbf{CSV reconciliation} --- per-model \texttt{n\_\allowbreak{}correct} recomputed from raw equals \texttt{gpqa\_\allowbreak{}selfadministered.csv} exactly, all twelve models.
 \item
   \textbf{Key consistency} --- the key letter is identical across all twelve models' records for every question.
 \item
@@ -1802,28 +2120,34 @@ Option order is shuffled deterministically per question (seeded by question inde
 
 \subsubsection{D.4 Publicly reported GPQA values, and why they differ}\label{d.4-publicly-reported-gpqa-values-and-why-they-differ}
 
-Public GPQA Diamond figures for the frontier seats are substantially higher than this protocol's --- and are themselves inconsistent across sources: for claude-opus-4.5 the November 2025 system card reports 87.0 while a 2026 leaderboard snapshot lists 94.1 (thinking configuration unconfirmed); for gemini-3.1-pro public sources report 94.3 against this protocol's 80.81. The gap has a protocol explanation --- public evaluations run with reasoning enabled, large budgets, and heterogeneous answer extraction (public GPT-4o figures move from \({\sim}46\) to \({\sim}54\) with the extraction method alone), while this administration is deliberately reasoning-channel-off, T=0, harness-matched --- but the per-model public record is too poorly sourced to reconcile cell by cell: of the twelve models, only six have citable public values (\texttt{data/external\_benchmarks.csv} records the sourcing state). On those six, public vs self-administered agreement is \(r = 0.86\) (\(\rho = 0.81\), \(n = 6\)) --- real but visibly weaker than any correlation in D.1, which is the expected signature of two administrations under different protocols.
+Public GPQA Diamond figures for the frontier seats are substantially higher than this protocol's --- and are themselves inconsistent across sources: for claude-opus-4.5 the November 2025 system card reports 87.0 while a 2026 leaderboard snapshot lists 94.1 (thinking configuration unconfirmed); for gemini-3.1-pro public sources report 94.3 against this protocol's 80.81. The gap has a protocol explanation --- public evaluations run with reasoning enabled, large budgets, and heterogeneous answer extraction (public GPT-4o figures move from \({\sim}46\) to \({\sim}54\) with the extraction method alone), while this administration is deliberately reasoning-channel-off, T=0, harness-matched --- but the per-model public record is too poorly sourced to reconcile cell by cell: of the twelve models, only six have citable public values (\texttt{data/\allowbreak{}external\_\allowbreak{}benchmarks.csv} records the sourcing state). On those six, public vs self-administered agreement is \(r = 0.86\) (\(\rho = 0.81\), \(n = 6\)) --- real but visibly weaker than any correlation in D.1, which is the expected signature of two administrations under different protocols.
 
 \subsubsection{D.5 Artifacts}\label{d.5-artifacts}
 
 {\relax % do not increment counter
-\begin{longtable}[]{@{}ll@{}}
+\begin{longtable}[]{@{}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\RaggedRight\arraybackslash\hspace{0pt}}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
 \toprule\noalign{}
-Artifact & Path \\
+\begin{minipage}[b]{\linewidth}\raggedright
+Artifact
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Path
+\end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Raw per-question responses, all models, both stages' outcome + first-pass log & \texttt{reproduce/data/gpqa\_runs/} \\
-Published accuracy table & \texttt{reproduce/data/gpqa\_selfadministered.csv} \\
-Scoring audit (hard-fail checks) & \texttt{reproduce/scripts/gpqa\_audit.py} \\
-Official council-basis totals + CIs & \texttt{reproduce/data/total\_rating\_council.csv} \\
-The §4.7\_TMP figure & \texttt{reproduce/scripts/plot\_total\_validation.py} \\
-Every D.1 number (ladder, compounds, regimes, bases, per-run) & \texttt{reproduce/scripts/t\_gpqa\_ladder.py} \\
-Bootstrap-basis components; per-run council-basis totals; the declined \(E^{C}_{\text{svd}}\) & \texttt{reproduce/data/total\_rating\_twelve.csv}, \texttt{total\_rating\_runs.csv}, \texttt{ec\_svd\_twelve.csv} \\
-Public-value sourcing state & \texttt{reproduce/data/external\_benchmarks.csv} \\
+Raw per-question responses, all models, both stages' outcome + first-pass log & \texttt{reproduce/\allowbreak{}data/\allowbreak{}gpqa\_\allowbreak{}runs/\allowbreak{}} \\
+Published accuracy table & \texttt{reproduce/\allowbreak{}data/\allowbreak{}gpqa\_\allowbreak{}selfadministered.csv} \\
+Scoring audit (hard-fail checks) & \texttt{reproduce/\allowbreak{}scripts/\allowbreak{}gpqa\_\allowbreak{}audit.py} \\
+Official council-basis totals + CIs & \texttt{reproduce/\allowbreak{}data/\allowbreak{}total\_\allowbreak{}rating\_\allowbreak{}council.csv} \\
+The §4.7\_\allowbreak{}TMP figure & \texttt{reproduce/\allowbreak{}scripts/\allowbreak{}plot\_\allowbreak{}total\_\allowbreak{}validation.py} \\
+Every D.1 number (ladder, compounds, regimes, bases, per-run) & \texttt{reproduce/\allowbreak{}scripts/\allowbreak{}t\_\allowbreak{}gpqa\_\allowbreak{}ladder.py} \\
+Bootstrap-basis components; per-run council-basis totals; the declined \(E^{C}_{\text{svd}}\) & \texttt{reproduce/\allowbreak{}data/\allowbreak{}total\_\allowbreak{}rating\_\allowbreak{}twelve.csv}, \texttt{total\_\allowbreak{}rating\_\allowbreak{}runs.csv}, \texttt{ec\_\allowbreak{}svd\_\allowbreak{}twelve.csv} \\
+Public-value sourcing state & \texttt{reproduce/\allowbreak{}data/\allowbreak{}external\_\allowbreak{}benchmarks.csv} \\
 \end{longtable}
 }
 
-Every number in this appendix recomputes from the shipped data: \texttt{scripts/gpqa\_audit.py} (six hard-fail checks, including the first-pass log reconciliation) and \texttt{scripts/t\_gpqa\_ladder.py} (all of D.1, with headline assertions).
+Every number in this appendix recomputes from the shipped data: \texttt{scripts/\allowbreak{}gpqa\_\allowbreak{}audit.py} (six hard-fail checks, including the first-pass log reconciliation) and \texttt{scripts/\allowbreak{}t\_\allowbreak{}gpqa\_\allowbreak{}ladder.py} (all of D.1, with headline assertions).
 \end{document}
