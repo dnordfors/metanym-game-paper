@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Same-vendor robustness of the key-free factual axis (§5.8 -> a table).
+"""Same-vendor robustness of the key-free factual axis (§5.7 -> a table).
 
 The factual SVD assumes near-independent errors. If the truth axis were really Claude-bloc
 agreement, dropping the Anthropic judges would change who the panel calls factual. This script

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Leaderboard invariance across the anchor sweep, §5.8.
+"""Leaderboard invariance across the anchor sweep, §5.7.
 
 The anchor sweep {5, 6, 7, 8} is four complete evaluation passes that differ
 only in a non-semantic calibration value (the score the fixed reference

@@ -21,7 +21,7 @@ where $\mathcal{X}$ is the axis set and $U_x$ the units of axis $x$. Production 
 
 $$ G_s=\frac{1}{|\mathcal{C}\setminus\{s\}|}\sum_{t\in\mathcal{C},\,t\ne s} o_{t,s}. \tag{A3}$$
 
-Confidence intervals: 95% percentile bootstrap over the per-(submission, archetype) scoring units; a gap $G_s-G_{s'}$ is *resolvable* when the paired bootstrap (resampling the same units for both models) puts its 95% interval clear of $0$. This six-axis $G_s$ is §4.3's generation rating and the statistic the §5.8 anchor-sweep invariance check re-ranks; the official leaderboard's $G$ is the split form (A13), $G=\tfrac12(G^{F}+G^{C})$, not (A3).
+Confidence intervals: 95% percentile bootstrap over the per-(submission, archetype) scoring units; a gap $G_s-G_{s'}$ is *resolvable* when the paired bootstrap (resampling the same units for both models) puts its 95% interval clear of $0$. This six-axis $G_s$ is §4.3's generation rating and the statistic the §5.7 anchor-sweep invariance check re-ranks; the official leaderboard's $G$ is the split form (A13), $G=\tfrac12(G^{F}+G^{C})$, not (A3).
 
 ## A.2 Evaluation ratings
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Graded vs binarised factual SVD — the empirical basis for §4.2/§5.7's
+"""Graded vs binarised factual SVD — the empirical basis for §4.2/§5.6's
 "graded, not binarised" claim.
 
 The paper distinguishes its factual estimator from the binary label-free

@@ -59,7 +59,7 @@ echo; echo "##### §4.4 exhibits + §4.7 total T and official leaderboard #####"
                                                          #   and data/section_4_4_criterion_b.csv
 echo; echo "##### §4.7 — total T 95% joint bootstrap CI (A.5) #####"
 "$PY" scripts/bootstrap_total.py      # emits data/total_rating_bootstrap.csv
-echo; echo "##### §5.8 — leaderboard across the anchor sweep (N=4) #####"
+echo; echo "##### §5.7 — leaderboard across the anchor sweep (N=4) #####"
 "$PY" scripts/anchor_sweep_leaderboard.py
 echo; echo "##### §4.8 + Appendix D — GPQA exhibits and audit #####"
 "$PY" scripts/combined_factual_bootstrap.py              # emits data/combined_factual_bootstrap.csv (fig 1 x-bars)
@@ -75,7 +75,7 @@ echo; echo "##### §4.9 — robustness to regeneration (N=3) #####"
 echo; echo "##### §4.6 — sizing the ballast (why two) #####"
 "$PY" scripts/ballast_sizing.py
 "$PY" scripts/plot_ballast_heatmap.py                   # -> figures/ballast_heatmap.png (the 4.6 exhibit)
-echo; echo "##### §5.7 / §5.8 — consensus limits and the multi-council reading #####"
+echo; echo "##### §5.6 / §5.7 — consensus limits and the multi-council reading #####"
 "$PY" scripts/consensus_limits.py
 echo; echo "##### manuscript consistency checks #####"
 "$PY" scripts/check_manuscript.py

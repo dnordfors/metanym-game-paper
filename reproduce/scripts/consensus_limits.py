@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""§5.8 and §5.7 — the limits of a consensus-defined competence, and the multi-council
+"""§5.7 and §5.6 — the limits of a consensus-defined competence, and the multi-council
 direction out of them. Emits the two numbers those sections quote.
 
-§5.8  Because E^F is read off agreement, a judge that departs from the panel is scored
+§5.7  Because E^F is read off agreement, a judge that departs from the panel is scored
       down whether it is wrong or right. A synthetic evaluator is built that reproduces
       the panel's competence-weighted consensus exactly, then inverted on a fraction of
       items -- the signature of a judge catching what the panel misses. Its anchored E^F
       is reported against that fraction.
 
-§5.7  If instead councils are constituted independently, the same judge can be read
+§5.6  If instead councils are constituted independently, the same judge can be read
       against several consensuses. The spread of a judge's E^F across differently
       composed councils is reported; on this roster it is small, which is the expected
       result when no contestant exceeds the panel.
@@ -33,7 +33,7 @@ def main():
     allcols = list(range(R.shape[1]))
     M0 = np.where(np.isnan(R), 7.0, R)
 
-    # ---- §5.8  departure from consensus is indistinguishable from error -------------
+    # ---- §5.7  departure from consensus is indistinguishable from error -------------
     base, sep0 = ef(R, allcols, MODELS)
     Mc = M0 - M0.mean(axis=1, keepdims=True)
     U, _, _ = np.linalg.svd(Mc, full_matrices=False)
@@ -56,7 +56,7 @@ def main():
         return 7.0 * f[-1] / fa, float(S[0] / S[1])
 
     rng = np.random.default_rng(20260811)
-    print(f"§5.8  a synthetic judge that agrees with the panel's consensus, then departs")
+    print(f"§5.7  a synthetic judge that agrees with the panel's consensus, then departs")
     print(f"      on a fraction of items. Panel reference: best real judge "
           f"{max(base[m] for m in MODELS if m != ANCHOR):.2f}, anchor 7.00, "
           f"sigma1/sigma2 {sep0:.2f}\n")
@@ -75,7 +75,7 @@ def main():
         v, sep = ef_with_row(np.clip(row, 1, 10))
         print(f"{frac:>11.0%}{v:>10.2f}{sep:>16.2f}")
 
-    # ---- §5.7  the same judge read against several independent councils -------------
+    # ---- §5.6  the same judge read against several independent councils -------------
     pool = sorted([m for m in targets if m not in COUNCIL],
                   key=lambda t: float(np.nanmean(R[:, by[t]])))
     ballast = pool[:BALLAST_N]
@@ -90,7 +90,7 @@ def main():
         "cross-vendor":    [ANCHOR, "gemini-3.1-pro", "gpt-4.1-2025-04-14",
                             "claude-opus-4.0", "gpt-4.1-mini"],
     }
-    print(f"\n§5.7  a judge's anchored E^F read against {len(councils)} independently "
+    print(f"\n§5.6  a judge's anchored E^F read against {len(councils)} independently "
           f"composed councils\n      (ballast = {', '.join(ballast)})\n")
     hdr = f"{'judge':24}" + "".join(f"{n.split()[0][:11]:>13}" for n in councils) + f"{'spread':>9}"
     print(hdr)

@@ -27,9 +27,9 @@ the per-archetype non-factual axis ratings. Counts below are `json` / `md` files
 |---|---|---|---|
 | `data/probe_J_20260529T005230Z/` | un-anchored full-panel run (no calibration anchor) | §4.1 | 144 / 144 + `run_info.json` + `leaderboard_lso.json` |
 | `data/probe_K_20260529T014133Z/` | run 1, anchor 7 — the **published** leaderboard | §4.2–§4.9 | 134 / 132 |
-| `data/probe_K_anchor5_20260529T030442Z/` | anchor sweep, anchor 5 | §4.2, §5.8 | 135 / 132 |
-| `data/probe_K_anchor6_20260529T032518Z/` | anchor sweep, anchor 6 | §4.2, §5.8 | 133 / 132 |
-| `data/probe_K_anchor8_20260529T033755Z/` | anchor sweep, anchor 8 | §4.2, §5.8 | 135 / 132 |
+| `data/probe_K_anchor5_20260529T030442Z/` | anchor sweep, anchor 5 | §4.2, §5.7 | 135 / 132 |
+| `data/probe_K_anchor6_20260529T032518Z/` | anchor sweep, anchor 6 | §4.2, §5.7 | 133 / 132 |
+| `data/probe_K_anchor8_20260529T033755Z/` | anchor sweep, anchor 8 | §4.2, §5.7 | 135 / 132 |
 | `data/regenerations/probe_K_anchor7_20260619T015828Z/` | run 2 — independent regeneration | §4.9 | 133 / 132 |
 | `data/regenerations/probe_K_anchor7_20260619T040659Z/` | run 3 — independent regeneration | §4.9 | 133 / 132 |
 
@@ -62,7 +62,7 @@ These are **outputs**, committed so a reader can diff them against a fresh run:
 | `data/section_4_1_unanchored.csv` | `scripts/section_4_1_unanchored.py` (un-anchored LSO means and 95% CIs for the §4.1 leaderboard) |
 | `figures/average_validation.png` | `scripts/plot_average_validation.py` (paper Figure 1) |
 | *(stdout only)* | `scripts/ballast_sizing.py` — the §4.6 ballast-sizing table. Convenes all seven possible contests per candidate ballast and reports range, $\sigma_1/\sigma_2$, seat spread, fidelity to the §4.2 values, and the fraction of bootstrap resamples in which the §4.5 guards hold. Its printed reference row reproduces §4.2's $\sigma_1/\sigma_2$ (2.57 → 2.6) and is the check that the round's matrix is built the same way as the bootstrap's. |
-| *(stdout only)* | `scripts/consensus_limits.py` — the §5.8 departure-from-consensus curve and the §5.7 cross-council spread. Imports its matrix builder from `ballast_sizing.py`, so both obey the leave-self-out rule above. |
+| *(stdout only)* | `scripts/consensus_limits.py` — the §5.7 departure-from-consensus curve and the §5.7 cross-council spread. Imports its matrix builder from `ballast_sizing.py`, so both obey the leave-self-out rule above. |
 | *(stdout only)* | `scripts/check_manuscript.py` — manuscript consistency: section cross-references, anchor links, section numbering, referenced appendices, table captions. Run it before any arXiv upload or venue submission. |
 
 ## Ballast submissions

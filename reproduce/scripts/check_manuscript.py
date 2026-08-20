@@ -94,7 +94,7 @@ def check_caveat_count(text):
     guessing. Returns the claimed count and the paragraph; never auto-fails."""
     m = re.search(r"\b(One|Two|Three|Four|Five|Six)\s+caveats?\s+bound", text)
     if not m:
-        return None, ["no 'N caveats bound' sentence found — check §5.8 still enumerates"]
+        return None, ["no 'N caveats bound' sentence found — check §5.7 still enumerates"]
     claimed = WORDS[m.group(1).lower()]
     end = text.find("\n\n", m.start())
     para = text[m.start():end if end > 0 else len(text)]
@@ -215,7 +215,7 @@ def main():
                 print(f"          line {ln}: {mid} (risk={risk})")
 
     claimed, para = check_caveat_count(text)
-    print(f"\n  MANUAL  4. §5.8 claims {claimed} caveats — read the paragraph and count:\n")
+    print(f"\n  MANUAL  4. §5.7 claims {claimed} caveats — read the paragraph and count:\n")
     for chunk in para:
         for line in chunk.split(". "):
             if line.strip():

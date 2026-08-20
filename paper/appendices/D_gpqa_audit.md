@@ -139,7 +139,7 @@ $E^{F}$'s content: detecting errors in others' work stays hard after producing c
 has become easy, so $E^{F}$ keeps its spread (7.27 down to 0.00 across the eight) exactly
 where $G^{F}$ compresses into 6.15–7.00. $E^{C}$, a pure disposition, saturates among the
 competent and collapses to 0.37. Among frontier models, the best key-free predictor of a
-keyed knowledge benchmark is how well a model judges *other models'* truth — §5.4's
+keyed knowledge benchmark is how well a model judges *other models'* truth — §5.1's
 dissociation thesis in empirical form. $T$ leads or ties in both regimes because the
 equal-weight aggregate always contains whichever quarter is currently doing the
 discriminating; any single quarter is the best proxy only in the population where its
