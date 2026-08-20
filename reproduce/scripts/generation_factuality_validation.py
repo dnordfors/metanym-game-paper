@@ -160,7 +160,7 @@ print(f"  G^F (equal)  vs  G^F' (E^F-weighted) : {pearson([GFeq[g] for g in gens
 print(f"  G^F' (E^F-weighted) vs G^F_svd       : {pearson([GFwt[g] for g in gens],[GFsvd[g] for g in gens]):.3f}")
 print(f"  G^F (equal)  vs  G^F_svd             : {pearson([GFeq[g] for g in gens],[GFsvd[g] for g in gens]):.3f}")
 
-# --- emit the §4.3 Criterion-A table (E^F, G^F + CIs) as CSV for downstream figures (Fig 1) ---
+# --- emit the §4.2 Criterion-A table (E^F, G^F + CIs) as CSV for downstream figures (Fig 1) ---
 import os as _os
 _dd = _os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "data")
 _fa = EF[ANCHOR_MODEL]                                    # anchor loading -> anchored E^F = 7f/f_a (1-10)

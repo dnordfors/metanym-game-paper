@@ -1,0 +1,15 @@
+# twelve-evaluator (bootstrap-basis) components, for Appendix E.1's basis comparison
+# produced by papers/v3/experiments/29_council_only_leaderboard/council_basis_tables.py
+model,T,GF,GC,EF,EC
+claude-opus-4.1,6.0509,6.9730,7.1591,3.5495,6.5220
+claude-opus-4.5,7.0000,7.0000,7.0000,7.0000,7.0000
+claude-opus-4.0,6.2106,6.9771,6.9778,4.4653,6.4223
+claude-sonnet-4,5.3050,6.9840,6.3106,1.6247,6.3008
+gemini-3.1-pro,6.6895,6.5787,5.7465,7.3586,7.0741
+gemini-2.5-flash,5.7589,6.5712,5.7200,4.6776,6.0669
+gpt-4.1-2025-04-14,4.4387,6.4980,5.0533,0.2022,6.0012
+gpt-4.1-mini,4.7361,6.1773,5.0558,1.2090,6.5023
+gpt-4.1-nano,3.2195,3.6616,3.6341,0.4919,5.0902
+gpt-4o,2.9294,5.1138,3.4441,0.3397,2.8200
+gpt-4o-2024-08-06,3.4849,5.2175,3.4261,0.6222,4.6736
+gpt-4o-mini,2.2435,3.1989,3.4270,0.0000,2.3479

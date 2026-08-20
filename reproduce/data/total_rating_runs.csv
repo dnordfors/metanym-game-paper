@@ -1,0 +1,15 @@
+# council-basis total T per regeneration run (run1 = bootstrap; runs 2-3 = data/regenerations/)
+# produced by papers/v3/experiments/29_council_only_leaderboard/council_basis_tables.py
+model,T_run1,T_run2,T_run3
+claude-opus-4.1,5.9203,6.7652,6.1862
+claude-opus-4.5,7.0000,7.0000,7.0000
+claude-opus-4.0,6.0389,5.5008,6.2649
+claude-sonnet-4,5.2202,5.8179,6.1569
+gemini-3.1-pro,6.6523,7.3526,8.0964
+gemini-2.5-flash,6.0329,5.8449,4.7800
+gpt-4.1-2025-04-14,4.4448,4.6247,5.7214
+gpt-4.1-mini,4.8822,5.9281,4.9315
+gpt-4.1-nano,3.4223,3.5455,2.7155
+gpt-4o,2.8497,2.7561,2.9320
+gpt-4o-2024-08-06,3.3416,3.0763,3.6259
+gpt-4o-mini,2.0951,2.2522,1.5960

@@ -1,13 +1,14 @@
 # PAPER figure — the combined factual rating  1/2 (E^F + G^F)  (X, anchored 1-10 scale,
-# i.e. the factual half of the official total T, §4.5) vs self-administered GPQA Diamond
+# i.e. the factual half of the official total T, §4.7) vs self-administered GPQA Diamond
 # accuracy (Y). Sibling of plot_external_validation.py / plot_generation_validation.py.
 # Averaging the two key-free factual reads (judging E^F + making G^F) cancels their
 # independent residuals and tracks the external capability better than either alone.
 #
-# Anchored E^F, G^F and their 95% CIs are read straight from the §4.3 table in the
+# Anchored E^F, G^F and their 95% CIs are read straight from the §4.2 table in the
 # manuscript (the canonical published numbers); GPQA + binomial CI from the run CSV.
-# The combined x-interval is the average of the two component 95% intervals (conservative:
-# treats E^F and G^F as co-moving; they are positively but not perfectly correlated).
+# The combined x-interval is the 95% joint (submission, archetype) bootstrap of
+# 1/2(E^F+G^F) (combined_factual_bootstrap.py, A.5): one resample per replicate drives both
+# components, so their covariance is captured rather than assumed.
 #
 # Usage:  python plot_average_validation.py  ->  figures/average_validation.png
 """Scatter: 1/2(E^F+G^F) vs GPQA Diamond accuracy (paper figure, small)."""
@@ -78,7 +79,7 @@ def pear_ci(x, y, n=10000, seed=20260613):
 
 
 def read_ef_gf():
-    """Read the reproduced §4.3 Criterion-A table (E^F, G^F + CIs) from data/."""
+    """Read the reproduced §4.2 Criterion-A table (E^F, G^F + CIs) from data/."""
     rows = {}
     for r in rd(DATA / "criterion_a_ef_gf.csv"):
         rows[r["model"]] = dict(ef=float(r["ef"]), ef_lo=float(r["ef_lo"]), ef_hi=float(r["ef_hi"]),
@@ -86,7 +87,14 @@ def read_ef_gf():
     return rows
 
 
+def read_joint():
+    """95% joint bootstrap intervals of 1/2(E^F+G^F) (combined_factual_bootstrap.py, A.5)."""
+    return {r["model"]: (float(r["lo95"]), float(r["hi95"]))
+            for r in rd(DATA / "combined_factual_bootstrap.csv")}
+
+
 tab = read_ef_gf()
+joint = read_joint()
 gpqa = {r["model"]: r for r in rd(DATA / "gpqa_selfadministered.csv")}
 lb = {r["model"]: r for r in rd(DATA / "total_rating_leaderboard.csv")}
 council = {m for m in lb if lb[m]["council"].strip().lower() == "yes"}
@@ -105,8 +113,8 @@ ms = sorted([m for m in tab if m in gpqa], key=lambda m: -gpqa_acc_ci(m)[0])
 xs = np.array([(tab[m]["ef"] + tab[m]["gf"]) / 2 for m in ms])
 ys = np.array([gpqa_acc_ci(m)[0] for m in ms])
 
-# Anchor (claude-opus-4.5): combined rating = 7 by calibration — its E^F = 7 is the real
-# top SVD loading, G^F = 7 is the anchor reference. GPQA is measured and independent of the
+# Anchor (claude-opus-4.5): combined rating = 7 by calibration — its E^F = 7 anchors its
+# own measured loading f_a (the scale reference), G^F = 7 is the anchor reference. GPQA is measured and independent of the
 # anchoring, so it is a legitimate point against GPQA and is included in the fit and stats.
 ANCHOR = "claude-opus-4.5"
 ax_x = 7.0
@@ -120,8 +128,7 @@ ax.plot(xl, a + b * xl, color="0.55", lw=1.4, zorder=1)
 
 for i, m in enumerate(ms):
     x, y = xs[i], ys[i]
-    xlo = (tab[m]["ef_lo"] + tab[m]["gf_lo"]) / 2
-    xhi = (tab[m]["ef_hi"] + tab[m]["gf_hi"]) / 2
+    xlo, xhi = joint[m]
     xerr = [[max(0.0, x - xlo)], [max(0.0, xhi - x)]]
     yerr = gpqa_acc_ci(m)[1]
     ax.errorbar([x], [y], xerr=xerr, yerr=yerr, fmt="none",

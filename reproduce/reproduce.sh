@@ -37,32 +37,46 @@ export RUNS_GEN="data/probe_K_20260529T014133Z"     # run 1 (bootstrap) -> publi
 export RUNS_SWEEP="data"                             # parent of probe_K_anchor{5,6,8}
 export RUNS="data"                                   # anchor sweep parent (criterion B / anchor sweep)
 export RUNS_UNANCHORED="data/probe_J_20260529T005230Z"  # un-anchored full-panel run (§4.1)
-REGEN2="data/regenerations/probe_K_anchor7_20260619T015828Z"   # run 2 (§4.8)
-REGEN3="data/regenerations/probe_K_anchor7_20260619T040659Z"   # run 3 (§4.8)
+REGEN2="data/regenerations/probe_K_anchor7_20260619T015828Z"   # run 2 (§4.6)
+REGEN3="data/regenerations/probe_K_anchor7_20260619T040659Z"   # run 3 (§4.6)
 
 echo "##### §4.1 — un-anchored leaderboard and the one break #####"
 "$PY" scripts/section_4_1_unanchored.py              # emits data/section_4_1_unanchored.csv
-echo; echo "##### §4.3 Criterion A — E^F + G^F (Table 6) #####"
+echo; echo "##### §4.2 factual competence — E^F + G^F #####"
 "$PY" scripts/generation_factuality_validation.py        # emits data/criterion_a_ef_gf.csv
-echo; echo "##### §4.3 — generator G^F_svd (spectral) #####"
+echo; echo "##### §4.2 — generator G^F_svd (spectral) #####"
 "$PY" scripts/generator_factual_competence.py
-echo; echo "##### §4.4 Criterion B — per-axis ρ + council ρ̄ 95% CI (Tables 7, 9) #####"
+echo; echo "##### §4.4 rating consistency — per-axis ρ + council ρ̄ 95% CI #####"
 "$PY" scripts/criterion_b_stability.py   # cross-checks build_paper1_tables.py
-echo; echo "##### §4.4 — alignment cos(G,E) 95% CI (Table 8 footer) #####"
+echo; echo "##### §4.4 — alignment cos(G,E) 95% CI #####"
 "$PY" scripts/alignment_cosine.py
-echo; echo "##### §4.3 — same-vendor robustness #####"
+echo; echo "##### §4.2 — same-vendor robustness #####"
 "$PY" scripts/vendor_robustness.py
-echo; echo "##### §4.3/§5.6 — graded-vs-binary SVD #####"
+echo; echo "##### §4.2/§5.7 — graded-vs-binary SVD #####"
 RUNS="$RUNS_GEN" "$PY" scripts/graded_vs_binary_svd.py   # RUNS = the anchor-7 run dir here
-echo; echo "##### §4.4 exhibits + §4.6 total T and official leaderboard (Tables 7-9, 11-12) #####"
+echo; echo "##### §4.4 exhibits + §4.7 total T and official leaderboard #####"
 "$PY" scripts/build_paper1_tables.py                     # emits data/total_rating_leaderboard.csv
                                                          #   and data/section_4_4_criterion_b.csv
-echo; echo "##### §4.6 — total T 95% joint bootstrap CI (A.5) #####"
+echo; echo "##### §4.7 — total T 95% joint bootstrap CI (A.5) #####"
 "$PY" scripts/bootstrap_total.py      # emits data/total_rating_bootstrap.csv
-echo; echo "##### §5.7 — anchor-sweep robustness (N=4) #####"
+echo; echo "##### §5.8 — leaderboard across the anchor sweep (N=4) #####"
 "$PY" scripts/anchor_sweep_leaderboard.py
-echo; echo "##### §4.7 Fig 1 — 1/2(E^F+G^F) vs GPQA (r=0.92) #####"
+echo; echo "##### §4.8 + Appendix D — GPQA exhibits and audit #####"
+"$PY" scripts/combined_factual_bootstrap.py              # emits data/combined_factual_bootstrap.csv (fig 1 x-bars)
+"$PY" scripts/gpqa_audit.py                              # Appendix D: 6 hard-fail checks on the raw GPQA artifacts
+"$PY" scripts/t_gpqa_ladder.py                           # Appendix D.1: ladder/compounds/regimes/bases/per-run
+"$PY" scripts/slope_full_bootstrap.py                    # Appendix D.1: slope/r under propagated measurement error
+"$PY" scripts/plot_total_validation.py                   # -> figures/total_validation.png (the 4.9 figure, T vs GPQA)
+"$PY" scripts/plot_anchoring_resolution.py               # -> figures/anchoring_resolution.png (the 4.2 figure + both F values)
+"$PY" scripts/plot_council_evaluation.py                # -> figures/council_evaluation_pc1.png (the 3.2 exhibit, verbatim from Appendix C)
 "$PY" scripts/plot_average_validation.py                 # -> figures/average_validation.png
-echo; echo "##### §4.8 — robustness to regeneration (N=3) #####"
+echo; echo "##### §4.9 — robustness to regeneration (N=3) #####"
 "$PY" scripts/compare_runs.py "$RUNS_GEN" "$REGEN2" "$REGEN3" --sweep "$RUNS_SWEEP"
+echo; echo "##### §4.6 — sizing the ballast (why two) #####"
+"$PY" scripts/ballast_sizing.py
+"$PY" scripts/plot_ballast_heatmap.py                   # -> figures/ballast_heatmap.png (the 4.6 exhibit)
+echo; echo "##### §5.7 / §5.8 — consensus limits and the multi-council reading #####"
+"$PY" scripts/consensus_limits.py
+echo; echo "##### manuscript consistency checks #####"
+"$PY" scripts/check_manuscript.py
 echo; echo "##### reproduce.sh complete #####"

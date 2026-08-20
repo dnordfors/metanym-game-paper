@@ -1,0 +1,129 @@
+{
+  "benchmark": "GPQA Diamond",
+  "n_questions": 198,
+  "protocol": "Temperature=0, reasoning OFF, no tools (council-matched)",
+  "gateway": "BOLD",
+  "run_dir": "/Users/davidnordfors/python/BOLD/archetypal-contexts/reproduce_paper1/scripts/runs/gpqa_20260613T173827Z",
+  "models": [
+    {
+      "paper_id": "claude-opus-4.0",
+      "bold_model": "claude-opus-4.0",
+      "provider": "Anthropic",
+      "n": 198,
+      "n_correct": 141,
+      "n_void": 2,
+      "accuracy": 71.21,
+      "accuracy_excl_void": 71.94
+    },
+    {
+      "paper_id": "claude-opus-4.1",
+      "bold_model": "claude-opus-4.1",
+      "provider": "Anthropic",
+      "n": 198,
+      "n_correct": 152,
+      "n_void": 2,
+      "accuracy": 76.77,
+      "accuracy_excl_void": 77.55
+    },
+    {
+      "paper_id": "claude-opus-4.5",
+      "bold_model": "claude-opus-4.5",
+      "provider": "Anthropic",
+      "n": 198,
+      "n_correct": 156,
+      "n_void": 0,
+      "accuracy": 78.79,
+      "accuracy_excl_void": 78.79
+    },
+    {
+      "paper_id": "claude-sonnet-4",
+      "bold_model": "claude-sonnet-4",
+      "provider": "Anthropic",
+      "n": 198,
+      "n_correct": 143,
+      "n_void": 0,
+      "accuracy": 72.22,
+      "accuracy_excl_void": 72.22
+    },
+    {
+      "paper_id": "gemini-2.5-flash",
+      "bold_model": "gemini-2.5-flash",
+      "provider": "GoogleBard",
+      "n": 198,
+      "n_correct": 143,
+      "n_void": 13,
+      "accuracy": 72.22,
+      "accuracy_excl_void": 77.3
+    },
+    {
+      "paper_id": "gemini-3.1-pro",
+      "bold_model": "gemini-3.1-pro",
+      "provider": "GoogleBard",
+      "n": 198,
+      "n_correct": 160,
+      "n_void": 13,
+      "accuracy": 80.81,
+      "accuracy_excl_void": 86.49
+    },
+    {
+      "paper_id": "gpt-4.1-2025-04-14",
+      "bold_model": "gpt-41-2025-04-14",
+      "provider": "AzureOpenAI",
+      "n": 198,
+      "n_correct": 122,
+      "n_void": 2,
+      "accuracy": 61.62,
+      "accuracy_excl_void": 62.24
+    },
+    {
+      "paper_id": "gpt-4.1-mini",
+      "bold_model": "gpt-41-mini",
+      "provider": "AzureOpenAI",
+      "n": 198,
+      "n_correct": 125,
+      "n_void": 1,
+      "accuracy": 63.13,
+      "accuracy_excl_void": 63.45
+    },
+    {
+      "paper_id": "gpt-4.1-nano",
+      "bold_model": "gpt-41-nano",
+      "provider": "AzureOpenAI",
+      "n": 198,
+      "n_correct": 109,
+      "n_void": 0,
+      "accuracy": 55.05,
+      "accuracy_excl_void": 55.05
+    },
+    {
+      "paper_id": "gpt-4o",
+      "bold_model": "gpt-4o",
+      "provider": "AzureOpenAI",
+      "n": 198,
+      "n_correct": 96,
+      "n_void": 2,
+      "accuracy": 48.48,
+      "accuracy_excl_void": 48.98
+    },
+    {
+      "paper_id": "gpt-4o-2024-08-06",
+      "bold_model": "gpt-4o-2024-08-06",
+      "provider": "AzureOpenAI",
+      "n": 198,
+      "n_correct": 92,
+      "n_void": 0,
+      "accuracy": 46.46,
+      "accuracy_excl_void": 46.46
+    },
+    {
+      "paper_id": "gpt-4o-mini",
+      "bold_model": "gpt-4o-mini",
+      "provider": "AzureOpenAI",
+      "n": 198,
+      "n_correct": 87,
+      "n_void": 0,
+      "accuracy": 43.94,
+      "accuracy_excl_void": 43.94
+    }
+  ]
+}

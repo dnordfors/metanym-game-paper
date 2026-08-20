@@ -207,8 +207,8 @@ If you would rather use an existing interpreter, any Python with `numpy`, `scipy
 `matplotlib` will do — point the script at it with `PYTHON=/path/to/python bash reproduce.sh`.
 
 **`reproduce.sh` is the map.** Every step says which table or chart it produces, so to answer
-"where did this number come from?" you read the matching step. `CURRENT_SCRIPTS.md` lists the same
-thing in prose; `DATA_MANIFEST.md` records where every input file came from.
+"where did this number come from?" you read the matching step; each script's header states the
+result it produces. `DATA_MANIFEST.md` records where every input file came from.
 
 ### What's in `reproduce/`
 

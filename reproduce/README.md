@@ -12,7 +12,7 @@ conda env create -f environment.yml && conda activate metanym-game
 bash reproduce.sh
 ```
 
-Deterministic, no API calls, well under a minute. See the root [`README.md`](../README.md) for
+Deterministic, no API calls, about a minute. See the root [`README.md`](../README.md) for
 options, and use `PYTHON=/path/to/python bash reproduce.sh` to pick a different interpreter.
 
 ## Where things are documented
@@ -20,8 +20,6 @@ options, and use `PYTHON=/path/to/python bash reproduce.sh` to pick a different 
 - **[`reproduce.sh`](reproduce.sh)** — the map. Every step is labelled with the paper exhibit it
   produces, so it answers "where did this number come from?" and cannot drift from what actually
   runs, because running it is the verification.
-- **[`CURRENT_SCRIPTS.md`](CURRENT_SCRIPTS.md)** — a readable index of the same twelve steps, with
-  the equation each one implements.
 - **[`DATA_MANIFEST.md`](DATA_MANIFEST.md)** — provenance and contents of every input.
 
 ## The experiment being re-analysed
@@ -48,7 +46,7 @@ One line each; full definitions in Appendix A.
 
 - **G** generation rating, **I** instantiation rating — council leave-self-out means on the anchored scale.
 - **f** factual competence — leading left singular vector of the evaluators' row-centred graded rating matrix, no answer key (cf. Dawid & Skene 1979; Parisi et al. 2014).
-- **ρ̄** criterion competence (anchor-shift consistency) — mean pairwise Pearson of the collapsed non-factual score across anchors 5, 6, 7, 8, computed leave-self-out over archetypes 1–5: 50 (submission, archetype) units for a graded evaluator, 55 for the anchor, whose own portfolio is the reference rather than a graded submission.
+- **ρ̄** criterion competence (anchor-sweep consistency) — mean pairwise Pearson of the collapsed non-factual score across anchors 5, 6, 7, 8, computed leave-self-out over archetypes 1–5: 50 (submission, archetype) units for a graded evaluator, 55 for the anchor, whose own portfolio is the reference rather than a graded submission.
 - **council** — the evaluators that are both factually competent and anchor-stable; they issue the official ratings.
 - **E^F, E^C, E, T** — the evaluator indices (factual competence, criterion competence), their mean, and the total, all on the scale where the anchor model scores 7.
 

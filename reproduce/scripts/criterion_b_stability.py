@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Criterion B — criterion reliability (anchor-shift consistency), §4.4, Appendix A.2.b.
+"""Criterion B — criterion reliability (anchor-sweep consistency), §4.4, Appendix A.2.b.
 
 Criterion reliability is the evaluator's capacity to hold a stable standard for each
-non-factual criterion; it is measured by anchor-shift consistency. This script reproduces
-the §4.4 per-axis anchor-shift-consistency table, the criterion-reliability column of the
+non-factual criterion; it is measured by anchor-sweep consistency. This script reproduces
+the §4.4 per-axis anchor-sweep-consistency table, the criterion-reliability column of the
 §4.4 council table with its bootstrap interval, and Appendix A.2.b (eqs A10–A11).
 
 Paper quote (§4.4):
@@ -16,7 +16,7 @@ Paper quote (§4.4):
 
 Paper quote (§4.4 gate):
     "a reliable evaluator must show ... criterion reliability on the non-factual
-    axes — collapsed anchor-shift consistency rho_bar >= 0.78 (Pearson)."
+    axes — collapsed anchor-sweep consistency rho_bar >= 0.78 (Pearson)."
 
 **Leave-self-out.** An evaluator's ratings of its own portfolio are collected in the runs but
 are excluded here, and the two submissions that returned a sixth archetype contribute their
@@ -170,7 +170,7 @@ def main():
         A = np.array([[DATA[ev][key][a] for key in keys] for a in range(4)])
         return mean_pairwise(A)
 
-    print("\n=== Criterion B per-axis anchor-shift consistency (A10, §4.4) ===")
+    print("\n=== Criterion B per-axis anchor-sweep consistency (A10, §4.4) ===")
     print(f"{'evaluator':20}" + "".join(f"{h:>9}" for h in ("fact","beauty","intel","distinct","length","struct")))
     for ev in sorted(MODELS, key=lambda m: -st.mean([v for v in
                      (axis_stab(m, ax) for ax in NONFACT_ARCH) if v == v] or [0])):

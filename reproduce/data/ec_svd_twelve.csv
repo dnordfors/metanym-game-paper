@@ -1,0 +1,15 @@
+# per-axis-SVD 'authority' E^C (twelve-evaluator basis, anchored opus-4.5=7) — the declined 4.6 variant
+# produced by papers/v3/experiments/27_svd_vs_consistency_per_axis/ec_from_svd.py
+model,EC_svd
+claude-opus-4.1,7.9238
+claude-opus-4.5,7.0000
+claude-opus-4.0,8.8548
+claude-sonnet-4,4.0116
+gemini-3.1-pro,11.7541
+gemini-2.5-flash,6.0498
+gpt-4.1-2025-04-14,4.1023
+gpt-4.1-mini,5.0000
+gpt-4.1-nano,0.3615
+gpt-4o,3.3700
+gpt-4o-2024-08-06,4.3474
+gpt-4o-mini,0.5617

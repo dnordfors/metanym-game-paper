@@ -6,14 +6,14 @@ ONE authoritative script for the numbers in the submitted manuscript
 run + the anchor sweep {5,6,7,8} and prints, to the paper's displayed precision:
 
   * Criterion A  : evaluator factual competence E^F (anchored), generator factuality G^F
-  * Criterion B  : per-axis criterion reliability rho_{s,axis}  (the anchor-shift consistency)
+  * Criterion B  : per-axis criterion reliability rho_{s,axis}  (the anchor-sweep consistency)
   * Per-criterion: generator quality G (reliability-weighted) and evaluator reliability E,
                    per non-factual axis, plus their anchored cosine cos(G,E)
   * Council      : the criterion-reliability column of the council table
   * Breakdown    : the four anchored components G^F, G^C, E^F, E^C  (per model)
   * Leaderboard  : total T = 1/4(G^F+G^C+E^F+E^C), with E = 1/2(E^F+E^C), G = 1/2(G^F+G^C)
 
-The three exhibits of paper section 4.4 -- the per-axis anchor-shift consistency table, the
+The three exhibits of paper section 4.6 -- the per-axis anchor-sweep consistency table, the
 per-criterion G-vs-E table with its cos(G,E) footer, and the council table's criterion-reliability
 column -- are all emitted here, from the one RHO/rho_bar computation, so they cannot drift apart.
 The point estimates are also written to data/section_4_4_criterion_b.csv (see DATA_MANIFEST.md).
@@ -28,7 +28,7 @@ Key estimator choices (these reproduce the *submitted* numbers; see paper Append
            self/missing = 7), clipped >=0, anchored as 7 f_s / f_anchor.            (A5-A7,A12)
   * G^F  : full-panel, per-PC, leave-self-out mean of the 1-10 factual scores of a generator,
            weighted by each evaluator's competence E^F  (the "G^F-prime" of A8-A9).  (A8-A9)
-  * E^C  : collapsed 4-axis anchor-shift consistency rho_bar, anchored 7 rho_bar/rho_bar_a. (A10-A12)
+  * E^C  : collapsed 4-axis anchor-sweep consistency rho_bar, anchored 7 rho_bar/rho_bar_a. (A10-A12)
   * G^C  : council leave-self-out mean of the five non-factual generation axes, with each
            council member's vote on each axis WEIGHTED BY ITS PER-AXIS RELIABILITY rho_{t,axis}
            (the submitted reliability weighting), averaged over the five axes.        (A1, sec 4.4)
@@ -148,7 +148,7 @@ def components(GA, targets, atoms, diagnostics=False):
     unit per portfolio, so its rho is taken over the distinct submissions the atoms carry.
     Returns the dict of per-model components plus the per-axis tables the paper's §4.4 rows need.
 
-    `diagnostics=True` additionally computes the factual anchor-shift consistency RHOF -- the
+    `diagnostics=True` additionally computes the factual anchor-sweep consistency RHOF -- the
     `factual` column of the §4.4 per-axis table. It is a diagnostic only (factual is gated by f,
     not by consistency) and it is the most expensive rho in the file, one unit per parallel
     context rather than per archetype, so the bootstrap callers leave it off.
@@ -228,7 +228,7 @@ def components(GA, targets, atoms, diagnostics=False):
                     A[k, j] = axis_val(GA[anc].get((ev, t)), (None if ax == "struct" else u[1]), ax)
             RHO[ax][ev] = meanpw(A)
 
-    # ---- factual anchor-shift consistency (diagnostic column of the §4.4 per-axis table) --------
+    # ---- factual anchor-sweep consistency (diagnostic column of the §4.4 per-axis table) --------
     RHOF = {}
     if diagnostics:
         for ev in MODELS:
@@ -384,7 +384,7 @@ def main():
     order_ii = [m for m in GE_ORDER if m in MODELS]
 
     # ---- emit leaderboard (model, total, council) as CSV for downstream figures (Fig 1) ----
-    # Only the published anchor-7 run owns this file (probe_K_2*; the §4.8 regenerations are
+    # Only the published anchor-7 run owns this file (probe_K_2*; the §4.9 regenerations are
     # probe_K_anchor7_*, the same naming anchor_sweep_leaderboard.py relies on). compare_runs.py
     # drives this script once per regeneration and reads our stdout, so those passes must leave
     # the published leaderboard on disk untouched. The §4.4 CSV carries the same guard.
@@ -397,17 +397,17 @@ def main():
         write_section_4_4_csv(dd / "section_4_4_criterion_b.csv", comp, cos, order_i, order_ii)
 
     # ---- print the submitted tables -----------------------------------------------------------
-    print("=== Final leaderboard (sec 4.6): T = 1/4(G^F+G^C+E^F+E^C);  E = 1/2(E^F+E^C),  G = 1/2(G^F+G^C) ===")
+    print("=== Final leaderboard (sec 4.7): T = 1/4(G^F+G^C+E^F+E^C);  E = 1/2(E^F+E^C),  G = 1/2(G^F+G^C) ===")
     print(f"{'#':>2} {'model':22}{'council':>8}{'T':>7}{'E':>7}{'G':>7}")
     for i, d in enumerate(rows, 1):
         print(f"{i:>2} {d['m']:22}{('yes' if d['council'] else '--'):>8}{r2(d['T']):>7}{r2(d['E']):>7}{r2(d['G']):>7}")
 
-    print("\n=== Competence breakdown (sec 4.6): the four anchored components ===")
+    print("\n=== Competence breakdown (sec 4.7): the four anchored components ===")
     print(f"{'model':22}{'G^F':>7}{'G^C':>7}{'E^F':>7}{'E^C':>7}")
     for d in rows:
         print(f"{d['m']:22}{r2(d['GF']):>7}{r2(d['GC']):>7}{r2(d['EF']):>7}{r2(d['EC']):>7}")
 
-    print("\n=== sec 4.4 exhibit (i): anchor-shift consistency rho, per evaluator and axis (A10) ===")
+    print("\n=== sec 4.4 exhibit (i): anchor-sweep consistency rho, per evaluator and axis (A10) ===")
     print(f"{'evaluator':22}{'factual':>9}" + "".join(f"{ax:>9}" for ax in AXES5))
     for m in order_i:
         vals = [RHOF.get(m)] + [RHO[ax].get(m) for ax in AXES5]

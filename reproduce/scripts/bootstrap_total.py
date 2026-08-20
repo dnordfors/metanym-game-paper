@@ -10,8 +10,8 @@ Appendix A.5 prescribes the method, verbatim:
      resampled with replacement once per replicate; each atom carries the parallel contexts inside
      it, so the resampled atoms *induce* both the factual rating columns of f (A5-A7) and the
      55-unit vectors of rho_bar (A11), while G averages over the resampled atoms of each
-     submission. Every component -- including the anchor's f_a, rho_bar_a and the resulting
-     council -- is recomputed on that one resample, T is formed, and the percentiles of the T
+     submission. Every component -- including the anchor's f_a and rho_bar_a
+     (the council is held at its selected membership, as A.5 states) -- is recomputed on that one resample, T is formed, and the percentiles of the T
      replicates give the interval; the joint resample captures the inter-component covariance
      automatically."
 
@@ -83,7 +83,7 @@ def main():
         print("no complete set of four components:", ", ".join(missing))
 
     # Only the published anchor-7 run owns this file, exactly as for the leaderboard CSV: any
-    # other run dir (a §4.8 regeneration, say) may be analysed without overwriting the release.
+    # other run dir (a §4.9 regeneration, say) may be analysed without overwriting the release.
     if Path(D[7]).name.startswith("probe_K_2"):
         out = Path(__file__).resolve().parent.parent / "data" / "total_rating_bootstrap.csv"
         with open(out, "w") as fh:

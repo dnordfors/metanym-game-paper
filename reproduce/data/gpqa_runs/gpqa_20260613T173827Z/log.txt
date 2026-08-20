@@ -1,0 +1,31 @@
+GPQA Diamond — 198 questions x 12 models = 2376 calls
+Protocol: T=0, reasoning OFF, no tools (council-matched) | gateway: BOLD
+Run dir: /Users/davidnordfors/python/BOLD/archetypal-contexts/reproduce_paper1/scripts/runs/gpqa_20260613T173827Z
+
+--- claude-opus-4.5 (claude-opus-4.5 / Anthropic) ---
+claude-opus-4.5        156/198  acc= 78.8%  (scored  78.8%, void 0)
+--- claude-opus-4.1 (claude-opus-4.1 / Anthropic) ---
+claude-opus-4.1        152/198  acc= 76.8%  (scored  77.6%, void 2)
+--- claude-opus-4.0 (claude-opus-4.0 / Anthropic) ---
+claude-opus-4.0        141/198  acc= 71.2%  (scored  71.9%, void 2)
+--- claude-sonnet-4 (claude-sonnet-4 / Anthropic) ---
+claude-sonnet-4        140/198  acc= 70.7%  (scored  72.2%, void 4)
+--- gemini-3.1-pro (gemini-3.1-pro / GoogleBard) ---
+gemini-3.1-pro          82/198  acc= 41.4%  (scored  86.3%, void 103)
+--- gemini-2.5-flash (gemini-2.5-flash / GoogleBard) ---
+gemini-2.5-flash       121/198  acc= 61.1%  (scored  81.8%, void 50)
+--- gpt-4.1-2025-04-14 (gpt-41-2025-04-14 / AzureOpenAI) ---
+gpt-4.1-2025-04-14     121/198  acc= 61.1%  (scored  63.0%, void 6)
+--- gpt-4.1-mini (gpt-41-mini / AzureOpenAI) ---
+gpt-4.1-mini           123/198  acc= 62.1%  (scored  64.4%, void 7)
+--- gpt-4.1-nano (gpt-41-nano / AzureOpenAI) ---
+gpt-4.1-nano           108/198  acc= 54.5%  (scored  55.1%, void 2)
+--- gpt-4o (gpt-4o / AzureOpenAI) ---
+gpt-4o                  96/198  acc= 48.5%  (scored  49.0%, void 2)
+--- gpt-4o-2024-08-06 (gpt-4o-2024-08-06 / AzureOpenAI) ---
+gpt-4o-2024-08-06       92/198  acc= 46.5%  (scored  46.7%, void 1)
+--- gpt-4o-mini (gpt-4o-mini / AzureOpenAI) ---
+gpt-4o-mini             87/198  acc= 43.9%  (scored  43.9%, void 0)
+
+Wrote /Users/davidnordfors/python/BOLD/archetypal-contexts/reproduce_paper1/scripts/runs/gpqa_20260613T173827Z/gpqa_results.json
+Wrote /Users/davidnordfors/python/BOLD/archetypal-contexts/reproduce_paper1/data/gpqa_selfadministered.csv

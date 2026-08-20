@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Anchor-sweep robustness of the official generation leaderboard, §5.7.
+"""Leaderboard invariance across the anchor sweep, §5.8.
 
 The anchor sweep {5, 6, 7, 8} is four complete evaluation passes that differ
 only in a non-semantic calibration value (the score the fixed reference
@@ -7,7 +7,7 @@ portfolio is pinned at). At T=0 every other token of every prompt is
 identical, so the four passes are a controlled perturbation experiment — an
 effective N=4 robustness check that costs no determinism.
 
-This script recomputes the §4.4 official generation rating (six-axis,
+This script recomputes the §4.3 generation rating (A3) (six-axis,
 council leave-self-out mean) independently at EACH anchor value, then reports:
 
   1. the four per-anchor leaderboards (raw, on each anchor's own scale);
@@ -18,7 +18,7 @@ council leave-self-out mean) independently at EACH anchor value, then reports:
      anchor-7 scale (score − anchor + 7), as a dispersion diagnostic.
 
 The aggregation mirrors `build_total_geneval.py::gen6` exactly (the canonical
-§4.4 estimator): per evaluator-target cell, the mean of six axis means —
+A3 estimator): per evaluator-target cell, the mean of six axis means —
 factual (mean over factual_per_pc across the portfolio), beauty, intelligence,
 instantiation_distinctness, impressive_length (per-archetype means), and
 structural_diversity (per portfolio) — averaged leave-self-out over the five
@@ -65,7 +65,7 @@ def parse(d, ev, tg):
 
 
 def gen6(cells, s):
-    """Official §4.4 rating of generator s: council LSO mean of the six-axis mean."""
+    """The A3 generation rating of generator s: council LSO mean of the six-axis mean."""
     vals = []
     for t in COUNCIL:
         if t == s:

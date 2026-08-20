@@ -8,7 +8,7 @@ Temperature = 0, reasoning disabled, and tools disabled.
   portfolio from it.
 - **B.2** is the evaluation prompt, shown in its **calibrated/anchored** form —
   the version used for the anchored re-evaluation and the official council
-  ratings (§4.2–§4.4) and in the steady-state protocol (§3.3). It scores one
+  ratings (§4.2–§4.4) and in the steady-state protocol (§4.3). It scores one
   *Target* submission against a fixed *Reference* submission pinned at
   `{ANCHOR_SCORE}` on every criterion.
 

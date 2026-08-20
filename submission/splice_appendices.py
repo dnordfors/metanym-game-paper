@@ -23,18 +23,15 @@ ROOT = Path(__file__).resolve().parent.parent
 TEX = ROOT / "submission" / "paper.tex"
 MANUSCRIPT = ROOT / "paper" / "metanym_game.md"
 APPENDICES = {
-    "C": ROOT / "paper" / "appendices" / "C_anchor_submission.md",
-    "D": ROOT / "paper" / "appendices" / "D_council_evaluation_gemini-2.5-flash.md",
+    "C": ROOT / "paper" / "appendices" / "C_council_evaluation_gemini-2.5-flash.md",
 }
 
 # Anchors delimiting what we replace. Each appendix contributes a stub (heading +
 # one description paragraph, from the manuscript) followed by the appendix body.
 # We key on \label{}, which both pandoc 2.x (\hypertarget wrapper) and 3.x (bare
 # \subsubsection) emit, so the script stays runnable against its own output.
-C_STUB = "appendix-c.-anchor-reference-submission"
-C_BODY = "appendix-c.-anchor-reference-submission-claude-opus-4.5"
-D_STUB = "appendix-d.-council-evaluation-of-a-target-submission"
-D_BODY = "appendix-d.-council-evaluation-of-a-target-submission-gemini-2.5-flash"
+C_STUB = "appendix-c.-council-evaluation-of-a-target-submission"
+C_BODY = "appendix-c.-council-evaluation-of-a-target-submission-gemini-2.5-flash"
 AVAIL = "data-and-code-availability"
 REFS = "references"
 END = r"\end{document}"
