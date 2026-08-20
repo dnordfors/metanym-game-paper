@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Appendix D.4 figure — publicly reported GPQA Diamond (typically reasoning-on)
+"""# supplementary: public-vs-measured GPQA comparison, kept in the repo, not a paper exhibit
+Publicly reported GPQA Diamond (typically reasoning-on)
 vs this protocol's self-administered accuracy (T=0, reasoning off), per model.
 
 A smooth monotone relation between the two administrations is what corroborates

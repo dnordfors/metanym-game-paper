@@ -432,7 +432,7 @@ Table: The two instruments side by side — the key-free total rating $T$ (§4.7
 
 **A key-free benchmark replicates a keyed one.** GPQA Diamond is an established benchmark; ours is not — and the two could hardly be more different. One has professors writing expert-level multiple-choice questions — quantum mechanics, organic chemistry, molecular biology — scored as the percentage answered correctly against their key. The other has LLMs inventing sets of analogies and subjectively rating one another's, with no correct answer anywhere in the loop. Different item authors, different task, different scoring, different notion of truth — yet $T$ reproduces GPQA's ordering at Pearson $r = 0.97$ $[0.92, 0.99]$ (Spearman $0.93$), stable under regeneration ($0.97/0.97/0.92$; §4.9). A benchmark with no key replicates one built entirely of keys — and it needs no experts to write items and no revision to keep pace with improving models (§5.1, §5.3). Since GPQA is no golden key, the corroboration runs both ways: the concordance makes it improbable that either instrument sits far from the truth (§5.1).
 
-**The number survives an audit.** A correlation that strong between a key-free peer rating and an externally keyed benchmark invites the suspicion of a leak, and we audited for one rather than celebrating. No key ever enters a prompt; every published accuracy re-derives exactly from the shipped raw per-question artefacts; the shuffled key is balanced; an independently written answer-extractor reproduces the verdicts; and rescoring under a strict extraction rule moves the correlation by $0.007$. We find no leak, and the number's anatomy is unremarkable in hindsight: four noisy reads of capability with near-independent noise, averaged. The agreement is not carried by the field's two-cluster structure — it holds at $r = 0.91$ within the leading eight alone. $T$ is also the right quantity to report: it is the benchmark's official total, defined before any GPQA comparison — any other combination would be selected for its correlation at $n=12$ — and every quarter earns its place (dropping even the weakest lowers the agreement, Appendix D.1). The full audit, the raw data, and the comparison with publicly reported GPQA values (higher, because reasoning-on) are in Appendix D.
+**The number survives an audit.** A correlation that strong between a key-free peer rating and an externally keyed benchmark invites the suspicion of a leak, and we audited for one rather than celebrating. No key ever enters a prompt; every published accuracy re-derives exactly from the shipped raw per-question artefacts; the shuffled key is balanced; an independently written answer-extractor reproduces the verdicts; and rescoring under a strict extraction rule moves the correlation by $0.007$. We find no leak, and the number's anatomy is unremarkable in hindsight: four noisy reads of capability with near-independent noise, averaged. The agreement is not carried by the field's two-cluster structure — it holds at $r = 0.91$ within the leading eight alone. $T$ is also the right quantity to report: it is the benchmark's official total, defined before any GPQA comparison — any other combination would be selected for its correlation at $n=12$ — and every quarter earns its place (dropping even the weakest lowers the agreement, Appendix D.1). The full audit and the raw data are in Appendix D.
 
 **The two halves of $T$ do not coincide.** Making a true claim and spotting a false one are different skills (West et al. 2024; Oh et al. 2024; Li et al. 2024), and the benchmark rates them separately (§4.7): the Gemini models rank higher as evaluators than as generators, the Claude models the reverse (sharp for gemini-3.1-pro and sonnet-4; the rest within the error bars). This breaks the assumption behind key-free peer rankers like PiCO (Ning et al. 2025) and UPME (Zhang et al. 2025), which treat a strong generator as a strong judge.
 
@@ -471,7 +471,7 @@ External validity holds where the factual axis is identified, and weakens exactl
 
 The aim is a benchmark that needs nothing outside itself: models invent the test, sit it, grade it, and certify which of them are fit to grade — no human raters, no gold key, no oracle model. LLM-as-judge already removes the human rater (Zheng et al. 2023; Liu et al. 2023; Verga et al. 2024; Bai et al. 2023); the unsupervised peer-evaluation line removes the gold key (§5.5). What is new here is self-containment: the participants author the very items they judge, so the test refers only to itself, and one decomposition scores the models as both generators and judges.
 
-A key-free benchmark replicating a keyed one (§4.8) corroborates both, and neither is infallible: each occasionally reverses the expected order within a model family, mostly within the error margins — GPQA ranks Claude-sonnet-4 above Claude-opus-4.0 (within noise) where the metanym benchmark places opus above sonnet at resolution; both rank gpt-4.1-mini above gpt-4.1, inside the margins. Our self-administered GPQA also agrees with the publicly reported values where a citable public value exists ($n = 6$, $r = 0.86$; Appendix D.4), so the keyed side of the comparison is itself corroborated. 
+A key-free benchmark replicating a keyed one (§4.8) corroborates both, and neither is infallible: each occasionally reverses the expected order within a model family, mostly within the error margins — GPQA ranks Claude-sonnet-4 above Claude-opus-4.0 (within noise) where the metanym benchmark places opus above sonnet at resolution; both rank gpt-4.1-mini above gpt-4.1, inside the margins. 
 
 Both benchmarks raise resolution by adding items, but only the metanym benchmark does it easily: GPQA needs domain experts writing and re-validating new Google-proof questions; the metanym benchmark twists a knob — the number of archetypal contexts per submission (here five).
 
@@ -1544,27 +1544,7 @@ but *differential* contamination — exposure increasing with training recency a
 which correlate with capability — would inflate the slope itself. That channel cannot be
 excluded with the shipped data and is the specific residual threat.
 
-### D.4 Publicly reported GPQA values, and why they differ
-
-Public GPQA Diamond figures for the frontier seats are substantially higher than this
-protocol's — and are themselves inconsistent across sources: for claude-opus-4.5 the
-November 2025 system card reports 87.0 while a 2026 leaderboard snapshot lists 94.1
-(thinking configuration unconfirmed); for gemini-3.1-pro public sources report 94.3 against
-this protocol's 80.81. The gap has a protocol explanation — public evaluations run with
-reasoning enabled, large budgets, and heterogeneous answer extraction (public GPT-4o
-figures move from ${\sim}46$ to ${\sim}54$ with the extraction method alone), while this
-administration is deliberately reasoning-channel-off, T=0, harness-matched — but the
-per-model public record is too poorly sourced to reconcile cell by cell: of the twelve
-models, only six have citable public values (`data/external_benchmarks.csv` records the
-sourcing state). On those six, public vs self-administered agreement is $r = 0.86$
-($\rho = 0.81$, $n = 6$) — real but visibly weaker than any correlation in D.1, which is
-the expected signature of two administrations under different protocols. [The two administrations are plotted against each other below](#fig-gpqa-two-admins): the relation is smooth and monotone with the reasoning-budget offset above the diagonal — corroboration that the self-administered numbers measure the same capability under a leaner protocol.
-
-<a id="fig-gpqa-two-admins"></a>
-
-![Two administrations of the same test: publicly reported GPQA Diamond (typically reasoning-on) against this protocol's self-administered accuracy (T=0, reasoning off), for the six models with a citable public value. Pearson $r = 0.86$, Spearman $\rho = 0.81$. The offset above the diagonal is the reasoning budget. Produced by `scripts/plot_gpqa_public_vs_measured.py`.](figures/gpqa_public_vs_measured.png)
-
-### D.5 Artifacts
+### D.4 Artifacts
 
 | Artifact | Path |
 |---|---|
@@ -1575,7 +1555,6 @@ the expected signature of two administrations under different protocols. [The tw
 | The §4.8 figure | `reproduce/scripts/plot_total_validation.py` |
 | Every D.1 number (ladder, compounds, regimes, bases, per-run) | `reproduce/scripts/t_gpqa_ladder.py` |
 | Bootstrap-basis components; per-run council-basis totals; the declined $E^{C}_{\text{svd}}$ | `reproduce/data/total_rating_twelve.csv`, `total_rating_runs.csv`, `ec_svd_twelve.csv` |
-| Public-value sourcing state | `reproduce/data/external_benchmarks.csv` |
 
 Every number in this appendix recomputes from the shipped data: `scripts/gpqa_audit.py`
 (six hard-fail checks, including the first-pass log reconciliation) and

@@ -249,27 +249,7 @@ but *differential* contamination — exposure increasing with training recency a
 which correlate with capability — would inflate the slope itself. That channel cannot be
 excluded with the shipped data and is the specific residual threat.
 
-## D.4 Publicly reported GPQA values, and why they differ
-
-Public GPQA Diamond figures for the frontier seats are substantially higher than this
-protocol's — and are themselves inconsistent across sources: for claude-opus-4.5 the
-November 2025 system card reports 87.0 while a 2026 leaderboard snapshot lists 94.1
-(thinking configuration unconfirmed); for gemini-3.1-pro public sources report 94.3 against
-this protocol's 80.81. The gap has a protocol explanation — public evaluations run with
-reasoning enabled, large budgets, and heterogeneous answer extraction (public GPT-4o
-figures move from ${\sim}46$ to ${\sim}54$ with the extraction method alone), while this
-administration is deliberately reasoning-channel-off, T=0, harness-matched — but the
-per-model public record is too poorly sourced to reconcile cell by cell: of the twelve
-models, only six have citable public values (`data/external_benchmarks.csv` records the
-sourcing state). On those six, public vs self-administered agreement is $r = 0.86$
-($\rho = 0.81$, $n = 6$) — real but visibly weaker than any correlation in D.1, which is
-the expected signature of two administrations under different protocols. [The two administrations are plotted against each other below](#fig-gpqa-two-admins): the relation is smooth and monotone with the reasoning-budget offset above the diagonal — corroboration that the self-administered numbers measure the same capability under a leaner protocol.
-
-<a id="fig-gpqa-two-admins"></a>
-
-![Two administrations of the same test: publicly reported GPQA Diamond (typically reasoning-on) against this protocol's self-administered accuracy (T=0, reasoning off), for the six models with a citable public value. Pearson $r = 0.86$, Spearman $\rho = 0.81$. The offset above the diagonal is the reasoning budget. Produced by `scripts/plot_gpqa_public_vs_measured.py`.](../reproduce/figures/gpqa_public_vs_measured.png)
-
-## D.5 Artifacts
+## D.4 Artifacts
 
 | Artifact | Path |
 |---|---|
@@ -280,7 +260,6 @@ the expected signature of two administrations under different protocols. [The tw
 | The §4.8 figure | `reproduce/scripts/plot_total_validation.py` |
 | Every D.1 number (ladder, compounds, regimes, bases, per-run) | `reproduce/scripts/t_gpqa_ladder.py` |
 | Bootstrap-basis components; per-run council-basis totals; the declined $E^{C}_{\text{svd}}$ | `reproduce/data/total_rating_twelve.csv`, `total_rating_runs.csv`, `ec_svd_twelve.csv` |
-| Public-value sourcing state | `reproduce/data/external_benchmarks.csv` |
 
 Every number in this appendix recomputes from the shipped data: `scripts/gpqa_audit.py`
 (six hard-fail checks, including the first-pass log reconciliation) and
