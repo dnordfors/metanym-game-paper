@@ -25,7 +25,7 @@ the per-archetype non-factual axis ratings. Counts below are `json` / `md` files
 
 | Directory | Role | Paper | Files |
 |---|---|---|---|
-| `data/probe_J_20260529T005230Z/` | un-anchored full-panel run (no calibration anchor) | §4.1 | 144 / 144 + `run_info.json` + `leaderboard_lso.json` |
+| `data/probe_J_20260529T005230Z/` | un-anchored run, all twelve participants (no calibration anchor) | §4.1 | 144 / 144 + `run_info.json` + `leaderboard_lso.json` |
 | `data/probe_K_20260529T014133Z/` | run 1, anchor 7 — the **published** leaderboard | §4.2–§4.9 | 134 / 132 |
 | `data/probe_K_anchor5_20260529T030442Z/` | anchor sweep, anchor 5 | §4.2, §5.7 | 135 / 132 |
 | `data/probe_K_anchor6_20260529T032518Z/` | anchor sweep, anchor 6 | §4.2, §5.7 | 133 / 132 |
@@ -45,8 +45,8 @@ manual environment setup is required.
 
 | File | Contents |
 |---|---|
-| `data/gpqa_selfadministered.csv` | GPQA Diamond, self-administered on the same 12-model roster under the council protocol (T=0, reasoning off), `accuracy = n_correct/198`. The independent measure Figure 1 correlates against (§4.9). |
-| `data/external_benchmarks.csv` | Published external scores for the 12-model roster, the substrate for the §4.2 / §5.3 external-validation discussion. |
+| `data/gpqa_selfadministered.csv` | GPQA Diamond, self-administered on the same 12-model roster under the council protocol (T=0, reasoning off), `accuracy = n_correct/198`. The independent measure the §4.8 figure correlates against. |
+| `data/external_benchmarks.csv` | Published external scores for the 12-model roster, published external scores kept for reference; not read by `reproduce.sh`. |
 | `data/our_metrics.csv` | E^F_svd and G^F_svd at anchor 7 with bootstrap 95% CIs, as a convenience snapshot of the headline metrics. |
 
 ## Written by `reproduce.sh`
@@ -60,31 +60,34 @@ These are **outputs**, committed so a reader can diff them against a fresh run:
 | `data/total_rating_bootstrap.csv` | `scripts/bootstrap_total.py` (the same totals with their 95% joint-bootstrap interval, A.5), from run 1. The `total` column is `build_paper1_tables.py`'s, computed by the same imported code, so the two CSVs agree exactly. Same run-1-only guard. |
 | `data/section_4_4_criterion_b.csv` | `scripts/build_paper1_tables.py` (all three §4.4 exhibits in one long-format file: the per-axis anchor-sweep consistencies of exhibit (i), the per-criterion G/E pairs and cosines of exhibit (ii), and the criterion-reliability column of the council table, exhibit (iii)). Values are unrounded, so the file is the machine-checkable source behind the rounded cells printed in the paper. Same run-1-only guard as the leaderboard. |
 | `data/section_4_1_unanchored.csv` | `scripts/section_4_1_unanchored.py` (un-anchored LSO means and 95% CIs for the §4.1 leaderboard) |
-| `figures/average_validation.png` | `scripts/plot_average_validation.py` (paper Figure 1) |
+| `figures/total_validation.png` | `scripts/plot_total_validation.py` (the §4.8 figure, T vs GPQA) |
+| `figures/anchoring_resolution.png` | `scripts/plot_anchoring_resolution.py` (the §4.2 figure) |
+| `figures/council_evaluation_pc1.png` | `scripts/plot_council_evaluation.py` (the §3.2 exhibit, verbatim from Appendix C) |
+| `figures/ballast_heatmap.png` | `scripts/plot_ballast_heatmap.py` (the §4.6 exhibit) |
 | *(stdout only)* | `scripts/ballast_sizing.py` — the §4.6 ballast-sizing table. Convenes all seven possible contests per candidate ballast and reports range, $\sigma_1/\sigma_2$, seat spread, fidelity to the §4.2 values, and the fraction of bootstrap resamples in which the §4.5 guards hold. Its printed reference row reproduces §4.2's $\sigma_1/\sigma_2$ (2.57 → 2.6) and is the check that the round's matrix is built the same way as the bootstrap's. |
 | *(stdout only)* | `scripts/consensus_limits.py` — the §5.7 departure-from-consensus curve and the §5.7 cross-council spread. Imports its matrix builder from `ballast_sizing.py`, so both obey the leave-self-out rule above. |
 | *(stdout only)* | `scripts/check_manuscript.py` — manuscript consistency: section cross-references, anchor links, section numbering, referenced appendices, table captions. Run it before any arXiv upload or venue submission. |
 
 ## Ballast submissions
 
-`submissions/` carries the two portfolios §4.5 pins as ballast — the two lowest-rated
-submissions of the canonical run, by the panel's own factual ratings:
+`submissions/` carries the anchor portfolio and the two portfolios §4.6 pins as ballast — the two
+lowest-rated submissions of the canonical run, by the participants' own factual ratings:
 
-| file | model | panel mean factual rating |
+| file | model | participants' mean factual rating |
 |---|---|---:|
 | `submissions/anchor_claude-opus-4.5.md` | claude-opus-4.5 (the anchor; first archetype in full, both forms) | — |
 | `submissions/ballast_gpt-4o-mini.md` | gpt-4o-mini | 4.99 |
 | `submissions/ballast_gpt-4.1-nano.md` | gpt-4.1-nano | 5.38 |
 
 They are generation output of the probe_I stage that fed run 1, reproduced verbatim. Nothing in
-`reproduce.sh` reads them — the pinned evaluations already encode how the panel graded them —
-but a standing round under §4.5 needs the text, because the contestant grades them.
+`reproduce.sh` reads them — the pinned evaluations already encode how the participants graded them —
+but a contest under §4.5 needs the text, because the contestant grades them.
 
 Re-running `reproduce.sh` rewrites the CSVs byte-identically — the bootstrap draws from a
-fixed seed, so its interval columns do not move between runs. The PNG is not byte-reproducible:
+fixed seed, so its interval columns do not move between runs. The PNGs are not byte-reproducible:
 what it plots is identical, but text is rasterised slightly differently by different font stacks, so
-roughly 2% of its pixels change — the labels and tick numbers, not the data. Diff the CSVs, and
-compare the figure by eye.
+roughly 2% of their pixels change — the labels and tick numbers, not the data. Diff the CSVs, and
+compare the figures by eye.
 
 ## Not included
 
@@ -94,7 +97,7 @@ compare the figure by eye.
   repo, not in this package.
 - **Raw generated portfolios** beyond the two ballast submissions in `submissions/` (below) and
   the `.md` transcripts already inside each run directory. The anchor submission is carried in `submissions/`, and the appendices in `paper/appendices/`
-  carry the other portfolio the paper exhibits; the ballast is carried because §4.5 names it as
+  carry the other portfolio the paper exhibits; the ballast is carried because §4.6 names it as
   protocol material, not because the paper prints it.
 - **The validated archetype database.** Not read by any script here; it lives upstream at
   `projects/completed/council-of-peers-benchmark-2/data/archetype_db/archetypes.json`.

@@ -1,5 +1,5 @@
 # PAPER figure — the official total rating T (§4.7, council basis, x) vs self-administered
-# GPQA Diamond accuracy (y). Successor of plot_average_validation.py's combined-factual
+# GPQA Diamond accuracy (y). Successor of the v1 combined-factual figure (plot_average_validation.py, retired)
 # figure; the factual pair's correlations remain in Appendix D.1, this figure carries the
 # total. Horizontal bars are the per-contest A.5 joint bootstrap 95% CI on T
 # (data/total_rating_council.csv); vertical bars the GPQA binomial 95% CI. The r interval

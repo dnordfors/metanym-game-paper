@@ -11,8 +11,8 @@ authors:
   - family-names: Nordfors
     given-names: David
     email: david.nordfors@archetypes.ai
-version: "1.0.0"
-date-released: "2026-07-29"
+version: "2.0.0"
+date-released: "2026-08-20"
 url: "https://github.com/dnordfors/metanym-game-paper"
 repository-code: "https://github.com/dnordfors/metanym-game-paper"
 license:

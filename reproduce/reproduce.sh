@@ -36,9 +36,9 @@ fi
 export RUNS_GEN="data/probe_K_20260529T014133Z"     # run 1 (bootstrap) -> published leaderboard
 export RUNS_SWEEP="data"                             # parent of probe_K_anchor{5,6,8}
 export RUNS="data"                                   # anchor sweep parent (criterion B / anchor sweep)
-export RUNS_UNANCHORED="data/probe_J_20260529T005230Z"  # un-anchored full-panel run (§4.1)
-REGEN2="data/regenerations/probe_K_anchor7_20260619T015828Z"   # run 2 (§4.6)
-REGEN3="data/regenerations/probe_K_anchor7_20260619T040659Z"   # run 3 (§4.6)
+export RUNS_UNANCHORED="data/probe_J_20260529T005230Z"  # un-anchored run, all twelve participants (§4.1)
+REGEN2="data/regenerations/probe_K_anchor7_20260619T015828Z"   # run 2 (§4.9)
+REGEN3="data/regenerations/probe_K_anchor7_20260619T040659Z"   # run 3 (§4.9)
 
 echo "##### §4.1 — un-anchored leaderboard and the one break #####"
 "$PY" scripts/section_4_1_unanchored.py              # emits data/section_4_1_unanchored.csv
@@ -66,10 +66,9 @@ echo; echo "##### §4.8 + Appendix D — GPQA exhibits and audit #####"
 "$PY" scripts/gpqa_audit.py                              # Appendix D: 6 hard-fail checks on the raw GPQA artifacts
 "$PY" scripts/t_gpqa_ladder.py                           # Appendix D.1: ladder/compounds/regimes/bases/per-run
 "$PY" scripts/slope_full_bootstrap.py                    # Appendix D.1: slope/r under propagated measurement error
-"$PY" scripts/plot_total_validation.py                   # -> figures/total_validation.png (the 4.9 figure, T vs GPQA)
+"$PY" scripts/plot_total_validation.py                   # -> figures/total_validation.png (the 4.8 figure, T vs GPQA)
 "$PY" scripts/plot_anchoring_resolution.py               # -> figures/anchoring_resolution.png (the 4.2 figure + both F values)
 "$PY" scripts/plot_council_evaluation.py                # -> figures/council_evaluation_pc1.png (the 3.2 exhibit, verbatim from Appendix C)
-"$PY" scripts/plot_average_validation.py
 echo; echo "##### §4.9 — robustness to regeneration (N=3) #####"
 "$PY" scripts/compare_runs.py "$RUNS_GEN" "$REGEN2" "$REGEN3" --sweep "$RUNS_SWEEP"
 echo; echo "##### §4.6 — sizing the ballast (why two) #####"
