@@ -253,7 +253,7 @@ data/
                                   198 responses, both administration stages (Appendix D)
   gpqa_selfadministered.csv       each model's GPQA Diamond score, for the comparison above
   total_rating_council.csv        the official council-basis leaderboard with its CIs
-  criterion_a_ef_gf.csv  total_rating_leaderboard.csv  total_rating_bootstrap.csv
+  criterion_a_ef_gf.csv  total_rating_twelvebasis.csv  total_rating_twelvebasis_bootstrap.csv
   section_4_4_criterion_b.csv  section_4_1_unanchored.csv
                                   twelve-participant-basis results written out by
                                   reproduce.sh (the selection evidence of §4.2–§4.4)

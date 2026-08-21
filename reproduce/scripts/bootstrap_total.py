@@ -85,7 +85,7 @@ def main():
     # Only the published anchor-7 run owns this file, exactly as for the leaderboard CSV: any
     # other run dir (a §4.9 regeneration, say) may be analysed without overwriting the release.
     if Path(D[7]).name.startswith("probe_K_2"):
-        out = Path(__file__).resolve().parent.parent / "data" / "total_rating_bootstrap.csv"
+        out = Path(__file__).resolve().parent.parent / "data" / "total_rating_twelvebasis_bootstrap.csv"
         with open(out, "w") as fh:
             fh.write("model,total,total_lo,total_hi,council\n")
             for d in rows:

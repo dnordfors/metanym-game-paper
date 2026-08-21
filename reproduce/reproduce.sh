@@ -54,11 +54,11 @@ echo; echo "##### §4.2 — same-vendor robustness #####"
 "$PY" scripts/vendor_robustness.py
 echo; echo "##### §4.2/§5.7 — graded-vs-binary SVD #####"
 RUNS="$RUNS_GEN" "$PY" scripts/graded_vs_binary_svd.py   # RUNS = the anchor-7 run dir here
-echo; echo "##### §4.4 exhibits + §4.7 total T and official leaderboard #####"
-"$PY" scripts/build_paper1_tables.py                     # emits data/total_rating_leaderboard.csv
+echo; echo "##### §4.4 exhibits + twelve-participant-basis total T (§4.7 basis check, D.1) #####"
+"$PY" scripts/build_paper1_tables.py                     # emits data/total_rating_twelvebasis.csv (selection basis; official = data/total_rating_council.csv)
                                                          #   and data/section_4_4_criterion_b.csv
-echo; echo "##### §4.7 — total T 95% joint bootstrap CI (A.5) #####"
-"$PY" scripts/bootstrap_total.py      # emits data/total_rating_bootstrap.csv
+echo; echo "##### twelve-participant-basis T, 95% joint bootstrap CI (A.5) #####"
+"$PY" scripts/bootstrap_total.py      # emits data/total_rating_twelvebasis_bootstrap.csv
 echo; echo "##### §5.7 — leaderboard across the anchor sweep (N=4) #####"
 "$PY" scripts/anchor_sweep_leaderboard.py
 echo; echo "##### §4.8 + Appendix D — GPQA exhibits and audit #####"

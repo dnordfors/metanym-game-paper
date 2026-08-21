@@ -11,7 +11,10 @@ run + the anchor sweep {5,6,7,8} and prints, to the paper's displayed precision:
                    per non-factual axis, plus their anchored cosine cos(G,E)
   * Council      : the criterion-reliability column of the council table
   * Breakdown    : the four anchored components G^F, G^C, E^F, E^C  (per model)
-  * Leaderboard  : total T = 1/4(G^F+G^C+E^F+E^C), with E = 1/2(E^F+E^C), G = 1/2(G^F+G^C)
+  * Total T on the twelve-participant basis = 1/4(G^F+G^C+E^F+E^C), with E = 1/2(E^F+E^C),
+    G = 1/2(G^F+G^C) -- the basis the council was SELECTED on (sec 4.2-4.4). The OFFICIAL
+    sec 4.7 leaderboard is council-basis (data/total_rating_council.csv); the two are compared
+    in sec 4.7 (Spearman 0.986, MAD 0.12) and Appendix D.1.
 
 The three exhibits of paper section 4.6 -- the per-axis anchor-sweep consistency table, the
 per-criterion G-vs-E table with its cos(G,E) footer, and the council table's criterion-reliability
@@ -390,19 +393,21 @@ def main():
     # the published leaderboard on disk untouched. The §4.4 CSV carries the same guard.
     if Path(D[7]).name.startswith("probe_K_2"):
         dd = Path(__file__).resolve().parent.parent / "data"
-        with open(dd / "total_rating_leaderboard.csv", "w") as fh:
+        with open(dd / "total_rating_twelvebasis.csv", "w") as fh:
             fh.write("model,total,council\n")
             for d in rows:
                 fh.write(f"{d['m']},{r2(d['T'])},{'yes' if d['council'] else 'no'}\n")
         write_section_4_4_csv(dd / "section_4_4_criterion_b.csv", comp, cos, order_i, order_ii)
 
     # ---- print the submitted tables -----------------------------------------------------------
-    print("=== Final leaderboard (sec 4.7): T = 1/4(G^F+G^C+E^F+E^C);  E = 1/2(E^F+E^C),  G = 1/2(G^F+G^C) ===")
+    print("=== Total T on the TWELVE-PARTICIPANT basis (selection evidence; the sec 4.7 'two bases agree' check and Appendix D.1) ===")
+    print("    NOT the official leaderboard: that is council-basis, data/total_rating_council.csv.")
+    print("    T = 1/4(G^F+G^C+E^F+E^C);  E = 1/2(E^F+E^C),  G = 1/2(G^F+G^C)")
     print(f"{'#':>2} {'model':22}{'council':>8}{'T':>7}{'E':>7}{'G':>7}")
     for i, d in enumerate(rows, 1):
         print(f"{i:>2} {d['m']:22}{('yes' if d['council'] else '--'):>8}{r2(d['T']):>7}{r2(d['E']):>7}{r2(d['G']):>7}")
 
-    print("\n=== Competence breakdown (sec 4.7): the four anchored components ===")
+    print("\n=== Competence breakdown, twelve-participant basis: the four anchored components ===")
     print(f"{'model':22}{'G^F':>7}{'G^C':>7}{'E^F':>7}{'E^C':>7}")
     for d in rows:
         print(f"{d['m']:22}{r2(d['GF']):>7}{r2(d['GC']):>7}{r2(d['EF']):>7}{r2(d['EC']):>7}")
