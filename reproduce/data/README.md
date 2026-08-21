@@ -11,7 +11,7 @@ Layout in brief:
 
 ```
 probe_J_20260529T005230Z/            un-anchored run, all twelve participants — §4.1 baseline
-probe_K_20260529T014133Z/            run 1, anchor 7 — the published leaderboard
+probe_K_20260529T014133Z/            run 1, anchor 7 — the canonical run behind every §4 table
 probe_K_anchor5_20260529T030442Z/    anchor sweep (§5.7)
 probe_K_anchor6_20260529T032518Z/
 probe_K_anchor8_20260529T033755Z/

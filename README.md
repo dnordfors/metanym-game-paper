@@ -255,7 +255,8 @@ data/
   total_rating_council.csv        the official council-basis leaderboard with its CIs
   criterion_a_ef_gf.csv  total_rating_leaderboard.csv  total_rating_bootstrap.csv
   section_4_4_criterion_b.csv  section_4_1_unanchored.csv
-                                  results written out by reproduce.sh
+                                  twelve-participant-basis results written out by
+                                  reproduce.sh (the selection evidence of §4.2–§4.4)
 ```
 
 One evaluation file holds one evaluator's ratings of one portfolio, and is named

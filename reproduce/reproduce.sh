@@ -33,7 +33,7 @@ else
   [ -n "$PY" ] || no_interpreter "python3"
 fi
 
-export RUNS_GEN="data/probe_K_20260529T014133Z"     # run 1 (bootstrap) -> published leaderboard
+export RUNS_GEN="data/probe_K_20260529T014133Z"     # run 1 (bootstrap) -> twelve-participant basis (selection evidence, §4.2-4.4)
 export RUNS_SWEEP="data"                             # parent of probe_K_anchor{5,6,8}
 export RUNS="data"                                   # anchor sweep parent (criterion B / anchor sweep)
 export RUNS_UNANCHORED="data/probe_J_20260529T005230Z"  # un-anchored run, all twelve participants (§4.1)

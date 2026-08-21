@@ -1,4 +1,4 @@
-# council-basis official leaderboard (§4.10): T = 1/4(GF+GC+EF+EC), per-round A.5 bootstrap CI
+# council-basis official leaderboard (§4.7): T = 1/4(GF+GC+EF+EC), per-round A.5 bootstrap CI
 # produced by papers/v3/experiments/29_council_only_leaderboard/council_basis_tables.py (seed 20260816, B=1000)
 model,council,T,T_lo95,T_hi95,GF,GC,EF,EC
 claude-opus-4.5,yes,7.0000,7.0000,7.0000,7.0000,7.0000,7.0000,7.0000

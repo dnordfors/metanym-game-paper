@@ -1,11 +1,11 @@
-# Proposed revision — cite BenchBench in §5.4 and §4.5
+# Proposed revision — cite BenchBench in §5.4 and §4.7
 
 **Status: proposed, not applied.** Nothing in `paper/` or `submission/` has been changed. This
 file argues for one added citation and gives the exact text to insert if the argument is
 accepted. Landing it means a new arXiv version — see [What it costs](#what-it-costs) before
 deciding.
 
-Section references (§4.5, §5.4, …) are to `paper/metanym_game.md`, and paths are relative to
+Section references (§4.7, §5.4, …) are to `paper/metanym_game.md` (v2 numbering, August 2026), and paths are relative to
 this package. This package, inside `archetypal-contexts`, is the only copy —
 [`../../docs/PUBLICATION_PACKAGE.md`](../../docs/PUBLICATION_PACKAGE.md). The standalone
 `~/python/BOLD/metanym-game-paper` repo, and `github.com/dnordfors/metanym-game-paper` behind
@@ -34,11 +34,11 @@ strength, Spearman ρ ≈ 0.37.** The authors conclude that design is a distinct
 
 ## Why it belongs in the paper
 
-**1. It is independent corroboration of §4.5's central claim, from people with no stake in it.**
+**1. It is independent corroboration of §4.7's central claim, from people with no stake in it.**
 
-§4.5 reports that generation and evaluation do not coincide — Gemini 3.1 Pro is the panel's
+§4.7 reports that generation and evaluation do not coincide — Gemini 3.1 Pro is the participants'
 strongest factual judge yet a middling generator; Sonnet-4 generates near the top yet does not
-clear the evaluator bar. §5.4 makes that separation load-bearing: it is why the council can pick
+clear the evaluator bar. §5.1 makes that separation load-bearing: it is why the council can pick
 judges rather than only rank makers.
 
 As the paper stands, a reader can read the dissociation as an artefact of this instrument — of
@@ -53,7 +53,7 @@ one sentence.
 
 BenchBench's central object is a **designer–answerer matrix**: models on one axis as producers
 of items, models on the other as responders to them. That is the same object as the paper's
-two-sided ratings matrix (§4.3) — makers on one axis, judges on the other — arrived at
+two-sided ratings matrix (§4.2) — generators on one axis, evaluators on the other — arrived at
 independently, from a different starting question. Two groups reaching for the same matrix is
 evidence that the making/judging separation is a real feature of the problem rather than a
 modelling choice.
@@ -62,7 +62,7 @@ modelling choice.
 
 BenchBench is *not* key-free. It starts from seed benchmarks, and it validates generated items
 with verifiers where they exist and rubric-guided judging where they do not. So it establishes
-the dissociation while still depending on external truth — which is exactly the contrast §5.5
+the dissociation while still depending on external truth — which is exactly the contrast §5.4
 draws for everything else in the field. Citing it therefore does double duty: it corroborates
 the finding *and* supplies one more instance of the pattern that prior work is either a good
 test that needs a key, or key-free but aimed elsewhere.
@@ -76,7 +76,7 @@ twice, by different means".
 Three insertions. The first is the substantive one; the second is a cross-reference; the third
 is the reference entry.
 
-### (a) §5.4 — Generating vs evaluating the truth
+### (a) §5.4 — Where this sits (the peer-evaluation paragraph)
 
 Currently one paragraph. Add a second. Present text:
 
@@ -100,16 +100,13 @@ Insert after it:
 
 Rationale for the last two sentences: without them the citation reads as conceding that
 somebody else did this first. With them it lands as corroboration plus one more instance of the
-§5.5 pattern.
+§5.4 pattern.
 
-### (b) §4.5 — The making components
+### (b) §4.7 — Total rating and the official leaderboard
 
 Optional, and only if §5.4's paragraph is judged too far from the evidence it corroborates.
-Present sentence:
-
-> Generation and evaluation do not coincide — Gemini 3.1 Pro is the panel's strongest factual
-> judge yet a middling generator, and Sonnet-4 generates near the top yet does not clear the
-> evaluator bar — which is exactly why the total keeps the two halves distinct (§4.6).
+Target: the "Generation and evaluation do not coincide" reading at the end of §4.7 (the three Opus
+models are middling factual judges; gemini-3.1-pro, the strongest judge, generates mid-pack).
 
 Append: `Independent evidence for this separation is discussed in §5.4.`
 
@@ -154,41 +151,3 @@ is not, the question is whether one corroborating citation justifies a version b
 Argument that it does: the making/judging dissociation is the paper's most contestable empirical
 claim, and this is the only external support for it currently in existence.
 
-## Noticed while drafting — separate from the above, decide independently
-
-Neither of these is part of the BenchBench proposal. Both were found while reading §4 and §5 and
-would otherwise be lost.
-
-**1. A cross-reference in §5.5 appears to point at the wrong section.** The sentence reading
-"the making–judging gap (§4.7)" points to §4.7, which is *The metanym benchmark vs GPQA*. The
-making–judging gap is established in §4.5 (*The making components*) and carried into §4.6. This
-looks like it should read §4.5, or §4.5–4.6. Worth verifying against intent before changing —
-if §4.7 was meant because the GPQA comparison is where the gap becomes interpretable, the
-sentence would read better saying so.
-
-**2. The paper describes GPQA as validation; the website has ruled that phrasing out.** §4 is
-titled "Results: validating the benchmark…", and §4.7 opens "We test the key-free factual
-ratings against an instrument built outside the run". The paper is careful — it says "a second
-instrument rather than an oracle" — but the framing still makes GPQA the standard and the
-metanym game the candidate.
-
-`metanym-co-website` has since taken the opposite line, deliberately: GPQA is not part of the
-benchmark, is not a calibration step, and no rating derives from it; deleting it changes
-nothing. The reasoning and the banned phrasings are in that repo's `docs/MESSAGING.md`, under
-*The one qualifier that must always travel with "100% self-contained"*.
-
-This is a genuine inconsistency between the paper and the site, and the site is the stronger
-position — a self-contained benchmark that describes its optional external comparison as
-"validation" has quietly conceded its own claim. Whether it is worth rewording in the paper is a
-separate call from the BenchBench citation, and a larger one. The frame appears in four places:
-the §4 section title; the §4 opening paragraph ("it **validates** the benchmark"); §4.7's
-opening and its summary sentence; and §5.6's "answerable to independent re-validation". The
-figure file is also named `average_validation.png`, which propagates into the caption path in
-both manuscript files and into `reproduce/`. (Two nearby uses are *not* instances and should be
-left alone: §4.3's "checked against an independent external benchmark" is already neutral, and
-§5.1's "re-validating the test" is about GPQA's own maintenance, not about GPQA validating this
-benchmark.)
-
-If a v2 is being prepared for BenchBench, this is the natural thing to bundle with it — the
-wording change is small in each place, and doing it in the same version keeps the paper and the
-site telling one story.

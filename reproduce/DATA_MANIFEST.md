@@ -56,7 +56,7 @@ These are **outputs**, committed so a reader can diff them against a fresh run:
 | File | Written by |
 |---|---|
 | `data/criterion_a_ef_gf.csv` | `scripts/generation_factuality_validation.py` (anchored E^F + G^F) |
-| `data/total_rating_leaderboard.csv` | `scripts/build_paper1_tables.py` (total T + council seats), from run 1 — the published leaderboard. The §4.9 step drives the same script once per regeneration run; only run 1 writes this file. |
+| `data/total_rating_leaderboard.csv` | `scripts/build_paper1_tables.py` (total T + council seats) on the **twelve-participant basis** of §4.2–§4.4 — the selection evidence, not the official leaderboard (that is `data/total_rating_council.csv`, below). The §4.9 step drives the same script once per regeneration run; only run 1 writes this file. |
 | `data/total_rating_bootstrap.csv` | `scripts/bootstrap_total.py` (the same totals with their 95% joint-bootstrap interval, A.5), from run 1. The `total` column is `build_paper1_tables.py`'s, computed by the same imported code, so the two CSVs agree exactly. Same run-1-only guard. |
 | `data/section_4_4_criterion_b.csv` | `scripts/build_paper1_tables.py` (all three §4.4 exhibits in one long-format file: the per-axis anchor-sweep consistencies of exhibit (i), the per-criterion G/E pairs and cosines of exhibit (ii), and the criterion-reliability column of the council table, exhibit (iii)). Values are unrounded, so the file is the machine-checkable source behind the rounded cells printed in the paper. Same run-1-only guard as the leaderboard. |
 | `data/section_4_1_unanchored.csv` | `scripts/section_4_1_unanchored.py` (un-anchored LSO means and 95% CIs for the §4.1 leaderboard) |
@@ -104,7 +104,7 @@ compare the figures by eye.
 
 ## data/gpqa_runs/ and data/total_rating_council.csv
 - `gpqa_runs/gpqa_20260613T173827Z/`: the raw self-administered GPQA Diamond run — per model, `responses.json` with all 198 records (raw response text, key letter, stored verdict). Source: papers/v3/experiments/17_bold_api_probe/analysis_archive/runs_local/ (same repo, commit history). Audited by `scripts/gpqa_audit.py` (Appendix D).
-- `total_rating_council.csv`: the §4.7 council-basis official leaderboard (T + per-contest A.5 bootstrap CIs + components). Produced by papers/v3/experiments/29_council_only_leaderboard/council_basis_tables.py (seed 20260816); package-side producer pending (REVIEW A8).
+- `total_rating_council.csv`: the §4.7 council-basis **official leaderboard** (the table in the paper and in the README) (T + per-contest A.5 bootstrap CIs + components). Produced by papers/v3/experiments/29_council_only_leaderboard/council_basis_tables.py (seed 20260816); package-side producer pending (REVIEW A8).
 
 ## data/total_rating_twelve.csv, total_rating_runs.csv, ec_svd_twelve.csv
 Appendix D.1's comparison substrates: bootstrap-basis components, per-run council-basis
