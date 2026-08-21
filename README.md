@@ -206,7 +206,6 @@ submission/    The arXiv upload bundle — paper.tex + figures + bundled fonts, 
                regenerates paper.tex + paper.pdf from paper/metanym_game.md and the appendices.
                (Fonts are loaded by path, so no system fonts are required.)
 reproduce/     Scripts + pinned evaluation data that regenerate the paper's results.
-docs/          Proposed revisions not yet applied to the paper.
 ```
 
 ## Reproduce the results
