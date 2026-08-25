@@ -3,7 +3,7 @@
 # figure; the factual pair's correlations remain in Appendix D.1, this figure carries the
 # total. Horizontal bars are the per-contest A.5 joint bootstrap 95% CI on T
 # (data/total_rating_council.csv); vertical bars the GPQA binomial 95% CI. The r interval
-# in the title is Fisher-z (see pear_ci docstring).
+# in the title is the BCa bootstrap interval reported in the paper (Appendix D.1).
 #
 # Usage:  python plot_total_validation.py  ->  figures/total_validation.png
 """Scatter: total rating T vs GPQA Diamond accuracy (paper figure)."""
@@ -117,7 +117,7 @@ ax.set_xlabel(r"Metanym Game Benchmark  $T=\frac{1}{4}(G^F+G^C+E^F+E^C)$  (ancho
 ax.set_ylabel("GPQA Diamond accuracy (%)", color=INK, fontsize=11.5)
 ax.set_title("The key-free Metanym Game rating tracks GPQA Diamond",
              color=INK, fontsize=13.5, fontweight="bold", pad=26, loc="left")
-ax.text(0, 1.035, rf"Pearson $r = {r:.2f}$ [Fisher-z 95% {lo:.2f}–{hi:.2f}]  ·  Spearman $\rho = {rho:.2f}$  ·  $n = {len(ms)}$  ·  no answer key on the $x$ axis",
+ax.text(0, 1.035, rf"Pearson $r = {r:.2f}$ [95% CI 0.92–0.99, bootstrap]  ·  Spearman $\rho = {rho:.2f}$  ·  $n = {len(ms)}$  ·  no answer key on the $x$ axis",
         transform=ax.transAxes, fontsize=10, color=INK2)
 for side in ("top", "right"):
     ax.spines[side].set_visible(False)
