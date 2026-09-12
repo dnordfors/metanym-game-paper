@@ -119,3 +119,27 @@ The per-model T bootstrap replicate distributions (A.5 per-contest resample; anc
 mass at 7 by construction) and the scheme-C pointwise band. Produced by
 papers/v3/experiments/29_council_only_leaderboard/council_basis_tables.py and
 scripts/slope_full_bootstrap.py; consumed by Appendix D.1's measurement-error sensitivity.
+
+## Pooled three runs — the official (ICLR 2027 version) ratings
+
+The ICLR 2027 version of the paper (`metanym-game-paper-iclr27/`) pools the three full runs: one row-centred SVD over the
+column-stacked factual matrices of runs 1–3 (12 × 805), G^C over each player's three portfolios, E^C from run 1's anchor
+sweep (the only sweep). `scripts/pooled_components.py` holds the estimators and, run on run 1 alone, reproduces the run-1
+tables above (asserted in its `__main__`). All outputs below are deterministic (seed 20260816 unless stated).
+
+| Artifact | Producer / meaning | Paper (ICLR version) |
+|---|---|---|
+| `data/total_rating_council_pooled123.csv` | `scripts/pooled_council_tables.py` — council-basis official leaderboard on the pooled corpus, per-round A.5 bootstrap CI (B=1000) | §4.4 leaderboard, Fig. 2, Appendix D |
+| `data/total_rating_council_replicates_pooled123.csv` | same — per-model T replicates | Appendix D.1 propagation |
+| `data/total_rating_twelve_pooled123.csv` | same — twelve-evaluator components, pooled | §4.4 bases check, D.1 |
+| `data/total_rating_council_pooled12.csv`, `data/total_rating_twelve_pooled12.csv` | same with `RUNS=1,2 B=0` — runs 1 and 2 pooled | Appendix F panel |
+| `data/criterion_a_pooled123.csv` | `scripts/pooled_criterion_a.py` — E^F loading, anchored E^F, G^F with atom-bootstrap CIs | Appendix A.2 table; §3.4, §4.2 |
+| *(stdout)* | `scripts/pooled_ladder.py` — D.1 ladder, compounds, regimes, bases (Fisher + BCa) on the pooled CSVs | §4.5, Appendix D.1 |
+| `data/slope_band_full_pooled123.csv` | `scripts/pooled_slope_full_bootstrap.py` — slope/r under propagated measurement error | Appendix D.1 |
+| *(stdout)* | `scripts/pooled_ballast_sizing.py`, `scripts/pooled_ballast_table.py` — A.6 sizing and per-seat table on the pooled corpus | Appendix A.6 |
+| `data/alignment_cosine_pooled123.csv`, `data/g_vs_e_pooled123.csv` | `scripts/pooled_vendor_alignment.py` — same-vendor robustness (stdout), G-vs-E per criterion, anchored cosine + CI | §4.2, §4.3, Appendix A.5 |
+| *(stdout)* | `scripts/pooled_spectral_gap_checks.py` — per-run and pooled σ₁/σ₂, permutation null, u₁ stability | Appendix A.6, F |
+| `data/per_run_components.csv` | `scripts/per_run_components.py` — four quarters per run (E^C from run 1's sweep) + run-to-run agreement | Appendix F table, §4.6 |
+| *(stdout)* | `scripts/per_run_contests.py` — per-run contests: contestant E^F vs twelve-basis, contest gaps | §4.6, Appendix F |
+| `figures/runs_panel.png` | `scripts/plot_runs_panel.py` — three runs apart + pooled, against GPQA | Appendix F figure |
+| `figures/total_validation_simple_pooled123.png` | `scripts/plot_total_validation_simple_pooled.py` — pooled T vs GPQA (copied to the ICLR folder as `total_validation_simple.png`) | Fig. 2 |

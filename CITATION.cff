@@ -1,33 +1,28 @@
 # Citation File Format — https://citation-file-format.github.io
-# GitHub renders this as "Cite this repository".
 cff-version: 1.2.0
-message: "If you use this work, please cite both the paper and this repository."
-title: "The Metanym Game: An LLM Benchmark Without Ground Truth That Rises With the Models It Measures"
+message: "If you use this work, please cite the paper (arXiv entry below) and, for the numbers, the full paper's reproduction package at https://github.com/dnordfors/metanym-game-paper."
+title: "The Metanym Game: An LLM Benchmark Without Ground Truth That Rises With the Models It Measures — ICLR 2027 conference version"
 abstract: >-
-  Reproduction package for The Metanym Game: the arXiv manuscript, the arXiv
-  submission bundle, and the scripts and pinned evaluation data that regenerate
-  every number, table and figure in the paper.
+  Conference version of The Metanym Game (arXiv:2606.21008), prepared for ICLR 2027:
+  the manuscript and the ICLR submission bundle. Every number reproduces from the
+  full paper's package (github.com/dnordfors/metanym-game-paper).
 authors:
   - family-names: Nordfors
     given-names: David
     email: david.nordfors@archetypes.ai
-version: "2.0.0"
-date-released: "2026-08-20"
-url: "https://github.com/dnordfors/metanym-game-paper"
-repository-code: "https://github.com/dnordfors/metanym-game-paper"
+version: "0.1.0"
+date-released: "2026-09-10"
+url: "https://github.com/dnordfors/metanym-game-paper-iclr27"
+repository-code: "https://github.com/dnordfors/metanym-game-paper-iclr27"
 license:
   - MIT
   - CC-BY-4.0
 keywords:
   - LLM benchmark
-  - structural intelligence
-  - analogy
+  - benchmark without ground truth
   - peer evaluation
   - singular value decomposition
-identifiers:
-  - type: doi
-    value: 10.48550/arXiv.2606.21008
-    description: arXiv DOI for the paper
+  - analogy
 preferred-citation:
   type: article
   title: "The Metanym Game: An LLM Benchmark Without Ground Truth That Rises With the Models It Measures"

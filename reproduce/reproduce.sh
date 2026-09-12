@@ -79,6 +79,22 @@ echo; echo "##### Appendix A.6 (ICLR version) — spectral gap per run: permutat
 "$PY" scripts/plot_ballast_heatmap.py                   # -> figures/ballast_heatmap.png (the 4.6 exhibit)
 echo; echo "##### §5.6 / §5.7 — consensus limits and the multi-council reading #####"
 "$PY" scripts/consensus_limits.py
+echo; echo "##### POOLED THREE RUNS — the official (ICLR 2027 version) ratings: one factorisation over runs 1-3 #####"
+echo "#####   (scripts/pooled_components.py on run 1 alone reproduces the run-1 tables above; validated in its __main__)"
+"$PY" scripts/pooled_components.py                       # validation: run 1 alone == published council + twelve-basis tables
+RUNS=1,2 B=0 "$PY" scripts/pooled_council_tables.py      # emits data/total_rating_council_pooled12.csv, total_rating_twelve_pooled12.csv (Appendix F panel)
+"$PY" scripts/pooled_council_tables.py                   # emits data/total_rating_council_pooled123.csv (+ replicates), total_rating_twelve_pooled123.csv  (§4.4 leaderboard)
+"$PY" scripts/pooled_criterion_a.py                      # emits data/criterion_a_pooled123.csv (Appendix A.2 table; §3.4, §4.2 loadings)
+"$PY" scripts/pooled_ladder.py                           # Appendix D.1 ladder/compounds/regimes/bases on the pooled corpus (BCa intervals)
+"$PY" scripts/pooled_slope_full_bootstrap.py             # Appendix D.1 propagation on the pooled replicates; emits data/slope_band_full_pooled123.csv
+"$PY" scripts/pooled_ballast_sizing.py                   # Appendix A.6 sizing on the pooled corpus
+"$PY" scripts/pooled_ballast_table.py                    # Appendix A.6 per-seat table on the pooled corpus
+"$PY" scripts/pooled_vendor_alignment.py                 # §4.2 same-vendor robustness; A.5 G-vs-E + cosine CIs; emits data/alignment_cosine_pooled123.csv, g_vs_e_pooled123.csv
+"$PY" scripts/pooled_spectral_gap_checks.py              # Appendix A.6/F: per-run + pooled spectral gap, permutation null, u1 stability
+"$PY" scripts/per_run_components.py                      # Appendix F: four quarters per run (E^C from run 1's sweep) + run-to-run agreement; emits data/per_run_components.csv
+B=300 "$PY" scripts/per_run_contests.py                  # Appendix F: contest gaps per run (why no single-run rotation clears the guard)
+"$PY" scripts/plot_runs_panel.py                         # -> figures/runs_panel.png (Appendix F figure)
+TAG=pooled123 RCI="0.95, 0.99" "$PY" scripts/plot_total_validation_simple_pooled.py   # -> figures/total_validation_simple_pooled123.png (§4.5 figure; RCI = the BCa interval printed by pooled_ladder.py)
 echo; echo "##### manuscript consistency checks #####"
 "$PY" scripts/check_manuscript.py
 echo; echo "##### reproduce.sh complete #####"

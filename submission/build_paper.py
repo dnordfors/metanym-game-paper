@@ -1,516 +1,281 @@
 #!/usr/bin/env python3
-"""Build submission/paper.tex + paper.pdf from paper/metanym_game.md and the appendices.
+r"""Build submission/paper.tex + paper.pdf from paper/metanym_game_iclr27.md in the ICLR 2027 style.
 
-Pipeline (all deterministic):
-  1. combine  — manuscript body + appendices A–D (stubs replaced by full text),
-                figure paths re-pointed to submission/figures, REVIEW comments dropped
-  2. pandoc   — markdown -> latex fragment (--wrap=none; computed table widths)
-  3. postfix  — LTcaptype shim, breakable underscores and \\texttt paths,
-                \\RaggedRight table columns (hyphenation on)
-  4. tables   — every longtable becomes an unbreakable [H] float; the numeric tables
-                are re-set as YlGnBu heat tables (the arXiv-v1 style, heattables.py);
-                the metanym tables get a no-wrap slot column; the leaderboard gets a
-                page of its own
-  5. assemble — preamble.tex + body + \\end{document}; compile with tectonic
+Provenance: adapted from ../metanym-game-paper/submission/build_paper.py (arXiv pipeline); the
+ICLR style files in submission/style/ are the official iclr-2027-style-files.zip, untouched.
 
-Run from the repo root:  python3 submission/build_paper.py
-The preamble lives in submission/preamble.tex (hand-tuned; never regenerated).
+Pipeline (deterministic):
+  1. combine   — manuscript + appendices (stub links replaced by the files' content, headings
+                 demoted one level), every <comment: …> block dropped, figure paths re-pointed
+  2. guard     — anonymity assertions on the combined text (author name, repo URL, arXiv id)
+  3. pandoc    — markdown → LaTeX fragment (--wrap=none, wide --columns so pipe tables keep
+                 plain l/r/c columns), sections numbered by the style
+  4. postfix   — longtables → [t] table floats (caption above, per the ICLR template), wide
+                 tables scaled to the text width, figures width=\linewidth, the three statements
+                 as unnumbered subsections, References unnumbered, \appendix before the appendix
+  5. assemble  — ICLR preamble + body; compile with tectonic; read the main-text page count from
+                 the .aux and fail loudly if it exceeds the limit
+
+Run from the repo root:  python3 submission/build_paper.py [--limit 9]
 """
-import io
 import re
 import subprocess
 import sys
 from pathlib import Path
 
-import numpy as np
-
 ROOT = Path(__file__).resolve().parent.parent
 SUB = ROOT / "submission"
-MD = ROOT / "paper" / "metanym_game.md"
-APPENDICES = ["A_rating_estimators.md", "B_generation_and_evaluation_prompts.md",
-              "C_council_evaluation_gemini-2.5-flash.md", "D_gpqa_audit.md"]
-try:
-    from matplotlib import colormaps
-    cmap = colormaps["YlGnBu"]
-except ImportError:
-    from matplotlib import cm
-    cmap = cm.get_cmap("YlGnBu")
+MD = ROOT / "paper" / "metanym_game_iclr27.md"
+APPENDIX_DIR = ROOT / "paper" / "appendices"
+PAGE_LIMIT = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 9
+
+# Figure widths as a fraction of the text width, keyed by file stem (KeyError = unlisted figure).
+FIGURE_WIDTHS = {"council_evaluation_pc1": 0.36, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0}
+
+# Strings that must not survive into a double-blind submission.
+ANONYMITY_GUARDS = ["Nordfors", "dnordfors", "archetypes.ai", "2606.21008", "github.com/dnordfors"]
+
 
 # ---------------------------------------------------------------- 1. combine
-def combine():
+def combine() -> str:
     md = MD.read_text()
+    md = re.sub(r"<comment:.*?>\s*", "", md, flags=re.S)
+    assert "<comment:" not in md, "an unclosed <comment: block survived stripping"
+    # title line → \title; the style prints the anonymous author block itself
+    m = re.match(r"# (.+)\n", md)
+    assert m, "manuscript must start with a level-1 title line"
+    title = m.group(1)
+    md = md[m.end():]
+    # appendix stubs: "→ [`appendices/X.md`](appendices/X.md) — …" lines, in order
     i = md.find("## Appendices")
-    parts = [md[:i], "## Appendices\n"]
-    for f in APPENDICES:
-        t = (ROOT / "paper" / "appendices" / f).read_text()
-        t = re.sub(r"<!--.*?-->\s*", "", t, flags=re.S)
-        t = re.sub(r"^(#+)", r"#\1", t, flags=re.M)
+    assert i >= 0, "manuscript must contain a '## Appendices' section with stub links"
+    head, stubs = md[:i], md[i:]
+    files = re.findall(r"\]\(appendices/([^)]+\.md)\)", stubs)
+    assert files, "no appendix stub links found"
+    parts = [head, "\n```{=latex}\n\\endgroup\n\\clearpage\n\\appendix\n```\n"]
+    for f in files:
+        t = (APPENDIX_DIR / f).read_text()
+        t = re.sub(r"<comment:.*?>\s*", "", t, flags=re.S)
+        assert "<comment:" not in t, f"unclosed <comment: block in {f}"
+        # '# X. Title' → '## Title' (letters come from \appendix); demote the rest one level
+        t = re.sub(r"^# [A-Z]\. ", "## ", t, count=1, flags=re.M)
+        t = re.sub(r"^(##+) [A-Z]\.\d+ ", r"#\1 ", t, flags=re.M)
         parts.append(t.strip() + "\n")
     c = "\n".join(parts)
-    c = c.replace("](../reproduce/figures/", "](figures/")
     c = c.replace("](../submission/figures/", "](figures/")
-    c = re.sub(r"<!-- REVIEW.*?-->\s*", "", c, flags=re.S)
-    # Pandoc drops a bare <a id="..."> sitting in front of a table or figure.
-    # A span identifier survives and becomes \label{...}, which the hyperrefs need.
-    c = re.sub(r'<a id="([^"]+)"></a>', r'[]{#\1}', c)
+    c = re.sub(r'<a id="([^"]+)"></a>', r"[]{#\1}", c)  # survives pandoc as \label
     (SUB / "_paper_combined.md").write_text(c)
-    return c
+    return title, c
 
-# ---------------------------------------------------------------- 3. postfix
-def postfix(body):
-    body = body.replace("\\def\\LTcaptype{none}", "\\relax")
-    body = body.replace("\\_", "\\_\\allowbreak{}")
-    body = body.replace(">{\\raggedright\\arraybackslash}",
-                        ">{\\RaggedRight\\arraybackslash\\hspace{0pt}}")
-    body = body.replace("★", "\\(\\star\\)")
-    def tt(m):
-        inner = m.group(1)
-        if "/" in inner:
-            inner = inner.replace("/", "/\\allowbreak{}")
-        return "\\texttt{" + inner + "}"
-    return re.sub(r"\\texttt\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}", tt, body)
 
-# ------------------------------------------------- 4. heat-table helpers (v1)
-def cellcolor(v, vmin, vmax):
-    t = float(np.clip((v - vmin) / (vmax - vmin), 0.0, 1.0))
-    r, g, b, _ = cmap(t)
-    bg = "%02X%02X%02X" % (int(r * 255), int(g * 255), int(b * 255))
-    fg = "000000" if (0.299 * r + 0.587 * g + 0.114 * b) > 0.55 else "FFFFFF"
-    return bg, fg
+# ------------------------------------------------------------------ 2. guard
+def guard(text: str) -> None:
+    hits = [g for g in ANONYMITY_GUARDS if g.lower() in text.lower()]
+    assert not hits, f"double-blind violation — these strings appear in the build: {hits}"
 
-def datacell(v, vmin, vmax, fmt="{:.2f}"):
-    if v is None:
-        return r"\cellcolor[HTML]{EEEEEE}\textcolor[HTML]{777777}{n/a}"
-    bg, fg = cellcolor(v, vmin, vmax)
-    return r"\cellcolor[HTML]{%s}\textcolor[HTML]{%s}{%s}" % (bg, fg, fmt.format(v))
 
-def num(x):
-    x = x.strip().replace("**", "").replace("†", "")
-    return None if x.lower() in ("n/a", "na", "—", "-", "") else float(x)
+# ----------------------------------------------------------------- 4. postfix
+def unicode_fixes(body: str) -> str:
+    # The ICLR style uses the 8-bit Times fonts; map the symbols the manuscript uses.
+    for u, tex in {
+        "★": r"\ensuremath{\star}", "†": r"\ensuremath{\dagger}", "≈": r"\ensuremath{\approx}",
+        "≥": r"\ensuremath{\ge}", "≤": r"\ensuremath{\le}", "×": r"\ensuremath{\times}",
+        "→": r"\ensuremath{\rightarrow}", "●": r"\ensuremath{\bullet}", "ρ": r"\ensuremath{\rho}",
+        "σ": r"\ensuremath{\sigma}", "Δ": r"\ensuremath{\Delta}", "−": r"\ensuremath{-}",
+        "§": r"\S{}", "…": r"\ldots{}", "—": "---", "–": "--", "ć": r"\'{c}", "ä": r"\"{a}",
+        "ć": r"\'{c}", "“": "``", "”": "''", "‘": "`", "’": "'",
+    }.items():
+        body = body.replace(u, tex)
+    left = sorted({ch for ch in body if ord(ch) > 127})
+    assert not left, f"unmapped non-ASCII characters remain: {left}"
+    return body
 
-def clean(s):
-    return (s.replace("**", "").replace("★", r"$\star$").replace("⎯", "")
-             .strip().replace("_", r"\_"))
 
-def clean_math(s):
-    return s.replace("**", "").replace("★", r"$\star$").strip()
+def tables_to_floats(body: str) -> str:
+    """pandoc longtable → table float with the caption above, scaled to the text width when wide."""
+    pat = re.compile(
+        r"\\begin\{longtable\}\[\]\{(?P<cols>.*?)\}\n"
+        r"(?:\\caption\{(?P<cap>.*?)\}\\tabularnewline\n)?"
+        r"(?P<rest>.*?)\\end\{longtable\}", re.S)
 
-def split_val_ci(s):
-    m = re.match(r"([-\d.]+)\s*(\[.*\])?", s.strip().replace("**", ""))
-    return float(m.group(1)), (m.group(2) or "")
+    def one(m):
+        cols, cap, rest = m.group("cols"), m.group("cap"), m.group("rest")
+        label = ""
+        if cap:
+            lm = re.search(r"\\label\{([^}]+)\}", cap)
+            if lm:
+                label = lm.group(0)
+                cap = cap.replace(label, "")
+        # keep the first header block only; drop the repeated head and the foot markers
+        rest = re.sub(r"\\endfirsthead\n.*?\\endhead\n", "", rest, flags=re.S)
+        rest = rest.replace("\\bottomrule\\noalign{}\n\\endlastfoot\n", "")
+        assert "\\end" not in rest, "unexpected longtable structure: " + rest[:200]
+        rest = rest.strip() + "\n\\bottomrule"
+        ncols = len(re.findall(r"[lrc]", cols))
+        rows = [r for r in rest.split("\\\\") if "&" in r]
+        cells = [[c.strip() for c in r.split("&")] for r in rows]
+        maxlen = [max(len(c[i]) for c in cells if len(c) > i) for i in range(ncols)]
+        widest_row = max(sum(len(c) for c in row) for row in cells)
+        prose = max(maxlen) > 60
+        wide = (not prose) and (ncols >= 6 or ("ballast" in (cap or "")) or ("cos(G,E)" in rest) or widest_row > 90)
+        if prose:  # prose cells: paragraph columns, widths by content, never scaled
+            total = sum(maxlen)
+            cols = "".join(">{\\raggedright\\arraybackslash}p{%.2f\\linewidth}" % (0.98 * m / total)
+                           for m in maxlen)
+        tab = "\\begin{tabular}{" + cols + "}\n" + rest + "\n\\end{tabular}"
+        if wide:
+            tab = "\\resizebox{\\linewidth}{!}{" + tab + "}"
+        out = "\\begin{table}[htb]\n"
+        if cap:
+            out += "\\caption{" + cap.strip() + "}\n" + (label + "\n" if label else "")
+        out += "\\begin{center}" + ("\\footnotesize" if prose else "\\small") + "\n" + tab + "\n\\end{center}\n\\end{table}"
+        return out
 
-def md_rows(combined, anchor, pred):
-    lines = combined.splitlines()
-    s = next(i for i, l in enumerate(lines) if anchor in l)
-    out = []
-    for l in lines[s:]:
-        if not l.startswith("|"):
-            if out:
-                break
-            continue
-        c = [x.strip() for x in l.strip("|").split("|")]
-        if pred(c):
-            out.append(c)
-        elif out:
-            if all(x and set(x) <= set("⎯—-–: ") for x in c):
-                continue
-            break
-    return out
+    n = len(pat.findall(body))
+    body = pat.sub(one, body)
+    assert "\\begin{longtable}" not in body, "a longtable survived conversion"
+    print(f"{n} tables converted to floats")
+    return body
 
-def wrap(caption, body):
-    return ("\\begin{table}[H]\n\\centering\n\\caption{%s}\n\\par\\nobreak\\smallskip\n"
-            "{\\tablefont\\footnotesize\\setlength{\\tabcolsep}{0pt}"
-            "\\renewcommand{\\arraystretch}{1.5}\n%s\n}\n\\end{table}" % (caption, body))
 
-def wrap_page(caption, body, heading="Final leaderboard"):
-    return ("\\clearpage\n\\begingroup\\centering\\null\\vfill\n"
-            "{\\tablefont\\LARGE\\bfseries %s\\par}\\smallskip\n"
-            "\\captionof{table}{%s}\\par\\medskip\n"
-            "{\\tablefont\\normalsize\\setlength{\\tabcolsep}{0pt}"
-            "\\renewcommand{\\arraystretch}{1.7}\n%s\\par}\n"
-            "\\vfill\\endgroup\\clearpage" % (heading, caption, body))
 
-def replace_longtable(tex, marker, newblock):
-    pat = re.compile(r"(?:\{\\relax % do not increment counter\n)?"
-                     r"\\begin\{longtable\}.*?\\end\{longtable\}\n?\}?", re.S)
-    n = [0]
-    def repl(m):
-        if marker in m.group(0) and n[0] == 0:
-            n[0] += 1
-            return newblock
-        return m.group(0)
-    tex2 = pat.sub(repl, tex)
-    assert n[0] == 1, f"no longtable matched marker {marker!r}"
-    return tex2
+# ------------------------------------------------ heat tables (YlGnBu, as in the arXiv build)
+_YLGNBU = [(255,255,217),(237,248,177),(199,233,180),(127,205,187),(65,182,196),(29,145,192),(34,94,168),(37,52,148),(8,29,88)]
+def _cellcolor(v, vmin, vmax):
+    t = min(max((v - vmin) / (vmax - vmin), 0.0), 1.0) * (len(_YLGNBU) - 1)
+    i = min(int(t), len(_YLGNBU) - 2); f = t - i
+    r, g, b = (round(_YLGNBU[i][k] + f * (_YLGNBU[i + 1][k] - _YLGNBU[i][k])) for k in range(3))
+    fg = "000000" if (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.55 else "FFFFFF"
+    return "%02X%02X%02X" % (r, g, b), fg
 
-# ------------------------------------------------------------ heated tables
-def build_consistency(md):
-    rows = md_rows(md, "| Evaluator | factual | beauty",
-                   lambda c: len(c) == 7 and any(ch.isalpha() for ch in c[0]) and "Evaluator" not in c[0])
-    axes = ["factual", "beauty", "intel", "distinct", "length", "struct"]
-    hdr = (r"\multicolumn{1}{l}{\textbf{Evaluator}} & "
-           + " & ".join(r"\multicolumn{1}{c}{\textbf{%s}}" % a for a in axes) + r"\\")
-    L = [r"\begin{tabular}{B H!{\vrule width 1pt} H H H H H}", r"\toprule", hdr, r"\midrule"]
-    for i, r in enumerate(rows):
-        L.append(clean(r[0]) + " & " + " & ".join(datacell(num(x), 0.0, 1.0) for x in r[1:]) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap("Anchor-sweep consistency, per evaluator and axis.", "\n".join(L))
+# caption substring -> (vmin, vmax); every numeric cell of a matching table is coloured by its leading number
+HEAT = {"Final leaderboard": (0.0, 10.0), "Anchor-sweep consistency": (0.0, 1.0),
+        "Per-criterion generator quality": (0.0, 10.0), "by contest composition": (0.0, 10.0), "aggregation ladder": (0.0, 1.0),
+        "on the full roster and on the leading eight": (0.0, 1.0),
+        "three full re-runs": [(0.0, 10.0), (0.0, 10.0), (0.0, 10.0), (0.0, 1.0)],          # T1, T2, T3 on the rubric; SD in rating points
+        "two instruments side by side": [(0.0, 10.0), (0.0, 100.0)],                       # T anchored 1-10; GPQA accuracy in %
+        "Evaluator factual competence": [(0.0, 1.0), (0.0, 10.0), None, (0.0, 10.0), None]}  # loading; anchored; CI; G^F; CI
+_NUM = re.compile(r"^\s*(?:\\textbf\{)?(-?\d+(?:\.\d+)?)")
 
-def build_GE(md):
-    rows = md_rows(md, "| ★ claude-opus-4.5 | 7.0",
-                   lambda c: len(c) == 11 and any(ch.isalpha() for ch in c[0]) and "Model" not in c[0])
-    data = [r for r in rows if "cos" not in r[0].lower()]
-    cosrow = next((r for r in rows if "cos" in r[0].lower()), None)
-    crit = ["beauty", "intel", "distinct", "length", "struct"]
-    top = (r"\multicolumn{1}{l}{} & "
-           + " & ".join(r"\multicolumn{2}{c}{\textbf{%s}}" % c for c in crit) + r"\\")
-    sub = (r"\multicolumn{1}{l}{\textbf{Model}} & "
-           + " & ".join([r"\multicolumn{1}{c}{$G$} & \multicolumn{1}{c}{$E$}"] * 5) + r"\\")
-    L = [r"\begin{tabular}{B HH" + "!{\\vrule width 1pt}HH" * 4 + r"}",
-         r"\toprule", top, sub, r"\midrule"]
-    for r in data:
-        L.append(clean(r[0]) + " & "
-                 + " & ".join(datacell(num(x), 0.0, 10.0, "{:.1f}") for x in r[1:]) + r"\\")
-    if cosrow:
-        cells = [x.strip().replace("**", "") for x in cosrow[1:]]
-        cos = [cells[i] for i in (0, 2, 4, 6, 8)]
-        cis = [cells[i] for i in (1, 3, 5, 7, 9)]
-        L.append(r"\midrule")
-        L.append(r"\textbf{cos(G,E)} & "
-                 + " & ".join(r"\multicolumn{2}{c}{\textbf{%s}}" % c for c in cos) + r"\\")
-        L.append(r"{\footnotesize 95\% CI} & "
-                 + " & ".join(r"\multicolumn{2}{c}{\footnotesize %s}" % c for c in cis) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap("Per-criterion generator quality (G) vs evaluator reliability (E).", "\n".join(L))
+def heat_cell(cell, vmin, vmax):
+    m = _NUM.match(cell)
+    if not m or "%" in cell and vmax == 10.0:
+        return cell
+    v = float(m.group(1))
+    if vmax == 10.0 and v > 10.0:   # a rank or a count in a rating table: leave it
+        return cell
+    bg, fg = _cellcolor(v, vmin, vmax)
+    return "\\cellcolor[HTML]{%s}\\textcolor[HTML]{%s}{%s}" % (bg, fg, cell.strip())
 
-def build_leaderboard(md):
-    rows = md_rows(md, "| Rank | Model | Council | **$T$",
-                   lambda c: len(c) == 6 and c[0].strip().isdigit())
-    cs = (r"{>{\centering\arraybackslash}m{1.0cm} B >{\centering\arraybackslash}m{1.6cm}"
-          r"!{\vrule width 1pt} >{\centering\arraybackslash}m{1.5cm} >{\centering\arraybackslash}m{2.4cm} "
-          r">{\centering\arraybackslash}m{1.5cm} >{\centering\arraybackslash}m{1.5cm}}")
-    hdr = (r"\multicolumn{1}{c}{\textbf{Rank}} & \multicolumn{1}{l}{\textbf{Model}} & "
-           r"\multicolumn{1}{c}{\textbf{Council}} & \multicolumn{1}{c}{\textbf{$T$}} & "
-           r"\multicolumn{1}{c}{\textbf{95\% CI}} & \multicolumn{1}{c}{\textbf{$E$}} & "
-           r"\multicolumn{1}{c}{\textbf{$G$}}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
-    prev = "council"
-    for rank, model, council, tcell, e, g in rows:
-        cl = "council" if "council" in council else "--"
-        if prev == "council" and cl != "council":
-            L.append(r"\midrule[\heavyrulewidth]")
-        prev = cl
-        tval, tci = split_val_ci(tcell)
-        L.append(clean(rank) + " & " + clean(model) + " & " + cl + " & "
-                 + datacell(tval, 0, 10) + " & " + tci + " & "
-                 + datacell(num(e), 0, 10) + " & " + datacell(num(g), 0, 10) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    cap = (r"Total rating \(T\) (95\% CI) with its evaluator (\(E\)) and generator (\(G\)) "
-           r"halves; all twelve models ranked, council seats marked. The anchor "
-           r"(claude-opus-4.5) is 7 by construction.")
-    return wrap_page(cap, "\n".join(L))
-
-def build_breakdown(md):
-    rows = md_rows(md, "| Rank | Model | Council? | $G^{F}$",
-                   lambda c: len(c) == 7 and c[0].strip().isdigit())
-    top = (r"\multicolumn{3}{l}{} & \multicolumn{2}{c}{\textbf{generation}} & "
-           r"\multicolumn{2}{c}{\textbf{evaluation}}\\")
-    sub = (r"\multicolumn{1}{l}{\textbf{\#}} & \multicolumn{1}{l}{\textbf{Model}} & "
-           r"\multicolumn{1}{l}{\textbf{Council}} & \multicolumn{1}{c}{$G^{F}$} & \multicolumn{1}{c}{$G^{C}$} & "
-           r"\multicolumn{1}{c}{$E^{F}$} & \multicolumn{1}{c}{$E^{C}$}\\")
-    L = [r"\begin{tabular}{>{\centering\arraybackslash}m{0.6cm} B >{\centering\arraybackslash}m{1.3cm} "
-         r"HH!{\vrule width 1pt}HH}", r"\toprule", top, sub, r"\midrule"]
-    prev = "council"
-    for rank, model, council, gf, gc, ef, ec in rows:
-        cl = "council" if "council" in council else "--"
-        if prev == "council" and cl != "council":
-            L.append(r"\midrule[\heavyrulewidth]")
-        prev = cl
-        cells = [datacell(num(x), 0, 10) for x in (gf, gc, ef, ec)]
-        L.append(clean(rank) + " & " + clean(model) + " & " + cl + " & " + " & ".join(cells) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap(r"Competence breakdown --- the four anchored components behind each model's "
-                r"evaluator (\(E\)) and generator (\(G\)) scores.", "\n".join(L))
-
-def build_critA(md):
-    rows = md_rows(md, "| Model | $E^{F}$ loading",
-                   lambda c: len(c) == 6 and "Model" not in c[0] and "---" not in c[0]
-                   and any(ch.isalnum() for ch in c[0]))
-    cs = (r"{B >{\centering\arraybackslash}m{1.5cm} >{\centering\arraybackslash}m{1.6cm} "
-          r">{\centering\arraybackslash}m{1.8cm}!{\vrule width 1pt} "
-          r">{\centering\arraybackslash}m{1.1cm} >{\centering\arraybackslash}m{1.8cm}}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Model}} & "
-           r"\multicolumn{1}{c}{\textbf{\shortstack{$E^{F}$\\loading}}} & "
-           r"\multicolumn{1}{c}{\textbf{\shortstack{$E^{F}$\\anchored}}} & "
-           r"\multicolumn{1}{c}{\textbf{95\% CI}} & "
-           r"\multicolumn{1}{c}{\textbf{$G^{F}$}} & \multicolumn{1}{c}{\textbf{95\% CI}}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
-    for model, load, anch, eci, gf, gci in rows:
-        dag = r"$\dagger$" if "†" in anch else ""
-        L.append(clean(model) + " & " + datacell(num(load), 0, 1) + " & "
-                 + datacell(num(anch), 0, 10) + dag + " & " + clean(eci) + " & "
-                 + datacell(num(gf), 0, 10) + " & " + clean(gci) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap("Evaluator factual competence and generator factuality (key-free SVD).", "\n".join(L))
-
-def build_vendor(md):
-    rows = md_rows(md, "| Evaluator set | Spearman",
-                   lambda c: len(c) == 4 and "Evaluator set" not in c[0] and "---" not in c[0] and c[0].strip())
-    cs = (r"{>{\raggedright\arraybackslash}m{3.7cm} >{\centering\arraybackslash}m{2.0cm} "
-          r">{\centering\arraybackslash}m{2.6cm} >{\centering\arraybackslash}m{2.2cm}}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Evaluator set}} & "
-           r"\multicolumn{1}{c}{\textbf{\shortstack{Spearman\\vs full}}} & "
-           r"\multicolumn{1}{c}{\textbf{\shortstack{Claude\\generators}}} & "
-           r"\multicolumn{1}{c}{\textbf{\shortstack{GPT-4o\\family}}}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\addlinespace[2pt]\midrule"]
-    for panel, sp, cla, gpt in rows:
-        L.append(clean_math(panel) + " & " + datacell(num(sp), 0, 1) + " & "
-                 + clean_math(cla) + " & " + clean_math(gpt) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap("Same-vendor robustness of the factual ordering.", "\n".join(L))
-
-def build_council(md):
-    rows = md_rows(md, "| Council member | Factual competence",
-                   lambda c: len(c) == 3 and "Council member" not in c[0] and "---" not in c[0])
-    cs = (r"{B >{\centering\arraybackslash}m{1.2cm} >{\centering\arraybackslash}m{2.0cm}!{\vrule width 1pt} "
-          r">{\centering\arraybackslash}m{1.2cm} >{\centering\arraybackslash}m{2.0cm}}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Council member}} & \multicolumn{2}{c}{\textbf{Factual competence}} & "
-           r"\multicolumn{2}{c}{\textbf{Rating consistency}}\\")
-    sub = (r"\multicolumn{1}{l}{} & \multicolumn{1}{c}{} & \multicolumn{1}{c}{95\% CI} & "
-           r"\multicolumn{1}{c}{} & \multicolumn{1}{c}{95\% CI}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, sub, r"\midrule"]
-    for member, fac, crit in rows:
-        fv, fci = split_val_ci(fac)
-        cv, cci = split_val_ci(crit)
-        L.append(clean(member) + " & " + datacell(fv, 0, 0.6) + " & " + clean(fci)
-                 + " & " + datacell(cv, 0, 1) + " & " + clean(cci) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap("The initial council --- the five reliable evaluators.", "\n".join(L))
-
-def build_gpqa_side(md):
-    rows = md_rows(md, "| Model | $T$ | GPQA",
-                   lambda c: len(c) == 3 and "Model" not in c[0] and "---" not in c[0] and c[0].strip())
-    cs = (r"{B >{\centering\arraybackslash}m{1.8cm} >{\centering\arraybackslash}m{2.6cm}}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{$T$}} & "
-           r"\multicolumn{1}{c}{\textbf{GPQA Diamond (\%)}}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
-    for model, t, q in rows:
-        L.append(clean(model) + " & " + datacell(num(t), 0, 10) + " & "
-                 + datacell(num(q), 0, 100, "{:.1f}") + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap(r"The two instruments side by side --- the key-free total rating \(T\) "
-                r"(§4.7) and self-administered GPQA Diamond accuracy (voids counted as "
-                r"wrong), sorted by \(T\).", "\n".join(L))
-
-def build_reruns(md):
-    rows = md_rows(md, "| Model | $T_1$",
-                   lambda c: len(c) == 5 and "Model" not in c[0] and "---" not in c[0] and c[0].strip())
-    cs = (r"{B >{\centering\arraybackslash}m{1.35cm} >{\centering\arraybackslash}m{1.35cm} "
-          r">{\centering\arraybackslash}m{1.35cm}!{\vrule width 1pt} >{\centering\arraybackslash}m{1.35cm}}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Model}} & \multicolumn{1}{c}{\textbf{$T_1$}} & "
-           r"\multicolumn{1}{c}{\textbf{$T_2$}} & \multicolumn{1}{c}{\textbf{$T_3$}} & "
-           r"\multicolumn{1}{c}{\textbf{SD}}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
-    for model, t1, t2, t3, sd in rows:
-        L.append(clean(model) + " & " + " & ".join(datacell(num(x), 0, 10) for x in (t1, t2, t3))
-                 + " & " + datacell(num(sd), 0, 1) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap(r"Total rating \(T\) across three full re-runs (run 1 = the bootstrap "
-                r"generation, re-analysed on the council basis; runs 2--3 the same day), "
-                r"all on the council basis of §4.7.", "\n".join(L))
-
-def build_ballast(md):
-    rows = md_rows(md, "| Seat | council alone",
-                   lambda c: len(c) == 6 and "Seat" not in c[0] and "---" not in c[0] and c[0].strip())
-    cols = ["council alone", "+1 ballast", "+2 ballast", "+3 ballast", r"all 12 (§4.2)"]
-    cs = (r"{B >{\centering\arraybackslash}m{1.55cm} >{\centering\arraybackslash}m{1.45cm}"
-          r"!{\vrule width 1.2pt} >{\centering\arraybackslash}m{1.45cm}!{\vrule width 1.2pt} "
-          r">{\centering\arraybackslash}m{1.45cm} >{\centering\arraybackslash}m{1.6cm}}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Seat}} & "
-           + " & ".join(r"\multicolumn{1}{c}{\textbf{\shortstack{%s}}}" % c.replace(" ", r"\\")
-                        for c in cols) + r"\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
-    for r in rows:
-        L.append(clean(r[0]) + " & "
-                 + " & ".join(datacell(num(x), 0, 10) for x in r[1:]) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    cap = (r"Each seat's anchored \(E^{F}\) by contest composition --- 0--3 ballast blocks "
-           r"(mean over the seven possible contestants) beside the reference from all 12 "
-           r"participants (§4.2). Council alone, the column is scrambled; from two ballast "
-           r"on, the contest reproduces the reference (mean \(|\Delta|\) 0.33 over the seven "
-           r"contests, and the same seat is lowest in all seven). The ruled column is the "
-           r"protocol's configuration. Values from \texttt{scripts/ballast\_sizing.py} via "
-           r"\texttt{scripts/plot\_ballast\_heatmap.py}.")
-    return wrap(cap, "\n".join(L))
-
-# ---------------------------------------------- metanym tables (no-wrap slots)
-def metanym_table(block):
-    """Re-set a 6-column metanym longtable: natural no-wrap slot column,
-    domains share the rest; footnotesize, unbreakable [H] float."""
-    capm = re.search(r"\\caption\{(.*?)\}\\tabularnewline", block, re.S)
-    caption = capm.group(1) if capm else None
-    body_part = block.split("\\endlastfoot", 1)[1]
-    rows = [l for l in body_part.splitlines()
-            if "&" in l and "\\end{longtable}" not in l]
-    hdrm = re.findall(r"\\begin\{minipage\}[^\n]*\n(.*?)\n\\end\{minipage\}", block, re.S)
-    headers = [h.strip() for h in hdrm[:6]] or None
-    def slotlen(r):
-        c = r.split("&")[0]
-        c = c.replace("\\_\\allowbreak{}", "_").replace("\\allowbreak{}", "")
-        c = c.replace("\\_", "_").replace("\\", "").replace("{", "").replace("}", "")
-        return len(c.strip())
-    slot_chars = max((slotlen(r) for r in rows), default=12)
-    slotw = f"{slot_chars * 5.3 + 3:.0f}pt"
-    dom = r">{\RaggedRight\arraybackslash\hspace{0pt}}p{\dimexpr(\linewidth-%s-12\tabcolsep)/5\relax}" % slotw
-    cs = "{>{\\arraybackslash}p{%s} %s}" % (slotw, " ".join([dom] * 5))
-    L = [r"\begin{tabular}" + cs, r"\toprule"]
-    if headers:
-        L.append(r"\multicolumn{1}{l}{\textbf{%s}} & " % headers[0]
-                 + " & ".join(r"\textbf{%s}" % h for h in headers[1:]) + r"\\")
-        L.append(r"\midrule")
-    L += rows
-    L += [r"\bottomrule", r"\end{tabular}"]
-    inner = ("{\\tablefont\\scriptsize\\setlength{\\tabcolsep}{3pt}"
-             "\\renewcommand{\\arraystretch}{1.3}\n" + "\n".join(L) + "\n}")
-    if caption:
-        return ("\\begin{table}[H]\n\\centering\n\\caption{%s}\n\\par\\nobreak\\smallskip\n%s\n\\end{table}"
-                % (caption, inner))
-    return "\\begin{center}\n" + inner + "\n\\end{center}"
-
-def fix_metanym_tables(tex):
-    pat = re.compile(r"(?:\{\\relax % do not increment counter\n)?"
-                     r"\\begin\{longtable\}.*?\\end\{longtable\}\n?\}?", re.S)
-    n = [0]
-    def repl(m):
-        block = m.group(0)
-        first_cells = re.search(r"\\endlastfoot\s*\n([A-Z\\_{}]+) &", block)
-        if first_cells and ("NAVIGATOR" in block or "INTERDEPENDENCY" in block
-                            or "PERTURBATION" in block or "\\{SLOT" in block
-                            or re.search(r"\\endlastfoot\s*\n[A-Z]{4,}", block)):
-            n[0] += 1
-            return metanym_table(block)
-        return block
-    tex2 = pat.sub(repl, tex)
-    return tex2, n[0]
-
-# ------------------------------------- remaining longtables -> [H] tabulars
-def unbreak_rest(tex):
-    pat = re.compile(r"(?:\{\\relax % do not increment counter\n)?"
-                     r"\\begin\{longtable\}(\[\])?\{(.*?)\}\n(.*?)\\end\{longtable\}\n?\}?", re.S)
-    n = [0]
-    def repl(m):
-        spec, inner = m.group(2), m.group(3)
-        capm = re.search(r"\\caption\{(.*?)\}\\tabularnewline", inner, re.S)
-        caption = capm.group(1) if capm else None
-        if "\\endlastfoot" not in inner:
+def heat_tables(body):
+    def one(m):
+        cap, tab = m.group(1), m.group(2)
+        rng = next((r for k, r in HEAT.items() if k in cap), None)
+        if not rng:
             return m.group(0)
-        if "\\endfirsthead" in inner:
-            head_part = inner.split("\\endfirsthead", 1)[0]
-        else:
-            head_part = inner.split("\\endhead", 1)[0]
-        body = inner.split("\\endlastfoot", 1)[1]
-        head = head_part
-        if capm:
-            head = head.replace(capm.group(0), "")
-        head = head.replace("\\noalign{}", "")
-        body = body.replace("\\noalign{}", "")
-        n[0] += 1
-        tab = ("\\begin{tabular}{" + spec + "}\n" + head.strip() + "\n"
-               + body.strip() + "\n\\end{tabular}")
-        inner_block = ("{\\tablefont\\small\\setlength{\\tabcolsep}{4pt}\n" + tab + "\n}")
-        if caption:
-            return ("\\begin{table}[H]\n\\centering\n\\caption{%s}\n\\par\\nobreak\\smallskip\n%s\n\\end{table}"
-                    % (caption, inner_block))
-        return "\\begin{center}\n" + inner_block + "\n\\end{center}"
-    return pat.sub(repl, tex), n[0]
+        lines = tab.split("\n"); out = []; header = True
+        for ln in lines:
+            if "\\midrule" in ln: header = False
+            if header or "&" not in ln:
+                out.append(ln); continue
+            cells = ln.split("&"); tail = ""
+            if cells[-1].rstrip().endswith("\\\\"):
+                cells[-1] = cells[-1].rstrip()[:-2]; tail = " \\\\"
+            first = cells[0]
+            vm = rng if "SD" not in lines[1] else rng
+            ranges = rng if isinstance(rng, list) else [rng] * (len(cells) - 1)
+            assert len(ranges) >= len(cells) - 1, ("per-column ranges do not cover the table", cap[:40])
+            out.append(first + "&" + "&".join(c if r is None else heat_cell(c, *r) for c, r in zip(cells[1:], ranges)) + tail)
+        return m.group(0).replace(tab, "\n".join(out))
+    return re.sub(r"\\caption\{(.*?)\}\n(?:\\label\{[^}]*\}\n)?\\begin\{center\}\\small\n(?:\\resizebox\{\\linewidth\}\{!\}\{)?(\\begin\{tabular\}.*?\\end\{tabular\})", one, body, flags=re.S)
+
+def postfix(body: str) -> str:
+    body = tables_to_floats(body)
+    body = heat_tables(body)
+    body = body.replace("\\pandocbounded{\\includegraphics[keepaspectratio]{",
+                        "\\includegraphics[width=\\linewidth]{")
+    def fig(m):
+        name = Path(m.group(1)).stem
+        return "\\includegraphics[width=%.2f\\linewidth]{%s}" % (FIGURE_WIDTHS[name], m.group(1))
+    body = re.sub(r"\\includegraphics(?:\[.*?\])?\{([^}]+)\}", fig, body, flags=re.S)
+    body = body.replace("\\begin{figure}\n", "\\begin{figure}[t]\n")
+    for s in ("AI use statement", "Ethics statement", "Reproducibility statement"):
+        body = re.sub(r"\\section\{" + s + r"\}\\label\{[^}]*\}", r"\\subsection*{" + s + "}", body)
+    body = re.sub(r"\\section\{References\}\\label\{[^}]*\}",
+                  r"\\section*{References}\n\\begingroup\\small\\setlength{\\parindent}{-1.5em}"
+                  r"\\setlength{\\leftskip}{1.5em}", body)
+    # move the pandoc span-labels that precede a float into the float, after its caption
+    body = re.sub(r"\\protect\\phantomsection\\label\{(tab-[^}]+)\}\{\}\n\n(\\begin\{table\}\[htb\]\n\\caption\{.*?\}\n)",
+                  r"\2\\label{\1}\n", body, flags=re.S)
+    body = re.sub(r"\\protect\\phantomsection\\label\{(fig-[^}]+)\}\{\}\n\n(\\begin\{figure\}.*?\\caption\{.*?\}(?:\\label\{[^}]*\})?\n)",
+                  r"\2\\label{\1}\n", body, flags=re.S)
+    assert "phantomsection\\label{tab-" not in body and "phantomsection\\label{fig-" not in body, "a float label was not moved into its float"
+    assert "\\appendix" in body, "appendix marker lost"
+    body = body.replace("\\begin{verbatim}", "\\begin{lstlisting}").replace("\\end{verbatim}", "\\end{lstlisting}")
+    body = body.replace("\\_", "\\_\\allowbreak{}")
+    return unicode_fixes(body)
 
 
-def build_d_ladder(md):
-    rows = md_rows(md, "| Quantity | Pearson $r$ | Spearman",
-                   lambda c: len(c) == 5 and "Quantity" not in c[0] and "---" not in c[0] and c[0].strip())
-    cs = (r"{>{\RaggedRight\arraybackslash\hspace{0pt}\hyphenpenalty=10000\exhyphenpenalty=10000}m{4.95cm} "
-          r">{\centering\arraybackslash}m{1.6cm} >{\centering\arraybackslash}m{1.7cm} "
-          r">{\centering\arraybackslash}m{1.85cm} >{\centering\arraybackslash}m{1.85cm}}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Quantity}} & \multicolumn{1}{c}{\textbf{\shortstack{Pearson\\$r$}}} & "
-           r"\multicolumn{1}{c}{\textbf{\shortstack{Spearman\\$\rho$}}} & \multicolumn{1}{c}{\textbf{\shortstack{Fisher-$z$\\95\%}}} & "
-           r"\multicolumn{1}{c}{\textbf{\shortstack{BCa\\95\%}}}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
-    for q, pe, sp, fz, bca in rows:
-        L.append(clean_math(q) + " & " + datacell(num(pe), 0, 1) + " & " + datacell(num(sp), 0, 1)
-                 + " & " + clean_math(fz) + " & " + clean_math(bca) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap("The aggregation ladder --- each component's GPQA correlation, then the total's.", "\n".join(L))
+PREAMBLE = r"""\documentclass{article}
+\usepackage{iclr2027_conference,times}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,longtable,array,calc}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{float}
+\usepackage{listings}
+\lstset{breaklines=true,breakatwhitespace=false,basicstyle=\ttfamily\scriptsize,columns=fullflexible,keepspaces=true,extendedchars=true}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\providecommand{\real}[1]{#1}
+\graphicspath{{./}{figures/}}
+%\iclrfinalcopy % Uncomment for camera-ready version, but NOT for submission.
+"""
 
-def build_d_subjective(md):
-    rows = md_rows(md, "| Subjective quarter | Estimator |",
-                   lambda c: len(c) == 4 and "Subjective quarter" not in c[0] and "---" not in c[0] and c[0].strip())
-    cs = (r"{>{\RaggedRight\arraybackslash\hspace{0pt}}m{2.9cm} "
-          r">{\RaggedRight\arraybackslash\hspace{0pt}}m{6.1cm} H H}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Subjective quarter}} & \multicolumn{1}{l}{\textbf{Estimator}} & "
-           r"\multicolumn{1}{c}{\textbf{$r$}} & \multicolumn{1}{c}{\textbf{$\rho$}}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
-    for q, est, pe, sp in rows:
-        L.append(clean_math(q) + " & " + clean_math(est) + " & "
-                 + datacell(num(pe), 0, 1) + " & " + datacell(num(sp), 0, 1) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap("The two subjective quarters, and the declined variant, against GPQA.", "\n".join(L))
 
-def build_d_regimes(md):
-    rows = md_rows(md, "| Quantity | Full roster",
-                   lambda c: len(c) == 3 and "Quantity" not in c[0] and "---" not in c[0] and c[0].strip())
-    cs = (r"{>{\RaggedRight\arraybackslash\hspace{0pt}}m{3.6cm} "
-          r">{\centering\arraybackslash}m{2.6cm} >{\centering\arraybackslash}m{2.6cm}}")
-    hdr = (r"\multicolumn{1}{l}{\textbf{Quantity}} & \multicolumn{1}{c}{\textbf{Full roster ($n=12$)}} & "
-           r"\multicolumn{1}{c}{\textbf{Leading eight ($n=8$)}}\\")
-    L = [r"\begin{tabular}" + cs, r"\toprule", hdr, r"\midrule"]
-    for q, full, lead in rows:
-        L.append(clean_math(q) + " & " + datacell(num(full), 0, 1) + " & "
-                 + datacell(num(lead), 0, 1) + r"\\")
-    L += [r"\bottomrule", r"\end{tabular}"]
-    return wrap("Regime invariance --- the same correlations within the leading band alone.", "\n".join(L))
-
-# -------------------------------------------------------------------- main
-def main():
-    md = combine()
-    subprocess.run(["/opt/homebrew/bin/pandoc", "_paper_combined.md", "-f", "markdown", "-t", "latex",
-                    "--wrap=none", "-o", "_body.tex"], cwd=SUB, check=True)
-    body = (SUB / "_body.tex").read_text()
-    body = postfix(body)
-
-    # heat the numeric tables (marker = a distinctive cell/caption substring)
-    body = replace_longtable(body, "Anchor-sweep consistency, per evaluator and axis", build_consistency(md))
-    body = replace_longtable(body, "Per-criterion generator quality", build_GE(md))
-    body = replace_longtable(body, "Final leaderboard --- total rating", build_leaderboard(md))
-    for marker, builder in [
-        ("Competence breakdown --- the four anchored components", build_breakdown),
-        ("Evaluator factual competence and generator factuality (key-free SVD)", build_critA),
-        ("Same-vendor robustness of the factual ordering", build_vendor),
-        ("The initial council --- the five reliable evaluators", build_council),
-        ("The two instruments side by side", build_gpqa_side),
-        ("across three full re-runs", build_reruns),
-        ("by contest composition", build_ballast),
-        ("BCa bootstrap 95", build_d_ladder),
-        ("Subjective quarter", build_d_subjective),
-        ("Leading eight", build_d_regimes),
-    ]:
-        body = replace_longtable(body, marker, builder(md))
-
-    body, nm = fix_metanym_tables(body)
-    body, nr = unbreak_rest(body)
-    print(f"tables: heated 10, metanym-set {nm}, unbroken {nr}")
-
-    tex = (SUB / "preamble.tex").read_text() + body + "\n\\end{document}\n"
+# --------------------------------------------------------------- 5. assemble
+def main() -> None:
+    title, combined = combine()
+    guard(combined)
+    pandoc = subprocess.run(
+        ["pandoc", "-f", "markdown+pipe_tables+tex_math_dollars+raw_tex", "-t", "latex",
+         "--wrap=none", "--columns=4000", "--top-level-division=section", "--shift-heading-level-by=-1", "--no-highlight",
+         str(SUB / "_paper_combined.md")],
+        check=True, capture_output=True, text=True).stdout
+    body = postfix(pandoc)
+    body = re.sub(r"(\\(?:sub)*section)\{\d+(?:\.\d+)* ", r"\1{", body)  # drop hand-typed numbers
+    body = body.replace("\\section{Abstract}\\label{abstract}", "\\begin{abstract}", 1)
+    assert "\\section{Introduction}" in body, "no Introduction section after the abstract"
+    body = body.replace("\\section{Introduction}", "\\end{abstract}\n\\section{Introduction}", 1)
+    tex = (PREAMBLE + "\\title{" + title + "}\n\\author{Anonymous}\n\\begin{document}\n\\maketitle\n"
+           + body + "\n\\end{document}\n")
+    # attach the end-of-main-text label to the conclusion's last paragraph, so its page is the page that paragraph ends on
+    assert "\n\n\\subsection*{AI use statement}" in tex
+    tex = tex.replace("\n\n\\subsection*{AI use statement}", "\\label{endmain}\n\n\\subsection*{AI use statement}", 1)
+    i = tex.index("\\appendix")
+    tex = tex[:i] + tex[i:].replace("\\begin{table}[htb]", "\\begin{table}[H]").replace("\\begin{figure}[t]", "\\begin{figure}[H]")
+    guard(tex)
     (SUB / "paper.tex").write_text(tex)
-    r = subprocess.run(["/opt/homebrew/bin/tectonic", "-X", "compile", "paper.tex"], cwd=SUB,
-                       capture_output=True, text=True)
-    over = re.findall(r"Overfull \\hbox \(([\d.]+)pt", r.stderr)
-    errs = [l for l in r.stderr.splitlines() if l.startswith("error")]
-    undef = sorted(set(re.findall(r"Hyper reference `([^']+)' .* undefined", r.stderr)))
-    print("errors:", errs or "none")
-    print("undefined refs:", undef or "none")
-    print("overfull:", sorted(set(float(x) for x in over), reverse=True)[:6] or "none")
-    if errs or undef:
-        sys.exit(1)
+
+    r = subprocess.run(["tectonic", "-k", "--keep-logs", "-Z", "search-path=style", "-Z", "search-path=.", "paper.tex"],
+                       cwd=SUB, capture_output=True, text=True)
+    log = (SUB / "paper.log").read_text() if (SUB / "paper.log").exists() else r.stderr
+    if r.returncode != 0:
+        print(r.stderr[-4000:])
+        raise SystemExit("tectonic failed")
+    aux = (SUB / "paper.aux").read_text()
+    m = re.search(r"\\newlabel\{endmain\}\{\{[^}]*\}\{(\d+)\}", aux)
+    assert m, "endmain label not found in paper.aux — the AI use statement heading was not emitted"
+    end_page = int(m.group(1))
+    overfull = len(re.findall(r"Overfull \\hbox", log))
+    print(f"paper.pdf built. Main text ends on page {end_page} (limit {PAGE_LIMIT}); "
+          f"{overfull} overfull hboxes; {len(re.findall(r'LaTeX Warning: Reference', log))} unresolved refs.")
+    if end_page > PAGE_LIMIT:
+        raise SystemExit(f"OVER THE PAGE LIMIT: main text runs to page {end_page}, limit is {PAGE_LIMIT}")
+
 
 if __name__ == "__main__":
     main()

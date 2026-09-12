@@ -52,3 +52,7 @@ One line each; full definitions in Appendix A.
 
 All confidence intervals reported by these scripts are 95% percentile bootstrap intervals as
 defined in Appendix A.
+
+## Pooled three runs (ICLR 2027 version)
+
+The conference version pools the three full runs; its numbers come from the `scripts/pooled_*.py`, `per_run_*.py` and `plot_runs_panel.py` steps at the end of `reproduce.sh` (see the last section of `DATA_MANIFEST.md`). The arXiv v2 numbers are the run-1 numbers of the sections above.
