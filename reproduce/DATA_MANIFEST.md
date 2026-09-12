@@ -143,3 +143,4 @@ tables above (asserted in its `__main__`). All outputs below are deterministic (
 | *(stdout)* | `scripts/per_run_contests.py` — per-run contests: contestant E^F vs twelve-basis, contest gaps | §4.6, Appendix F |
 | `figures/runs_panel.png` | `scripts/plot_runs_panel.py` — three runs apart + pooled, against GPQA | Appendix F figure |
 | `figures/total_validation_simple_pooled123.png` | `scripts/plot_total_validation_simple_pooled.py` — pooled T vs GPQA (copied to the ICLR folder as `total_validation_simple.png`) | Fig. 2 |
+| *(stdout)* | `scripts/archetype_recurrence.py` — archetype titles and domains from the evaluation transcripts: titles kept verbatim between runs, titles shared across models, models offering a resource-allocation archetype, domains used by five or more models | §6 hypothesis paragraph |

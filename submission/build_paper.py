@@ -82,7 +82,7 @@ def unicode_fixes(body: str) -> str:
         "≥": r"\ensuremath{\ge}", "≤": r"\ensuremath{\le}", "×": r"\ensuremath{\times}",
         "→": r"\ensuremath{\rightarrow}", "●": r"\ensuremath{\bullet}", "ρ": r"\ensuremath{\rho}",
         "σ": r"\ensuremath{\sigma}", "Δ": r"\ensuremath{\Delta}", "−": r"\ensuremath{-}",
-        "§": r"\S{}", "…": r"\ldots{}", "—": "---", "–": "--", "ć": r"\'{c}", "ä": r"\"{a}",
+        "§": r"\S{}", "…": r"\ldots{}", "—": "---", "–": "--", "ć": r"\'{c}", "ä": r"\"{a}", "é": r"\'{e}",
         "ć": r"\'{c}", "“": "``", "”": "''", "‘": "`", "’": "'",
     }.items():
         body = body.replace(u, tex)

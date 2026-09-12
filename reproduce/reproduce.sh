@@ -95,6 +95,8 @@ RUNS=1,2 B=0 "$PY" scripts/pooled_council_tables.py      # emits data/total_rati
 B=300 "$PY" scripts/per_run_contests.py                  # Appendix F: contest gaps per run (why no single-run rotation clears the guard)
 "$PY" scripts/plot_runs_panel.py                         # -> figures/runs_panel.png (Appendix F figure)
 TAG=pooled123 RCI="0.95, 0.99" "$PY" scripts/plot_total_validation_simple_pooled.py   # -> figures/total_validation_simple_pooled123.png (§4.5 figure; RCI = the BCa interval printed by pooled_ladder.py)
+echo; echo "##### §6 (ICLR version) — archetype recurrence across runs and models (retrieval signature) #####"
+"$PY" scripts/archetype_recurrence.py
 echo; echo "##### manuscript consistency checks #####"
 "$PY" scripts/check_manuscript.py
 echo; echo "##### reproduce.sh complete #####"
