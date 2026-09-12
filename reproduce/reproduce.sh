@@ -73,6 +73,9 @@ echo; echo "##### §4.9 — robustness to regeneration (N=3) #####"
 "$PY" scripts/compare_runs.py "$RUNS_GEN" "$REGEN2" "$REGEN3" --sweep "$RUNS_SWEEP"
 echo; echo "##### §4.6 — sizing the ballast (why two) #####"
 "$PY" scripts/ballast_sizing.py
+
+echo; echo "##### Appendix A.6 (ICLR version) — spectral gap per run: permutation noise edge, u1 stability, second pattern #####"
+"$PY" scripts/spectral_gap_checks.py
 "$PY" scripts/plot_ballast_heatmap.py                   # -> figures/ballast_heatmap.png (the 4.6 exhibit)
 echo; echo "##### §5.6 / §5.7 — consensus limits and the multi-council reading #####"
 "$PY" scripts/consensus_limits.py
