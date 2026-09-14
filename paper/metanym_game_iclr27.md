@@ -37,7 +37,7 @@ A second example, authored by a player — one archetype from the submission tha
 | MEMORY       | methylation state    | route memory      | experience           | momentum         | path integration    |
 | NOISE        | Brownian motion      | wind              | market volatility    | stochastic noise | environmental noise |
 
-Table: The anchor's first archetype as a metanym table. MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration — five mechanisms sharing a structural role without being synonyms.
+Table: The anchor's first archetype as a metanym table. MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration — five mechanisms that are metaphorically synonymous in the archetypal context — metanyms.
 
 Each parallel context is played in two forms: the **instantiation** (Form a), the mechanical substitution — only the slots filled, every other word carried over — which is what the factual grading acts on, because it must come out true sentence by sentence; and the **idiomatic rewrite** (Form b) in the target domain's own register, showing the claim is not an artefact of the template's phrasing. One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
 

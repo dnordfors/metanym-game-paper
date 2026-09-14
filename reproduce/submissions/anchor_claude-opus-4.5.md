@@ -33,7 +33,7 @@ The **Idiomatic rewrite**, *Form (b)*, restates the same propositions in the tar
 | MEMORY       | methylation state    | route memory           | experience           | momentum               | path integration     |
 | NOISE        | Brownian motion      | wind                   | market volatility    | stochastic noise       | environmental noise  |
 
-Note the span [the table](#tab-anchor-metanym) achieves on a single row. MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's accumulated experience, an optimiser's momentum term, and an ant's path integration — five mechanisms that share a structural role without being synonyms. It is this property, rather than domain count, that the *domain span* criterion scores (§4.3), and the council repeatedly cited its absence in weaker portfolios.
+Note the span [the table](#tab-anchor-metanym) achieves on a single row. MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's accumulated experience, an optimiser's momentum term, and an ant's path integration — five mechanisms that are metaphorically synonymous in the archetypal context — metanyms. It is this property, rather than domain count, that the *domain span* criterion scores (§4.3), and the council repeatedly cited its absence in weaker portfolios.
 
 ### Bacterial Chemotaxis
 
