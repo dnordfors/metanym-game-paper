@@ -147,3 +147,4 @@ tables above (asserted in its `__main__`). All outputs below are deterministic (
 | *(stdout)* | `scripts/compression_ratio.py` — words of the anchor's first archetype: template, metanym table, the five rewrites; compression factor at five contexts and per added context | §6 hypothesis paragraph |
 | *(stdout)* | `scripts/gpqa_reply_lengths.py` — words per GPQA reply per model, bare-letter replies | Appendix H |
 | `figures/council_evaluation_pc1_wide.png` | `scripts/plot_council_evaluation_wide.py` — the same exhibit in landscape for the ICLR text width | Figure 1 (ICLR version) |
+| `figures/council_evaluation_pc1_compact.png` | `scripts/plot_council_evaluation_compact.py` — the instantiation and the clause each of the five judges singles out | Figure 1 (ICLR version); the full exhibit is its Appendix C |

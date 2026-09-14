@@ -47,7 +47,7 @@ Its metanym table: MEMORY is realised as a bacterium's methylation state, a clim
 
 Table: PARTBTABLE
 
-Each parallel context is played in two forms: the **instantiation** (Form a), the mechanical substitution — only the slots filled, every other word carried over — which is what the factual grading acts on, because it must come out true sentence by sentence; and the **idiomatic rewrite** (Form b) in the target domain's own register, showing the claim is not an artefact of the template's phrasing.
+Each parallel context is played in two forms: the **instantiation** (Form a), the mechanical substitution — only the slots filled, every other word carried over — the form the factual criterion is written for, since it must come out true sentence by sentence (the judge sees both forms); and the **idiomatic rewrite** (Form b) in the target domain's own register, showing the claim is not an artefact of the template's phrasing.
 
 | | |
 |---|---|
@@ -87,7 +87,7 @@ Three design choices justify themselves on first principles. **A fixed anchor**:
 
 <a id="fig-council-evaluation"></a>
 
-![One parallel context under evaluation: the instantiation with its metanyms marked, and two of the five judges with their justifications (all five, the rewrite and the administrator's synthesis in Appendix C). The "Reference" is the anchor, pinned at 7. All five judges isolate the same clause; the disagreement that remains, 4 versus 5, is about severity.](../submission/figures/council_evaluation_pc1_wide.png)
+![One parallel context under evaluation: the instantiation with its metanyms marked, and the five judges' ratings with the clause each one singles out. All five isolate the same clause; the disagreement that remains, 4 versus 5, is about severity. The whole evaluation, with the rewrite, the administrator's synthesis and every justification, is Figure \ref{fig-council-evaluation-full} in Appendix C.](../submission/figures/council_evaluation_pc1_compact.png)
 
 ### 3.3 Two key-free estimators
 

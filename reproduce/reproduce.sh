@@ -69,7 +69,8 @@ echo; echo "##### §4.8 + Appendix D — GPQA exhibits and audit #####"
 "$PY" scripts/plot_total_validation.py                   # -> figures/total_validation.png (the 4.8 figure, T vs GPQA)
 "$PY" scripts/plot_anchoring_resolution.py               # -> figures/anchoring_resolution.png (the 4.2 figure + both F values)
 "$PY" scripts/plot_council_evaluation.py                # -> figures/council_evaluation_pc1.png (the 3.2 exhibit, verbatim from Appendix C)
-"$PY" scripts/plot_council_evaluation_wide.py           # -> figures/council_evaluation_pc1_wide.png (the ICLR version's Figure 1, landscape)
+"$PY" scripts/plot_council_evaluation_wide.py           # -> figures/council_evaluation_pc1_wide.png (landscape variant)
+"$PY" scripts/plot_council_evaluation_compact.py        # -> figures/council_evaluation_pc1_compact.png (the ICLR version's Figure 1)
 echo; echo "##### §4.9 — robustness to regeneration (N=3) #####"
 "$PY" scripts/compare_runs.py "$RUNS_GEN" "$REGEN2" "$REGEN3" --sweep "$RUNS_SWEEP"
 echo; echo "##### §4.6 — sizing the ballast (why two) #####"

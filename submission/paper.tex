@@ -71,7 +71,7 @@ NOISE & Brownian motion & wind & market volatility & stochastic noise & environm
 \bottomrule
 \end{tabular}}
 \end{center}
-\vspace{4pt}\begin{flushleft}\footnotesize Each parallel context is played in two forms: the \textbf{instantiation} (Form a), the mechanical substitution --- only the slots filled, every other word carried over --- which is what the factual grading acts on, because it must come out true sentence by sentence; and the \textbf{idiomatic rewrite} (Form b) in the target domain's own register, showing the claim is not an artefact of the template's phrasing.\end{flushleft}
+\vspace{4pt}\begin{flushleft}\footnotesize Each parallel context is played in two forms: the \textbf{instantiation} (Form a), the mechanical substitution --- only the slots filled, every other word carried over --- the form the factual criterion is written for, since it must come out true sentence by sentence (the judge sees both forms); and the \textbf{idiomatic rewrite} (Form b) in the target domain's own register, showing the claim is not an artefact of the template's phrasing.\end{flushleft}
 \begin{center}\footnotesize
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}p{0.71\linewidth}}
 \toprule\noalign{}
@@ -119,8 +119,8 @@ Three design choices justify themselves on first principles. \textbf{A fixed anc
 
 \begin{figure}[t]
 \centering
-\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/council_evaluation_pc1_wide.png}}
-\caption{One parallel context under evaluation: the instantiation with its metanyms marked, and two of the five judges with their justifications (all five, the rewrite and the administrator's synthesis in Appendix C). The ``Reference'' is the anchor, pinned at 7. All five judges isolate the same clause; the disagreement that remains, 4 versus 5, is about severity.}
+\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/council_evaluation_pc1_compact.png}}
+\caption{One parallel context under evaluation: the instantiation with its metanyms marked, and the five judges' ratings with the clause each one singles out. All five isolate the same clause; the disagreement that remains, 4 versus 5, is about severity. The whole evaluation, with the rewrite, the administrator's synthesis and every justification, is Figure \ref{fig-council-evaluation-full} in Appendix C.}
 \label{fig-council-evaluation}
 \end{figure}
 
@@ -884,6 +884,13 @@ Everything else --- the six criteria and their scope tags, the terminology block
 \section{A council evaluation, worked}\label{a-council-evaluation-worked}
 
 The released package contains one complete council evaluation from the canonical run: \textbf{gemini-2.5-flash}'s portfolio (the \emph{target}) --- a mid-leaderboard submission, strong enough to show the models play the game competently yet flawed enough to draw substantive commentary --- scored by five evaluators: the four council seats other than the target, joined by claude-sonnet-4, the marginal case of \S{}4.3. The rubric operates at three levels and the record reproduces one unit of each in full: a \textbf{parallel context}, graded for factual truth sentence by sentence; an \textbf{archetype-level axis}, where the five score a whole archetype on one non-factual criterion; and the whole-portfolio structural-diversity judgement. Each unit shows the submitted material --- instantiation (Form a) and idiomatic rewrite (Form b), metanyms capitalised --- with all five evaluators' ratings and comments and an administrator's synthesis of the anonymised council view (evaluators relabelled by a deterministic shuffle for the administrator's view only; the administrator is a Claude Opus model). Every evaluation in the run is released in the same form --- one file per (evaluator, portfolio) pair holding a factual score for each instantiated passage and a score on each of the other five axes, with justifications --- so any other unit can be inspected the same way. Three units are reproduced here, verbatim.
+
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/council_evaluation_pc1.png}}
+\caption{The first unit whole: the instantiation with its metanyms marked and the idiomatic rewrite (top), the administrator's synthesis (middle), and three of the five judges' ratings with their justifications (bottom); the other two follow in C.1. Figure 1 of the main text is the compact form of this exhibit.}
+\label{fig-council-evaluation-full}
+\end{figure}
 
 \subsection{A plain error, and the council converges}\label{a-plain-error-and-the-council-converges}
 

@@ -2,6 +2,10 @@
 
 The released package contains one complete council evaluation from the canonical run: **gemini-2.5-flash**'s portfolio (the *target*) — a mid-leaderboard submission, strong enough to show the models play the game competently yet flawed enough to draw substantive commentary — scored by five evaluators: the four council seats other than the target, joined by claude-sonnet-4, the marginal case of §4.3. The rubric operates at three levels and the record reproduces one unit of each in full: a **parallel context**, graded for factual truth sentence by sentence; an **archetype-level axis**, where the five score a whole archetype on one non-factual criterion; and the whole-portfolio structural-diversity judgement. Each unit shows the submitted material — instantiation (Form a) and idiomatic rewrite (Form b), metanyms capitalised — with all five evaluators' ratings and comments and an administrator's synthesis of the anonymised council view (evaluators relabelled by a deterministic shuffle for the administrator's view only; the administrator is a Claude Opus model). Every evaluation in the run is released in the same form — one file per (evaluator, portfolio) pair holding a factual score for each instantiated passage and a score on each of the other five axes, with justifications — so any other unit can be inspected the same way. Three units are reproduced here, verbatim.
 
+<a id="fig-council-evaluation-full"></a>
+
+![The first unit whole: the instantiation with its metanyms marked and the idiomatic rewrite (top), the administrator's synthesis (middle), and three of the five judges' ratings with their justifications (bottom); the other two follow in C.1. Figure 1 of the main text is the compact form of this exhibit.](../submission/figures/council_evaluation_pc1.png)
+
 ## C.1 A plain error, and the council converges
 
 The first parallel context of the target's first archetype, *Resource Allocation Under Scarcity*, instantiated in ecosystem management (Figure 1 of the main text shows the same unit):

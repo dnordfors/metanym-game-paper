@@ -19,7 +19,10 @@ FORM_A = grab(r"\*\*Instantiation \(Form a\):\*\*(.*?)\n\n")
 JUDGES = re.findall(r"\*\*([\w.\-]+)\*\* — Rating: (\d)\s*\n(.*?)(?=\n\n\*\*|\n\n#|\Z)", blk, re.S); assert len(JUDGES) == 5
 DISPLAY = {"opus-4.5": "Opus 4.5", "opus-4.1": "Opus 4.1", "opus-4.0": "Opus 4.0", "sonnet-4": "Sonnet 4", "3.1-pro": "Gemini 3.1"}
 def quoted_clause(just):
-    m = re.search(r"[\"“](nature must make natural selections[^\"”]*)[\"”]", just, re.I); assert m, just[:80]; return m.group(1)
+    """The clause the judge quotes; one judge paraphrases instead, so fall back to its own words around 'natural selection'."""
+    m = re.search(r"[\"“](nature must make natural selections[^\"”]*)[\"”]", just, re.I)
+    if m: return m.group(1)
+    m = re.search(r"([^.;,]*natural selection[^.;,]*)", just, re.I); assert m, just[:80]; return m.group(1).strip()
 W = 5.5; M, PAD = 1.2, 1.0; BODY = 6.8
 def is_metanym(tok):
     core = tok.strip(".,;:()'\"“”"); return len(core) > 1 and core.isupper()
