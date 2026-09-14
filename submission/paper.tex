@@ -1198,27 +1198,27 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Training a language model is compression} (cited). Predicting text is compressing it (Shannon, 1951); a trained model is a general-purpose compressor (Del\'{e}tang et al., 2024).
+  \textbf{Cited.} Training a language model is compression. Predicting text is compressing it (Shannon, 1951); a trained model is a general-purpose compressor (Del\'{e}tang et al., 2024).
 \item
-  \textbf{Training selects what is compressed} (cited, by construction of the objective). The loss is taken on held-out text, so an abstraction earns its place only by predicting instantiations the model has not seen, and the abstractions that recur most across the corpus earn the most. A situation structure that appears in biology, economics and stories alike is one.
+  \textbf{Cited.} Training selects what is compressed, by construction of the objective. The loss is taken on held-out text, so an abstraction earns its place only by predicting instantiations the model has not seen, and the abstractions that recur most across the corpus earn the most. A situation structure that appears in biology, economics and stories alike is one.
 \item
-  \textbf{Compression generalises} (cited). The shortest description keeps a recurring pattern once, as an abstraction, and reuses it (Rissanen, 1978); that is a concept.
+  \textbf{Cited.} Compression generalises. The shortest description keeps a recurring pattern once, as an abstraction, and reuses it (Rissanen, 1978); that is a concept.
 \item
-  \textbf{A concept is a frame with open slots} (cited). Minsky's (1974) frames are stereotyped situations with terminals that instances fill; the context template of \S{}2 is such a frame, written in words.
+  \textbf{Cited.} A concept is a frame with open slots. Minsky's (1974) frames are stereotyped situations with terminals that instances fill; the context template of \S{}2 is such a frame, written in words.
 \item
-  \textbf{An analogy is a shared relational structure with different particulars} (cited; Gentner, 1983). The archetypal context is that shared structure.
+  \textbf{Cited.} An analogy is a shared relational structure with different particulars (Gentner, 1983). The archetypal context is that shared structure.
 \item
   \textbf{Hypothesis.} A language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies. The template is the abstraction; the metanym set is what the abstraction leaves out, the topic domain; the two reconstruct the instantiation exactly.
 \item
-  \textbf{The metanym form is strong compression} (measured, H.2). About 3 for a template with five parallel contexts and about 8 for each further one, growing with every domain a template serves --- the order of the compression a trained model achieves on text, in words rather than bits. The factor grows because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it, and no instantiation here repeats another. This is the abstracting kind of compression, the kind held-out loss rewards; a representation this compressive is what training would find.
+  \textbf{Measured (H.2).} The metanym form is strong compression. About 3 for a template with five parallel contexts and about 8 for each further one, growing with every domain a template serves --- the order of the compression a trained model achieves on text, in words rather than bits. The factor grows because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it, and no instantiation here repeats another. This is the abstracting kind of compression, the kind held-out loss rewards; a representation this compressive is what training would find.
 \item
-  \textbf{The game measures the mechanism directly} (hypothesis). Nothing is given; the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out.
+  \textbf{Hypothesis.} The game measures the mechanism directly. Nothing is given; the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out.
 \item
-  \textbf{GPQA measures the mechanism's use} (hypothesis, with H.4 as the observation). The archetype and the domain are given by the question; the model derives the instantiation and selects the candidate that matches it. The two tests agree because they exercise one operation from opposite ends: GPQA fixes the store position and selects among four strings, the game selects the store position and fixes the output form.
+  \textbf{Hypothesis (H.4 is the observation).} GPQA measures the mechanism's use. The archetype and the domain are given by the question; the model derives the instantiation and selects the candidate that matches it. The two tests agree because they exercise one operation from opposite ends: GPQA fixes the store position and selects among four strings, the game selects the store position and fixes the output form.
 \item
-  \textbf{Corollary: retrieval, not construction} (hypothesis, with H.3 as the signature). In the game the models retrieve templates and metanym sets that training already compressed, which is why they play well with no reasoning channel and why a model rewrites its portfolios between runs but keeps its archetypes.
+  \textbf{Hypothesis (H.3 is the signature).} Corollary: retrieval, not construction. In the game the models retrieve templates and metanym sets that training already compressed, which is why they play well with no reasoning channel and why a model rewrites its portfolios between runs but keeps its archetypes.
 \item
-  \textbf{What the data establish is narrower.} The factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (\S{}4.5, Appendix D.1). The hypothesis is consistent with the general factor of Ili\'{c} and Gignac (2024), and more specific.
+  \textbf{Established.} What the data establish is narrower. The factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (\S{}4.5, Appendix D.1). The hypothesis is consistent with the general factor of Ili\'{c} and Gignac (2024), and more specific.
 \end{enumerate}
 
 \subsection{The compression of the metanym form}\label{the-compression-of-the-metanym-form}
