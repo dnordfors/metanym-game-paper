@@ -241,6 +241,7 @@ def postfix(body: str) -> str:
 
 
 PREAMBLE = r"""\documentclass{article}
+\usepackage[T1]{fontenc}   % tectonic (XeTeX) defaults to TU, under which Times (ptm) has no shapes and the text falls back to Latin Modern without bold
 \usepackage{iclr2027_conference,times}
 \usepackage{hyperref}
 \usepackage{url}
