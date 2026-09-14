@@ -77,7 +77,7 @@ Three design choices justify themselves on first principles. **A fixed anchor**:
 
 <a id="fig-council-evaluation"></a>
 
-![One evaluation, shown whole: the instantiation with its metanyms marked and the idiomatic rewrite, the administrator's synthesis, and two of the five judges with their justifications (all five in Appendix C). The "Reference" is the anchor, pinned at 7. All five judges isolate the same clause; the disagreement that remains, 4 versus 5, is about severity.](../submission/figures/council_evaluation_pc1_wide.png)
+![One parallel context under evaluation: the instantiation with its metanyms marked, and two of the five judges with their justifications (all five, the rewrite and the administrator's synthesis in Appendix C). The "Reference" is the anchor, pinned at 7. All five judges isolate the same clause; the disagreement that remains, 4 versus 5, is about severity.](../submission/figures/council_evaluation_pc1_wide.png)
 
 ### 3.3 Two key-free estimators
 

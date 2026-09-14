@@ -61,14 +61,14 @@ def render(H):
         top = y0
         tn = ax.text(RX + PAD, top - PAD - 1.0, DISPLAY.get(name, name), fontsize=BODY + 0.4, fontweight="bold", color=INK, va="center", zorder=3)
         nx = RX + PAD + h_of(tn)[1] + 2.2
-        ax.add_patch(Circle((nx + 1.3, top - PAD - 1.0), 1.5, facecolor=ORANGE, edgecolor=SURFACE, lw=0.8, zorder=3))
+        ax.plot([nx + 1.3], [top - PAD - 1.0], "o", ms=13, mfc=ORANGE, mec=SURFACE, mew=0.8, zorder=3)
         ax.text(nx + 1.3, top - PAD - 1.05, rating, fontsize=BODY + 0.2, fontweight="bold", color="white", ha="center", va="center", zorder=4)
         y = flow(RX + PAD, top - PAD - 3.0, RW - 2 * PAD, "“" + re.sub(r"\s+", " ", just).strip() + "”")
         bot = y - PAD + 0.4; box(RX, top, RW, bot); y0 = bot - 1.0
     top = y0; gy = top - PAD - 1.0
     tl = ax.text(RX + PAD, gy, "+ 3 more judges:", fontsize=BODY, fontweight="bold", color=INK2, va="center", zorder=3); gx = RX + PAD + h_of(tl)[1] + 2.4
     for name, rating, _ in HIDDEN:
-        ax.add_patch(Circle((gx, gy), 1.2, facecolor=GREY, edgecolor=SURFACE, lw=0.8, zorder=3))
+        ax.plot([gx], [gy], "o", ms=11, mfc=GREY, mec=SURFACE, mew=0.8, zorder=3)
         ax.text(gx, gy - 0.05, rating, fontsize=BODY, fontweight="bold", color="white", ha="center", va="center", zorder=4)
         tn = ax.text(gx + 1.7, gy, DISPLAY.get(name, name), fontsize=BODY, color=INK2, va="center", zorder=3); gx += 1.7 + h_of(tn)[1] + 2.0
     bot_right = gy - 2.0; box(RX, top, RW, bot_right, fill=SURFACE, dashed=True)
