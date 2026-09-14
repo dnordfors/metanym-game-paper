@@ -154,7 +154,9 @@ def merge_table_parts(body: str) -> str:
         prev_start = body.rfind("\\begin{table}[htb]\n", 0, prev_end)
         part_a = body[prev_start:prev_end]
         # parts are stacked with a small gap and no (a)/(b) labels: the caption names them and the reader sees which is which
-        part_a2 = part_a.replace("\\end{center}\n\\end{table}", "\\end{center}\n\\vspace{4pt}\\begin{center}" + size_b + "\n" + tab_b + "\n\\end{center}\n\\end{table}")
+        between = body[prev_end:start_b].strip()          # a paragraph written between the parts stays with them, above the next part
+        lead = ("\\begin{flushleft}" + size_b + " " + between + "\\end{flushleft}\n") if between else ""
+        part_a2 = part_a.replace("\\end{center}\n\\end{table}", "\\end{center}\n\\vspace{4pt}" + lead + "\\begin{center}" + size_b + "\n" + tab_b + "\n\\end{center}\n\\end{table}")
         body = body[:prev_start] + part_a2 + body[end_b:]
         print("merged a part-(b) table into the float before it")
     return body

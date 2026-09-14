@@ -28,7 +28,9 @@ Table \ref{tab-anchor-metanym} is one archetype as a player wrote it — the fir
 |---|
 | A [NAVIGATOR] moves through a [SPACE] by sensing local [GRADIENT] and adjusting its [TRAJECTORY] accordingly. The [NAVIGATOR] cannot perceive the entire [SPACE] at once; it relies on [SENSOR] that detect changes in [SIGNAL] concentration or intensity. When [GRADIENT] are steep and consistent, the [NAVIGATOR] converges efficiently toward [ATTRACTOR]. When [GRADIENT] are shallow, noisy, or conflicting, the [NAVIGATOR] may stall, oscillate, or become trapped in local [ATTRACTOR]. [INTERFERENCE] can distort the [GRADIENT], causing the [NAVIGATOR] to veer off course. Successful navigation requires not only sensitive [SENSOR] but also [MEMORY] of recent [TRAJECTORY] to distinguish genuine [GRADIENT] from transient [NOISE]. Some [NAVIGATOR] emit their own [SIGNAL] to recruit other [NAVIGATOR] toward the same [ATTRACTOR], creating collective [TRAJECTORY] that amplify the original [GRADIENT]. |
 
-Table: The anchor's first archetype (§4.1), as a player wrote it. (a) The context template. (b) Its metanym table: MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration — five mechanisms that are metaphorically synonymous in the archetypal context — metanyms. (c) Its first column played, first sentence of each form.
+Table: The anchor's first archetype (§4.1), as a player wrote it: the context template, its metanym table, and its first column played, first sentence of each form.
+
+Its metanym table: MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration — five mechanisms that are metaphorically synonymous in the archetypal context — metanyms.
 
 | [SLOT]       | Bacterial Chemotaxis | Mountain Climbing | Career Development   | Gradient Descent | Ant Foraging        |
 |--------------|----------------------|-------------------|----------------------|------------------|---------------------|
@@ -45,6 +47,8 @@ Table: The anchor's first archetype (§4.1), as a player wrote it. (a) The conte
 
 Table: PARTBTABLE
 
+Each parallel context is played in two forms: the **instantiation** (Form a), the mechanical substitution — only the slots filled, every other word carried over — which is what the factual grading acts on, because it must come out true sentence by sentence; and the **idiomatic rewrite** (Form b) in the target domain's own register, showing the claim is not an artefact of the template's phrasing.
+
 | | |
 |---|---|
 | Form (a), instantiation | A BACTERIUM moves through a CHEMICAL ENVIRONMENT by sensing local CHEMICAL GRADIENTS and adjusting its SWIMMING PATH accordingly. |
@@ -52,7 +56,7 @@ Table: PARTBTABLE
 
 Table: PARTBTABLE
 
-Each parallel context is played in two forms: the **instantiation** (Form a), the mechanical substitution — only the slots filled, every other word carried over — which is what the factual grading acts on, because it must come out true sentence by sentence; and the **idiomatic rewrite** (Form b) in the target domain's own register, showing the claim is not an artefact of the template's phrasing. One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
+One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
 
 ### 2.2 The rules
 
