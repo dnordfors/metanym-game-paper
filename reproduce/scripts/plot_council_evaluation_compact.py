@@ -51,7 +51,7 @@ def render(H):
     t = ax.text(M + PAD, top - PAD, "INSTANTIATION — FORM (a)", fontsize=BODY, fontweight="bold", color=BLUE, va="top", zorder=3)
     ya = flow(M + PAD, top - PAD - h_of(t)[0] - 0.6, LW - 2 * PAD, FORM_A); bot_left = ya - PAD + 0.4; box(M, top, LW, bot_left)
     RX = M + LW + 1.6; RW = 100 - M - RX
-    t = ax.text(RX, top - PAD, "THE FIVE JUDGES — THE CLAUSE EACH CITES", fontsize=BODY, fontweight="bold", color=BLUE, va="top", zorder=3)
+    t = ax.text(RX, top - PAD, "JUDGES — THE CLAUSE EACH CITES", fontsize=BODY, fontweight="bold", color=BLUE, va="top", zorder=3)
     y = top - PAD - h_of(t)[0] - 1.6
     for name, rating, just in JUDGES:
         ax.plot([RX + 1.6], [y - 1.0], "o", ms=11, mfc=ORANGE, mec=SURFACE, mew=0.8, zorder=3)
