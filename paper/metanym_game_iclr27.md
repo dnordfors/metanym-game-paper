@@ -171,7 +171,7 @@ We ran the full pipeline three times, regenerating all twelve portfolios at T=0 
 
 <a id="fig-mechanism"></a>
 
-![A hypothesis for the 0.98 correlation between the GPQA and Metanym Game benchmarks: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype ($\alpha$, $\beta$, $\gamma$) is held once, about eight times the size of a domain's instantiation (the slices); each domain adds only its metanym set. GPQA offers four candidate instantiations, and the completion is the one that matches what is stored: the mechanism in use. The game offers nothing, and the completion is an archetype with five instantiations: the mechanism itself.](../submission/figures/mechanism_sketch.png)
+![A hypothesis for the 0.98 correlation between the GPQA and Metanym Game benchmarks: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype ($\alpha$, $\beta$, $\gamma$) is held once, about eight times the size of a domain's instantiation (the slices); each domain adds only its metanym set. A GPQA question retrieves one instantiation, which the model then matches with the four candidates: the mechanism in use. The game offers nothing, and the completion is an archetype with five instantiations: the mechanism itself.](../submission/figures/mechanism_sketch.png)
 
 **Steering signal, and its caveat.** Self-improvement, the council governing its own rules, is specified but not yet exercised. A system optimised against $T$ is optimised against a consensus it participates in, so gains can come from courting the consensus rather than from capability; the partial answers are the two quarters consensus does not own and independently constituted councils.
 

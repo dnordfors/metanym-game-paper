@@ -1,10 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="545" viewBox="0 0 1100 545" font-family="Helvetica, Arial, sans-serif" font-size="20">
-<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker><marker id="arrO" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#2f6fd6" fill-opacity="0.45"/></marker></defs>
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs>
 <rect width="1100" height="545" fill="#ffffff"/>
 <rect x="30" y="80" width="300" height="150" rx="8" fill="#e8f1fb" stroke="#2f6fd6" stroke-width="2"/>
 <text x="44" y="112" font-size="22" font-weight="bold" fill="#1b4a99">GPQA prompt</text>
 <text x="44" y="144" fill="#333">Which energy difference</text><text x="44" y="170" fill="#333">resolves two states with</text>
 <text x="44" y="196" fill="#333">lifetimes 10⁻⁹ s and 10⁻⁸ s?</text><text x="44" y="222" fill="#333">Candidates A, B, C, D.</text>
+<path d="M334,156 L366,156" fill="none" stroke="#2f6fd6" stroke-width="3" marker-end="url(#arr)"/>
 <rect x="30" y="345" width="300" height="150" rx="8" fill="#fff4e5" stroke="#e08a1e" stroke-width="2"/>
 <text x="44" y="377" font-size="22" font-weight="bold" fill="#8a4b00">Metanym game prompt</text>
 <text x="44" y="409" fill="#333">Write a context template</text><text x="44" y="435" fill="#333">with slots and fill it in five</text>
@@ -18,7 +19,7 @@
 <rect x="552" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
 <rect x="569" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
 <rect x="586" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
-<rect x="603" y="100" width="14" height="112" fill="#ffffff" stroke="#2f6fd6" stroke-width="2"/>
+<rect x="603" y="100" width="14" height="112" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
 <rect x="620" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
 <rect x="637" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
 <rect x="654" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
@@ -40,21 +41,20 @@
 <rect x="637" y="364" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
 <rect x="654" y="364" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
 <rect x="671" y="364" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
-<path d="M334,114 L601,114" fill="none" stroke="#2f6fd6" stroke-opacity="0.45" stroke-width="3" marker-end="url(#arrO)"/>
-<text x="342" y="109" font-size="14" fill="#1b4a99">A</text>
-<path d="M334,142 L601,142" fill="none" stroke="#2f6fd6" stroke-opacity="0.45" stroke-width="3" marker-end="url(#arrO)"/>
-<text x="342" y="137" font-size="14" fill="#1b4a99">B</text>
-<path d="M334,170 L601,170" fill="none" stroke="#2f6fd6" stroke-opacity="0.45" stroke-width="3" marker-end="url(#arrO)"/>
-<text x="342" y="165" font-size="14" fill="#1b4a99">C</text>
-<path d="M334,198 L601,198" fill="none" stroke="#2f6fd6" stroke-opacity="0.45" stroke-width="3" marker-end="url(#arrO)"/>
-<text x="342" y="193" font-size="14" fill="#1b4a99">D</text>
-<rect x="603" y="128" width="14" height="28" fill="#2f6fd6" stroke="#2f6fd6" stroke-width="2.5"/>
 <path d="M730,156 L766,156" fill="none" stroke="#2f6fd6" stroke-width="3" marker-end="url(#arr)"/>
 <rect x="770" y="80" width="300" height="150" rx="8" fill="#e8f1fb" stroke="#2f6fd6" stroke-width="2"/>
 <text x="784" y="112" font-size="22" font-weight="bold" fill="#1b4a99">GPQA completion</text>
-<text x="784" y="144" fill="#333">The candidate that matches</text><text x="784" y="170" fill="#333">the stored instantiation:</text>
-<rect x="784" y="181" width="14" height="28" fill="#2f6fd6" stroke="#2f6fd6" stroke-width="2.5"/>
-<text x="810" y="204" font-size="26" fill="#333">Answer: B</text>
+<text x="784" y="140" fill="#333">The derived instantiation,</text><text x="784" y="164" fill="#333">compared with the candidates:</text>
+<rect x="784" y="180" width="14" height="40" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<text x="804" y="207" font-size="22" fill="#333">≈</text>
+<rect x="828" y="180" width="14" height="40" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="846" y="207" font-size="16" fill="#666" font-weight="normal">A</text>
+<rect x="872" y="180" width="14" height="40" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<text x="890" y="207" font-size="16" fill="#1b4a99" font-weight="bold">B</text>
+<rect x="916" y="180" width="14" height="40" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="934" y="207" font-size="16" fill="#666" font-weight="normal">C</text>
+<rect x="960" y="180" width="14" height="40" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="978" y="207" font-size="16" fill="#666" font-weight="normal">D</text>
 <path d="M730,420 L766,420" fill="none" stroke="#e08a1e" stroke-width="3" marker-end="url(#arr)"/>
 <rect x="770" y="345" width="300" height="150" rx="8" fill="#fff4e5" stroke="#e08a1e" stroke-width="2"/>
 <text x="784" y="377" font-size="22" font-weight="bold" fill="#8a4b00">Metanym game completion</text>
