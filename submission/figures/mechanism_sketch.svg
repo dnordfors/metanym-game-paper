@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="672" viewBox="0 0 1100 672" font-family="Helvetica, Arial, sans-serif" font-size="20">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs>
+<rect width="1100" height="672" fill="#ffffff"/>
+<rect x="30" y="70" width="300" height="172" rx="8" fill="#fff4e5" stroke="#e08a1e" stroke-width="2"/>
+<text x="44" y="100" font-size="22" font-weight="bold" fill="#8a4b00">GPQA prompt</text>
+<text x="44" y="128" fill="#333">Which energy difference</text><text x="44" y="152" fill="#333">resolves two states with</text>
+<text x="44" y="176" fill="#333">lifetimes 10⁻⁹ s and 10⁻⁸ s?</text>
+<rect x="60" y="190" width="14" height="36" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="82" y="215" font-size="18" fill="#555">A</text>
+<rect x="126" y="190" width="14" height="36" fill="#ffe9cc" stroke="#e08a1e" stroke-width="2.5"/>
+<text x="148" y="215" font-size="18" fill="#8a4b00">B</text>
+<rect x="192" y="190" width="14" height="36" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="214" y="215" font-size="18" fill="#555">C</text>
+<rect x="258" y="190" width="14" height="36" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<text x="280" y="215" font-size="18" fill="#555">D</text>
+<path d="M334,156 L366,156" fill="none" stroke="#e08a1e" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="30" y="345" width="300" height="150" rx="8" fill="#e8f1fb" stroke="#2f6fd6" stroke-width="2"/>
+<text x="44" y="377" font-size="22" font-weight="bold" fill="#1b4a99">Metanym game prompt</text>
+<text x="44" y="409" fill="#333">Write a context template</text><text x="44" y="435" fill="#333">with slots and fill it in five</text>
+<text x="44" y="461" fill="#333">distant domains, every</text><text x="44" y="487" fill="#333">sentence true.</text>
+<path d="M334,420 L366,420" fill="none" stroke="#2f6fd6" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="370" y="40" width="360" height="490" rx="14" fill="#f7f7f5" stroke="#555" stroke-width="2"/>
+<text transform="translate(400,288) rotate(-90)" font-size="22" fill="#333" font-weight="bold" text-anchor="middle" letter-spacing="2">ARCHETYPES</text>
+<rect x="420" y="100" width="112" height="112" fill="#ffe9cc" stroke="#e08a1e" stroke-width="3.5"/>
+<text x="476.0" y="165.0" font-size="26" font-weight="bold" fill="#8a4b00" text-anchor="middle">α</text>
+<rect x="552" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="569" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="586" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="603" y="100" width="14" height="112" fill="#ffe9cc" stroke="#e08a1e" stroke-width="2.5"/>
+<rect x="620" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="637" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="654" y="100" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="420" y="232" width="112" height="112" fill="#ececea" stroke="#555" stroke-width="1.5"/>
+<text x="476.0" y="297.0" font-size="26" font-weight="bold" fill="#333" text-anchor="middle">β</text>
+<rect x="552" y="232" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="569" y="232" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="586" y="232" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="603" y="232" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="620" y="232" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="637" y="232" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="420" y="364" width="112" height="112" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="3.5"/>
+<text x="476.0" y="429.0" font-size="26" font-weight="bold" fill="#1b4a99" text-anchor="middle">γ</text>
+<rect x="552" y="364" width="14" height="112" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="569" y="364" width="14" height="112" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="586" y="364" width="14" height="112" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="603" y="364" width="14" height="112" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="620" y="364" width="14" height="112" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="637" y="364" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="654" y="364" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<rect x="671" y="364" width="14" height="112" fill="#ffffff" stroke="#999" stroke-width="1"/>
+<path d="M730,156 L766,156" fill="none" stroke="#e08a1e" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="770" y="70" width="300" height="172" rx="8" fill="#fff4e5" stroke="#e08a1e" stroke-width="2"/>
+<text x="784" y="100" font-size="22" font-weight="bold" fill="#8a4b00">GPQA completion</text>
+<text x="784" y="128" fill="#333">The candidate that matches</text><text x="784" y="152" fill="#333">the stored instantiation:</text>
+<rect x="784" y="176" width="14" height="48" fill="#ffe9cc" stroke="#e08a1e" stroke-width="2.5"/>
+<text x="810" y="210" font-size="26" fill="#333">Answer: B</text>
+<path d="M730,420 L766,420" fill="none" stroke="#2f6fd6" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="770" y="345" width="300" height="150" rx="8" fill="#e8f1fb" stroke="#2f6fd6" stroke-width="2"/>
+<text x="784" y="377" font-size="22" font-weight="bold" fill="#1b4a99">Metanym game completion</text>
+<text x="784" y="405" fill="#333">A context template and five</text><text x="784" y="429" fill="#333">instantiations, as metanym sets:</text>
+<rect x="784" y="440" width="48" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/><text x="808.0" y="472.0" font-size="22" font-weight="bold" fill="#1b4a99" text-anchor="middle">γ</text>
+<rect x="844" y="440" width="14" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="861" y="440" width="14" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="878" y="440" width="14" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="895" y="440" width="14" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<rect x="912" y="440" width="14" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
+<g font-size="17" fill="#222">
+<text x="30" y="560">A hypothesis for the 0.98 correlation between the GPQA and Metanym Game benchmarks: the metanym game reproduces</text>
+<text x="30" y="583">the way the model organises its knowledge, and GPQA runs on that organisation. An archetype is held once, about eight</text>
+<text x="30" y="606">times the size of a domain's instantiation; each domain adds only its metanym set. GPQA offers four candidate</text>
+<text x="30" y="629">instantiations, and the completion is the one that matches what is stored: the mechanism in use. The game offers nothing,</text>
+<text x="30" y="652">and the completion is an archetype with five instantiations: the mechanism itself.</text>
+</g></svg>
