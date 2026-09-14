@@ -84,7 +84,7 @@ echo; echo "##### §5.6 / §5.7 — consensus limits and the multi-council readi
 echo; echo "##### POOLED THREE RUNS — the official (ICLR 2027 version) ratings: one factorisation over runs 1-3 #####"
 echo "#####   (scripts/pooled_components.py on run 1 alone reproduces the run-1 tables above; validated in its __main__)"
 "$PY" scripts/pooled_components.py                       # validation: run 1 alone == published council + twelve-basis tables
-RUNS=1,2 B=0 "$PY" scripts/pooled_council_tables.py      # emits data/total_rating_council_pooled12.csv, total_rating_twelve_pooled12.csv (Appendix F panel)
+RUNS=1,2 B=300 "$PY" scripts/pooled_council_tables.py    # emits data/total_rating_council_pooled12.csv (+ replicates), total_rating_twelve_pooled12.csv (Appendix F panel)
 "$PY" scripts/pooled_council_tables.py                   # emits data/total_rating_council_pooled123.csv (+ replicates), total_rating_twelve_pooled123.csv  (§4.4 leaderboard)
 "$PY" scripts/pooled_criterion_a.py                      # emits data/criterion_a_pooled123.csv (Appendix A.2 table; §3.4, §4.2 loadings)
 "$PY" scripts/pooled_ladder.py                           # Appendix D.1 ladder/compounds/regimes/bases on the pooled corpus (BCa intervals)
