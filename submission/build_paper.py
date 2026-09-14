@@ -30,7 +30,7 @@ APPENDIX_DIR = ROOT / "paper" / "appendices"
 PAGE_LIMIT = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 9
 
 # Figure widths as a fraction of the text width, keyed by file stem (KeyError = unlisted figure).
-FIGURE_WIDTHS = {"council_evaluation_pc1": 1.0, "council_evaluation_pc1_wide": 1.0, "council_evaluation_pc1_compact": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 0.85}
+FIGURE_WIDTHS = {"council_evaluation_pc1": 1.0, "council_evaluation_pc1_wide": 1.0, "council_evaluation_pc1_compact": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 1.0}
 
 # Strings that must not survive into a double-blind submission.
 ANONYMITY_GUARDS = ["Nordfors", "dnordfors", "archetypes.ai", "2606.21008", "github.com/dnordfors"]
