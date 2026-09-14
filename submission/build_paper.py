@@ -117,7 +117,7 @@ def tables_to_floats(body: str) -> str:
         maxlen = [max(len(c[i]) for c in cells if len(c) > i) for i in range(ncols)]
         widest_row = max(sum(len(c) for c in row) for row in cells)
         prose = max(maxlen) > 60
-        wide = (not prose) and (ncols >= 6 or ("ballast" in (cap or "")) or ("cos(G,E)" in rest) or widest_row > 90)
+        wide = (not prose) and ((ncols >= 6 and widest_row > 60) or ("ballast" in (cap or "")) or ("cos(G,E)" in rest) or widest_row > 90)   # a short many-column table is not scaled up
         if prose:  # prose cells: paragraph columns, widths by content, never scaled
             total = sum(maxlen)
             cols = "".join(">{\\raggedright\\arraybackslash}p{%.2f\\linewidth}" % (0.98 * m / total)
