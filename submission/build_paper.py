@@ -153,10 +153,8 @@ def merge_table_parts(body: str) -> str:
         prev_end = body.rfind("\\end{table}", 0, start_b) + len("\\end{table}")
         prev_start = body.rfind("\\begin{table}[htb]\n", 0, prev_end)
         part_a = body[prev_start:prev_end]
-        if "\\textbf{(a)}" not in part_a:
-            part_a = re.sub(r"(\\begin\{center\}(?:\\footnotesize|\\small)\n)", r"\1\\textbf{(a)}\\\\[3pt]\n", part_a, count=1)
-        letter = chr(ord("a") + len(re.findall(r"\\textbf\{\(([a-z])\)\}", part_a)))
-        part_a2 = part_a.replace("\\end{center}\n\\end{table}", "\\end{center}\n\\vspace{2pt}\\begin{center}" + size_b + "\n\\textbf{(" + letter + ")}\\\\[3pt]\n" + tab_b + "\n\\end{center}\n\\end{table}")
+        # parts are stacked with a small gap and no (a)/(b) labels: the caption names them and the reader sees which is which
+        part_a2 = part_a.replace("\\end{center}\n\\end{table}", "\\end{center}\n\\vspace{4pt}\\begin{center}" + size_b + "\n" + tab_b + "\n\\end{center}\n\\end{table}")
         body = body[:prev_start] + part_a2 + body[end_b:]
         print("merged a part-(b) table into the float before it")
     return body
