@@ -28,7 +28,7 @@ We present evidence that analogy is at the core of LLM intelligence: a benchmark
 
 Nearly every benchmark for machine intelligence needs a predetermined ground truth --- golden keys and labels, oracle models, human panels. The benchmark reported here needs none of that. It is a game where frontier language models compete in making up analogies and then grade one another, and that grading is the single source of every score: no human raters, no answer key, nothing to look up.
 
-The test is the \textbf{metanym game}. A player authors, from nothing, a \emph{context template} --- a paragraph of fixed wording with open slots --- together with the sets of keywords that fill it, each set instantiating the template as a factually true description of a different domain; the keywords in corresponding slots are \emph{metanyms}, metaphorically synonymous, and a set of them a \emph{metanym set}. Take a passage on \textbf{cell signalling}, adapted from an old version of the Wikipedia article: ``The ability of CELLS to perceive and correctly respond to their MICROENVIRONMENT is the basis of development, TISSUE repair, and IMMUNITY as well as normal TISSUE HOMEOSTASIS.'' Substitute the marked keywords and it becomes a correct description of \textbf{human language}: ``The ability of HUMANS to perceive and correctly respond to their ENVIRONMENT is the basis of development, COMMUNITY repair, and RESILIENCE as well as normal COMMUNITY EQUILIBRIUM.'' Each sentence is checkable on its own --- factually true even where the borrowed phrasing reads stiffly. The two are each other's \emph{metaphors}; the instantiations are \emph{parallel contexts}, children of a common \emph{archetypal context} --- the abstract structure they share, of which the template is the literal representation. A long tradition treats seeing one structure across wildly different domains as central to thought and tests whether you \emph{recognise} it; the game tests whether you can \emph{build} it.
+The test is the \textbf{metanym game}. A player authors, from nothing, a \emph{context template} --- a paragraph of fixed wording with open slots --- together with the sets of keywords that fill it, each set instantiating the template as a factually true description of a different domain; the keywords in corresponding slots are \emph{metanyms}, metaphorically synonymous, and a set of them a \emph{metanym set}. Table \ref{tab-anchor-metanym} shows one, written by a player. Its instantiations are each other's \emph{metaphors} and, as a set, \emph{parallel contexts}: children of a common \emph{archetypal context}, the abstract structure they share, of which the template is the literal representation. A long tradition treats seeing one structure across wildly different domains as central to thought and tests whether you \emph{recognise} it; the game tests whether you can \emph{build} it.
 
 Because every item is produced fresh in the run, no fixed test set can leak into training; because correctness is settled sentence by sentence, the players' own verdicts suffice --- one matrix of their factual ratings reveals which judges are competent, with no labels at all (\S{}3.3), and that subset is seated as the \emph{council} that grades everyone. The canonical twelve-model run (\S{}4) finds that \textbf{judgement is the bottleneck} --- on this roster the strongest generators are middling judges --- and that the key-free total tracks GPQA Diamond at Pearson \(r = 0.98\), audited for a leak and found clean.
 
@@ -40,13 +40,21 @@ Because every item is produced fresh in the run, no fixed test set can leak into
 
 An archetypal context is the cross-domain \emph{isomorphism} General Systems Theory studies (von Bertalanffy, 1968).
 
-A second example, authored by a player --- one archetype from the submission that became the run's anchor (\S{}4.1). The template: ``A {[}NAVIGATOR{]} moves through a {[}SPACE{]} by sensing local {[}GRADIENT{]} and adjusting its {[}TRAJECTORY{]} accordingly. The {[}NAVIGATOR{]} cannot perceive the entire {[}SPACE{]} at once; it relies on {[}SENSOR{]} that detect changes in {[}SIGNAL{]} concentration or intensity. When {[}GRADIENT{]} are steep and consistent, the {[}NAVIGATOR{]} converges efficiently toward {[}ATTRACTOR{]}. When {[}GRADIENT{]} are shallow, noisy, or conflicting, the {[}NAVIGATOR{]} may stall, oscillate, or become trapped in local {[}ATTRACTOR{]}. {[}INTERFERENCE{]} can distort the {[}GRADIENT{]}, causing the {[}NAVIGATOR{]} to veer off course. Successful navigation requires not only sensitive {[}SENSOR{]} but also {[}MEMORY{]} of recent {[}TRAJECTORY{]} to distinguish genuine {[}GRADIENT{]} from transient {[}NOISE{]}. Some {[}NAVIGATOR{]} emit their own {[}SIGNAL{]} to recruit other {[}NAVIGATOR{]} toward the same {[}ATTRACTOR{]}, creating collective {[}TRAJECTORY{]} that amplify the original {[}GRADIENT{]}.'' Its \textbf{metanym table} is Table \ref{tab-anchor-metanym}.
+Table \ref{tab-anchor-metanym} is one archetype as a player wrote it --- the first of the submission that became the run's anchor (\S{}4.1).
 
 \begin{table}[htb]
-\caption{The anchor's first archetype. (a) Its metanym table: MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration --- five mechanisms that are metaphorically synonymous in the archetypal context --- metanyms. (b) Its first column played, first sentence of each form.}
+\caption{The anchor's first archetype (\S{}4.1), as a player wrote it. (a) The context template. (b) Its metanym table: MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration --- five mechanisms that are metaphorically synonymous in the archetypal context --- metanyms. (c) Its first column played, first sentence of each form.}
 \label{tab-anchor-metanym}
-\begin{center}\small
+\begin{center}\footnotesize
 \textbf{(a)}\\[3pt]
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.98\linewidth}}
+\toprule\noalign{}
+A {[}NAVIGATOR{]} moves through a {[}SPACE{]} by sensing local {[}GRADIENT{]} and adjusting its {[}TRAJECTORY{]} accordingly. The {[}NAVIGATOR{]} cannot perceive the entire {[}SPACE{]} at once; it relies on {[}SENSOR{]} that detect changes in {[}SIGNAL{]} concentration or intensity. When {[}GRADIENT{]} are steep and consistent, the {[}NAVIGATOR{]} converges efficiently toward {[}ATTRACTOR{]}. When {[}GRADIENT{]} are shallow, noisy, or conflicting, the {[}NAVIGATOR{]} may stall, oscillate, or become trapped in local {[}ATTRACTOR{]}. {[}INTERFERENCE{]} can distort the {[}GRADIENT{]}, causing the {[}NAVIGATOR{]} to veer off course. Successful navigation requires not only sensitive {[}SENSOR{]} but also {[}MEMORY{]} of recent {[}TRAJECTORY{]} to distinguish genuine {[}GRADIENT{]} from transient {[}NOISE{]}. Some {[}NAVIGATOR{]} emit their own {[}SIGNAL{]} to recruit other {[}NAVIGATOR{]} toward the same {[}ATTRACTOR{]}, creating collective {[}TRAJECTORY{]} that amplify the original {[}GRADIENT{]}. \\
+\bottomrule
+\end{tabular}
+\end{center}
+\vspace{2pt}\begin{center}\small
+\textbf{(b)}\\[3pt]
 \resizebox{\linewidth}{!}{\begin{tabular}{@{}llllll@{}}
 \toprule\noalign{}
 {[}SLOT{]} & Bacterial Chemotaxis & Mountain Climbing & Career Development & Gradient Descent & Ant Foraging \\
@@ -65,7 +73,7 @@ NOISE & Brownian motion & wind & market volatility & stochastic noise & environm
 \end{tabular}}
 \end{center}
 \vspace{2pt}\begin{center}\footnotesize
-\textbf{(b)}\\[3pt]
+\textbf{(c)}\\[3pt]
 \begin{tabular}{>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.75\linewidth}}
 \toprule\noalign{}
 Form (a), instantiation & A BACTERIUM moves through a CHEMICAL ENVIRONMENT by sensing local CHEMICAL GRADIENTS and adjusting its SWIMMING PATH accordingly. \\
