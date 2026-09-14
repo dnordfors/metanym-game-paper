@@ -16,8 +16,6 @@ Because every item is produced fresh in the run, no fixed test set can leak into
 
 ## 2 The metanym game
 
-### 2.1 The machinery
-
 An archetypal context is the cross-domain *isomorphism* General Systems Theory studies (von Bertalanffy, 1968). Table \ref{tab-anchor-metanym} is one archetype as a player wrote it — the first of the submission that became the run's anchor (§4.1). One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
 
 <a id="tab-anchor-metanym"></a>
@@ -53,8 +51,6 @@ Each parallel context is played in two forms: the **instantiation** (Form a), th
 | Form (b), idiomatic rewrite | Bacteria navigate chemical environments by detecting local concentration gradients and modulating their run-and-tumble behavior accordingly. |
 
 Table: PARTBTABLE
-
-### 2.2 The rules
 
 The game has $N$ players and a non-competing administrator. **Generation**: a player creates archetypal contexts from scratch — a portfolio of $K$ templates, $M$ metanym sets each (five and five here), with instantiation and rewrite for every set. **Evaluation**: a player scores other players' submissions on the rubric axes (§3.2) against one fixed *reference* submission pinned at an *anchor* value. A pass yields **submission ratings** for each portfolio and **evaluator ratings** for the judges: how well one detects the factual errors the other players collectively flag (*factual competence*), and how stable a standard it holds when the reference is re-pinned (*rating consistency*, §3.3). Each act is itself rated, so the framework is **fully self-contained**: no human raters, no external key.
 
