@@ -99,6 +99,8 @@ echo; echo "##### §6 (ICLR version) — archetype recurrence across runs and mo
 "$PY" scripts/archetype_recurrence.py
 echo; echo "##### §6 (ICLR version) — literal-space compression of the metanym form (anchor, first archetype) #####"
 "$PY" scripts/compression_ratio.py
+echo; echo "##### Appendix H (ICLR version) — GPQA reply lengths with the reasoning channel off #####"
+"$PY" scripts/gpqa_reply_lengths.py
 echo; echo "##### manuscript consistency checks #####"
 "$PY" scripts/check_manuscript.py
 echo; echo "##### reproduce.sh complete #####"

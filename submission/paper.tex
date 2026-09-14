@@ -154,7 +154,7 @@ The anchor sweep gives each evaluator a consistency on each axis (Table \ref{tab
 Every official number is council-issued on the contest basis of \S{}3.4: each model is rated by the five seats --- joined by the model itself when it holds no seat --- over the incumbents' portfolios, the two ballast submissions and its own, leave-self-out throughout. The two bases agree closely (Spearman 0.98; on the twelve-evaluator basis the fifth seat is a tie within 0.03).
 
 \begin{table}[htb]
-\caption{Final leaderboard --- total \(T\) with its joint-bootstrap 95\% CI, the evaluator half \(E\), the generator half \(G\), and the four anchored components; all council-issued against the fixed anchor, which reads 7.00 by construction. Adjacent ranks are resolved (non-overlapping intervals) only at 2--3 and 8--9; the rest are statistical ties. \(E^{F} = 0.00\): no error signal in the model's factual ratings. Contest-basis \(E^{C}\) is an easier test than the twelve-evaluator consistency, a caveat for ranks 6--12.}
+\caption{Final leaderboard --- total \(T\) with its joint-bootstrap 95\% CI, the evaluator half \(E\), the generator half \(G\), and the four anchored components; all council-issued against the fixed anchor, which reads 7.00 by construction. Adjacent ranks are resolved (non-overlapping intervals) only at 2--3 and 8--9; the rest are statistical ties. \(E^{F} = 0.00\): no error signal in the model's factual ratings.}
 \label{tab-final-leaderboard}
 \begin{center}\small
 \resizebox{\linewidth}{!}{\begin{tabular}{@{}llcrrrrrrr@{}}
@@ -203,7 +203,7 @@ We ran the full pipeline three times, regenerating all twelve portfolios at T=0 
 
 \textbf{As an intelligence test}, the game probes the abstraction-and-analogy cluster a long tradition places at the centre of thinking (Gentner, 1983; Hofstadter \& Sander, 2013; Penn et al., 2008; Chollet, 2019; Mitchell, 2021). The classical instruments --- BIG-Bench analogy items (Srivastava et al., 2023), Webb et al.~(2023), Lewis \& Mitchell (2024), ARC (Chollet, 2019) --- give source and target and ask for one selection or completion, scored against a key; the metanym game asks for many coupled slots across unrelated domains, built from scratch, and is the first to make analogical \emph{production} falsifiable sentence by sentence.
 
-\textbf{As a self-contained method}, the council sits in the \emph{unsupervised peer-evaluation} line, which already removes the gold key: single-judge protocols (Zheng et al., 2023) trust one judge; PoLL (Verga et al., 2024) adds a panel but trusts it as given; LLM-as-Examiner (Bai et al., 2023) lets the examiner write the questions; PiCO (Ning et al., 2025) lets unlabelled models answer and grade one another and recovers an ability ordering from peer agreement alone, and UPME (Zhang et al., 2025) extends it to vision-language. We weight by agreement only where agreement is licensed to mean truth, and our council certifies and re-contests its own judges. The estimator is the sharper break: PiCO fits one ability parameter per model by consistency optimisation, not a spectral method. Spectral aggregation has two label-free lineages, and both are \emph{one-sided}. In the aggregation lineage --- Parisi et al.~(2014), Dawid \& Skene (1979) --- predictors classify a fixed external dataset, so there is no generator to score. In the reputation lineage --- EigenTrust (Kamvar et al., 2003) --- EigenBench (Chang et al., 2026) has LLMs judge one another's responses against a written value constitution and takes the leading eigenvector of a model-by-model trust matrix as each model's score: one number is both standing and weight as a judge, applied to every criterion, subjective ones included. Our matrix is \emph{two-sided}: one SVD scores judges on the left and generators on the right, the two are kept apart, and the generation--evaluation gap of \S{}4.4 --- which contradicts that premise on the factual axis --- is definable only because the test is self-produced. \emph{Rating consistency} applies the judge-reliability principle of invariance under non-semantic perturbation (Weng et al., 2026; Bellibatlu et al., 2026) to subjective, ground-truth-free criteria on self-produced items --- to our knowledge a new use of the sweep. Don-Yehiya et al.~(2026) find the anchor should be recalibrated to the field's range --- our rule --- and warn against a top-model anchor; ours is pinned at 7 with headroom above (\S{}4.1).
+\textbf{As a self-contained method}, the council sits in the \emph{unsupervised peer-evaluation} line, which already removes the gold key: single-judge protocols (Zheng et al., 2023) trust one judge; PoLL (Verga et al., 2024) adds a panel but trusts it as given; LLM-as-Examiner (Bai et al., 2023) lets the examiner write the questions; PiCO (Ning et al., 2025) lets unlabelled models answer and grade one another and recovers an ability ordering from peer agreement alone, and UPME (Zhang et al., 2025) extends it to vision-language. We weight by agreement only where agreement is licensed to mean truth, and our council certifies and re-contests its own judges. The estimator is the sharper break: PiCO fits one ability parameter per model by consistency optimisation, not a spectral method. Label-free spectral aggregation is \emph{one-sided} in both its lineages: in the aggregation lineage (Parisi et al., 2014; Dawid \& Skene, 1979) predictors classify a fixed external dataset, so there is no generator to score; in the reputation lineage (EigenTrust, Kamvar et al., 2003) EigenBench (Chang et al., 2026) has LLMs judge one another's responses against a written value constitution and takes the leading eigenvector of a model-by-model trust matrix as each model's score: one number is both standing and weight as a judge, applied to every criterion, subjective ones included. Our matrix is \emph{two-sided}: one SVD scores judges on the left and generators on the right, the two are kept apart, and the generation--evaluation gap of \S{}4.4 --- which contradicts that premise on the factual axis --- is definable only because the test is self-produced. \emph{Rating consistency} applies the judge-reliability principle of invariance under non-semantic perturbation (Weng et al., 2026; Bellibatlu et al., 2026) to subjective, ground-truth-free criteria on self-produced items --- to our knowledge a new use of the sweep. Don-Yehiya et al.~(2026) find the anchor should be recalibrated to the field's range --- our rule --- and warn against a top-model anchor; ours is pinned at 7 with headroom above (\S{}4.1).
 
 \section{Discussion and limitations}\label{discussion-and-limitations}
 
@@ -211,12 +211,12 @@ We ran the full pipeline three times, regenerating all twelve portfolios at T=0 
 
 \textbf{A sustainable yardstick.} When the field outgrows the anchor --- a standing total above the pinned 7 by a resolvable margin --- the anchor is replaced by the stronger submission and models are re-scored; the ballast stays fixed. Contestable seats keep the judges current, retesting the scale: the benchmark rises with the models it measures, which a keyed test cannot --- its key-makers are fixed, and it saturates once the field passes them.
 
-\textbf{The 0.98, and what it licenses.} The total tracks GPQA at 0.98 (\S{}4.5). GPQA is an accepted measure of capability with no theory of intelligence behind it: expert-written questions and a key (Rein et al., 2023). The game reproduces its ranking as closely as the measurement error of the two instruments allows (Appendix D.1), so whatever GPQA measures, the game measures too. Of the eight constructs the game demands, four are analogy under cognitive science's own names and the other four serve them (Appendix E). A test whose core is analogy therefore reaches all of what GPQA measures. That is the sense in which analogy is at the core: sufficient by itself, not the only thing that could be. An agreement of 0.98 suggests that the two instruments measure the same thing. Their methods share nothing on the surface, so the common thing is in the depth. Our hypothesis is that a language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies; the metanym game measures this mechanism directly, and GPQA measures its use (Figure \ref{fig-mechanism}). Training a language model is compression: predicting text is compressing it (Shannon, 1951), and a trained model is a general-purpose compressor (Del\'{e}tang et al., 2024). Training also selects what is compressed: the loss is taken on held-out text, so an abstraction earns its place only by predicting instantiations the model has not seen, and the abstractions that recur most across the corpus earn the most; a situation structure that appears in biology, economics and stories alike is one. The metanym game compresses the same way. One template is the abstraction, an archetypal context; one compact metanym set is what the abstraction leaves out, the topic domain; the two reconstruct the instantiation exactly, and 17 words of metanyms recover an instantiation of 130: the template already holds seven eighths of it. In the game the literal compression is about 3 for a template with five parallel contexts and about 8 for each further one (the anchor's first archetype) --- the order of the compression a trained model achieves on text, in words rather than bits. The factor grows because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it, and no instantiation here repeats another. The game's compression is the abstracting kind, the kind held-out loss rewards. Compression generalises: the shortest description keeps a recurring pattern once, as an abstraction, and reuses it (Rissanen, 1978); that is a concept. A concept is a general frame with the varying parts as open slots, and Minsky's (1974) frames are stereotyped situations: the context template is such a frame, written in words. An analogy is a shared relational structure with different particulars (Gentner, 1983). The archetypal context is that shared structure: the context templates of \S{}2 are archetypal contexts written out, and the metanym sets are the differences. A GPQA question is read by mapping it onto the archetypal contexts it instantiates and the domain that instantiates them, so the two tests exercise one operation. The hypothesis also says why the models play well. In the game they do not build templates and metanym sets; they retrieve what training already compressed. It shows in the transcripts, as one archetype in latent space with many projections in literal space predicts and a stored text would not: between two runs two hours apart, a model rewrites its portfolios but keeps its archetypes (34 of 48 titles recur verbatim), and seven of eleven models, from all three vendors, offer a resource-allocation archetype. Within a vendor, shared training data would explain the recurrence as well; the cross-vendor part is the evidence. The data establish less: the factual pair alone reaches 0.94, and the two subjective quarters lift it to 0.98 (\S{}4.5). It is consistent with the general factor of Ili\'{c} and Gignac (2024), and more specific. It predicts that the agreement is domain-matched --- a model's factual score on parallel contexts in a field tracks its GPQA accuracy in that field --- and that archetype and topic domain are separable in a model's latent space.
+\textbf{A hypothesis for the agreement.} The total tracks GPQA at 0.98 (\S{}4.5). GPQA is an accepted measure of capability with no theory of intelligence behind it: expert-written questions and a key (Rein et al., 2023). The game reproduces its ranking as closely as the measurement error of the two instruments allows (Appendix D.1), so whatever GPQA measures, the game measures too. Of the eight constructs the game demands, four are analogy under cognitive science's own names (Appendix E): that is the sense in which analogy is at the core --- sufficient by itself, not the only thing that could be. An agreement of 0.98 suggests that the two instruments measure the same thing, and their methods share nothing on the surface, so the common thing is in the depth. Our hypothesis is that a language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies; the metanym game reproduces this organisation, and GPQA runs on it (Figure \ref{fig-mechanism}). Both tests are one retrieval followed by one selection. In GPQA the archetype and the domain are given by the question: the model derives the instantiation and selects the candidate that matches it, the mechanism in use. In the game nothing is given: the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out, the mechanism itself. The hypothesis is untested here. The argument behind it, and what would refute it, is Appendix H. It predicts that the agreement is domain-matched, a model's factual score on parallel contexts in a field tracking its GPQA accuracy in that field, and that archetype and topic domain are separable in a model's latent space.
 
 \begin{figure}[t]
 \centering
-\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/mechanism_sketch.png}}
-\caption{A hypothesis for the 0.98 correlation between the GPQA and Metanym Game benchmarks: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype (\(\alpha\), \(\beta\), \(\gamma\)) is held once, about eight times the size of a domain's instantiation (the slices); each domain adds only its metanym set. A GPQA question retrieves one instantiation, which the model then matches with the four candidates: the mechanism in use. The game offers nothing, and the completion is an archetype with five instantiations: the mechanism itself.}
+\pandocbounded{\includegraphics[width=0.72\linewidth]{figures/mechanism_sketch.png}}
+\caption{A hypothesis for the 0.98: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype (\(\alpha\), \(\beta\), \(\gamma\)) is held once, about eight times the size of a domain's instantiation (the slices); each domain adds only its metanym set. GPQA: archetype and domain are given; the model derives the instantiation and selects the matching candidate. The game: nothing is given; the model selects the archetype and domains that best satisfy the criteria and writes them out.}
 \label{fig-mechanism}
 \end{figure}
 
@@ -1164,5 +1164,105 @@ gpt-4o-mini & 0.00 & 0.00 & 0.00 & 0.00 \\
 \caption{Each model's leave-self-out overall mean with its 95\% bootstrap CI, un-anchored (left) and anchored (right); models are unlabelled deliberately --- the message is structural, not a ranking. Filled markers are the leading eight, open the trailing four, the shaded band the gap between them; the star is the anchor --- a scored target on the left, the pinned reference (7) on the right. Anchored scores spread around the yardstick instead of piling against the ceiling: the gap more than doubles relative to the spread of the means (every scored cross-band pair holds at bootstrap probability 1.00), the variance ratio --- between-target over within-target variance, Fisher's \(F\) --- doubles from 0.33 to 0.66, and the intervals still overlap within each band.}
 \label{fig-anchoring-resolution}
 \end{figure}
+
+\section{The argument behind the hypothesis}\label{the-argument-behind-the-hypothesis}
+
+Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument step by step, marks each step as a cited result, a measurement on the released data, or the hypothesis itself, and ends with what would refute it. Every number comes from a script in the released package.
+
+\subsection{The chain}\label{the-chain}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Training a language model is compression} (cited). Predicting text is compressing it (Shannon, 1951); a trained model is a general-purpose compressor (Del\'{e}tang et al., 2024).
+\item
+  \textbf{Training selects what is compressed} (cited, by construction of the objective). The loss is taken on held-out text, so an abstraction earns its place only by predicting instantiations the model has not seen, and the abstractions that recur most across the corpus earn the most. A situation structure that appears in biology, economics and stories alike is one.
+\item
+  \textbf{Compression generalises} (cited). The shortest description keeps a recurring pattern once, as an abstraction, and reuses it (Rissanen, 1978); that is a concept.
+\item
+  \textbf{A concept is a frame with open slots} (cited). Minsky's (1974) frames are stereotyped situations with terminals that instances fill; the context template of \S{}2 is such a frame, written in words.
+\item
+  \textbf{An analogy is a shared relational structure with different particulars} (cited; Gentner, 1983). The archetypal context is that shared structure.
+\item
+  \textbf{Hypothesis.} A language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies. The template is the abstraction; the metanym set is what the abstraction leaves out, the topic domain; the two reconstruct the instantiation exactly.
+\item
+  \textbf{The metanym form is strong compression} (measured, H.2). About 3 for a template with five parallel contexts and about 8 for each further one, growing with every domain a template serves --- the order of the compression a trained model achieves on text, in words rather than bits. The factor grows because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it, and no instantiation here repeats another. This is the abstracting kind of compression, the kind held-out loss rewards; a representation this compressive is what training would find.
+\item
+  \textbf{The game measures the mechanism directly} (hypothesis). Nothing is given; the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out.
+\item
+  \textbf{GPQA measures the mechanism's use} (hypothesis, with H.4 as the observation). The archetype and the domain are given by the question; the model derives the instantiation and selects the candidate that matches it. The two tests agree because they exercise one operation from opposite ends: GPQA fixes the store position and selects among four strings, the game selects the store position and fixes the output form.
+\item
+  \textbf{Corollary: retrieval, not construction} (hypothesis, with H.3 as the signature). In the game the models retrieve templates and metanym sets that training already compressed, which is why they play well with no reasoning channel and why a model rewrites its portfolios between runs but keeps its archetypes.
+\item
+  \textbf{What the data establish is narrower.} The factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (\S{}4.5, Appendix D.1). The hypothesis is consistent with the general factor of Ili\'{c} and Gignac (2024), and more specific.
+\end{enumerate}
+
+\subsection{The compression of the metanym form}\label{the-compression-of-the-metanym-form}
+
+Measured on the anchor submission's first archetype, the one archetype shipped in full (\texttt{scripts/compression\_\allowbreak{}ratio.py}). The template is 120 words; the metanym table 84 words for five parallel contexts, 17 per context; the five instantiations (Form a, the form the template and metanym set reconstruct exactly) average 130 words. With \(n\) contexts the factor is \(130n/(120+17n)\):
+
+\begin{table}[H]
+\caption{Literal compression of the metanym form against the number of parallel contexts per template, from the anchor's first archetype (120-word template, 17 words of metanyms per context, 130-word instantiations).}
+\begin{center}\small
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrr@{}}
+\toprule\noalign{}
+contexts & 5 & 10 & 20 & 50 & limit \\
+\midrule\noalign{}
+factor & 3.2 & 4.5 & 5.7 & 6.9 & 7.8 \\
+\bottomrule
+\end{tabular}}
+\end{center}
+\end{table}
+
+The asymptote is the ratio of an instantiation to its metanym set, and it is reached only when a template is amortised over dozens of domains, which is the situation inside a model rather than inside a five-context game. The count is in words, and metanyms are the high-entropy tokens, so the factor in bits is lower; the bit-level factor is measurable with an open-weights model and is not measured here. Templates in the released portfolios run 80 to 120 words with 10 to 15 slots, so the asymptote varies by archetype within the same range. It is a lower limit in one further sense: a metanym set is itself a frame with slots, so the topic domain compresses by the same rule, and the factors multiply down the hierarchy.
+
+\subsection{The retrieval signature in the released transcripts}\label{the-retrieval-signature-in-the-released-transcripts}
+
+The archetype titles and parallel-context domains of every graded portfolio in the three runs, as the evaluation transcripts record them (\texttt{scripts/archetype\_\allowbreak{}recurrence.py}; the raw portfolios are not shipped, the transcripts copy their headings).
+
+\textbf{Within a model, the archetypes persist while the texts change.} Eleven of twelve portfolios differ between runs (\S{}4.6). Between the two runs made two hours apart, 34 of 48 archetype titles recur verbatim; between run 1 and run 2, three weeks apart, 20 of 50. Gemini 2.5 Flash produced the same five titles in all three runs; Claude Opus 4.0 kept four or five of five. The models rewrite; they do not reinvent. This is what one archetype in latent space with many projections in literal space predicts, and what a stored text would not.
+
+\textbf{Across models, the same concepts recur, across vendors.} Seven of the eleven graded models, from all three vendors, offer a resource-allocation archetype (title containing ``allocation''). Six domains are used by five or more models: urban planning, social media, corporate structure, the climate system, software development, biological evolution. Of 81 distinct titles, 14 are used by more than one model.
+
+\textbf{The caveat.} Recurrence is strongest inside a vendor: 11 of the 14 shared titles are shared within one vendor only, the two Opus models sharing cascade amplification, phase transition, competitive exclusion and boundary maintenance word for word, and the GPT-4o family sharing resource allocation, conflict resolution and growth and development. Shared training data explains within-vendor recurrence as well as shared representation does. The cross-vendor recurrence is the evidence.
+
+\subsection{How GPQA was answered}\label{how-gpqa-was-answered}
+
+With the reasoning channel off and temperature zero, no model answered with a bare letter (\texttt{scripts/gpqa\_\allowbreak{}reply\_\allowbreak{}lengths.py}):
+
+\begin{table}[H]
+\caption{Words per GPQA reply with the reasoning channel off, and replies under fifteen words, per model (198 items each).}
+\begin{center}\small
+\begin{tabular}{@{}lrr@{}}
+\toprule\noalign{}
+model & median words & replies under 15 words \\
+\midrule\noalign{}
+claude-opus-4.0 / 4.1 / 4.5 & 221 / 242 / 288 & 2 / 2 / 0 \\
+claude-sonnet-4 & 260 & 0 \\
+gemini-2.5-flash / 3.1-pro & 546 / 374 & 0 / 2 \\
+gpt-4.1 / mini / nano & 180 / 328 / 287 & 5 / 0 / 0 \\
+gpt-4o / 2024-08-06 / mini & 196 / 191 / 230 & 1 / 1 / 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+Thirteen replies of 2,376 are under fifteen words, most of them truncations. Every model wrote a derivation and ended it with the answer line, as the prompt allowed (Appendix D.2). In the derivations the model states the relation the question turns on in the question's domain and then tests the candidates against it: an instantiation written out, then a match --- the sequence step 9 describes. ``Reasoning off'' removes the hidden channel; the visible derivation remains, and the question of whether a hidden channel would change play is open (\S{}6, Scope).
+
+\subsection{Predictions, and what would refute the hypothesis}\label{predictions-and-what-would-refute-the-hypothesis}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Domain-matched agreement.} A model's factual score on parallel contexts in a field tracks its GPQA accuracy in that field. GPQA Diamond carries subject labels, and the released evaluations carry each parallel context's domain, so the test needs no new run. A refutation: the field-by-field agreement is no higher than the agreement across fields.
+\item
+  \textbf{Separability in latent space.} Archetype and topic domain are separable in a model's latent space: the same archetype recoverable from parallel contexts in unrelated domains, and the domain from unrelated archetypes. A refutation: representations that separate by domain only.
+\item
+  \textbf{Retrieval over construction.} Reasoning should add little to generation in the game, where templates and metanym sets are retrieved, and may still help judging, where the task is to catch a broken substitution. A refutation: a reasoning budget that raises generation ratings as much as it raises judging.
+\item
+  \textbf{The bit-level factor.} Given its template and metanym set, an instantiation's per-token loss under an open-weights model should fall far below its loss given nothing, and by more for archetypes that recur across many domains. A refutation: no such gap, or a gap that does not grow with the number of domains.
+\end{enumerate}
 
 \end{document}
