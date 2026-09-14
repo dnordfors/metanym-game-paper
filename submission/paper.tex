@@ -47,7 +47,7 @@ Table \ref{tab-anchor-metanym} is one archetype as a player wrote it --- the fir
 \label{tab-anchor-metanym}
 \begin{center}\footnotesize
 \textbf{(a)}\\[3pt]
-\begin{tabular}{>{\raggedright\arraybackslash}p{0.98\linewidth}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.92\linewidth}}
 \toprule\noalign{}
 A {[}NAVIGATOR{]} moves through a {[}SPACE{]} by sensing local {[}GRADIENT{]} and adjusting its {[}TRAJECTORY{]} accordingly. The {[}NAVIGATOR{]} cannot perceive the entire {[}SPACE{]} at once; it relies on {[}SENSOR{]} that detect changes in {[}SIGNAL{]} concentration or intensity. When {[}GRADIENT{]} are steep and consistent, the {[}NAVIGATOR{]} converges efficiently toward {[}ATTRACTOR{]}. When {[}GRADIENT{]} are shallow, noisy, or conflicting, the {[}NAVIGATOR{]} may stall, oscillate, or become trapped in local {[}ATTRACTOR{]}. {[}INTERFERENCE{]} can distort the {[}GRADIENT{]}, causing the {[}NAVIGATOR{]} to veer off course. Successful navigation requires not only sensitive {[}SENSOR{]} but also {[}MEMORY{]} of recent {[}TRAJECTORY{]} to distinguish genuine {[}GRADIENT{]} from transient {[}NOISE{]}. Some {[}NAVIGATOR{]} emit their own {[}SIGNAL{]} to recruit other {[}NAVIGATOR{]} toward the same {[}ATTRACTOR{]}, creating collective {[}TRAJECTORY{]} that amplify the original {[}GRADIENT{]}. \\
 \bottomrule
@@ -74,7 +74,7 @@ NOISE & Brownian motion & wind & market volatility & stochastic noise & environm
 \end{center}
 \vspace{2pt}\begin{center}\footnotesize
 \textbf{(c)}\\[3pt]
-\begin{tabular}{>{\raggedright\arraybackslash}p{0.23\linewidth}>{\raggedright\arraybackslash}p{0.75\linewidth}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.21\linewidth}>{\raggedright\arraybackslash}p{0.71\linewidth}}
 \toprule\noalign{}
 Form (a), instantiation & A BACTERIUM moves through a CHEMICAL ENVIRONMENT by sensing local CHEMICAL GRADIENTS and adjusting its SWIMMING PATH accordingly. \\
 Form (b), idiomatic rewrite & Bacteria navigate chemical environments by detecting local concentration gradients and modulating their run-and-tumble behavior accordingly. \\
@@ -101,7 +101,7 @@ Twelve frontier LLMs from Anthropic, Google and OpenAI are the \textbf{participa
 \caption{The six-axis rubric, in the words the evaluator sees (Appendix B). No definition of beauty or intelligence is supplied; each judge rates on its own understanding.}
 \label{tab-rubric}
 \begin{center}\footnotesize
-\begin{tabular}{>{\raggedright\arraybackslash}p{0.30\linewidth}>{\raggedright\arraybackslash}p{0.11\linewidth}>{\raggedright\arraybackslash}p{0.57\linewidth}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\linewidth}>{\raggedright\arraybackslash}p{0.10\linewidth}>{\raggedright\arraybackslash}p{0.53\linewidth}}
 \toprule\noalign{}
 Axis & Unit & The criterion as put to the evaluator \\
 \midrule\noalign{}
@@ -233,7 +233,7 @@ We ran the full pipeline three times, regenerating all twelve portfolios at T=0 
 
 \begin{figure}[t]
 \centering
-\pandocbounded{\includegraphics[width=0.80\linewidth]{figures/mechanism_sketch.png}}
+\pandocbounded{\includegraphics[width=0.85\linewidth]{figures/mechanism_sketch.png}}
 \caption{A hypothesis for the 0.98: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype (\(\alpha\), \(\beta\), \(\gamma\)) is held once, about eight times the size of a domain's instantiation (the slices); each domain adds only its metanym set. GPQA: archetype and domain are given; the model derives the instantiation and selects the matching candidate. The game: nothing is given; the model selects the archetype and domains that best satisfy the criteria and writes them out.}
 \label{fig-mechanism}
 \end{figure}
@@ -545,7 +545,7 @@ Computed on run 1 alone. Peer centrality can be run on the subjective axes too: 
 \caption{The two estimators and their division of labour (source \S{}4.2).}
 \label{tab-estimators}
 \begin{center}\footnotesize
-\begin{tabular}{>{\raggedright\arraybackslash}p{0.14\linewidth}>{\raggedright\arraybackslash}p{0.40\linewidth}>{\raggedright\arraybackslash}p{0.44\linewidth}}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.14\linewidth}>{\raggedright\arraybackslash}p{0.37\linewidth}>{\raggedright\arraybackslash}p{0.41\linewidth}}
 \toprule\noalign{}
 & Peer centrality (graded SVD) & Rating consistency (anchor sweep) \\
 \midrule\noalign{}

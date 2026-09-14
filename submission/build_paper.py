@@ -30,7 +30,7 @@ APPENDIX_DIR = ROOT / "paper" / "appendices"
 PAGE_LIMIT = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 9
 
 # Figure widths as a fraction of the text width, keyed by file stem (KeyError = unlisted figure).
-FIGURE_WIDTHS = {"council_evaluation_pc1": 0.36, "council_evaluation_pc1_wide": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 0.8}
+FIGURE_WIDTHS = {"council_evaluation_pc1": 0.36, "council_evaluation_pc1_wide": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 0.85}
 
 # Strings that must not survive into a double-blind submission.
 ANONYMITY_GUARDS = ["Nordfors", "dnordfors", "archetypes.ai", "2606.21008", "github.com/dnordfors"]
@@ -121,7 +121,7 @@ def tables_to_floats(body: str) -> str:
         wide = (not prose) and ((ncols >= 6 and widest_row > 60) or ("ballast" in (cap or "")) or ("cos(G,E)" in rest) or widest_row > 90)   # a short many-column table is not scaled up
         if prose:  # prose cells: paragraph columns, widths by content, never scaled
             total = sum(maxlen)
-            cols = "".join(">{\\raggedright\\arraybackslash}p{%.2f\\linewidth}" % (0.98 * m / total)
+            cols = "".join(">{\\raggedright\\arraybackslash}p{%.2f\\linewidth}" % (0.92 * m / total)   # leaves room for the column padding
                            for m in maxlen)
         tab = "\\begin{tabular}{" + cols + "}\n" + rest + "\n\\end{tabular}"
         if wide:
