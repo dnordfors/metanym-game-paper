@@ -30,7 +30,7 @@ APPENDIX_DIR = ROOT / "paper" / "appendices"
 PAGE_LIMIT = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 9
 
 # Figure widths as a fraction of the text width, keyed by file stem (KeyError = unlisted figure).
-FIGURE_WIDTHS = {"council_evaluation_pc1": 0.36, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 0.72}
+FIGURE_WIDTHS = {"council_evaluation_pc1": 0.36, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 0.8}
 
 # Strings that must not survive into a double-blind submission.
 ANONYMITY_GUARDS = ["Nordfors", "dnordfors", "archetypes.ai", "2606.21008", "github.com/dnordfors"]
@@ -135,6 +135,27 @@ def tables_to_floats(body: str) -> str:
     body = pat.sub(one, body)
     assert "\\begin{longtable}" not in body, "a longtable survived conversion"
     print(f"{n} tables converted to floats")
+    return merge_table_parts(body)
+
+
+def merge_table_parts(body: str) -> str:
+    """A table whose caption is exactly PARTBTABLE is folded into the float before it as part (b);
+    that float's own tabular gets the label (a). One float, one caption, one table number."""
+    marker = "\\caption{PARTBTABLE}\n"
+    while marker in body:
+        i = body.index(marker)
+        start_b = body.rfind("\\begin{table}[htb]\n", 0, i)
+        end_b = body.index("\\end{table}", i) + len("\\end{table}")
+        part_b = body[start_b:end_b]
+        m = re.search(r"\\begin\{center\}(\\footnotesize|\\small)\n(.*?)\n\\end\{center\}", part_b, flags=re.S)
+        size_b, tab_b = m.group(1), m.group(2)
+        prev_end = body.rfind("\\end{table}", 0, start_b) + len("\\end{table}")
+        prev_start = body.rfind("\\begin{table}[htb]\n", 0, prev_end)
+        part_a = body[prev_start:prev_end]
+        part_a2 = re.sub(r"(\\begin\{center\}(?:\\footnotesize|\\small)\n)", r"\1\\textbf{(a)}\\\\[3pt]\n", part_a, count=1)
+        part_a2 = part_a2.replace("\\end{center}\n\\end{table}", "\\end{center}\n\\vspace{2pt}\\begin{center}" + size_b + "\n\\textbf{(b)}\\\\[3pt]\n" + tab_b + "\n\\end{center}\n\\end{table}")
+        body = body[:prev_start] + part_a2 + body[end_b:]
+        print("merged a part-(b) table into the float before it")
     return body
 
 
