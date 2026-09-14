@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="672" viewBox="0 0 1100 672" font-family="Helvetica, Arial, sans-serif" font-size="20">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="545" viewBox="0 0 1100 545" font-family="Helvetica, Arial, sans-serif" font-size="20">
 <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs>
-<rect width="1100" height="672" fill="#ffffff"/>
+<rect width="1100" height="545" fill="#ffffff"/>
 <rect x="30" y="70" width="300" height="172" rx="8" fill="#fff4e5" stroke="#e08a1e" stroke-width="2"/>
 <text x="44" y="100" font-size="22" font-weight="bold" fill="#8a4b00">GPQA prompt</text>
 <text x="44" y="128" fill="#333">Which energy difference</text><text x="44" y="152" fill="#333">resolves two states with</text>
@@ -64,10 +64,4 @@
 <rect x="878" y="440" width="14" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
 <rect x="895" y="440" width="14" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
 <rect x="912" y="440" width="14" height="48" fill="#d6e6fa" stroke="#2f6fd6" stroke-width="2.5"/>
-<g font-size="17" fill="#222">
-<text x="30" y="560">A hypothesis for the 0.98 correlation between the GPQA and Metanym Game benchmarks: the metanym game reproduces</text>
-<text x="30" y="583">the way the model organises its knowledge, and GPQA runs on that organisation. An archetype is held once, about eight</text>
-<text x="30" y="606">times the size of a domain's instantiation; each domain adds only its metanym set. GPQA offers four candidate</text>
-<text x="30" y="629">instantiations, and the completion is the one that matches what is stored: the mechanism in use. The game offers nothing,</text>
-<text x="30" y="652">and the completion is an archetype with five instantiations: the mechanism itself.</text>
-</g></svg>
+</svg>
