@@ -77,7 +77,7 @@ Three design choices justify themselves on first principles. **A fixed anchor**:
 
 <a id="fig-council-evaluation"></a>
 
-![One evaluation, shown whole: the instantiation with its metanyms marked (top left), the idiomatic rewrite (top right), the administrator's synthesis (middle), and three of the five evaluators' ratings with their justifications (bottom; the full evaluation is in the released package, Appendix C). The "Reference" is the anchor, pinned at 7. All five judges independently isolate the same clause — "nature must make natural selections" — and the disagreement that remains, 4 versus 5, is about severity, not about what is wrong: falsifiability doing its work.](../submission/figures/council_evaluation_pc1.png)
+![One evaluation, shown whole: the instantiation with its metanyms marked and the idiomatic rewrite, the administrator's synthesis, and two of the five judges with their justifications (all five in Appendix C). The "Reference" is the anchor, pinned at 7. All five judges isolate the same clause; the disagreement that remains, 4 versus 5, is about severity.](../submission/figures/council_evaluation_pc1_wide.png)
 
 ### 3.3 Two key-free estimators
 

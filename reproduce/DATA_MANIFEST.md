@@ -146,3 +146,4 @@ tables above (asserted in its `__main__`). All outputs below are deterministic (
 | *(stdout)* | `scripts/archetype_recurrence.py` — archetype titles and domains from the evaluation transcripts: titles kept verbatim between runs, titles shared across models, models offering a resource-allocation archetype, domains used by five or more models | §6 hypothesis paragraph |
 | *(stdout)* | `scripts/compression_ratio.py` — words of the anchor's first archetype: template, metanym table, the five rewrites; compression factor at five contexts and per added context | §6 hypothesis paragraph |
 | *(stdout)* | `scripts/gpqa_reply_lengths.py` — words per GPQA reply per model, bare-letter replies | Appendix H |
+| `figures/council_evaluation_pc1_wide.png` | `scripts/plot_council_evaluation_wide.py` — the same exhibit in landscape for the ICLR text width | Figure 1 (ICLR version) |
