@@ -18,9 +18,7 @@ Because every item is produced fresh in the run, no fixed test set can leak into
 
 ### 2.1 The machinery
 
-An archetypal context is the cross-domain *isomorphism* General Systems Theory studies (von Bertalanffy, 1968).
-
-Table \ref{tab-anchor-metanym} is one archetype as a player wrote it — the first of the submission that became the run's anchor (§4.1).
+An archetypal context is the cross-domain *isomorphism* General Systems Theory studies (von Bertalanffy, 1968). Table \ref{tab-anchor-metanym} is one archetype as a player wrote it — the first of the submission that became the run's anchor (§4.1). One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
 
 <a id="tab-anchor-metanym"></a>
 
@@ -55,8 +53,6 @@ Each parallel context is played in two forms: the **instantiation** (Form a), th
 | Form (b), idiomatic rewrite | Bacteria navigate chemical environments by detecting local concentration gradients and modulating their run-and-tumble behavior accordingly. |
 
 Table: PARTBTABLE
-
-One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
 
 ### 2.2 The rules
 
