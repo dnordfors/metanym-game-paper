@@ -139,6 +139,19 @@ def tables_to_floats(body: str) -> str:
     return merge_table_parts(body)
 
 
+def pair_figures(body: str, left: str, right: str, wl: float, wr: float) -> str:
+    """Fold two consecutive single-image figures (by file stem) into one figure with two side-by-side minipages, each
+    keeping its own caption, number and label (captions wrap to the minipage width, i.e. sit under their image)."""
+    fig = lambda stem: (r"\\begin\{figure\}\[t\]\n\\centering\n\\pandocbounded\{\\includegraphics\[width=[\d.]+\\linewidth\]\{figures/"
+                        + stem + r"\.png\}\}\n\\caption\{([^\n]*)\}\n\\label\{([^}]+)\}\n\\end\{figure\}\n")
+    m = re.search(fig(left) + r"\n" + fig(right), body)
+    assert m, "pair_figures: the two figures are not consecutive: %s, %s" % (left, right)
+    cl, ll, cr, lr = m.groups()
+    mp = lambda w, stem, cap, lab: ("\\begin{minipage}[t]{%.2f\\linewidth}\\centering\n\\includegraphics[width=\\linewidth]{figures/%s.png}\n"
+                                    "\\caption{%s}\\label{%s}\n\\end{minipage}" % (w, stem, cap, lab))
+    return body[:m.start()] + "\\begin{figure}[t]\n\\centering\n" + mp(wl, left, cl, ll) + "\\hfill\n" + mp(wr, right, cr, lr) + "\n\\end{figure}\n" + body[m.end():]
+
+
 def merge_table_parts(body: str) -> str:
     """A table whose caption is exactly PARTBTABLE is folded into the float before it as part (b);
     that float's own tabular gets the label (a). One float, one caption, one table number."""
@@ -234,6 +247,7 @@ def postfix(body: str) -> str:
     body = re.sub(r"\\protect\\phantomsection\\label\{(fig-[^}]+)\}\{\}\n\n(\\begin\{figure\}.*?\\caption\{.*?\}(?:\\label\{[^}]*\})?\n)",
                   r"\2\\label{\1}\n", body, flags=re.S)
     assert "phantomsection\\label{tab-" not in body and "phantomsection\\label{fig-" not in body, "a float label was not moved into its float"
+    body = pair_figures(body, "total_validation_simple", "mechanism_sketch", 0.36, 0.62)  # Appendix H: plot beside the sketch
     assert "\\appendix" in body, "appendix marker lost"
     body = body.replace("\\begin{verbatim}", "\\begin{lstlisting}").replace("\\end{verbatim}", "\\end{lstlisting}")
     body = body.replace("\\_", "\\_\\allowbreak{}")
