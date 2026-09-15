@@ -1211,7 +1211,7 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 \item
   \textbf{Hypothesis.} A language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies. The template is the abstraction; the metanym set is what the abstraction leaves out, the topic domain; the two reconstruct the instantiation exactly.
 \item
-  \textbf{Measured (H.2).} The metanym form is strong compression: an instantiation is five times its metanym set, so the form converges toward a factor of five as domains are added, counted in words, the order of a language model's own compression of text. The factor grows with the domains because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it.
+  \textbf{Measured (H.2).} The metanym form is strong compression: an instantiation is five times its metanym set, so the form converges toward a factor of five as domains are added, above gzip's three on text. The factor grows with the domains because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it.
 \item
   \textbf{Hypothesis.} The game measures the mechanism directly. Nothing is given; the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out.
 \item
@@ -1224,7 +1224,7 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 
 \subsection{The compression of the metanym form}\label{the-compression-of-the-metanym-form}
 
-The average instantiation in the metanym game is five times larger than its metanym set (median 4.8 over the 105 archetypes in the run 2 and 3 portfolios, range 2.6 to 10.7; the anchor's first archetype 7.8), so the compression of the metanym form converges toward a factor of five as domains are added, from 2.6 at the five contexts of one game. Counted in words, that is the order of the compression a language model achieves on text, which Del\'{e}tang et al.~(2024) measured at 8.3\% of raw size for Chinchilla 70B on Wikipedia, a factor of twelve, against three for gzip; the bit-level factor of the metanym form is measurable on an open-weights model and is not measured here.
+The average instantiation in the metanym game is five times larger than its metanym set (median 4.8 over the 105 archetypes in the run 2 and 3 portfolios, range 2.6 to 10.7; the anchor's first archetype 7.8), so the metanym form compresses toward a factor of five as domains are added, from 2.6 at the five contexts of one game. That is above gzip, which compresses Wikipedia text by about three (Del\'{e}tang et al., 2024). Our hypothesis is that a form this compressive qualifies as a learning mechanism for a language model.
 
 \subsection{The retrieval signature: the runs part on one word, and the archetypes return}\label{the-retrieval-signature-the-runs-part-on-one-word-and-the-archetypes-return}
 
