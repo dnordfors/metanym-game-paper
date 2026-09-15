@@ -13,7 +13,7 @@ Nothing in this appendix tests the hypothesis of §6. It sets out the argument s
 ## H.1 The chain
 
 1. **Cited.** Training a language model is compression. Predicting text is compressing it (Shannon, 1951); a trained model is a general-purpose compressor (Delétang et al., 2024).
-2. **Cited.** Compression generalises. The shortest description keeps a recurring pattern once, as an abstraction, and reuses it (Rissanen, 1978); that is a concept.
+2. **Cited.** Generalisation is semantic compression. Different statements share a generalisation and need only add their semantic particulars to it (Rissanen, 1978); the shared part is a concept.
 3. **Cited.** A concept is a frame with open slots. Minsky's (1974) frames are stereotyped situations with terminals that instances fill; the context template of §2 is such a frame, written in words.
 4. **Cited.** An analogy is a shared relational structure with different particulars (Gentner, 1983). The archetypal context is that shared structure.
 5. **Hypothesis.** A language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies. The template is the abstraction, the metanym set is the topic domain, and the two reconstruct the instantiation exactly.
