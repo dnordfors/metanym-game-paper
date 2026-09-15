@@ -244,8 +244,6 @@ Li, X. L., Shrivastava, V., Li, S., Hashimoto, T., & Liang, P. (2024). Benchmark
 
 Longino, H. E. (1990). *Science as Social Knowledge.* Princeton University Press.
 
-Minsky, M. (1974). A framework for representing knowledge. MIT AI Laboratory Memo 306.
-
 Mitchell, M. (2021). Abstraction and analogy-making in artificial intelligence. *Annals of the New York Academy of Sciences, 1505*(1), 79–101.
 
 Neisser, U. (1979). The concept of intelligence. *Intelligence, 3*(3), 217–227.
@@ -259,8 +257,6 @@ Parisi, F., Strino, F., Nadler, B., & Kluger, Y. (2014). Ranking and combining m
 Penn, D. C., Holyoak, K. J., & Povinelli, D. J. (2008). Darwin's mistake: Explaining the discontinuity between human and nonhuman minds. *Behavioral and Brain Sciences, 31*(2), 109–130.
 
 Rein, D., Hou, B. L., Stickland, A. C., Petty, J., Pang, R. Y., Dirani, J., Michael, J., & Bowman, S. R. (2023). GPQA: A graduate-level Google-proof Q&A benchmark. arXiv:2311.12022.
-
-Rissanen, J. (1978). Modeling by shortest data description. *Automatica, 14*(5), 465–471.
 
 
 Shannon, C. E. (1951). Prediction and entropy of printed English. *Bell System Technical Journal, 30*(1), 50–64.
