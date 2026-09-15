@@ -299,4 +299,4 @@ Zheng, L., et al. (2023). Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena
 
 → [`appendices/G_anchoring.md`](appendices/G_anchoring.md) — G. What anchoring does to resolution
 
-→ [`appendices/H_hypothesis.md`](appendices/H_hypothesis.md) — H. The argument behind the hypothesis
+→ [`appendices/H_hypothesis.md`](appendices/H_hypothesis.md) — H. A hypothesis for the metanym game–GPQA correlation
