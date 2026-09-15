@@ -1189,7 +1189,7 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 \begin{figure}[H]
 \centering
 \pandocbounded{\includegraphics[width=1.00\linewidth]{figures/mechanism_sketch.png}}
-\caption{A hypothesis for the 0.98: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype (\(\alpha\), \(\beta\), \(\gamma\)) is held once; each domain adds only its metanym set (the slices), about an eighth of the instantiation it yields. GPQA: archetype and domain are given; the model derives the instantiation and selects the matching candidate. The game: nothing is given; the model selects the archetype and domains that best satisfy the criteria and writes them out.}
+\caption{A hypothesis for the 0.98: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype (\(\alpha\), \(\beta\), \(\gamma\)) is held once; each domain adds only its metanym set (the slices), about a fifth of the instantiation it yields. GPQA: archetype and domain are given; the model derives the instantiation and selects the matching candidate. The game: nothing is given; the model selects the archetype and domains that best satisfy the criteria and writes them out.}
 \label{fig-mechanism}
 \end{figure}
 
@@ -1211,7 +1211,7 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 \item
   \textbf{Hypothesis.} A language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies. The template is the abstraction; the metanym set is what the abstraction leaves out, the topic domain; the two reconstruct the instantiation exactly.
 \item
-  \textbf{Measured (H.2).} The metanym form is strong compression. About 3 for a template with five parallel contexts and about 8 for each further one, growing with every domain a template serves --- the order of the compression a trained model achieves on text, in words rather than bits. The factor grows because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it, and no instantiation here repeats another. This is the abstracting kind of compression, the kind held-out loss rewards; a representation this compressive is what training would find.
+  \textbf{Measured (H.2).} The metanym form is strong compression: an instantiation is five times its metanym set, so the form converges toward a factor of five as domains are added, counted in words, the order of a language model's own compression of text. The factor grows with the domains because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it.
 \item
   \textbf{Hypothesis.} The game measures the mechanism directly. Nothing is given; the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out.
 \item
@@ -1224,22 +1224,7 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 
 \subsection{The compression of the metanym form}\label{the-compression-of-the-metanym-form}
 
-Measured on the anchor submission's first archetype, the one archetype shipped in full (\texttt{scripts/compression\_\allowbreak{}ratio.py}). The template is 120 words; the metanym table 84 words for five parallel contexts, 17 per context; the five instantiations (Form a, the form the template and metanym set reconstruct exactly) average 130 words. With \(n\) contexts the factor is \(130n/(120+17n)\):
-
-\begin{table}[H]
-\caption{Literal compression of the metanym form against the number of parallel contexts per template, from the anchor's first archetype (120-word template, 17 words of metanyms per context, 130-word instantiations).}
-\begin{center}\small
-\begin{tabular}{@{}lrrrrr@{}}
-\toprule\noalign{}
-contexts & 5 & 10 & 20 & 50 & limit \\
-\midrule\noalign{}
-factor & 3.2 & 4.5 & 5.7 & 6.9 & 7.8 \\
-\bottomrule
-\end{tabular}
-\end{center}
-\end{table}
-
-The asymptote is the ratio of an instantiation to its metanym set, and it is reached only when a template is amortised over dozens of domains, which is the situation inside a model rather than inside a five-context game. The count is in words, and metanyms are the high-entropy tokens, so the factor in bits is lower; the bit-level factor is measurable with an open-weights model and is not measured here. Templates in the released portfolios run 80 to 120 words with 10 to 15 slots, so the asymptote varies by archetype within the same range. It is a lower limit in one further sense: a metanym set is itself a frame with slots, so the topic domain compresses by the same rule, and the factors multiply down the hierarchy.
+The average instantiation in the metanym game is five times larger than its metanym set (median 4.8 over the 105 archetypes in the run 2 and 3 portfolios, range 2.6 to 10.7; the anchor's first archetype 7.8), so the compression of the metanym form converges toward a factor of five as domains are added, from 2.6 at the five contexts of one game. Counted in words, that is the order of the compression a language model achieves on text, which Del\'{e}tang et al.~(2024) measured at 8.3\% of raw size for Chinchilla 70B on Wikipedia, a factor of twelve, against three for gzip; the bit-level factor of the metanym form is measurable on an open-weights model and is not measured here.
 
 \subsection{The retrieval signature: the runs part on one word, and the archetypes return}\label{the-retrieval-signature-the-runs-part-on-one-word-and-the-archetypes-return}
 
