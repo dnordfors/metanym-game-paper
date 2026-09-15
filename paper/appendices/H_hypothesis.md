@@ -8,7 +8,7 @@ Nothing in this appendix tests the hypothesis of §6. It sets out the argument s
 
 <a id="fig-mechanism"></a>
 
-![A hypothesis for the 0.98: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype ($\alpha$, $\beta$, $\gamma$) is held once, about eight times the size of a domain's instantiation (the slices); each domain adds only its metanym set. GPQA: archetype and domain are given; the model derives the instantiation and selects the matching candidate. The game: nothing is given; the model selects the archetype and domains that best satisfy the criteria and writes them out.](../submission/figures/mechanism_sketch.png)
+![A hypothesis for the 0.98: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype ($\alpha$, $\beta$, $\gamma$) is held once; each domain adds only its metanym set (the slices), about an eighth of the instantiation it yields. GPQA: archetype and domain are given; the model derives the instantiation and selects the matching candidate. The game: nothing is given; the model selects the archetype and domains that best satisfy the criteria and writes them out.](../submission/figures/mechanism_sketch.png)
 
 ## H.1 The chain
 
