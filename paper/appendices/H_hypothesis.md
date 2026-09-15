@@ -18,17 +18,14 @@ Nothing in this appendix tests the hypothesis of §6. It sets out the argument s
 4. **Cited.** A concept is a frame with open slots. Minsky's (1974) frames are stereotyped situations with terminals that instances fill; the context template of §2 is such a frame, written in words.
 5. **Cited.** An analogy is a shared relational structure with different particulars (Gentner, 1983). The archetypal context is that shared structure.
 6. **Hypothesis.** A language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies. The template is the abstraction; the metanym set is what the abstraction leaves out, the topic domain; the two reconstruct the instantiation exactly.
-7. **Measured (H.2).** The metanym form is strong compression: an instantiation is five times its metanym set, so the form converges toward a factor of five as domains are added, above gzip's three on text. The factor grows with the domains because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it.
-8. **Hypothesis.** The game measures the mechanism directly. Nothing is given; the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out.
-9. **Hypothesis (H.4 is the observation).** GPQA measures the mechanism's use. The archetype and the domain are given by the question; the model derives the instantiation and selects the candidate that matches it. The two tests agree because they exercise one operation from opposite ends: GPQA fixes the store position and selects among four strings, the game selects the store position and fixes the output form.
-10. **Hypothesis (H.3 is the signature).** Corollary: retrieval, not construction. In the game the models retrieve templates and metanym sets that training already compressed, which is why they play well with no reasoning channel and why a model rewrites its portfolios between runs but keeps its archetypes.
-11. **Established.** What the data establish is narrower. The factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (§4.5, Appendix D.1). The hypothesis is consistent with the general factor of Ilić and Gignac (2024), and more specific.
+7. **Measured.** In the metanym game an instantiation is between two and a half and eleven times the size of its metanym set. That hints at a compression rate at scale of the same order of magnitude as has been measured for language models, about ten (Delétang et al., 2024), and above gzip's three. The factor grows with the domains because the template has open slots: a memorised string compresses only its exact repeats, a frame compresses every new instance that fits it.
+8. **Hypothesis.** A form this compressive qualifies as a learning mechanism for a language model.
+9. **Hypothesis.** The game measures the mechanism directly. Nothing is given; the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out.
+10. **Hypothesis (H.3 is the observation).** GPQA measures the mechanism's use. The archetype and the domain are given by the question; the model derives the instantiation and selects the candidate that matches it. The two tests agree because they exercise one operation from opposite ends: GPQA fixes the store position and selects among four strings, the game selects the store position and fixes the output form.
+11. **Hypothesis (H.2 is the signature).** Corollary: retrieval, not construction. In the game the models retrieve templates and metanym sets that training already compressed, which is why they play well with no reasoning channel and why a model rewrites its portfolios between runs but keeps its archetypes.
+12. **Established.** What the data establish is narrower. The factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (§4.5, Appendix D.1). The hypothesis is consistent with the general factor of Ilić and Gignac (2024), and more specific.
 
-## H.2 The compression of the metanym form
-
-In the metanym game an instantiation is between two and a half and eleven times the size of its metanym set. That hints at a compression rate at scale of the same order of magnitude as has been measured for language models, about ten (Delétang et al., 2024), and above gzip's three. Our hypothesis is that a form this compressive qualifies as a learning mechanism for a language model.
-
-## H.3 The retrieval signature in the released transcripts
+## H.2 The retrieval signature in the released transcripts
 
 The archetype titles and parallel-context domains of every graded portfolio in the three runs, as the evaluation transcripts record them (`scripts/archetype_recurrence.py`; the raw portfolios are not shipped, the transcripts copy their headings).
 
@@ -38,7 +35,7 @@ The archetype titles and parallel-context domains of every graded portfolio in t
 
 **The caveat.** Recurrence is strongest inside a vendor: 11 of the 14 shared titles are shared within one vendor only, the two Opus models sharing cascade amplification, phase transition, competitive exclusion and boundary maintenance word for word, and the GPT-4o family sharing resource allocation, conflict resolution and growth and development. Shared training data explains within-vendor recurrence as well as shared representation does. The cross-vendor recurrence is the evidence.
 
-## H.4 How GPQA was answered
+## H.3 How GPQA was answered
 
 With the reasoning channel off and temperature zero, no model answered with a bare letter (`scripts/gpqa_reply_lengths.py`):
 
@@ -52,9 +49,9 @@ With the reasoning channel off and temperature zero, no model answered with a ba
 
 Table: Words per GPQA reply with the reasoning channel off, and replies under fifteen words, per model (198 items each).
 
-Thirteen replies of 2,376 are under fifteen words, most of them truncations. Every model wrote a derivation and ended it with the answer line, as the prompt allowed (Appendix D.2). In the derivations the model states the relation the question turns on in the question's domain and then tests the candidates against it: an instantiation written out, then a match — the sequence step 9 describes. "Reasoning off" removes the hidden channel; the visible derivation remains, and the question of whether a hidden channel would change play is open (§6, Scope).
+Thirteen replies of 2,376 are under fifteen words: five are empty and counted wrong (D.2), and eight are a bare answer line with no derivation, of which two are correct, the chance rate for four options. Every other reply is a derivation ending in the answer line, as the prompt allowed (Appendix D.2). In the derivations the model states the relation the question turns on in the question's domain and then tests the candidates against it: an instantiation written out, then a match — the sequence step 10 describes. "Reasoning off" removes the hidden channel; the visible derivation remains, and the question of whether a hidden channel would change play is open (§6, Scope).
 
-## H.5 Predictions, and what would refute the hypothesis
+## H.4 Predictions, and what would refute the hypothesis
 
 1. **Domain-matched agreement.** A model's factual score on parallel contexts in a field tracks its GPQA accuracy in that field. GPQA Diamond carries subject labels, and the released evaluations carry each parallel context's domain, so the test needs no new run. A refutation: the field-by-field agreement is no higher than the agreement across fields.
 2. **Separability in latent space.** Archetype and topic domain are separable in a model's latent space: the same archetype recoverable from parallel contexts in unrelated domains, and the domain from unrelated archetypes. A refutation: representations that separate by domain only.
