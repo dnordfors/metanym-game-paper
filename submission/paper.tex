@@ -221,14 +221,7 @@ We ran the full pipeline three times, regenerating all twelve portfolios at T=0 
 
 \textbf{A sustainable yardstick.} When the field outgrows the anchor --- a standing total above the pinned 7 by a resolvable margin --- the anchor is replaced by the stronger submission and models are re-scored; the ballast stays fixed. Contestable seats keep the judges current, retesting the scale: the benchmark rises with the models it measures, which a keyed test cannot: its key-makers are fixed.
 
-\textbf{A hypothesis for the agreement.} The total tracks GPQA at 0.98 (\S{}4.5). GPQA is an accepted measure of capability with no theory of intelligence behind it: expert-written questions and a key (Rein et al., 2023). The game reproduces its ranking as closely as the measurement error of the two instruments allows (Appendix D.1), so whatever GPQA measures, the game measures too. Of the eight constructs the game demands, four are analogy under cognitive science's own names (Appendix E): that is the sense in which analogy is at the core --- sufficient by itself, not the only thing that could be. An agreement of 0.98 suggests that the two instruments measure the same thing, and their methods share nothing on the surface, so the common thing is in the depth. Our hypothesis is that a language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies; the metanym game reproduces this organisation, and GPQA runs on it (Figure \ref{fig-mechanism}). Both tests are one retrieval followed by one selection. In GPQA the archetype and the domain are given by the question: the model derives the instantiation and selects the candidate that matches it, the mechanism in use. In the game nothing is given: the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out, the mechanism itself. The hypothesis is untested here. The argument behind it, and what would refute it, is Appendix H. It predicts that the agreement is domain-matched, a model's factual score on parallel contexts in a field tracking its GPQA accuracy in that field, and that archetype and topic domain are separable in a model's latent space.
-
-\begin{figure}[t]
-\centering
-\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/mechanism_sketch.png}}
-\caption{A hypothesis for the 0.98: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype (\(\alpha\), \(\beta\), \(\gamma\)) is held once, about eight times the size of a domain's instantiation (the slices); each domain adds only its metanym set. GPQA: archetype and domain are given; the model derives the instantiation and selects the matching candidate. The game: nothing is given; the model selects the archetype and domains that best satisfy the criteria and writes them out.}
-\label{fig-mechanism}
-\end{figure}
+\textbf{A hypothesis for the agreement.} The total tracks GPQA at 0.98 (\S{}4.5). GPQA is an accepted measure of capability with no theory of intelligence behind it: expert-written questions and a key (Rein et al., 2023). The game reproduces its ranking as closely as the measurement error of the two instruments allows (Appendix D.1), so whatever GPQA measures, the game measures too. Of the eight constructs the game demands, four are analogy under cognitive science's own names (Appendix E): that is the sense in which analogy is at the core --- sufficient by itself, not the only thing that could be. An agreement of 0.98 suggests that the two instruments measure the same thing, and their methods share nothing on the surface, so the common thing is in the depth. Our hypothesis is that a language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies; the metanym game reproduces this organisation, and GPQA runs on it (Appendix H, Figure \ref{fig-mechanism}). Both tests are one retrieval followed by one selection. In GPQA the archetype and the domain are given by the question: the model derives the instantiation and selects the candidate that matches it, the mechanism in use. In the game nothing is given: the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out, the mechanism itself. The hypothesis is untested here. The argument behind it, and what would refute it, is Appendix H. It predicts that the agreement is domain-matched, a model's factual score on parallel contexts in a field tracking its GPQA accuracy in that field, and that archetype and topic domain are separable in a model's latent space.
 
 \textbf{Steering signal, and its caveat.} Self-improvement, the council governing its own rules, is specified but not exercised. A system optimised against \(T\) is optimised against a consensus it participates in, so gains can come from courting the consensus; the partial answers are the two quarters consensus does not own and independently constituted councils.
 
@@ -1193,6 +1186,13 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 \label{fig-gpqa-scatter-h}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/mechanism_sketch.png}}
+\caption{A hypothesis for the 0.98: the metanym game reproduces the way the model organises its knowledge, and GPQA runs on that organisation. An archetype (\(\alpha\), \(\beta\), \(\gamma\)) is held once, about eight times the size of a domain's instantiation (the slices); each domain adds only its metanym set. GPQA: archetype and domain are given; the model derives the instantiation and selects the matching candidate. The game: nothing is given; the model selects the archetype and domains that best satisfy the criteria and writes them out.}
+\label{fig-mechanism}
+\end{figure}
+
 \subsection{The chain}\label{the-chain}
 
 \begin{enumerate}
@@ -1241,15 +1241,43 @@ factor & 3.2 & 4.5 & 5.7 & 6.9 & 7.8 \\
 
 The asymptote is the ratio of an instantiation to its metanym set, and it is reached only when a template is amortised over dozens of domains, which is the situation inside a model rather than inside a five-context game. The count is in words, and metanyms are the high-entropy tokens, so the factor in bits is lower; the bit-level factor is measurable with an open-weights model and is not measured here. Templates in the released portfolios run 80 to 120 words with 10 to 15 slots, so the asymptote varies by archetype within the same range. It is a lower limit in one further sense: a metanym set is itself a frame with slots, so the topic domain compresses by the same rule, and the factors multiply down the hierarchy.
 
-\subsection{The retrieval signature in the released transcripts}\label{the-retrieval-signature-in-the-released-transcripts}
+\subsection{The retrieval signature: the runs part on one word, and the archetypes return}\label{the-retrieval-signature-the-runs-part-on-one-word-and-the-archetypes-return}
 
-The archetype titles and parallel-context domains of every graded portfolio in the three runs, as the evaluation transcripts record them (\texttt{scripts/archetype\_\allowbreak{}recurrence.py}; the raw portfolios are not shipped, the transcripts copy their headings).
+At temperature 0 the decoder takes the highest-scoring token at each position. Serving is not bit-exact from call to call, and where two candidates score almost equally a difference below rounding decides between them; from that token on the text is generated anew. Runs 2 and 3 were made two hours apart from the same prompt at temperature 0, and the raw portfolios of both are shipped (\texttt{data/regenerations/portfolios\_\allowbreak{}run2/}, \texttt{portfolios\_\allowbreak{}run3/}; \texttt{scripts/portfolio\_\allowbreak{}divergence.py}). Run 1's portfolios were not preserved, so the three-week pair is read from the evaluation transcripts, which copy the headings (\texttt{scripts/archetype\_\allowbreak{}recurrence.py}).
 
-\textbf{Within a model, the archetypes persist while the texts change.} Eleven of twelve portfolios differ between runs (\S{}4.6). Between the two runs made two hours apart, 34 of 48 archetype titles recur verbatim; between run 1 and run 2, three weeks apart, 20 of 50. Gemini 2.5 Flash produced the same five titles in all three runs; Claude Opus 4.0 kept four or five of five. The models rewrite; they do not reinvent. This is what one archetype in latent space with many projections in literal space predicts, and what a stored text would not.
+\textbf{Where the runs part.} Gemini 2.5 Flash returned the same 9,099 words. The other eleven models part inside the first template sentence, after 3 to 93 shared words, on one word: \emph{risks} against \emph{faces}, \emph{that detect} against \emph{to detect}, \emph{activates} against \emph{encounters}. Everything after the fork, two to eight thousand words, is generated anew. After the fork, 22 of 42 archetypes return by title; in the four models that keep the most, Claude Opus 4.0, GPT-4.1, Gemini 3.1 Pro and GPT-4o, 14 of 17.
+
+\begin{table}[H]
+\caption{Where the raw portfolios of runs 2 and 3 part (same prompt, temperature 0, two hours apart), and how many of run 2's archetypes after the fork return in run 3 by title. gpt-4o-mini's run 2 portfolio holds one archetype, the one the fork falls in.}
+\begin{center}\footnotesize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.08\linewidth}>{\raggedright\arraybackslash}p{0.44\linewidth}>{\raggedright\arraybackslash}p{0.18\linewidth}}
+\toprule\noalign{}
+Model & Words shared & The fork (run 2 / run 3) & Archetypes returning after it \\
+\midrule\noalign{}
+claude-opus-4.0 & 23 & \emph{activated {[}UNIT{]} recruits} / \emph{{[}UNIT{]} that receives} & 4 / 4 \\
+claude-opus-4.1 & 14 & \emph{activates a {[}DETECTOR{]}} / \emph{encounters a {[}DETECTOR{]}} & 1 / 4 \\
+claude-opus-4.5 & 40 & \emph{that detect changes} / \emph{to detect changes} & 2 / 5 \\
+claude-sonnet-4 & 15 & \emph{{[}ORGANIZATION{]}. Each} / \emph{{[}ORGANIZATION{]} while} & 2 / 4 \\
+gemini-2.5-flash & 9,099 & identical & 6 / 6 \\
+gemini-3.1-pro & 93 & \emph{risks {[}CONSEQUENCE{]}} / \emph{faces {[}CONSEQUENCE{]}} & 3 / 4 \\
+gpt-4.1 & 75 & first table cell: \emph{Biological Organism} / \emph{Genetics} & 4 / 5 \\
+gpt-4.1-mini & 3 & \emph{{[}Resource Flow} / \emph{Resource Flow} & 1 / 5 \\
+gpt-4.1-nano & 14 & \emph{based on {[}INFORMATION{]}} / \emph{by a {[}DECISION-MAKER{]}} & 1 / 3 \\
+gpt-4o & 23 & \emph{{[}CRITERIA{]} to ensure} / \emph{{[}STRATEGY{]} to ensure} & 3 / 4 \\
+gpt-4o-2024-08-06 & 23 & \emph{{[}CRITERIA{]} to ensure} / \emph{balancing {[}CONSTRAINT{]}} & 1 / 4 \\
+gpt-4o-mini & 26 & \emph{relative importance of} / \emph{value of each} & 0 / 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+\textbf{What returns and what does not.} Of the 37 archetypes a model kept by title, 30 templates are rewritten, with a median text similarity of 0.19; half the slot names are kept (199 of 387), a third of the domains (53 of 150), and where a domain and a slot are both kept the metanym is the same in 221 of 388 cells. Seven templates return verbatim: Gemini 2.5 Flash's six, and one GPT-4.1 template returned word for word with all five domains replaced, the fork falling on the first cell of its metanym table.
+
+\textbf{The reading.} The perturbation acts in literal space: the first near-degenerate logits after the prompt decide the wording, and from there the context template and the metanym sets are written anew. What returns is the archetype, in a different literal representation. This is what one archetype in latent space with many projections in literal space predicts. A stored text would return verbatim or not at all; Gemini 2.5 Flash's identical portfolio is the one case that does not separate the two. Between run 1 and run 2, three weeks apart, 20 of 50 titles recur.
 
 \textbf{Across models, the same concepts recur, across vendors.} Seven of the eleven graded models, from all three vendors, offer a resource-allocation archetype (title containing ``allocation''). Six domains are used by five or more models: urban planning, social media, corporate structure, the climate system, software development, biological evolution. Of 81 distinct titles, 14 are used by more than one model.
 
-\textbf{The caveat.} Recurrence is strongest inside a vendor: 11 of the 14 shared titles are shared within one vendor only, the two Opus models sharing cascade amplification, phase transition, competitive exclusion and boundary maintenance word for word, and the GPT-4o family sharing resource allocation, conflict resolution and growth and development. Shared training data explains within-vendor recurrence as well as shared representation does. The cross-vendor recurrence is the evidence.
+\textbf{The caveat.} Recurrence is strongest inside a vendor: 11 of the 14 shared titles are shared within one vendor only, the two Opus models sharing cascade amplification, phase transition, competitive exclusion and boundary maintenance word for word, and the GPT-4o family sharing resource allocation, conflict resolution and growth and development. Shared training data explains within-vendor recurrence as well as shared representation does. The cross-vendor recurrence is the evidence. A second reading of the recurrence is a strong prior over topics under this prompt; the test that separates it from a stored structure is the fifth prediction of H.5.
 
 \subsection{How GPQA was answered}\label{how-gpqa-was-answered}
 
@@ -1287,6 +1315,8 @@ Thirteen replies of 2,376 are under fifteen words, most of them truncations. Eve
   \textbf{Retrieval over construction.} Reasoning should add little to generation in the game, where templates and metanym sets are retrieved, and may still help judging, where the task is to catch a broken substitution. A refutation: a reasoning budget that raises generation ratings as much as it raises judging.
 \item
   \textbf{The bit-level factor.} Given its template and metanym set, an instantiation's per-token loss under an open-weights model should fall far below its loss given nothing, and by more for archetypes that recur across many domains. A refutation: no such gap, or a gap that does not grow with the number of domains.
+\item
+  \textbf{Recurrence under a changed prompt.} With the two worked examples of the generation prompt replaced, the same archetypes should return, rewritten as in H.3. A refutation: recurrence that vanishes with the examples, which would put the archetypes in the prompt and not in the model.
 \end{enumerate}
 
 \end{document}

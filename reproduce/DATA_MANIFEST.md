@@ -32,6 +32,8 @@ the per-archetype non-factual axis ratings. Counts below are `json` / `md` files
 | `data/probe_K_anchor8_20260529T033755Z/` | anchor sweep, anchor 8 | §4.2, §5.7 | 135 / 132 |
 | `data/regenerations/probe_K_anchor7_20260619T015828Z/` | run 2 — independent regeneration | §4.9 | 133 / 132 |
 | `data/regenerations/probe_K_anchor7_20260619T040659Z/` | run 3 — independent regeneration | §4.9 | 133 / 132 |
+| `data/regenerations/portfolios_run2/` | run 2 — the twelve raw generator portfolios (`<model>_off_T0_r1.md`; same prompt, T = 0, reasoning off) | Appendix H.3 (ICLR) | 12 |
+| `data/regenerations/portfolios_run3/` | run 3 — the twelve raw generator portfolios, two hours after run 2 (run 1's were not preserved) | Appendix H.3 (ICLR) | 12 |
 
 Anchor 7 serves double duty: it is both the production run and the anchor-7 point of the sweep
 (`anchor_sweep_leaderboard.py` matches it by the `probe_K_2*` prefix). The JSON counts exceed the
@@ -96,8 +98,8 @@ compare the figures by eye.
   outputs. Re-querying the models to produce a *new* run (a fresh N, non-deterministic, costs
   budget) is a separate activity; that tooling lives with the upstream experiment in the working
   repo, not in this package.
-- **Raw generated portfolios** beyond the two ballast submissions in `submissions/` (below) and
-  the `.md` transcripts already inside each run directory. The anchor submission is carried in `submissions/`, and the appendices in `paper/appendices/`
+- **Raw generated portfolios of run 1** beyond the two ballast submissions in `submissions/` (below) and
+  the `.md` transcripts already inside each run directory (runs 2 and 3 are carried whole in `data/regenerations/portfolios_run{2,3}/`; run 1's were not preserved). The anchor submission is carried in `submissions/`, and the appendices in `paper/appendices/`
   carry the other portfolio the paper exhibits; the ballast is carried because §4.6 names it as
   protocol material, not because the paper prints it.
 - **The validated archetype database.** Not read by any script here; it lives upstream at
@@ -144,6 +146,7 @@ tables above (asserted in its `__main__`). All outputs below are deterministic (
 | `figures/runs_panel.png` | `scripts/plot_runs_panel.py` — three runs apart + pooled, against GPQA | Appendix F figure |
 | `figures/total_validation_simple_pooled123.png` | `scripts/plot_total_validation_simple_pooled.py` — pooled T vs GPQA (copied to the ICLR folder as `total_validation_simple.png`) | Fig. 2 |
 | *(stdout)* | `scripts/archetype_recurrence.py` — archetype titles and domains from the evaluation transcripts: titles kept verbatim between runs, titles shared across models, models offering a resource-allocation archetype, domains used by five or more models | §6 hypothesis paragraph |
+| *(stdout)* | `scripts/portfolio_divergence.py` — runs 2 and 3 raw portfolios: words shared before the first differing word, the fork, archetypes returning after it; over kept archetypes, templates verbatim vs rewritten, text similarity, slot names, domains and metanyms kept | Appendix H.3 (ICLR) |
 | *(stdout)* | `scripts/compression_ratio.py` — words of the anchor's first archetype: template, metanym table, the five rewrites; compression factor at five contexts and per added context | §6 hypothesis paragraph |
 | *(stdout)* | `scripts/gpqa_reply_lengths.py` — words per GPQA reply per model, bare-letter replies | Appendix H |
 | `figures/council_evaluation_pc1_wide.png` | `scripts/plot_council_evaluation_wide.py` — the same exhibit in landscape for the ICLR text width | Figure 1 (ICLR version) |
