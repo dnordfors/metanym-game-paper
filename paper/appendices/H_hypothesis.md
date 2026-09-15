@@ -1,4 +1,4 @@
-# H. The argument behind the hypothesis
+# H. A hypothesis for the metanym game–GPQA correlation
 
 Nothing in this appendix tests the hypothesis of §6. It sets out the argument step by step, marks each step as a cited result, a measurement on the released data, or the hypothesis itself, and ends with what would refute it. Every number comes from a script in the released package.
 
