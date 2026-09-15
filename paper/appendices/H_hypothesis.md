@@ -26,7 +26,7 @@ Nothing in this appendix tests the hypothesis of §6. It sets out the argument s
 
 ## H.2 The compression of the metanym form
 
-The average instantiation in the metanym game is five times larger than its metanym set (mean 5.2 over the 105 archetypes in the run 2 and 3 portfolios, range 2.6 to 10.7; the anchor's first archetype 7.8), so the metanym form compresses toward a factor of five as domains are added, from 2.6 at the five contexts of one game. That is above gzip, which compresses Wikipedia text by about three (Delétang et al., 2024). Our hypothesis is that a form this compressive qualifies as a learning mechanism for a language model.
+In the metanym game an instantiation is between two and a half and eleven times the size of its metanym set. That hints at a compression rate at scale of the same order of magnitude as has been measured for language models, about ten (Delétang et al., 2024), and above gzip's three. Our hypothesis is that a form this compressive qualifies as a learning mechanism for a language model.
 
 ## H.3 The retrieval signature: the runs part on one word, and the archetypes return
 
