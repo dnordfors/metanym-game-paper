@@ -1,0 +1,220 @@
+## Target Submission
+
+### Archetypal context 1: Negative Feedback Regulation
+
+#### Factually correct (per parallel context)
+
+- PC 1 (Mammalian Thermoregulation): The description of hypothalamic thermostat function, sweating/vasodilation for heat dissipation, shivering/vasoconstriction for heat generation, and the self-dampening nature of the feedback loop is accurate. The claim that disruption causes temperature to "spiral toward lethal extremes" is correct. The statement that "organisms with functional negative feedback survive; those without it perish" is a reasonable generalization. No factual errors are present; the biology is handled with care and precision comparable to or slightly above the Reference's bacterial chemotaxis entry. Rating: 8
+
+- PC 2 (Predator-Prey Population): The description of density-dependent feedback, oscillations around equilibrium, and the consequences of disruption (predator extinction or prey collapse from overgrazing) is ecologically sound. The claim that "oscillations around an equilibrium ratio persist" is a reasonable characterization of Lotka-Volterra dynamics. The statement that loss of feedback causes "alternative states (prey monoculture or predator extinction)" is accurate. One minor imprecision: the template frames this as "negative feedback" maintaining equilibrium, but predator-prey dynamics are more accurately described as oscillatory (covered in Archetype 4), creating slight conceptual tension. Rating: 7
+
+- PC 3 (Blood pH Homeostasis): The description of chemoreceptor-driven respiratory and renal compensation, the pH range (7.35–7.45), and the consequences of failure (cardiac dysrhythmia, seizures, death) is accurate. The distinction between acidosis and alkalosis responses is correctly handled. The statement that "blood pH stability results from continuous automatic correction, not static buffering" is a meaningful and accurate insight. No factual errors detected. Rating: 8
+
+- PC 4 (Stock Market Price Discovery): The description of arbitrage as a negative feedback mechanism returning prices to fair value is a standard and defensible framing in financial economics. The claim that "trading halts, information opacity, or capital constraints on arbitrageurs disrupt this loop" is accurate. The statement that markets "spiral into bubbles or crashes" when arbitrage fails is reasonable. The framing is somewhat idealized (efficient market hypothesis assumptions), but not factually wrong. Rating: 7
+
+- PC 5 (Social Reputation Dynamics): The description of gossip, status signals, and informal sanctions as reputation feedback mechanisms is sociologically defensible. The claim that "excessive status is naturally checked by community skepticism" is a reasonable generalization. The statement that "anonymity in online systems, institutional failure, or norm collapse" disrupts feedback is accurate. The claim that communities persist "through automatic reputation feedback" rather than altruism is a defensible sociological position. No significant factual errors. Rating: 7
+
+#### Beauty
+The template is elegantly constructed, with the self-dampening logic of negative feedback rendered clearly and consistently across all five domains. The Form (b) rewrites are genuinely polished—the thermoregulation and blood pH entries in particular achieve domain-expert prose that reads naturally. The social reputation entry is creative and the financial entry is clean. The template's explicit articulation of the self-limiting mechanism ("deviation shrinks, which automatically dampens the sensor signal") is aesthetically satisfying. Compared to the Reference's gradient-descent archetype, which achieves similar elegance, this is roughly equivalent in beauty, perhaps slightly above due to the explicit mechanistic clarity of the dampening logic.
+Rating: 8
+
+#### Intelligence
+The choice to make negative feedback the archetype is intellectually sound and the execution demonstrates genuine understanding of control theory. The insight that "understanding property dynamics requires mapping the feedback mechanism" is a meaningful epistemological claim. The social reputation domain is an intelligent and non-obvious application. The blood pH entry correctly distinguishes respiratory from renal compensation. However, the predator-prey domain creates mild conceptual tension with Archetype 4 (oscillatory amplification), which explicitly covers predator-prey cycling as an oscillatory rather than homeostatic system—this is a structural inconsistency in the submission that slightly reduces the intelligence score. The financial domain is competent but less surprising than the Reference's gradient descent entry.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains—physiology, ecology, biochemistry, financial economics, sociology—are genuinely diverse and span biological, physical, social, and economic systems. The metanyms are well-chosen: "hypothalamus" vs. "chemoreceptor" vs. "price discovery" vs. "reputation monitor" are clearly not synonymous. "Sweating/shivering" vs. "hunting/reproduction" vs. "acid/alkali secretion" vs. "buying/selling" vs. "praise/censure" are meaningfully distinct corrective actions. The domain spread is comparable to the Reference's five domains (bacterial, mountain, career, ML, ant), which also span biology, physical, social, and computational domains. Slight edge to the Target for including biochemistry and sociology as distinct domains.
+Rating: 8
+
+#### Impressive length
+The template is substantial—14 sentences with multiple conditional branches (above/below range), explicit dampening logic, failure mode, and epistemological claim. The Form (a) entries are notably longer than the Reference's equivalents because they explicitly handle both directions of deviation (above and below range), effectively doubling the corrective-action content. The Form (b) entries are appropriately detailed. This is clearly longer and more structurally complex than the Reference template, which has 9 sentences.
+Rating: 8
+
+---
+
+### Archetypal context 2: Critical Transition and Hysteresis
+
+#### Factually correct (per parallel context)
+
+- PC 1 (Lake Eutrophication): The description of phosphorus/nitrogen loading, sediment phosphorus remobilization as the hysteresis mechanism, cyanobacteria blooms, anoxia, and the need for active restoration is accurate and reflects current limnological understanding. The claim that "tiny additional nutrient loading near the threshold triggers collapse" correctly describes the discontinuous nature of the transition. The early warning indicators (accelerating algal growth, oxygen depletion anomalies) are accurate. This is factually strong. Rating: 9
+
+- PC 2 (Financial Bubble and Crash): The description of credit expansion, leverage, collateral erosion, and fire-sale dynamics is accurate. The claim that "recovery requires debt reduction far below peak levels" correctly captures the hysteresis. The description of pre-crash signals (volatility, credit-spread widening) being misinterpreted as opportunities is accurate and reflects behavioral finance literature. The Form (a) contains some awkward phrasing ("boom-bust cycles" as the name for hysteresis) but is not factually wrong. Rating: 8
+
+- PC 3 (Psychological Breakdown): The description of coping mechanism depletion, abrupt transition to panic/dissociation/depression, and the asymmetry of recovery (requiring active therapy rather than mere stress removal) is consistent with clinical psychology and PTSD literature. The claim that "the threshold for recovery via therapy lies far below the threshold where collapse occurred" is a reasonable characterization of trauma persistence. The connection to PTSD is accurate. Rating: 8
+
+- PC 4 (Species Extinction): The description of the Allee effect, minimum viable population, inbreeding depression, and the need for active reintroduction rather than merely stopping habitat destruction is accurate and reflects conservation biology. The claim that "below-threshold populations cannot rebound on their own" is correct for Allee-effect dynamics. The early warning indicators (declining population growth rate, genetic diversity loss via genomic sampling) are accurate. Rating: 9
+
+- PC 5 (Bridge Fatigue Failure): The description of fatigue crack initiation and propagation, the endurance limit, acoustic emission as a monitoring technique, and the discontinuous nature of final fracture is accurate and reflects materials science and fracture mechanics. The claim that "a bridge past critical crack length cannot be saved by reducing traffic" is correct—once a crack reaches critical length, fracture is imminent regardless of load reduction. The distinction between safe-operating and critical-failure crack sizes is accurate. Rating: 9
+
+#### Beauty
+This archetype is the strongest in the submission aesthetically. The hysteresis concept is genuinely profound—the asymmetry between collapse and recovery thresholds is a beautiful and counterintuitive insight—and the template captures it with precision. The lake eutrophication Form (b) is particularly well-written, with the phrase "lakes cannot be 'fixed' simply by stopping pollution; they require active restoration" being both accurate and rhetorically powerful. The bridge fatigue entry is unexpectedly elegant, connecting materials science to the same abstract structure. The psychological breakdown entry achieves genuine pathos. This archetype is clearly above the Reference in beauty.
+Rating: 9
+
+#### Intelligence
+The choice of hysteresis as an archetype is intellectually sophisticated—it captures a genuinely non-obvious and important structural property of complex systems. The insight that recovery requires conditions far below the original tipping point is a deep and generalizable principle. The five domains are intelligently chosen to span physical, biological, psychological, ecological, and economic systems, all exhibiting genuine hysteresis. The bridge fatigue domain is a particularly intelligent and non-obvious choice. The connection between the Allee effect and hysteresis is correctly identified. The financial bubble entry correctly identifies the mechanism (credit expansion depleting creditworthy borrowers) rather than just describing the phenomenon. This is clearly above the Reference in intelligence.
+Rating: 9
+
+#### Domains far apart / metanyms not synonymous
+The five domains—limnology, behavioral finance, clinical psychology, conservation biology, materials science—are genuinely diverse and non-overlapping. The metanyms are well-differentiated: "nutrient buffering capacity" vs. "asset backing/reserve ratios" vs. "psychological coping capacity" vs. "population size/genetic diversity" vs. "material fatigue life remaining" are clearly not synonymous. "Bistability" vs. "boom-bust cycles" vs. "trauma persistence" vs. "Allee effect" vs. "material hysteresis/ratcheting" are distinct technical terms for the same abstract phenomenon. The domain spread is excellent and clearly above the Reference.
+Rating: 9
+
+#### Impressive length
+The template is 12 sentences and covers: stable state, resilience buffer erosion, tipping point, degraded state, recovery asymmetry, hysteresis definition, recovery requirements, early warning indicators, dismissal of warnings, irreversibility, and knowledge domain application. This is comparable to the Reference template in length but more structurally complex due to the explicit hysteresis asymmetry. The Form (a) entries are long and detailed. The Form (b) entries are substantive. Overall length is impressive and above the Reference.
+Rating: 8
+
+---
+
+### Archetypal context 3: Recursive Hierarchical Control
+
+#### Factually correct (per parallel context)
+
+- PC 1 (Neural System): The description of recursive neural organization (neurons → circuits → regions → whole brain) and the claim that "the computation performed at each scale is fundamentally the same: weighted integration of inputs via local connections" is a reasonable characterization of neural computation, though it is somewhat idealized—different scales do exhibit qualitatively different computations (e.g., receptive fields at the neuron level vs. semantic representations at the region level). The claim that "no central executive oversees this process" is consistent with distributed processing models. The statement that "a neuron sums synaptic input; a circuit sums neuron activity; a region sums circuit activity" is a simplification but not factually wrong. Rating: 7
+
+- PC 2 (Immune System): The description of somatic hypermutation, clonal selection within germinal centers, and the recursive selection principle across scales is accurate. The claim that "no central immune command specifies which antibodies to make" is correct. The statement that "decentralized recursive selection is what enables immune systems to recognize novel pathogens" is accurate and reflects the adaptive immune system's design. The description of germinal centers competing within lymph nodes is a reasonable characterization. Rating: 8
+
+- PC 3 (Urban System): The description of emergent urban patterns from local social interactions is consistent with urban complexity theory. The claim that "no central authority specifies optimal land use, transport, or demographics" is a reasonable characterization of emergent urban order, though it somewhat overstates the case (cities do have planning authorities). The statement that "cities with strong central planning are far less responsive" is a defensible but contested claim in urban studies. Rating: 6
+
+- PC 4 (Ecological Nesting): This parallel context is not fully developed in the submission—it appears in the metanym table but no Form (a) or Form (b) is provided. This is a significant omission. Rating: 4
+
+- PC 5 (Organizational Structure): This parallel context is also not fully developed—it appears in the metanym table but no Form (a) or Form (b) is provided. This is a significant omission. Rating: 4
+
+#### Beauty
+The recursive self-similarity concept is intellectually beautiful, and the neural and immune entries are well-written. The insight that "the lowest-level interaction principle regenerates at every higher level" is elegantly stated. However, the archetype is significantly incomplete—two of five parallel contexts (ecological nesting and organizational structure) have no Form (a) or Form (b), which substantially reduces the aesthetic impact. The urban entry is competent but the claim about central planning being inferior is somewhat polemical. Compared to the Reference's fully developed archetypes, this is below average due to incompleteness.
+Rating: 5
+
+#### Intelligence
+The recursive self-similarity concept is genuinely intelligent and the identification of it as an archetype is sophisticated. The immune system entry is particularly insightful—the observation that "effective adaptive immunity depends on, not despite, the absence of central command" is a genuine intellectual contribution. The neural entry correctly identifies the distributed processing principle. However, the incompleteness of two parallel contexts and the somewhat forced application to urban systems (where central planning does exist and matters) reduce the intelligence score. The claim that the same interaction mechanism governs behavior at every scale is somewhat overstated for all domains.
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The five domains—neuroscience, immunology, urban studies, ecology, organizational science—are genuinely diverse. The metanyms are well-differentiated where developed. However, two parallel contexts are undeveloped, making it impossible to fully assess metanym distinctness across all five. The domains that are developed show good separation. Partial credit for the domains that are present.
+Rating: 6
+
+#### Impressive length
+The template is 10 sentences and covers the recursive self-similarity principle, emergent behavior, absence of central control, and knowledge domain application. The neural and immune Form (b) entries are substantive and well-developed. However, two parallel contexts are entirely missing their Form (a) and Form (b), which significantly reduces the overall length of the archetype. This is clearly below the Reference in total developed content.
+Rating: 4
+
+---
+
+### Archetypal context 4: Oscillatory Amplification Cycle
+
+#### Factually correct (per parallel context)
+
+- PC 1 (Predator-Prey Cycling): The description of Lotka-Volterra dynamics, the claim that "perturbations amplify rather than dampen," and the dependence of oscillation period on predator generation time and prey growth rate is accurate. The statement that "cycling is not a sign of ecosystem instability but rather the expected dynamic" is correct. The advice that managing such systems "requires understanding and predicting the oscillatory cycles, not attempting to freeze populations at target levels" is sound. Rating: 8
+
+- PC 2 (Financial Credit Cycle): The description of credit expansion, leverage, asset-price inflation, default cascades, and credit contraction is accurate. The claim that "small credit expansions get amplified" and that "booms and busts are self-generating, not externally caused" is consistent with endogenous money theory and Minsky's financial instability hypothesis. The policy recommendation (capital buffers, lending limits, countercyclical policy) is accurate. Rating: 8
+
+- PC 3 (Sleep-Wake Circadian Rhythm): The description of the two-process model (circadian clock + homeostatic sleep pressure/adenosine) is accurate and reflects established sleep neuroscience. The suprachiasmatic nucleus as the circadian clock is correctly identified. The claim that the intrinsic circadian period is ~24.1 hours is accurate. The description of adenosine clearance during sleep is correct. The Form (a) is somewhat convoluted in its application of the template, but the Form (b) is accurate and well-written. Rating: 8
+
+- PC 4 (Seasonal Migration): This parallel context has a metanym table but no Form (a) or Form (b) is provided. This is a significant omission. Rating: 4
+
+- PC 5 (Cardiac Oscillation): This parallel context has a metanym table but no Form (a) or Form (b) is provided. This is a significant omission. Rating: 4
+
+#### Beauty
+The oscillatory amplification concept is genuinely interesting and the predator-prey, financial, and sleep-wake entries are well-written. The insight that "positive-feedback-within-negative-feedback creates persistent oscillation rather than equilibrium" is elegantly stated. The sleep-wake entry is particularly creative and the Form (b) is well-crafted. However, two parallel contexts are missing, which substantially reduces the aesthetic impact. The financial credit cycle entry is strong. Compared to the Reference's fully developed archetypes, this is below average due to incompleteness.
+Rating: 6
+
+#### Intelligence
+The oscillatory amplification archetype is intellectually sophisticated—the identification of positive feedback embedded within negative feedback as the mechanism of persistent oscillation is a genuine insight. The sleep-wake application is non-obvious and intelligent. The financial credit cycle correctly identifies the Minsky mechanism. The predator-prey entry correctly distinguishes oscillatory dynamics from equilibrium. However, two parallel contexts are missing, and the archetype overlaps conceptually with Archetype 1 (predator-prey appears in both), creating redundancy. The template's claim that "small perturbations get amplified rather than damped" is the key distinguishing insight from Archetype 1.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains—ecology, macroeconomics, sleep neuroscience, behavioral ecology, cardiac electrophysiology—are genuinely diverse. The metanyms are well-differentiated where developed. However, two parallel contexts are undeveloped. The domains that are present show good separation. The predator-prey domain overlaps with Archetype 1 and Archetype 2, which reduces distinctness at the submission level.
+Rating: 6
+
+#### Impressive length
+The template is 10 sentences. The predator-prey, financial, and sleep-wake Form (b) entries are substantive. However, two parallel contexts are entirely missing, which significantly reduces total developed content. The sleep-wake Form (a) is notably long and detailed. Overall, the archetype is incomplete relative to the Reference standard.
+Rating: 5
+
+---
+
+### Archetypal context 5: Specialization Creates Fragility
+
+#### Factually correct (per parallel context)
+
+- PC 1 (Immune Hypersensitivity): The description of clonal selection, high-affinity receptor expansion, and the mechanism by which pathogen-reduced environments (via vaccines, antibiotics, sanitation) expose autoimmune and allergic vulnerabilities is accurate and reflects the hygiene hypothesis and related immunological literature. The claim that "specificity is hardwired into receptor sequences and developmental selection" is correct. The statement that autoimmune and allergic disease are "not failures, but the inevitable consequence of optimization for a particular selective environment" is a sophisticated and accurate framing. Rating: 9
+
+- PC 2 (Predator Morphological Specialization): The description of saber-toothed cat dietary constraints, cheetah terrain limitations, and fisher prey limitations is accurate. The claim that "morphological evolution takes generations, and individual predators cannot change body shape" is correct. The statement that "specialized predators are fragile to environmental perturbations" is well-supported by paleontological and ecological evidence. Rating: 8
+
+- PC 3 (Trade Economics): The Form (a) and Form (b) are abbreviated, but the core claim—that comparative advantage creates import dependence and supply chain vulnerability—is accurate and reflects standard trade economics. The Portugal/England wine/cloth example is the classic Ricardian comparative advantage illustration. The claim that "sanctions, war, or trade disruption expose fragility" is accurate. Rating: 7
+
+- PC 4 (Neurodevelopment): The Form (a) and Form (b) are abbreviated. The claim that "intensive practice creates neural specialization" and that "expertise inherently reduces cognitive flexibility" is consistent with neuroscientific literature on expert-novice differences and critical period plasticity. The claim that "synaptic plasticity windows close" is accurate. Rating: 7
+
+- PC 5 (Enzymatic Specialization): This parallel context has a metanym table but no Form (a) or Form (b) is provided. This is a significant omission. Rating: 4
+
+#### Beauty
+The specialization-fragility archetype is conceptually elegant—the insight that the same feature enabling dominance creates vulnerability is a beautiful and generalizable principle. The immune hypersensitivity entry is particularly well-written and achieves genuine insight. The predator morphology entry is vivid and accurate. However, two parallel contexts are abbreviated and one is entirely missing, reducing the aesthetic impact. The trade economics and neurodevelopment abbreviations are notably thin compared to the Reference standard. The immune entry alone would rate 9, but the incompleteness brings the overall score down.
+Rating: 7
+
+#### Intelligence
+The specialization-fragility trade-off is a genuinely intelligent archetype—it captures a deep principle about the cost of optimization. The immune hypersensitivity entry is the most intellectually sophisticated in the entire submission, correctly identifying the hygiene hypothesis mechanism and framing autoimmunity as optimization rather than failure. The predator morphology entry correctly identifies the evolutionary constraint. The trade economics entry correctly applies Ricardian comparative advantage. However, the incompleteness of three parallel contexts (two abbreviated, one missing) and the submission's own acknowledgment of token limits reduce the intelligence demonstration.
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The five domains—immunology, evolutionary biology, economics, neuroscience, biochemistry—are genuinely diverse. The metanyms are well-differentiated where developed: "immune hypersensitivity" vs. "morphological predatory adaptation" vs. "trade specialization" vs. "neural specialization" vs. "catalytic specialization" are clearly not synonymous. The domain spread is excellent. However, the enzymatic specialization domain is entirely undeveloped.
+Rating: 7
+
+#### Impressive length
+The template is 10 sentences. The immune hypersensitivity Form (b) is substantive and well-developed. The predator morphology Form (b) is good. However, trade economics and neurodevelopment are explicitly abbreviated, and enzymatic specialization has no Form (a) or Form (b). The submission itself acknowledges token limits. This is significantly below the Reference standard in total developed content.
+Rating: 4
+
+---
+
+### Structural diversity across the submitted set
+
+The five archetypes cover genuinely distinct system structures: (1) error-correcting homeostasis via negative feedback, (2) threshold dynamics with asymmetric recovery (hysteresis), (3) recursive self-similar hierarchical organization, (4) coupled oscillatory amplification through positive-feedback-within-negative-feedback, and (5) optimization-fragility trade-offs. These are meaningfully different mathematical and conceptual structures—homeostasis, bifurcation theory, self-similarity, limit cycles, and fitness landscapes respectively. The submission explicitly identifies the recursive property of Archetype 3 and correctly distinguishes Archetype 4 (oscillatory) from Archetype 1 (homeostatic), though the predator-prey domain appearing in both Archetypes 1 and 4 creates some redundancy. The structural diversity is clearly above the Reference, which covers gradient navigation, containment breach, competitive exclusion, debt accumulation, and scaffold assembly—also five distinct structures. The Target's structures are arguably more mathematically sophisticated (hysteresis, limit cycles, self-similarity) and more clearly differentiated from each other. The identification of recursion in Archetype 3 is a valued property. However, the incompleteness of Archetypes 3, 4, and 5 means the structural diversity is partially demonstrated rather than fully instantiated.
+Rating: 8
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Negative Feedback Regulation",
+          "factual_per_pc":           [8, 7, 8, 7, 7],
+          "beauty":                   8,
+          "intelligence":             7,
+          "instantiation_distinctness": 8,
+          "impressive_length":        8
+        },
+        {
+          "name": "Critical Transition and Hysteresis",
+          "factual_per_pc":           [9, 8, 8, 9, 9],
+          "beauty":                   9,
+          "intelligence":             9,
+          "instantiation_distinctness": 9,
+          "impressive_length":        8
+        },
+        {
+          "name": "Recursive Hierarchical Control",
+          "factual_per_pc":           [7, 8, 6, 4, 4],
+          "beauty":                   5,
+          "intelligence":             6,
+          "instantiation_distinctness": 6,
+          "impressive_length":        4
+        },
+        {
+          "name": "Oscillatory Amplification Cycle",
+          "factual_per_pc":           [8, 8, 8, 4, 4],
+          "beauty":                   6,
+          "intelligence":             7,
+          "instantiation_distinctness": 6,
+          "impressive_length":        5
+        },
+        {
+          "name": "Specialization Creates Fragility",
+          "factual_per_pc":           [9, 8, 7, 7, 4],
+          "beauty":                   7,
+          "intelligence":             7,
+          "instantiation_distinctness": 7,
+          "impressive_length":        4
+        }
+      ],
+      "structural_diversity": 8
+    }
+  }
+}
+```

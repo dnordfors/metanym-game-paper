@@ -1,0 +1,187 @@
+# Evaluation of Target Submission
+
+## Target Submission
+
+### Archetypal context 1: Resource Allocation
+
+#### Factual correct (per parallel context)
+- PC 1 (Business): The statements about capital allocation, ROI assessment, and opportunity costs are factually sound and reflect standard business practice. However, the template is extremely thin—it makes only generic claims about allocation under uncertainty without substantive propositions about how allocation actually works. The parallel context adds no domain-specific insight beyond renaming slots. Rating: 6
+
+- PC 2 (Government): The description of budget allocation and political risk is accurate but superficial. The template offers no mechanism or principle governing allocation; it merely asserts that agencies allocate budgets and may need to adjust. The parallel context is factually correct but uninformative. Rating: 6
+
+- PC 3 (Nonprofit): Accurate in principle—nonprofits do allocate donations and face funding uncertainty—but the template provides no substantive claim about how this process works or what principles govern it. The parallel context is correct but empty of insight. Rating: 6
+
+- PC 4 (Personal Finance): The statements about savings allocation and financial risk are factually correct. However, the template makes no specific claims about mechanisms, trade-offs, or dynamics; it merely restates the generic allocation problem. Rating: 6
+
+- PC 5 (Environmental Management): Factually plausible but vague. The template does not specify what "resources" are, how "conservation goals" compete, or what "ecological balance" means operationally. The parallel context is correct but lacks precision. Rating: 6
+
+#### Beauty
+The template is austere and generic. It reads like a placeholder rather than a carefully crafted archetypal insight. The prose is flat: "A [AGENT] must allocate [RESOURCE] among competing [NEEDS]" is the kind of sentence that could describe almost any decision problem. There is no elegance, no surprising juxtaposition, no memorable phrasing. Compared to the Reference's "A [NAVIGATOR] moves through a [SPACE] by sensing local [GRADIENT]"—which evokes motion, perception, and gradient-following in a single image—the Target's template is colorless. Rating: 4
+
+#### Intelligence
+The archetypal context fails to identify a deep structural principle. "Resource allocation under uncertainty" is a surface-level problem statement, not an archetypal insight. The Reference's "Gradient-Guided Navigation" captures a profound principle: local sensing + directional bias + memory + collective amplification. The Target's template contains no such principle. It does not explain *why* allocation is hard, what *mechanisms* drive reallocation costs, or what *dynamics* emerge from the interaction of commitment and information. It is descriptive, not explanatory. Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Business, Government, Nonprofit, Personal Finance, Environmental Management) are all variants of the same problem: entities allocating scarce resources. The metanyms are near-synonyms: "capital," "budget," "donations," "savings," and "resources" are all fungible stores of value. "Projects," "public services," "community needs," "expenses," and "conservation goals" are all competing claims on those stores. There is no structural diversity; the domains are isomorphic instantiations of a single, generic allocation problem. The Reference's domains (Bacterial Chemotaxis, Mountain Climbing, Career Development, Gradient Descent, Ant Foraging) are genuinely distinct: they involve different physical substrates, different sensing modalities, different memory systems, and different collective behaviors. Rating: 2
+
+#### Impressive length
+The template is short and underdeveloped. It contains only 4 sentences and makes minimal use of the slot system. The Reference's template is 7 sentences long and densely packed with propositions about gradients, sensors, memory, noise, attractors, and collective behavior. The Target's template is skeletal. Rating: 3
+
+### Archetypal context 2: Conflict Resolution
+
+#### Factual correct (per parallel context)
+- PC 1 (Legal Disputes): The description of litigation, negotiation, and settlement is factually accurate. However, the template makes no substantive claim about the mechanisms of conflict resolution—it merely asserts that disputes involve negotiation and reassessment. Rating: 6
+
+- PC 2 (International Relations): Factually plausible—nations do engage in diplomacy and sign treaties—but the template provides no insight into the dynamics of international conflict or the conditions under which resolution succeeds or fails. Rating: 6
+
+- PC 3 (Workplace Conflicts): Accurate but generic. The template does not explain what makes workplace conflicts hard to resolve or what mechanisms drive escalation or de-escalation. Rating: 6
+
+- PC 4 (Family Disputes): Factually correct but superficial. The template offers no insight into family dynamics, emotional escalation, or the role of attachment in conflict. Rating: 6
+
+- PC 5 (Community Mediation): Accurate in outline but lacks specificity. The template does not explain how community mediation works or what principles govern successful resolution. Rating: 6
+
+#### Beauty
+The template is generic and uninspired. "A [PARTY] must engage in [DISPUTE] resolution to address conflicting [INTERESTS]" is a bland restatement of the problem. The prose lacks rhythm, imagery, or memorable phrasing. Compared to the Reference's evocative language about gradients, sensors, and attractors, the Target's template is colorless and forgettable. Rating: 4
+
+#### Intelligence
+The template identifies no deep principle. "Conflict resolution" is a surface-level category, not an archetypal insight. The template does not explain what *causes* conflict, what *mechanisms* drive escalation, what *dynamics* emerge from commitment and information asymmetry, or what *conditions* enable resolution. It is a problem statement, not an explanation. The Reference's "Gradient-Guided Navigation" explains a principle: entities with limited sensing navigate by following local gradients, but noise and local optima create failure modes. The Target's template contains no such principle. Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Legal, International, Workplace, Family, Community) are all variants of the same problem: parties with conflicting interests negotiating toward resolution. The metanyms are near-synonyms: "litigant," "nation," "employee," "family member," and "community member" are all agents with interests. "Lawsuit," "territorial conflict," "disagreement," "argument," and "neighborhood dispute" are all disputes. There is minimal structural diversity. The Reference's domains involve fundamentally different physical and social substrates. Rating: 2
+
+#### Impressive length
+The template is short and underdeveloped—only 4 sentences. It makes minimal use of the slot system and contains few substantive propositions. Rating: 3
+
+### Archetypal context 3: Knowledge Acquisition
+
+#### Factual correct (per parallel context)
+- PC 1 (Student): The description of studying, evaluating sources, and adjusting approaches is factually accurate. However, the template makes no substantive claim about how learning actually works—it merely asserts that students acquire knowledge and may need to adjust their methods. Rating: 6
+
+- PC 2 (Researcher): Factually plausible but generic. The template does not explain the dynamics of research, the role of hypothesis testing, or the mechanisms of scientific discovery. Rating: 6
+
+- PC 3 (Employee): Accurate but superficial. The template provides no insight into workplace learning, skill development, or the role of mentorship. Rating: 6
+
+- PC 4 (Child): Factually correct but lacks depth. The template does not explain developmental stages, the role of play in learning, or how prior knowledge constrains new learning. Rating: 6
+
+- PC 5 (Adult Learner): Accurate in outline but generic. The template does not explain adult learning theory or the mechanisms of self-directed learning. Rating: 6
+
+#### Beauty
+The template is bland and uninspired. "A [LEARNER] must acquire [KNOWLEDGE] through various [METHODS]" is a generic problem statement. The prose lacks elegance, imagery, or memorable phrasing. Compared to the Reference's vivid language about gradients, sensors, and attractors, the Target's template is colorless. Rating: 4
+
+#### Intelligence
+The template identifies no deep principle. "Knowledge acquisition" is a surface-level category, not an archetypal insight. The template does not explain what *mechanisms* drive learning, what *dynamics* emerge from feedback and prior knowledge, or what *conditions* enable effective learning. It is descriptive, not explanatory. The Reference's "Gradient-Guided Navigation" explains a principle: entities with limited sensing navigate by following local gradients, but noise and local optima create failure modes. The Target's template contains no such principle. Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Student, Researcher, Employee, Child, Adult Learner) are all variants of the same problem: agents acquiring knowledge through various methods. The metanyms are near-synonyms: "student," "researcher," "employee," "child," and "adult" are all learners. "Subject matter," "data," "skills," "concepts," and "life skills" are all forms of knowledge. There is minimal structural diversity. Rating: 2
+
+#### Impressive length
+The template is short and underdeveloped—only 4 sentences. It makes minimal use of the slot system. Rating: 3
+
+### Archetypal context 4: Ecosystem Dynamics
+
+#### Factual correct (per parallel context)
+- PC 1 (Predator-Prey): The description of predator-prey interactions, population dynamics, and environmental adaptation is factually accurate. However, the template makes no substantive claim about the mechanisms of predator-prey dynamics—it merely asserts that predators interact with their environment and may need to adapt. Rating: 6
+
+- PC 2 (Plant Community): Factually plausible but generic. The template does not explain plant competition, resource partitioning, or the role of biodiversity in ecosystem stability. Rating: 6
+
+- PC 3 (Microbial Ecosystem): Accurate but superficial. The template provides no insight into microbial ecology, nutrient cycling, or the role of genetic diversity. Rating: 6
+
+- PC 4 (Coral Reef): Factually correct but lacks depth. The template does not explain coral symbiosis, reef dynamics, or the mechanisms of climate change impacts. Rating: 6
+
+- PC 5 (Urban Wildlife): Accurate in outline but generic. The template does not explain urban ecology or the mechanisms of human-wildlife interaction. Rating: 6
+
+#### Beauty
+The template is generic and uninspired. "A [SPECIES] interacts with its [ENVIRONMENT] and other [SPECIES] to maintain [BALANCE]" is a bland restatement of ecological principles. The prose lacks elegance or memorable phrasing. Compared to the Reference's vivid language about gradients and attractors, the Target's template is colorless. Rating: 4
+
+#### Intelligence
+The template identifies no deep principle. "Ecosystem dynamics" is a surface-level category, not an archetypal insight. The template does not explain what *mechanisms* drive population dynamics, what *feedback loops* create stability or instability, or what *conditions* enable coexistence. It is descriptive, not explanatory. The Reference's "Competitive Exclusion and Niche Partitioning" explains a principle: when two competitors require the same resource, competition intensifies until one is excluded or both differentiate. The Target's template contains no such principle. Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Predator-Prey, Plant Community, Microbial Ecosystem, Coral Reef, Urban Wildlife) are all variants of the same problem: species interacting within ecosystems. The metanyms are near-synonyms: "predator," "plant," "microorganism," "coral," and "animal" are all species. "Habitat," "soil," "substrate," "ocean," and "city" are all environments. There is minimal structural diversity. Rating: 2
+
+#### Impressive length
+The template is short and underdeveloped—only 4 sentences. It makes minimal use of the slot system. Rating: 3
+
+### Archetypal context 5: Innovation Process
+
+#### Factual correct (per parallel context)
+- PC 1 (Entrepreneur): The description of startup development, ideation, prototyping, and customer feedback is factually accurate. However, the template makes no substantive claim about the mechanisms of innovation—it merely asserts that entrepreneurs develop products and may need to pivot. Rating: 6
+
+- PC 2 (Scientist): Factually plausible but generic. The template does not explain the scientific method, hypothesis testing, or the role of peer review in scientific discovery. Rating: 6
+
+- PC 3 (Software Developer): Accurate but superficial. The template provides no insight into software development, agile methodology, or the role of user testing. Rating: 6
+
+- PC 4 (Artist): Factually correct but lacks depth. The template does not explain artistic creativity, the role of critique, or how prior work constrains future innovation. Rating: 6
+
+- PC 5 (Educator): Accurate in outline but generic. The template does not explain educational innovation or the mechanisms of curriculum development. Rating: 6
+
+#### Beauty
+The template is bland and uninspired. "A [CREATOR] must navigate the [INNOVATION] process to develop new [PRODUCTS]" is a generic problem statement. The prose lacks elegance, imagery, or memorable phrasing. Compared to the Reference's vivid language about gradients and attractors, the Target's template is colorless. Rating: 4
+
+#### Intelligence
+The template identifies no deep principle. "Innovation process" is a surface-level category, not an archetypal insight. The template does not explain what *mechanisms* drive innovation, what *dynamics* emerge from feedback and commitment, or what *conditions* enable successful innovation. It is descriptive, not explanatory. The Reference's "Scaffold-Dependent Assembly" explains a principle: components cannot self-assemble without scaffolds that provide spatial organization and temporal coordination. The Target's template contains no such principle. Rating: 3
+
+#### Impressive length
+The template is short and underdeveloped—only 4 sentences. It makes minimal use of the slot system. Rating: 3
+
+### Structural diversity across the submitted set
+
+The five archetypal contexts in the Target submission are structurally isomorphic. Each follows the same pattern: an agent faces a problem (allocation, conflict, learning, ecosystem dynamics, innovation), must make decisions under uncertainty, and may need to adjust their approach based on feedback. The underlying structure is identical across all five: "Agent X must do Y under conditions of Z, and may need to adjust based on feedback, but prior commitments create barriers." This is a single, generic problem template instantiated five times with different domain labels. 
+
+In contrast, the Reference submission presents five genuinely distinct archetypal structures: (1) Gradient-Guided Navigation (local sensing + directional bias + memory + collective amplification), (2) Containment Breach Cascade (boundary integrity + breach propagation + responder capacity), (3) Competitive Exclusion and Niche Partitioning (resource competition + differentiation + coexistence conditions), (4) Debt Accumulation and Crisis (obligation accumulation + servicing costs + threshold dynamics + recursive nesting), and (5) Scaffold-Dependent Assembly (component positioning + template information + assembly coordination). These are fundamentally different system structures. The Target submission lacks this structural diversity.
+
+Rating: 2
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Resource Allocation",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   4,
+          "intelligence":             3,
+          "instantiation_distinctness": 2,
+          "impressive_length":        3
+        },
+        {
+          "name": "Conflict Resolution",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   4,
+          "intelligence":             3,
+          "instantiation_distinctness": 2,
+          "impressive_length":        3
+        },
+        {
+          "name": "Knowledge Acquisition",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   4,
+          "intelligence":             3,
+          "instantiation_distinctness": 2,
+          "impressive_length":        3
+        },
+        {
+          "name": "Ecosystem Dynamics",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   4,
+          "intelligence":             3,
+          "instantiation_distinctness": 2,
+          "impressive_length":        3
+        },
+        {
+          "name": "Innovation Process",
+          "factual_per_pc":           [6, 6, 6, 6, 6],
+          "beauty":                   4,
+          "intelligence":             3,
+          "instantiation_distinctness": 2,
+          "impressive_length":        3
+        }
+      ],
+      "structural_diversity": 2
+    }
+  }
+}
+```

@@ -1,0 +1,221 @@
+# Scoring the Target Submission
+
+## Target Submission
+
+### Archetypal context 1: Cascading Load Redistribution
+
+#### Factual correct (per parallel context)
+
+- PC 1 (Power Grid): The description of power grid mechanics—substations with transmission capacity, operating reserves, line outages triggering cascades through load redistribution—is factually sound. The mechanism of relay protection and the trade-off between efficiency and fragility under tight coupling are well-established in power systems engineering. The parallel between local outage and blackout cascade is accurate. Rating: 7
+
+- PC 2 (Internet): The internet routing description correctly captures how routers have finite forwarding capacity and how denial-of-service attacks can overwhelm paths, forcing traffic rerouting. Congestion control mechanisms (TCP backoff, active queue management) do attempt to shed and reroute traffic. The vulnerability of tightly coupled networks with little spare bandwidth to coordinated attacks is factually correct. Rating: 7
+
+- PC 3 (Road Network): The road network model accurately describes intersections with throughput limits, traffic redistribution during closures, and the potential for gridlock cascades. Traffic management systems do attempt to meter and reroute vehicles. The tight-coupling/fragility trade-off is well-documented in transportation systems. Rating: 7
+
+- PC 4 (Hospital System): The hospital system description correctly models bed capacity, patient load redistribution, and surge capacity. Mass-casualty events can indeed trigger cascading care disruption across networked hospitals. Surge management strategies (diversion, deferral, isolation) are standard practice. The model is factually sound. Rating: 7
+
+- PC 5 (Supply Chain): Supply chain mechanics—facility throughput, order load redistribution, safety stock as reserve—are accurately described. Plant shutdowns do trigger shortage cascades through interconnected supply networks. Inventory management strategies (rationing, rerouting, isolation) are factually correct. Rating: 7
+
+#### Beauty
+
+The template is elegant in its abstraction: it captures the essential structure of cascading failure across radically different domains (physical infrastructure, digital networks, biological systems, logistics). The progression from local shock through load redistribution to system-wide cascade is narratively compelling. The symmetry between the five domains—each with clear analogues for capacity, load, reserve, shock, and protection—creates aesthetic coherence. The language is precise without being overwrought. However, compared to the Reference's "Gradient-Guided Navigation" (which has a more lyrical quality and richer internal dynamics), this archetype is somewhat more mechanical and less evocative. Rating: 7
+
+#### Intelligence
+
+The archetype demonstrates solid systems-thinking: it identifies a genuine structural principle (tight coupling + small reserves = efficiency + fragility) that applies across domains. The insight that protection mechanisms target load management rather than capacity expansion is non-obvious and valuable. However, the intellectual depth is somewhat limited compared to the Reference's "Debt Accumulation and Crisis," which recursively nests the same principle across five scales and reveals how crises propagate both upward and downward. This archetype does not explore such recursive structure or the deeper mechanisms driving cascade propagation. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+
+The five domains are reasonably distinct: power grids (physical energy), internet (digital information), roads (mechanical transport), hospitals (biological/medical), supply chains (material logistics). However, the metanym mapping is somewhat mechanical. "CAPACITY" maps to transmission/forwarding/throughput/bed/throughput—these are genuinely different concepts, but the template forces them into a single slot without much tension. "LOAD" similarly maps across domains but with less semantic distance than, say, the Reference's "Gradient-Guided Navigation," where "GRADIENT" becomes chemical gradient, slope, opportunity gradient, mathematical gradient, and pheromone trail—each with distinct physical meaning. The metanyms are not synonymous, but they are somewhat predictable. Rating: 6
+
+#### Impressive length
+
+The template is moderately long (approximately 120 words) and covers the essential dynamics: capacity, load, reserve, shock, cascade, and protection. It is comparable in length to the Reference's templates. However, it does not explore secondary effects, feedback loops, or the conditions under which protection succeeds or fails as deeply as some Reference templates do. The template is sufficient but not exceptionally ambitious. Rating: 7
+
+---
+
+### Archetypal context 2: Negative-Feedback Regulation
+
+#### Factual correct (per parallel context)
+
+- PC 1 (Climate-Control System): The thermostat model—sensor, controller, actuator, feedback loop, thermal lag, heating gain—is factually accurate. The description of overshoot and temperature cycling under excessive gain or lag is correct. Rating: 7
+
+- PC 2 (Human Body): The glucose regulation model correctly describes glucose sensing, pancreatic insulin response, feedback closure, hormonal delay, and the risk of glycemic oscillation. The physiological mechanisms are accurately represented. Rating: 7
+
+- PC 3 (Automobile): Cruise control mechanics—speed sensor, controller, throttle command, feedback loop, actuator lag, control gain, speed hunting—are factually correct. The trade-off between rapid disturbance rejection and stability is well-established in control theory. Rating: 7
+
+- PC 4 (Economy): The monetary policy model—price index measurement, central bank comparison with inflation target, policy-rate adjustment, interest-rate transmission, policy lag, policy response—is factually sound. The risk of inflation volatility under excessive response or long lags is documented in macroeconomic literature. Rating: 7
+
+- PC 5 (Project Organization): The staffing model—work-tracking dashboard, operations manager, staffing adjustment, feedback loop, hiring delay, staffing response, backlog oscillation—is factually plausible. The dynamics of hiring delays causing backlog oscillation are well-known in operations management. Rating: 7
+
+#### Beauty
+
+The template is clean and symmetric: it presents a universal control-loop structure (sensor → controller → actuator → feedback) that is immediately recognizable. The language is clear and the progression logical. However, the archetype is somewhat formulaic—it is essentially a direct instantiation of classical control theory across domains. Compared to the Reference's "Gradient-Guided Navigation," which has more narrative richness and explores secondary phenomena (noise, memory, collective behavior), this archetype is more austere. It is beautiful in its simplicity but lacks the evocative quality of the best Reference templates. Rating: 6
+
+#### Intelligence
+
+The archetype correctly identifies the core principle of negative-feedback regulation and the fundamental trade-off between responsiveness and stability. This is a genuine insight, but it is not novel—negative feedback is a foundational concept in control theory, and the trade-off between speed and stability is well-established. The archetype does not explore more subtle phenomena such as integral windup, derivative kick, or the role of measurement noise in limiting control performance. Compared to the Reference's "Debt Accumulation and Crisis," which reveals a recursive structure and explores how crises propagate across scales, this archetype is less intellectually ambitious. Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+
+The five domains are distinct: climate control (physical), physiology (biological), automotive (mechanical), macroeconomics (institutional), and project management (organizational). However, the metanym mapping is highly constrained by the control-theory template. "VARIABLE" must be something measurable and controllable; "DELAY" must be a temporal lag; "RESPONSE" must be a control gain. The metonyms are not synonymous, but the template structure forces them into a narrow semantic space. Compared to the Reference's "Competitive Exclusion," where "COMPETITOR" ranges from species to firms to neurons with genuinely different competitive dynamics, this archetype's metonyms are more tightly coupled to the template structure. Rating: 6
+
+#### Impressive length
+
+The template is moderately long (approximately 110 words) and covers the essential elements: sensor, controller, actuator, feedback, delay, response, oscillation. It is comparable to the Reference templates in length. However, it does not explore secondary phenomena (measurement noise, saturation, nonlinearity) or the conditions under which feedback fails. Rating: 7
+
+---
+
+### Archetypal context 3: Recursive Modular Composition
+
+#### Factual correct (per parallel context)
+
+- PC 1 (Software System): The description of software modules, APIs, applications, and the layering principle is factually accurate. The claim that refactoring inside a module does not require redesigning dependent applications (provided the API remains compatible) is correct. The risk of API mismatches disabling modules is well-documented. Rating: 7
+
+- PC 2 (Electronic Device): The circuit-block model—terminal interfaces, subsystems, component revision, electrical faults—is factually sound. The principle that a block at one scale can be a subsystem at a lower scale is correct. Rating: 7
+
+- PC 3 (Multicellular Organism): The cell-tissue model—membrane interfaces, regulated exchange, molecular machinery, tissue composition—is factually accurate. The principle that cells can be composed of lower-level molecular machinery is correct. The claim that membrane-interface compatibility permits molecular change without redesigning tissues is a valid abstraction. Rating: 7
+
+- PC 4 (Firm): The team-department model—role interfaces, deliverables, internal workflows, organizational structure—is factually plausible. The principle that teams can be composed of lower-level teams is correct. The claim that role-interface compatibility permits process change without redesigning dependent departments is a reasonable organizational principle. Rating: 7
+
+- PC 5 (Manufactured Product): The component-subassembly model—mechanical interfaces, motion, internal mechanisms, product architecture—is factually accurate. The principle that a component at one scale can be a subassembly at a lower scale is correct. The claim that mechanical-interface compatibility permits design revision without redesigning dependent subassemblies is sound. Rating: 7
+
+#### Beauty
+
+The archetype is elegant in its abstraction: it captures the principle of modular composition across radically different domains. The recursive structure—a module at one scale is a composite at a lower scale—is intellectually satisfying. The language is clear and the progression logical. However, compared to the Reference's "Scaffold-Dependent Assembly," which has more narrative richness and explores the role of templates and nucleation, this archetype is somewhat more abstract and less evocative. The beauty is in the abstraction itself rather than in the richness of the narrative. Rating: 7
+
+#### Intelligence
+
+The archetype correctly identifies the principle of modular composition and the role of interfaces in enabling coordination without exposing implementation detail. This is a genuine and important insight, and the recursive structure (a module at one scale is a composite at a lower scale) is non-trivial. However, the archetype does not explore the conditions under which modularity breaks down, the costs of interface abstraction, or the trade-offs between modularity and performance. Compared to the Reference's "Scaffold-Dependent Assembly," which explores how scaffolds determine architecture and how scaffold defects produce malformation, this archetype is less intellectually ambitious. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+
+The five domains are distinct: software (digital), electronics (physical), biology (cellular), organizations (institutional), and manufacturing (mechanical). The metanym mapping is reasonably diverse: "INTERFACE" becomes API, terminal interface, membrane interface, role interface, and mechanical interface. These are genuinely different concepts with distinct physical meanings. "SERVICE" becomes operation, signal function, regulated exchange, deliverable, and motion—again, genuinely different. The metonyms are not synonymous and the domains are far apart. Rating: 7
+
+#### Impressive length
+
+The template is moderately long (approximately 130 words) and covers the essential elements: modules, interfaces, services, implementation, composites, change, faults, and the recursive principle. It is comparable to the Reference templates in length and perhaps slightly longer. The template is ambitious in its scope. Rating: 7
+
+---
+
+### Archetypal context 4: Inference from Imperfect Evidence
+
+#### Factual correct (per parallel context)
+
+- PC 1 (Clinical Medicine): The diagnostic model—symptoms, diagnoses, prevalence, diagnostic tests, false positives, false negatives, clinical evidence—is factually accurate. The principle that diagnosis should reflect the total pattern of evidence rather than a single symptom is correct. Rating: 7
+
+- PC 2 (Equipment Maintenance): The fault-diagnosis model—warning indicators, failure modes, base rates, inspections, false alarms, missed faults, diagnostic evidence—is factually sound. The principle that fault assessment should reflect the total evidence pattern is correct. Rating: 7
+
+- PC 3 (Cybersecurity): The intrusion-detection model—alerts, attack scenarios, base rates, scans, false alerts, missed intrusions, telemetry—is factually accurate. The principle that incident assessment should reflect the full telemetry pattern is correct. Rating: 7
+
+- PC 4 (Astronomy): The source-identification model—signals, source models, occurrence rates, observations, false detections, non-detections, observational data—is factually sound. The principle that source classification should reflect the entire data pattern is correct. Rating: 7
+
+- PC 5 (Criminal Investigation): The case-theory model—clues, case theories, base rates, forensic examinations, false matches, missed matches, case evidence—is factually plausible. The principle that case assessment should reflect the full evidence pattern is correct. Rating: 7
+
+#### Beauty
+
+The archetype is elegant in its abstraction: it captures the principle of Bayesian inference across radically different domains. The progression from initial plausibility through evidence accumulation to final judgment is narratively compelling. The language is clear and precise. However, compared to the Reference's "Gradient-Guided Navigation," which has more lyrical quality and explores secondary phenomena (noise, memory, collective behavior), this archetype is somewhat more austere. It is beautiful in its logical structure but less evocative. Rating: 7
+
+#### Intelligence
+
+The archetype correctly identifies the principle of Bayesian inference: updating relative support for hypotheses as evidence accumulates, balancing discrimination against cost, and reflecting final judgment on the total evidence pattern. This is a genuine and important insight. However, the archetype does not explore more subtle phenomena such as the role of prior probabilities in shaping inference, the conditions under which evidence is misleading, or the cognitive biases that lead investigators to over-weight striking evidence. Compared to the Reference's "Debt Accumulation and Crisis," which explores recursive structure and how crises propagate across scales, this archetype is less intellectually ambitious. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+
+The five domains are distinct: medicine (biological), maintenance (mechanical), cybersecurity (digital), astronomy (physical), and criminal investigation (institutional). The metanym mapping is reasonably diverse: "CAUSE" becomes disease, equipment fault, intrusion, astronomical source, and crime—genuinely different phenomena. "SIGN" becomes symptom, warning indicator, alert, signal, and clue—again, genuinely different. The metonyms are not synonymous and the domains are far apart. Rating: 7
+
+#### Impressive length
+
+The template is moderately long (approximately 120 words) and covers the essential elements: investigator, cause, sign, hypothesis, prior, test, result, false positive, false negative, evidence, cost, judgment, and discipline. It is comparable to the Reference templates in length. The template is ambitious in its scope. Rating: 7
+
+---
+
+### Archetypal context 5: Evolutionary Search Through Variation and Selection
+
+#### Factual correct (per parallel context)
+
+- PC 1 (Natural Evolution): The evolutionary model—organisms, heritable traits, ecological environment, reproductive fitness, mutation, genetic inheritance, natural selection, adaptive peaks, genetic diversity—is factually accurate. The principle that rapid concentration on one adaptive peak can reduce diversity is correct. Rating: 7
+
+- PC 2 (Crop Breeding): The breeding model—plant lines, heritable agronomic traits, field environment, breeding value, crossing, genetic inheritance, breeder selection, yield plateaus, germplasm diversity—is factually sound. The principle that premature concentration on one yield plateau can erode diversity is correct. Rating: 7
+
+- PC 3 (Directed Enzyme Evolution): The directed-evolution model—enzyme variants, heritable molecular traits, assay environment, assay fitness, mutagenesis, sequence inheritance, screening selection, activity peaks, library diversity—is factually accurate. The principle that rapid concentration on one activity peak can exhaust diversity is correct. Rating: 7
+
+- PC 4 (Evolutionary Algorithm): The algorithm model—solutions, heritable encoded traits, problem landscape, objective fitness, mutation, copying, fitness selection, local optima, population diversity—is factually sound. The principle that premature concentration on a local optimum can eliminate diversity is correct. Rating: 7
+
+- PC 5 (Technological Innovation): The innovation model—product designs, heritable design features, market environment, commercial fitness, prototyping, design reuse, market selection, dominant designs, design diversity—is factually plausible. The principle that rapid concentration on a dominant design can reduce diversity is correct. Rating: 7
+
+#### Beauty
+
+The archetype is elegant in its abstraction: it captures the principle of evolutionary search across radically different domains. The progression from variation through inheritance to selection is narratively compelling. The language is clear and precise. The symmetry across the five domains is aesthetically satisfying. However, compared to the Reference's "Gradient-Guided Navigation," which has more lyrical quality and explores secondary phenomena (noise, memory, collective behavior), this archetype is somewhat more austere. It is beautiful in its logical structure but less evocative. Rating: 7
+
+#### Intelligence
+
+The archetype correctly identifies the principle of evolutionary search: maintaining variation while exploiting high-fitness candidates, balancing exploration against exploitation, and recognizing that rapid concentration on local optima can reduce long-run adaptation. This is a genuine and important insight. However, the archetype does not explore more subtle phenomena such as the role of mutation rates in shaping adaptation, the conditions under which diversity is maintained, or the mechanisms by which evolutionary processes escape local optima. Compared to the Reference's "Debt Accumulation and Crisis," which explores recursive structure and how crises propagate across scales, this archetype is less intellectually ambitious. Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+
+The five domains are distinct: biology (natural), agriculture (biological), biochemistry (molecular), computer science (algorithmic), and economics (institutional). The metanym mapping is reasonably diverse: "CANDIDATE" becomes organism, plant line, enzyme variant, solution, and product design—genuinely different entities. "TRAIT" becomes phenotypic trait, agronomic trait, molecular trait, encoded trait, and design feature—again, genuinely different. The metonyms are not synonymous and the domains are far apart. Rating: 7
+
+#### Impressive length
+
+The template is moderately long (approximately 120 words) and covers the essential elements: population, candidate, trait, environment, fitness, retention, variation, inheritance, selection, optimum, and diversity. It is comparable to the Reference templates in length. The template is ambitious in its scope. Rating: 7
+
+---
+
+### Structural diversity across the submitted set
+
+The Target submission presents five archetypal contexts with distinct system structures: (1) Cascading Load Redistribution—a network-failure model with load redistribution and cascade dynamics; (2) Negative-Feedback Regulation—a control-loop model with sensor, controller, actuator, and feedback; (3) Recursive Modular Composition—a hierarchical-composition model with interfaces and recursive nesting; (4) Inference from Imperfect Evidence—a Bayesian-inference model with hypothesis updating; (5) Evolutionary Search—a variation-selection model with population dynamics. These five structures are genuinely different: network dynamics, control loops, modular hierarchies, probabilistic inference, and evolutionary search represent distinct system principles. However, compared to the Reference submission, which includes a recursive debt-accumulation model that explicitly demonstrates how the same principle manifests at five nested scales (molecular → cellular → organismal → institutional → civilizational), the Target's structural diversity is somewhat less ambitious. The Target's five contexts are different in kind, but they do not explore the same principle at multiple scales or reveal how crises propagate across scales. The structural diversity is solid but not exceptional. Rating: 7
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Cascading Load Redistribution",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        },
+        {
+          "name": "Negative-Feedback Regulation",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 6,
+          "impressive_length": 7
+        },
+        {
+          "name": "Recursive Modular Composition",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Inference from Imperfect Evidence",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Evolutionary Search Through Variation and Selection",
+          "factual_per_pc": [7, 7, 7, 7, 7],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        }
+      ],
+      "structural_diversity": 7
+    }
+  }
+}
+```

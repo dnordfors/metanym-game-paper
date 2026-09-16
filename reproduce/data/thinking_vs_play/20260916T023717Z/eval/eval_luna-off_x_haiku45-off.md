@@ -1,0 +1,183 @@
+## Target Submission
+
+### Archetypal context 1: Constraint Propagation
+
+#### Factually correct (per parallel context)
+- PC 1 (Electrical Circuit): The circuit analogy is broadly intelligible, but it overstates Kirchhoff’s laws as directly constraining node voltages and treats “over-constrained” nodes as entering a short-circuit state; neither is generally correct. The final claim that propagation operates identically across physical, logical, and social constraints is also false. Relative to the Reference’s mostly domain-appropriate prose, this is somewhat weaker. Rating: 5
+- PC 2 (Protein Folding): The account captures the general idea that local interactions constrain global conformation, but hydrogen bonds do not alone determine amino-acid conformations, and “over-constrained amino acids enter a misfolding state” is not standard biology. The claim that folding operates identically under logical or social constraints is plainly inapplicable. Rating: 5
+- PC 3 (Scheduling Problem): This is the strongest instantiation. Precedence constraints do narrow feasible task schedules, and propagation can detect infeasibility or support search. However, a task assignment does not necessarily narrow neighboring slots in the simplistic way stated, and “oscillate indefinitely” is not characteristic of ordinary constraint propagation. Rating: 6
+- PC 4 (Ecosystem): The prose reasonably describes trophic cascades as abundance changes propagating through food webs, but predation does not simply constrain population sizes to a single feasible range, and extinction is not an “over-constrained state.” The cross-domain identity claim is inaccurate. Rating: 5
+- PC 5 (Social Network): Social norms can constrain publicly expressed beliefs and beliefs can spread socially, but norms do not generally narrow beliefs in the formal constraint-satisfaction sense, nor does polarization result simply from over-constraint. The physical/logical/social equivalence claim is false. Rating: 5
+
+#### Beauty
+The template has a clean abstract rhythm and the repeated convergence/divergence/oscillation triad is conceptually attractive. However, the prose becomes mechanically repetitive, and several substitutions produce strained phrases such as “Kirchhoff’s laws are social in nature” and “population sizes available to neighboring species.” Compared with the Reference’s more polished and domain-sensitive parallel prose, this is less beautiful.  
+Rating: 6
+
+#### Intelligence
+The submission identifies a genuinely powerful abstraction—local constraints propagating through a network—and applies it across computation, biology, ecology, and society. The scheduling and network framing are intelligent. Yet it frequently mistakes loose analogy for literal mechanism, and the template’s universal claims are not carefully qualified. Relative to the Reference, the conceptual ambition is comparable but the execution is less rigorous.  
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+The domains are substantially separated: circuits, proteins, scheduling, ecosystems, and social networks are structurally different systems. The metanyms are generally not synonyms, although several are generic or forced, and the mappings sometimes collapse important distinctions between constraint propagation, physical interaction, and social influence. This is approximately reference-level.  
+Rating: 7
+
+#### Impressive length
+The template is moderately long and contains a useful sequence from local constraint through propagation, failure, dynamics, prediction, and design. It is shorter and less richly articulated than the Reference’s templates, with fewer operational roles and less nuanced causal structure.  
+Rating: 6
+
+### Archetypal context 2: Boundary Dissolution
+
+#### Factually correct (per parallel context)
+- PC 1 (Cell Membrane): The account correctly connects oxidative stress, membrane damage, increased permeability, toxin entry, and eventual lysis. However, “membrane fluidity” is not simply equivalent to permeability, and nutrient uptake does not necessarily accelerate as membranes deteriorate. The overall biology is plausible but less precise than the Reference. Rating: 6
+- PC 2 (Nation-State): The analogy is understandable, but globalization does not inherently erode borders, and “invasion penetration” is awkward and conceptually conflates military invasion with migration, trade, and political influence. Nation-state collapse is not an inevitable consequence of border porosity crossing a generic threshold. Rating: 5
+- PC 3 (Immune System): This is substantially flawed. An immune system does not maintain an epithelial barrier in the same sense as the organism’s tissues, and immunosuppression is not the natural endpoint of epithelial barrier dissolution. The rewrite improves the biology, but the template substitution remains inaccurate. Rating: 4
+- PC 4 (Coral Reef): Warming, structural degradation, bleaching, and collapse are relevant, but reef structure is not a boundary that selectively permits symbiont migration while excluding “bleaching agents.” The causal chain is metaphorically suggestive rather than factually sound. Rating: 5
+- PC 5 (Professional Guild): Credentials can regulate membership and fraud, but they are not literally permeable to knowledge sharing, and digitalization does not straightforwardly erode credential integrity. The analogy is serviceable sociologically but contains several forced substitutions. Rating: 5
+
+#### Beauty
+Boundary maintenance followed by erosion, accelerating exchange, threat penetration, and collapse is a visually coherent pattern. The template is elegant at a high level, but repeated phrases such as “accepting dissolution” and “adapting the interior to tolerate threat” become unnatural in several domains. The Reference is more consistently idiomatic and technically integrated.  
+Rating: 6
+
+#### Intelligence
+The archetype shows good systems thinking about tradeoffs between openness and protection, and it spans biological, political, ecological, and professional systems. Its intelligence is reduced by treating all boundary failures as the same irreversible process and by confusing permeability, integrity, and dissolution. Relative to the Reference, it is ambitious but less disciplined.  
+Rating: 6
+
+#### Domains far apart / metanyms not synonymous
+The domains are very different in surface subject matter and system organization. The metanyms are mostly distinct, but the table contains duplication of the INTERIOR row and several mappings that are not true structural counterparts—for example, reef structure as a boundary and credential as a permeable barrier. Distinctness is good, though somewhat below the Reference’s stronger mappings.  
+Rating: 7
+
+#### Impressive length
+The template is substantial, with boundary function, exchange, erosion, feedback, response options, irreversibility, threshold behavior, and disciplinary framing. It is close to the Reference in length and richer than a minimal analogy, though some slots are semantically redundant.  
+Rating: 7
+
+### Archetypal context 3: Resonance and Damping
+
+#### Factually correct (per parallel context)
+- PC 1 (Mechanical Oscillator): This is broadly correct: external forcing near a natural frequency can amplify displacement, friction dissipates energy, and damping trades responsiveness against resonance. The distinction between constructive and destructive resonance is somewhat loose, but the account is sound. Rating: 7
+- PC 2 (Electromagnetic Wave): The cavity-resonance description is generally correct, and loss in cavity walls can damp fields. However, resistance is not the universal or most precise term for electromagnetic damping, and “destructive resonance” causing dielectric breakdown is an oversimplification. Rating: 7
+- PC 3 (Population Dynamics): The analogy is plausible but scientifically weak. Population cycles can be amplified by periodic forcing, yet generation time is not generally a characteristic oscillation frequency, density dependence does not literally dissipate metabolic energy, and “population resonance” is nonstandard. Rating: 5
+- PC 4 (Neural Circuit): Neural resonance and inhibitory damping are legitimate concepts, but firing rate does not simply grow dramatically whenever input matches an oscillation frequency, and inhibition does not merely dissipate neural activity. The account is directionally correct but simplified. Rating: 6
+- PC 5 (Financial Market): Financial cycles and amplification under periodic or correlated shocks are plausible, and circuit breakers can limit volatility. Nevertheless, circuit breakers do not dissipate capital, and market resonance is not a standard mechanism in the strong sense asserted. Rating: 5
+
+#### Beauty
+This is one of the submission’s most elegant templates. The progression from natural frequency to forcing, amplification, constructive/destructive effects, damping, and design tradeoffs is concise and memorable. The repeated structure remains readable across domains, although some substitutions become technically strained. It is slightly above the Reference in conceptual elegance.  
+Rating: 8
+
+#### Intelligence
+The archetype makes a sophisticated cross-domain connection between oscillatory dynamics, amplification, and stabilizing dissipation. It also captures a real design tradeoff rather than merely listing superficial analogies. The main limitation is that the biological and financial instantiations overextend the physical metaphor. Overall, it is clearly stronger than the Reference in abstraction, though not in every factual detail.  
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+Mechanical systems, electromagnetic cavities, populations, neural circuits, and financial markets are highly diverse domains. The metanyms are clearly non-synonymous and the shared structure—frequency-selective amplification moderated by damping—is recognizable across them. Some mappings, especially “circuit breaker” as damping and “generation time” as frequency, are imperfect, but the cross-domain span is excellent.  
+Rating: 8
+
+#### Impressive length
+The template is long enough to articulate mechanism, beneficial and harmful outcomes, damping, vulnerability, design optimization, and field-level interpretation. It is comparable to or slightly more compact than the Reference, but unusually information-dense and well organized.  
+Rating: 8
+
+### Archetypal context 4: Nesting and Emergence
+
+#### Factually correct (per parallel context)
+- PC 1 (Multicellular Organism): The broad emergence claim is defensible, but the template says organisms consist directly of cells and organelles while the rewrite correctly inserts tissues and organs. Consciousness is not straightforwardly attributable to all multicellular organisms, and the feedback claim is overgeneralized. Rating: 6
+- PC 2 (Ecosystem): Ecosystems do exhibit emergent biodiversity and hierarchical organization, but biodiversity is not simply produced by predation, nor does it directly regulate reproduction in the strong way stated. The account is conceptually suggestive but biologically reductive. Rating: 6
+- PC 3 (Language): The hierarchy from phonemes to words to language is reasonable, and grammar is emergent from usage and convention. However, grammar does not arise solely from syntax between words, and the feedback claims about semantic constraint are vague. Rating: 7
+- PC 4 (Immune System): Immune tolerance is an emergent system property shaped by regulatory interactions, but the template’s scale mapping from lymphocytes to genes is incomplete, and “regulatory T cell” is incorrectly used as a feedback-loop noun. The rewrite is much better than Form (a), but the original propositions remain malformed. Rating: 6
+- PC 5 (Economic System): Firms and workers form a meaningful hierarchy, and market outcomes emerge from firm interactions. However, market efficiency is not guaranteed by competition, and the claim that it directly constrains profit motive is too strong. Rating: 6
+
+#### Beauty
+The explicit scale notation and emergence/feedback structure are intellectually attractive, and the template has a strong philosophical unity. The prose is less beautiful than it could be because several Form (a) sentences are grammatically awkward or conceptually overcompressed, especially “creating a regulatory T cell” and “grammar emerges from syntax.” The Reference’s recursive archetype is more coherent and technically polished.  
+Rating: 7
+
+#### Intelligence
+This is a highly intelligent choice of archetype. It explicitly addresses emergence, downward causation, hierarchy, and feedback, and it identifies recursion rather than merely implying it. The weakness is that the submission sometimes treats contested or complex emergent properties—consciousness, biodiversity, market efficiency—as if their causal origins were settled. Still, it is above the Reference in explicit conceptual ambition.  
+Rating: 8
+
+#### Domains far apart / metanyms not synonymous
+The five domains span biology, ecology, linguistics, immunology, and economics, with genuinely different system structures. The metanyms are far from synonymous, and the shared pattern is more abstract than a simple vocabulary substitution. Some mappings are forced, but the domain diversity is excellent.  
+Rating: 8
+
+#### Impressive length
+The template is long and structurally rich, covering two nested scales, local and global properties, emergence, interaction, feedback, robustness, flexibility, and disciplinary study. It is among the strongest templates in the submission and comparable to the Reference’s longest examples.  
+Rating: 8
+
+### Archetypal context 5: Threshold and Tipping
+
+#### Factually correct (per parallel context)
+- PC 1 (Climate System): The account correctly invokes thresholds, feedbacks, critical slowing, hysteresis, and potentially irreversible climate transitions. However, “runaway warming” is too broad and not an inevitable result of crossing a single CO2 threshold. The rewrite is more careful than Form (a). Rating: 7
+- PC 2 (Ecosystem Collapse): Resilience loss, tipping points, hysteresis, and difficult restoration are legitimate ecological concepts. Still, resource depletion is only one possible driver, and the claim that restoration cannot recover the prior state is too absolute. Rating: 7
+- PC 3 (Neural Firing): The basic threshold-to-action-potential story is correct, but the template’s irreversibility and hysteresis claims are misleading. A neuron returns to quiescence after repolarization, and post-spike threshold changes are not equivalent to the broad hysteresis described. Rating: 6
+- PC 4 (Social Movement): Grievance, repression, mobilization, and revolutionary tipping can be modeled as threshold dynamics, but social transitions are not generally irreversible, and the causal framing is highly simplified. Rating: 6
+- PC 5 (Organizational Change): Organizational inertia, stress thresholds, fragility, and path dependence are plausible, but collapse is not the only transition and hysteresis is asserted without a clear mechanism. Rating: 6
+
+#### Beauty
+The threshold template has a strong dramatic arc: stable regime, resistance, critical crossing, rapid transition, irreversibility, instability, hysteresis, and intervention. It is rhetorically effective, though repetition of “critical threshold,” “transition,” and “tipping point” becomes clumsy, especially in the ecosystem Form (a). Slightly below the Reference in polish.  
+Rating: 7
+
+#### Intelligence
+The archetype demonstrates strong awareness of nonlinear dynamics and includes several sophisticated concepts—critical slowing, hysteresis, resilience, and intervention design. Its main weakness is treating these concepts as universal properties of every domain and confusing metaphorical irreversibility with technical hysteresis. It is approximately reference-level in intelligence.  
+Rating: 7
+
+#### Domains far apart / metanyms not synonymous
+Climate, ecosystems, neurons, social movements, and organizations are very different systems, and the metanyms are clearly non-synonymous. The common threshold structure is compelling, although several mappings import physical-system terminology into domains where the mechanisms differ substantially. Overall this is strong and slightly above the Reference.  
+Rating: 8
+
+#### Impressive length
+The template is impressively long and includes stabilization, threshold crossing, transition, irreversibility, instability, hysteresis, field, prediction, and intervention. It is one of the most complete templates in the submission and at least as substantial as the Reference.  
+Rating: 8
+
+### Structural diversity across the submitted set
+
+The five archetypes have genuinely different system structures: network constraint propagation, boundary erosion and exchange, driven oscillation with damping, hierarchical emergence with feedback, and nonlinear threshold transition with hysteresis. This is a particularly strong set-level feature, with little redundancy in the underlying mechanisms. The explicit recursive treatment in Nesting and Emergence further strengthens the submission, although it is not as rigorously demonstrated as the Reference’s nested debt hierarchy. Overall, the structural diversity is clearly above the Reference.  
+Rating: 9
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "Constraint Propagation",
+          "factual_per_pc": [5, 5, 6, 5, 5],
+          "beauty": 6,
+          "intelligence": 7,
+          "instantiation_distinctness": 7,
+          "impressive_length": 6
+        },
+        {
+          "name": "Boundary Dissolution",
+          "factual_per_pc": [6, 5, 4, 5, 5],
+          "beauty": 6,
+          "intelligence": 6,
+          "instantiation_distinctness": 7,
+          "impressive_length": 7
+        },
+        {
+          "name": "Resonance and Damping",
+          "factual_per_pc": [7, 7, 5, 6, 5],
+          "beauty": 8,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        },
+        {
+          "name": "Nesting and Emergence",
+          "factual_per_pc": [6, 6, 7, 6, 6],
+          "beauty": 7,
+          "intelligence": 8,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        },
+        {
+          "name": "Threshold and Tipping",
+          "factual_per_pc": [7, 7, 6, 6, 6],
+          "beauty": 7,
+          "intelligence": 7,
+          "instantiation_distinctness": 8,
+          "impressive_length": 8
+        }
+      ],
+      "structural_diversity": 9
+    }
+  }
+}
+```

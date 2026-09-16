@@ -1,0 +1,197 @@
+## Target Submission
+
+### Archetypal context 1: The Decision-Making Cycle
+
+#### Factually correct (per parallel context)
+- PC 1 (Business Strategy): The claims about sunk costs and strategic lock-in are broadly accurate, though the framing conflates "sunk cost fallacy" with rational switching costs. The statement that a strategy "cannot be easily reversed" is a reasonable generalization. No outright falsehoods, but the precision is low. Rating: 6
+- PC 2 (Military Command): This parallel context is only gestured at in the metanym table but never actually instantiated as a Form (a) or Form (b). The submission provides only one parallel context (Business Strategy) for this archetype, leaving four domains uninstantiated. There is nothing to evaluate factually for Military Command, Personal Life, Scientific Research, or Political Campaign. Rating: 3
+- PC 3 (Personal Life): Same issue — not instantiated. Rating: 3
+- PC 4 (Scientific Research): Not instantiated. Rating: 3
+- PC 5 (Political Campaign): Not instantiated. Rating: 3
+
+#### Beauty
+The single instantiated parallel context is pedestrian and repetitive. Form (a) and Form (b) are nearly identical in content and structure, differing only in minor phrasing. The template itself is short and lacks the layered, evocative quality of the Reference's contexts. There is no elegance in the language, no surprising juxtaposition, and no sense of discovery. The archetype is also incomplete, with only one of five parallel contexts actually written out.
+Rating: 2
+
+#### Intelligence
+The core idea — that decision-makers face path dependence and sunk-cost pressures — is a real and interesting phenomenon, but it is treated superficially. The template does not capture the full richness of decision theory (e.g., Bayesian updating, option value, irreversibility under uncertainty). The metanym table is thin (only 7 slots vs. the Reference's 10+), and the insight that "DECISION_THEORY" maps to "game theory" in business is questionable and imprecise. The archetype fails to develop its intellectual premise into anything surprising or deep.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The five domains listed (Business Strategy, Military Command, Personal Life, Scientific Research, Political Campaign) are reasonably varied, but the metanyms are often near-synonyms or trivially parallel (e.g., "plan/attack/choice/hypothesis/policy" for DECISION are all just "decision" in different words). "REVERSAL_COST" maps to "sunk cost/risk of failure/social consequence/resource expenditure/political fallout" — these are genuinely different, which is a modest strength. However, the overall distinctness is weak compared to the Reference, where metanyms like "methylation state/route memory/experience/momentum/path integration" are strikingly non-synonymous.
+Rating: 4
+
+#### Impressive length
+The template is extremely short — roughly 80 words with only 7 slots. The Reference's templates are substantially longer (200+ words, 10 slots). The parallel contexts themselves are also very brief, and only one is actually written. This is among the shortest possible submissions.
+Rating: 2
+
+---
+
+### Archetypal context 2: The Resource Allocation Dilemma
+
+#### Factually correct (per parallel context)
+- PC 1 (Government Budgeting): The claims about political fallout from reallocation and the tendency to persist with initial allocations are broadly accurate and reflect real public-choice dynamics. No factual errors. Rating: 6
+- PC 2 (Corporate Investment): Not instantiated as a Form (a) or Form (b). Rating: 3
+- PC 3 (Personal Time Management): Not instantiated. Rating: 3
+- PC 4 (Nonprofit Fundraising): Not instantiated. Rating: 3
+- PC 5 (Military Logistics): Not instantiated. Rating: 3
+
+#### Beauty
+Again, only one parallel context is written, and it is dry and functional. The template is a slight variation on Archetype 1 — both are about path dependence and reversal costs — making this feel like a near-duplicate rather than a genuinely new archetype. The language is bureaucratic and uninspiring. There is no aesthetic pleasure in reading it.
+Rating: 2
+
+#### Intelligence
+The resource allocation framing is a legitimate and well-studied problem (portfolio theory, opportunity cost, political economy of budgeting), but the template does not capture anything novel or surprising. It is essentially the same archetype as #1 (decision-making with reversal costs) re-skinned. The intellectual contribution is minimal, and the overlap with Archetype 1 undermines the claim of diversity.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Government Budgeting, Corporate Investment, Personal Time Management, Nonprofit Fundraising, Military Logistics) are reasonably spread. The metanyms for RESOURCE (funds/capital/hours/donations/supplies) are genuinely different, which is a positive. However, AGENT (policymaker/CEO/individual/fundraiser/logistics officer) are all just "decision-maker" variants, and TASK (programs/projects/activities/campaigns/supply routes) are all just "things to do." The distinctness is moderate at best.
+Rating: 5
+
+#### Impressive length
+The template is again very short (~90 words, 7 slots). Only one parallel context is written. This is well below the Reference standard.
+Rating: 2
+
+---
+
+### Archetypal context 3: The Evolutionary Arms Race
+
+#### Factually correct (per parallel context)
+- PC 1 (Military Rivalry): The claims about switching costs in military strategy and game-theoretic analysis are broadly accurate. The framing is generic but not wrong. Rating: 6
+- PC 2 (Cybersecurity Competition): Not instantiated. Rating: 3
+- PC 3 (Biological Evolution): Not instantiated. Rating: 3
+- PC 4 (Business Competition): Not instantiated. Rating: 3
+- PC 5 (Political Rivalry): Not instantiated. Rating: 3
+
+#### Beauty
+The title "Evolutionary Arms Race" promises something rich — coevolutionary dynamics, Red Queen effects, escalation — but the template delivers a generic game-theoretic framing about switching costs that could apply to almost anything. The single instantiated context (Military Rivalry) is flat and repetitive between Form (a) and Form (b). The archetype does not live up to its evocative name.
+Rating: 3
+
+#### Intelligence
+The arms race concept is intellectually rich in biology and strategic studies, but the template reduces it to a simple two-strategy switching-cost model. The metanym "GAME THEORY" mapping to "natural selection" for biological evolution is a category error — natural selection is not a game-theoretic model in the same sense. The template misses the key feature of arms races: the coevolutionary escalation dynamic where each adaptation by one party drives adaptation by the other. This is a significant intellectual missed opportunity.
+Rating: 3
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Military Rivalry, Cybersecurity, Biological Evolution, Business Competition, Political Rivalry) span reasonably different areas. The metanyms for STRATEGY_A/B (offensive tactic/attack vector/mutation/marketing campaign/policy stance) are genuinely varied. However, ACTOR (nation-state/hacker group/species/corporation/political party) are all just "competing agent" variants. The distinctness is moderate.
+Rating: 5
+
+#### Impressive length
+The template is short (~90 words, 7 slots). Only one parallel context is written. Well below Reference standard.
+Rating: 2
+
+---
+
+### Archetypal context 4: The Cultural Transmission Process
+
+#### Factually correct (per parallel context)
+- PC 1 (Religious Tradition): The claims about cognitive dissonance as a reversal cost for religious belief change are grounded in social psychology (Festinger's work). The framing is reasonable. No outright errors, though "theological texts" as the primary driver of belief updating is a simplification. Rating: 6
+- PC 2 (Scientific Paradigm): Not instantiated. Rating: 3
+- PC 3 (Political Ideology): Not instantiated. Rating: 3
+- PC 4 (Social Norm): Not instantiated. Rating: 3
+- PC 5 (Language Dialect): Not instantiated. Rating: 3
+
+#### Beauty
+The cultural transmission archetype has genuine potential — the spread of beliefs, memes, and norms is a rich topic. However, the template is again short and generic, and the single instantiated context is unremarkable. The framing is essentially the same reversal-cost structure as the previous three archetypes, making this feel like a fourth iteration of the same idea rather than a genuinely new archetype.
+Rating: 3
+
+#### Intelligence
+The idea of modeling cultural transmission with reversal costs is interesting and connects to memetics, dual inheritance theory, and Kuhnian paradigm shifts. However, the template does not capture the transmission mechanism itself (contagion, prestige bias, conformity bias) — it only captures the persistence/reversal dynamic. The metanym "BELIEF STABILITY" (doctrinal consistency/paradigm robustness/ideological rigidity/norm enforcement/dialect preservation) is one of the more interesting rows in the submission, showing genuine cross-domain thinking. But overall the intellectual depth is limited.
+Rating: 4
+
+#### Domains far apart / metanyms not synonymous
+The five domains (Religious Tradition, Scientific Paradigm, Political Ideology, Social Norm, Language Dialect) are genuinely varied and span different cultural systems. The metanyms for COMMUNICATION (sermons/publications/speeches/social media/conversations) are distinct. REVERSAL_COST (cognitive dissonance/reputation damage/social ostracism/social pressure/language change) is one of the better rows in the submission. This archetype has the strongest domain spread of the five.
+Rating: 6
+
+#### Impressive length
+Template is short (~80 words, 7 slots). Only one parallel context written. Below Reference standard.
+Rating: 2
+
+---
+
+### Archetypal context 5: [Missing — only four archetypes submitted]
+
+The submission claims five archetypal contexts in its note but only delivers four distinct archetypes (Decision-Making Cycle, Resource Allocation Dilemma, Evolutionary Arms Race, Cultural Transmission Process). There is no fifth archetype with a template, metanym table, and parallel contexts. I will score this as a missing archetype.
+
+#### Factually correct (per parallel context)
+- PC 1: Not present. Rating: 1
+- PC 2: Not present. Rating: 1
+- PC 3: Not present. Rating: 1
+- PC 4: Not present. Rating: 1
+- PC 5: Not present. Rating: 1
+
+#### Beauty
+No fifth archetype exists to evaluate.
+Rating: 1
+
+#### Intelligence
+No fifth archetype exists to evaluate.
+Rating: 1
+
+#### Domains far apart / metanyms not synonymous
+No fifth archetype exists to evaluate.
+Rating: 1
+
+#### Impressive length
+No fifth archetype exists to evaluate.
+Rating: 1
+
+---
+
+### Structural diversity across the submitted set
+
+The four submitted archetypes share a nearly identical deep structure: an agent faces a decision/allocation/strategy/belief, reversal costs accumulate, and the agent tends to persist with the original choice even when new information suggests otherwise. This is essentially one archetype (path dependence under reversal costs) instantiated four times with different surface labels. The Reference submission, by contrast, presents genuinely different system structures: gradient navigation, containment breach cascades, competitive exclusion, debt accumulation, and scaffold-dependent assembly — each with a distinct causal topology. The Target submission's archetypes are not structurally diverse; they are structural near-duplicates. Furthermore, only one parallel context per archetype is actually written out, and the fifth archetype is missing entirely. This is substantially worse than the Reference on this criterion.
+Rating: 2
+
+---
+
+```json
+{
+  "scores": {
+    "Target": {
+      "archetypal_contexts": [
+        {
+          "name": "The Decision-Making Cycle",
+          "factual_per_pc":           [6, 3, 3, 3, 3],
+          "beauty":                   2,
+          "intelligence":             3,
+          "instantiation_distinctness": 4,
+          "impressive_length":        2
+        },
+        {
+          "name": "The Resource Allocation Dilemma",
+          "factual_per_pc":           [6, 3, 3, 3, 3],
+          "beauty":                   2,
+          "intelligence":             3,
+          "instantiation_distinctness": 5,
+          "impressive_length":        2
+        },
+        {
+          "name": "The Evolutionary Arms Race",
+          "factual_per_pc":           [6, 3, 3, 3, 3],
+          "beauty":                   3,
+          "intelligence":             3,
+          "instantiation_distinctness": 5,
+          "impressive_length":        2
+        },
+        {
+          "name": "The Cultural Transmission Process",
+          "factual_per_pc":           [6, 3, 3, 3, 3],
+          "beauty":                   3,
+          "intelligence":             4,
+          "instantiation_distinctness": 6,
+          "impressive_length":        2
+        },
+        {
+          "name": "Missing Fifth Archetype",
+          "factual_per_pc":           [1, 1, 1, 1, 1],
+          "beauty":                   1,
+          "intelligence":             1,
+          "instantiation_distinctness": 1,
+          "impressive_length":        1
+        }
+      ],
+      "structural_diversity": 2
+    }
+  }
+}
+```

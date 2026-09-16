@@ -1,0 +1,3 @@
+**Evaluating target ratings**
+
+I need to start by comparing the target's claims to obtain a clearer view. It looks like there's just one solid rewrite, and the fact claims are moderate. The beauty templates seem repetitive, presenting the same information, which could lead to a lock-in effect. I'll also note that while there are context tables from various domains, they primarily share adjacent terms. Overall, my rating might land around a 4. I'll keep digging for specifics!

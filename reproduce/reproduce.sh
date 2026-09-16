@@ -105,6 +105,8 @@ echo; echo "##### §6 (ICLR version) — literal-space compression of the metany
 "$PY" scripts/compression_ratio.py
 echo; echo "##### Appendix H.2 (ICLR version) — the compression of the metanym form averaged over the run 2 and 3 portfolios #####"
 "$PY" scripts/compression_ratio_all.py
+echo; echo "##### Appendix H (ICLR version) — thinking vs play: four models, thinking off at T=0 vs on, official APIs #####"
+"$PY" scripts/thinking_vs_play.py
 echo; echo "##### Appendix H (ICLR version) — GPQA reply lengths with the reasoning channel off #####"
 "$PY" scripts/gpqa_reply_lengths.py
 echo; echo "##### manuscript consistency checks #####"

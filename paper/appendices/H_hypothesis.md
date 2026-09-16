@@ -22,7 +22,20 @@ Nothing in this appendix tests the hypothesis of §6. It sets out the argument s
     - GPQA sets the archetype and the domain in the prompt, with four candidate answers where only one is true. In 99.5% of the responses the model first derives the solution and then identifies the truthful candidate.
     - The Metanym Game sets no archetype or domain; the prompt merely shares rating criteria, emphasizing truthfulness; the model selects an archetype and a set of domains to score the highest rating.
 
-If the hypothesis is correct, it explains why models play the Metanym Game so well without reasoning at T=0, a task few humans would attempt without long reflection. Because it is actually not creative, the semantic response to the prompt is ready to be extracted. If so, adding reasoning will not improve the result much. What would refute it: field-matched agreement with GPQA no higher than cross-field agreement, latent representations that separate by domain only, or a reasoning budget that raises generation ratings as much as judging.
+If the hypothesis is correct, it explains why models play the Metanym Game so well without reasoning at T=0, a task few humans would attempt without long reflection. Because it is actually not creative, the semantic response to the prompt is ready to be extracted. If so, adding reasoning will not improve the result much.
+
+**A test.** We played four models each as two players, with the reasoning channel off at temperature 0 and on, through the official APIs: Claude Sonnet 4.6, Claude Haiku 4.5, GPT-5.6 Terra and GPT-5.6 Luna. Each played the generation prompt once and judged, with the benchmark's evaluator prompt and anchor, the six players that were neither itself nor its kin, plus the two ballasts. The thinking model does not build templates in its thinking. It writes them once, in the answer, the same way the non-thinking model does. If templates were constructed by reasoning, the thinking would be full of drafting and revising. It is not. What the thinking does contain is a list of archetypes, by name, and a choice among them. That is selection over things the model already has, which is what retrieval from a store looks like. The ratings agree: thinking changed the factual score by less than a point for every model, and by nothing that clears the interval for any of them.
+
+| Model | Reasoning off | Reasoning on | On minus off, 95% interval |
+|---|---:|---:|---|
+| Claude Haiku 4.5 | 5.99 | 5.31 | −0.67 [−1.83, +0.42] |
+| GPT-5.6 Luna | 7.63 | 7.81 | +0.18 [−0.08, +0.47] |
+| Claude Sonnet 4.6 | 7.00 | 7.31 | +0.31 [−0.09, +0.76] |
+| GPT-5.6 Terra | 7.01 | 7.55 | +0.54 [−0.17, +1.31] |
+
+Table: Factual rating with the reasoning channel off and on, six judges each, anchor at 7; bootstrap over judges and archetypes, percentile 95% intervals. One portfolio per cell; the vendors return summaries of the thinking, not the trace.
+
+What would refute it: field-matched agreement with GPQA no higher than cross-field agreement, latent representations that separate by domain only, or a reasoning budget that raises generation ratings as much as judging.
 
 What the data establish is narrower: the factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (§4.5, Appendix D.1).
  

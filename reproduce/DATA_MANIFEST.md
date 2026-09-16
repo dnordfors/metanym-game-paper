@@ -34,6 +34,8 @@ the per-archetype non-factual axis ratings. Counts below are `json` / `md` files
 | `data/regenerations/probe_K_anchor7_20260619T040659Z/` | run 3 — independent regeneration | §4.9 | 133 / 132 |
 | `data/regenerations/portfolios_run2/` | run 2 — the twelve raw generator portfolios (`<model>_off_T0_r1.md`; same prompt, T = 0, reasoning off) | Appendix H.3 (ICLR) | 12 |
 | `data/regenerations/portfolios_run3/` | run 3 — the twelve raw generator portfolios, two hours after run 2 (run 1's were not preserved) | Appendix H.3 (ICLR) | 12 |
+| `data/thinking_vs_play/20260916T023717Z/gen/` | thinking-vs-play (2026-09-16, official Anthropic/OpenAI APIs): the eight portfolios (`<player>.md`; `.reasoning.md` = the vendor's thinking summary; `.json` = envelope + raw response + request) | Appendix H (ICLR) | 8 |
+| `data/thinking_vs_play/20260916T023717Z/eval/` | thinking-vs-play: the 64 evaluations (`eval_<judge>_x_<target>.*`) with the calibrated evaluator prompt (`data/thinking_vs_play/evaluator_calibrated.md`), anchor = claude-opus-4.5's run-1 portfolio pinned at 7, ballasts = the two ballast submissions | Appendix H (ICLR) | 64 |
 
 Anchor 7 serves double duty: it is both the production run and the anchor-7 point of the sweep
 (`anchor_sweep_leaderboard.py` matches it by the `probe_K_2*` prefix). The JSON counts exceed the
@@ -148,6 +150,7 @@ tables above (asserted in its `__main__`). All outputs below are deterministic (
 | *(stdout)* | `scripts/archetype_recurrence.py` — archetype titles and domains from the evaluation transcripts: titles kept verbatim between runs, titles shared across models, models offering a resource-allocation archetype, domains used by five or more models | §6 hypothesis paragraph |
 | *(stdout)* | `scripts/portfolio_divergence.py` — runs 2 and 3 raw portfolios: words shared before the first differing word, the fork, archetypes returning after it; over kept archetypes, templates verbatim vs rewritten, text similarity, slot names, domains and metanyms kept | Appendix H.3 (ICLR) |
 | *(stdout)* | `scripts/compression_ratio_all.py` — words per template, metanym set and Form (a) instantiation over every archetype in the run 2 and 3 portfolios; the instantiation / metanym-set ratio (limit of the compression factor) and the factor at five contexts | Appendix H.2 (ICLR) |
+| *(stdout)* | `scripts/thinking_vs_play.py` — thinking vs play: factual means per player, on-minus-off per model with a judge-and-archetype bootstrap, judge agreement, what the thinking texts contain | Appendix H (ICLR) |
 | *(stdout)* | `scripts/compression_ratio.py` — words of the anchor's first archetype: template, metanym table, the five rewrites; compression factor at five contexts and per added context | §6 hypothesis paragraph |
 | *(stdout)* | `scripts/gpqa_reply_lengths.py` — words per GPQA reply per model, bare-letter replies | Appendix H |
 | `figures/council_evaluation_pc1_wide.png` | `scripts/plot_council_evaluation_wide.py` — the same exhibit in landscape for the ICLR text width | Figure 1 (ICLR version) |
