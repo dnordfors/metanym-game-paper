@@ -27,7 +27,13 @@ ROOT = Path(__file__).resolve().parent.parent
 SUB = ROOT / "submission"
 MD = ROOT / "paper" / "metanym_game_iclr27.md"
 APPENDIX_DIR = ROOT / "paper" / "appendices"
-PAGE_LIMIT = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else 9
+ARXIV = "--arxiv" in sys.argv   # arXiv v3 mode: author block, preprint header, no anonymity guard, no page limit, larger figures
+PAGE_LIMIT = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else (999 if ARXIV else 9)
+ARXIV_ID = "2606.21008"; ARXIV_AUTHOR = r"David Nordfors \\ \texttt{david.nordfors@archetypes.ai}"
+ARXIV_REPO = "https://github.com/dnordfors/metanym-game-paper"
+ARXIV_FIGURE_WIDTHS = {"total_validation_simple": 0.55, "mechanism_sketch": 0.92}   # unpaired, larger
+ARXIV_FIGURE_SWAPS = {"council_evaluation_pc1_compact.png": "council_evaluation_pc1_wide.png"}
+ARXIV_DROP_SECTIONS = ("Ethics statement",)
 
 # Figure widths as a fraction of the text width, keyed by file stem (KeyError = unlisted figure).
 FIGURE_WIDTHS = {"council_evaluation_pc1": 1.0, "council_evaluation_pc1_wide": 1.0, "council_evaluation_pc1_compact": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 1.0}
@@ -70,6 +76,7 @@ def combine() -> str:
 
 # ------------------------------------------------------------------ 2. guard
 def guard(text: str) -> None:
+    if ARXIV: return
     hits = [g for g in ANONYMITY_GUARDS if g.lower() in text.lower()]
     assert not hits, f"double-blind violation — these strings appear in the build: {hits}"
 
@@ -233,7 +240,8 @@ def postfix(body: str) -> str:
                         "\\includegraphics[width=\\linewidth]{")
     def fig(m):
         name = Path(m.group(1)).stem
-        return "\\includegraphics[width=%.2f\\linewidth]{%s}" % (FIGURE_WIDTHS[name], m.group(1))
+        w = {**FIGURE_WIDTHS, **(ARXIV_FIGURE_WIDTHS if ARXIV else {})}[name]
+        return "\\includegraphics[width=%.2f\\linewidth]{%s}" % (w, m.group(1))
     body = re.sub(r"\\includegraphics(?:\[.*?\])?\{([^}]+)\}", fig, body, flags=re.S)
     body = body.replace("\\begin{figure}\n", "\\begin{figure}[t]\n")
     for s in ("AI use statement", "Ethics statement", "Reproducibility statement"):
@@ -248,7 +256,7 @@ def postfix(body: str) -> str:
                   r"\2\\label{\1}\n", body, flags=re.S)
     for _m in re.finditer(r"\\protect\\phantomsection\\label\{(tab-|fig-)[^}]+\}", body):
         raise SystemExit("a float label was not moved into its float: " + body[_m.start():_m.start() + 400].replace("\n", " | "))
-    body = pair_figures(body, "total_validation_simple", "mechanism_sketch", 0.36, 0.62)  # Appendix H: plot beside the sketch
+    if not ARXIV: body = pair_figures(body, "total_validation_simple", "mechanism_sketch", 0.36, 0.62)  # §4.5: plot beside the sketch
     assert "\\appendix" in body, "appendix marker lost"
     body = body.replace("\\begin{verbatim}", "\\begin{lstlisting}").replace("\\end{verbatim}", "\\end{lstlisting}")
     body = body.replace("\\_", "\\_\\allowbreak{}")
@@ -277,8 +285,17 @@ PREAMBLE = r"""\documentclass{article}
 
 
 # --------------------------------------------------------------- 5. assemble
+def arxiv_edits(md: str) -> str:
+    for s in ARXIV_DROP_SECTIONS:
+        i = md.index("\n## " + s); j = md.index("\n## ", i + 1); md = md[:i] + md[j:]
+    md = md.replace("(anonymised repository, supplementary material)", "(%s, `reproduce/`)" % ARXIV_REPO)
+    for a, b_ in ARXIV_FIGURE_SWAPS.items(): md = md.replace(a, b_)
+    return md
+
 def main() -> None:
     title, combined = combine()
+    if ARXIV:
+        combined = arxiv_edits(combined); (SUB / "_paper_combined.md").write_text(combined)
     guard(combined)
     pandoc = subprocess.run(
         ["pandoc", "-f", "markdown+pipe_tables+tex_math_dollars+raw_tex", "-t", "latex",
@@ -290,23 +307,33 @@ def main() -> None:
     body = body.replace("\\section{Abstract}\\label{abstract}", "\\begin{abstract}", 1)
     assert "\\section{Introduction}" in body, "no Introduction section after the abstract"
     body = body.replace("\\section{Introduction}", "\\end{abstract}\n\\section{Introduction}", 1)
-    tex = (PREAMBLE + "\\title{" + title + "}\n\\author{Anonymous}\n\\begin{document}\n\\maketitle\n"
-           + body + "\n\\end{document}\n")
+    if ARXIV:
+        tex = (PREAMBLE.replace("%\\iclrfinalcopy", "\\iclrfinalcopy") + "\\title{" + title + "}\n\\author{" + ARXIV_AUTHOR + "}\n\\begin{document}\n\\maketitle\n"
+               + "\\lhead{Preprint. arXiv:" + ARXIV_ID + " v3, September 2026.}\n" + body + "\n\\end{document}\n")
+    else:
+        tex = (PREAMBLE + "\\title{" + title + "}\n\\author{Anonymous}\n\\begin{document}\n\\maketitle\n"
+               + body + "\n\\end{document}\n")
     # attach the end-of-main-text label to the conclusion's last paragraph, so its page is the page that paragraph ends on
     assert "\n\n\\subsection*{AI use statement}" in tex
     tex = tex.replace("\n\n\\subsection*{AI use statement}", "\\label{endmain}\n\n\\subsection*{AI use statement}", 1)
     i = tex.index("\\appendix")
     tex = tex[:i] + tex[i:].replace("\\begin{table}[htb]", "\\begin{table}[H]").replace("\\begin{figure}[t]", "\\begin{figure}[H]")
     guard(tex)
-    (SUB / "paper.tex").write_text(tex)
+    OUT = SUB / "arxiv" if ARXIV else SUB
+    if ARXIV:
+        import shutil
+        OUT.mkdir(exist_ok=True); (OUT / "figures").mkdir(exist_ok=True)
+        for f in (SUB / "style").glob("*.sty"): shutil.copy(f, OUT / f.name)
+        for name in set(re.findall(r"\\includegraphics\[[^\]]*\]\{figures/([^}]+)\}", tex)): shutil.copy(SUB / "figures" / name, OUT / "figures" / name)
+    (OUT / "paper.tex").write_text(tex)
 
     r = subprocess.run(["tectonic", "-k", "--keep-logs", "-Z", "search-path=style", "-Z", "search-path=.", "paper.tex"],
-                       cwd=SUB, capture_output=True, text=True)
-    log = (SUB / "paper.log").read_text() if (SUB / "paper.log").exists() else r.stderr
+                       cwd=OUT, capture_output=True, text=True)
+    log = (OUT / "paper.log").read_text() if (OUT / "paper.log").exists() else r.stderr
     if r.returncode != 0:
         print(r.stderr[-4000:])
         raise SystemExit("tectonic failed")
-    aux = (SUB / "paper.aux").read_text()
+    aux = (OUT / "paper.aux").read_text()
     m = re.search(r"\\newlabel\{endmain\}\{\{[^}]*\}\{(\d+)\}", aux)
     assert m, "endmain label not found in paper.aux — the AI use statement heading was not emitted"
     end_page = int(m.group(1))
@@ -315,6 +342,12 @@ def main() -> None:
           f"{overfull} overfull hboxes; {len(re.findall(r'LaTeX Warning: Reference', log))} unresolved refs.")
     if end_page > PAGE_LIMIT:
         raise SystemExit(f"OVER THE PAGE LIMIT: main text runs to page {end_page}, limit is {PAGE_LIMIT}")
+    if ARXIV:
+        import tarfile
+        with tarfile.open(OUT / "metanym_game_v3_arxiv.tar.gz", "w:gz") as tar:
+            for f in ["paper.tex"] + [p.name for p in OUT.glob("*.sty")]: tar.add(OUT / f, arcname=f)
+            tar.add(OUT / "figures", arcname="figures")
+        print(f"arXiv sources: {OUT / 'metanym_game_v3_arxiv.tar.gz'}")
 
 
 if __name__ == "__main__":
