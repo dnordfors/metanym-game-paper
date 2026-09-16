@@ -152,6 +152,6 @@ tables above (asserted in its `__main__`). All outputs below are deterministic (
 | *(stdout)* | `scripts/compression_ratio_all.py` — words per template, metanym set and Form (a) instantiation over every archetype in the run 2 and 3 portfolios; the instantiation / metanym-set ratio (limit of the compression factor) and the factor at five contexts | §6 (ICLR) |
 | *(stdout)* | `scripts/thinking_vs_play.py` — thinking vs play: factual means per player, on-minus-off per model with a judge-and-archetype bootstrap, judge agreement, what the thinking texts contain | §6 (ICLR) |
 | *(stdout)* | `scripts/compression_ratio.py` — words of the anchor's first archetype: template, metanym table, the five rewrites; compression factor at five contexts and per added context | §6 hypothesis paragraph |
-| *(stdout)* | `scripts/gpqa_reply_lengths.py` — words per GPQA reply per model, bare-letter replies | Appendix H |
+| *(stdout)* | `scripts/gpqa_reply_lengths.py` — words per GPQA reply per model, bare-letter replies | §6 (ICLR) |
 | `figures/council_evaluation_pc1_wide.png` | `scripts/plot_council_evaluation_wide.py` — the same exhibit in landscape for the ICLR text width | Figure 1 (ICLR version) |
 | `figures/council_evaluation_pc1_compact.png` | `scripts/plot_council_evaluation_compact.py` — the instantiation and the clause each of the five judges singles out | Figure 1 (ICLR version); the full exhibit is its Appendix C |
