@@ -246,6 +246,8 @@ Every number, table and figure in this paper recomputes deterministically from a
 \section*{References}
 \begingroup\small\setlength{\parindent}{-1.5em}\setlength{\leftskip}{1.5em}
 
+Anthropic (2025). Introducing Claude 4. Announcement, 22 May 2025. https://www.anthropic.com/news/claude-4
+
 Bai, Y., et al.~(2023). Benchmarking foundation models with Language-Model-as-an-Examiner. \emph{NeurIPS 36.} arXiv:2306.04181.
 
 Bellibatlu, R. R., Raff, E., \& Zhang, W. (2026). JudgeSense: A benchmark for prompt sensitivity in LLM-as-a-judge systems. arXiv:2604.23478.
@@ -1235,6 +1237,8 @@ GPT-5.6 Terra & 7.01 & 7.55 & +0.54 {[}\ensuremath{-}0.17, +1.31{]} \\
 \end{tabular}
 \end{center}
 \end{table}
+
+On GPQA the reasoning channel does matter: Anthropic reports Claude Opus 4 and Claude Sonnet 4 at 74.9 and 70.0 without extended thinking and 79.6 and 75.4 with it (Anthropic, 2025), and our reasoning-off administration reads 71.2 and 72.2 for the same models (Appendix D). That is the split the hypothesis predicts: GPQA is the mechanism's use, a derivation, which reasoning helps; the game is the mechanism, a retrieval, which reasoning does not.
 
 \textbf{Two consequences.} If the hypothesis is correct, the agreement is domain-matched: a model's factual score on parallel contexts in a field tracks its GPQA accuracy in that field, and GPQA's subject labels together with the domains of the released evaluations allow the test without a new run; field-by-field agreement no higher than agreement across fields would refute it. And archetype and topic domain are separable in the model's latent space: the same archetype is recoverable from its parallel contexts in unrelated domains, and the domain from unrelated archetypes; representations that separate by domain only would refute it.
 
