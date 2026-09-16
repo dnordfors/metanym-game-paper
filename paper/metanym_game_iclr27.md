@@ -195,7 +195,12 @@ We ran the full pipeline three times, regenerating all twelve portfolios at T=0 
 
 Table: Factual rating with the reasoning channel off and on, six judges each, anchor at 7; bootstrap over judges and archetypes, percentile 95% intervals. One portfolio per cell; the vendors return summaries of the thinking, not the trace.
 
-**Two consequences.** The agreement should be domain-matched, a model's factual score in a field tracking its GPQA accuracy in that field, testable from GPQA's subject labels and the released evaluations' domains; and archetype and topic domain should be separable in the latent space, the same archetype recoverable across unrelated domains and the domain across unrelated archetypes. Field-by-field agreement no higher than across fields, or representations that separate by domain only, would refute it. What the data establish is narrower: the factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (Appendix D.1).
+**Predictions.**
+
+- **Domain-matched agreement.** If the hypothesis is correct, the agreement should hold within each topic domain. A model's factual score on its biology parallel contexts should track its GPQA accuracy on the biology questions, and the same for physics and chemistry. GPQA labels each question by domain and the released evaluations record the domain of each parallel context, so the test needs no new run. If agreement within a domain is no higher than agreement across domains, the hypothesis is refuted.
+- **Separability.** If the hypothesis is correct, archetype and topic domain are separate in the latent space. The same archetype should be recoverable from its parallel contexts in unrelated domains, and the same domain from the parallel contexts of unrelated archetypes. If representations separate by domain only, the hypothesis is refuted.
+
+What the data establish is narrower than the hypothesis: the correlation itself, 0.94 from the two factual quarters alone and 0.98 for the total (Appendix D.1).
 
 **Steering signal, and its caveat.** Self-improvement, the council governing its own rules, is specified but not exercised. A system optimised against $T$ is optimised against a consensus it participates in, so gains can come from courting the consensus; the partial answers are the two quarters consensus does not own and independently constituted councils.
 
