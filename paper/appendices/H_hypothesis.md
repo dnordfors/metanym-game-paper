@@ -35,7 +35,7 @@ If the hypothesis is correct, it explains why models play the Metanym Game so we
 
 Table: Factual rating with the reasoning channel off and on, six judges each, anchor at 7; bootstrap over judges and archetypes, percentile 95% intervals. One portfolio per cell; the vendors return summaries of the thinking, not the trace.
 
-What would refute it: field-matched agreement with GPQA no higher than cross-field agreement, latent representations that separate by domain only, or a reasoning budget that raises generation ratings as much as judging.
+**Two consequences.** If the hypothesis is correct, the agreement is domain-matched: a model's factual score on parallel contexts in a field tracks its GPQA accuracy in that field, and GPQA's subject labels together with the domains of the released evaluations allow the test without a new run; field-by-field agreement no higher than agreement across fields would refute it. And archetype and topic domain are separable in the model's latent space: the same archetype is recoverable from its parallel contexts in unrelated domains, and the domain from unrelated archetypes; representations that separate by domain only would refute it.
 
 What the data establish is narrower: the factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (§4.5, Appendix D.1).
  
