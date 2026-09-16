@@ -223,7 +223,7 @@ We ran the full pipeline three times, regenerating all twelve portfolios at T=0 
 
 \textbf{As a self-contained method}, the council sits in the \emph{unsupervised peer-evaluation} line, which already removes the gold key: single-judge protocols (Zheng et al., 2023) trust one judge; PoLL (Verga et al., 2024) adds a panel but trusts it as given; LLM-as-Examiner (Bai et al., 2023) lets the examiner write the questions; PiCO (Ning et al., 2025) lets unlabelled models answer and grade one another and recovers an ability ordering from peer agreement alone, and UPME (Zhang et al., 2025) extends it to vision-language. We weight by agreement only where agreement is licensed to mean truth, and our council certifies and re-contests its own judges. Label-free spectral aggregation is \emph{one-sided} in both its lineages: in the aggregation lineage (Parisi et al., 2014; Dawid \& Skene, 1979) predictors classify a fixed external dataset, so there is no generator to score; in the reputation lineage (EigenTrust, Kamvar et al., 2003) EigenBench (Chang et al., 2026) has LLMs judge one another's responses against a written value constitution and takes the leading eigenvector of a model-by-model trust matrix as each model's score: one number is both standing and weight as a judge, applied to every criterion, subjective ones included. Our matrix is \emph{two-sided}: one SVD scores judges on the left and generators on the right, the two are kept apart, and the generation--evaluation gap of \S{}4.4 --- which contradicts that premise on the factual axis --- is definable only because the test is self-produced. \emph{Rating consistency} applies the judge-reliability principle of invariance under non-semantic perturbation (Weng et al., 2026; Bellibatlu et al., 2026) to subjective, ground-truth-free criteria on self-produced items --- to our knowledge a new use of the sweep. Don-Yehiya et al.~(2026) find the anchor should be recalibrated to the field's range --- our rule --- and warn against a top-model anchor; ours is pinned at 7 with headroom above (\S{}4.1).
 
-\section{Discussion and limitations}\label{discussion-and-limitations}
+\section{Discussion}\label{discussion}
 
 \textbf{Two yardsticks.} The factual estimator's one assumption --- \emph{the only thing competent evaluators share is the truth} --- is what licenses agreement-weighting for facts. The disclosed alternative applies it to taste as well (an \emph{authority} rating, one SVD per subjective axis; Appendix A.7); we decline it because on taste the dominant axis of agreement is shared convention, so weighting by it would reward the judge nearest the mean. Peer centrality's weakness is the shared misunderstanding; rating consistency asks only whether a judge holds a firm standard.
 
@@ -261,6 +261,8 @@ GPT-5.6 Terra & 7.01 & 7.55 & +0.54 {[}\ensuremath{-}0.17, +1.31{]} \\
 \end{itemize}
 
 What the data establish is narrower than the hypothesis: the correlation itself, 0.94 from the two factual quarters alone and 0.98 for the total (Appendix D.1).
+
+\section{Limitations}\label{limitations}
 
 \textbf{Steering signal, and its caveat.} Self-improvement, the council governing its own rules, is specified but not exercised. A system optimised against \(T\) is optimised against a consensus it participates in, so gains can come from courting the consensus; the partial answers are the two quarters consensus does not own and independently constituted councils.
 

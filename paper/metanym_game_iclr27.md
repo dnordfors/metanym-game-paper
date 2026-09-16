@@ -174,7 +174,7 @@ We ran the full pipeline three times, regenerating all twelve portfolios at T=0 
 
 **As a self-contained method**, the council sits in the *unsupervised peer-evaluation* line, which already removes the gold key: single-judge protocols (Zheng et al., 2023) trust one judge; PoLL (Verga et al., 2024) adds a panel but trusts it as given; LLM-as-Examiner (Bai et al., 2023) lets the examiner write the questions; PiCO (Ning et al., 2025) lets unlabelled models answer and grade one another and recovers an ability ordering from peer agreement alone, and UPME (Zhang et al., 2025) extends it to vision-language. We weight by agreement only where agreement is licensed to mean truth, and our council certifies and re-contests its own judges. Label-free spectral aggregation is *one-sided* in both its lineages: in the aggregation lineage (Parisi et al., 2014; Dawid & Skene, 1979) predictors classify a fixed external dataset, so there is no generator to score; in the reputation lineage (EigenTrust, Kamvar et al., 2003) EigenBench (Chang et al., 2026) has LLMs judge one another's responses against a written value constitution and takes the leading eigenvector of a model-by-model trust matrix as each model's score: one number is both standing and weight as a judge, applied to every criterion, subjective ones included. Our matrix is *two-sided*: one SVD scores judges on the left and generators on the right, the two are kept apart, and the generation–evaluation gap of §4.4 — which contradicts that premise on the factual axis — is definable only because the test is self-produced. *Rating consistency* applies the judge-reliability principle of invariance under non-semantic perturbation (Weng et al., 2026; Bellibatlu et al., 2026) to subjective, ground-truth-free criteria on self-produced items — to our knowledge a new use of the sweep. Don-Yehiya et al. (2026) find the anchor should be recalibrated to the field's range — our rule — and warn against a top-model anchor; ours is pinned at 7 with headroom above (§4.1).
 
-## 6 Discussion and limitations
+## 6 Discussion
 
 **Two yardsticks.** The factual estimator's one assumption — *the only thing competent evaluators share is the truth* — is what licenses agreement-weighting for facts. The disclosed alternative applies it to taste as well (an *authority* rating, one SVD per subjective axis; Appendix A.7); we decline it because on taste the dominant axis of agreement is shared convention, so weighting by it would reward the judge nearest the mean. Peer centrality's weakness is the shared misunderstanding; rating consistency asks only whether a judge holds a firm standard.
 
@@ -202,11 +202,13 @@ Table: Factual rating with the reasoning channel off and on, six judges each, an
 
 What the data establish is narrower than the hypothesis: the correlation itself, 0.94 from the two factual quarters alone and 0.98 for the total (Appendix D.1).
 
+## 7 Limitations
+
 **Steering signal, and its caveat.** Self-improvement, the council governing its own rules, is specified but not exercised. A system optimised against $T$ is optimised against a consensus it participates in, so gains can come from courting the consensus; the partial answers are the two quarters consensus does not own and independently constituted councils.
 
 **Scope.** The runs share one configuration — one prompt template, one roster — so the bootstrap intervals measure item and run-to-run dispersion, not the configuration (the four anchor values give the same leaderboard, Spearman 0.90–0.96); the leading group sits at its discrimination floor; a quarter of a non-council model's total rests on the contest's easier consistency test; no seat has yet been contested. Peer consensus is conservative against anomaly: a synthetic evaluator that reproduces the consensus and then inverts a fifth of its verdicts loses most of its competence (Appendix A.7), a penalty a dissenter pays on only half of $T$.
 
-## 7 Conclusion
+## 8 Conclusion
 
 The *metanym game* is a structural test of intelligence built entirely of analogy, falsifiable sentence by sentence. The *council-of-peers benchmark* needs nothing outside itself: truth as the dominant axis of inter-evaluator agreement, reliability as invariance under a swept anchor, judges certified by the participants, contestable seats — and one external check, by design, $r = 0.98$ against GPQA Diamond.
 
@@ -216,7 +218,7 @@ Every original idea in this work is the author's. The work was developed in a su
 
 ## Ethics statement
 
-The study evaluates commercial language models via their public APIs on self-generated material; no human subjects, personal data or annotators are involved. The benchmark is proposed as a candidate steering signal for self-improving systems. Steering by it would mean letting a consensus of models, with no human key, decide what counts as better, and a misunderstanding the models share would then be reinforced rather than corrected. The paper keeps the factual axis answerable to independent checks (§4.5) and leaves the self-improvement loop specified but unrun (§6); we regard that as the condition under which such a signal may be used. We consider the release of a key-free, contamination-resistant evaluation to be net positive for the field's ability to measure models past the point where human-written keys remain reliable, and we release all data and code under permissive licences.
+The study evaluates commercial language models via their public APIs on self-generated material; no human subjects, personal data or annotators are involved. The benchmark is proposed as a candidate steering signal for self-improving systems. Steering by it would mean letting a consensus of models, with no human key, decide what counts as better, and a misunderstanding the models share would then be reinforced rather than corrected. The paper keeps the factual axis answerable to independent checks (§4.5) and leaves the self-improvement loop specified but unrun (§7); we regard that as the condition under which such a signal may be used. We consider the release of a key-free, contamination-resistant evaluation to be net positive for the field's ability to measure models past the point where human-written keys remain reliable, and we release all data and code under permissive licences.
 
 ## Reproducibility statement
 
