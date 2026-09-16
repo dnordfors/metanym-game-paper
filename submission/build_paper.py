@@ -246,7 +246,8 @@ def postfix(body: str) -> str:
                   r"\2\\label{\1}\n", body, flags=re.S)
     body = re.sub(r"\\protect\\phantomsection\\label\{(fig-[^}]+)\}\{\}\n\n(\\begin\{figure\}.*?\\caption\{.*?\}(?:\\label\{[^}]*\})?\n)",
                   r"\2\\label{\1}\n", body, flags=re.S)
-    assert "phantomsection\\label{tab-" not in body and "phantomsection\\label{fig-" not in body, "a float label was not moved into its float"
+    for _m in re.finditer(r"\\protect\\phantomsection\\label\{(tab-|fig-)[^}]+\}", body):
+        raise SystemExit("a float label was not moved into its float: " + body[_m.start():_m.start() + 400].replace("\n", " | "))
     body = pair_figures(body, "total_validation_simple", "mechanism_sketch", 0.36, 0.62)  # Appendix H: plot beside the sketch
     assert "\\appendix" in body, "appendix marker lost"
     body = body.replace("\\begin{verbatim}", "\\begin{lstlisting}").replace("\\end{verbatim}", "\\end{lstlisting}")
