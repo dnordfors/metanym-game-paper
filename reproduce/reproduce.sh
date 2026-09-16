@@ -99,15 +99,15 @@ B=300 "$PY" scripts/per_run_contests.py                  # Appendix F: contest g
 TAG=pooled123 RCI="0.95, 0.99" "$PY" scripts/plot_total_validation_simple_pooled.py   # -> figures/total_validation_simple_pooled123.png (§4.5 figure; RCI = the BCa interval printed by pooled_ladder.py)
 echo; echo "##### §6 (ICLR version) — archetype recurrence across runs and models (retrieval signature) #####"
 "$PY" scripts/archetype_recurrence.py
-echo; echo "##### Appendix H.3 (ICLR version) — where regeneration runs 2 and 3 part, and what returns after the fork #####"
+echo; echo "##### §6 (ICLR version) — where regeneration runs 2 and 3 part, and what returns after the fork #####"
 "$PY" scripts/portfolio_divergence.py
 echo; echo "##### §6 (ICLR version) — literal-space compression of the metanym form (anchor, first archetype) #####"
 "$PY" scripts/compression_ratio.py
-echo; echo "##### Appendix H.2 (ICLR version) — the compression of the metanym form averaged over the run 2 and 3 portfolios #####"
+echo; echo "##### §6 (ICLR version) — the compression of the metanym form averaged over the run 2 and 3 portfolios #####"
 "$PY" scripts/compression_ratio_all.py
-echo; echo "##### Appendix H (ICLR version) — thinking vs play: four models, thinking off at T=0 vs on, official APIs #####"
+echo; echo "##### §6 (ICLR version) — thinking vs play: four models, thinking off at T=0 vs on, official APIs #####"
 "$PY" scripts/thinking_vs_play.py
-echo; echo "##### Appendix H (ICLR version) — GPQA reply lengths with the reasoning channel off #####"
+echo; echo "##### §6 (ICLR version) — GPQA reply lengths with the reasoning channel off #####"
 "$PY" scripts/gpqa_reply_lengths.py
 echo; echo "##### manuscript consistency checks #####"
 "$PY" scripts/check_manuscript.py
