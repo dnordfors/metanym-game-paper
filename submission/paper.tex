@@ -1197,7 +1197,7 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 \item
   \textbf{Cited.} Analogy is semantic compression. An analogy is a shared relational structure with different particulars (Gentner, 1983).
 \item
-  The archetypal context is a semantic structure in the latent space. A context template is a literal representation of the archetypal context. The metanym sets are the particulars that, when inserted into the slots of the template, instantiate into parallel contexts, analogous metaphors.
+  \textbf{Postulated.} The archetypal context is a semantic structure in the latent space. A context template is a literal representation of the archetypal context. The metanym sets are the particulars that, when inserted into the slots of the template, instantiate into parallel contexts, analogous metaphors.
 \item
   \textbf{Hypothesis.} A language model holds its knowledge as archetypal contexts, each instantiated in the topic domains where it applies. The template is the abstraction, the metanym set is the topic domain, and the two reconstruct the instantiation exactly.
 \item
@@ -1205,28 +1205,19 @@ Nothing in this appendix tests the hypothesis of \S{}6. It sets out the argument
 \item
   \textbf{Hypothesis.} A form this compressive qualifies as a learning mechanism for a language model.
 \item
-  \textbf{Hypothesis.} The game measures the mechanism directly. Nothing is given; the model selects the archetype and the domains that best satisfy the prompt's criteria, factual truth among them, and writes them out.
-\item
-  \textbf{Hypothesis, with a measurement.} GPQA measures the mechanism's use. The archetype and the domain are given by the question; the model derives the instantiation and selects the candidate that matches it, which is what 99.5\% of the replies do with the reasoning channel off. The two tests run one operation from opposite ends: GPQA gives the archetype and the domain and asks for the instantiation; the game asks for the archetype and the domains and gets the instantiations.
-\item
-  \textbf{Hypothesis, with a measurement.} Corollary: retrieval, not construction. In the game the models retrieve templates and metanym sets that training already compressed, which is why they play well with no reasoning channel. The signature: eleven of twelve portfolios differ between runs, yet most archetype titles recur verbatim between the two runs made two hours apart, and two in five between runs three weeks apart.
-\item
-  \textbf{Established.} What the data establish is narrower. The factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (\S{}4.5, Appendix D.1). The hypothesis is consistent with the general factor of Ili\'{c} and Gignac (2024), and more specific.
+  \textbf{Hypothesis.} The Metanym Game and GPQA run the same mechanism from opposite ends:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    GPQA sets the archetype and the domain in the prompt, with four candidate answers where only one is true. In 99.5\% of the responses the model first derives the solution and then identifies the truthful candidate.
+  \item
+    The Metanym Game sets no archetype or domain; the prompt merely shares rating criteria, emphasizing truthfulness; the model selects an archetype and a set of domains to score the highest rating.
+  \end{itemize}
 \end{enumerate}
 
-\subsection{Predictions, and what would refute the hypothesis}\label{predictions-and-what-would-refute-the-hypothesis}
+If the hypothesis is correct, it explains why models play the Metanym Game so well without reasoning at T=0, a task few humans would attempt without long reflection. Because it is actually not creative, the semantic response to the prompt is ready to be extracted. If so, adding reasoning will not improve the result much. What would refute it: field-matched agreement with GPQA no higher than cross-field agreement, latent representations that separate by domain only, or a reasoning budget that raises generation ratings as much as judging.
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  \textbf{Domain-matched agreement.} A model's factual score on parallel contexts in a field tracks its GPQA accuracy in that field. GPQA Diamond carries subject labels, and the released evaluations carry each parallel context's domain, so the test needs no new run. A refutation: the field-by-field agreement is no higher than the agreement across fields.
-\item
-  \textbf{Separability in latent space.} Archetype and topic domain are separable in a model's latent space: the same archetype recoverable from parallel contexts in unrelated domains, and the domain from unrelated archetypes. A refutation: representations that separate by domain only.
-\item
-  \textbf{Retrieval over construction.} Reasoning should add little to generation in the game, where templates and metanym sets are retrieved, and may still help judging, where the task is to catch a broken substitution. A refutation: a reasoning budget that raises generation ratings as much as it raises judging.
-\item
-  \textbf{The bit-level factor.} Given its template and metanym set, an instantiation's per-token loss under an open-weights model should fall far below its loss given nothing, and by more for archetypes that recur across many domains. A refutation: no such gap, or a gap that does not grow with the number of domains.
-\end{enumerate}
+What the data establish is narrower: the factual pair reaches 0.94 with GPQA and the two subjective quarters lift it to 0.98 (\S{}4.5, Appendix D.1).
 
 \end{document}
