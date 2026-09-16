@@ -308,6 +308,8 @@ Rein, D., Hou, B. L., Stickland, A. C., Petty, J., Pang, R. Y., Dirani, J., Mich
 
 Shannon, C. E. (1951). Prediction and entropy of printed English. \emph{Bell System Technical Journal, 30}(1), 50--64.
 
+Sprague, Z., Yin, F., Rodriguez, J. D., Jiang, D., Wadhwa, M., Singhal, P., Zhao, X., Ye, X., Mahowald, K., \& Durrett, G. (2025). To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning. In \emph{International Conference on Learning Representations (ICLR 2025)}. arXiv:2409.12183.
+
 Srivastava, A., et al.~(2023). Beyond the imitation game: Quantifying and extrapolating the capabilities of language models. \emph{TMLR.} arXiv:2206.04615.
 
 Sternberg, R. J., Conway, B. E., Ketron, J. L., \& Bernstein, M. (1981). People's conceptions of intelligence. \emph{Journal of Personality and Social Psychology, 41}(1), 37--55.
@@ -1238,7 +1240,7 @@ GPT-5.6 Terra & 7.01 & 7.55 & +0.54 {[}\ensuremath{-}0.17, +1.31{]} \\
 \end{center}
 \end{table}
 
-On GPQA the reasoning channel does matter: Anthropic reports Claude Opus 4 and Claude Sonnet 4 at 74.9 and 70.0 without extended thinking and 79.6 and 75.4 with it (Anthropic, 2025), and our reasoning-off administration reads 71.2 and 72.2 for the same models (Appendix D). That is the split the hypothesis predicts: GPQA is the mechanism's use, a derivation, which reasoning helps; the game is the mechanism, a retrieval, which reasoning does not.
+On GPQA the reasoning channel does matter: Anthropic reports Claude Opus 4 and Claude Sonnet 4 at 74.9 and 70.0 without extended thinking and 79.6 and 75.4 with it (Anthropic, 2025), and our reasoning-off administration reads 71.2 and 72.2 for the same models (Appendix D). That is the split the hypothesis predicts: GPQA is the mechanism's use, a derivation, which reasoning helps (Sprague et al., 2025); the game is the mechanism, a retrieval, which reasoning does not.
 
 \textbf{Two consequences.} If the hypothesis is correct, the agreement is domain-matched: a model's factual score on parallel contexts in a field tracks its GPQA accuracy in that field, and GPQA's subject labels together with the domains of the released evaluations allow the test without a new run; field-by-field agreement no higher than agreement across fields would refute it. And archetype and topic domain are separable in the model's latent space: the same archetype is recoverable from its parallel contexts in unrelated domains, and the domain from unrelated archetypes; representations that separate by domain only would refute it.
 
