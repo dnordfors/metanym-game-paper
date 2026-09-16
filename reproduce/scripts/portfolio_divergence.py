@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Appendix H.3 (ICLR version) — where the regeneration runs 2 and 3 part, and what returns after they part.
+"""§6 (ICLR version) — where the regeneration runs 2 and 3 part, and what returns after they part.
 Reads the raw generator portfolios of runs 2 and 3 (data/regenerations/portfolios_run{2,3}/<model>_off_T0_r1.md; same
 prompt, temperature 0, reasoning off, two hours apart; run 1's portfolios were not preserved) and reports, per model:
   * the number of words the two portfolios share before the first differing word, and the words at the fork;

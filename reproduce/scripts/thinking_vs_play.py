@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Appendix H (ICLR version) — the thinking-vs-play experiment (2026-09-16, official Anthropic and OpenAI APIs): four models
+"""§6 (ICLR version) — the thinking-vs-play experiment (2026-09-16, official Anthropic and OpenAI APIs): four models
 as two players each, thinking off at temperature 0 and thinking on; each plays the generator prompt once and judges the six
 non-kin players and the two ballasts against the anchor pinned at 7. Reads data/thinking_vs_play/20260916T023717Z/{gen,eval}/
 and reports: per target the factual mean over its judges; on-minus-off per model with a bootstrap (judges resampled with

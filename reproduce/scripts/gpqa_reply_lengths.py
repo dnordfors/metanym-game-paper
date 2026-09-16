@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Appendix H (ICLR version) — how the models answered GPQA with the reasoning channel off: words per reply
+"""§6 (ICLR version) — how the models answered GPQA with the reasoning channel off: words per reply
 (median, min, max) and the number of bare-letter replies (< 15 words), per model, from the shipped records."""
 import json, glob, statistics as st, os
 from pathlib import Path

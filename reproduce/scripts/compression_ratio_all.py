@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Appendix H.2 (ICLR version) — the literal compression of the metanym form, averaged over every archetype in the shipped
+"""§6 (ICLR version) — the literal compression of the metanym form, averaged over every archetype in the shipped
 raw portfolios of runs 2 and 3 (data/regenerations/portfolios_run{2,3}/). For each archetype whose template, metanym table
 and five Form (a) instantiations parse: words in the template, in each domain's metanym set (its column of the table), and
 in each Form (a) instantiation. Reports the instantiation / metanym-set ratio (the limit of the compression factor
