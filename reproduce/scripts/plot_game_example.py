@@ -69,7 +69,7 @@ def render(H):
     HW = (FULL - 1.6) / 2; top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — BACTERIAL CHEMOTAXIS"); ya = flow(M + PAD, ys, HW - 2 * PAD, first_n(FA, 1)); RX = M + HW + 1.6
     ys2 = subhead(RX + PAD, top - PAD, "IDIOMATIC REWRITE"); yb2 = flow(RX + PAD, ys2, HW - 2 * PAD, first_n(FB, 1), mark=False); bot = min(ya, yb2) - PAD + 0.4; box(M, top, HW, bot); box(RX, top, HW, bot); y = bot - 1.8
     # ---- (b): full-width instantiation, then three judges with their complete justifications
-    y = header(y, "(b)  Evaluation: a Gemini 2.5 Flash instantiation")
+    y = header(y, "(b)  Evaluation — factual correctness (Gemini 2.5 Flash submission)")
     top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — ECOSYSTEM MANAGEMENT"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FORM_A); bot = ya - PAD + 0.4; box(M, top, FULL, bot, fill=EVAL_BOX); y = bot - 1.0
     NAMEW = 12.0
     PICK = ["opus-4.5", "3.1-pro", "sonnet-4"]                     # three judges, both vendors of the council
