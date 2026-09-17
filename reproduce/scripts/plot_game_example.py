@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 HERE = Path(__file__).resolve().parent; PKG = HERE.parents[0]
 OUT = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else PKG / "figures" / "game_example.png"
-BLUE, ORANGE = "#2a78d6", "#eb6834"; SURFACE, INK, INK2 = "#fcfcfb", "#0b0b0b", "#52514e"; BOX, EDGE = "#f4f3f0", "#d5d3ce"; MET_ORANGE = "#b3491a"
+BLUE, ORANGE = "#2a78d6", "#eb6834"; SURFACE, INK, INK2 = "#fcfcfb", "#0b0b0b", "#52514e"; BOX, EDGE = "#f4f3f0", "#d5d3ce"; EVAL_BOX = "#eef3fa"; MET_ORANGE = "#b3491a"   # evaluation panel: a cool tint against the warm generation panel
 # (a) generation source
 P = (PKG / "submissions" / "anchor_claude-opus-4.5.md").read_text(); blk = P[P.index("## Archetype Proposal: Gradient-Guided Navigation"):P.index("### Mountain Climbing")]
 TEMPLATE = re.sub(r"\s+", " ", re.search(r"### Context-template\s*\n+\"?(.+?)\"?\n\n", blk, re.S).group(1)).strip().strip('"')
@@ -70,7 +70,7 @@ def render(H):
     ys2 = subhead(RX + PAD, top - PAD, "IDIOMATIC REWRITE"); yb2 = flow(RX + PAD, ys2, HW - 2 * PAD, first_n(FB, 1), mark=False); bot = min(ya, yb2) - PAD + 0.4; box(M, top, HW, bot); box(RX, top, HW, bot); y = bot - 1.8
     # ---- (b): full-width instantiation, then three judges with their complete justifications
     y = header(y, "(b)  Evaluation: a Gemini 2.5 Flash instantiation")
-    top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — ECOSYSTEM MANAGEMENT"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FORM_A); bot = ya - PAD + 0.4; box(M, top, FULL, bot); y = bot - 1.0
+    top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — ECOSYSTEM MANAGEMENT"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FORM_A); bot = ya - PAD + 0.4; box(M, top, FULL, bot, fill=EVAL_BOX); y = bot - 1.0
     NAMEW = 12.0
     PICK = ["opus-4.5", "3.1-pro", "sonnet-4"]                     # three judges, both vendors of the council
     for name, rating, just in [j for k in PICK for j in JUDGES if j[0] == k]:
@@ -78,7 +78,7 @@ def render(H):
         ax.text(M + PAD, top - PAD - 3.2, f"{rating}/10", fontsize=BODY + 1.5, fontweight="bold", color=ORANGE, va="top", zorder=3)
         shown = re.sub(r"\s+", " ", just.strip().strip('"“”')); shown = re.sub(r"[Ff]orm \(a\)", "[instantiation]", shown); shown = re.sub(r"[Ff]orm \(b\)", "[idiomatic rewrite]", shown)
         yj = flow(M + NAMEW, top - PAD, FULL - NAMEW - PAD, "“" + shown + "”", size=BODY, color=INK2, mark=False)
-        bot = min(yj, top - PAD - 6.0) - PAD + 0.4; box(M, top, FULL, bot); y = bot - 0.8
+        bot = min(yj, top - PAD - 6.0) - PAD + 0.4; box(M, top, FULL, bot, fill=EVAL_BOX); y = bot - 0.8
     bot_left = y; yj = y
     return fig, min(bot_left, yj)
 H = 8.0
