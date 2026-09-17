@@ -36,7 +36,7 @@ ARXIV_FIGURE_SWAPS = {"council_evaluation_pc1_compact.png": "council_evaluation_
 ARXIV_DROP_SECTIONS = ("Ethics statement",)
 
 # Figure widths as a fraction of the text width, keyed by file stem (KeyError = unlisted figure).
-FIGURE_WIDTHS = {"council_evaluation_pc1": 1.0, "council_evaluation_pc1_wide": 1.0, "council_evaluation_pc1_compact": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 1.0}
+FIGURE_WIDTHS = {"game_example": 1.0, "council_evaluation_pc1": 1.0, "council_evaluation_pc1_wide": 1.0, "council_evaluation_pc1_compact": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 1.0}
 
 # Strings that must not survive into a double-blind submission.
 ANONYMITY_GUARDS = ["Nordfors", "dnordfors", "archetypes.ai", "2606.21008", "github.com/dnordfors"]
@@ -244,6 +244,7 @@ def postfix(body: str) -> str:
         return "\\includegraphics[width=%.2f\\linewidth]{%s}" % (w, m.group(1))
     body = re.sub(r"\\includegraphics(?:\[.*?\])?\{([^}]+)\}", fig, body, flags=re.S)
     body = body.replace("\\begin{figure}\n", "\\begin{figure}[t]\n")
+    body = re.sub(r"\\begin\{figure\}\[t\](\n\\centering\n(?:\\pandocbounded\{)?\\includegraphics\[[^\]]*\]\{figures/game_example\.png)", r"\\begin{figure}[p]\1", body)   # Figure 1: its own page
     for s in ("AI use statement", "Ethics statement", "Reproducibility statement"):
         body = re.sub(r"\\section\{" + s + r"\}\\label\{[^}]*\}", r"\\subsection*{" + s + "}", body)
     body = re.sub(r"\\section\{References\}\\label\{[^}]*\}",

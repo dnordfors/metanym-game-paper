@@ -8,7 +8,7 @@ We introduce a benchmark that contains its own ground truth and presents evidenc
 
 Nearly every benchmark for machine intelligence needs a predetermined ground truth — golden keys and labels, oracle models, human panels. The benchmark reported here needs none of that. It is a game where frontier language models compete in making up analogies and then grade one another, and that grading is the single source of every score: no human raters, no answer key, nothing to look up.
 
-The test is the **metanym game**. A player authors, from nothing, a *context template* — a paragraph of fixed wording with open slots — together with the sets of keywords that fill it, each set instantiating the template as a factually true description of a different domain; the keywords in corresponding slots are *metanyms*, metaphorically synonymous, and a set of them a *metanym set*. Table \ref{tab-anchor-metanym} shows one, written by a player. Its instantiations are each other's *metaphors* and, as a set, *parallel contexts*: children of a common *archetypal context*, the abstract structure they share, of which the template is the literal representation. A long tradition treats seeing one structure across wildly different domains as central to thought and tests whether you *recognise* it; the game tests whether you can *build* it.
+The test is the **metanym game**. A player authors, from nothing, a *context template* — a paragraph of fixed wording with open slots — together with the sets of keywords that fill it, each set instantiating the template as a factually true description of a different domain; the keywords in corresponding slots are *metanyms*, metaphorically synonymous, and a set of them a *metanym set*. Figure \ref{fig-game-example}(a) shows one, written by a player. Its instantiations are each other's *metaphors* and, as a set, *parallel contexts*: children of a common *archetypal context*, the abstract structure they share, of which the template is the literal representation. A long tradition treats seeing one structure across wildly different domains as central to thought and tests whether you *recognise* it; the game tests whether you can *build* it.
 
 Because every item is produced fresh in the run, no fixed test set can leak into training; because correctness is settled sentence by sentence, the players' own verdicts suffice — one matrix of their factual ratings reveals which judges are competent, with no labels at all (§3.3), and that subset is seated as the *council* that grades everyone. The canonical twelve-model run (§4) finds that **judgement is the bottleneck** — on this roster the strongest generators are middling judges — and that the key-free total tracks GPQA Diamond at Pearson $r = 0.98$, audited for a leak and found clean.
 
@@ -16,41 +16,15 @@ Because every item is produced fresh in the run, no fixed test set can leak into
 
 ## 2 The metanym game
 
-An archetypal context is the cross-domain *isomorphism* General Systems Theory studies (von Bertalanffy, 1968). Table \ref{tab-anchor-metanym} is one archetype as a player wrote it — the first of the submission that became the run's anchor (§4.1). One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
+An archetypal context is the cross-domain *isomorphism* General Systems Theory studies (von Bertalanffy, 1968). Figure \ref{fig-game-example}(a) is one archetype as a player wrote it — the first of the submission that became the run's anchor (§4.1). One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
 
-<a id="tab-anchor-metanym"></a>
+<a id="fig-game-example"></a>
 
-| |
-|---|
-| A [NAVIGATOR] moves through a [SPACE] by sensing local [GRADIENT] and adjusting its [TRAJECTORY] accordingly. The [NAVIGATOR] cannot perceive the entire [SPACE] at once; it relies on [SENSOR] that detect changes in [SIGNAL] concentration or intensity. When [GRADIENT] are steep and consistent, the [NAVIGATOR] converges efficiently toward [ATTRACTOR]. When [GRADIENT] are shallow, noisy, or conflicting, the [NAVIGATOR] may stall, oscillate, or become trapped in local [ATTRACTOR]. [INTERFERENCE] can distort the [GRADIENT], causing the [NAVIGATOR] to veer off course. Successful navigation requires not only sensitive [SENSOR] but also [MEMORY] of recent [TRAJECTORY] to distinguish genuine [GRADIENT] from transient [NOISE]. Some [NAVIGATOR] emit their own [SIGNAL] to recruit other [NAVIGATOR] toward the same [ATTRACTOR], creating collective [TRAJECTORY] that amplify the original [GRADIENT]. |
+![The Metanym Game in one exhibit. (a) Generation: one archetypal context template from the anchor submission (Claude Opus 4.5) — the template with its slots, the metanym table, and the first domain played as instantiation and idiomatic rewrite. (b) Evaluation: a Gemini 2.5 Flash instantiation and three of its five judges, both vendors of that council, with their ratings and complete justifications; all five isolate the same clause, and the disagreement that remains, 4 against 5, is about severity.](../submission/figures/game_example.png)
 
-Table: The anchor's first archetype (§4.1), as a player wrote it: the context template, its metanym table, and its first column played, first sentence of each form.
+In its metanym table, MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration — five mechanisms that are metaphorically synonymous in the archetypal context — metanyms.
 
-Its metanym table: MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration — five mechanisms that are metaphorically synonymous in the archetypal context — metanyms.
-
-| [SLOT]       | Bacterial Chemotaxis | Mountain Climbing | Career Development   | Gradient Descent | Ant Foraging        |
-|--------------|----------------------|-------------------|----------------------|------------------|---------------------|
-| NAVIGATOR    | bacterium            | climber           | professional         | optimizer        | ant                 |
-| SPACE        | chemical environment | mountain          | job market           | loss landscape   | terrain             |
-| GRADIENT     | chemical gradient    | slope             | opportunity gradient | gradient         | pheromone trail     |
-| TRAJECTORY   | swimming path        | route             | career path          | parameter update | foraging path       |
-| SENSOR       | chemoreceptor        | proprioception    | network contact      | backpropagation  | antenna             |
-| SIGNAL       | chemoattractant      | elevation         | opportunity signal   | loss value       | pheromone           |
-| ATTRACTOR    | nutrient source      | summit            | desirable position   | minimum          | food source         |
-| INTERFERENCE | toxin                | fog               | misinformation       | noisy data       | rain                |
-| MEMORY       | methylation state    | route memory      | experience           | momentum         | path integration    |
-| NOISE        | Brownian motion      | wind              | market volatility    | stochastic noise | environmental noise |
-
-Table: PARTBTABLE
-
-Each parallel context is played in two forms: the **instantiation** (Form a), the mechanical substitution — only the slots filled, every other word carried over — the form the factual criterion is written for, since it must come out true sentence by sentence (the judge sees both forms); and the **idiomatic rewrite** (Form b) in the target domain's own register, showing the claim is not an artefact of the template's phrasing.
-
-| | |
-|---|---|
-| Form (a), instantiation | A BACTERIUM moves through a CHEMICAL ENVIRONMENT by sensing local CHEMICAL GRADIENTS and adjusting its SWIMMING PATH accordingly. |
-| Form (b), idiomatic rewrite | Bacteria navigate chemical environments by detecting local concentration gradients and modulating their run-and-tumble behavior accordingly. |
-
-Table: PARTBTABLE
+Each parallel context is played in two forms: the **instantiation**, the mechanical substitution — only the slots filled, every other word carried over — the form the factual criterion is written for, since it must come out true sentence by sentence (the judge sees both); and the **idiomatic rewrite** in the target domain's own register, showing the claim is not an artefact of the template's phrasing.
 
 The game has $N$ players and a non-competing administrator. **Generation**: a player creates archetypal contexts from scratch — a portfolio of $K$ templates, $M$ metanym sets each (five and five here), with instantiation and rewrite for every set. **Evaluation**: a player scores other players' submissions on the rubric axes (§3.2) against one fixed *reference* submission pinned at an *anchor* value. A pass yields **submission ratings** for each portfolio and **evaluator ratings** for the judges: how well one detects the factual errors the other players collectively flag (*factual competence*), and how stable a standard it holds when the reference is re-pinned (*rating consistency*, §3.3). Each act is itself rated, so the framework is **fully self-contained**: no human raters, no external key.
 
@@ -75,11 +49,7 @@ Twelve frontier LLMs from Anthropic, Google and OpenAI are the **participants** 
 
 Table: The six-axis rubric, in the words the evaluator sees (Appendix B). No definition of beauty or intelligence is supplied; each judge rates on its own understanding.
 
-Three design choices justify themselves on first principles. **A fixed anchor**: cardinal scores drift between evaluators — one model's "8" is another's "6" — and a reference pinned at a known score turns each idiosyncratic scale into a common one and recovers discriminability at the top, where the 1–10 ceiling compresses the strongest portfolios (§4.1). **Holistic axes, minimally prescribed**: a detailed rubric would leak back into generation as a template-construction tutorial, and we want to score what models *recognise* as beautiful or intelligent. `impressive_length` counterweights per-sentence factual scoring: without it the minimal template wins, and padding costs, since every added sentence is another claim to score. One evaluation, shown whole, is Figure \ref{fig-council-evaluation}.
-
-<a id="fig-council-evaluation"></a>
-
-![One parallel context under evaluation: the instantiation with its metanyms marked, and the five judges' ratings with the clause each one singles out. All five isolate the same clause; the disagreement that remains, 4 versus 5, is about severity. The whole evaluation, with the rewrite, the administrator's synthesis and every justification, is Figure \ref{fig-council-evaluation-full} in Appendix C.](../submission/figures/council_evaluation_pc1_compact.png)
+Three design choices justify themselves on first principles. **A fixed anchor**: cardinal scores drift between evaluators — one model's "8" is another's "6" — and a reference pinned at a known score turns each idiosyncratic scale into a common one and recovers discriminability at the top, where the 1–10 ceiling compresses the strongest portfolios (§4.1). **Holistic axes, minimally prescribed**: a detailed rubric would leak back into generation as a template-construction tutorial, and we want to score what models *recognise* as beautiful or intelligent. `impressive_length` counterweights per-sentence factual scoring: without it the minimal template wins, and padding costs, since every added sentence is another claim to score. One evaluation, three of its five judges shown whole, is Figure \ref{fig-game-example}(b).
 
 ### 3.3 Two key-free estimators
 
@@ -109,7 +79,7 @@ Every rating carries a 95% percentile-bootstrap interval, $E$ and $T$ bootstrapp
 
 ### 4.1 Anchoring doubles resolution
 
-The bootstrap opens with a raw pass — every portfolio scored by every other model with no anchor, averaged leave-self-out, 95% bootstrap intervals (2,000 resamples; Efron & Tibshirani, 1993). It supplies the baseline: the top-ranked portfolio, **claude-opus-4.5**'s, whose first archetype is Table \ref{tab-anchor-metanym}, is pinned at 7 on every axis, leaving headroom above. Re-run anchored (Appendix G), the gap between a leading eight and a trailing four more than doubles relative to the spread of the means, while ranks within either band stay unresolved.
+The bootstrap opens with a raw pass — every portfolio scored by every other model with no anchor, averaged leave-self-out, 95% bootstrap intervals (2,000 resamples; Efron & Tibshirani, 1993). It supplies the baseline: the top-ranked portfolio, **claude-opus-4.5**'s, whose first archetype is Figure \ref{fig-game-example}(a), is pinned at 7 on every axis, leaving headroom above. Re-run anchored (Appendix G), the gap between a leading eight and a trailing four more than doubles relative to the spread of the means, while ranks within either band stay unresolved.
 
 ### 4.2 Evaluator factual competence
 
