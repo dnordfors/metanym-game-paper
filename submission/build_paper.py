@@ -133,7 +133,7 @@ def tables_to_floats(body: str) -> str:
                            for m in maxlen)
         tab = "\\begin{tabular}{" + cols + "}\n" + rest + "\n\\end{tabular}"
         if wide:
-            tab = "\\resizebox{\\linewidth}{!}{" + tab + "}"
+            tab = "\\shrinktowidth{" + tab + "}"   # shrinks a table wider than the text block; never enlarges a narrow one
         out = "\\begin{table}[htb]\n"
         if cap:
             out += "\\caption{" + cap.strip() + "}\n" + (label + "\n" if label else "")
@@ -232,7 +232,7 @@ def heat_tables(body):
             assert len(ranges) >= len(cells) - 1, ("per-column ranges do not cover the table", cap[:40])
             out.append(first + "&" + "&".join(c if r is None else heat_cell(c, *r) for c, r in zip(cells[1:], ranges)) + tail)
         return m.group(0).replace(tab, "\n".join(out))
-    return re.sub(r"\\caption\{(.*?)\}\n(?:\\label\{[^}]*\}\n)?\\begin\{center\}\\small\n(?:\\resizebox\{\\linewidth\}\{!\}\{)?(\\begin\{tabular\}.*?\\end\{tabular\})", one, body, flags=re.S)
+    return re.sub(r"\\caption\{(.*?)\}\n(?:\\label\{[^}]*\}\n)?\\begin\{center\}\\small\n(?:\\shrinktowidth\{)?(\\begin\{tabular\}.*?\\end\{tabular\})", one, body, flags=re.S)
 
 def postfix(body: str) -> str:
     body = tables_to_floats(body)
@@ -274,6 +274,7 @@ PREAMBLE = r"""\documentclass{article}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs,longtable,array,calc}
+\newsavebox{\shrinkbox}\newcommand{\shrinktowidth}[1]{\sbox{\shrinkbox}{#1}\ifdim\wd\shrinkbox>\linewidth\resizebox{\linewidth}{!}{\usebox{\shrinkbox}}\else\usebox{\shrinkbox}\fi}
 \usepackage{xcolor}
 \usepackage{colortbl}
 \usepackage{float}

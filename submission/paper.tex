@@ -6,6 +6,7 @@
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs,longtable,array,calc}
+\newsavebox{\shrinkbox}\newcommand{\shrinktowidth}[1]{\sbox{\shrinkbox}{#1}\ifdim\wd\shrinkbox>\linewidth\resizebox{\linewidth}{!}{\usebox{\shrinkbox}}\else\usebox{\shrinkbox}\fi}
 \usepackage{xcolor}
 \usepackage{colortbl}
 \usepackage{float}
@@ -132,7 +133,7 @@ Every official number is council-issued on the contest basis of \S{}3.4: each mo
 \caption{Final leaderboard --- total \(T\) with its joint-bootstrap 95\% CI, the evaluator half \(E\), the generator half \(G\), and the four anchored components; all council-issued against the fixed anchor, which reads 7.00 by construction. Adjacent ranks are resolved (non-overlapping intervals) only at 2--3 and 8--9; the rest are statistical ties. \(E^{F} = 0.00\): no error signal in the model's factual ratings.}
 \label{tab-final-leaderboard}
 \begin{center}\small
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}llcrrrrrrr@{}}
+\shrinktowidth{\begin{tabular}{@{}llcrrrrrrr@{}}
 \toprule\noalign{}
 Rank & Model & Council & \(T\) {[}95\% CI{]} & \(E\) & \(G\) & \(G^{F}\) & \(G^{C}\) & \(E^{F}\) & \(E^{C}\) \\
 \midrule\noalign{}
@@ -383,7 +384,7 @@ already on the 1--10 scale: clean instantiations sit at \(v_j\approx0\), hence a
 \caption{Evaluator factual competence \(E^{F}\) (left singular vector; ``anchored'' \(= 7f/f_a\)) and generator factuality \(G^{F}\) (right vector, per generator), twelve-evaluator basis, three runs pooled (805 items). \ensuremath{\dagger} loading interval includes zero; no interval printed.}
 \label{tab-criterion-a}
 \begin{center}\small
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrlrl@{}}
+\shrinktowidth{\begin{tabular}{@{}lrrlrl@{}}
 \toprule\noalign{}
 Model & \(E^{F}\) loading & \(E^{F}\) anchored & 95\% CI & \(G^{F}\) & 95\% CI \\
 \midrule\noalign{}
@@ -420,7 +421,7 @@ so axis-idiosyncratic noise partially cancels (gemini-2.5-flash: row mean of Tab
 \caption{Anchor-sweep consistency per evaluator and axis (A10): mean pairwise Pearson correlation of scores across anchor values 5/6/7/8. It measures self-consistency, not accuracy; the factual column is distinct from the factual-competence loading. gpt-4o-mini's factual entry is undefined (near-zero variance). The initial council's collapsed values \(\bar r\) (A11) with 95\% CIs: gemini-3.1-pro 0.94 {[}0.92, 0.96{]}, claude-opus-4.5 0.93 {[}0.89, 0.96{]}, gemini-2.5-flash 0.81 {[}0.75, 0.86{]}, claude-opus-4.0 0.85 {[}0.80, 0.89{]}, claude-opus-4.1 0.87 {[}0.82, 0.91{]}; their factual loadings with CIs: 0.58 {[}0.56, 0.60{]}, 0.55 {[}0.54, 0.58{]}, 0.37 {[}0.31, 0.40{]}, 0.35 {[}0.32, 0.35{]}, 0.28 {[}0.27, 0.30{]}.}
 \label{tab-criterion-b}
 \begin{center}\small
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrr@{}}
+\shrinktowidth{\begin{tabular}{@{}lrrrrrr@{}}
 \toprule\noalign{}
 Evaluator & factual & beauty & intelligence & distinctness & length & struct \\
 \midrule\noalign{}
@@ -473,7 +474,7 @@ centred on the anchor point rather than each vector's mean so values are compara
 \caption{Per-criterion generator quality \(G\) versus evaluator consistency \(E\), both anchored to claude-opus-4.5 (\ensuremath{\star}) = 7; last row the anchored cosine with its joint-bootstrap 95\% CI.}
 \label{tab-per-criterion}
 \begin{center}\small
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrrrrrr@{}}
+\shrinktowidth{\begin{tabular}{@{}lrrrrrrrrrr@{}}
 \toprule\noalign{}
 Model & beauty \(G\) & beauty \(E\) & intel \(G\) & intel \(E\) & dist \(G\) & dist \(E\) & len \(G\) & len \(E\) & struct \(G\) & struct \(E\) \\
 \midrule\noalign{}
@@ -505,7 +506,7 @@ A contest convenes the top of the field, and with the weak submissions gone the 
 \caption{Each seat's anchored \(E^{F}\) by contest composition --- 0--3 ballast blocks (mean over the seven possible contestants) beside the twelve-participant reference, three runs pooled. Council alone, the column is scrambled; from two ballast on, the contest reproduces the reference (mean \(|\Delta|\) 0.60 over the seven contests at two blocks, 0.37 at three; the same seat lowest in six of the seven). Two blocks is the protocol's configuration.}
 \label{tab-ballast}
 \begin{center}\small
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrr@{}}
+\shrinktowidth{\begin{tabular}{@{}lrrrrr@{}}
 \toprule\noalign{}
 Seat & council alone & +1 ballast & +2 ballast & +3 ballast & all 12 \\
 \midrule\noalign{}
@@ -930,7 +931,7 @@ The dissent is instructive rather than anomalous. gemini-3.1-pro advances a subs
 \begin{table}[H]
 \caption{The aggregation ladder. Two interval constructions are reported because each covers the other's weakness at \(n = 12\): Fisher-\(z\) assumes bivariate normality but unbends the skew of a bounded statistic; the BCa bootstrap is assumption-lighter and corrects the bias that makes the naive percentile bootstrap anti-conservative here. Where they disagree, the wider bound is the honest one.}
 \begin{center}\small
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrll@{}}
+\shrinktowidth{\begin{tabular}{@{}lrrll@{}}
 \toprule\noalign{}
 Quantity & Pearson \(r\) & Spearman \(\rho\) & Fisher-\(z\) 95\% & BCa bootstrap 95\% \\
 \midrule\noalign{}
@@ -1088,7 +1089,7 @@ Playing the metanym game demands at least eight constructs that cognitive scienc
 \caption{The eight constructs mapped to the Metanym Game's two tasks (\ensuremath{\bullet} marks a primary demand).}
 \label{tab-constructs}
 \begin{center}\small
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}lll@{}}
+\shrinktowidth{\begin{tabular}{@{}lll@{}}
 \toprule\noalign{}
 Construct & Generation --- invent the template & Evaluation --- judge a portfolio \\
 \midrule\noalign{}
