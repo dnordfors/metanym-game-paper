@@ -13,7 +13,7 @@
 | $G = \tfrac12(G^{F}+G^{C})$ — generation half | 0.94 | 0.87 | [0.81, 0.98] | [0.84, 0.98] |
 | $E = \tfrac12(E^{F}+E^{C})$ — evaluation half | 0.94 | 0.95 | [0.80, 0.98] | [0.83, 0.98] |
 | $\tfrac12(E^{F}+G^{F})$ — the factual pair | 0.94 | 0.96 | [0.80, 0.98] | [0.89, 0.97] |
-| $T = \tfrac14(G^{F}+G^{C}+E^{F}+E^{C})$ | **0.98** | **0.96** | **[0.93, 1.00]** | **[0.95, 0.99]** |
+| $T = \tfrac14(G^{F}+G^{C}+E^{F}+E^{C})$ | 0.98 | 0.96 | [0.93, 1.00] | [0.95, 0.99] |
 
 Table: The aggregation ladder. Two interval constructions are reported because each covers the other's weakness at $n = 12$: Fisher-$z$ assumes bivariate normality but unbends the skew of a bounded statistic; the BCa bootstrap is assumption-lighter and corrects the bias that makes the naive percentile bootstrap anti-conservative here. Where they disagree, the wider bound is the honest one.
 
@@ -34,12 +34,12 @@ Table: The $T$–GPQA fit with measurement uncertainty propagated. The last row 
 | Quantity | Full roster ($n=12$) | Leading eight ($n=8$) |
 |---|---:|---:|
 | $G^{F}$ | 0.89 | 0.67 |
-| $G^{C}$ | **0.95** | 0.81 |
-| $E^{F}$ | 0.87 | **0.89** |
+| $G^{C}$ | 0.95 | 0.81 |
+| $E^{F}$ | 0.87 | 0.89 |
 | $E^{C}$ | 0.81 | 0.37 |
 | $\tfrac12(E^{F}+G^{F})$ | 0.94 | 0.92 |
 | $\tfrac12(G^{C}+E^{F})$ | 0.95 | 0.94 |
-| $T$ | **0.98** | **0.94** |
+| $T$ | 0.98 | 0.94 |
 
 Table: Pearson $r$ against GPQA on the full roster and on the leading eight (point estimates on eight points).
 

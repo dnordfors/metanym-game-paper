@@ -136,7 +136,7 @@ centred on the anchor point rather than each vector's mean so values are compara
 | gpt-4o-2024-08-06 | 3.5 | 4.7 | 3.3 | 4.5 | 4.1 | 3.1 | 3.3 | 4.0 | 3.0 | 5.7 |
 | gpt-4o | 3.4 | 2.6 | 3.4 | 2.0 | 4.7 | 1.0 | 2.6 | 3.1 | 3.2 | 2.8 |
 | gpt-4o-mini | 3.5 | 2.1 | 3.5 | 3.0 | 3.3 | 2.3 | 3.8 | 0.8 | 3.0 | 1.9 |
-| **cos(G,E)** | **0.91** | [.83,.95] | **0.90** | [.80,.93] | **0.89** | [.82,.92] | **0.84** | [.80,.87] | **0.87** | [.86,.87] |
+| cos(G,E) | 0.91 | [.83,.95] | 0.90 | [.80,.93] | 0.89 | [.82,.92] | 0.84 | [.80,.87] | 0.87 | [.86,.87] |
 
 Table: Per-criterion generator quality $G$ versus evaluator consistency $E$, both anchored to claude-opus-4.5 (★) = 7; last row the anchored cosine with its joint-bootstrap 95% CI.
 
