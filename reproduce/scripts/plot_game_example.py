@@ -50,7 +50,7 @@ def render(H):
     def subhead(x, y, text): t = ax.text(x, y, text, fontsize=BODY, fontweight="bold", color=BLUE, va="top", zorder=3); return y - h_of(t)[0] - 0.5
     FULL = 100 - 2 * M
     # ---- (a)
-    y = header(98.5, "(a)  Generation: one archetypal context template from the anchor submission (Claude Opus 4.5)")
+    y = header(99.6, "(a)  Generation: one archetypal context template from the anchor submission (Claude Opus 4.5)")
     top = y; ys = subhead(M + PAD, top - PAD, "CONTEXT TEMPLATE"); yb = flow(M + PAD, ys, FULL - 2 * PAD, TEMPLATE); box(M, top, FULL, yb - PAD + 0.4); y = yb - PAD - 0.8
     top = y; ys = subhead(M + PAD, top - PAD, "METANYM TABLE"); ncol = len(TABLE[0]); x0 = M + PAD
     fs = lambda r: BODY - 0.3
@@ -83,7 +83,7 @@ def render(H):
     return fig, min(bot_left, yj)
 H = 8.0
 for _ in range(6):
-    fig, y_end = render(H); used = (100 - y_end) / 100 * H + 0.02
+    fig, y_end = render(H); used = (100 - y_end) / 100 * H - 0.02
     if abs(used - H) < 0.03: break
     plt.close(fig); H = used
 fig.savefig(OUT, dpi=300, facecolor=SURFACE); print("wrote", OUT, f"{W:.1f} x {H:.2f} in")
