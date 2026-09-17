@@ -17,6 +17,8 @@ BLUE, ORANGE = "#2a78d6", "#eb6834"; SURFACE, INK, INK2 = "#fcfcfb", "#0b0b0b", 
 P = (PKG / "submissions" / "anchor_claude-opus-4.5.md").read_text(); blk = P[P.index("## Archetype Proposal: Gradient-Guided Navigation"):P.index("### Mountain Climbing")]
 TEMPLATE = re.sub(r"\s+", " ", re.search(r"### Context-template\s*\n+\"?(.+?)\"?\n\n", blk, re.S).group(1)).strip().strip('"')
 TABLE = [[c.strip() for c in ln.strip().strip("|").split("|")] for ln in blk[blk.index("| [SLOT]"):].split("\n\n")[0].splitlines() if not re.match(r"^\|[-| ]+\|$", ln.strip())]
+DROP = sys.argv[sys.argv.index("--drop-domain") + 1] if "--drop-domain" in sys.argv else "Gradient Descent"   # one domain column omitted for space (David, 2026-09-17); "" keeps all five
+if DROP: j = TABLE[0].index(DROP); TABLE = [row[:j] + row[j + 1:] for row in TABLE]
 dom = blk[blk.index("### Bacterial Chemotaxis"):]; FA = re.sub(r"\s+", " ", re.search(r"\*\*Instantiation \(Form a\):\*\*\s*\n\"?(.+?)\"?\n\n", dom, re.S).group(1)).strip().strip('"'); FB = re.sub(r"\s+", " ", re.search(r"\*\*Idiomatic rewrite \(Form b\):\*\*\s*\n\"?(.+?)\"?\n\n", dom, re.S).group(1)).strip().strip('"')
 def first_n(s, n): return " ".join(re.split(r"(?<=[.!?])\s+", s)[:n])
 # (b) evaluation source (as plot_council_evaluation_compact.py)
@@ -28,7 +30,7 @@ def quoted_clause(just):
     m = re.search(r"[\"“](nature must make natural selections[^\"”]*)[\"”]", just, re.I)
     if m: return m.group(1)
     m = re.search(r"([^.;,]*natural selection[^.;,]*)", just, re.I); assert m; return m.group(1).strip()
-W = 5.5; M, PAD = 1.2, 1.0; BODY = float(sys.argv[sys.argv.index("--body") + 1]) if "--body" in sys.argv else 6.6   # 6.6 fills the ICLR page (5.5 x 9 in) with the caption
+W = 5.5; M, PAD = 1.2, 1.0; BODY = float(sys.argv[sys.argv.index("--body") + 1]) if "--body" in sys.argv else 7.0   # 7.0 fills the ICLR page (5.5 x 9 in) with the caption
 def is_slot(tok): core = tok.strip(".,;:()'\"“”"); return len(core) > 1 and core.isupper()
 def render(H):
     fig = plt.figure(figsize=(W, H)); fig.patch.set_facecolor(SURFACE); ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.axis("off")
@@ -51,21 +53,21 @@ def render(H):
     y = header(98.5, "(a)  Generation: one archetypal context template from the anchor submission (Claude Opus 4.5)")
     top = y; ys = subhead(M + PAD, top - PAD, "CONTEXT TEMPLATE"); yb = flow(M + PAD, ys, FULL - 2 * PAD, TEMPLATE); box(M, top, FULL, yb - PAD + 0.4); y = yb - PAD - 0.8
     top = y; ys = subhead(M + PAD, top - PAD, "METANYM TABLE"); ncol = len(TABLE[0]); x0 = M + PAD
-    fs = lambda r: (BODY - 1.0) if r == 0 else (BODY - 0.5)
+    fs = lambda r: BODY - 0.3
     def tw(s, size, bold):                                       # rendered width of a string, in axis units
         pr = ax.text(0, -60, s, fontsize=size, fontweight="bold" if bold else "normal"); w_ = h_of(pr)[1]; pr.remove(); return w_
     need = [max(tw(TABLE[r][c].replace("[", "").replace("]", ""), fs(r), r == 0 or c == 0) for r in range(len(TABLE))) for c in range(ncol)]
     gap = (FULL - 2 * PAD - sum(need)) / (ncol - 1); assert gap > 0.3, f"metanym table too wide for the page: {sum(need):.1f} of {FULL - 2 * PAD:.1f} units"
     xs = [x0 + sum(need[:c]) + c * gap for c in range(ncol)]
-    probe = ax.text(0, -60, "Ag", fontsize=BODY - 0.5); lh = h_of(probe)[0] * 1.25; probe.remove(); yy = ys
+    probe = ax.text(0, -60, "Ag", fontsize=BODY - 0.3); lh = h_of(probe)[0] * 1.2; probe.remove(); yy = ys
     for r, row in enumerate(TABLE):
         for c, cell in enumerate(row):
             ax.text(xs[c], yy, cell.replace("[", "").replace("]", ""), fontsize=fs(r), va="top", ha="left", color=MET_ORANGE if c == 0 and r > 0 else INK, fontweight="bold" if r == 0 or c == 0 else "normal", zorder=3)
         yy -= lh
         if r == 0: ax.plot([x0, M + FULL - PAD], [yy + 0.3, yy + 0.3], color=EDGE, lw=0.6, zorder=2)
     box(M, top, FULL, yy - PAD + lh * 0.3); y = yy - PAD - 0.8 + lh * 0.3
-    HW = (FULL - 1.6) / 2; top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — BACTERIAL CHEMOTAXIS"); ya = flow(M + PAD, ys, HW - 2 * PAD, first_n(FA, 2)); RX = M + HW + 1.6
-    ys2 = subhead(RX + PAD, top - PAD, "IDIOMATIC REWRITE"); yb2 = flow(RX + PAD, ys2, HW - 2 * PAD, first_n(FB, 2), mark=False); bot = min(ya, yb2) - PAD + 0.4; box(M, top, HW, bot); box(RX, top, HW, bot); y = bot - 1.8
+    HW = (FULL - 1.6) / 2; top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — BACTERIAL CHEMOTAXIS"); ya = flow(M + PAD, ys, HW - 2 * PAD, first_n(FA, 1)); RX = M + HW + 1.6
+    ys2 = subhead(RX + PAD, top - PAD, "IDIOMATIC REWRITE"); yb2 = flow(RX + PAD, ys2, HW - 2 * PAD, first_n(FB, 1), mark=False); bot = min(ya, yb2) - PAD + 0.4; box(M, top, HW, bot); box(RX, top, HW, bot); y = bot - 1.8
     # ---- (b): full-width instantiation, then three judges with their complete justifications
     y = header(y, "(b)  Evaluation: a Gemini 2.5 Flash instantiation")
     top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — ECOSYSTEM MANAGEMENT"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FORM_A); bot = ya - PAD + 0.4; box(M, top, FULL, bot); y = bot - 1.0
@@ -75,7 +77,7 @@ def render(H):
         top = y; ax.text(M + PAD, top - PAD, DISPLAY.get(name, name), fontsize=BODY, fontweight="bold", color=INK, va="top", zorder=3)
         ax.text(M + PAD, top - PAD - 3.2, f"{rating}/10", fontsize=BODY + 1.5, fontweight="bold", color=ORANGE, va="top", zorder=3)
         shown = re.sub(r"\s+", " ", just.strip().strip('"“”')); shown = re.sub(r"[Ff]orm \(a\)", "[instantiation]", shown); shown = re.sub(r"[Ff]orm \(b\)", "[idiomatic rewrite]", shown)
-        yj = flow(M + NAMEW, top - PAD, FULL - NAMEW - PAD, "“" + shown + "”", size=BODY - 0.5, color=INK2, mark=False)
+        yj = flow(M + NAMEW, top - PAD, FULL - NAMEW - PAD, "“" + shown + "”", size=BODY, color=INK2, mark=False)
         bot = min(yj, top - PAD - 6.0) - PAD + 0.4; box(M, top, FULL, bot); y = bot - 0.8
     bot_left = y; yj = y
     return fig, min(bot_left, yj)

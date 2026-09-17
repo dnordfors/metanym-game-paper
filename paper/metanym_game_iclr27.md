@@ -20,7 +20,7 @@ An archetypal context is the cross-domain *isomorphism* General Systems Theory s
 
 <a id="fig-game-example"></a>
 
-![The Metanym Game in one exhibit. (a) Generation: one archetypal context template from the anchor submission (Claude Opus 4.5) — the template with its slots, the metanym table, and the first domain played as instantiation and idiomatic rewrite. (b) Evaluation: a Gemini 2.5 Flash instantiation and three of its five judges, both vendors of that council, with their ratings and complete justifications; all five isolate the same clause, and the disagreement that remains, 4 against 5, is about severity.](../submission/figures/game_example.png)
+![The Metanym Game in one exhibit: (a) generation, (b) evaluation. All five judges isolate the same clause; the disagreement that remains, 4 against 5, is about severity.](../submission/figures/game_example.png)
 
 In its metanym table, MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration — five mechanisms that are metaphorically synonymous in the archetypal context — metanyms.
 
