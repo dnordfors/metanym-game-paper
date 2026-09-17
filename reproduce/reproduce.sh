@@ -110,6 +110,5 @@ echo; echo "##### §6 (ICLR version) — thinking vs play: four models, thinking
 "$PY" scripts/thinking_vs_play.py
 echo; echo "##### §6 (ICLR version) — GPQA reply lengths with the reasoning channel off #####"
 "$PY" scripts/gpqa_reply_lengths.py
-echo; echo "##### manuscript consistency checks #####"
-"$PY" scripts/check_manuscript.py
+# scripts/check_manuscript.py (manuscript consistency, needs the source tree, not this package) is run from the archetypal-contexts tree, not here.
 echo; echo "##### reproduce.sh complete #####"

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # supplementary: manuscript consistency tooling, not a result producer
-"""Manuscript consistency checks. Run before any arXiv upload or venue submission.
+"""Manuscript consistency checks. Run before any arXiv upload or venue submission, from the archetypal-contexts tree
+(needs paper/metanym_game.md beside reproduce/); not a step of reproduce.sh, which must run from the package alone.
 
 Checks that do not need the data:
   1. every §x.y cross-reference resolves to a section that exists

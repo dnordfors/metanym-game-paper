@@ -5,7 +5,7 @@ Rev 3 (David: fill the boxes): measured layout — every text block is measured 
 renderer and each box is drawn to fit its content; the figure height is fitted in a
 second pass. Metanyms coloured in Form (a); three judges + a ghost card for the two not
 shown. Every string parsed verbatim from
-paper/appendices/C_council_evaluation_gemini-2.5-flash.md.
+submissions/council_evaluation_gemini-2.5-flash.md (the transcript the extended paper prints as its Appendix C).
 Writes figures/council_evaluation_pc1.png.
 """
 import re
@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, Circle
 
 HERE = Path(__file__).resolve().parent
-SRC = HERE.parents[1] / "paper" / "appendices" / "C_council_evaluation_gemini-2.5-flash.md"
+SRC = HERE.parents[0] / "submissions" / "council_evaluation_gemini-2.5-flash.md"   # the evaluation transcript, shipped in the package
 BLUE, ORANGE = "#2a78d6", "#eb6834"
 SURFACE, INK, INK2 = "#fcfcfb", "#0b0b0b", "#52514e"
 BOX, BOX2, EDGE, GREY = "#f4f3f0", "#eef3f9", "#d5d3ce", "#c9ccd1"

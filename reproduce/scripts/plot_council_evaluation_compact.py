@@ -12,7 +12,7 @@ import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch
 HERE = Path(__file__).resolve().parent
-SRC = HERE.parents[1] / "paper" / "appendices" / "C_council_evaluation_gemini-2.5-flash.md"
+SRC = HERE.parents[0] / "submissions" / "council_evaluation_gemini-2.5-flash.md"   # the evaluation transcript, shipped in the package
 BLUE, ORANGE = "#2a78d6", "#eb6834"; SURFACE, INK, INK2 = "#fcfcfb", "#0b0b0b", "#52514e"
 BOX, EDGE = "#f4f3f0", "#d5d3ce"; MET_ORANGE = "#b3491a"
 s = SRC.read_text(); blk = s[s.index("#### PC 1"):s.index("#### PC 2")]

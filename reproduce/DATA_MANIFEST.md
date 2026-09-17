@@ -83,6 +83,7 @@ lowest-rated submissions of the canonical run, by the participants' own factual 
 | `submissions/anchor_claude-opus-4.5.md` | claude-opus-4.5 (the anchor; first archetype in full, both forms) | — |
 | `submissions/ballast_gpt-4o-mini.md` | gpt-4o-mini | 4.99 |
 | `submissions/ballast_gpt-4.1-nano.md` | gpt-4.1-nano | 5.38 |
+| `submissions/council_evaluation_gemini-2.5-flash.md` | the complete council evaluation of gemini-2.5-flash's portfolio, run 1 (every judge's rating and justification, the administrator's synthesis); the source of the council-evaluation exhibits (`plot_council_evaluation*.py`, `plot_game_example.py`); the extended paper prints it as Appendix C | — |
 
 They are generation output of the probe_I stage that fed run 1, reproduced verbatim. Nothing in
 `reproduce.sh` reads them — the pinned evaluations already encode how the participants graded them —

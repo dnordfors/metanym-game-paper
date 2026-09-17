@@ -2,7 +2,7 @@
 """Figure 1 of the ICLR version, one page: (a) generation — the anchor's first archetype as a player wrote it (context template,
 metanym table, the first domain's instantiation and idiomatic rewrite), every string verbatim from the anchor's
 submission submissions/anchor_claude-opus-4.5.md (run 1, the reference of §4.1); (b) evaluation — one parallel context of another submission under
-the council (Appendix C, PC 1): the instantiation with its metanyms marked, three judges (Opus 4.5, Gemini 3.1, Sonnet 4) with their ratings and complete justifications; the judges' 'Form (a)' and 'Form (b)'
+the council (submissions/council_evaluation_gemini-2.5-flash.md, PC 1): the instantiation with its metanyms marked, three judges (Opus 4.5, Gemini 3.1, Sonnet 4) with their ratings and complete justifications; the judges' 'Form (a)' and 'Form (b)'
 (the prompt's names, Appendix B) are shown as the paper's terms, in square brackets: [instantiation], [idiomatic rewrite].
 Writes figures/game_example.png (or --out)."""
 import re, sys
@@ -22,7 +22,7 @@ if DROP: j = TABLE[0].index(DROP); TABLE = [row[:j] + row[j + 1:] for row in TAB
 dom = blk[blk.index("### Bacterial Chemotaxis"):]; FA = re.sub(r"\s+", " ", re.search(r"\*\*Instantiation \(Form a\):\*\*\s*\n\"?(.+?)\"?\n\n", dom, re.S).group(1)).strip().strip('"'); FB = re.sub(r"\s+", " ", re.search(r"\*\*Idiomatic rewrite \(Form b\):\*\*\s*\n\"?(.+?)\"?\n\n", dom, re.S).group(1)).strip().strip('"')
 def first_n(s, n): return " ".join(re.split(r"(?<=[.!?])\s+", s)[:n])
 # (b) evaluation source (as plot_council_evaluation_compact.py)
-SRC = PKG.parent / "paper" / "appendices" / "C_council_evaluation_gemini-2.5-flash.md"; s = SRC.read_text(); eb = s[s.index("#### PC 1"):s.index("#### PC 2")]
+SRC = PKG / "submissions" / "council_evaluation_gemini-2.5-flash.md"; s = SRC.read_text(); eb = s[s.index("#### PC 1"):s.index("#### PC 2")]
 FORM_A = re.sub(r"\s+", " ", re.search(r"\*\*Instantiation \(Form a\):\*\*(.*?)\n\n", eb, re.S).group(1)).strip()
 JUDGES = re.findall(r"\*\*([\w.\-]+)\*\* — Rating: (\d)\s*\n(.*?)(?=\n\n\*\*|\n\n#|\Z)", eb, re.S); assert len(JUDGES) == 5
 DISPLAY = {"opus-4.5": "Opus 4.5", "opus-4.1": "Opus 4.1", "opus-4.0": "Opus 4.0", "sonnet-4": "Sonnet 4", "3.1-pro": "Gemini 3.1"}
