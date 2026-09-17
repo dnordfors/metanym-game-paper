@@ -2,7 +2,8 @@
 """Figure 1 of the ICLR version, one page: (a) generation — the anchor's first archetype as a player wrote it (context template,
 metanym table, the first domain's instantiation and idiomatic rewrite), every string verbatim from the anchor's
 submission submissions/anchor_claude-opus-4.5.md (run 1, the reference of §4.1); (b) evaluation — one parallel context of another submission under
-the council (Appendix C, PC 1): the instantiation with its metanyms marked, three judges (Opus 4.5, Gemini 3.1, Sonnet 4) with their ratings and complete justifications.
+the council (Appendix C, PC 1): the instantiation with its metanyms marked, three judges (Opus 4.5, Gemini 3.1, Sonnet 4) with their ratings and complete justifications; the judges' 'Form (a)' and 'Form (b)'
+(the prompt's names, Appendix B) are shown as the paper's terms, in square brackets: [instantiation], [idiomatic rewrite].
 Writes figures/game_example.png (or --out)."""
 import re, sys
 from pathlib import Path
@@ -27,7 +28,7 @@ def quoted_clause(just):
     m = re.search(r"[\"“](nature must make natural selections[^\"”]*)[\"”]", just, re.I)
     if m: return m.group(1)
     m = re.search(r"([^.;,]*natural selection[^.;,]*)", just, re.I); assert m; return m.group(1).strip()
-W = 5.5; M, PAD = 1.2, 1.0; BODY = float(sys.argv[sys.argv.index("--body") + 1]) if "--body" in sys.argv else 6.7   # 6.7 fills the ICLR page (5.5 x 9 in) with the caption
+W = 5.5; M, PAD = 1.2, 1.0; BODY = float(sys.argv[sys.argv.index("--body") + 1]) if "--body" in sys.argv else 6.6   # 6.6 fills the ICLR page (5.5 x 9 in) with the caption
 def is_slot(tok): core = tok.strip(".,;:()'\"“”"); return len(core) > 1 and core.isupper()
 def render(H):
     fig = plt.figure(figsize=(W, H)); fig.patch.set_facecolor(SURFACE); ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.axis("off")
@@ -73,7 +74,8 @@ def render(H):
     for name, rating, just in [j for k in PICK for j in JUDGES if j[0] == k]:
         top = y; ax.text(M + PAD, top - PAD, DISPLAY.get(name, name), fontsize=BODY, fontweight="bold", color=INK, va="top", zorder=3)
         ax.text(M + PAD, top - PAD - 3.2, f"{rating}/10", fontsize=BODY + 1.5, fontweight="bold", color=ORANGE, va="top", zorder=3)
-        yj = flow(M + NAMEW, top - PAD, FULL - NAMEW - PAD, "“" + re.sub(r"\s+", " ", just.strip().strip('"“”')) + "”", size=BODY - 0.5, color=INK2, mark=False)
+        shown = re.sub(r"\s+", " ", just.strip().strip('"“”')); shown = re.sub(r"[Ff]orm \(a\)", "[instantiation]", shown); shown = re.sub(r"[Ff]orm \(b\)", "[idiomatic rewrite]", shown)
+        yj = flow(M + NAMEW, top - PAD, FULL - NAMEW - PAD, "“" + shown + "”", size=BODY - 0.5, color=INK2, mark=False)
         bot = min(yj, top - PAD - 6.0) - PAD + 0.4; box(M, top, FULL, bot); y = bot - 0.8
     bot_left = y; yj = y
     return fig, min(bot_left, yj)
