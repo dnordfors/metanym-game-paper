@@ -190,7 +190,7 @@ def _cellcolor(v, vmin, vmax):
     t = min(max((v - vmin) / (vmax - vmin), 0.0), 1.0) * (len(_YLGNBU) - 1)
     i = min(int(t), len(_YLGNBU) - 2); f = t - i
     r, g, b = (round(_YLGNBU[i][k] + f * (_YLGNBU[i + 1][k] - _YLGNBU[i][k])) for k in range(3))
-    fg = "000000" if (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.55 else "FFFFFF"
+    fg = "1A1A1A" if (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.55 else "EEF3F8"   # off-white with a hint of the cell blue, near-black on light cells: softer than pure white and black
     return "%02X%02X%02X" % (r, g, b), fg
 
 # caption substring -> (vmin, vmax); every numeric cell of a matching table is coloured by its leading number
