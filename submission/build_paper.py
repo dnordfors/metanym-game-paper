@@ -246,6 +246,7 @@ def postfix(body: str) -> str:
     body = re.sub(r"\\includegraphics(?:\[.*?\])?\{([^}]+)\}", fig, body, flags=re.S)
     body = body.replace("\\begin{figure}\n", "\\begin{figure}[t]\n")
     body = re.sub(r"\\begin\{figure\}\[t\](\n\\centering\n(?:\\pandocbounded\{)?\\includegraphics\[[^\]]*\]\{figures/game_example\.png)", r"\\begin{figure}[p]\1", body)   # Figure 1: its own page
+    body = re.sub(r"(\\includegraphics\[[^\]]*\]\{figures/game_example\.png\}\}?)\n(\\caption\{)", r"\1\n\\vspace{-9pt}\n\2", body)   # Figure 1: caption tight under the exhibit
     for s in ("AI use statement", "Ethics statement", "Reproducibility statement"):
         body = re.sub(r"\\section\{" + s + r"\}\\label\{[^}]*\}", r"\\subsection*{" + s + "}", body)
     body = re.sub(r"\\section\{References\}\\label\{[^}]*\}",

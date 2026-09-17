@@ -81,7 +81,7 @@ def render(H):
     return fig, min(bot_left, yj)
 H = 8.0
 for _ in range(6):
-    fig, y_end = render(H); used = (100 - y_end) / 100 * H + 0.12
+    fig, y_end = render(H); used = (100 - y_end) / 100 * H + 0.02
     if abs(used - H) < 0.03: break
     plt.close(fig); H = used
 fig.savefig(OUT, dpi=300, facecolor=SURFACE); print("wrote", OUT, f"{W:.1f} x {H:.2f} in")
