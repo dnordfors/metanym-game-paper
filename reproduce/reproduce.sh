@@ -82,6 +82,7 @@ echo; echo "##### Appendix A.6 (ICLR version) — spectral gap per run: permutat
 "$PY" scripts/plot_ballast_heatmap.py                   # -> figures/ballast_heatmap.png (the 4.6 exhibit)
 echo; echo "##### §5.6 / §5.7 — consensus limits and the multi-council reading #####"
 "$PY" scripts/consensus_limits.py
+export RUNS="1,2,3"                                 # from here on RUNS means the run numbers the pooled scripts read, not the sweep parent above
 echo; echo "##### POOLED THREE RUNS — the official (ICLR 2027 version) ratings: one factorisation over runs 1-3 #####"
 echo "#####   (scripts/pooled_components.py on run 1 alone reproduces the run-1 tables above; validated in its __main__)"
 "$PY" scripts/pooled_components.py                       # validation: run 1 alone == published council + twelve-basis tables
