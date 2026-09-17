@@ -4,7 +4,7 @@ The released package contains one complete council evaluation from the canonical
 
 <a id="fig-council-evaluation-full"></a>
 
-![The first unit whole: the instantiation with its metanyms marked and the idiomatic rewrite (top), the administrator's synthesis (middle), and three of the five judges' ratings with their justifications (bottom); the other two follow in C.1. Figure 1 of the main text is the compact form of this exhibit.](../submission/figures/council_evaluation_pc1.png)
+![The first unit whole: the instantiation with its metanyms marked and the idiomatic rewrite (top), the administrator's synthesis (middle), and three of the five judges' ratings with their justifications (bottom); the other two follow in C.1. Figure 1 of the main text is the compact form of this exhibit.](../figures/council_evaluation_pc1.png)
 
 ## C.1 A plain error, and the council converges
 

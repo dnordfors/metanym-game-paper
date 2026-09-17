@@ -20,7 +20,7 @@ An archetypal context is the cross-domain *isomorphism* General Systems Theory s
 
 <a id="fig-game-example"></a>
 
-![The Metanym Game, extracts: (a) generation; (b) council evaluation, subpart (one metanym set and two judges excluded to make space in the figure).](../submission/figures/game_example.png)
+![The Metanym Game, extracts: (a) generation; (b) council evaluation, subpart (one metanym set and two judges excluded to make space in the figure).](../figures/game_example.png)
 
 In its metanym table, MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration — five mechanisms that are metaphorically synonymous in the archetypal context — metanyms.
 
@@ -124,11 +124,11 @@ We test the key-free rating against GPQA Diamond (Rein et al., 2023) — 198 gra
 
 <a id="fig-gpqa-scatter"></a>
 
-![The official total $T$ against self-administered GPQA Diamond accuracy, twelve models, three runs pooled: $r = 0.98$ [0.95, 0.99], $\rho = 0.96$. Filled markers are council seats, open markers non-council, bars 95% intervals; the star is the anchor, $T = 7$ by calibration, and excluding it leaves $r$ at 0.98.](../submission/figures/total_validation_simple.png)
+![The official total $T$ against self-administered GPQA Diamond accuracy, twelve models, three runs pooled: $r = 0.98$ [0.95, 0.99], $\rho = 0.96$. Filled markers are council seats, open markers non-council, bars 95% intervals; the star is the anchor, $T = 7$ by calibration, and excluding it leaves $r$ at 0.98.](../figures/total_validation_simple.png)
 
 <a id="fig-mechanism"></a>
 
-![A hypothesis for the 0.98 (§6): an archetype ($\alpha$, $\beta$) is held once; each domain adds only its metanym set (the slices). GPQA: archetype and domain are given, the model derives the instantiation and selects the matching candidate. The game: nothing is given, the model selects the archetype and domains and writes them out.](../submission/figures/mechanism_sketch.png)
+![A hypothesis for the 0.98 (§6): an archetype ($\alpha$, $\beta$) is held once; each domain adds only its metanym set (the slices). GPQA: archetype and domain are given, the model derives the instantiation and selects the matching candidate. The game: nothing is given, the model selects the archetype and domains and writes them out.](../figures/mechanism_sketch.png)
 
 $T$ reproduces GPQA's ordering at Pearson $r = 0.98$ [0.95, 0.99] (Spearman 0.96; three runs pooled, §4.6). Instruments sharing no item authors, task or scoring, and agreeing at 0.98, are as close as their measurement error allows (Appendix D.1); §6 offers a hypothesis for what they share. The objection that any two demanding benchmarks correlate on a wide roster does not carry — the agreement holds at $r = 0.94$ within the leading eight alone.
 

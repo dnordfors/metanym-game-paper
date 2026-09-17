@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-r"""Build paper/metanym_game_iclr27.pdf (via submission/paper.tex) from paper/metanym_game_iclr27.md in the ICLR 2027 style.
-submission/ holds the build machinery only — style files, figures, the generated .tex — never the paper itself.
+r"""Build paper/metanym_game_iclr27.pdf from paper/metanym_game_iclr27.md in the ICLR 2027 style (or, with --arxiv, the arXiv v3
+version: paper/metanym_game_arxiv_v3.pdf). The submission bundle — the generated paper.tex, the style files and the figures it uses —
+is written to submission-iclr/ (or submission-arxiv/, plus the source tarball); build/ holds this script and the style files, figures/
+the figure sources; neither submission directory ever holds the paper itself.
 
 Provenance: adapted from ../metanym-game-paper/submission/build_paper.py (arXiv pipeline); the
 ICLR style files in submission/style/ are the official iclr-2027-style-files.zip, untouched.
@@ -25,7 +27,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-SUB = ROOT / "submission"
+BUILD = ROOT / "build"; STYLE = BUILD / "style"; FIGS = ROOT / "figures"
 MD = ROOT / "paper" / "metanym_game_iclr27.md"
 APPENDIX_DIR = ROOT / "paper" / "appendices"
 ARXIV = "--arxiv" in sys.argv   # arXiv v3 mode: author block, preprint header, no anonymity guard, no page limit, larger figures
@@ -69,9 +71,9 @@ def combine() -> str:
         t = re.sub(r"^(##+) [A-Z]\.\d+ ", r"#\1 ", t, flags=re.M)
         parts.append(t.strip() + "\n")
     c = "\n".join(parts)
-    c = c.replace("](../submission/figures/", "](figures/")
+    c = c.replace("](../figures/", "](figures/")
     c = re.sub(r'<a id="([^"]+)"></a>', r"[]{#\1}", c)  # survives pandoc as \label
-    (SUB / "_paper_combined.md").write_text(c)
+    (BUILD / "_paper_combined.md").write_text(c)
     return title, c
 
 
@@ -299,12 +301,12 @@ def arxiv_edits(md: str) -> str:
 def main() -> None:
     title, combined = combine()
     if ARXIV:
-        combined = arxiv_edits(combined); (SUB / "_paper_combined.md").write_text(combined)
+        combined = arxiv_edits(combined); (BUILD / "_paper_combined.md").write_text(combined)
     guard(combined)
     pandoc = subprocess.run(
         ["pandoc", "-f", "markdown+pipe_tables+tex_math_dollars+raw_tex", "-t", "latex",
          "--wrap=none", "--columns=4000", "--top-level-division=section", "--shift-heading-level-by=-1", "--no-highlight",
-         str(SUB / "_paper_combined.md")],
+         str(BUILD / "_paper_combined.md")],
         check=True, capture_output=True, text=True).stdout
     body = postfix(pandoc)
     body = re.sub(r"(\\(?:sub)*section)\{\d+(?:\.\d+)* ", r"\1{", body)  # drop hand-typed numbers
@@ -323,15 +325,14 @@ def main() -> None:
     i = tex.index("\\appendix")
     tex = tex[:i] + tex[i:].replace("\\begin{table}[htb]", "\\begin{table}[H]").replace("\\begin{figure}[t]", "\\begin{figure}[H]")
     guard(tex)
-    OUT = SUB / "arxiv" if ARXIV else SUB
-    if ARXIV:
-        import shutil
-        OUT.mkdir(exist_ok=True); (OUT / "figures").mkdir(exist_ok=True)
-        for f in (SUB / "style").glob("*.sty"): shutil.copy(f, OUT / f.name)
-        for name in set(re.findall(r"\\includegraphics\[[^\]]*\]\{figures/([^}]+)\}", tex)): shutil.copy(SUB / "figures" / name, OUT / "figures" / name)
+    import shutil
+    OUT = ROOT / ("submission-arxiv" if ARXIV else "submission-iclr")
+    OUT.mkdir(exist_ok=True); (OUT / "figures").mkdir(exist_ok=True)
+    for f in STYLE.glob("*.sty"): shutil.copy(f, OUT / f.name)
+    for name in set(re.findall(r"\\includegraphics\[[^\]]*\]\{figures/([^}]+)\}", tex)): shutil.copy(FIGS / name, OUT / "figures" / name)
     (OUT / "paper.tex").write_text(tex)
 
-    r = subprocess.run(["tectonic", "-k", "--keep-logs", "-Z", "search-path=style", "-Z", "search-path=.", "paper.tex"],
+    r = subprocess.run(["tectonic", "-k", "--keep-logs", "-Z", "search-path=.", "paper.tex"],
                        cwd=OUT, capture_output=True, text=True)
     log = (OUT / "paper.log").read_text() if (OUT / "paper.log").exists() else r.stderr
     if r.returncode != 0:
@@ -346,9 +347,7 @@ def main() -> None:
           f"{overfull} overfull hboxes; {len(re.findall(r'LaTeX Warning: Reference', log))} unresolved refs.")
     if end_page > PAGE_LIMIT:
         raise SystemExit(f"OVER THE PAGE LIMIT: main text runs to page {end_page}, limit is {PAGE_LIMIT}")
-    if not ARXIV:
-        import shutil
-        FINAL = ROOT / "paper" / "metanym_game_iclr27.pdf"; shutil.move(str(OUT / "paper.pdf"), str(FINAL)); print(f"PDF: {FINAL}")
+    FINAL = ROOT / "paper" / ("metanym_game_arxiv_v3.pdf" if ARXIV else "metanym_game_iclr27.pdf"); shutil.move(str(OUT / "paper.pdf"), str(FINAL)); print(f"PDF: {FINAL}")
     if ARXIV:
         import tarfile
         with tarfile.open(OUT / "metanym_game_v3_arxiv.tar.gz", "w:gz") as tar:

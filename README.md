@@ -23,10 +23,12 @@ paper/
   appendices/A–G              the appendix (A estimators, B prompts, C worked evaluation,
                               D GPQA audit, E constructs, F the three runs apart and pooled, G anchoring)
   metanym_game_iclr27.pdf     the built paper
-submission/
-  build_paper.py              markdown -> paper.tex + paper.pdf in the official ICLR 2027 style
+figures/                      the paper's figures, produced by reproduce/scripts/
+build/
+  build_paper.py              markdown -> paper.tex (+ the PDF into paper/) in the official ICLR 2027 style
   style/                      iclr2027_conference.{sty,bst,tex}, natbib, fancyhdr — official, untouched
-  figures/                    the paper's figures, produced by reproduce/scripts/
+submission-iclr/              the ICLR bundle as generated: paper.tex, style files, the figures it uses
+submission-arxiv/             the arXiv bundle as generated (build_paper.py --arxiv): the same plus the source tarball
 reproduce/
   reproduce.sh                regenerates every exhibit; each step labelled with the table or figure it makes
   DATA_MANIFEST.md            data provenance and the result -> script map
@@ -43,7 +45,8 @@ cd reproduce && bash reproduce.sh
 ## Build the paper
 
 ```bash
-python3 submission/build_paper.py          # writes paper/metanym_game_iclr27.pdf; submission/ holds the build machinery only
+python3 build/build_paper.py             # writes paper/metanym_game_iclr27.pdf and the bundle in submission-iclr/
+python3 build/build_paper.py --arxiv     # writes paper/metanym_game_arxiv_v3.pdf and the bundle + tarball in submission-arxiv/
 ```
 
 Requires `pandoc` and `tectonic`. The build fails loudly if the main text runs past ICLR's 9-page
@@ -62,6 +65,6 @@ factorisation adds.
 
 ## License & citation
 
-Code (`submission/build_paper.py`, `reproduce/`) under **MIT**; paper text and figures under
+Code (`build/build_paper.py`, `reproduce/`) under **MIT**; paper text and figures under
 **CC BY 4.0**; the ICLR style files keep their own terms. See [`LICENSE`](LICENSE). To cite, use
 [`CITATION.cff`](CITATION.cff) (GitHub's "Cite this repository").
