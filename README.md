@@ -43,8 +43,7 @@ cd reproduce && bash reproduce.sh
 ## Build the paper
 
 ```bash
-python3 submission/build_paper.py
-cp submission/paper.pdf paper/metanym_game_iclr27.pdf
+python3 submission/build_paper.py          # writes paper/metanym_game_iclr27.pdf; submission/ holds the build machinery only
 ```
 
 Requires `pandoc` and `tectonic`. The build fails loudly if the main text runs past ICLR's 9-page

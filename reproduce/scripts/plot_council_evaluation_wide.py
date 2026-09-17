@@ -52,7 +52,7 @@ def render(H):
     # left column: the instantiation with its metanyms marked (Form b is Table 1b; the administrator's synthesis is Appendix C)
     LW = 42.0
     top = cur
-    ya = label(M + PAD, top - PAD, "INSTANTIATION — FORM (a)"); ya = flow(M + PAD, ya, LW - 2 * PAD, FORM_A)
+    ya = label(M + PAD, top - PAD, "INSTANTIATION"); ya = flow(M + PAD, ya, LW - 2 * PAD, FORM_A)
     bot_left = ya - PAD + 0.4; box(M, top, LW, bot_left)
     # right column: council cards
     RX = M + LW + 1.6; RW = 100 - M - RX

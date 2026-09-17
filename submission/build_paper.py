@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-r"""Build submission/paper.tex + paper.pdf from paper/metanym_game_iclr27.md in the ICLR 2027 style.
+r"""Build paper/metanym_game_iclr27.pdf (via submission/paper.tex) from paper/metanym_game_iclr27.md in the ICLR 2027 style.
+submission/ holds the build machinery only — style files, figures, the generated .tex — never the paper itself.
 
 Provenance: adapted from ../metanym-game-paper/submission/build_paper.py (arXiv pipeline); the
 ICLR style files in submission/style/ are the official iclr-2027-style-files.zip, untouched.
@@ -343,6 +344,9 @@ def main() -> None:
           f"{overfull} overfull hboxes; {len(re.findall(r'LaTeX Warning: Reference', log))} unresolved refs.")
     if end_page > PAGE_LIMIT:
         raise SystemExit(f"OVER THE PAGE LIMIT: main text runs to page {end_page}, limit is {PAGE_LIMIT}")
+    if not ARXIV:
+        import shutil
+        FINAL = ROOT / "paper" / "metanym_game_iclr27.pdf"; shutil.move(str(OUT / "paper.pdf"), str(FINAL)); print(f"PDF: {FINAL}")
     if ARXIV:
         import tarfile
         with tarfile.open(OUT / "metanym_game_v3_arxiv.tar.gz", "w:gz") as tar:

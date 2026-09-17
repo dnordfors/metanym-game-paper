@@ -9,6 +9,9 @@ paper/appendices/C_council_evaluation_gemini-2.5-flash.md.
 Writes figures/council_evaluation_pc1.png.
 """
 import re
+def paperterms(s):
+    """The judges wrote 'Form (a)'/'Form (b)' (the prompt's names, Appendix B); shown as the paper's terms, in square brackets."""
+    return re.sub(r"[Ff]orm \(b\)", "[idiomatic rewrite]", re.sub(r"[Ff]orm \(a\)", "[instantiation]", s))
 import textwrap
 from pathlib import Path
 
@@ -129,9 +132,9 @@ def render(H, K=1.0):
         if best is None or abs(ya - yb) < best[0]:
             best = (abs(ya - yb), fr)
     wa = total_w * best[1]
-    ya = para(M + PAD, top - PAD, 60, "INSTANTIATION — FORM (a)", 7.8, BLUE, weight="bold") - 0.6
+    ya = para(M + PAD, top - PAD, 60, "INSTANTIATION", 7.8, BLUE, weight="bold") - 0.6
     ya = flow(M + PAD, ya, wa - 2 * PAD, FORM_A, size=7.9 * K)
-    yb = para(M + wa + 1.2 + PAD, top - PAD, 60, "IDIOMATIC REWRITE — FORM (b)", 7.8, BLUE, weight="bold") - 0.6
+    yb = para(M + wa + 1.2 + PAD, top - PAD, 60, "IDIOMATIC REWRITE", 7.8, BLUE, weight="bold") - 0.6
     yb = flow(M + wa + 1.2 + PAD, yb, total_w - wa - 2 * PAD, FORM_B, size=7.9 * K)
     bot = min(ya, yb) - PAD + 0.55
     boxpatch(M, top, wa, bot); boxpatch(M + wa + 1.2, top, total_w - wa, bot)
@@ -140,7 +143,7 @@ def render(H, K=1.0):
     # administrator summary
     top = cur
     y = para(M + PAD, top - PAD, 60, "ADMINISTRATOR (CLAUDE OPUS) SUMMARY", 7.8, BLUE, weight="bold") - 0.7
-    y = flow(M + PAD, y, 100 - 2 * M - 2 * PAD, "\u201c" + ADMIN + "\u201d", size=7.9 * K)
+    y = flow(M + PAD, y, 100 - 2 * M - 2 * PAD, "\u201c" + paperterms(ADMIN) + "\u201d", size=7.9 * K)
     bot = y - PAD + 0.6
     boxpatch(M, top, 100 - 2 * M, bot, fill=BOX2)
     cur = bot - 1.2
@@ -176,7 +179,7 @@ def render(H, K=1.0):
         # divider + justification
         rx = M + PAD + LW + 1.6
         y = flow(rx, top - PAD - 0.4, 100 - M - PAD - rx,
-                 "\u201c" + re.sub(r"\s+", " ", just).strip() + "\u201d", size=7.9 * K)
+                 "\u201c" + paperterms(re.sub(r"\s+", " ", just).strip()) + "\u201d", size=7.9 * K)
         bot = min(y, sy - 2.4) - PAD + 0.6
         ax.plot([rx - 1.6, rx - 1.6], [top - PAD - 0.2, bot + PAD - 0.4], color=EDGE,
                 lw=0.8, zorder=2)

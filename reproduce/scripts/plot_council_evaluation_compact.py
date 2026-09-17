@@ -4,6 +4,9 @@ on the right the five judges' ratings and the clause each one quotes — all fiv
 verbatim from Appendix C, PC 1 (the full exhibit is plot_council_evaluation.py, shown in Appendix C).
 Writes figures/council_evaluation_pc1_compact.png."""
 import re
+def paperterms(s):
+    """The judges wrote 'Form (a)'/'Form (b)' (the prompt's names, Appendix B); shown as the paper's terms, in square brackets."""
+    return re.sub(r"[Ff]orm \(b\)", "[idiomatic rewrite]", re.sub(r"[Ff]orm \(a\)", "[instantiation]", s))
 from pathlib import Path
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -48,7 +51,7 @@ def render(H):
         ax.add_patch(FancyBboxPatch((x, bot), w, top - bot, boxstyle="round,pad=0.2,rounding_size=0.6", facecolor=fill, edgecolor=EDGE, linewidth=0.8, zorder=1))
     top = 98.0
     LW = 57.0
-    t = ax.text(M + PAD, top - PAD, "INSTANTIATION — FORM (a)", fontsize=BODY, fontweight="bold", color=BLUE, va="top", zorder=3)
+    t = ax.text(M + PAD, top - PAD, "INSTANTIATION", fontsize=BODY, fontweight="bold", color=BLUE, va="top", zorder=3)
     ya = flow(M + PAD, top - PAD - h_of(t)[0] - 0.6, LW - 2 * PAD, FORM_A); bot_left = ya - PAD + 0.4; box(M, top, LW, bot_left)
     RX = M + LW + 1.6; RW = 100 - M - RX
     t = ax.text(RX, top - PAD, "JUDGES — THE CLAUSE EACH CITES", fontsize=BODY, fontweight="bold", color=BLUE, va="top", zorder=3)
