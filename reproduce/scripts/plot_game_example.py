@@ -50,8 +50,8 @@ def render(H):
     def subhead(x, y, text): t = ax.text(x, y, text, fontsize=BODY, fontweight="bold", color=BLUE, va="top", zorder=3); return y - h_of(t)[0] - 0.5
     FULL = 100 - 2 * M
     # ---- (a)
-    y = header(99.6, "(a)  Generation: one archetypal context template from the anchor submission (Claude Opus 4.5)")
-    top = y; ys = subhead(M + PAD, top - PAD, "METANYM TABLE"); ncol = len(TABLE[0]); x0 = M + PAD
+    y = header(99.6, "(a)  Generation: ‘Gradient-Guided Navigation’, from the anchor submission (Claude Opus 4.5)")
+    top = y; ys = subhead(M + PAD, top - PAD, "METANYM TABLE for context template ‘GRADIENT-GUIDED NAVIGATION’"); ncol = len(TABLE[0]); x0 = M + PAD
     fs = lambda r: BODY - 0.3
     def tw(s, size, bold):                                       # rendered width of a string, in axis units
         pr = ax.text(0, -60, s, fontsize=size, fontweight="bold" if bold else "normal"); w_ = h_of(pr)[1]; pr.remove(); return w_
@@ -68,7 +68,7 @@ def render(H):
     top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATED CONTEXT TEMPLATE — BACTERIAL CHEMOTAXIS"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FA); bot = ya - PAD + 0.4; box(M, top, FULL, bot); y = bot - 0.8
     top = y; ys2 = subhead(M + PAD, top - PAD, "IDIOMATIC REWRITE"); yb2 = flow(M + PAD, ys2, FULL - 2 * PAD, FB, mark=False); bot = yb2 - PAD + 0.4; box(M, top, FULL, bot); y = bot - 1.8
     # ---- (b): full-width instantiation, then three judges with their complete justifications
-    y = header(y, "(b)  Evaluation — factual correctness (Gemini 2.5 Flash submission)")
+    y = header(y, "(b)  Evaluation, factual correctness: ‘Resource Allocation Under Scarcity’ (Gemini 2.5 Flash)")
     top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATED CONTEXT TEMPLATE — ECOSYSTEM MANAGEMENT"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FORM_A); bot = ya - PAD + 0.4; box(M, top, FULL, bot, fill=EVAL_BOX); y = bot - 1.0
     NAMEW = 12.0
     PICK = ["opus-4.5", "3.1-pro", "sonnet-4"]                     # three judges, both vendors of the council
