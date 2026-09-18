@@ -99,6 +99,10 @@ RUNS=1,2 B=300 "$PY" scripts/pooled_council_tables.py    # emits data/total_rati
 B=300 "$PY" scripts/per_run_contests.py                  # Appendix F: contest gaps per run (why no single-run rotation clears the guard)
 "$PY" scripts/plot_runs_panel.py                         # -> figures/runs_panel.png (Appendix F figure)
 TAG=pooled123 RCI="0.95, 0.99" "$PY" scripts/plot_total_validation_simple_pooled.py   # -> figures/total_validation_simple_pooled123.png (§4.5 figure; RCI = the BCa interval printed by pooled_ladder.py)
+echo; echo "##### Appendix A.2 (ICLR version) — self-entry fill: anchor value vs row mean #####"
+"$PY" scripts/self_entry_fill_check.py                    # same E^F ranking, loadings within 0.04, r moved < 0.01
+echo; echo "##### §4.5 / D.1 (ICLR version) — the same ratings aggregated the plain way, against GPQA #####"
+"$PY" scripts/baseline_aggregators.py                    # emits data/baseline_aggregators.csv: un-anchored mean 0.77, anchored mean 0.93, T 0.98
 echo; echo "##### §6 (ICLR version) — archetype recurrence across runs and models (retrieval signature) #####"
 "$PY" scripts/archetype_recurrence.py
 echo; echo "##### §6 (ICLR version) — where regeneration runs 2 and 3 part, and what returns after the fork #####"

@@ -30,7 +30,7 @@ The left singular vector is factual competence,
 
 $$ f\equiv u,\qquad \text{signed so } \textstyle\sum_s f_s>0,\qquad f^{+}_s=\max(f_s,0), \tag{A7}$$
 
-clamped at zero so an evaluator anti-correlated with the consensus carries no weight. Centering is essential: raw scores cluster at the anchor, so on the un-centred matrix the leading axis is the shared level and ranks the most lenient evaluators highest. Equivalently $u$ is the leading eigenvector of the row-centred inter-evaluator Gram $\tilde F\tilde F^{\top}$. Because every row of $\tilde F$ sums to zero, $v$ sums to zero and is oriented so that positive means factually stronger ($\operatorname{corr}(v,\ \text{column means of }\tilde F)>0$).
+clamped at zero so an evaluator anti-correlated with the consensus carries no weight. The self-entries are a convention, not a rating: filling them with each evaluator's own row mean instead of the anchor value, so that they vanish under centering, leaves the $E^{F}$ ranking unchanged, moves every loading by at most 0.04, and moves the total's agreement with GPQA by less than 0.01 (`scripts/self_entry_fill_check.py`). Centering is essential: raw scores cluster at the anchor, so on the un-centred matrix the leading axis is the shared level and ranks the most lenient evaluators highest. Equivalently $u$ is the leading eigenvector of the row-centred inter-evaluator Gram $\tilde F\tilde F^{\top}$. Because every row of $\tilde F$ sums to zero, $v$ sums to zero and is oriented so that positive means factually stronger ($\operatorname{corr}(v,\ \text{column means of }\tilde F)>0$).
 
 The **competence-weighted consensus rating** of instantiation $j$ reads $v$ back on the 1–10 scale,
 

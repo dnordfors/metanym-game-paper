@@ -1,0 +1,4 @@
+aggregator,n,pearson_r,spearman_rho
+un-anchored plain mean (sec 4.1 pass),12,0.771,0.687
+anchored plain mean (run 1; anchor at 7),12,0.926,0.809
+"official total T (pooled, council basis)",12,0.982,0.963
