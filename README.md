@@ -27,7 +27,8 @@ figures/                      the paper's figures, produced by reproduce/scripts
 build/
   build_paper.py              markdown -> paper.tex (+ the PDF into paper/) in the official ICLR 2027 style
   style/                      iclr2027_conference.{sty,bst,tex}, natbib, fancyhdr — official, untouched
-submission-iclr/              the ICLR bundle as generated: paper.tex, style files, the figures it uses
+submission-iclr/              the ICLR bundle as generated: paper.tex, style files, the figures it uses, and the anonymised
+                              supplementary zip of reproduce/ (gitignored; scripts/build_supplementary_zip.sh in the project)
 submission-arxiv/             the arXiv bundle as generated (build_paper.py --arxiv): the same plus the source tarball
 reproduce/
   reproduce.sh                regenerates every exhibit; each step labelled with the table or figure it makes

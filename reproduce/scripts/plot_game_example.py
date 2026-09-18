@@ -30,7 +30,7 @@ def quoted_clause(just):
     m = re.search(r"[\"“](nature must make natural selections[^\"”]*)[\"”]", just, re.I)
     if m: return m.group(1)
     m = re.search(r"([^.;,]*natural selection[^.;,]*)", just, re.I); assert m; return m.group(1).strip()
-W = 5.5; M, PAD = 1.2, 1.0; BODY = float(sys.argv[sys.argv.index("--body") + 1]) if "--body" in sys.argv else 7.0   # 7.0 fills the ICLR page (5.5 x 9 in) with the caption
+W = 5.5; M, PAD = 1.2, 1.0; BODY = float(sys.argv[sys.argv.index("--body") + 1]) if "--body" in sys.argv else 6.9   # 6.9 fills the ICLR page (5.5 x 9 in) with the caption
 def is_slot(tok): core = tok.strip(".,;:()'\"“”"); return len(core) > 1 and core.isupper()
 def render(H):
     fig = plt.figure(figsize=(W, H)); fig.patch.set_facecolor(SURFACE); ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 100); ax.set_ylim(0, 100); ax.axis("off")
@@ -51,7 +51,6 @@ def render(H):
     FULL = 100 - 2 * M
     # ---- (a)
     y = header(99.6, "(a)  Generation: one archetypal context template from the anchor submission (Claude Opus 4.5)")
-    top = y; ys = subhead(M + PAD, top - PAD, "CONTEXT TEMPLATE"); yb = flow(M + PAD, ys, FULL - 2 * PAD, TEMPLATE); box(M, top, FULL, yb - PAD + 0.4); y = yb - PAD - 0.8
     top = y; ys = subhead(M + PAD, top - PAD, "METANYM TABLE"); ncol = len(TABLE[0]); x0 = M + PAD
     fs = lambda r: BODY - 0.3
     def tw(s, size, bold):                                       # rendered width of a string, in axis units
@@ -66,8 +65,8 @@ def render(H):
         yy -= lh
         if r == 0: ax.plot([x0, M + FULL - PAD], [yy + 0.3, yy + 0.3], color=EDGE, lw=0.6, zorder=2)
     box(M, top, FULL, yy - PAD + lh * 0.3); y = yy - PAD - 0.8 + lh * 0.3
-    HW = (FULL - 1.6) / 2; top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — BACTERIAL CHEMOTAXIS"); ya = flow(M + PAD, ys, HW - 2 * PAD, first_n(FA, 1)); RX = M + HW + 1.6
-    ys2 = subhead(RX + PAD, top - PAD, "IDIOMATIC REWRITE"); yb2 = flow(RX + PAD, ys2, HW - 2 * PAD, first_n(FB, 1), mark=False); bot = min(ya, yb2) - PAD + 0.4; box(M, top, HW, bot); box(RX, top, HW, bot); y = bot - 1.8
+    top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — BACTERIAL CHEMOTAXIS"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FA); bot = ya - PAD + 0.4; box(M, top, FULL, bot); y = bot - 0.8
+    top = y; ys2 = subhead(M + PAD, top - PAD, "IDIOMATIC REWRITE"); yb2 = flow(M + PAD, ys2, FULL - 2 * PAD, FB, mark=False); bot = yb2 - PAD + 0.4; box(M, top, FULL, bot); y = bot - 1.8
     # ---- (b): full-width instantiation, then three judges with their complete justifications
     y = header(y, "(b)  Evaluation — factual correctness (Gemini 2.5 Flash submission)")
     top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — ECOSYSTEM MANAGEMENT"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FORM_A); bot = ya - PAD + 0.4; box(M, top, FULL, bot, fill=EVAL_BOX); y = bot - 1.0
@@ -82,7 +81,7 @@ def render(H):
     bot_left = y; yj = y
     return fig, min(bot_left, yj)
 H = 8.0
-for _ in range(6):
+for _ in range(12):
     fig, y_end = render(H); used = (100 - y_end) / 100 * H - 0.02
     if abs(used - H) < 0.03: break
     plt.close(fig); H = used
