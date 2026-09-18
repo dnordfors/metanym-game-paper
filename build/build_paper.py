@@ -393,6 +393,9 @@ def main() -> None:
         raise SystemExit(f"OVER THE PAGE LIMIT: main text runs to page {end_page}, limit is {PAGE_LIMIT}")
     FINAL = ROOT / "paper" / ("metanym_game_arxiv_v3.pdf" if ARXIV else "metanym_game_iclr27.pdf"); shutil.move(str(OUT / "paper.pdf"), str(FINAL)); print(f"PDF: {FINAL}")
     if ARXIV:
+        # arXiv reads \pdfoutput=1 in the first five lines as the instruction to compile with pdfLaTeX (PNG figures). It goes into
+        # the shipped source only, after the local compile: under tectonic (XeTeX) the line makes hyperref load the pdftex driver and fail.
+        (OUT / "paper.tex").write_text("\\pdfoutput=1\n" + (OUT / "paper.tex").read_text())
         import tarfile
         with tarfile.open(OUT / "metanym_game_v3_arxiv.tar.gz", "w:gz") as tar:
             for f in ["paper.tex"] + [p.name for p in OUT.glob("*.sty")]: tar.add(OUT / f, arcname=f)
