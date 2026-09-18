@@ -65,11 +65,11 @@ def render(H):
         yy -= lh
         if r == 0: ax.plot([x0, M + FULL - PAD], [yy + 0.3, yy + 0.3], color=EDGE, lw=0.6, zorder=2)
     box(M, top, FULL, yy - PAD + lh * 0.3); y = yy - PAD - 0.8 + lh * 0.3
-    top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — BACTERIAL CHEMOTAXIS"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FA); bot = ya - PAD + 0.4; box(M, top, FULL, bot); y = bot - 0.8
+    top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATED CONTEXT TEMPLATE — BACTERIAL CHEMOTAXIS"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FA); bot = ya - PAD + 0.4; box(M, top, FULL, bot); y = bot - 0.8
     top = y; ys2 = subhead(M + PAD, top - PAD, "IDIOMATIC REWRITE"); yb2 = flow(M + PAD, ys2, FULL - 2 * PAD, FB, mark=False); bot = yb2 - PAD + 0.4; box(M, top, FULL, bot); y = bot - 1.8
     # ---- (b): full-width instantiation, then three judges with their complete justifications
     y = header(y, "(b)  Evaluation — factual correctness (Gemini 2.5 Flash submission)")
-    top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATION — ECOSYSTEM MANAGEMENT"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FORM_A); bot = ya - PAD + 0.4; box(M, top, FULL, bot, fill=EVAL_BOX); y = bot - 1.0
+    top = y; ys = subhead(M + PAD, top - PAD, "INSTANTIATED CONTEXT TEMPLATE — ECOSYSTEM MANAGEMENT"); ya = flow(M + PAD, ys, FULL - 2 * PAD, FORM_A); bot = ya - PAD + 0.4; box(M, top, FULL, bot, fill=EVAL_BOX); y = bot - 1.0
     NAMEW = 12.0
     PICK = ["opus-4.5", "3.1-pro", "sonnet-4"]                     # three judges, both vendors of the council
     for name, rating, just in [j for k in PICK for j in JUDGES if j[0] == k]:
