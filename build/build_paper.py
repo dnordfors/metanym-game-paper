@@ -312,10 +312,24 @@ def arxiv_edits(md: str) -> str:
     for a, b_ in ARXIV_FIGURE_SWAPS.items(): md = md.replace(a, b_)
     return md
 
+def prune_uncited_references(md: str) -> str:
+    """Drop reference entries that the text being built never cites (surname within 40 characters of the year), and say so.
+    A version that drops a section (arXiv drops the Ethics statement) thereby drops the references cited only there."""
+    i = md.index("\n## References\n"); j = md.index("\n## ", i + 1) if "\n## " in md[i + 1:] else len(md)
+    head, refs, tail = md[:i], md[i:j], md[j:]
+    body = head + tail; kept, dropped = [], []
+    for para in refs.split("\n\n"):
+        m = re.match(r"([A-Za-zÀ-ž'\-]+)[^\n]*?\((\d{4})\)", para.strip())
+        if m and not re.search(re.escape(m.group(1)) + r"[^\n]{0,40}" + m.group(2), body): dropped.append(f"{m.group(1)} ({m.group(2)})"); continue
+        kept.append(para)
+    if dropped: print("references not cited in this version, dropped from its list:", ", ".join(dropped))
+    return head + "\n\n".join(kept) + tail
+
 def main() -> None:
     title, combined = combine()
     if ARXIV:
         combined = arxiv_edits(combined); (BUILD / "_paper_combined.md").write_text(combined)
+    combined = prune_uncited_references(combined); (BUILD / "_paper_combined.md").write_text(combined)
     guard(combined)
     pandoc = subprocess.run(
         ["pandoc", "-f", "markdown+pipe_tables+tex_math_dollars+raw_tex", "-t", "latex",
