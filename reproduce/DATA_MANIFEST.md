@@ -32,8 +32,10 @@ the per-archetype non-factual axis ratings. Counts below are `json` / `md` files
 | `data/probe_K_anchor8_20260529T033755Z/` | anchor sweep, anchor 8 | §4.2, §5.7 | 135 / 132 |
 | `data/regenerations/probe_K_anchor7_20260619T015828Z/` | run 2 — independent regeneration | §4.9 | 133 / 132 |
 | `data/regenerations/probe_K_anchor7_20260619T040659Z/` | run 3 — independent regeneration | §4.9 | 133 / 132 |
+| `data/portfolios_run1/` | run 1 — the twelve raw generator portfolios the canonical run evaluated (`<model>_off_T0_r1.md`, verbatim as generated; the matching `.json` is the gateway envelope: the response, model version and token counts). The anchor and the two ballast files in `submissions/` are copies of three of them | §4 | 12 / 12 |
 | `data/regenerations/portfolios_run2/` | run 2 — the twelve raw generator portfolios (`<model>_off_T0_r1.md`; same prompt, T = 0, reasoning off) | §6 (ICLR) | 12 |
-| `data/regenerations/portfolios_run3/` | run 3 — the twelve raw generator portfolios, two hours after run 2 (run 1's were not preserved) | §6 (ICLR) | 12 |
+| `data/regenerations/portfolios_run3/` | run 3 — the twelve raw generator portfolios, two hours after run 2 | §6 (ICLR) | 12 |
+| `prompts/` | the prompts as sent: `generator.md` (Appendix B.1), `evaluator_calibrated.md` (Appendix B.2, every anchored run and the thinking-vs-play evaluation), `evaluator.md` (the un-anchored form of §4.1) | Appendix B | 3 |
 | `data/thinking_vs_play/20260916T023717Z/gen/` | thinking-vs-play (2026-09-16, official Anthropic/OpenAI APIs): the eight portfolios (`<player>.md`; `.reasoning.md` = the vendor's thinking summary; `.json` = envelope + raw response + request) | §6 (ICLR) | 8 |
 | `data/thinking_vs_play/20260916T023717Z/eval/` | thinking-vs-play: the 64 evaluations (`eval_<judge>_x_<target>.*`) with the calibrated evaluator prompt (`data/thinking_vs_play/evaluator_calibrated.md`), anchor = claude-opus-4.5's run-1 portfolio pinned at 7, ballasts = the two ballast submissions | §6 (ICLR) | 64 |
 
@@ -102,10 +104,6 @@ compare the figures by eye.
   outputs. Re-querying the models to produce a *new* run (a fresh N, non-deterministic, costs
   budget) is a separate activity; that tooling lives with the upstream experiment in the working
   repo, not in this package.
-- **Raw generated portfolios of run 1** beyond the two ballast submissions in `submissions/` (below) and
-  the `.md` transcripts already inside each run directory (runs 2 and 3 are carried whole in `data/regenerations/portfolios_run{2,3}/`; run 1's were not preserved). The anchor submission is carried in `submissions/`, and the appendices in `paper/appendices/`
-  carry the other portfolio the paper exhibits; the ballast is carried because §4.6 names it as
-  protocol material, not because the paper prints it.
 - **The validated archetype database.** Not read by any script here; it lives upstream at
   `projects/completed/council-of-peers-benchmark-2/data/archetype_db/archetypes.json`.
 
