@@ -86,7 +86,21 @@ def guard(text: str) -> None:
 
 # ----------------------------------------------------------------- 4. postfix
 def unicode_fixes(body: str) -> str:
-    # The ICLR style uses the 8-bit Times fonts; map the symbols the manuscript uses.
+    """The ICLR style uses the 8-bit Times fonts; map the symbols the manuscript uses. Inside verbatim blocks (the prompts of
+    Appendix B, printed as sent) the same symbols go through listings' escape, so the page shows the symbol itself and the
+    printed prompt carries no LaTeX macro."""
+    parts = re.split(r"(\\begin\{lstlisting\}.*?\\end\{lstlisting\})", body, flags=re.S)   # verbatim was renamed to lstlisting above
+    return "".join(_unicode_verbatim(p) if p.startswith("\\begin{lstlisting}") else _unicode_prose(p) for p in parts)
+
+def _unicode_verbatim(block: str) -> str:
+    for u, tex in {"≤": "\\le", "≥": "\\ge", "→": "\\rightarrow", "×": "\\times", "≈": "\\approx"}.items():
+        block = block.replace(u, "(*@\\ensuremath{" + tex + "}@*)")
+    for u, plain in {"—": "--", "–": "-", "“": '"', "”": '"', "‘": "'", "’": "'", "…": "...", "−": "-"}.items():
+        block = block.replace(u, plain)
+    left = sorted({ch for ch in block if ord(ch) > 127}); assert not left, f"unmapped non-ASCII characters in a verbatim block: {left}"
+    return block
+
+def _unicode_prose(body: str) -> str:
     for u, tex in {
         "★": r"\ensuremath{\star}", "†": r"\ensuremath{\dagger}", "≈": r"\ensuremath{\approx}",
         "≥": r"\ensuremath{\ge}", "≤": r"\ensuremath{\le}", "×": r"\ensuremath{\times}",
@@ -281,7 +295,7 @@ PREAMBLE = r"""\documentclass{article}
 \usepackage{colortbl}
 \usepackage{float}
 \usepackage{listings}
-\lstset{breaklines=true,breakatwhitespace=false,basicstyle=\ttfamily\scriptsize,columns=fullflexible,keepspaces=true,extendedchars=true}
+\lstset{breaklines=true,breakatwhitespace=false,basicstyle=\ttfamily\scriptsize,columns=fullflexible,keepspaces=true,extendedchars=true,escapeinside={(*@}{@*)}}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \providecommand{\pandocbounded}[1]{#1}
 \providecommand{\real}[1]{#1}
