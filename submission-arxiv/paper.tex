@@ -31,7 +31,7 @@ We introduce a benchmark that is fully self-contained, needs no ground truth, an
 
 Nearly every benchmark for machine intelligence needs a predetermined ground truth --- golden keys and labels, oracle models, human panels. The benchmark reported here needs none of that. It is a game where frontier language models compete in making up analogies and then grade one another, and that grading is the single source of every score: no human raters, no answer key, nothing to look up.
 
-The test is the \textbf{metanym game}. A player authors, from nothing, a \emph{context template} --- a paragraph of fixed wording with open slots --- together with the sets of keywords that fill it, each set instantiating the template as a factually true description of a different domain; the keywords in corresponding slots are \emph{metanyms}, metaphorically synonymous, and a set of them a \emph{metanym set}. Figure \ref{fig-game-example}(a) shows one, written by a player. Its instantiations are each other's \emph{metaphors} and, as a set, \emph{parallel contexts}: children of a common \emph{archetypal context}, the abstract structure they share, of which the template is the literal representation. A long tradition treats seeing one structure across wildly different domains as central to thought and tests whether you \emph{recognise} it; the game tests whether you can \emph{build} it.
+The test is the \textbf{metanym game}. A player authors, from nothing, a \emph{context template} --- a paragraph of fixed wording with open slots --- together with the sets of keywords that fill it, each set instantiating the template as a factually true description of a different domain; the keywords in corresponding slots are \emph{metanyms}, metaphorically synonymous, and a set of them a \emph{metanym set}. Figure \ref{fig-game-generation} shows one, written by a player. Its instantiations are each other's \emph{metaphors} and, as a set, \emph{parallel contexts}: children of a common \emph{archetypal context}, the abstract structure they share, of which the template is the literal representation. A long tradition treats seeing one structure across wildly different domains as central to thought and tests whether you \emph{recognise} it; the game tests whether you can \emph{build} it.
 
 Because a contestant's items are written in the run, they cannot have been trained on; because correctness is settled sentence by sentence, the players' own verdicts suffice --- one matrix of their factual ratings reveals which judges are competent, with no labels at all (\S{}3.3), and that subset is seated as the \emph{council} that grades everyone. The canonical twelve-model run (\S{}4) finds that \textbf{judgement is the bottleneck} --- on this roster the strongest generators are middling judges --- and that the key-free total tracks GPQA Diamond at Pearson \(r = 0.98\), audited for a leak and found clean.
 
@@ -39,14 +39,22 @@ Because a contestant's items are written in the run, they cannot have been train
 
 \section{The metanym game}\label{the-metanym-game}
 
-An archetypal context is the cross-domain \emph{isomorphism} General Systems Theory studies (von Bertalanffy, 1968). Figure \ref{fig-game-example}(a) is one archetype as a player wrote it --- the first of the submission that became the run's anchor (\S{}4.1). One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
+An archetypal context is the cross-domain \emph{isomorphism} General Systems Theory studies (von Bertalanffy, 1968). Figure \ref{fig-game-generation} is one archetype as a player wrote it --- the first of the submission that became the run's anchor (\S{}4.1). One template, mechanically swappable metanyms, true sentence by sentence across maximal domain distance: that is what makes a metanym game decidable, and therefore measurable.
 
 \begin{figure}[p]
 \centering
-\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/game_example.png}}
+\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/game_generation.png}}
 \vspace{-14pt}
-\caption{The Metanym Game, extracts: (a) generation; (b) council evaluation, subpart (one metanym set and two judges excluded to make space in the figure).}
-\label{fig-game-example}
+\caption{The Metanym Game, generation: the archetypal context `Gradient-Guided Navigation' from the anchor submission; its context template, metanym table (one metanym set excluded to make space in the figure) and one instantiation with its idiomatic rewrite.}
+\label{fig-game-generation}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\pandocbounded{\includegraphics[width=1.00\linewidth]{figures/game_evaluation.png}}
+\vspace{-14pt}
+\caption{The Metanym Game, evaluation: the council on one parallel context of the Gemini 2.5 Flash submission; the instantiation, its idiomatic rewrite, the administrator's summary, and the five judges' ratings with their justifications.}
+\label{fig-game-evaluation}
 \end{figure}
 
 In its metanym table, MEMORY is realised as a bacterium's methylation state, a climber's route memory, a professional's experience, an optimiser's momentum term and an ant's path integration --- five mechanisms that are metaphorically synonymous in the archetypal context --- metanyms.
@@ -82,7 +90,7 @@ Axis & Unit & The criterion as put to the evaluator \\
 \end{center}
 \end{table}
 
-Three design choices. \textbf{A fixed anchor}: cardinal scores drift between evaluators --- one model's ``8'' is another's ``6'' --- and a reference pinned at a known score turns each idiosyncratic scale into a common one and recovers discriminability at the top, where the 1--10 ceiling compresses the strongest portfolios (\S{}4.1). \textbf{Holistic axes, minimally prescribed}: a detailed rubric would leak back into generation as a template-construction tutorial, and we want to score what models \emph{recognise} as beautiful or intelligent. \texttt{impressive\_\allowbreak{}length} counterweights per-sentence factual scoring: without it the minimal template wins, and padding costs, since every added sentence is another claim to score. One evaluation, three of its five judges shown whole, is Figure \ref{fig-game-example}(b).
+Three design choices. \textbf{A fixed anchor}: cardinal scores drift between evaluators --- one model's ``8'' is another's ``6'' --- and a reference pinned at a known score turns each idiosyncratic scale into a common one and recovers discriminability at the top, where the 1--10 ceiling compresses the strongest portfolios (\S{}4.1). \textbf{Holistic axes, minimally prescribed}: a detailed rubric would leak back into generation as a template-construction tutorial, and we want to score what models \emph{recognise} as beautiful or intelligent. \texttt{impressive\_\allowbreak{}length} counterweights per-sentence factual scoring: without it the minimal template wins, and padding costs, since every added sentence is another claim to score. One evaluation, three of its five judges shown whole, is Figure \ref{fig-game-evaluation}.
 
 \subsection{Two key-free estimators}\label{two-key-free-estimators}
 
@@ -112,7 +120,7 @@ Every rating carries a 95\% percentile-bootstrap interval, \(E\) and \(T\) boots
 
 \subsection{Anchoring doubles resolution}\label{anchoring-doubles-resolution}
 
-The bootstrap opens with a raw pass --- every portfolio scored by every other model with no anchor, averaged leave-self-out, 95\% bootstrap intervals (2,000 resamples; Efron \& Tibshirani, 1993). It supplies the baseline: the top-ranked portfolio, \textbf{claude-opus-4.5}'s, whose first archetype is Figure \ref{fig-game-example}(a), is pinned at 7 on every axis, leaving headroom above. Re-run anchored (Appendix G), the gap between a leading eight and a trailing four more than doubles relative to the spread of the means, while ranks within either band stay unresolved.
+The bootstrap opens with a raw pass --- every portfolio scored by every other model with no anchor, averaged leave-self-out, 95\% bootstrap intervals (2,000 resamples; Efron \& Tibshirani, 1993). It supplies the baseline: the top-ranked portfolio, \textbf{claude-opus-4.5}'s, whose first archetype is Figure \ref{fig-game-generation}, is pinned at 7 on every axis, leaving headroom above. Re-run anchored (Appendix G), the gap between a leading eight and a trailing four more than doubles relative to the spread of the means, while ranks within either band stay unresolved.
 
 \subsection{Evaluator factual competence}\label{evaluator-factual-competence}
 

@@ -39,7 +39,7 @@ ARXIV_FIGURE_SWAPS = {"council_evaluation_pc1_compact.png": "council_evaluation_
 ARXIV_DROP_SECTIONS = ("Ethics statement",)
 
 # Figure widths as a fraction of the text width, keyed by file stem (KeyError = unlisted figure).
-FIGURE_WIDTHS = {"game_example": 1.0, "council_evaluation_pc1": 1.0, "council_evaluation_pc1_wide": 1.0, "council_evaluation_pc1_compact": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 1.0}
+FIGURE_WIDTHS = {"game_example": 1.0, "game_generation": 1.0, "game_evaluation": 1.0, "council_evaluation_pc1": 1.0, "council_evaluation_pc1_wide": 1.0, "council_evaluation_pc1_compact": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 1.0}
 
 # Strings that must not survive into a double-blind submission.
 ANONYMITY_GUARDS = ["Nordfors", "dnordfors", "archetypes.ai", "2606.21008", "github.com/dnordfors"]
@@ -261,8 +261,8 @@ def postfix(body: str) -> str:
         return "\\includegraphics[width=%.2f\\linewidth]{%s}" % (w, m.group(1))
     body = re.sub(r"\\includegraphics(?:\[.*?\])?\{([^}]+)\}", fig, body, flags=re.S)
     body = body.replace("\\begin{figure}\n", "\\begin{figure}[t]\n")
-    body = re.sub(r"\\begin\{figure\}\[t\](\n\\centering\n(?:\\pandocbounded\{)?\\includegraphics\[[^\]]*\]\{figures/game_example\.png)", r"\\begin{figure}[p]\1", body)   # Figure 1: its own page
-    body = re.sub(r"(\\includegraphics\[[^\]]*\]\{figures/game_example\.png\}\}?)\n(\\caption\{)", r"\1\n\\vspace{-14pt}\n\2", body)   # Figure 1: caption tight under the exhibit
+    body = re.sub(r"\\begin\{figure\}\[t\](\n\\centering\n(?:\\pandocbounded\{)?\\includegraphics\[[^\]]*\]\{figures/game_(?:example|generation|evaluation)\.png)", r"\\begin{figure}[p]\1", body)   # Figure 1: its own page
+    body = re.sub(r"(\\includegraphics\[[^\]]*\]\{figures/game_(?:example|generation|evaluation)\.png\}\}?)\n(\\caption\{)", r"\1\n\\vspace{-14pt}\n\2", body)   # Figure 1: caption tight under the exhibit
     for s in ("AI use statement", "Ethics statement", "Reproducibility statement"):
         body = re.sub(r"\\section\{" + s + r"\}\\label\{[^}]*\}", r"\\subsection*{" + s + "}", body)
     body = re.sub(r"\\section\{References\}\\label\{[^}]*\}",
@@ -310,6 +310,13 @@ def arxiv_edits(md: str) -> str:
         i = md.index("\n## " + s); j = md.index("\n## ", i + 1); md = md[:i] + md[j:]
     md = md.replace("(anonymised repository, supplementary material)", "(%s, `reproduce/`)" % ARXIV_REPO)
     for a, b_ in ARXIV_FIGURE_SWAPS.items(): md = md.replace(a, b_)
+    # Figure 1 of the ICLR version (one page, two panels) becomes two full-page figures
+    m = re.search(r'\[\]\{#fig-game-example\}\n\n!\[[^\n]*\]\(figures/game_example\.png\)\n', md); assert m, "Figure 1 block not found"   # combine() has already rewritten anchors and figure paths
+    two = ('[]{#fig-game-generation}\n\n![The Metanym Game, generation: the archetypal context \u2018Gradient-Guided Navigation\u2019 from the anchor submission; its context template, metanym table (one metanym set excluded to make space in the figure) and one instantiation with its idiomatic rewrite.](figures/game_generation.png)\n\n'
+           '[]{#fig-game-evaluation}\n\n![The Metanym Game, evaluation: the council on one parallel context of the Gemini 2.5 Flash submission; the instantiation, its idiomatic rewrite, the administrator\u2019s summary, and the five judges\u2019 ratings with their justifications.](figures/game_evaluation.png)\n')
+    md = md[:m.start()] + two + md[m.end():]
+    md = md.replace("Figure \\ref{fig-game-example}(a)", "Figure \\ref{fig-game-generation}").replace("Figure \\ref{fig-game-example}(b)", "Figure \\ref{fig-game-evaluation}")
+    assert "fig-game-example" not in md, "a reference to the one-page figure survives in the arXiv text"
     return md
 
 def prune_uncited_references(md: str) -> str:
