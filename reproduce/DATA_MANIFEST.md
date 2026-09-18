@@ -9,9 +9,9 @@ verified by being run. This file only records where the inputs came from.
 
 ## Upstream source
 
-Every evaluation run here is pinned from experiment
-`papers/v3/experiments/17_bold_api_probe` in the private `archetypal-contexts` working repo.
-Portfolios were generated and cross-evaluated through the BOLD gateway at temperature 0 with
+Every evaluation run here is pinned from the API-probe experiment of 28–29 May 2026 in the private working
+repository. Portfolios were generated and cross-evaluated through an API gateway fronting the vendors' endpoints
+(each envelope carries the vendor's model version string and token counts) at temperature 0 with
 reasoning disabled; each model evaluates every portfolio on the six-axis rubric against a fixed
 anchor reference. The run therefore contains **self-evaluation files** (`eval_X_x_X.json`) as
 well as cross-evaluations, and they are shipped here unmodified. No rating in the paper uses
@@ -38,6 +38,14 @@ the per-archetype non-factual axis ratings. Counts below are `json` / `md` files
 | `prompts/` | the prompts as sent: `generator.md` (Appendix B.1), `evaluator_calibrated.md` (Appendix B.2, every anchored run and the thinking-vs-play evaluation), `evaluator.md` (the un-anchored form of §4.1) | Appendix B | 3 |
 | `data/thinking_vs_play/20260916T023717Z/gen/` | thinking-vs-play (2026-09-16, official Anthropic/OpenAI APIs): the eight portfolios (`<player>.md`; `.reasoning.md` = the vendor's thinking summary; `.json` = envelope + raw response + request) | §6 (ICLR) | 8 |
 | `data/thinking_vs_play/20260916T023717Z/eval/` | thinking-vs-play: the 64 evaluations (`eval_<judge>_x_<target>.*`) with the calibrated evaluator prompt (`data/thinking_vs_play/evaluator_calibrated.md`), anchor = claude-opus-4.5's run-1 portfolio pinned at 7, ballasts = the two ballast submissions | §6 (ICLR) | 64 |
+
+Run 1's log records a 5,373-character evaluator template; `prompts/evaluator_calibrated.md` has 5,512 characters and is
+the revision the anchor sweep (anchors 5, 6, 8, from two hours later) and both regenerations record. Run 1 was made with an
+earlier revision of the same prompt that was not kept; Appendix B prints the shipped one. `scripts/verify_chain.py` expects
+exactly this discrepancy and no other.
+
+Paths recorded in the run logs and `run_info.json` files are rewritten to package-relative paths (`data/…`, `prompts/…`),
+all of which resolve inside this directory; nothing else in a record is altered.
 
 Anchor 7 serves double duty: it is both the production run and the anchor-7 point of the sweep
 (`anchor_sweep_leaderboard.py` matches it by the `probe_K_2*` prefix). The JSON counts exceed the
@@ -108,7 +116,7 @@ compare the figures by eye.
   `projects/completed/council-of-peers-benchmark-2/data/archetype_db/archetypes.json`.
 
 ## data/gpqa_runs/ and data/total_rating_council.csv
-- `gpqa_runs/gpqa_20260613T173827Z/`: the raw self-administered GPQA Diamond run — per model, `responses.json` with all 198 records (raw response text, key letter, stored verdict). Source: papers/v3/experiments/17_bold_api_probe/analysis_archive/runs_local/ (same repo, commit history). Audited by `scripts/gpqa_audit.py` (Appendix D).
+- `gpqa_runs/gpqa_20260613T173827Z/`: the raw self-administered GPQA Diamond run — per model, `responses.json` with all 198 records (raw response text, key letter, stored verdict). Source: the working repository's GPQA administration of 13 June 2026 (Appendix D.2). Audited by `scripts/gpqa_audit.py` (Appendix D).
 - `total_rating_council.csv`: the §4.7 council-basis **official leaderboard** (the table in the paper and in the README) (T + per-contest A.5 bootstrap CIs + components). Produced by papers/v3/experiments/29_council_only_leaderboard/council_basis_tables.py (seed 20260816); package-side producer pending (REVIEW A8).
 
 ## data/total_rating_twelve.csv, total_rating_runs.csv, ec_svd_twelve.csv

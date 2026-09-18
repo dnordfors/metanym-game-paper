@@ -3,7 +3,7 @@
 # Outputs BOTH figures/total_validation_plotly.html (hover cards: T with CI, all four
 # components, GPQA with binomial CI, council status) and .png (static, via kaleido).
 # Not part of reproduce.sh: the paper figure remains the matplotlib PNG; this is the
-# interactive form (and a candidate for the archetypes.ai leaderboard drill-down style).
+# interactive form.
 """Interactive scatter: total rating T vs GPQA Diamond (plotly)."""
 import csv
 from pathlib import Path

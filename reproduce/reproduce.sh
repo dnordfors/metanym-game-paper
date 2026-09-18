@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Reproduce every table and figure in the paper from the pinned evaluation data in ./data.
 # Deterministic, no API (Levels 2-3 of "reproduce"). Each step names the paper exhibit it makes;
-# all runs are pinned from experiment papers/v3/experiments/17_bold_api_probe.
+# all runs are pinned outputs of the API-probe experiment of May–June 2026 (see DATA_MANIFEST.md).
 # Level 1 (full LLM re-run, N+=1, budget-gated, non-deterministic) is NOT this script.
 set -euo pipefail
 cd "$(dirname "$0")"

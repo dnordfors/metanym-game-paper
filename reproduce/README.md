@@ -15,12 +15,35 @@ bash reproduce.sh
 Deterministic, no API calls, about a minute. See the root [`README.md`](../README.md) for
 options, and use `PYTHON=/path/to/python bash reproduce.sh` to pick a different interpreter.
 
+## Check the chain yourself
+
+Everything between the prompts and the numbers is in this directory, and each link can be checked without
+trusting the others. In the order the experiment ran:
+
+| link | what is here | how to check it |
+|---|---|---|
+| prompts as sent | `prompts/generator.md`, `prompts/evaluator_calibrated.md` (anchored), `prompts/evaluator.md` (un-anchored); printed verbatim in Appendix B | every run's `run_info.json` names its prompt and records its length |
+| generated portfolios | `data/portfolios_run1/` (the canonical run, with each call's API envelope), `data/regenerations/portfolios_run{2,3}/`; twelve per run | open any file; the ballast files in `submissions/` are byte-copies of two of run 1's |
+| evaluations | one `eval_<judge>_x_<target>.json` (ratings + API envelope: model version string, token counts, finish reason) and `.md` (the judge's justification, verbatim) per ordered pair, for the un-anchored pass, anchor 7 (run 1), anchors 5/6/8 and runs 2–3: 936 calls | `scripts/verify_chain.py` checks each envelope is a completed call whose token count fits its transcript, and that the archetype titles a judge names are those of the target's portfolio file |
+| GPQA | `data/gpqa_runs/…/<model>/responses.json`, 198 raw replies per model | re-scored by `scripts/verify_chain.py` and audited by `scripts/gpqa_audit.py` (Appendix D) |
+| numbers | every CSV the paper's tables use | `bash reproduce.sh` rewrites them byte-identically from the evaluation JSONs; each step is labelled with its exhibit |
+| bytes | `SHA256SUMS` over every input file; its own SHA-256 is the package digest printed in the paper | `python3 scripts/verify_chain.py` (standard library, seconds) |
+
+```bash
+python3 scripts/verify_chain.py    # links 1–7: prompts, portfolios, evaluations, GPQA, checksums
+bash reproduce.sh                  # link 8: the numbers
+```
+
+Two records outside this package fix its dates: arXiv:2606.21008 v1 (June 2026) and v2 (August 2026) report these
+numbers, and the public repository's history at github.com/dnordfors/metanym-game-paper has carried the evaluation
+files since 30 July 2026, timestamped by the host.
+
 ## Where things are documented
 
 - **[`reproduce.sh`](reproduce.sh)** — the map. Every step is labelled with the paper exhibit it
   produces, so it answers "where did this number come from?" and cannot drift from what actually
   runs, because running it is the verification.
-- **[`DATA_MANIFEST.md`](DATA_MANIFEST.md)** — provenance and contents of every input.
+- **[`DATA_MANIFEST.md`](DATA_MANIFEST.md)** — provenance and contents of every input, including the one recorded discrepancy (run 1's evaluator prompt revision).
 
 ## The experiment being re-analysed
 

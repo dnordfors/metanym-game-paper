@@ -1,6 +1,6 @@
-Run dir: /Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z
+Run dir: data/probe_K_20260529T014133Z
 Reference: claude-opus-4.5 (anchored at 7/10 on every axis)
-Calibrated evaluator prompt: /Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/prompts/evaluator_calibrated.md (5,373 chars template)
+Calibrated evaluator prompt: prompts/evaluator_calibrated.md (5,373 chars template)
 Evaluators: 12; Targets: 11; Total pairs: 132
 Max parallel: 8
 
@@ -137,5 +137,5 @@ Max parallel: 8
   ok  gpt-4o-mini on gpt-41-nano: 24.2s, comp=2294, chars=11979, finish=stop, json=parsed
   ok  gpt-4o-mini on gpt-4o-2024-08-06: 30.0s, comp=2814, chars=13757, finish=stop, json=parsed
 
-Wrote /Users/davidnordfors/python/BOLD/archetypal-contexts/papers/v3/experiments/17_bold_api_probe/runs/probe_K_20260529T014133Z/run_info.json
+Wrote data/probe_K_20260529T014133Z/run_info.json
 Summary: 132/132 succeeded, 129/132 produced parseable JSON.

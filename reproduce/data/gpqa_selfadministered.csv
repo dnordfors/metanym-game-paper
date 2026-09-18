@@ -1,5 +1,5 @@
-"# GPQA Diamond, self-administered on BOLD gateway, council protocol (T=0, reasoning off). accuracy = n_correct/198 (voids count as wrong); accuracy_excl_void excludes unparseable replies."
-model,gpqa_diamond_accuracy,accuracy_excl_void,n_correct,n_void,n_total,bold_model,provider
+"# GPQA Diamond, self-administered through an API gateway, council protocol (T=0, reasoning off). accuracy = n_correct/198 (voids count as wrong); accuracy_excl_void excludes unparseable replies."
+model,gpqa_diamond_accuracy,accuracy_excl_void,n_correct,n_void,n_total,gateway_model,provider
 claude-opus-4.0,71.21,71.94,141,2,198,claude-opus-4.0,Anthropic
 claude-opus-4.1,76.77,77.55,152,2,198,claude-opus-4.1,Anthropic
 claude-opus-4.5,78.79,78.79,156,0,198,claude-opus-4.5,Anthropic

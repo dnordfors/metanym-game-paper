@@ -1,6 +1,6 @@
 GPQA Diamond — 198 questions x 12 models = 2376 calls
-Protocol: T=0, reasoning OFF, no tools (council-matched) | gateway: BOLD
-Run dir: /Users/davidnordfors/python/BOLD/archetypal-contexts/reproduce_paper1/scripts/runs/gpqa_20260613T173827Z
+Protocol: T=0, reasoning OFF, no tools (council-matched) | gateway: vendor API gateway
+Run dir: data/gpqa_runs/gpqa_20260613T173827Z
 
 --- claude-opus-4.5 (claude-opus-4.5 / Anthropic) ---
 claude-opus-4.5        156/198  acc= 78.8%  (scored  78.8%, void 0)
@@ -27,5 +27,5 @@ gpt-4o-2024-08-06       92/198  acc= 46.5%  (scored  46.7%, void 1)
 --- gpt-4o-mini (gpt-4o-mini / AzureOpenAI) ---
 gpt-4o-mini             87/198  acc= 43.9%  (scored  43.9%, void 0)
 
-Wrote /Users/davidnordfors/python/BOLD/archetypal-contexts/reproduce_paper1/scripts/runs/gpqa_20260613T173827Z/gpqa_results.json
-Wrote /Users/davidnordfors/python/BOLD/archetypal-contexts/reproduce_paper1/data/gpqa_selfadministered.csv
+Wrote data/gpqa_runs/gpqa_20260613T173827Z/gpqa_results.json
+Wrote data/gpqa_selfadministered.csv

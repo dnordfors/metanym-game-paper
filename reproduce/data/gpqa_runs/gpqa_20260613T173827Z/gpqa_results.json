@@ -2,8 +2,8 @@
   "benchmark": "GPQA Diamond",
   "n_questions": 198,
   "protocol": "Temperature=0, reasoning OFF, no tools (council-matched)",
-  "gateway": "BOLD",
-  "run_dir": "/Users/davidnordfors/python/BOLD/archetypal-contexts/reproduce_paper1/scripts/runs/gpqa_20260613T173827Z",
+  "gateway": "api-gateway",
+  "run_dir": "data/gpqa_runs/gpqa_20260613T173827Z",
   "models": [
     {
       "paper_id": "claude-opus-4.0",
