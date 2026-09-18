@@ -34,9 +34,7 @@ python3 scripts/verify_chain.py    # links 1–7: prompts, portfolios, evaluatio
 bash reproduce.sh                  # link 8: the numbers
 ```
 
-Two records outside this package fix its dates: arXiv:2606.21008 v1 (June 2026) and v2 (August 2026) report these
-numbers, and the public repository's history at github.com/dnordfors/metanym-game-paper has carried the evaluation
-files since 30 July 2026, timestamped by the host.
+Two records outside this package fix its dates: arXiv:2606.21008 v1 (June 2026) and v2 (August 2026) report these numbers, and the public repository's history at github.com/dnordfors/metanym-game-paper has carried the evaluation files since 30 July 2026, timestamped by the host.
 
 ## Where things are documented
 

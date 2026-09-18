@@ -7,7 +7,7 @@
   "models": [
     {
       "paper_id": "claude-opus-4.0",
-      "bold_model": "claude-opus-4.0",
+      "gateway_model": "claude-opus-4.0",
       "provider": "Anthropic",
       "n": 198,
       "n_correct": 141,
@@ -17,7 +17,7 @@
     },
     {
       "paper_id": "claude-opus-4.1",
-      "bold_model": "claude-opus-4.1",
+      "gateway_model": "claude-opus-4.1",
       "provider": "Anthropic",
       "n": 198,
       "n_correct": 152,
@@ -27,7 +27,7 @@
     },
     {
       "paper_id": "claude-opus-4.5",
-      "bold_model": "claude-opus-4.5",
+      "gateway_model": "claude-opus-4.5",
       "provider": "Anthropic",
       "n": 198,
       "n_correct": 156,
@@ -37,7 +37,7 @@
     },
     {
       "paper_id": "claude-sonnet-4",
-      "bold_model": "claude-sonnet-4",
+      "gateway_model": "claude-sonnet-4",
       "provider": "Anthropic",
       "n": 198,
       "n_correct": 143,
@@ -47,7 +47,7 @@
     },
     {
       "paper_id": "gemini-2.5-flash",
-      "bold_model": "gemini-2.5-flash",
+      "gateway_model": "gemini-2.5-flash",
       "provider": "GoogleBard",
       "n": 198,
       "n_correct": 143,
@@ -57,7 +57,7 @@
     },
     {
       "paper_id": "gemini-3.1-pro",
-      "bold_model": "gemini-3.1-pro",
+      "gateway_model": "gemini-3.1-pro",
       "provider": "GoogleBard",
       "n": 198,
       "n_correct": 160,
@@ -67,7 +67,7 @@
     },
     {
       "paper_id": "gpt-4.1-2025-04-14",
-      "bold_model": "gpt-41-2025-04-14",
+      "gateway_model": "gpt-41-2025-04-14",
       "provider": "AzureOpenAI",
       "n": 198,
       "n_correct": 122,
@@ -77,7 +77,7 @@
     },
     {
       "paper_id": "gpt-4.1-mini",
-      "bold_model": "gpt-41-mini",
+      "gateway_model": "gpt-41-mini",
       "provider": "AzureOpenAI",
       "n": 198,
       "n_correct": 125,
@@ -87,7 +87,7 @@
     },
     {
       "paper_id": "gpt-4.1-nano",
-      "bold_model": "gpt-41-nano",
+      "gateway_model": "gpt-41-nano",
       "provider": "AzureOpenAI",
       "n": 198,
       "n_correct": 109,
@@ -97,7 +97,7 @@
     },
     {
       "paper_id": "gpt-4o",
-      "bold_model": "gpt-4o",
+      "gateway_model": "gpt-4o",
       "provider": "AzureOpenAI",
       "n": 198,
       "n_correct": 96,
@@ -107,7 +107,7 @@
     },
     {
       "paper_id": "gpt-4o-2024-08-06",
-      "bold_model": "gpt-4o-2024-08-06",
+      "gateway_model": "gpt-4o-2024-08-06",
       "provider": "AzureOpenAI",
       "n": 198,
       "n_correct": 92,
@@ -117,7 +117,7 @@
     },
     {
       "paper_id": "gpt-4o-mini",
-      "bold_model": "gpt-4o-mini",
+      "gateway_model": "gpt-4o-mini",
       "provider": "AzureOpenAI",
       "n": 198,
       "n_correct": 87,
