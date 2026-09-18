@@ -73,7 +73,8 @@ echo; echo "##### §4.8 + Appendix D — GPQA exhibits and audit #####"
 "$PY" scripts/plot_council_evaluation_compact.py        # -> figures/council_evaluation_pc1_compact.png (the ICLR version's Figure 1 until 2026-09-17)
 "$PY" scripts/plot_game_example.py                      # -> figures/game_example.png (the ICLR version's Figure 1: generation from the anchor submission, evaluation from Appendix C)
 "$PY" scripts/plot_game_example.py --panel a            # -> figures/game_generation.png (arXiv v3 Figure 1: the generation page)
-"$PY" scripts/plot_game_example.py --panel b            # -> figures/game_evaluation.png (arXiv v3 Figure 2: the evaluation page)
+"$PY" scripts/plot_game_example.py --panel b            # -> figures/game_evaluation.png (the evaluation page in the plot_game_example layout; not used in a paper)
+"$PY" scripts/plot_council_evaluation.py --all-judges   # -> figures/council_evaluation_pc1_all.png (arXiv v3 Figure 2: the council exhibit with every judge)
 echo; echo "##### §4.9 — robustness to regeneration (N=3) #####"
 "$PY" scripts/compare_runs.py "$RUNS_GEN" "$REGEN2" "$REGEN3" --sweep "$RUNS_SWEEP"
 echo; echo "##### §4.6 — sizing the ballast (why two) #####"

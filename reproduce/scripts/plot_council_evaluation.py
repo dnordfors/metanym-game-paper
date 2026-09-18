@@ -3,12 +3,14 @@
 
 Rev 3 (David: fill the boxes): measured layout — every text block is measured with the
 renderer and each box is drawn to fit its content; the figure height is fitted in a
-second pass. Metanyms coloured in Form (a); three judges + a ghost card for the two not
+second pass. Metanyms coloured in the instantiation; three judges + a ghost card for the two not
+shown (Appendix C of the ICLR version), or with --all-judges every judge and no ghost card (arXiv v3, Figure 2:
+figures/council_evaluation_pc1_all.png). Three judges + a ghost card for the two not
 shown. Every string parsed verbatim from
 submissions/council_evaluation_gemini-2.5-flash.md (the transcript the extended paper prints as its Appendix C).
 Writes figures/council_evaluation_pc1.png.
 """
-import re
+import re, sys
 def paperterms(s):
     """The judges wrote 'Form (a)'/'Form (b)' (the prompt's names, Appendix B); shown as the paper's terms, in square brackets."""
     return re.sub(r"[Ff]orm \(b\)", "[idiomatic rewrite]", re.sub(r"[Ff]orm \(a\)", "[instantiation]", s))
@@ -43,7 +45,8 @@ ADMIN = grab(r"\*\*Administrator summary:\*\*(.*?)\n\n")
 CODA = grab(r"(This is the falsifiability property.*?)$")
 JUDGES = re.findall(r"\*\*([\w.\-]+)\*\* — Rating: (\d)\s*\n(.*?)(?=\n\n\*\*|\n\n#|\Z)", blk, re.S)
 assert len(JUDGES) == 5
-SHOWN = [j for j in JUDGES if j[0] in ("opus-4.5", "opus-4.0", "3.1-pro")]
+ALL = "--all-judges" in sys.argv                                  # arXiv v3 Figure 2: every judge, no ghost row
+SHOWN = JUDGES if ALL else [j for j in JUDGES if j[0] in ("opus-4.5", "opus-4.0", "3.1-pro")]
 DISPLAY = {"3.1-pro": "Gemini 3.1"}          # display names; appendix keys stay verbatim
 HIDDEN = [j for j in JUDGES if j[0] not in ("opus-4.5", "opus-4.0", "3.1-pro")]
 
@@ -186,6 +189,8 @@ def render(H, K=1.0):
         boxpatch(M, top, 100 - 2 * M, bot)
         cur = bot - row_gap
     # ghost row: the two judges not shown
+    if ALL:                                                          # no ghost row and no coda: the caption carries the point
+        return fig, cur + 0.6
     top = cur
     gy = top - PAD - 1.3
     tlab = ax.text(M + PAD, gy, "+ 2 more judges:", fontsize=7.6 * K, fontweight="bold", color=INK2,
@@ -222,6 +227,6 @@ def fitted_height(K, H0=9.0):
 K = 8.0 / 7.9                     # body text = 8.0pt printed (David's ruling)
 fig, H = fitted_height(K, H0=9.6)
 print(f"body 8.0pt, fitted height {H:.2f} in at 6.5 in wide")
-out = HERE.parents[0] / "figures" / "council_evaluation_pc1.png"
+out = HERE.parents[0] / "figures" / ("council_evaluation_pc1_all.png" if ALL else "council_evaluation_pc1.png")
 fig.savefig(out, dpi=300, facecolor=SURFACE)
 print(f"wrote {out}")
