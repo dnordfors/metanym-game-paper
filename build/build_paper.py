@@ -317,6 +317,12 @@ def arxiv_edits(md: str) -> str:
     md = md[:m.start()] + two + md[m.end():]
     md = md.replace("Figure \\ref{fig-game-example}(a)", "Figure \\ref{fig-game-generation}").replace("Figure \\ref{fig-game-example}(b)", "Figure \\ref{fig-game-evaluation}")
     assert "fig-game-example" not in md, "a reference to the one-page figure survives in the arXiv text"
+    # Figure 2 of this version shows every judge; the ICLR figure shows three, and Appendix C's unit is that figure here
+    for old, new in (("One evaluation, three of its five judges shown whole, is Figure \\ref{fig-game-evaluation}.",
+                      "One evaluation, every judge shown whole, is Figure \\ref{fig-game-evaluation}."),
+                     ("(Figure 1 of the main text shows the same unit)", "(Figure \\ref{fig-game-evaluation} of the main text shows the same unit)")):
+        assert md.count(old) == 1, "arXiv edit target not found exactly once: %s" % old[:50]
+        md = md.replace(old, new)
     # Appendix C's exhibit is now Figure 2 (with every judge): drop the appendix copy of it, keep the text
     m2 = re.search(r'\[\]\{#fig-council-evaluation-full\}\n\n!\[[^\n]*\]\(figures/council_evaluation_pc1\.png\)\n\n', md); assert m2, "Appendix C figure block not found"
     md = md[:m2.start()] + md[m2.end():]
