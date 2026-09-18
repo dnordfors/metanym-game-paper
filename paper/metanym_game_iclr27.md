@@ -188,7 +188,7 @@ Every original idea in this work is the author's. The work was developed in a su
 
 ## Ethics statement
 
-The study evaluates commercial language models via their public APIs on self-generated material; no human subjects, personal data or annotators are involved. The benchmark is proposed as a candidate steering signal for self-improving systems. Steering by it would mean letting a consensus of models, with no human key, decide what counts as better, and a misunderstanding the models share would then be reinforced rather than corrected. The paper keeps the factual axis answerable to independent checks (§4.5) and leaves the self-improvement loop specified but unrun (§7); we regard that as the condition under which such a signal may be used. We consider the release of a key-free, contamination-resistant evaluation to be net positive for the field's ability to measure models past the point where human-written keys remain reliable, and we release all data and code under permissive licences.
+The study evaluates commercial language models via their public APIs on self-generated material; no human subjects, personal data or annotators are involved. The benchmark is proposed as a candidate steering signal for self-improving systems. Steering by it would mean letting a consensus of models, with no human key, decide what counts as better, and a misunderstanding the models share would then be reinforced rather than corrected. The paper keeps the factual axis answerable to independent checks (§4.5) and leaves the self-improvement loop specified but unrun (§7); we regard that as the condition under which such a signal may be used. The signal belongs to the family of model-generated training signals, reinforcement learning from AI feedback (Bai et al., 2022) and self-rewarding models (Yuan et al., 2024); it differs in coming from a certified council of several vendors with contestable seats rather than from one model or one lab. We consider the release of a key-free, contamination-resistant evaluation to be net positive for the field's ability to measure models past the point where human-written keys remain reliable, and we release all data and code under permissive licences.
 
 ## Reproducibility statement
 
@@ -197,6 +197,8 @@ Every number, table and figure in this paper recomputes deterministically from a
 ## References
 
 Anthropic (2025). Introducing Claude 4. Announcement, 22 May 2025. https://www.anthropic.com/news/claude-4
+
+Bai, Y., Kadavath, S., Kundu, S., Askell, A., Kernion, J., Jones, A., et al. (2022). Constitutional AI: Harmlessness from AI feedback. arXiv:2212.08073.
 
 Bai, Y., et al. (2023). Benchmarking foundation models with Language-Model-as-an-Examiner. *NeurIPS 36.* arXiv:2306.04181.
 
@@ -273,6 +275,8 @@ Webb, T., Holyoak, K. J., & Lu, H. (2023). Emergent analogical reasoning in larg
 Weng, S., Feng, Y., & Xie, X. (2026). Beyond accuracy: Policy invariance as a reliability test for LLM safety judges. arXiv:2605.06161.
 
 West, P., Lu, X., Dziri, N., Brahman, F., Li, L., Hwang, J. D., Jiang, L., Fisher, J., Ravichander, A., Chandu, K., Newman, B., Koh, P. W., Ettinger, A., & Choi, Y. (2024). The Generative AI Paradox: "What it can create, it may not understand." *ICLR 2024.* arXiv:2311.00059.
+
+Yuan, W., Pang, R. Y., Cho, K., Li, X., Sukhbaatar, S., Xu, J., & Weston, J. (2024). Self-rewarding language models. *ICML 2024.* arXiv:2401.10020.
 
 Zhang, Q., Ning, M., Liu, Z., Wang, Y., Ye, J., Huang, Y., Yang, S., Chen, X., Song, Y., & Yuan, L. (2025). UPME: An unsupervised peer review framework for multimodal large language model evaluation. *CVPR 2025*, 9165–9174. arXiv:2503.14941.
 
