@@ -11,12 +11,12 @@ __pycache__/
 *.blg
 *.toc
 *.synctex.gz
-submission-iclr/paper.pdf
 submission-arxiv/paper.pdf
+build/_paper_combined.md
+archive/arxiv-v2/submission/paper.pdf
+archive/arxiv-v2/submission/out/
 
 # OS
 .DS_Store
 Thumbs.db
 .fuse_hidden*
-build/_paper_combined.md
-submission-iclr/iclr27_supplementary.zip

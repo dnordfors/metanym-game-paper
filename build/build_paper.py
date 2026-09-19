@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-r"""Build paper/metanym_game_iclr27.pdf from paper/metanym_game_iclr27.md in the ICLR 2027 style (or, with --arxiv, the arXiv v3
-version: paper/metanym_game_arxiv_v3.pdf). The submission bundle — the generated paper.tex, the style files and the figures it uses —
-is written to submission-iclr/ (or submission-arxiv/, plus the source tarball); build/ holds this script and the style files, figures/
-the figure sources; neither submission directory ever holds the paper itself.
+r"""Build the paper from paper/metanym_game.md. Default: the ICLR 2027 submission, anonymised, 9-page limit asserted, written to
+../metanym-game-paper-iclr27/ (metanym_game_iclr27.pdf and the bundle in submission-iclr/). With --arxiv: the arXiv v3 version
+(author block, preprint header, no page limit) written to paper/metanym_game.pdf, bundle and source tarball in submission-arxiv/.
+build/ holds this script and the style files; figures/ the figure sources, drawn by reproduce/scripts/. Neither submission
+directory ever holds the paper itself.
 
 Provenance: adapted from ../metanym-game-paper/submission/build_paper.py (arXiv pipeline); the
 ICLR style files in submission/style/ are the official iclr-2027-style-files.zip, untouched.
@@ -28,7 +29,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / "build"; STYLE = BUILD / "style"; FIGS = ROOT / "figures"
-MD = ROOT / "paper" / "metanym_game_iclr27.md"
+MD = ROOT / "paper" / "metanym_game.md"
+ICLR = ROOT.parent / "metanym-game-paper-iclr27"    # the ICLR submission directory: the anonymised PDF and bundle go there, never into the mirrored tree
 APPENDIX_DIR = ROOT / "paper" / "appendices"
 ARXIV = "--arxiv" in sys.argv   # arXiv v3 mode: author block, preprint header, no anonymity guard, no page limit, larger figures
 PAGE_LIMIT = int(sys.argv[sys.argv.index("--limit") + 1]) if "--limit" in sys.argv else (999 if ARXIV else 9)
@@ -370,7 +372,7 @@ def main() -> None:
     tex = tex[:i] + tex[i:].replace("\\begin{table}[htb]", "\\begin{table}[H]").replace("\\begin{figure}[t]", "\\begin{figure}[H]")
     guard(tex)
     import shutil
-    OUT = ROOT / ("submission-arxiv" if ARXIV else "submission-iclr")
+    OUT = ROOT / "submission-arxiv" if ARXIV else ICLR / "submission-iclr"
     OUT.mkdir(exist_ok=True); (OUT / "figures").mkdir(exist_ok=True)
     for f in STYLE.glob("*.sty"): shutil.copy(f, OUT / f.name)
     for name in set(re.findall(r"\\includegraphics\[[^\]]*\]\{figures/([^}]+)\}", tex)): shutil.copy(FIGS / name, OUT / "figures" / name)
@@ -391,7 +393,7 @@ def main() -> None:
           f"{overfull} overfull hboxes; {len(re.findall(r'LaTeX Warning: Reference', log))} unresolved refs.")
     if end_page > PAGE_LIMIT:
         raise SystemExit(f"OVER THE PAGE LIMIT: main text runs to page {end_page}, limit is {PAGE_LIMIT}")
-    FINAL = ROOT / "paper" / ("metanym_game_arxiv_v3.pdf" if ARXIV else "metanym_game_iclr27.pdf"); shutil.move(str(OUT / "paper.pdf"), str(FINAL)); print(f"PDF: {FINAL}")
+    FINAL = ROOT / "paper" / "metanym_game.pdf" if ARXIV else ICLR / "metanym_game_iclr27.pdf"; shutil.move(str(OUT / "paper.pdf"), str(FINAL)); print(f"PDF: {FINAL}")
     if ARXIV:
         # arXiv reads \pdfoutput=1 in the first five lines as the instruction to compile with pdfLaTeX (PNG figures). It goes into
         # the shipped source only, after the local compile: under tectonic (XeTeX) the line makes hyperref load the pdftex driver and fail.
