@@ -4,7 +4,7 @@ cff-version: 1.2.0
 message: "If you use this work, please cite both the paper and this repository."
 title: "The Metanym Game: An LLM Benchmark Without Ground Truth That Rises With the Models It Measures"
 abstract: >-
-  The Metanym Game (arXiv:2606.21008 v3, the ICLR 2027 submission version): the manuscript,
+  The Metanym Game (arXiv:2606.21008 v3): the manuscript,
   the arXiv source, and the reproduction package — every prompt, submission, rating and
   GPQA reply as produced, with the scripts that regenerate every number, table and figure.
 authors:

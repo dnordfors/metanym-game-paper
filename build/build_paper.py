@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-r"""Build the paper from paper/metanym_game.md. Default: the ICLR 2027 submission, anonymised, 9-page limit asserted, written to
+r"""Build the paper from paper/metanym_game.md. Default: the anonymised conference build, 9-page limit asserted, written to
 ../metanym-game-paper-iclr27/ (metanym_game_iclr27.pdf and the bundle in submission-iclr/). With --arxiv: the arXiv v3 version
 (author block, preprint header, no page limit) written to paper/metanym_game.pdf, bundle and source tarball in submission-arxiv/.
 build/ holds this script and the style files; figures/ the figure sources, drawn by reproduce/scripts/. Neither submission
@@ -43,7 +43,7 @@ ARXIV_DROP_SECTIONS = ("Ethics statement",)
 # Figure widths as a fraction of the text width, keyed by file stem (KeyError = unlisted figure).
 FIGURE_WIDTHS = {"game_example": 1.0, "game_generation": 1.0, "game_evaluation": 1.0, "council_evaluation_pc1_all": 1.0, "council_evaluation_pc1": 1.0, "council_evaluation_pc1_wide": 1.0, "council_evaluation_pc1_compact": 1.0, "total_validation": 0.46, "total_validation_simple": 0.32, "anchoring_resolution": 0.6, "runs_panel": 1.0, "mechanism_sketch": 1.0}
 
-# Strings that must not survive into a double-blind submission.
+# Strings that must not survive into the anonymised build.
 ANONYMITY_GUARDS = ["Nordfors", "dnordfors", "archetypes.ai", "2606.21008", "github.com/dnordfors"]
 
 
@@ -83,7 +83,7 @@ def combine() -> str:
 def guard(text: str) -> None:
     if ARXIV: return
     hits = [g for g in ANONYMITY_GUARDS if g.lower() in text.lower()]
-    assert not hits, f"double-blind violation — these strings appear in the build: {hits}"
+    assert not hits, f"anonymity violation — these strings appear in the build: {hits}"
 
 
 # ----------------------------------------------------------------- 4. postfix
